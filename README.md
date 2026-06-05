@@ -1,2 +1,2 @@
 # Firmware-Sentinel-Exposure
-Cyber threat investigation laboratory dedicated to intelligence analysis, reverse engineering, forensic reconstruction, and exposure tracking. Research focuses on identifying the origin, progression, and operational impact of malicious activity through C# and Python-based analytical workflows.
+Investigative security laboratory dedicated to analyzing high-risk digital incidents, tracing exposure pathways, and reconstructing compromise events. Research focuses on identifying how anomalous activity emerges, propagates, and persists across operational environments through reverse engineering, intelligence analysis, and containment-focused defensive research using C# and Python.
