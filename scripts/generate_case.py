@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-
 import json
 import random
 from datetime import date
 
 today = date.today().isoformat()
-
 case_types = [
     "Firmware Integrity Alert",
     "Unauthorized Firmware Modification",
