@@ -1,1 +1,6 @@
-print("Firmware Sentinel Exposure Runtime")
+case_id
+classification
+status
+confidence
+affected_assets
+analyst_assessment
