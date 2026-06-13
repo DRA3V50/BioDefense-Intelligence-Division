@@ -1,0 +1,9 @@
+{
+  "case_id": "FSE-2026-8912",
+  "date": "2026-06-13",
+  "classification": "Embedded Device Exposure",
+  "status": "Contained",
+  "confidence": 61,
+  "affected_assets": 2,
+  "assessment": "Analyst review identified anomalous embedded system behavior."
+}
