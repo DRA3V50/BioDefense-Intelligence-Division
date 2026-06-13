@@ -1,9 +1,9 @@
 {
-  "case_id": "FSE-2026-7110",
+  "case_id": "FSE-2026-1835",
   "date": "2026-06-13",
-  "classification": "Unauthorized Firmware Modification",
+  "classification": "Firmware Integrity Alert",
   "status": "Active Investigation",
-  "confidence": 76,
-  "affected_assets": 5,
-  "assessment": "Evidence remains inconclusive and requires additional collection."
+  "confidence": 77,
+  "affected_assets": 3,
+  "assessment": "Observed firmware hash deviations requiring validation."
 }
