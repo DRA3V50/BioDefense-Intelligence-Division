@@ -1,9 +1,9 @@
 {
-  "case_id": "FSE-2026-8912",
+  "case_id": "FSE-2026-7110",
   "date": "2026-06-13",
-  "classification": "Embedded Device Exposure",
-  "status": "Contained",
-  "confidence": 61,
-  "affected_assets": 2,
-  "assessment": "Analyst review identified anomalous embedded system behavior."
+  "classification": "Unauthorized Firmware Modification",
+  "status": "Active Investigation",
+  "confidence": 76,
+  "affected_assets": 5,
+  "assessment": "Evidence remains inconclusive and requires additional collection."
 }
