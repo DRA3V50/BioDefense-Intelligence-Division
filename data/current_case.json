@@ -1,9 +1,9 @@
 {
-  "case_id": "FSE-2026-3285",
+  "case_id": "FSE-2026-4236",
   "date": "2026-06-14",
   "classification": "Embedded Device Exposure",
   "status": "Open",
-  "confidence": 88,
-  "affected_assets": 2,
-  "assessment": "Indicators warrant continued monitoring and forensic review."
+  "confidence": 77,
+  "affected_assets": 4,
+  "assessment": "Artifact correlation suggests potential unauthorized modification."
 }
