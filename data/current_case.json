@@ -1,9 +1,9 @@
 {
-  "case_id": "FSE-2026-4236",
+  "case_id": "FSE-2026-7127",
   "date": "2026-06-14",
-  "classification": "Embedded Device Exposure",
+  "classification": "Unauthorized Firmware Modification",
   "status": "Open",
-  "confidence": 77,
-  "affected_assets": 4,
-  "assessment": "Artifact correlation suggests potential unauthorized modification."
+  "confidence": 74,
+  "affected_assets": 7,
+  "assessment": "Observed firmware hash deviations requiring validation."
 }
