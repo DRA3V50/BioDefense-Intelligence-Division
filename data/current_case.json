@@ -1,9 +1,9 @@
 {
-  "case_id": "FSE-2026-7717",
+  "case_id": "FSE-2026-3285",
   "date": "2026-06-14",
-  "classification": "Firmware Integrity Alert",
-  "status": "Active Investigation",
-  "confidence": 72,
-  "affected_assets": 5,
+  "classification": "Embedded Device Exposure",
+  "status": "Open",
+  "confidence": 88,
+  "affected_assets": 2,
   "assessment": "Indicators warrant continued monitoring and forensic review."
 }
