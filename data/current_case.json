@@ -1,9 +1,9 @@
 {
-  "case_id": "FSE-2026-1835",
-  "date": "2026-06-13",
+  "case_id": "FSE-2026-7717",
+  "date": "2026-06-14",
   "classification": "Firmware Integrity Alert",
   "status": "Active Investigation",
-  "confidence": 77,
-  "affected_assets": 3,
-  "assessment": "Observed firmware hash deviations requiring validation."
+  "confidence": 72,
+  "affected_assets": 5,
+  "assessment": "Indicators warrant continued monitoring and forensic review."
 }
