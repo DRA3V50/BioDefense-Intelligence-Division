@@ -1,9 +1,9 @@
 {
-  "case_id": "FSE-2026-7127",
-  "date": "2026-06-14",
+  "case_id": "FSE-2026-5636",
+  "date": "2026-06-15",
   "classification": "Unauthorized Firmware Modification",
   "status": "Open",
-  "confidence": 74,
-  "affected_assets": 7,
-  "assessment": "Observed firmware hash deviations requiring validation."
+  "confidence": 82,
+  "affected_assets": 10,
+  "assessment": "Analyst review identified anomalous embedded system behavior."
 }
