@@ -1,7 +1,30 @@
 import json
+import csv
+import os
 
 with open("data/current_case.json") as f:
     case = json.load(f)
+
+history_rows = []
+
+if os.path.exists("data/investigation_history.csv"):
+    with open("data/investigation_history.csv", newline="", encoding="utf-8") as csvfile:
+        reader = csv.DictReader(csvfile)
+        history_rows = list(reader)[-5:]
+
+history_table = ""
+
+if history_rows:
+    history_table += "\n## Recent Investigations\n\n"
+    history_table += "| Case ID | Classification | Severity |\n"
+    history_table += "|---------|---------------|----------|\n"
+
+    for row in reversed(history_rows):
+        history_table += (
+            f"| {row['case_id']} | "
+            f"{row['classification']} | "
+            f"{row['severity']} |\n"
+        )
 
 report = f"""
 <!-- FSE-REPORT-START -->
@@ -27,6 +50,8 @@ report = f"""
 ## Analyst Assessment
 
 {case['assessment']}
+
+{history_table}
 
 <!-- FSE-REPORT-END -->
 """
