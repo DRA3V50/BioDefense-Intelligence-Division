@@ -1,70 +1,48 @@
-#!/usr/bin/env python3
-
 import json
-import random
-from datetime import date
+import os
 
-today = date.today().isoformat()
+with open("data/current_case.json") as f:
+case = json.load(f)
 
-classifications = [
-    "Firmware Integrity Alert",
-    "Unauthorized Firmware Modification",
-    "Embedded Device Exposure",
-    "Bootloader Anomaly",
-    "Persistence Indicator Review",
-    "Supply Chain Validation Review",
-    "Unsigned Firmware Detection",
-    "Memory Artifact Investigation"
-]
+evidence_file = "evidence/evidence_log.csv"
 
-statuses = [
-    "Open",
-    "Active Investigation",
-    "Evidence Collection",
-    "Monitoring",
-    "Contained"
-]
+if os.path.exists(evidence_file):
+with open(evidence_file, "r", encoding="utf-8") as f:
+lines = f.readlines()
 
-assessments = [
-    "Observed firmware hash deviations requiring validation.",
-    "Analyst review identified anomalous embedded system behavior.",
-    "Artifact correlation suggests potential unauthorized modification.",
-    "Evidence remains inconclusive and requires additional collection.",
-    "Indicators warrant continued monitoring and forensic review.",
-    "Embedded device telemetry revealed irregular execution patterns.",
-    "Firmware validation process identified unexpected code segments.",
-    "Behavioral analysis suggests persistence-related anomalies."
-]
+```
+evidence_number = len(lines)
+```
 
-severity_levels = [
-    "LOW",
-    "MODERATE",
-    "HIGH",
-    "CRITICAL"
-]
+else:
+evidence_number = 1
 
-affected_platforms = [
-    "Industrial Controller",
-    "Network Appliance",
-    "Embedded Linux Device",
-    "IoT Gateway",
-    "Router Firmware",
-    "Security Appliance"
-]
+evidence_id = f"EV-{evidence_number:04d}"
 
-case_data = {
-    "case_id": f"FSE-{date.today().year}-{random.randint(1000,9999)}",
-    "date": today,
-    "classification": random.choice(classifications),
-    "severity": random.choice(severity_levels),
-    "status": random.choice(statuses),
-    "affected_platform": random.choice(affected_platforms),
-    "confidence": random.randint(60,95),
-    "affected_assets": random.randint(1,15),
-    "assessment": random.choice(assessments)
+artifact_types = {
+"Bootloader Anomaly": "Boot Artifact",
+"Firmware Integrity Alert": "Firmware Image",
+"Unauthorized Firmware Modification": "Firmware Binary",
+"Embedded Device Exposure": "Embedded Log",
+"Persistence Indicator Review": "Configuration Artifact",
+"Supply Chain Validation Review": "Supply Chain Record",
+"Unsigned Firmware Detection": "Firmware Signature",
+"Memory Artifact Investigation": "Memory Dump"
 }
 
-with open("data/current_case.json", "w") as f:
-    json.dump(case_data, f, indent=2)
+artifact = artifact_types.get(
+case["classification"],
+"Digital Artifact"
+)
 
-print("Case generated.")
+with open(evidence_file, "a", encoding="utf-8") as f:
+f.write(
+f"{evidence_id},"
+f"{case['date']},"
+f"{case['case_id']},"
+f"{artifact},"
+f"{case['assessment']}\n"
+)
+
+print("Evidence logged.")
+
