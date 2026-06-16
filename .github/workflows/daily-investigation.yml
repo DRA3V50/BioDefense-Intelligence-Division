@@ -30,6 +30,8 @@ jobs:
         run: python scripts/update_readme.py
       - name: Archive Investigation
         run: python scripts/archive_case.py
+      - name: Update Investigation History
+        run: python scripts/update_history.py
 
       - name: Commit Updated Case
         run: |
