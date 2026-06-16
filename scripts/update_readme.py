@@ -14,7 +14,11 @@ report = f"""
 
 **Classification:** {case['classification']}
 
+**Severity:** {case['severity']}
+
 **Status:** {case['status']}
+
+**Affected Platform:** {case['affected_platform']}
 
 **Confidence:** {case['confidence']}%
 
