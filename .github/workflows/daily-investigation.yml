@@ -34,6 +34,10 @@ jobs:
         run: python scripts/update_history.py
       - name: Update Evidence Log
         run: python scripts/update_evidence.py
+      - name: Update Evidence Log
+        run: python scripts/update_evidence.py
+      - name: Update Exposure Timeline
+        run: python scripts/update_timeline.py
 
       - name: Commit Updated Case
         run: |
@@ -44,6 +48,7 @@ jobs:
           git add data/current_case.json
           git add cases/
           git add evidence/evidence_log.csv
+          git add reconstruction/exposure_timeline.md
 
           git diff --staged --quiet || git commit -m "Daily investigation update"
 
