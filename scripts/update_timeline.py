@@ -1,24 +1,33 @@
 import json
-import os
 
 with open("data/current_case.json") as f:
-case = json.load(f)
+    case = json.load(f)
 
-timeline_file = "reconstruction/exposure_timeline.md"
+timeline = f"""
+# Exposure Timeline Reconstruction
 
-entry = (
-f"- {case['date']} | "
-f"{case['case_id']} | "
-f"{case['classification']} | "
-f"{case['severity']} | "
-f"{case['status']}\n"
-)
+## {case['date']}
 
-if not os.path.exists(timeline_file):
-with open(timeline_file, "w", encoding="utf-8") as f:
-f.write("# Exposure Reconstruction Timeline\n\n")
+### Case Opened
+Case ID: {case['case_id']}
 
-with open(timeline_file, "a", encoding="utf-8") as f:
-f.write(entry)
+### Classification
+{case['classification']}
+
+### Initial Assessment
+{case['assessment']}
+
+### Current Status
+{case['status']}
+
+### Severity
+{case['severity']}
+
+---
+
+"""
+
+with open("reconstruction/exposure_timeline.md", "a", encoding="utf-8") as f:
+    f.write(timeline)
 
 print("Timeline updated.")
