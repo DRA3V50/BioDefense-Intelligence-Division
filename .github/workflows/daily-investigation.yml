@@ -36,6 +36,8 @@ jobs:
         run: python scripts/update_evidence.py
       - name: Update Evidence Log
         run: python scripts/update_evidence.py
+      - name: Update Timeline
+        run: python scripts/update_timeline.py
       - name: Update Exposure Timeline
         run: python scripts/update_timeline.py
 
