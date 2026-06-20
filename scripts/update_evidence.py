@@ -11,7 +11,6 @@ if os.path.exists(evidence_file):
         lines = f.readlines()
 
     evidence_number = len(lines)
-
 else:
     evidence_number = 1
 
