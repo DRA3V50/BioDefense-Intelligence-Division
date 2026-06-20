@@ -1,33 +1,43 @@
 import json
 
-with open("data/current_case.json") as f:
+with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-timeline = f"""
-# Exposure Timeline Reconstruction
+timeline = f"""# Exposure Timeline Reconstruction
 
-## {case['date']}
+This document tracks reconstructed compromise timelines based on investigative findings and collected evidence.
 
-### Case Opened
-Case ID: {case['case_id']}
+---
+
+## {case['date']} - Case Opened
+
+### Case ID
+{case['case_id']}
 
 ### Classification
 {case['classification']}
 
-### Initial Assessment
-{case['assessment']}
-
-### Current Status
-{case['status']}
-
 ### Severity
 {case['severity']}
 
----
+### Status
+{case['status']}
 
+### Affected Platform
+{case['affected_platform']}
+
+### Confidence
+{case['confidence']}%
+
+### Analyst Assessment
+{case['assessment']}
 """
 
-with open("reconstruction/exposure_timeline.md", "a", encoding="utf-8") as f:
+with open(
+    "reconstruction/exposure_timeline.md",
+    "w",
+    encoding="utf-8"
+) as f:
     f.write(timeline)
 
 print("Timeline updated.")
