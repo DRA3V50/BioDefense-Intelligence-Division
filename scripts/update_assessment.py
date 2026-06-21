@@ -9,7 +9,12 @@ findings = [
     "Firmware validation remains ongoing.",
     "Additional artifact correlation required.",
     "Exposure indicators remain under review.",
-    "Telemetry analysis identified abnormal execution patterns."
+    "Telemetry analysis identified abnormal execution patterns.",
+    "Boot sequence integrity requires further validation.",
+    "Firmware signature verification remains pending.",
+    "Analyst confidence increased following artifact review.",
+    "Evidence collection continues across affected assets.",
+    "Containment recommendations remain unchanged."
 ]
 
 report = f"""# Weekly Exposure Assessment
