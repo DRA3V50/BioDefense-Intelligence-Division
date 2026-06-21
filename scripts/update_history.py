@@ -1,6 +1,6 @@
 import json
 
-with open("data/current_case.json") as f:
+with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
 line = (
@@ -12,7 +12,11 @@ line = (
     f"{case['confidence']}\n"
 )
 
-with open("data/investigation_history.csv", "a", encoding="utf-8") as f:
+with open(
+    "data/investigation_history.csv",
+    "a",
+    encoding="utf-8"
+) as f:
     f.write(line)
 
 print("History updated.")
