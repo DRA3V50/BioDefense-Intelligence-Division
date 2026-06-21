@@ -4,6 +4,14 @@ import os
 
 with open("data/current_case.json") as f:
     case = json.load(f)
+with open(
+    "data/investigation_history.csv",
+    "r",
+    encoding="utf-8"
+) as f:
+    history = f.readlines()
+
+total_cases = len(history)
 
 history_rows = []
 
