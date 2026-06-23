@@ -27,3 +27,15 @@ Indicators warrant continued monitoring and forensic review.
 Embedded device telemetry revealed irregular execution patterns.
 
 ---
+
+## FSE-2026-8857
+
+- Date: 2026-06-23
+- Classification: Firmware Integrity Alert
+- Severity: LOW
+- Status: Open
+- Confidence: 86%
+
+Observed firmware hash deviations requiring validation.
+
+---

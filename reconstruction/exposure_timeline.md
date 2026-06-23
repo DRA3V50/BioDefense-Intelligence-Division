@@ -4,18 +4,18 @@
 ## 2026-06-23
 
 ### Case Opened
-Case ID: FSE-2026-7255
+Case ID: FSE-2026-8857
 
 ### Classification
-Unauthorized Firmware Modification
+Firmware Integrity Alert
 
 ### Initial Assessment
-Embedded device telemetry revealed irregular execution patterns.
+Observed firmware hash deviations requiring validation.
 
 ### Current Status
 Open
 
 ### Severity
-HIGH
+LOW
 
 ---

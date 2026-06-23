@@ -1,3 +1,4 @@
 Date,CaseID,Classification,Severity,Status,Confidence
 2026-06-16,FSE-2026-4571,Bootloader Anomaly,HIGH,Monitoring,95
 2026-06-23,FSE-2026-7255,Unauthorized Firmware Modification,HIGH,Open,87
+2026-06-23,FSE-2026-8857,Firmware Integrity Alert,LOW,Open,86

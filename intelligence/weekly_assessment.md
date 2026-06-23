@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-7255
+Case ID: FSE-2026-8857
 
-Classification: Unauthorized Firmware Modification
+Classification: Firmware Integrity Alert
 
-Severity: HIGH
+Severity: LOW
 
 Status: Open
 
 ## Assessment
 
-Evidence collection continues across affected assets.
+Containment recommendations remain unchanged.

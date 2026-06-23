@@ -10,31 +10,33 @@ Investigative security laboratory dedicated to analyzing high-risk digital incid
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # 🔍 Active Investigation
 
-**Case ID:** FSE-2026-7255
+**Case ID:** FSE-2026-8857
 
 **Date:** 2026-06-23
 
-**Classification:** Unauthorized Firmware Modification
+**Classification:** Firmware Integrity Alert
 
-**Severity:** HIGH
+**Severity:** LOW
 
 **Status:** Open
 
-**Affected Platform:** Industrial Controller
+**Affected Platform:** Network Appliance
 
-**Confidence:** 87%
+**Confidence:** 86%
 
-**Affected Assets:** 8
+**Affected Assets:** 6
 
 ## Analyst Assessment
 
-Embedded device telemetry revealed irregular execution patterns.
+Observed firmware hash deviations requiring validation.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

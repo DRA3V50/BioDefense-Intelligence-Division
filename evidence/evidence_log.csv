@@ -11,3 +11,4 @@ EV-0009,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued moni
 EV-0010,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
 EV-0011,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
 EV-0012,2026-06-23,FSE-2026-7255,Firmware Binary,Embedded device telemetry revealed irregular execution patterns.
+EV-0013,2026-06-23,FSE-2026-8857,Firmware Image,Observed firmware hash deviations requiring validation.
