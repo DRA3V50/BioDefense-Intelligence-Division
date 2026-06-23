@@ -15,3 +15,15 @@ Historical investigation archive generated automatically.
 Indicators warrant continued monitoring and forensic review.
 
 ---
+
+## FSE-2026-7255
+
+- Date: 2026-06-23
+- Classification: Unauthorized Firmware Modification
+- Severity: HIGH
+- Status: Open
+- Confidence: 87%
+
+Embedded device telemetry revealed irregular execution patterns.
+
+---

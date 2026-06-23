@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-4571
+Case ID: FSE-2026-7255
 
-Classification: Bootloader Anomaly
+Classification: Unauthorized Firmware Modification
 
 Severity: HIGH
 
-Status: Monitoring
+Status: Open
 
 ## Assessment
 
-Exposure indicators remain under review.
+Evidence collection continues across affected assets.

@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-16
+## 2026-06-23
 
 ### Case Opened
-Case ID: FSE-2026-4571
+Case ID: FSE-2026-7255
 
 ### Classification
-Bootloader Anomaly
+Unauthorized Firmware Modification
 
 ### Initial Assessment
-Indicators warrant continued monitoring and forensic review.
+Embedded device telemetry revealed irregular execution patterns.
 
 ### Current Status
-Monitoring
+Open
 
 ### Severity
 HIGH

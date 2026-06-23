@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-4571",
-  "date": "2026-06-16",
-  "classification": "Bootloader Anomaly",
+  "case_id": "FSE-2026-7255",
+  "date": "2026-06-23",
+  "classification": "Unauthorized Firmware Modification",
   "severity": "HIGH",
-  "status": "Monitoring",
-  "affected_platform": "Security Appliance",
-  "confidence": 95,
-  "affected_assets": 14,
-  "assessment": "Indicators warrant continued monitoring and forensic review."
+  "status": "Open",
+  "affected_platform": "Industrial Controller",
+  "confidence": 87,
+  "affected_assets": 8,
+  "assessment": "Embedded device telemetry revealed irregular execution patterns."
 }
