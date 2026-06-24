@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-4731
+FSE-2026-2292
 
 ## Platform
-Security Appliance
+Industrial Controller
 
 ## Firmware Classification
-Memory Artifact Investigation
+Supply Chain Validation Review
 
 ## Processor Architecture
 PowerPC
 
 ## Bootloader
-Vendor Proprietary
+U-Boot
 
 ## Exposure Status
 Under Investigation

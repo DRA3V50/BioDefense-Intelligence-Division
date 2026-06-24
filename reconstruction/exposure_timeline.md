@@ -4,13 +4,13 @@
 ## 2026-06-24
 
 ### Case Opened
-Case ID: FSE-2026-4731
+Case ID: FSE-2026-2292
 
 ### Classification
-Memory Artifact Investigation
+Supply Chain Validation Review
 
 ### Initial Assessment
-Embedded device telemetry revealed irregular execution patterns.
+Indicators warrant continued monitoring and forensic review.
 
 ### Current Status
 Open

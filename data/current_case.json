@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-4731",
+  "case_id": "FSE-2026-2292",
   "date": "2026-06-24",
-  "classification": "Memory Artifact Investigation",
+  "classification": "Supply Chain Validation Review",
   "severity": "LOW",
   "status": "Open",
-  "affected_platform": "Security Appliance",
-  "confidence": 66,
-  "affected_assets": 8,
-  "assessment": "Embedded device telemetry revealed irregular execution patterns."
+  "affected_platform": "Industrial Controller",
+  "confidence": 70,
+  "affected_assets": 6,
+  "assessment": "Indicators warrant continued monitoring and forensic review."
 }

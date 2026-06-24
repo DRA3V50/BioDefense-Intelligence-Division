@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-4731
+Case ID: FSE-2026-2292
 
-Classification: Memory Artifact Investigation
+Classification: Supply Chain Validation Review
 
 Severity: LOW
 
@@ -12,4 +12,4 @@ Status: Open
 
 ## Assessment
 
-Exposure indicators remain under review.
+Additional artifact correlation required.
