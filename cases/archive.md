@@ -51,3 +51,15 @@ Observed firmware hash deviations requiring validation.
 Embedded device telemetry revealed irregular execution patterns.
 
 ---
+
+## FSE-2026-4731
+
+- Date: 2026-06-24
+- Classification: Memory Artifact Investigation
+- Severity: LOW
+- Status: Open
+- Confidence: 66%
+
+Embedded device telemetry revealed irregular execution patterns.
+
+---

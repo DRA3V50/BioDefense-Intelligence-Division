@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-1183",
+  "case_id": "FSE-2026-4731",
   "date": "2026-06-24",
-  "classification": "Unsigned Firmware Detection",
+  "classification": "Memory Artifact Investigation",
   "severity": "LOW",
   "status": "Open",
-  "affected_platform": "Network Appliance",
-  "confidence": 86,
-  "affected_assets": 13,
+  "affected_platform": "Security Appliance",
+  "confidence": 66,
+  "affected_assets": 8,
   "assessment": "Embedded device telemetry revealed irregular execution patterns."
 }

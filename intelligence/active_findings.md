@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Embedded device telemetry anomaly detected.
+Unexpected firmware artifact discovered.
 
 ## Finding 2
-Configuration persistence indicator observed.
-
-## Finding 3
 Unsigned module identified during validation.
 
+## Finding 3
+Boot sequence integrity review required.
+
 ## Case ID
-FSE-2026-1183
+FSE-2026-4731
 
 ## Analyst Confidence
-86%
+66%

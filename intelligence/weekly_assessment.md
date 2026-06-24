@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-1183
+Case ID: FSE-2026-4731
 
-Classification: Unsigned Firmware Detection
+Classification: Memory Artifact Investigation
 
 Severity: LOW
 
