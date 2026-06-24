@@ -48,6 +48,9 @@ jobs:
       - name: Update Findings
         run: python scripts/update_findings.py
 
+      - name: Update Device Profile
+        run: python scripts/update_device_profile.py
+
       - name: Commit Updated Case
         run: |
           git config --global user.name "github-actions[bot]"
