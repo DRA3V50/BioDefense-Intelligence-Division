@@ -45,6 +45,9 @@ jobs:
       - name: Update Weekly Assessment
         run: python scripts/update_assessment.py
 
+      - name: Update Findings
+        run: python scripts/update_findings.py
+
       - name: Commit Updated Case
         run: |
           git config --global user.name "github-actions[bot]"
