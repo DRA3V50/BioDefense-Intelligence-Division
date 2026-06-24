@@ -1,16 +1,16 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-23
+## 2026-06-24
 
 ### Case Opened
-Case ID: FSE-2026-8857
+Case ID: FSE-2026-1183
 
 ### Classification
-Firmware Integrity Alert
+Unsigned Firmware Detection
 
 ### Initial Assessment
-Observed firmware hash deviations requiring validation.
+Embedded device telemetry revealed irregular execution patterns.
 
 ### Current Status
 Open

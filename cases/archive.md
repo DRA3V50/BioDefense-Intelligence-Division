@@ -39,3 +39,15 @@ Embedded device telemetry revealed irregular execution patterns.
 Observed firmware hash deviations requiring validation.
 
 ---
+
+## FSE-2026-1183
+
+- Date: 2026-06-24
+- Classification: Unsigned Firmware Detection
+- Severity: LOW
+- Status: Open
+- Confidence: 86%
+
+Embedded device telemetry revealed irregular execution patterns.
+
+---

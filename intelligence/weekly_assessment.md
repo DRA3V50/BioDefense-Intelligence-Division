@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-8857
+Case ID: FSE-2026-1183
 
-Classification: Firmware Integrity Alert
+Classification: Unsigned Firmware Detection
 
 Severity: LOW
 
@@ -12,4 +12,4 @@ Status: Open
 
 ## Assessment
 
-Containment recommendations remain unchanged.
+Exposure indicators remain under review.

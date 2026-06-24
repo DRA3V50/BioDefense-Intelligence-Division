@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-8857",
-  "date": "2026-06-23",
-  "classification": "Firmware Integrity Alert",
+  "case_id": "FSE-2026-1183",
+  "date": "2026-06-24",
+  "classification": "Unsigned Firmware Detection",
   "severity": "LOW",
   "status": "Open",
   "affected_platform": "Network Appliance",
   "confidence": 86,
-  "affected_assets": 6,
-  "assessment": "Observed firmware hash deviations requiring validation."
+  "affected_assets": 13,
+  "assessment": "Embedded device telemetry revealed irregular execution patterns."
 }
