@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Boot sequence integrity review required.
+Configuration persistence indicator observed.
 
 ## Finding 2
-Unsigned module identified during validation.
+Supply chain verification remains incomplete.
 
 ## Finding 3
-Unexpected firmware artifact discovered.
+Firmware hash mismatch detected.
 
 ## Case ID
-FSE-2026-7081
+FSE-2026-2534
 
 ## Analyst Confidence
-79%
+87%

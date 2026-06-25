@@ -87,3 +87,15 @@ Indicators warrant continued monitoring and forensic review.
 Analyst review identified anomalous embedded system behavior.
 
 ---
+
+## FSE-2026-2534
+
+- Date: 2026-06-25
+- Classification: Unsigned Firmware Detection
+- Severity: MODERATE
+- Status: Open
+- Confidence: 87%
+
+Analyst review identified anomalous embedded system behavior.
+
+---

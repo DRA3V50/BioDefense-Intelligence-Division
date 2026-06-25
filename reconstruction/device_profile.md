@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-7081
+FSE-2026-2534
 
 ## Platform
-Industrial Controller
+Router Firmware
 
 ## Firmware Classification
 Unsigned Firmware Detection
 
 ## Processor Architecture
-ARM
+MIPS
 
 ## Bootloader
-Barebox
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

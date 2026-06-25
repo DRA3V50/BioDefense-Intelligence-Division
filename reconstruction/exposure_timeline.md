@@ -4,7 +4,7 @@
 ## 2026-06-25
 
 ### Case Opened
-Case ID: FSE-2026-7081
+Case ID: FSE-2026-2534
 
 ### Classification
 Unsigned Firmware Detection
@@ -16,6 +16,6 @@ Analyst review identified anomalous embedded system behavior.
 Open
 
 ### Severity
-HIGH
+MODERATE
 
 ---

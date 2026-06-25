@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-7081
+Case ID: FSE-2026-2534
 
 Classification: Unsigned Firmware Detection
 
-Severity: HIGH
+Severity: MODERATE
 
 Status: Open
 
 ## Assessment
 
-Boot sequence integrity requires further validation.
+Exposure indicators remain under review.

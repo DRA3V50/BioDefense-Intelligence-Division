@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-7081",
+  "case_id": "FSE-2026-2534",
   "date": "2026-06-25",
   "classification": "Unsigned Firmware Detection",
-  "severity": "HIGH",
+  "severity": "MODERATE",
   "status": "Open",
-  "affected_platform": "Industrial Controller",
-  "confidence": 79,
-  "affected_assets": 10,
+  "affected_platform": "Router Firmware",
+  "confidence": 87,
+  "affected_assets": 15,
   "assessment": "Analyst review identified anomalous embedded system behavior."
 }

@@ -15,31 +15,33 @@ Investigative security laboratory dedicated to analyzing high-risk digital incid
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # 🔍 Active Investigation
 
-**Case ID:** FSE-2026-7081
+**Case ID:** FSE-2026-2534
 
 **Date:** 2026-06-25
 
 **Classification:** Unsigned Firmware Detection
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
 **Status:** Open
 
-**Affected Platform:** Industrial Controller
+**Affected Platform:** Router Firmware
 
-**Confidence:** 79%
+**Confidence:** 87%
 
-**Affected Assets:** 10
+**Affected Assets:** 15
 
 ## Analyst Assessment
 
 Analyst review identified anomalous embedded system behavior.
 
 <!-- FSE-REPORT-END -->
+
 
 
 
