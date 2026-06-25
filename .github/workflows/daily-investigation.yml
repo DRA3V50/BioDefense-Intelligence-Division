@@ -51,6 +51,9 @@ jobs:
       - name: Update Device Profile
         run: python scripts/update_device_profile.py
 
+      - name: Update Workbook
+        run: python scripts/update_workbook.py
+
       - name: Commit Updated Case
         run: |
           git config --global user.name "github-actions[bot]"
