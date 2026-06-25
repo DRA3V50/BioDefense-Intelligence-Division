@@ -65,6 +65,7 @@ jobs:
           git add evidence/
           git add reconstruction/
           git add intelligence/
+          git add workbooks/
 
           git diff --staged --quiet || git commit -m "Daily investigation update"
 
