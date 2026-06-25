@@ -7,14 +7,10 @@ workbook_path = "workbooks/Exposure-Tracking-Matrix.xlsx"
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-if Path(workbook_path).exists():
-    wb = load_workbook(workbook_path)
-    ws = wb.active
-else:
+if not Path(workbook_path).exists():
     wb = Workbook()
     ws = wb.active
 
-if ws.max_row == 1 and ws["A1"].value is None:
     ws.append([
         "Date",
         "Case ID",
@@ -24,6 +20,10 @@ if ws.max_row == 1 and ws["A1"].value is None:
         "Confidence",
         "Status"
     ])
+
+else:
+    wb = load_workbook(workbook_path)
+    ws = wb.active
 
 ws.append([
     case["date"],
