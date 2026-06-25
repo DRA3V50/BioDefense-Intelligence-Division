@@ -14,31 +14,33 @@ Investigative security laboratory dedicated to analyzing high-risk digital incid
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # 🔍 Active Investigation
 
-**Case ID:** FSE-2026-2292
+**Case ID:** FSE-2026-7081
 
-**Date:** 2026-06-24
+**Date:** 2026-06-25
 
-**Classification:** Supply Chain Validation Review
+**Classification:** Unsigned Firmware Detection
 
-**Severity:** LOW
+**Severity:** HIGH
 
 **Status:** Open
 
 **Affected Platform:** Industrial Controller
 
-**Confidence:** 70%
+**Confidence:** 79%
 
-**Affected Assets:** 6
+**Affected Assets:** 10
 
 ## Analyst Assessment
 
-Indicators warrant continued monitoring and forensic review.
+Analyst review identified anomalous embedded system behavior.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

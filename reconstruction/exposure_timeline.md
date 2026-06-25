@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-24
+## 2026-06-25
 
 ### Case Opened
-Case ID: FSE-2026-2292
+Case ID: FSE-2026-7081
 
 ### Classification
-Supply Chain Validation Review
+Unsigned Firmware Detection
 
 ### Initial Assessment
-Indicators warrant continued monitoring and forensic review.
+Analyst review identified anomalous embedded system behavior.
 
 ### Current Status
 Open
 
 ### Severity
-LOW
+HIGH
 
 ---

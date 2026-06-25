@@ -5,3 +5,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-06-24,FSE-2026-1183,Unsigned Firmware Detection,LOW,Open,86
 2026-06-24,FSE-2026-4731,Memory Artifact Investigation,LOW,Open,66
 2026-06-24,FSE-2026-2292,Supply Chain Validation Review,LOW,Open,70
+2026-06-25,FSE-2026-7081,Unsigned Firmware Detection,HIGH,Open,79

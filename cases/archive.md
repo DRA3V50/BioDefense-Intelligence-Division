@@ -75,3 +75,15 @@ Embedded device telemetry revealed irregular execution patterns.
 Indicators warrant continued monitoring and forensic review.
 
 ---
+
+## FSE-2026-7081
+
+- Date: 2026-06-25
+- Classification: Unsigned Firmware Detection
+- Severity: HIGH
+- Status: Open
+- Confidence: 79%
+
+Analyst review identified anomalous embedded system behavior.
+
+---

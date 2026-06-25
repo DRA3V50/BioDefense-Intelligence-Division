@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-2292
+FSE-2026-7081
 
 ## Platform
 Industrial Controller
 
 ## Firmware Classification
-Supply Chain Validation Review
+Unsigned Firmware Detection
 
 ## Processor Architecture
-PowerPC
+ARM
 
 ## Bootloader
-U-Boot
+Barebox
 
 ## Exposure Status
 Under Investigation

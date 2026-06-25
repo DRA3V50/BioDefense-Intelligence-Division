@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-2292
+Case ID: FSE-2026-7081
 
-Classification: Supply Chain Validation Review
+Classification: Unsigned Firmware Detection
 
-Severity: LOW
+Severity: HIGH
 
 Status: Open
 
 ## Assessment
 
-Additional artifact correlation required.
+Boot sequence integrity requires further validation.

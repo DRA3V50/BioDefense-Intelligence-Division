@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-2292",
-  "date": "2026-06-24",
-  "classification": "Supply Chain Validation Review",
-  "severity": "LOW",
+  "case_id": "FSE-2026-7081",
+  "date": "2026-06-25",
+  "classification": "Unsigned Firmware Detection",
+  "severity": "HIGH",
   "status": "Open",
   "affected_platform": "Industrial Controller",
-  "confidence": 70,
-  "affected_assets": 6,
-  "assessment": "Indicators warrant continued monitoring and forensic review."
+  "confidence": 79,
+  "affected_assets": 10,
+  "assessment": "Analyst review identified anomalous embedded system behavior."
 }

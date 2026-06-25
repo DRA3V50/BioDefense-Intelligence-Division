@@ -15,3 +15,4 @@ EV-0013,2026-06-23,FSE-2026-8857,Firmware Image,Observed firmware hash deviation
 EV-0014,2026-06-24,FSE-2026-1183,Firmware Signature,Embedded device telemetry revealed irregular execution patterns.
 EV-0015,2026-06-24,FSE-2026-4731,Memory Dump,Embedded device telemetry revealed irregular execution patterns.
 EV-0016,2026-06-24,FSE-2026-2292,Supply Chain Record,Indicators warrant continued monitoring and forensic review.
+EV-0017,2026-06-25,FSE-2026-7081,Firmware Signature,Analyst review identified anomalous embedded system behavior.
