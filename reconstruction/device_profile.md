@@ -1,16 +1,16 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-2534
+FSE-2026-8702
 
 ## Platform
-Router Firmware
+Security Appliance
 
 ## Firmware Classification
-Unsigned Firmware Detection
+Supply Chain Validation Review
 
 ## Processor Architecture
-MIPS
+ARM64
 
 ## Bootloader
 Vendor Proprietary

@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-2534
+Case ID: FSE-2026-8702
 
-Classification: Unsigned Firmware Detection
+Classification: Supply Chain Validation Review
 
 Severity: MODERATE
 
@@ -12,4 +12,4 @@ Status: Open
 
 ## Assessment
 
-Exposure indicators remain under review.
+Analyst confidence increased following artifact review.

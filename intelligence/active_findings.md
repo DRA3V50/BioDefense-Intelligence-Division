@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Configuration persistence indicator observed.
+Memory analysis revealed irregular execution patterns.
 
 ## Finding 2
-Supply chain verification remains incomplete.
+Embedded device telemetry anomaly detected.
 
 ## Finding 3
-Firmware hash mismatch detected.
+Unexpected firmware artifact discovered.
 
 ## Case ID
-FSE-2026-2534
+FSE-2026-8702
 
 ## Analyst Confidence
-87%
+72%

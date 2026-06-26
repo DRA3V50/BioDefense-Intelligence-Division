@@ -1,16 +1,16 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-25
+## 2026-06-26
 
 ### Case Opened
-Case ID: FSE-2026-2534
+Case ID: FSE-2026-8702
 
 ### Classification
-Unsigned Firmware Detection
+Supply Chain Validation Review
 
 ### Initial Assessment
-Analyst review identified anomalous embedded system behavior.
+Observed firmware hash deviations requiring validation.
 
 ### Current Status
 Open

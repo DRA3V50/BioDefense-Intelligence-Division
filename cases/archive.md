@@ -99,3 +99,15 @@ Analyst review identified anomalous embedded system behavior.
 Analyst review identified anomalous embedded system behavior.
 
 ---
+
+## FSE-2026-8702
+
+- Date: 2026-06-26
+- Classification: Supply Chain Validation Review
+- Severity: MODERATE
+- Status: Open
+- Confidence: 72%
+
+Observed firmware hash deviations requiring validation.
+
+---

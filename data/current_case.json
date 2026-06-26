@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-2534",
-  "date": "2026-06-25",
-  "classification": "Unsigned Firmware Detection",
+  "case_id": "FSE-2026-8702",
+  "date": "2026-06-26",
+  "classification": "Supply Chain Validation Review",
   "severity": "MODERATE",
   "status": "Open",
-  "affected_platform": "Router Firmware",
-  "confidence": 87,
-  "affected_assets": 15,
-  "assessment": "Analyst review identified anomalous embedded system behavior."
+  "affected_platform": "Security Appliance",
+  "confidence": 72,
+  "affected_assets": 1,
+  "assessment": "Observed firmware hash deviations requiring validation."
 }
