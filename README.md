@@ -18,27 +18,71 @@ Investigative security laboratory dedicated to analyzing high-risk digital incid
 
 <!-- FSE-REPORT-START -->
 
-# 🔍 Active Investigation
+# 🛰 Current Investigation
 
-**Case ID:** FSE-2026-2534
+## Mission
 
-**Date:** 2026-06-25
+Firmware Sentinel Exposure (FSE) is a defensive firmware intelligence and exposure analysis platform focused on identifying firmware compromise, reconstructing exposure pathways, and supporting blue-team investigations involving critical infrastructure, biomedical environments, and public safety technologies.
 
-**Classification:** Unsigned Firmware Detection
+---
 
-**Severity:** MODERATE
+# Current Investigation Summary
 
-**Status:** Open
+**Case ID:**
 
-**Affected Platform:** Router Firmware
+**Classification:**
 
-**Confidence:** 87%
+**Severity:**
 
-**Affected Assets:** 15
+**Status:**
 
-## Analyst Assessment
+**Confidence:**
 
-Analyst review identified anomalous embedded system behavior.
+**Affected Platform:**
+
+**Affected Assets:**
+
+---
+
+# Executive Assessment
+
+(Current assessment generated automatically)
+
+---
+
+# Threat Intelligence
+
+(Current intelligence generated automatically)
+
+---
+
+# Exposure Timeline
+
+(Current reconstruction generated automatically)
+
+---
+
+# Evidence Summary
+
+(Current evidence generated automatically)
+
+---
+
+# Operational Impact
+
+(Current impact generated automatically)
+
+---
+
+# Defensive Recommendations
+
+(Current recommendations generated automatically)
+
+---
+
+# Recent Investigations
+
+(Current investigation history generated automatically)
 
 <!-- FSE-REPORT-END -->
 
