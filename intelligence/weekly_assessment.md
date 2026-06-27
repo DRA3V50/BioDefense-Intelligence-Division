@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-8702
+Case ID: FSE-2026-1126
 
-Classification: Supply Chain Validation Review
+Classification: Unsigned Firmware Detection
 
 Severity: MODERATE
 
@@ -12,4 +12,4 @@ Status: Open
 
 ## Assessment
 
-Analyst confidence increased following artifact review.
+Boot sequence integrity requires further validation.

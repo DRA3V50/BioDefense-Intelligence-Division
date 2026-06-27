@@ -1,16 +1,16 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-26
+## 2026-06-27
 
 ### Case Opened
-Case ID: FSE-2026-8702
+Case ID: FSE-2026-1126
 
 ### Classification
-Supply Chain Validation Review
+Unsigned Firmware Detection
 
 ### Initial Assessment
-Observed firmware hash deviations requiring validation.
+Evidence remains inconclusive and requires additional collection.
 
 ### Current Status
 Open

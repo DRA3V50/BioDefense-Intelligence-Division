@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Memory analysis revealed irregular execution patterns.
+Unsigned module identified during validation.
 
 ## Finding 2
-Embedded device telemetry anomaly detected.
+Supply chain verification remains incomplete.
 
 ## Finding 3
-Unexpected firmware artifact discovered.
+Memory analysis revealed irregular execution patterns.
 
 ## Case ID
-FSE-2026-8702
+FSE-2026-1126
 
 ## Analyst Confidence
-72%
+90%

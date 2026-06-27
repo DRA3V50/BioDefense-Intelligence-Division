@@ -111,3 +111,15 @@ Analyst review identified anomalous embedded system behavior.
 Observed firmware hash deviations requiring validation.
 
 ---
+
+## FSE-2026-1126
+
+- Date: 2026-06-27
+- Classification: Unsigned Firmware Detection
+- Severity: MODERATE
+- Status: Open
+- Confidence: 90%
+
+Evidence remains inconclusive and requires additional collection.
+
+---

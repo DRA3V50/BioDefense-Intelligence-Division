@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-8702",
-  "date": "2026-06-26",
-  "classification": "Supply Chain Validation Review",
+  "case_id": "FSE-2026-1126",
+  "date": "2026-06-27",
+  "classification": "Unsigned Firmware Detection",
   "severity": "MODERATE",
   "status": "Open",
-  "affected_platform": "Security Appliance",
-  "confidence": 72,
-  "affected_assets": 1,
-  "assessment": "Observed firmware hash deviations requiring validation."
+  "affected_platform": "IoT Gateway",
+  "confidence": 90,
+  "affected_assets": 14,
+  "assessment": "Evidence remains inconclusive and requires additional collection."
 }

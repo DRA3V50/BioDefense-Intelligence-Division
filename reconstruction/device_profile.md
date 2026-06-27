@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-8702
+FSE-2026-1126
 
 ## Platform
-Security Appliance
+IoT Gateway
 
 ## Firmware Classification
-Supply Chain Validation Review
+Unsigned Firmware Detection
 
 ## Processor Architecture
 ARM64
 
 ## Bootloader
-Vendor Proprietary
+U-Boot
 
 ## Exposure Status
 Under Investigation
