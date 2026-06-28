@@ -1,16 +1,16 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-27
+## 2026-06-28
 
 ### Case Opened
-Case ID: FSE-2026-1126
+Case ID: FSE-2026-8204
 
 ### Classification
-Unsigned Firmware Detection
+Bootloader Anomaly
 
 ### Initial Assessment
-Evidence remains inconclusive and requires additional collection.
+Artifact correlation suggests potential unauthorized modification.
 
 ### Current Status
 Open

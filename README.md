@@ -17,31 +17,33 @@ A defensive cyber intelligence and digital forensics program dedicated to resear
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # 🔍 Active Investigation
 
-**Case ID:** FSE-2026-1126
+**Case ID:** FSE-2026-8204
 
-**Date:** 2026-06-27
+**Date:** 2026-06-28
 
-**Classification:** Unsigned Firmware Detection
+**Classification:** Bootloader Anomaly
 
 **Severity:** MODERATE
 
 **Status:** Open
 
-**Affected Platform:** IoT Gateway
+**Affected Platform:** Router Firmware
 
-**Confidence:** 90%
+**Confidence:** 63%
 
-**Affected Assets:** 14
+**Affected Assets:** 15
 
 ## Analyst Assessment
 
-Evidence remains inconclusive and requires additional collection.
+Artifact correlation suggests potential unauthorized modification.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

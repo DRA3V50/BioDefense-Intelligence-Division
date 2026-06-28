@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-1126",
-  "date": "2026-06-27",
-  "classification": "Unsigned Firmware Detection",
+  "case_id": "FSE-2026-8204",
+  "date": "2026-06-28",
+  "classification": "Bootloader Anomaly",
   "severity": "MODERATE",
   "status": "Open",
-  "affected_platform": "IoT Gateway",
-  "confidence": 90,
-  "affected_assets": 14,
-  "assessment": "Evidence remains inconclusive and requires additional collection."
+  "affected_platform": "Router Firmware",
+  "confidence": 63,
+  "affected_assets": 15,
+  "assessment": "Artifact correlation suggests potential unauthorized modification."
 }

@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-1126
+FSE-2026-8204
 
 ## Platform
-IoT Gateway
+Router Firmware
 
 ## Firmware Classification
-Unsigned Firmware Detection
+Bootloader Anomaly
 
 ## Processor Architecture
-ARM64
+ARM
 
 ## Bootloader
-U-Boot
+Barebox
 
 ## Exposure Status
 Under Investigation

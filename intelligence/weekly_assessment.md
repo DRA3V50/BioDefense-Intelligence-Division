@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-1126
+Case ID: FSE-2026-8204
 
-Classification: Unsigned Firmware Detection
+Classification: Bootloader Anomaly
 
 Severity: MODERATE
 
@@ -12,4 +12,4 @@ Status: Open
 
 ## Assessment
 
-Boot sequence integrity requires further validation.
+Additional artifact correlation required.

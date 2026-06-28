@@ -9,3 +9,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-06-25,FSE-2026-2534,Unsigned Firmware Detection,MODERATE,Open,87
 2026-06-26,FSE-2026-8702,Supply Chain Validation Review,MODERATE,Open,72
 2026-06-27,FSE-2026-1126,Unsigned Firmware Detection,MODERATE,Open,90
+2026-06-28,FSE-2026-8204,Bootloader Anomaly,MODERATE,Open,63

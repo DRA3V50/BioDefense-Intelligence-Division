@@ -123,3 +123,15 @@ Observed firmware hash deviations requiring validation.
 Evidence remains inconclusive and requires additional collection.
 
 ---
+
+## FSE-2026-8204
+
+- Date: 2026-06-28
+- Classification: Bootloader Anomaly
+- Severity: MODERATE
+- Status: Open
+- Confidence: 63%
+
+Artifact correlation suggests potential unauthorized modification.
+
+---

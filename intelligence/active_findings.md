@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Unsigned module identified during validation.
-
-## Finding 2
 Supply chain verification remains incomplete.
 
+## Finding 2
+Unsigned module identified during validation.
+
 ## Finding 3
-Memory analysis revealed irregular execution patterns.
+Configuration persistence indicator observed.
 
 ## Case ID
-FSE-2026-1126
+FSE-2026-8204
 
 ## Analyst Confidence
-90%
+63%
