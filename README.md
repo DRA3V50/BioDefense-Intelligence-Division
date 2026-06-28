@@ -1,6 +1,5 @@
 # Firmware-Sentinel-Exposure
-Investigative security laboratory dedicated to analyzing high-risk digital incidents, tracing exposure pathways, and reconstructing compromise events. Research focuses on identifying how anomalous activity emerges, propagates, and persists across operational environments through reverse engineering, intelligence analysis, and containment-focused defensive research using C# and Python.
-
+A defensive cyber intelligence and digital forensics program dedicated to researching firmware compromise, embedded system threats, and cyber incidents affecting critical infrastructure and biosecurity environments. The project combines Python automation, C# analysis tooling, structured investigations, evidence management, reconstruction workflows, and analyst reporting modern investigative operations.
 
 
 
