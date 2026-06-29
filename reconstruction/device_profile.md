@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-8204
+FSE-2026-5429
 
 ## Platform
-Router Firmware
+Network Appliance
 
 ## Firmware Classification
-Bootloader Anomaly
+Supply Chain Validation Review
 
 ## Processor Architecture
-ARM
+PowerPC
 
 ## Bootloader
-Barebox
+Coreboot
 
 ## Exposure Status
 Under Investigation

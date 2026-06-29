@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-8204
+Case ID: FSE-2026-5429
 
-Classification: Bootloader Anomaly
+Classification: Supply Chain Validation Review
 
 Severity: MODERATE
 
@@ -12,4 +12,4 @@ Status: Open
 
 ## Assessment
 
-Additional artifact correlation required.
+Analyst confidence increased following artifact review.

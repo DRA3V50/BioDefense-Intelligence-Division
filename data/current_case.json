@@ -1,11 +1,11 @@
 {
-  "case_id": "FSE-2026-8204",
-  "date": "2026-06-28",
-  "classification": "Bootloader Anomaly",
+  "case_id": "FSE-2026-5429",
+  "date": "2026-06-29",
+  "classification": "Supply Chain Validation Review",
   "severity": "MODERATE",
   "status": "Open",
-  "affected_platform": "Router Firmware",
-  "confidence": 63,
-  "affected_assets": 15,
+  "affected_platform": "Network Appliance",
+  "confidence": 88,
+  "affected_assets": 14,
   "assessment": "Artifact correlation suggests potential unauthorized modification."
 }

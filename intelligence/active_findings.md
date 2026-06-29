@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Supply chain verification remains incomplete.
+Unexpected firmware artifact discovered.
 
 ## Finding 2
-Unsigned module identified during validation.
+Embedded device telemetry anomaly detected.
 
 ## Finding 3
-Configuration persistence indicator observed.
+Firmware hash mismatch detected.
 
 ## Case ID
-FSE-2026-8204
+FSE-2026-5429
 
 ## Analyst Confidence
-63%
+88%

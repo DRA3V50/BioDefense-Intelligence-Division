@@ -1,13 +1,13 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-28
+## 2026-06-29
 
 ### Case Opened
-Case ID: FSE-2026-8204
+Case ID: FSE-2026-5429
 
 ### Classification
-Bootloader Anomaly
+Supply Chain Validation Review
 
 ### Initial Assessment
 Artifact correlation suggests potential unauthorized modification.

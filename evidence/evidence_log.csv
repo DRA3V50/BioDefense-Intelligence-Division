@@ -20,3 +20,4 @@ EV-0018,2026-06-25,FSE-2026-2534,Firmware Signature,Analyst review identified an
 EV-0019,2026-06-26,FSE-2026-8702,Supply Chain Record,Observed firmware hash deviations requiring validation.
 EV-0020,2026-06-27,FSE-2026-1126,Firmware Signature,Evidence remains inconclusive and requires additional collection.
 EV-0021,2026-06-28,FSE-2026-8204,Boot Artifact,Artifact correlation suggests potential unauthorized modification.
+EV-0022,2026-06-29,FSE-2026-5429,Supply Chain Record,Artifact correlation suggests potential unauthorized modification.
