@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Configuration persistence indicator observed.
+Embedded device telemetry anomaly detected.
 
 ## Finding 2
-Unexpected firmware artifact discovered.
+Firmware hash mismatch detected.
 
 ## Finding 3
-Boot sequence integrity review required.
+Memory analysis revealed irregular execution patterns.
 
 ## Case ID
-BID-2026-9515
+BID-2026-3524
 
 ## Analyst Confidence
-90%
+91%

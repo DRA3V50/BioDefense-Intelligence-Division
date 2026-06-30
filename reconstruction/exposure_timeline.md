@@ -4,18 +4,18 @@
 ## 2026-06-30
 
 ### Case Opened
-Case ID: BID-2026-9515
+Case ID: BID-2026-3524
 
 ### Classification
-Unsigned Firmware Detection
+Firmware Integrity Alert
 
 ### Initial Assessment
-Observed firmware integrity deviations requiring immediate validation.
+Embedded telemetry indicates persistent unauthorized execution.
 
 ### Current Status
 Containment
 
 ### Severity
-CRITICAL
+HIGH
 
 ---

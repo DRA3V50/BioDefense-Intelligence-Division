@@ -49,3 +49,15 @@ Observed firmware integrity deviations requiring immediate validation.
 Observed firmware integrity deviations requiring immediate validation.
 
 ---
+
+## BID-2026-3524
+
+- Date: 2026-06-30
+- Classification: Firmware Integrity Alert
+- Severity: HIGH
+- Status: Containment
+- Confidence: 91%
+
+Embedded telemetry indicates persistent unauthorized execution.
+
+---

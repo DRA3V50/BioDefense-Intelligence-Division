@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-9515
+Case ID: BID-2026-3524
 
-Classification: Unsigned Firmware Detection
+Classification: Firmware Integrity Alert
 
-Severity: CRITICAL
+Severity: HIGH
 
 Status: Containment
 
 ## Assessment
 
-Containment recommendations remain unchanged.
+No evidence of lateral movement detected.

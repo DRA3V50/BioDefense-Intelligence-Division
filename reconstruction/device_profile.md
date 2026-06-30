@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-9515
+BID-2026-3524
 
 ## Platform
 Embedded Linux Device
 
 ## Firmware Classification
-Unsigned Firmware Detection
+Firmware Integrity Alert
 
 ## Processor Architecture
 ARM
 
 ## Bootloader
-Vendor Proprietary
+Barebox
 
 ## Exposure Status
 Under Investigation
