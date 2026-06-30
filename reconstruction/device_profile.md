@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-8035
+BID-2026-4019
 
 ## Platform
-Router Firmware
+IoT Gateway
 
 ## Firmware Classification
-Unauthorized Firmware Modification
+Persistence Indicator Review
 
 ## Processor Architecture
-PowerPC
+ARM64
 
 ## Bootloader
-Vendor Proprietary
+Barebox
 
 ## Exposure Status
 Under Investigation

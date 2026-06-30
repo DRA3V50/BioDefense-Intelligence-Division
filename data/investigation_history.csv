@@ -12,3 +12,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-06-28,FSE-2026-8204,Bootloader Anomaly,MODERATE,Open,63
 2026-06-29,FSE-2026-5429,Supply Chain Validation Review,MODERATE,Open,88
 2026-06-30,BID-2026-8035,Unauthorized Firmware Modification,LOW,Containment,90
+2026-06-30,BID-2026-4019,Persistence Indicator Review,MODERATE,Open,90

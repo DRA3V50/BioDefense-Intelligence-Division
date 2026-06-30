@@ -25,3 +25,15 @@ Artifact correlation suggests potential unauthorized modification.
 Embedded telemetry indicates persistent unauthorized execution.
 
 ---
+
+## BID-2026-4019
+
+- Date: 2026-06-30
+- Classification: Persistence Indicator Review
+- Severity: MODERATE
+- Status: Open
+- Confidence: 90%
+
+Observed firmware integrity deviations requiring immediate validation.
+
+---

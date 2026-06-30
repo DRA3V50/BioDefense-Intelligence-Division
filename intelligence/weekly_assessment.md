@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-8035
+Case ID: BID-2026-4019
 
-Classification: Unauthorized Firmware Modification
+Classification: Persistence Indicator Review
 
-Severity: LOW
+Severity: MODERATE
 
-Status: Containment
+Status: Open
 
 ## Assessment
 
-Exposure indicators remain under review.
+Firmware signature verification remains pending.
