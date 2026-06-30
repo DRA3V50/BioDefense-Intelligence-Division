@@ -58,14 +58,6 @@ if recent:
 report = f"""
 <!-- FSE-REPORT-START -->
 
-# BioDefense Intelligence Division
-
-Blue-team research environment focused on digital biosecurity,
-firmware threat analysis, embedded device investigations,
-and intelligence-driven exposure reconstruction.
-
----
-
 ## Active Investigation
 
 **Case ID:** {case['case_id']}
