@@ -1,4 +1,4 @@
-# Firmware-Sentinel-Exposure
+# BioDefense-Intelligence-Division
 A defensive cyber intelligence and digital forensics program dedicated to researching firmware compromise, embedded system threats, and cyber incidents affecting critical infrastructure and biosecurity environments. The project combines Python automation, C# analysis tooling, structured investigations, evidence management, reconstruction workflows, and analyst reporting modern investigative operations.
 
 
