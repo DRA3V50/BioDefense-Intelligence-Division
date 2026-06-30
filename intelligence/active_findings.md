@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Unexpected firmware artifact discovered.
-
-## Finding 2
 Embedded device telemetry anomaly detected.
 
+## Finding 2
+Memory analysis revealed irregular execution patterns.
+
 ## Finding 3
-Firmware hash mismatch detected.
+Unsigned module identified during validation.
 
 ## Case ID
-FSE-2026-5429
+BID-2026-8035
 
 ## Analyst Confidence
-88%
+90%

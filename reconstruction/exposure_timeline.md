@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-06-29
+## 2026-06-30
 
 ### Case Opened
-Case ID: FSE-2026-5429
+Case ID: BID-2026-8035
 
 ### Classification
-Supply Chain Validation Review
+Unauthorized Firmware Modification
 
 ### Initial Assessment
-Artifact correlation suggests potential unauthorized modification.
+Embedded telemetry indicates persistent unauthorized execution.
 
 ### Current Status
-Open
+Containment
 
 ### Severity
-MODERATE
+LOW
 
 ---

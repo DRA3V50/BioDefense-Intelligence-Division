@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-FSE-2026-5429
+BID-2026-8035
 
 ## Platform
-Network Appliance
+Router Firmware
 
 ## Firmware Classification
-Supply Chain Validation Review
+Unauthorized Firmware Modification
 
 ## Processor Architecture
 PowerPC
 
 ## Bootloader
-Coreboot
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

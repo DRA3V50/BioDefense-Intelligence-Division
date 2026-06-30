@@ -21,3 +21,4 @@ EV-0019,2026-06-26,FSE-2026-8702,Supply Chain Record,Observed firmware hash devi
 EV-0020,2026-06-27,FSE-2026-1126,Firmware Signature,Evidence remains inconclusive and requires additional collection.
 EV-0021,2026-06-28,FSE-2026-8204,Boot Artifact,Artifact correlation suggests potential unauthorized modification.
 EV-0022,2026-06-29,FSE-2026-5429,Supply Chain Record,Artifact correlation suggests potential unauthorized modification.
+EV-0023,2026-06-30,BID-2026-8035,Firmware Binary,Embedded telemetry indicates persistent unauthorized execution.

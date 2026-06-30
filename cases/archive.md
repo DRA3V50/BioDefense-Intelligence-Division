@@ -13,3 +13,15 @@
 Artifact correlation suggests potential unauthorized modification.
 
 ---
+
+## BID-2026-8035
+
+- Date: 2026-06-30
+- Classification: Unauthorized Firmware Modification
+- Severity: LOW
+- Status: Containment
+- Confidence: 90%
+
+Embedded telemetry indicates persistent unauthorized execution.
+
+---

@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: FSE-2026-5429
+Case ID: BID-2026-8035
 
-Classification: Supply Chain Validation Review
+Classification: Unauthorized Firmware Modification
 
-Severity: MODERATE
+Severity: LOW
 
-Status: Open
+Status: Containment
 
 ## Assessment
 
-Analyst confidence increased following artifact review.
+Exposure indicators remain under review.
