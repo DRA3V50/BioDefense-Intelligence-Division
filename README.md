@@ -23,31 +23,32 @@ A defensive cyber intelligence and digital forensics program dedicated to resear
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3524
+**Case ID:** BID-2026-5688
 
 **Date:** 2026-06-30
 
-**Classification:** Firmware Integrity Alert
+**Classification:** Unsigned Firmware Detection
 
-**Severity:** HIGH
+**Severity:** CRITICAL
 
 **Status:** Containment
 
-**Affected Platform:** Embedded Linux Device
+**Affected Platform:** IoT Gateway
 
-**Confidence:** 91%
+**Confidence:** 70%
 
-**Affected Assets:** 10
+**Affected Assets:** 13
 
 ---
 
 ## Analyst Assessment
 
-Embedded telemetry indicates persistent unauthorized execution.
+Indicators warrant continued monitoring and forensic collection.
 
 ---
 
@@ -55,7 +56,7 @@ Embedded telemetry indicates persistent unauthorized execution.
 
 | Metric | Value |
 |--------|------:|
-| Investigations Logged | 15 |
+| Investigations Logged | 16 |
 | High Severity Cases | 0 |
 | Critical Severity Cases | 0 |
 | Division Status | ACTIVE |
@@ -90,6 +91,7 @@ Embedded telemetry indicates persistent unauthorized execution.
 > The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

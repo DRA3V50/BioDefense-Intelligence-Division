@@ -1,16 +1,16 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-3524
+BID-2026-5688
 
 ## Platform
-Embedded Linux Device
+IoT Gateway
 
 ## Firmware Classification
-Firmware Integrity Alert
+Unsigned Firmware Detection
 
 ## Processor Architecture
-ARM
+PowerPC
 
 ## Bootloader
 Barebox

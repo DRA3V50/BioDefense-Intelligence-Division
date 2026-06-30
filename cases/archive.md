@@ -61,3 +61,15 @@ Observed firmware integrity deviations requiring immediate validation.
 Embedded telemetry indicates persistent unauthorized execution.
 
 ---
+
+## BID-2026-5688
+
+- Date: 2026-06-30
+- Classification: Unsigned Firmware Detection
+- Severity: CRITICAL
+- Status: Containment
+- Confidence: 70%
+
+Indicators warrant continued monitoring and forensic collection.
+
+---

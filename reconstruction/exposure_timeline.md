@@ -4,18 +4,18 @@
 ## 2026-06-30
 
 ### Case Opened
-Case ID: BID-2026-3524
+Case ID: BID-2026-5688
 
 ### Classification
-Firmware Integrity Alert
+Unsigned Firmware Detection
 
 ### Initial Assessment
-Embedded telemetry indicates persistent unauthorized execution.
+Indicators warrant continued monitoring and forensic collection.
 
 ### Current Status
 Containment
 
 ### Severity
-HIGH
+CRITICAL
 
 ---

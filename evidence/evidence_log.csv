@@ -25,3 +25,4 @@ EV-0023,2026-06-30,BID-2026-8035,Firmware Binary,Embedded telemetry indicates pe
 EV-0024,2026-06-30,BID-2026-4019,Configuration Artifact,Observed firmware integrity deviations requiring immediate validation.
 EV-0025,2026-06-30,BID-2026-9515,Firmware Signature,Observed firmware integrity deviations requiring immediate validation.
 EV-0026,2026-06-30,BID-2026-3524,Firmware Image,Embedded telemetry indicates persistent unauthorized execution.
+EV-0027,2026-06-30,BID-2026-5688,Firmware Signature,Indicators warrant continued monitoring and forensic collection.
