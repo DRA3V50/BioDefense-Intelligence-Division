@@ -58,7 +58,7 @@ if recent:
 report = f"""
 <!-- FSE-REPORT-START -->
 
-# 🧬 BioDefense Intelligence Division
+# BioDefense Intelligence Division
 
 Blue-team research environment focused on digital biosecurity,
 firmware threat analysis, embedded device investigations,
@@ -66,7 +66,7 @@ and intelligence-driven exposure reconstruction.
 
 ---
 
-# 🔍 Active Investigation
+## Active Investigation
 
 **Case ID:** {case['case_id']}
 
@@ -117,8 +117,6 @@ and intelligence-driven exposure reconstruction.
 - Defensive malware analysis
 - Critical infrastructure protection
 
-> Resident Evil inspiration is limited to fictional investigative atmosphere.
-> All research, terminology, and workflows remain grounded in real defensive cybersecurity practices.
 
 <!-- FSE-REPORT-END -->
 """
