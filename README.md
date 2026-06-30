@@ -21,9 +21,10 @@ A defensive cyber intelligence and digital forensics program dedicated to resear
 
 
 
+
 <!-- FSE-REPORT-START -->
 
-# 🧬 BioDefense Intelligence Division
+# BioDefense Intelligence Division
 
 Blue-team research environment focused on digital biosecurity,
 firmware threat analysis, embedded device investigations,
@@ -31,23 +32,23 @@ and intelligence-driven exposure reconstruction.
 
 ---
 
-# 🔍 Active Investigation
+## Active Investigation
 
-**Case ID:** BID-2026-4019
+**Case ID:** BID-2026-9515
 
 **Date:** 2026-06-30
 
-**Classification:** Persistence Indicator Review
+**Classification:** Unsigned Firmware Detection
 
-**Severity:** MODERATE
+**Severity:** CRITICAL
 
-**Status:** Open
+**Status:** Containment
 
-**Affected Platform:** IoT Gateway
+**Affected Platform:** Embedded Linux Device
 
 **Confidence:** 90%
 
-**Affected Assets:** 8
+**Affected Assets:** 19
 
 ---
 
@@ -61,7 +62,7 @@ Observed firmware integrity deviations requiring immediate validation.
 
 | Metric | Value |
 |--------|------:|
-| Investigations Logged | 13 |
+| Investigations Logged | 14 |
 | High Severity Cases | 0 |
 | Critical Severity Cases | 0 |
 | Division Status | ACTIVE |
@@ -92,10 +93,11 @@ Observed firmware integrity deviations requiring immediate validation.
 - Defensive malware analysis
 - Critical infrastructure protection
 
-> Resident Evil inspiration is limited to fictional investigative atmosphere.
-> All research, terminology, and workflows remain grounded in real defensive cybersecurity practices.
+> BioDefense Intelligence Division is an analytical research environment focused on firmware compromise investigations, embedded device security, operational threat intelligence, digital evidence management, and cyber incident reconstruction. 
+> The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

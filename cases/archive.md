@@ -37,3 +37,15 @@ Embedded telemetry indicates persistent unauthorized execution.
 Observed firmware integrity deviations requiring immediate validation.
 
 ---
+
+## BID-2026-9515
+
+- Date: 2026-06-30
+- Classification: Unsigned Firmware Detection
+- Severity: CRITICAL
+- Status: Containment
+- Confidence: 90%
+
+Observed firmware integrity deviations requiring immediate validation.
+
+---

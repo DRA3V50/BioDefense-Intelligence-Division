@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-4019
+BID-2026-9515
 
 ## Platform
-IoT Gateway
+Embedded Linux Device
 
 ## Firmware Classification
-Persistence Indicator Review
+Unsigned Firmware Detection
 
 ## Processor Architecture
-ARM64
+ARM
 
 ## Bootloader
-Barebox
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

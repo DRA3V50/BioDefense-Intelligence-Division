@@ -23,3 +23,4 @@ EV-0021,2026-06-28,FSE-2026-8204,Boot Artifact,Artifact correlation suggests pot
 EV-0022,2026-06-29,FSE-2026-5429,Supply Chain Record,Artifact correlation suggests potential unauthorized modification.
 EV-0023,2026-06-30,BID-2026-8035,Firmware Binary,Embedded telemetry indicates persistent unauthorized execution.
 EV-0024,2026-06-30,BID-2026-4019,Configuration Artifact,Observed firmware integrity deviations requiring immediate validation.
+EV-0025,2026-06-30,BID-2026-9515,Firmware Signature,Observed firmware integrity deviations requiring immediate validation.

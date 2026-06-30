@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-4019
+Case ID: BID-2026-9515
 
-Classification: Persistence Indicator Review
+Classification: Unsigned Firmware Detection
 
-Severity: MODERATE
+Severity: CRITICAL
 
-Status: Open
+Status: Containment
 
 ## Assessment
 
-Firmware signature verification remains pending.
+Containment recommendations remain unchanged.

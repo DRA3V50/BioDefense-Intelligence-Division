@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Supply chain verification remains incomplete.
-
-## Finding 2
-Embedded device telemetry anomaly detected.
-
-## Finding 3
 Configuration persistence indicator observed.
 
+## Finding 2
+Unexpected firmware artifact discovered.
+
+## Finding 3
+Boot sequence integrity review required.
+
 ## Case ID
-BID-2026-4019
+BID-2026-9515
 
 ## Analyst Confidence
 90%
