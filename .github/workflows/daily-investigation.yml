@@ -53,6 +53,9 @@ jobs:
       - name: Update Findings
         run: python scripts/update_findings.py
 
+      - name: Update IOC Database
+        run: python scripts/update_ioc_database.py
+
       - name: Update Device Profile
         run: python scripts/update_device_profile.py
 
