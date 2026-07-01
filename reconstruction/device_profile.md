@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-5688
+BID-2026-5026
 
 ## Platform
-IoT Gateway
+Router Firmware
 
 ## Firmware Classification
-Unsigned Firmware Detection
+Bootloader Anomaly
 
 ## Processor Architecture
-PowerPC
+MIPS
 
 ## Bootloader
-Barebox
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

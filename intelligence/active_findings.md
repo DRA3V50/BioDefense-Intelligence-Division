@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Embedded device telemetry anomaly detected.
+Unsigned module identified during validation.
 
 ## Finding 2
-Memory analysis revealed irregular execution patterns.
+Embedded device telemetry anomaly detected.
 
 ## Finding 3
 Supply chain verification remains incomplete.
 
 ## Case ID
-BID-2026-5688
+BID-2026-5026
 
 ## Analyst Confidence
-70%
+97%

@@ -16,3 +16,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-06-30,BID-2026-9515,Unsigned Firmware Detection,CRITICAL,Containment,90
 2026-06-30,BID-2026-3524,Firmware Integrity Alert,HIGH,Containment,91
 2026-06-30,BID-2026-5688,Unsigned Firmware Detection,CRITICAL,Containment,70
+2026-07-01,BID-2026-5026,Bootloader Anomaly,MODERATE,Evidence Collection,97

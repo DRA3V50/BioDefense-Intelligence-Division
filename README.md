@@ -24,25 +24,26 @@ A defensive cyber intelligence and digital forensics program dedicated to resear
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5688
+**Case ID:** BID-2026-5026
 
-**Date:** 2026-06-30
+**Date:** 2026-07-01
 
-**Classification:** Unsigned Firmware Detection
+**Classification:** Bootloader Anomaly
 
-**Severity:** CRITICAL
+**Severity:** MODERATE
 
-**Status:** Containment
+**Status:** Evidence Collection
 
-**Affected Platform:** IoT Gateway
+**Affected Platform:** Router Firmware
 
-**Confidence:** 70%
+**Confidence:** 97%
 
-**Affected Assets:** 13
+**Affected Assets:** 7
 
 ---
 
@@ -56,7 +57,7 @@ Indicators warrant continued monitoring and forensic collection.
 
 | Metric | Value |
 |--------|------:|
-| Investigations Logged | 16 |
+| Investigations Logged | 17 |
 | High Severity Cases | 0 |
 | Critical Severity Cases | 0 |
 | Division Status | ACTIVE |
@@ -91,6 +92,7 @@ Indicators warrant continued monitoring and forensic collection.
 > The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

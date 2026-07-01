@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-5688
+Case ID: BID-2026-5026
 
-Classification: Unsigned Firmware Detection
+Classification: Bootloader Anomaly
 
-Severity: CRITICAL
+Severity: MODERATE
 
-Status: Containment
+Status: Evidence Collection
 
 ## Assessment
 
-Exposure indicators remain under review.
+Containment recommendations remain unchanged.

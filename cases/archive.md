@@ -73,3 +73,15 @@ Embedded telemetry indicates persistent unauthorized execution.
 Indicators warrant continued monitoring and forensic collection.
 
 ---
+
+## BID-2026-5026
+
+- Date: 2026-07-01
+- Classification: Bootloader Anomaly
+- Severity: MODERATE
+- Status: Evidence Collection
+- Confidence: 97%
+
+Indicators warrant continued monitoring and forensic collection.
+
+---
