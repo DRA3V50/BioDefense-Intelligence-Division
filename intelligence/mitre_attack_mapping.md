@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-3482
+Investigation: BID-2026-1353
 
-Classification: Supply Chain Validation Review
+Classification: Memory Artifact Investigation
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
-| T1195 | Supply Chain Compromise |
-| T1588 | Obtain Capabilities |
+| T1003 | Credential Dumping |
+| T1055 | Process Injection |
 
 
 ---
 
-Analyst Confidence: 97%
+Analyst Confidence: 82%
 
 Status: Correlated

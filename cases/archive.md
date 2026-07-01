@@ -121,3 +121,15 @@ Indicators warrant continued monitoring and forensic collection.
 Embedded telemetry indicates persistent unauthorized execution.
 
 ---
+
+## BID-2026-1353
+
+- Date: 2026-07-01
+- Classification: Memory Artifact Investigation
+- Severity: CRITICAL
+- Status: Evidence Collection
+- Confidence: 82%
+
+Evidence supports possible firmware manipulation.
+
+---

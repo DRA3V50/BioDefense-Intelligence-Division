@@ -20,3 +20,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-01,BID-2026-9130,Embedded Device Exposure,LOW,Evidence Collection,86
 2026-07-01,BID-2026-6897,Embedded Device Exposure,HIGH,Analysis,90
 2026-07-01,BID-2026-3482,Supply Chain Validation Review,HIGH,Monitoring,97
+2026-07-01,BID-2026-1353,Memory Artifact Investigation,CRITICAL,Evidence Collection,82

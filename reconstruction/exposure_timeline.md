@@ -4,18 +4,18 @@
 ## 2026-07-01
 
 ### Case Opened
-Case ID: BID-2026-3482
+Case ID: BID-2026-1353
 
 ### Classification
-Supply Chain Validation Review
+Memory Artifact Investigation
 
 ### Initial Assessment
-Embedded telemetry indicates persistent unauthorized execution.
+Evidence supports possible firmware manipulation.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
-HIGH
+CRITICAL
 
 ---

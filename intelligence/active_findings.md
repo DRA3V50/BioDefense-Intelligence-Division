@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Unsigned module identified during validation.
+Configuration persistence indicator observed.
 
 ## Finding 2
-Firmware hash mismatch detected.
+Embedded device telemetry anomaly detected.
 
 ## Finding 3
-Supply chain verification remains incomplete.
+Memory analysis revealed irregular execution patterns.
 
 ## Case ID
-BID-2026-3482
+BID-2026-1353
 
 ## Analyst Confidence
-97%
+82%

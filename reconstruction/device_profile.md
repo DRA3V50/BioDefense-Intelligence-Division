@@ -1,16 +1,16 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-3482
+BID-2026-1353
 
 ## Platform
-Router Firmware
+Embedded Linux Device
 
 ## Firmware Classification
-Supply Chain Validation Review
+Memory Artifact Investigation
 
 ## Processor Architecture
-MIPS
+ARM64
 
 ## Bootloader
 Coreboot
