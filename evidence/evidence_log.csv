@@ -29,3 +29,4 @@ EV-0027,2026-06-30,BID-2026-5688,Firmware Signature,Indicators warrant continued
 EV-0028,2026-07-01,BID-2026-5026,Boot Artifact,Indicators warrant continued monitoring and forensic collection.
 EV-0029,2026-07-01,BID-2026-9130,Embedded Log,Embedded telemetry indicates persistent unauthorized execution.
 EV-0030,2026-07-01,BID-2026-6897,Embedded Log,Indicators warrant continued monitoring and forensic collection.
+EV-0031,2026-07-01,BID-2026-3482,Supply Chain Record,Embedded telemetry indicates persistent unauthorized execution.

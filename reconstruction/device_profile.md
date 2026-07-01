@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-6897
+BID-2026-3482
 
 ## Platform
-Embedded Linux Device
+Router Firmware
 
 ## Firmware Classification
-Embedded Device Exposure
+Supply Chain Validation Review
 
 ## Processor Architecture
-PowerPC
+MIPS
 
 ## Bootloader
-Barebox
+Coreboot
 
 ## Exposure Status
 Under Investigation

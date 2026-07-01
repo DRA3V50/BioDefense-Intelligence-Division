@@ -109,3 +109,15 @@ Embedded telemetry indicates persistent unauthorized execution.
 Indicators warrant continued monitoring and forensic collection.
 
 ---
+
+## BID-2026-3482
+
+- Date: 2026-07-01
+- Classification: Supply Chain Validation Review
+- Severity: HIGH
+- Status: Monitoring
+- Confidence: 97%
+
+Embedded telemetry indicates persistent unauthorized execution.
+
+---

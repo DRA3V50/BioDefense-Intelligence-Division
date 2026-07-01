@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-6897
+Case ID: BID-2026-3482
 
-Classification: Embedded Device Exposure
+Classification: Supply Chain Validation Review
 
 Severity: HIGH
 
-Status: Analysis
+Status: Monitoring
 
 ## Assessment
 
-Firmware validation remains ongoing.
+Containment recommendations remain unchanged.

@@ -4,16 +4,16 @@
 ## 2026-07-01
 
 ### Case Opened
-Case ID: BID-2026-6897
+Case ID: BID-2026-3482
 
 ### Classification
-Embedded Device Exposure
+Supply Chain Validation Review
 
 ### Initial Assessment
-Indicators warrant continued monitoring and forensic collection.
+Embedded telemetry indicates persistent unauthorized execution.
 
 ### Current Status
-Analysis
+Monitoring
 
 ### Severity
 HIGH
