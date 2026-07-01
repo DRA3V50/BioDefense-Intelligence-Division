@@ -97,3 +97,15 @@ Indicators warrant continued monitoring and forensic collection.
 Embedded telemetry indicates persistent unauthorized execution.
 
 ---
+
+## BID-2026-6897
+
+- Date: 2026-07-01
+- Classification: Embedded Device Exposure
+- Severity: HIGH
+- Status: Analysis
+- Confidence: 90%
+
+Indicators warrant continued monitoring and forensic collection.
+
+---

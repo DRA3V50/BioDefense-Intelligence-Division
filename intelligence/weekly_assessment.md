@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-9130
+Case ID: BID-2026-6897
 
 Classification: Embedded Device Exposure
 
-Severity: LOW
+Severity: HIGH
 
-Status: Evidence Collection
+Status: Analysis
 
 ## Assessment
 
-Boot sequence integrity requires further validation.
+Firmware validation remains ongoing.

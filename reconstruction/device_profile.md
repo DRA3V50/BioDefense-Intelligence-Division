@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-9130
+BID-2026-6897
 
 ## Platform
-Industrial Controller
+Embedded Linux Device
 
 ## Firmware Classification
 Embedded Device Exposure
 
 ## Processor Architecture
-ARM
+PowerPC
 
 ## Bootloader
-U-Boot
+Barebox
 
 ## Exposure Status
 Under Investigation
