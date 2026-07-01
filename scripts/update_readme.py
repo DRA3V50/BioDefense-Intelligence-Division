@@ -116,6 +116,8 @@ report = f"""
 - Malware persistence analysis
 - Critical infrastructure security
 
+>BioDefense Intelligence Division is an analytical research environment focused on firmware compromise investigations, embedded device security, operational threat intelligence, digital evidence management, and cyber incident reconstruction. The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
+
 <!-- FSE-REPORT-END -->
 """
 
