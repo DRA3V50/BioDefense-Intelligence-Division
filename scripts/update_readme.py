@@ -2,63 +2,65 @@ import json
 import csv
 import os
 
+# -----------------------------
+# Current Investigation
+# -----------------------------
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-history = []
+history_rows = []
 
-if os.path.exists("data/investigation_history.csv"):
-    with open(
-        "data/investigation_history.csv",
-        newline="",
-        encoding="utf-8"
-    ) as csvfile:
-        history = list(csv.DictReader(csvfile))
+history_file = "data/investigation_history.csv"
 
-total_cases = len(history)
+if os.path.exists(history_file):
 
-critical_cases = 0
-high_cases = 0
+    with open(history_file, newline="", encoding="utf-8") as csvfile:
 
-for row in history:
-    severity = row.get("severity", "").upper()
+        reader = csv.DictReader(csvfile)
 
-    if severity == "CRITICAL":
-        critical_cases += 1
+        history_rows = list(reader)
 
-    if severity == "HIGH":
-        high_cases += 1
+total_cases = len(history_rows)
 
-recent = history[-5:]
+high_cases = sum(
+    1 for row in history_rows
+    if row.get("severity") == "HIGH"
+)
 
-history_table = ""
+critical_cases = sum(
+    1 for row in history_rows
+    if row.get("severity") == "CRITICAL"
+)
 
-if recent:
+recent_rows = history_rows[-5:]
 
-    history_table += (
-        "\n## Recent Intelligence Activity\n\n"
-    )
+recent_table = ""
 
-    history_table += (
-        "| Case | Classification | Severity |\n"
-    )
+if recent_rows:
 
-    history_table += (
-        "|------|-----------------------------|----------|\n"
-    )
+    recent_table += "| Case | Classification | Severity |\n"
+    recent_table += "|------|---------------|----------|\n"
 
-    for row in reversed(recent):
+    for row in reversed(recent_rows):
 
-        history_table += (
+        recent_table += (
             f"| {row.get('case_id','N/A')} | "
             f"{row.get('classification','N/A')} | "
             f"{row.get('severity','N/A')} |\n"
         )
 
+else:
+
+    recent_table = (
+        "| Case | Classification | Severity |\n"
+        "|------|---------------|----------|\n"
+        "| N/A | N/A | N/A |\n"
+    )
+
 report = f"""
 <!-- FSE-REPORT-START -->
 
-## Active Investigation
+# Active Investigation
 
 **Case ID:** {case['case_id']}
 
@@ -95,7 +97,11 @@ report = f"""
 | Mission Focus | Embedded Biosecurity |
 | Investigation Type | Firmware Intelligence |
 
-{history_table}
+---
+
+## Recent Intelligence Activity
+
+{recent_table}
 
 ---
 
@@ -103,14 +109,12 @@ report = f"""
 
 - Firmware compromise investigations
 - Embedded device forensics
-- Exposure pathway reconstruction
 - Threat intelligence correlation
-- Digital biosecurity research
-- Defensive malware analysis
-- Critical infrastructure protection
-
-> BioDefense Intelligence Division is an analytical research environment focused on firmware compromise investigations, embedded device security, operational threat intelligence, digital evidence management, and cyber incident reconstruction. 
-> The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
+- Digital evidence management
+- Firmware validation
+- Exposure reconstruction
+- Malware persistence analysis
+- Critical infrastructure security
 
 <!-- FSE-REPORT-END -->
 """
@@ -124,6 +128,7 @@ end = "<!-- FSE-REPORT-END -->"
 if start in content and end in content:
 
     before = content.split(start)[0]
+
     after = content.split(end)[1]
 
     new_content = before + report + after
