@@ -59,6 +59,9 @@ jobs:
       - name: Update MITRE Mapping
         run: python scripts/update_mitre_mapping.py
 
+      - name: Update Campaign Summary
+        run: python scripts/update_campaign_summary.py
+
       - name: Update Device Profile
         run: python scripts/update_device_profile.py
 
