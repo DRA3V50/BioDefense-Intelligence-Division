@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-5026
+BID-2026-9130
 
 ## Platform
-Router Firmware
+Industrial Controller
 
 ## Firmware Classification
-Bootloader Anomaly
+Embedded Device Exposure
 
 ## Processor Architecture
-MIPS
+ARM
 
 ## Bootloader
-Vendor Proprietary
+U-Boot
 
 ## Exposure Status
 Under Investigation

@@ -4,18 +4,18 @@
 ## 2026-07-01
 
 ### Case Opened
-Case ID: BID-2026-5026
+Case ID: BID-2026-9130
 
 ### Classification
-Bootloader Anomaly
+Embedded Device Exposure
 
 ### Initial Assessment
-Indicators warrant continued monitoring and forensic collection.
+Embedded telemetry indicates persistent unauthorized execution.
 
 ### Current Status
 Evidence Collection
 
 ### Severity
-MODERATE
+LOW
 
 ---

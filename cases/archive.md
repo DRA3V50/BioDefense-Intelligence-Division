@@ -85,3 +85,15 @@ Indicators warrant continued monitoring and forensic collection.
 Indicators warrant continued monitoring and forensic collection.
 
 ---
+
+## BID-2026-9130
+
+- Date: 2026-07-01
+- Classification: Embedded Device Exposure
+- Severity: LOW
+- Status: Evidence Collection
+- Confidence: 86%
+
+Embedded telemetry indicates persistent unauthorized execution.
+
+---

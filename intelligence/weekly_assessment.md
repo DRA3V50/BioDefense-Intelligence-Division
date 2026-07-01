@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-5026
+Case ID: BID-2026-9130
 
-Classification: Bootloader Anomaly
+Classification: Embedded Device Exposure
 
-Severity: MODERATE
+Severity: LOW
 
 Status: Evidence Collection
 
 ## Assessment
 
-Containment recommendations remain unchanged.
+Boot sequence integrity requires further validation.
