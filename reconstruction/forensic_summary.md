@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-6465
+Case ID: BID-2026-5152
 
 Date Opened: 2026-07-02
 
 Status: Analysis
 
-Classification: Supply Chain Validation Review
+Classification: Unsigned Firmware Detection
 
-Severity: HIGH
+Severity: MODERATE
 
-Affected Platform: Network Appliance
+Affected Platform: Embedded Linux Device
 
 ---
 
@@ -48,11 +48,11 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 79%
+Confidence: 96%
 
-Affected Assets: 4
+Affected Assets: 20
 
-Current Risk Level: HIGH
+Current Risk Level: MODERATE
 
 ---
 

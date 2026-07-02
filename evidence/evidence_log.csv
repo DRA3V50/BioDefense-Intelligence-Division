@@ -32,3 +32,4 @@ EV-0030,2026-07-01,BID-2026-6897,Embedded Log,Indicators warrant continued monit
 EV-0031,2026-07-01,BID-2026-3482,Supply Chain Record,Embedded telemetry indicates persistent unauthorized execution.
 EV-0032,2026-07-01,BID-2026-1353,Memory Dump,Evidence supports possible firmware manipulation.
 EV-0033,2026-07-02,BID-2026-6465,Supply Chain Record,Embedded telemetry indicates persistent unauthorized execution.
+EV-0034,2026-07-02,BID-2026-5152,Firmware Signature,Indicators warrant continued monitoring and forensic collection.

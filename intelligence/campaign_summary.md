@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Investigation **BID-2026-6465** remains under active analysis following detection of a **Supply Chain Validation Review** event affecting a **Network Appliance**.
+Investigation **BID-2026-5152** remains under active analysis following detection of a **Unsigned Firmware Detection** event affecting a **Embedded Linux Device**.
 
 Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
 
@@ -10,13 +10,13 @@ Current analysis indicates the activity is consistent with unauthorized firmware
 
 ## Operational Assessment
 
-Severity: HIGH
+Severity: MODERATE
 
 Status: Analysis
 
-Analyst Confidence: 79%
+Analyst Confidence: 96%
 
-Affected Assets: 4
+Affected Assets: 20
 
 ---
 

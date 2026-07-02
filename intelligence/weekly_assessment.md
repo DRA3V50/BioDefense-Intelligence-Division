@@ -2,11 +2,11 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-6465
+Case ID: BID-2026-5152
 
-Classification: Supply Chain Validation Review
+Classification: Unsigned Firmware Detection
 
-Severity: HIGH
+Severity: MODERATE
 
 Status: Analysis
 

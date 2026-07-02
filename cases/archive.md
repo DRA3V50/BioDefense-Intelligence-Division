@@ -145,3 +145,15 @@ Evidence supports possible firmware manipulation.
 Embedded telemetry indicates persistent unauthorized execution.
 
 ---
+
+## BID-2026-5152
+
+- Date: 2026-07-02
+- Classification: Unsigned Firmware Detection
+- Severity: MODERATE
+- Status: Analysis
+- Confidence: 96%
+
+Indicators warrant continued monitoring and forensic collection.
+
+---

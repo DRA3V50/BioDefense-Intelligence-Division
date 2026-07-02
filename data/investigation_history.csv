@@ -22,3 +22,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-01,BID-2026-3482,Supply Chain Validation Review,HIGH,Monitoring,97
 2026-07-01,BID-2026-1353,Memory Artifact Investigation,CRITICAL,Evidence Collection,82
 2026-07-02,BID-2026-6465,Supply Chain Validation Review,HIGH,Analysis,79
+2026-07-02,BID-2026-5152,Unsigned Firmware Detection,MODERATE,Analysis,96

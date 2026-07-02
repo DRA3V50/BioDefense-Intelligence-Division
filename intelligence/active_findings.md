@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Embedded device telemetry anomaly detected.
+Boot sequence integrity review required.
 
 ## Finding 2
-Firmware hash mismatch detected.
-
-## Finding 3
 Supply chain verification remains incomplete.
 
+## Finding 3
+Configuration persistence indicator observed.
+
 ## Case ID
-BID-2026-6465
+BID-2026-5152
 
 ## Analyst Confidence
-79%
+96%

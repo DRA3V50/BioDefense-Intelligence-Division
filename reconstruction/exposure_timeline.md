@@ -4,18 +4,18 @@
 ## 2026-07-02
 
 ### Case Opened
-Case ID: BID-2026-6465
+Case ID: BID-2026-5152
 
 ### Classification
-Supply Chain Validation Review
+Unsigned Firmware Detection
 
 ### Initial Assessment
-Embedded telemetry indicates persistent unauthorized execution.
+Indicators warrant continued monitoring and forensic collection.
 
 ### Current Status
 Analysis
 
 ### Severity
-HIGH
+MODERATE
 
 ---
