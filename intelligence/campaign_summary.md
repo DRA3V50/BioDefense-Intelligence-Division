@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Investigation **BID-2026-1353** remains under active analysis following detection of a **Memory Artifact Investigation** event affecting a **Embedded Linux Device**.
+Investigation **BID-2026-6465** remains under active analysis following detection of a **Supply Chain Validation Review** event affecting a **Network Appliance**.
 
 Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
 
@@ -10,13 +10,13 @@ Current analysis indicates the activity is consistent with unauthorized firmware
 
 ## Operational Assessment
 
-Severity: CRITICAL
+Severity: HIGH
 
-Status: Evidence Collection
+Status: Analysis
 
-Analyst Confidence: 82%
+Analyst Confidence: 79%
 
-Affected Assets: 16
+Affected Assets: 4
 
 ---
 

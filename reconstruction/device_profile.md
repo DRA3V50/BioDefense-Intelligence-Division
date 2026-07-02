@@ -1,13 +1,13 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-1353
+BID-2026-6465
 
 ## Platform
-Embedded Linux Device
+Network Appliance
 
 ## Firmware Classification
-Memory Artifact Investigation
+Supply Chain Validation Review
 
 ## Processor Architecture
 ARM64

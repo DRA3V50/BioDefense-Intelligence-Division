@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-1353
+Case ID: BID-2026-6465
 
-Classification: Memory Artifact Investigation
+Classification: Supply Chain Validation Review
 
-Severity: CRITICAL
+Severity: HIGH
 
-Status: Evidence Collection
+Status: Analysis
 
 ## Assessment
 
-Firmware signature verification remains pending.
+Analyst confidence increased following artifact review.

@@ -133,3 +133,15 @@ Embedded telemetry indicates persistent unauthorized execution.
 Evidence supports possible firmware manipulation.
 
 ---
+
+## BID-2026-6465
+
+- Date: 2026-07-02
+- Classification: Supply Chain Validation Review
+- Severity: HIGH
+- Status: Analysis
+- Confidence: 79%
+
+Embedded telemetry indicates persistent unauthorized execution.
+
+---
