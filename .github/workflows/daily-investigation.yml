@@ -62,6 +62,9 @@ jobs:
       - name: Update Campaign Summary
         run: python scripts/update_campaign_summary.py
 
+      - name: Update Forensic Summary
+        run: python scripts/update_forensic_summary.py
+
       - name: Update Device Profile
         run: python scripts/update_device_profile.py
 
