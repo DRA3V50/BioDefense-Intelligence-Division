@@ -3,104 +3,114 @@ import csv
 import os
 
 # -----------------------------
-# Load case
+# LOAD CASE
 # -----------------------------
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
 # -----------------------------
-# Load phase state
+# LOAD PHASE
 # -----------------------------
 phase_path = "data/investigation_state.json"
-
-current_phase = "Unknown"
+phase = "Unknown"
 
 if os.path.exists(phase_path):
     with open(phase_path, "r", encoding="utf-8") as f:
-        state = json.load(f)
-        current_phase = state.get("current_phase", "Unknown")
+        phase = json.load(f).get("current_phase", "Unknown")
 
 # -----------------------------
-# Load history
+# LOAD HISTORY
 # -----------------------------
 history_file = "data/investigation_history.csv"
 history_rows = []
 
 if os.path.exists(history_file):
-    with open(history_file, newline="", encoding="utf-8") as csvfile:
-        reader = csv.DictReader(csvfile)
+    with open(history_file, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
         history_rows = list(reader)
 
 total_cases = len(history_rows)
 
-high_cases = sum(1 for r in history_rows if r.get("severity") == "HIGH")
-critical_cases = sum(1 for r in history_rows if r.get("severity") == "CRITICAL")
+high = sum(1 for r in history_rows if r.get("severity") == "HIGH")
+critical = sum(1 for r in history_rows if r.get("severity") == "CRITICAL")
 
-recent_rows = history_rows[-5:]
+recent = history_rows[-5:]
 
-table = ""
-
-if recent_rows:
-    table += "| Case | Classification | Severity |\n"
-    table += "|------|---------------|----------|\n"
-
-    for r in reversed(recent_rows):
-        table += f"| {r.get('case_id','N/A')} | {r.get('classification','N/A')} | {r.get('severity','N/A')} |\n"
+history_table = ""
+if recent:
+    history_table += "| Case ID | Classification | Severity |\n"
+    history_table += "|--------|---------------|----------|\n"
+    for r in reversed(recent):
+        history_table += f"| {r.get('case_id','N/A')} | {r.get('classification','N/A')} | {r.get('severity','N/A')} |\n"
 
 # -----------------------------
-# REPORT
+# INTEL BRIEF STYLE REPORT
 # -----------------------------
 report = f"""
 <!-- FSE-REPORT-START -->
 
-# Active Investigation
+# BIODEFENSE INTELLIGENCE DIVISION
+## OPERATIONAL INTELLIGENCE BRIEF
+
+>>
+
+## ACTIVE INVESTIGATION
 
 **Case ID:** {case['case_id']}
-
 **Date:** {case['date']}
+**Phase:** {phase}
+
+>>
+
+## CLASSIFICATION PROFILE
 
 **Classification:** {case['classification']}
-
 **Severity:** {case['severity']}
-
-**Status:** {case['status']}
-
-**Investigation Phase:** {current_phase}
-
 **Platform:** {case['affected_platform']}
-
+**Affected Assets:** {case['affected_assets']}
 **Confidence:** {case['confidence']}%
 
-**Affected Assets:** {case['affected_assets']}
+>>
 
----
-
-## Analyst Assessment
+## ANALYST ASSESSMENT
 
 {case['assessment']}
 
----
+>>
 
-## Operational Intelligence Overview
+## RESEARCH SCOPE
+
+This division conducts structured analysis of firmware integrity events, embedded system anomalies, and digital biosecurity exposures across critical infrastructure environments.
+
+Focus areas include:
+- Firmware integrity validation
+- Embedded system forensic analysis
+- Supply-chain compromise detection
+- Device-level persistence investigation
+- Digital exposure reconstruction
+
+>>
+
+## OPERATIONAL METRICS
 
 | Metric | Value |
-|--------|------:|
+|--------|------|
 | Total Investigations | {total_cases} |
-| High Severity Cases | {high_cases} |
-| Critical Cases | {critical_cases} |
-| Active Phase | {current_phase} |
+| High Severity | {high} |
+| Critical Severity | {critical} |
+| Active Phase | {phase} |
 
----
+>>
 
-## Recent Investigations
+## RECENT INVESTIGATIONS
 
-{table}
+{history_table}
 
 <!-- FSE-REPORT-END -->
 """
 
 # -----------------------------
-# Inject into README
+# WRITE BACK
 # -----------------------------
 with open("README.md", "r", encoding="utf-8") as f:
     content = f.read()
@@ -118,4 +128,4 @@ else:
 with open("README.md", "w", encoding="utf-8") as f:
     f.write(new_content)
 
-print("README updated with investigation phase.")
+print("README updated (intel brief format).")
