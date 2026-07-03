@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Unexpected firmware artifact discovered.
-
-## Finding 2
 Firmware hash mismatch detected.
 
+## Finding 2
+Memory analysis revealed irregular execution patterns.
+
 ## Finding 3
-Boot sequence integrity review required.
+Unexpected firmware artifact discovered.
 
 ## Case ID
-BID-2026-1652
+BID-2026-6859
 
 ## Analyst Confidence
-75%
+97%

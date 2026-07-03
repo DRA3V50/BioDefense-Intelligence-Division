@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-1652
+Case ID: BID-2026-6859
 
-Classification: Unsigned Firmware Detection
+Classification: Memory Artifact Investigation
 
 Severity: MODERATE
 
-Status: Monitoring
+Status: Evidence Collection
 
 ## Assessment
 
-Boot sequence integrity requires further validation.
+Telemetry analysis identified abnormal execution patterns.

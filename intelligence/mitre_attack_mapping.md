@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-1652
+Investigation: BID-2026-6859
 
-Classification: Unsigned Firmware Detection
+Classification: Memory Artifact Investigation
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
-| T1553 | Subvert Trust Controls |
-| T1601 | Modify System Image |
+| T1003 | Credential Dumping |
+| T1055 | Process Injection |
 
 
 ---
 
-Analyst Confidence: 75%
+Analyst Confidence: 97%
 
 Status: Correlated

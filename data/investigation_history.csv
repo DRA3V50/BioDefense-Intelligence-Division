@@ -27,3 +27,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-03,BID-2026-7113,Supply Chain Validation Review,MODERATE,Analysis,87
 2026-07-03,BID-2026-9063,Unauthorized Firmware Modification,HIGH,Containment,74
 2026-07-03,BID-2026-1652,Unsigned Firmware Detection,MODERATE,Monitoring,75
+2026-07-03,BID-2026-6859,Memory Artifact Investigation,MODERATE,Evidence Collection,97

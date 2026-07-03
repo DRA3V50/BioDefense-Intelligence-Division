@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-1652
+Case ID: BID-2026-6859
 
 Date Opened: 2026-07-03
 
-Status: Monitoring
+Status: Evidence Collection
 
-Classification: Unsigned Firmware Detection
+Classification: Memory Artifact Investigation
 
 Severity: MODERATE
 
-Affected Platform: Router Firmware
+Affected Platform: Industrial Controller
 
 ---
 
@@ -48,9 +48,9 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 75%
+Confidence: 97%
 
-Affected Assets: 20
+Affected Assets: 13
 
 Current Risk Level: MODERATE
 

@@ -1,16 +1,16 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-1652
+BID-2026-6859
 
 ## Platform
-Router Firmware
+Industrial Controller
 
 ## Firmware Classification
-Unsigned Firmware Detection
+Memory Artifact Investigation
 
 ## Processor Architecture
-ARM64
+x86 Embedded
 
 ## Bootloader
 Coreboot

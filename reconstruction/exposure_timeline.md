@@ -4,16 +4,16 @@
 ## 2026-07-03
 
 ### Case Opened
-Case ID: BID-2026-1652
+Case ID: BID-2026-6859
 
 ### Classification
-Unsigned Firmware Detection
+Memory Artifact Investigation
 
 ### Initial Assessment
 Behavior consistent with advanced persistence techniques.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
 MODERATE

@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Investigation **BID-2026-1652** remains under active analysis following detection of a **Unsigned Firmware Detection** event affecting a **Router Firmware**.
+Investigation **BID-2026-6859** remains under active analysis following detection of a **Memory Artifact Investigation** event affecting a **Industrial Controller**.
 
 Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
 
@@ -12,11 +12,11 @@ Current analysis indicates the activity is consistent with unauthorized firmware
 
 Severity: MODERATE
 
-Status: Monitoring
+Status: Evidence Collection
 
-Analyst Confidence: 75%
+Analyst Confidence: 97%
 
-Affected Assets: 20
+Affected Assets: 13
 
 ---
 
