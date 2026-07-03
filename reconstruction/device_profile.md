@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-6859
+BID-2026-7583
 
 ## Platform
-Industrial Controller
+Router Firmware
 
 ## Firmware Classification
-Memory Artifact Investigation
+Embedded Device Exposure
 
 ## Processor Architecture
-x86 Embedded
+ARM64
 
 ## Bootloader
-Coreboot
+Barebox
 
 ## Exposure Status
 Under Investigation

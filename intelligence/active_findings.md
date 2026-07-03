@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Firmware hash mismatch detected.
+Embedded device telemetry anomaly detected.
 
 ## Finding 2
-Memory analysis revealed irregular execution patterns.
+Firmware hash mismatch detected.
 
 ## Finding 3
-Unexpected firmware artifact discovered.
+Configuration persistence indicator observed.
 
 ## Case ID
-BID-2026-6859
+BID-2026-7583
 
 ## Analyst Confidence
-97%
+91%

@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-6859
+Investigation: BID-2026-7583
 
-Classification: Memory Artifact Investigation
+Classification: Embedded Device Exposure
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
-| T1003 | Credential Dumping |
-| T1055 | Process Injection |
+| T1195 | Supply Chain Compromise |
+| T1078 | Valid Accounts |
 
 
 ---
 
-Analyst Confidence: 97%
+Analyst Confidence: 91%
 
 Status: Correlated

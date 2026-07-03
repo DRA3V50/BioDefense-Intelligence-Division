@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-6859
+Case ID: BID-2026-7583
 
 Date Opened: 2026-07-03
 
-Status: Evidence Collection
+Status: Analysis
 
-Classification: Memory Artifact Investigation
+Classification: Embedded Device Exposure
 
 Severity: MODERATE
 
-Affected Platform: Industrial Controller
+Affected Platform: Router Firmware
 
 ---
 
@@ -48,9 +48,9 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 97%
+Confidence: 91%
 
-Affected Assets: 13
+Affected Assets: 23
 
 Current Risk Level: MODERATE
 

@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-6859
+Case ID: BID-2026-7583
 
-Classification: Memory Artifact Investigation
+Classification: Embedded Device Exposure
 
 Severity: MODERATE
 
-Status: Evidence Collection
+Status: Analysis
 
 ## Assessment
 
-Telemetry analysis identified abnormal execution patterns.
+Exposure indicators remain under review.

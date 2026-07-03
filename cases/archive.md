@@ -217,3 +217,15 @@ Behavior consistent with advanced persistence techniques.
 Behavior consistent with advanced persistence techniques.
 
 ---
+
+## BID-2026-7583
+
+- Date: 2026-07-03
+- Classification: Embedded Device Exposure
+- Severity: MODERATE
+- Status: Analysis
+- Confidence: 91%
+
+Indicators warrant continued monitoring and forensic collection.
+
+---
