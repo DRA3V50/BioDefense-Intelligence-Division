@@ -1,16 +1,16 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-02
+## 2026-07-03
 
 ### Case Opened
-Case ID: BID-2026-5152
+Case ID: BID-2026-5969
 
 ### Classification
-Unsigned Firmware Detection
+Firmware Integrity Alert
 
 ### Initial Assessment
-Indicators warrant continued monitoring and forensic collection.
+Evidence supports possible firmware manipulation.
 
 ### Current Status
 Analysis

@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-5152
+Case ID: BID-2026-5969
 
-Date Opened: 2026-07-02
+Date Opened: 2026-07-03
 
 Status: Analysis
 
-Classification: Unsigned Firmware Detection
+Classification: Firmware Integrity Alert
 
 Severity: MODERATE
 
-Affected Platform: Embedded Linux Device
+Affected Platform: Network Appliance
 
 ---
 
@@ -48,9 +48,9 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 96%
+Confidence: 71%
 
-Affected Assets: 20
+Affected Assets: 3
 
 Current Risk Level: MODERATE
 

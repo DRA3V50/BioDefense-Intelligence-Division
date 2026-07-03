@@ -157,3 +157,15 @@ Embedded telemetry indicates persistent unauthorized execution.
 Indicators warrant continued monitoring and forensic collection.
 
 ---
+
+## BID-2026-5969
+
+- Date: 2026-07-03
+- Classification: Firmware Integrity Alert
+- Severity: MODERATE
+- Status: Analysis
+- Confidence: 71%
+
+Evidence supports possible firmware manipulation.
+
+---

@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-5152
+Case ID: BID-2026-5969
 
-Classification: Unsigned Firmware Detection
+Classification: Firmware Integrity Alert
 
 Severity: MODERATE
 

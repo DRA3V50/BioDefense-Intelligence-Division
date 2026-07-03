@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-5152
+Investigation: BID-2026-5969
 
-Classification: Unsigned Firmware Detection
+Classification: Firmware Integrity Alert
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
-| T1553 | Subvert Trust Controls |
+| T1542 | Pre-OS Boot |
 | T1601 | Modify System Image |
 
 
 ---
 
-Analyst Confidence: 96%
+Analyst Confidence: 71%
 
 Status: Correlated

@@ -4,13 +4,13 @@
 Boot sequence integrity review required.
 
 ## Finding 2
-Supply chain verification remains incomplete.
+Firmware hash mismatch detected.
 
 ## Finding 3
-Configuration persistence indicator observed.
+Unexpected firmware artifact discovered.
 
 ## Case ID
-BID-2026-5152
+BID-2026-5969
 
 ## Analyst Confidence
-96%
+71%

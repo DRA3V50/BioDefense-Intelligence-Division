@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Investigation **BID-2026-5152** remains under active analysis following detection of a **Unsigned Firmware Detection** event affecting a **Embedded Linux Device**.
+Investigation **BID-2026-5969** remains under active analysis following detection of a **Firmware Integrity Alert** event affecting a **Network Appliance**.
 
 Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
 
@@ -14,9 +14,9 @@ Severity: MODERATE
 
 Status: Analysis
 
-Analyst Confidence: 96%
+Analyst Confidence: 71%
 
-Affected Assets: 20
+Affected Assets: 3
 
 ---
 

@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-5152
+BID-2026-5969
 
 ## Platform
-Embedded Linux Device
+Network Appliance
 
 ## Firmware Classification
-Unsigned Firmware Detection
+Firmware Integrity Alert
 
 ## Processor Architecture
-x86 Embedded
+ARM64
 
 ## Bootloader
-U-Boot
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

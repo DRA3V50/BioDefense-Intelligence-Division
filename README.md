@@ -31,31 +31,32 @@ A defensive cyber intelligence and digital forensics program dedicated to resear
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # Active Investigation
 
-**Case ID:** BID-2026-5152
+**Case ID:** BID-2026-5969
 
-**Date:** 2026-07-02
+**Date:** 2026-07-03
 
-**Classification:** Unsigned Firmware Detection
+**Classification:** Firmware Integrity Alert
 
 **Severity:** MODERATE
 
 **Status:** Analysis
 
-**Affected Platform:** Embedded Linux Device
+**Affected Platform:** Network Appliance
 
-**Confidence:** 96%
+**Confidence:** 71%
 
-**Affected Assets:** 20
+**Affected Assets:** 3
 
 ---
 
 ## Analyst Assessment
 
-Indicators warrant continued monitoring and forensic collection.
+Evidence supports possible firmware manipulation.
 
 ---
 
@@ -63,7 +64,7 @@ Indicators warrant continued monitoring and forensic collection.
 
 | Metric | Value |
 |--------|------:|
-| Investigations Logged | 23 |
+| Investigations Logged | 24 |
 | High Severity Cases | 0 |
 | Critical Severity Cases | 0 |
 | Division Status | ACTIVE |
@@ -99,6 +100,7 @@ Indicators warrant continued monitoring and forensic collection.
 > BioDefense Intelligence Division is an analytical research environment focused on firmware compromise investigations, embedded device security, operational threat intelligence, digital evidence management, and cyber incident reconstruction. The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
 
 <!-- FSE-REPORT-END -->
+
 
 
 
