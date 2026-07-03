@@ -3,60 +3,53 @@ import csv
 import os
 
 # -----------------------------
-# Current Investigation
+# Load case
 # -----------------------------
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
+# -----------------------------
+# Load phase state
+# -----------------------------
+phase_path = "data/investigation_state.json"
+
+current_phase = "Unknown"
+
+if os.path.exists(phase_path):
+    with open(phase_path, "r", encoding="utf-8") as f:
+        state = json.load(f)
+        current_phase = state.get("current_phase", "Unknown")
+
+# -----------------------------
+# Load history
+# -----------------------------
+history_file = "data/investigation_history.csv"
 history_rows = []
 
-history_file = "data/investigation_history.csv"
-
 if os.path.exists(history_file):
-
     with open(history_file, newline="", encoding="utf-8") as csvfile:
-
         reader = csv.DictReader(csvfile)
-
         history_rows = list(reader)
 
 total_cases = len(history_rows)
 
-high_cases = sum(
-    1 for row in history_rows
-    if row.get("severity") == "HIGH"
-)
-
-critical_cases = sum(
-    1 for row in history_rows
-    if row.get("severity") == "CRITICAL"
-)
+high_cases = sum(1 for r in history_rows if r.get("severity") == "HIGH")
+critical_cases = sum(1 for r in history_rows if r.get("severity") == "CRITICAL")
 
 recent_rows = history_rows[-5:]
 
-recent_table = ""
+table = ""
 
 if recent_rows:
+    table += "| Case | Classification | Severity |\n"
+    table += "|------|---------------|----------|\n"
 
-    recent_table += "| Case | Classification | Severity |\n"
-    recent_table += "|------|---------------|----------|\n"
+    for r in reversed(recent_rows):
+        table += f"| {r.get('case_id','N/A')} | {r.get('classification','N/A')} | {r.get('severity','N/A')} |\n"
 
-    for row in reversed(recent_rows):
-
-        recent_table += (
-            f"| {row.get('case_id','N/A')} | "
-            f"{row.get('classification','N/A')} | "
-            f"{row.get('severity','N/A')} |\n"
-        )
-
-else:
-
-    recent_table = (
-        "| Case | Classification | Severity |\n"
-        "|------|---------------|----------|\n"
-        "| N/A | N/A | N/A |\n"
-    )
-
+# -----------------------------
+# REPORT
+# -----------------------------
 report = f"""
 <!-- FSE-REPORT-START -->
 
@@ -72,7 +65,9 @@ report = f"""
 
 **Status:** {case['status']}
 
-**Affected Platform:** {case['affected_platform']}
+**Investigation Phase:** {current_phase}
+
+**Platform:** {case['affected_platform']}
 
 **Confidence:** {case['confidence']}%
 
@@ -86,41 +81,27 @@ report = f"""
 
 ---
 
-## Division Intelligence Overview
+## Operational Intelligence Overview
 
 | Metric | Value |
 |--------|------:|
-| Investigations Logged | {total_cases} |
+| Total Investigations | {total_cases} |
 | High Severity Cases | {high_cases} |
-| Critical Severity Cases | {critical_cases} |
-| Division Status | ACTIVE |
-| Mission Focus | Embedded Biosecurity |
-| Investigation Type | Firmware Intelligence |
+| Critical Cases | {critical_cases} |
+| Active Phase | {current_phase} |
 
 ---
 
-## Recent Intelligence Activity
+## Recent Investigations
 
-{recent_table}
-
----
-
-## Research Scope
-
-- Firmware compromise investigations
-- Embedded device forensics
-- Threat intelligence correlation
-- Digital evidence management
-- Firmware validation
-- Exposure reconstruction
-- Malware persistence analysis
-- Critical infrastructure security
-
-> BioDefense Intelligence Division is an analytical research environment focused on firmware compromise investigations, embedded device security, operational threat intelligence, digital evidence management, and cyber incident reconstruction. The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
+{table}
 
 <!-- FSE-REPORT-END -->
 """
 
+# -----------------------------
+# Inject into README
+# -----------------------------
 with open("README.md", "r", encoding="utf-8") as f:
     content = f.read()
 
@@ -128,18 +109,13 @@ start = "<!-- FSE-REPORT-START -->"
 end = "<!-- FSE-REPORT-END -->"
 
 if start in content and end in content:
-
     before = content.split(start)[0]
-
     after = content.split(end)[1]
-
     new_content = before + report + after
-
 else:
-
     new_content = content + "\n\n" + report
 
 with open("README.md", "w", encoding="utf-8") as f:
     f.write(new_content)
 
-print("README updated.")
+print("README updated with investigation phase.")
