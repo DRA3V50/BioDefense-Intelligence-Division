@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Investigation **BID-2026-7113** remains under active analysis following detection of a **Supply Chain Validation Review** event affecting a **Industrial Controller**.
+Investigation **BID-2026-9063** remains under active analysis following detection of a **Unauthorized Firmware Modification** event affecting a **Router Firmware**.
 
 Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
 
@@ -10,13 +10,13 @@ Current analysis indicates the activity is consistent with unauthorized firmware
 
 ## Operational Assessment
 
-Severity: MODERATE
+Severity: HIGH
 
-Status: Analysis
+Status: Containment
 
-Analyst Confidence: 87%
+Analyst Confidence: 74%
 
-Affected Assets: 18
+Affected Assets: 23
 
 ---
 

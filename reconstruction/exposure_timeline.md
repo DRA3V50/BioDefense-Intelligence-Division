@@ -4,18 +4,18 @@
 ## 2026-07-03
 
 ### Case Opened
-Case ID: BID-2026-7113
+Case ID: BID-2026-9063
 
 ### Classification
-Supply Chain Validation Review
+Unauthorized Firmware Modification
 
 ### Initial Assessment
-Evidence supports possible firmware manipulation.
+Embedded telemetry indicates persistent unauthorized execution.
 
 ### Current Status
-Analysis
+Containment
 
 ### Severity
-MODERATE
+HIGH
 
 ---

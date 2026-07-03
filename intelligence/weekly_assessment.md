@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-7113
+Case ID: BID-2026-9063
 
-Classification: Supply Chain Validation Review
+Classification: Unauthorized Firmware Modification
 
-Severity: MODERATE
+Severity: HIGH
 
-Status: Analysis
+Status: Containment
 
 ## Assessment
 
-No evidence of lateral movement detected.
+Telemetry analysis identified abnormal execution patterns.

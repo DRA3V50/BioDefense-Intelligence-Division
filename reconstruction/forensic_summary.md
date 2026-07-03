@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-7113
+Case ID: BID-2026-9063
 
 Date Opened: 2026-07-03
 
-Status: Analysis
+Status: Containment
 
-Classification: Supply Chain Validation Review
+Classification: Unauthorized Firmware Modification
 
-Severity: MODERATE
+Severity: HIGH
 
-Affected Platform: Industrial Controller
+Affected Platform: Router Firmware
 
 ---
 
@@ -48,11 +48,11 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 87%
+Confidence: 74%
 
-Affected Assets: 18
+Affected Assets: 23
 
-Current Risk Level: MODERATE
+Current Risk Level: HIGH
 
 ---
 

@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-7113
+BID-2026-9063
 
 ## Platform
-Industrial Controller
+Router Firmware
 
 ## Firmware Classification
-Supply Chain Validation Review
+Unauthorized Firmware Modification
 
 ## Processor Architecture
 PowerPC
 
 ## Bootloader
-Coreboot
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

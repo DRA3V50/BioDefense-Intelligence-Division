@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-7113
+Investigation: BID-2026-9063
 
-Classification: Supply Chain Validation Review
+Classification: Unauthorized Firmware Modification
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
-| T1195 | Supply Chain Compromise |
-| T1588 | Obtain Capabilities |
+| T1601 | Modify System Image |
+| T1542 | Pre-OS Boot |
 
 
 ---
 
-Analyst Confidence: 87%
+Analyst Confidence: 74%
 
 Status: Correlated

@@ -35,3 +35,4 @@ EV-0033,2026-07-02,BID-2026-6465,Supply Chain Record,Embedded telemetry indicate
 EV-0034,2026-07-02,BID-2026-5152,Firmware Signature,Indicators warrant continued monitoring and forensic collection.
 EV-0035,2026-07-03,BID-2026-5969,Firmware Image,Evidence supports possible firmware manipulation.
 EV-0036,2026-07-03,BID-2026-7113,Supply Chain Record,Evidence supports possible firmware manipulation.
+EV-0037,2026-07-03,BID-2026-9063,Firmware Binary,Embedded telemetry indicates persistent unauthorized execution.

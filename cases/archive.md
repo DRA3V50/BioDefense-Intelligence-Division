@@ -181,3 +181,15 @@ Evidence supports possible firmware manipulation.
 Evidence supports possible firmware manipulation.
 
 ---
+
+## BID-2026-9063
+
+- Date: 2026-07-03
+- Classification: Unauthorized Firmware Modification
+- Severity: HIGH
+- Status: Containment
+- Confidence: 74%
+
+Embedded telemetry indicates persistent unauthorized execution.
+
+---

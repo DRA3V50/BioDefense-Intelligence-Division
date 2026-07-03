@@ -4,13 +4,13 @@
 Configuration persistence indicator observed.
 
 ## Finding 2
-Embedded device telemetry anomaly detected.
+Memory analysis revealed irregular execution patterns.
 
 ## Finding 3
-Unexpected firmware artifact discovered.
+Firmware hash mismatch detected.
 
 ## Case ID
-BID-2026-7113
+BID-2026-9063
 
 ## Analyst Confidence
-87%
+74%
