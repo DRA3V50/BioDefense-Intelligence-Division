@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Configuration persistence indicator observed.
+Unexpected firmware artifact discovered.
 
 ## Finding 2
-Memory analysis revealed irregular execution patterns.
-
-## Finding 3
 Firmware hash mismatch detected.
 
+## Finding 3
+Boot sequence integrity review required.
+
 ## Case ID
-BID-2026-9063
+BID-2026-1652
 
 ## Analyst Confidence
-74%
+75%

@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-9063
+BID-2026-1652
 
 ## Platform
 Router Firmware
 
 ## Firmware Classification
-Unauthorized Firmware Modification
+Unsigned Firmware Detection
 
 ## Processor Architecture
-PowerPC
+ARM64
 
 ## Bootloader
-Vendor Proprietary
+Coreboot
 
 ## Exposure Status
 Under Investigation

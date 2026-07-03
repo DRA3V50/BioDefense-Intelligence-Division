@@ -4,18 +4,18 @@
 ## 2026-07-03
 
 ### Case Opened
-Case ID: BID-2026-9063
+Case ID: BID-2026-1652
 
 ### Classification
-Unauthorized Firmware Modification
+Unsigned Firmware Detection
 
 ### Initial Assessment
-Embedded telemetry indicates persistent unauthorized execution.
+Behavior consistent with advanced persistence techniques.
 
 ### Current Status
-Containment
+Monitoring
 
 ### Severity
-HIGH
+MODERATE
 
 ---

@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-9063
+Investigation: BID-2026-1652
 
-Classification: Unauthorized Firmware Modification
+Classification: Unsigned Firmware Detection
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
+| T1553 | Subvert Trust Controls |
 | T1601 | Modify System Image |
-| T1542 | Pre-OS Boot |
 
 
 ---
 
-Analyst Confidence: 74%
+Analyst Confidence: 75%
 
 Status: Correlated

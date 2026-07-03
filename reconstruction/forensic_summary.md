@@ -2,15 +2,15 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-9063
+Case ID: BID-2026-1652
 
 Date Opened: 2026-07-03
 
-Status: Containment
+Status: Monitoring
 
-Classification: Unauthorized Firmware Modification
+Classification: Unsigned Firmware Detection
 
-Severity: HIGH
+Severity: MODERATE
 
 Affected Platform: Router Firmware
 
@@ -48,11 +48,11 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 74%
+Confidence: 75%
 
-Affected Assets: 23
+Affected Assets: 20
 
-Current Risk Level: HIGH
+Current Risk Level: MODERATE
 
 ---
 

@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-9063
+Case ID: BID-2026-1652
 
-Classification: Unauthorized Firmware Modification
+Classification: Unsigned Firmware Detection
 
-Severity: HIGH
+Severity: MODERATE
 
-Status: Containment
+Status: Monitoring
 
 ## Assessment
 
-Telemetry analysis identified abnormal execution patterns.
+Boot sequence integrity requires further validation.
