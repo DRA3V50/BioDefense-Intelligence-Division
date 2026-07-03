@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Investigation **BID-2026-5969** remains under active analysis following detection of a **Firmware Integrity Alert** event affecting a **Network Appliance**.
+Investigation **BID-2026-7113** remains under active analysis following detection of a **Supply Chain Validation Review** event affecting a **Industrial Controller**.
 
 Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
 
@@ -14,9 +14,9 @@ Severity: MODERATE
 
 Status: Analysis
 
-Analyst Confidence: 71%
+Analyst Confidence: 87%
 
-Affected Assets: 3
+Affected Assets: 18
 
 ---
 

@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-5969
+Case ID: BID-2026-7113
 
 Date Opened: 2026-07-03
 
 Status: Analysis
 
-Classification: Firmware Integrity Alert
+Classification: Supply Chain Validation Review
 
 Severity: MODERATE
 
-Affected Platform: Network Appliance
+Affected Platform: Industrial Controller
 
 ---
 
@@ -48,9 +48,9 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 71%
+Confidence: 87%
 
-Affected Assets: 3
+Affected Assets: 18
 
 Current Risk Level: MODERATE
 

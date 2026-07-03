@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-5969
+BID-2026-7113
 
 ## Platform
-Network Appliance
+Industrial Controller
 
 ## Firmware Classification
-Firmware Integrity Alert
+Supply Chain Validation Review
 
 ## Processor Architecture
-ARM64
+PowerPC
 
 ## Bootloader
-Vendor Proprietary
+Coreboot
 
 ## Exposure Status
 Under Investigation

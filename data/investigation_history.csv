@@ -24,3 +24,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-02,BID-2026-6465,Supply Chain Validation Review,HIGH,Analysis,79
 2026-07-02,BID-2026-5152,Unsigned Firmware Detection,MODERATE,Analysis,96
 2026-07-03,BID-2026-5969,Firmware Integrity Alert,MODERATE,Analysis,71
+2026-07-03,BID-2026-7113,Supply Chain Validation Review,MODERATE,Analysis,87

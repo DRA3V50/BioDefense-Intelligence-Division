@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-5969
+Investigation: BID-2026-7113
 
-Classification: Firmware Integrity Alert
+Classification: Supply Chain Validation Review
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
-| T1542 | Pre-OS Boot |
-| T1601 | Modify System Image |
+| T1195 | Supply Chain Compromise |
+| T1588 | Obtain Capabilities |
 
 
 ---
 
-Analyst Confidence: 71%
+Analyst Confidence: 87%
 
 Status: Correlated

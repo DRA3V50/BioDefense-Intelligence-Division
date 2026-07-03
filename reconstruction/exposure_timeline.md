@@ -4,10 +4,10 @@
 ## 2026-07-03
 
 ### Case Opened
-Case ID: BID-2026-5969
+Case ID: BID-2026-7113
 
 ### Classification
-Firmware Integrity Alert
+Supply Chain Validation Review
 
 ### Initial Assessment
 Evidence supports possible firmware manipulation.

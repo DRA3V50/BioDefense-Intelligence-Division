@@ -169,3 +169,15 @@ Indicators warrant continued monitoring and forensic collection.
 Evidence supports possible firmware manipulation.
 
 ---
+
+## BID-2026-7113
+
+- Date: 2026-07-03
+- Classification: Supply Chain Validation Review
+- Severity: MODERATE
+- Status: Analysis
+- Confidence: 87%
+
+Evidence supports possible firmware manipulation.
+
+---

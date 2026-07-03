@@ -2,9 +2,9 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-5969
+Case ID: BID-2026-7113
 
-Classification: Firmware Integrity Alert
+Classification: Supply Chain Validation Review
 
 Severity: MODERATE
 
@@ -12,4 +12,4 @@ Status: Analysis
 
 ## Assessment
 
-Analyst confidence increased following artifact review.
+No evidence of lateral movement detected.
