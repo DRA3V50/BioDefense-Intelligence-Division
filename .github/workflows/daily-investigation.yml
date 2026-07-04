@@ -56,6 +56,9 @@ jobs:
       - name: Update Findings
         run: python scripts/update_findings.py
 
+      - name: Update Campaign Summary
+        run: python scripts/update_campaign_summary.py
+
       - name: Update IOC Database
         run: python scripts/update_ioc_database.py
 
