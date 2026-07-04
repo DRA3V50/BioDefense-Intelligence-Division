@@ -39,3 +39,4 @@ EV-0037,2026-07-03,BID-2026-9063,Firmware Binary,Embedded telemetry indicates pe
 EV-0038,2026-07-03,BID-2026-1652,Firmware Signature,Behavior consistent with advanced persistence techniques.
 EV-0039,2026-07-03,BID-2026-6859,Memory Dump,Behavior consistent with advanced persistence techniques.
 EV-0040,2026-07-03,BID-2026-7583,Embedded Log,Indicators warrant continued monitoring and forensic collection.
+EV-0041,2026-07-04,BID-2026-3469,Firmware Image,Evidence supports possible firmware manipulation.

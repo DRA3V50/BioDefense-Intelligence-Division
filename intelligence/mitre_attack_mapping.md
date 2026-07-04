@@ -1,19 +1,19 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-7583
+Investigation: BID-2026-3469
 
-Classification: Embedded Device Exposure
+Classification: Firmware Integrity Alert
 
 ---
 
 | Technique | Description |
 |-----------|-------------|
-| T1195 | Supply Chain Compromise |
-| T1078 | Valid Accounts |
+| T1542 | Pre-OS Boot |
+| T1601 | Modify System Image |
 
 
 ---
 
-Analyst Confidence: 91%
+Analyst Confidence: 87%
 
 Status: Correlated

@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Embedded device telemetry anomaly detected.
+Unsigned module identified during validation.
 
 ## Finding 2
-Firmware hash mismatch detected.
+Boot sequence integrity review required.
 
 ## Finding 3
-Configuration persistence indicator observed.
+Firmware hash mismatch detected.
 
 ## Case ID
-BID-2026-7583
+BID-2026-3469
 
 ## Analyst Confidence
-91%
+87%

@@ -229,3 +229,15 @@ Behavior consistent with advanced persistence techniques.
 Indicators warrant continued monitoring and forensic collection.
 
 ---
+
+## BID-2026-3469
+
+- Date: 2026-07-04
+- Classification: Firmware Integrity Alert
+- Severity: CRITICAL
+- Status: Open
+- Confidence: 87%
+
+Evidence supports possible firmware manipulation.
+
+---

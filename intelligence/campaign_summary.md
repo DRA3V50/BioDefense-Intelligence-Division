@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Investigation **BID-2026-7583** remains under active analysis following detection of a **Embedded Device Exposure** event affecting a **Router Firmware**.
+Investigation **BID-2026-3469** remains under active analysis following detection of a **Firmware Integrity Alert** event affecting a **Security Appliance**.
 
 Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
 
@@ -10,13 +10,13 @@ Current analysis indicates the activity is consistent with unauthorized firmware
 
 ## Operational Assessment
 
-Severity: MODERATE
+Severity: CRITICAL
 
-Status: Analysis
+Status: Open
 
-Analyst Confidence: 91%
+Analyst Confidence: 87%
 
-Affected Assets: 23
+Affected Assets: 25
 
 ---
 

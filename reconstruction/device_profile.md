@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-7583
+BID-2026-3469
 
 ## Platform
-Router Firmware
+Security Appliance
 
 ## Firmware Classification
-Embedded Device Exposure
+Firmware Integrity Alert
 
 ## Processor Architecture
-ARM64
+ARM
 
 ## Bootloader
-Barebox
+U-Boot
 
 ## Exposure Status
 Under Investigation

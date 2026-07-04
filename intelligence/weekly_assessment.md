@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-7583
+Case ID: BID-2026-3469
 
-Classification: Embedded Device Exposure
+Classification: Firmware Integrity Alert
 
-Severity: MODERATE
+Severity: CRITICAL
 
-Status: Analysis
+Status: Open
 
 ## Assessment
 
-Exposure indicators remain under review.
+Boot sequence integrity requires further validation.

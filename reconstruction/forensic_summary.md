@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-7583
+Case ID: BID-2026-3469
 
-Date Opened: 2026-07-03
+Date Opened: 2026-07-04
 
-Status: Analysis
+Status: Open
 
-Classification: Embedded Device Exposure
+Classification: Firmware Integrity Alert
 
-Severity: MODERATE
+Severity: CRITICAL
 
-Affected Platform: Router Firmware
+Affected Platform: Security Appliance
 
 ---
 
@@ -48,11 +48,11 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 91%
+Confidence: 87%
 
-Affected Assets: 23
+Affected Assets: 25
 
-Current Risk Level: MODERATE
+Current Risk Level: CRITICAL
 
 ---
 
