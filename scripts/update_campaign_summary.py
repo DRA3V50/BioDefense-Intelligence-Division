@@ -1,67 +1,70 @@
 import json
+import csv
+from pathlib import Path
 
-with open("data/current_case.json", "r", encoding="utf-8") as f:
+current_case = Path("data/current_case.json")
+history = Path("data/investigation_history.csv")
+output = Path("intelligence/campaign_summary.md")
+
+with open(current_case, "r", encoding="utf-8") as f:
     case = json.load(f)
 
-summary = f"""# Campaign Intelligence Summary
+total = 0
 
-## Executive Summary
+if history.exists():
+    with open(history, newline="", encoding="utf-8") as csvfile:
+        reader = csv.reader(csvfile)
+        next(reader, None)
+        for row in reader:
+            if row:
+                total += 1
 
-Investigation **{case['case_id']}** remains under active analysis following detection of a **{case['classification']}** event affecting a **{case['affected_platform']}**.
+report = f"""# Campaign Summary
 
-Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
+## Operational Overview
 
----
+Current Campaign ID:
+{case["case_id"]}
 
-## Operational Assessment
+Current Classification:
+{case["classification"]}
 
-Severity: {case['severity']}
+Operational Phase:
+{case["status"]}
 
-Status: {case['status']}
+Investigations Recorded:
+{total}
 
-Analyst Confidence: {case['confidence']}%
+Affected Platform:
+{case["affected_platform"]}
 
-Affected Assets: {case['affected_assets']}
-
----
-
-## Technical Assessment
-
-Current investigative priorities include:
-
-- Firmware integrity validation
-- Embedded device forensic analysis
-- Evidence correlation
-- Exposure reconstruction
-- Persistence verification
-- Configuration analysis
-
----
-
-## Intelligence Assessment
-
-Current evidence does not indicate widespread compromise.
-
-Additional telemetry collection and firmware validation remain in progress.
+Current Confidence:
+{case["confidence"]}%
 
 ---
 
-## Recommended Analyst Actions
+## Division Assessment
 
-- Continue firmware validation
-- Review evidence chain
-- Validate cryptographic hashes
-- Compare firmware baseline
-- Complete forensic reconstruction
-- Update investigation documentation
+Current investigative activity remains focused on identifying embedded device compromise, firmware integrity deviations, and recurring exposure behavior across monitored operational environments.
+
+Analysts continue evidence correlation, forensic reconstruction, and device attribution while monitoring for additional indicators requiring containment.
+
+---
+
+## Current Operational Priority
+
+Firmware Integrity Analysis
+
+Exposure Path Reconstruction
+
+Device Attribution
+
+Evidence Correlation
+
+Operational Monitoring
 """
 
-with open(
-    "intelligence/campaign_summary.md",
-    "w",
-    encoding="utf-8"
-) as f:
-
-    f.write(summary)
+with open(output, "w", encoding="utf-8") as f:
+    f.write(report)
 
 print("Campaign summary updated.")
