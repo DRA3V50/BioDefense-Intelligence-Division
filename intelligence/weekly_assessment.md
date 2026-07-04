@@ -2,13 +2,13 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-3469
+Case ID: BID-2026-6034
 
 Classification: Firmware Integrity Alert
 
-Severity: CRITICAL
+Severity: HIGH
 
-Status: Open
+Status: Monitoring
 
 ## Assessment
 

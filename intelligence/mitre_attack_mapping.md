@@ -1,6 +1,6 @@
 # MITRE ATT&CK Mapping
 
-Investigation: BID-2026-3469
+Investigation: BID-2026-6034
 
 Classification: Firmware Integrity Alert
 
@@ -14,6 +14,6 @@ Classification: Firmware Integrity Alert
 
 ---
 
-Analyst Confidence: 87%
+Analyst Confidence: 91%
 
 Status: Correlated

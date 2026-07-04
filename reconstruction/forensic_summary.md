@@ -2,17 +2,17 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-3469
+Case ID: BID-2026-6034
 
 Date Opened: 2026-07-04
 
-Status: Open
+Status: Monitoring
 
 Classification: Firmware Integrity Alert
 
-Severity: CRITICAL
+Severity: HIGH
 
-Affected Platform: Security Appliance
+Affected Platform: Network Appliance
 
 ---
 
@@ -48,11 +48,11 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 87%
+Confidence: 91%
 
-Affected Assets: 25
+Affected Assets: 23
 
-Current Risk Level: CRITICAL
+Current Risk Level: HIGH
 
 ---
 

@@ -4,18 +4,18 @@
 ## 2026-07-04
 
 ### Case Opened
-Case ID: BID-2026-3469
+Case ID: BID-2026-6034
 
 ### Classification
 Firmware Integrity Alert
 
 ### Initial Assessment
-Evidence supports possible firmware manipulation.
+Observed firmware integrity deviations requiring immediate validation.
 
 ### Current Status
-Open
+Monitoring
 
 ### Severity
-CRITICAL
+HIGH
 
 ---

@@ -1,51 +1,43 @@
-# Campaign Intelligence Summary
+# Campaign Summary
 
-## Executive Summary
+## Operational Overview
 
-Investigation **BID-2026-3469** remains under active analysis following detection of a **Firmware Integrity Alert** event affecting a **Security Appliance**.
+Current Campaign ID:
+BID-2026-6034
 
-Current analysis indicates the activity is consistent with unauthorized firmware-level modification requiring continued evidence collection and validation.
+Current Classification:
+Firmware Integrity Alert
 
----
+Operational Phase:
+Monitoring
 
-## Operational Assessment
+Investigations Recorded:
+32
 
-Severity: CRITICAL
+Affected Platform:
+Network Appliance
 
-Status: Open
-
-Analyst Confidence: 87%
-
-Affected Assets: 25
-
----
-
-## Technical Assessment
-
-Current investigative priorities include:
-
-- Firmware integrity validation
-- Embedded device forensic analysis
-- Evidence correlation
-- Exposure reconstruction
-- Persistence verification
-- Configuration analysis
+Current Confidence:
+91%
 
 ---
 
-## Intelligence Assessment
+## Division Assessment
 
-Current evidence does not indicate widespread compromise.
+Current investigative activity remains focused on identifying embedded device compromise, firmware integrity deviations, and recurring exposure behavior across monitored operational environments.
 
-Additional telemetry collection and firmware validation remain in progress.
+Analysts continue evidence correlation, forensic reconstruction, and device attribution while monitoring for additional indicators requiring containment.
 
 ---
 
-## Recommended Analyst Actions
+## Current Operational Priority
 
-- Continue firmware validation
-- Review evidence chain
-- Validate cryptographic hashes
-- Compare firmware baseline
-- Complete forensic reconstruction
-- Update investigation documentation
+Firmware Integrity Analysis
+
+Exposure Path Reconstruction
+
+Device Attribution
+
+Evidence Correlation
+
+Operational Monitoring

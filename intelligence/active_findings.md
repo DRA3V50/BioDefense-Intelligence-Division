@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Unsigned module identified during validation.
-
-## Finding 2
-Boot sequence integrity review required.
-
-## Finding 3
 Firmware hash mismatch detected.
 
+## Finding 2
+Supply chain verification remains incomplete.
+
+## Finding 3
+Embedded device telemetry anomaly detected.
+
 ## Case ID
-BID-2026-3469
+BID-2026-6034
 
 ## Analyst Confidence
-87%
+91%

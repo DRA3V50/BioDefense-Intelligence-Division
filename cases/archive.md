@@ -241,3 +241,15 @@ Indicators warrant continued monitoring and forensic collection.
 Evidence supports possible firmware manipulation.
 
 ---
+
+## BID-2026-6034
+
+- Date: 2026-07-04
+- Classification: Firmware Integrity Alert
+- Severity: HIGH
+- Status: Monitoring
+- Confidence: 91%
+
+Observed firmware integrity deviations requiring immediate validation.
+
+---
