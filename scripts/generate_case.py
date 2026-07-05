@@ -2,39 +2,42 @@
 
 import json
 import random
-from datetime import date
+from datetime import datetime
 
-today = date.today().isoformat()
+today = datetime.utcnow().strftime("%Y-%m-%d")
 
-operation_codenames = [
-    "Operation ASHCROFT",
-    "Operation HELIX",
-    "Operation CERBERUS",
-    "Operation CHIMERA",
-    "Operation BLACKWELL",
-    "Operation AEGIS",
-    "Operation SENTINEL"
-]
-
-threat_families = [
-    "Synthetic Persistence",
-    "Firmware Rootkit",
-    "Embedded Backdoor",
-    "Supply Chain Implant",
-    "Memory Injection",
-    "Bootloader Compromise",
-    "Digital Pathogen"
+operation_names = [
+    "Operation Sentinel",
+    "Operation Black Horizon",
+    "Operation Helix",
+    "Operation Iron Shield",
+    "Operation Eclipse",
+    "Operation Aegis",
+    "Operation Catalyst",
+    "Operation Ashcroft",
+    "Operation Silent Vector",
+    "Operation Night Watch"
 ]
 
 classifications = [
+    "Embedded Device Exposure",
     "Firmware Integrity Alert",
     "Unauthorized Firmware Modification",
-    "Embedded Device Exposure",
     "Bootloader Anomaly",
     "Persistence Indicator Review",
     "Supply Chain Validation Review",
-    "Unsigned Firmware Detection",
-    "Memory Artifact Investigation"
+    "Memory Artifact Investigation",
+    "Firmware Signature Failure"
+]
+
+threat_families = [
+    "Firmware Rootkit",
+    "Embedded Persistence",
+    "Supply Chain Implant",
+    "Memory Injection",
+    "Unauthorized Boot Module",
+    "Configuration Tampering",
+    "Privilege Escalation Component"
 ]
 
 severity_levels = [
@@ -52,80 +55,90 @@ statuses = [
     "Monitoring"
 ]
 
-containment_status = [
-    "Contained",
-    "Partially Contained",
-    "Under Investigation",
-    "Escalated"
-]
-
-biosecurity_levels = [
-    "GREEN",
-    "BLUE",
-    "YELLOW",
-    "ORANGE",
-    "RED"
-]
-
-analysts = [
-    "J. Carter",
-    "M. Hayes",
-    "R. Sullivan",
-    "A. Brooks",
-    "L. Chen",
-    "S. Patel"
+containment_phases = [
+    "Detection",
+    "Collection",
+    "Analysis",
+    "Correlation",
+    "Containment",
+    "Recovery"
 ]
 
 platforms = [
     "Industrial Controller",
-    "Embedded Linux Device",
+    "Industrial Gateway",
     "Router Firmware",
-    "IoT Gateway",
+    "Embedded Linux Device",
+    "Medical Embedded Device",
     "Security Appliance",
     "Network Appliance"
+]
+
+device_families = [
+    "Industrial Router",
+    "Programmable Logic Controller",
+    "Embedded Sensor",
+    "Access Gateway",
+    "Medical Controller",
+    "SCADA Controller"
+]
+
+network_zones = [
+    "Research VLAN",
+    "Operations VLAN",
+    "Manufacturing Network",
+    "DMZ",
+    "Internal Core",
+    "Secure Segment"
 ]
 
 vendors = [
     "Cisco",
     "Siemens",
+    "Schneider Electric",
     "Juniper",
     "Dell",
-    "Advantech",
-    "Schneider Electric"
-]
-
-mitre = [
-    "T1542",
-    "T1055",
-    "T1078",
-    "T1027",
-    "T1105",
-    "T1562",
-    "T1003"
+    "Advantech"
 ]
 
 vectors = [
     "Supply Chain",
-    "Firmware Update",
     "Remote Access",
-    "USB Media",
+    "Firmware Update",
     "Credential Abuse",
+    "USB Media",
     "Unknown"
 ]
 
+analysts = [
+    "Analyst Team Alpha",
+    "Analyst Team Bravo",
+    "Analyst Team Delta",
+    "Analyst Team Sigma"
+]
+
 assessments = [
-    "Observed firmware integrity deviations requiring immediate validation.",
-    "Embedded telemetry indicates persistent unauthorized execution.",
-    "Evidence supports possible firmware manipulation.",
-    "Behavior consistent with advanced persistence techniques.",
-    "Indicators warrant continued monitoring and forensic collection."
+    "Firmware integrity deviations require continued validation before containment decisions are finalized.",
+    "Collected evidence indicates unauthorized modification requiring additional forensic acquisition.",
+    "Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.",
+    "Device artifacts require additional reconstruction to determine operational impact.",
+    "Investigation remains active while analysts continue evidence correlation and firmware verification."
+]
+
+recommendations = [
+    "Acquire complete firmware image.",
+    "Expand forensic acquisition.",
+    "Verify firmware signatures.",
+    "Perform hash validation.",
+    "Isolate affected devices.",
+    "Continue evidence collection."
 ]
 
 case = {
-    "case_id": f"BID-{date.today().year}-{random.randint(1000,9999)}",
+    "case_id": f"BID-{datetime.utcnow().year}-{random.randint(1000,9999)}",
     "date": today,
 
-    "operation_codename": random.choice(operation_codenames),
+    "operation": random.choice(operation_names),
 
     "classification": random.choice(classifications),
 
@@ -133,53 +146,53 @@ case = {
 
     "severity": random.choice(severity_levels),
 
-    "biosecurity_level": random.choice(biosecurity_levels),
-
     "status": random.choice(statuses),
 
-    "containment_status": random.choice(containment_status),
+    "containment_phase": random.choice(containment_phases),
 
     "affected_platform": random.choice(platforms),
 
+    "device_family": random.choice(device_families),
+
     "vendor": random.choice(vendors),
 
-    "firmware_version": f"{random.randint(1,9)}.{random.randint(0,9)}.{random.randint(0,9)}",
+    "network_zone": random.choice(network_zones),
 
-    "confidence": random.randint(70,99),
+    "firmware_version":
+        f"{random.randint(1,8)}."
+        f"{random.randint(0,9)}."
+        f"{random.randint(0,9)}",
 
-    "affected_assets": random.randint(2,30),
+    "confidence": random.randint(75,99),
 
-    "evidence_count": random.randint(5,40),
+    "risk_score": random.randint(40,100),
 
-    "ioc_count": random.randint(3,25),
+    "affected_assets": random.randint(3,40),
 
-    "risk_score": random.randint(55,100),
+    "evidence_count": random.randint(8,60),
 
-    "mitre_attack": random.choice(mitre),
+    "ioc_count": random.randint(2,25),
 
     "initial_access": random.choice(vectors),
 
     "lead_analyst": random.choice(analysts),
 
     "priority": random.choice([
-        "Routine",
-        "Elevated",
-        "High",
-        "Critical"
+        "Priority I",
+        "Priority II",
+        "Priority III"
     ]),
 
-    "recommended_action": random.choice([
-        "Continue forensic analysis.",
-        "Collect firmware image.",
-        "Isolate affected systems.",
-        "Deploy containment controls.",
-        "Validate firmware signatures."
-    ]),
+    "recommended_action": random.choice(recommendations),
 
     "assessment": random.choice(assessments)
 }
 
-with open("data/current_case.json", "w", encoding="utf-8") as f:
+with open(
+    "data/current_case.json",
+    "w",
+    encoding="utf-8"
+) as f:
     json.dump(case, f, indent=4)
 
-print("BioDefense Intelligence case generated.")
+print(f"Generated investigation {case['case_id']}")
