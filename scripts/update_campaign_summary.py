@@ -9,59 +9,91 @@ output = Path("intelligence/campaign_summary.md")
 with open(current_case, "r", encoding="utf-8") as f:
     case = json.load(f)
 
-total = 0
+total_cases = 0
+critical_cases = 0
+high_cases = 0
 
 if history.exists():
     with open(history, newline="", encoding="utf-8") as csvfile:
-        reader = csv.reader(csvfile)
-        next(reader, None)
+        reader = csv.DictReader(csvfile)
+
         for row in reader:
-            if row:
-                total += 1
 
-report = f"""# Campaign Summary
+            total_cases += 1
 
-## Operational Overview
+            if row.get("severity") == "CRITICAL":
+                critical_cases += 1
 
-Current Campaign ID:
-{case["case_id"]}
+            elif row.get("severity") == "HIGH":
+                high_cases += 1
 
-Current Classification:
-{case["classification"]}
+report = f"""# Operational Campaign Summary
 
-Operational Phase:
-{case["status"]}
+## Current Investigation
 
-Investigations Recorded:
-{total}
+Case ID: {case["case_id"]}
 
-Affected Platform:
-{case["affected_platform"]}
+Operation: {case["operation"]}
 
-Current Confidence:
-{case["confidence"]}%
+Threat Family: {case["threat_family"]}
 
----
+Classification: {case["classification"]}
 
-## Division Assessment
+Current Phase: {case["status"]}
 
-Current investigative activity remains focused on identifying embedded device compromise, firmware integrity deviations, and recurring exposure behavior across monitored operational environments.
+Priority: {case["priority"]}
 
-Analysts continue evidence correlation, forensic reconstruction, and device attribution while monitoring for additional indicators requiring containment.
+Lead Analyst: {case["lead_analyst"]}
 
 ---
 
-## Current Operational Priority
+## Operational Activity
 
-Firmware Integrity Analysis
+Total Investigations Recorded: {total_cases}
 
-Exposure Path Reconstruction
+High Severity Cases: {high_cases}
 
-Device Attribution
+Critical Severity Cases: {critical_cases}
 
-Evidence Correlation
+Current Confidence: {case["confidence"]}%
 
-Operational Monitoring
+Affected Assets: {case["affected_assets"]}
+
+Evidence Collected: {case["evidence_count"]}
+
+Indicators Recorded: {case["ioc_count"]}
+
+---
+
+## Intelligence Assessment
+
+Current investigative activity indicates continued monitoring of a suspected digital biosecurity event.
+
+Analysts are correlating recovered evidence, validating exposure indicators, reconstructing observed activity, and assessing potential operational impact.
+
+No attribution has been established at this stage.
+
+---
+
+## Operational Priorities
+
+• Evidence correlation
+
+• Digital forensic reconstruction
+
+• Embedded system validation
+
+• Device integrity verification
+
+• Indicator analysis
+
+• Operational monitoring
+
+---
+
+## Recommended Action
+
+{case["recommended_action"]}
 """
 
 with open(output, "w", encoding="utf-8") as f:
