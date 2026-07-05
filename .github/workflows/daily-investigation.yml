@@ -62,9 +62,6 @@ jobs:
       - name: Update IOC Database
         run: python scripts/update_ioc_database.py
 
-      - name: Update MITRE Mapping
-        run: python scripts/update_mitre_mapping.py
-
       - name: Update Campaign Summary
         run: python scripts/update_campaign_summary.py
 
