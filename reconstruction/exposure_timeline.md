@@ -4,13 +4,13 @@
 ## 2026-07-05
 
 ### Case Opened
-Case ID: BID-2026-1736
+Case ID: BID-2026-3145
 
 ### Classification
-Supply Chain Validation Review
+Bootloader Anomaly
 
 ### Initial Assessment
-Evidence supports possible firmware manipulation.
+Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.
 
 ### Current Status
 Analysis

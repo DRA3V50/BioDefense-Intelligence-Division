@@ -3,22 +3,22 @@
 ## Operational Overview
 
 Current Campaign ID:
-BID-2026-1736
+BID-2026-3145
 
 Current Classification:
-Supply Chain Validation Review
+Bootloader Anomaly
 
 Operational Phase:
 Analysis
 
 Investigations Recorded:
-33
+34
 
 Affected Platform:
-Network Appliance
+Security Appliance
 
 Current Confidence:
-71%
+91%
 
 ---
 

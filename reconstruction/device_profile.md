@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-1736
+BID-2026-3145
 
 ## Platform
-Network Appliance
+Security Appliance
 
 ## Firmware Classification
-Supply Chain Validation Review
+Bootloader Anomaly
 
 ## Processor Architecture
 x86 Embedded
 
 ## Bootloader
-Vendor Proprietary
+Barebox
 
 ## Exposure Status
 Under Investigation

@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Configuration persistence indicator observed.
-
-## Finding 2
 Embedded device telemetry anomaly detected.
 
+## Finding 2
+Boot sequence integrity review required.
+
 ## Finding 3
-Unsigned module identified during validation.
+Configuration persistence indicator observed.
 
 ## Case ID
-BID-2026-1736
+BID-2026-3145
 
 ## Analyst Confidence
-71%
+91%

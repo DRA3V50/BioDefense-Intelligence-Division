@@ -265,3 +265,15 @@ Observed firmware integrity deviations requiring immediate validation.
 Evidence supports possible firmware manipulation.
 
 ---
+
+## BID-2026-3145
+
+- Date: 2026-07-05
+- Classification: Bootloader Anomaly
+- Severity: MODERATE
+- Status: Analysis
+- Confidence: 91%
+
+Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.
+
+---
