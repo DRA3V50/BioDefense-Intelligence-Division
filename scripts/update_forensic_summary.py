@@ -3,77 +3,136 @@ import json
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-report = f"""# Digital Forensic Summary
+report = f"""# Digital Investigation Summary
 
-## Investigation Information
+## Case Information
 
-Case ID: {case['case_id']}
-
-Date Opened: {case['date']}
-
-Status: {case['status']}
-
-Classification: {case['classification']}
-
-Severity: {case['severity']}
-
-Affected Platform: {case['affected_platform']}
+| Item | Value |
+|------|-------|
+| Case ID | {case["case_id"]} |
+| Operation | {case["operation"]} |
+| Investigation Date | {case["date"]} |
+| Classification | {case["classification"]} |
+| Threat Family | {case["threat_family"]} |
+| Investigation Status | {case["status"]} |
+| Containment Phase | {case["containment_phase"]} |
 
 ---
 
-## Executive Assessment
+## Operational Overview
 
-Initial triage identified indicators consistent with a firmware-related security event requiring detailed forensic examination. Current evidence supports continued analysis to determine scope, persistence mechanisms, and potential operational impact.
+This investigation concerns a suspected digital biosecurity event affecting monitored operational technology and embedded systems.
+
+Current investigative activity is focused on determining the origin of anomalous behavior, validating collected evidence, identifying exposure pathways, and reconstructing the sequence of events leading to detection.
+
+At this stage no attribution has been established and investigative activities remain ongoing.
 
 ---
 
-## Evidence Reviewed
+## Infrastructure Profile
 
-• Firmware image integrity
+| Attribute | Value |
+|----------|-------|
+| Platform | {case["affected_platform"]} |
+| Device Family | {case["device_family"]} |
+| Vendor | {case["vendor"]} |
+| Firmware Version | {case["firmware_version"]} |
+| Network Zone | {case["network_zone"]} |
+| Affected Assets | {case["affected_assets"]} |
+
+---
+
+## Evidence Summary
+
+Evidence collected during this investigation currently includes:
+
+• Firmware images
 
 • Embedded configuration artifacts
 
 • Device telemetry
 
-• System event records
+• Boot records
 
-• Boot sequence analysis
+• System event logs
 
----
+• Network observations
 
-## Technical Findings
-
-Current investigation identified anomalies requiring additional validation.
-
-No conclusion has been reached regarding the complete extent of compromise.
-
-Evidence collected to date remains internally consistent with the current investigative assessment.
+Evidence collection remains active while additional artifacts are validated.
 
 ---
 
-## Risk Assessment
+## Exposure Assessment
 
-Confidence: {case['confidence']}%
+Threat Family:
 
-Affected Assets: {case['affected_assets']}
+{case["threat_family"]}
 
-Current Risk Level: {case['severity']}
+Initial Access Vector:
+
+{case["initial_access"]}
+
+Observed Risk Score:
+
+{case["risk_score"]}
+
+Confidence Level:
+
+{case["confidence"]}%
+
+Priority:
+
+{case["priority"]}
 
 ---
 
-## Recommended Next Actions
+## Analyst Assessment
 
-- Continue firmware validation
+{case["assessment"]}
 
-- Verify firmware hashes
+---
 
-- Correlate collected evidence
+## Recommended Actions
 
-- Expand device acquisition
+Primary Recommendation
 
-- Complete chain of custody review
+{case["recommended_action"]}
 
-- Finalize forensic reconstruction
+Additional investigative actions:
+
+- Continue forensic acquisition
+- Expand evidence correlation
+- Validate device integrity
+- Preserve collected artifacts
+- Continue monitoring affected infrastructure
+
+---
+
+## Current Investigation Status
+
+Lead Analyst:
+
+{case["lead_analyst"]}
+
+Current Status:
+
+{case["status"]}
+
+Evidence Items:
+
+{case["evidence_count"]}
+
+Indicators of Interest:
+
+{case["ioc_count"]}
+
+Containment Phase:
+
+{case["containment_phase"]}
+
+---
+
+This report is automatically generated as part of the BioDefense Intelligence Division investigative workflow.
 """
 
 with open(
