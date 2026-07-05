@@ -2,145 +2,177 @@ import json
 import csv
 import os
 
-# -----------------------------
-# LOAD CASE
-# -----------------------------
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-# -----------------------------
-# LOAD STATE
-# -----------------------------
-phase_path = "data/investigation_state.json"
-phase = "Unknown"
+phase = "Detection"
 
-if os.path.exists(phase_path):
-    with open(phase_path, "r", encoding="utf-8") as f:
-        phase = json.load(f).get("current_phase", "Unknown")
+state_file = "data/investigation_state.json"
 
-# -----------------------------
-# LOAD HISTORY
-# -----------------------------
+if os.path.exists(state_file):
+    with open(state_file, "r", encoding="utf-8") as f:
+        phase = json.load(f).get("current_phase", "Detection")
+
+history = []
+
 history_file = "data/investigation_history.csv"
-history_rows = []
 
 if os.path.exists(history_file):
     with open(history_file, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        history_rows = list(reader)
+        history = list(reader)
 
-total_cases = len(history_rows)
-high = sum(1 for r in history_rows if r.get("severity") == "HIGH")
-critical = sum(1 for r in history_rows if r.get("severity") == "CRITICAL")
+total = len(history)
 
-recent = history_rows[-5:]
+high = sum(
+    1 for row in history
+    if row.get("severity") == "HIGH"
+)
 
-history_table = ""
-if recent:
-    history_table += "| Case ID | Classification | Severity |\n"
-    history_table += "|--------|---------------|----------|\n"
-    for r in reversed(recent):
-        history_table += f"| {r.get('case_id','N/A')} | {r.get('classification','N/A')} | {r.get('severity','N/A')} |\n"
+critical = sum(
+    1 for row in history
+    if row.get("severity") == "CRITICAL"
+)
 
-# -----------------------------
-# LOCKED HEADER DESCRIPTION (DO NOT GENERATE)
-# -----------------------------
-header_description = """
-Blue-team digital intelligence environment focused on firmware compromise detection, embedded system analysis, and structured forensic reconstruction of device-level anomalies across operational networks.
+recent_rows = ""
+
+for row in reversed(history[-5:]):
+
+    recent_rows += (
+        f"| {row.get('case_id')} | "
+        f"{row.get('classification')} | "
+        f"{row.get('severity')} |\n"
+    )
+
+if recent_rows == "":
+    recent_rows = (
+        "| N/A | N/A | N/A |\n"
+    )
+
+header = """
+Blue-team digital investigation environment dedicated to firmware compromise analysis, embedded system forensics, evidence reconstruction, operational reporting, and digital biosecurity research.
 """
 
-# -----------------------------
-# LOCKED RESEARCH SCOPE
-# -----------------------------
-research_scope = """
+scope = """
 ## RESEARCH SCOPE
 
-- Firmware compromise investigations
-- Embedded device forensics
-- Exposure pathway reconstruction
-- Threat intelligence correlation
-- Digital biosecurity research
-- Defensive malware analysis
-- Critical infrastructure protection
-
-BioDefense Intelligence Division is an analytical research environment focused on firmware compromise investigations, embedded device security, operational threat intelligence, digital evidence management, and cyber incident reconstruction. The project emphasizes repeatable investigative workflows, structured reporting, forensic documentation, and automated evidence generation using Python and C#.
+- Embedded device investigations
+- Firmware integrity analysis
+- Evidence reconstruction
+- Digital forensic reporting
+- Exposure pathway analysis
+- Device attribution
+- Operational biosecurity research
+- Incident documentation
 """
 
-# -----------------------------
-# REPORT
-# -----------------------------
 report = f"""
 <!-- FSE-REPORT-START -->
 
 # BIODEFENSE INTELLIGENCE DIVISION
 
-{header_description}
+{header}
 
->>
+>
 
 ## ACTIVE INVESTIGATION
 
-**Case ID:** {case['case_id']}
-**Date:** {case['date']}
-**Phase:** {phase}
+| Item | Value |
+|------|-------|
+| Case ID | {case['case_id']} |
+| Date | {case['date']} |
+| Operation | {case['operation']} |
+| Investigation Phase | {phase} |
 
->>
+>
 
 ## CLASSIFICATION PROFILE
 
-**Classification:** {case['classification']}
-**Severity:** {case['severity']}
-**Platform:** {case['affected_platform']}
-**Affected Assets:** {case['affected_assets']}
-**Confidence:** {case['confidence']}%
+| Attribute | Value |
+|-----------|-------|
+| Classification | {case['classification']} |
+| Threat Family | {case['threat_family']} |
+| Severity | {case['severity']} |
+| Priority | {case['priority']} |
+| Risk Score | {case['risk_score']} |
+| Confidence | {case['confidence']}% |
 
->>
+>
+
+## DEVICE PROFILE
+
+| Attribute | Value |
+|-----------|-------|
+| Platform | {case['affected_platform']} |
+| Device Family | {case['device_family']} |
+| Vendor | {case['vendor']} |
+| Firmware | {case['firmware_version']} |
+| Network Zone | {case['network_zone']} |
+| Assets | {case['affected_assets']} |
+
+>
+
+## INVESTIGATION STATUS
+
+| Metric | Value |
+|---------|------|
+| Evidence Items | {case['evidence_count']} |
+| Indicators | {case['ioc_count']} |
+| Initial Access | {case['initial_access']} |
+| Lead Analyst | {case['lead_analyst']} |
+| Recommended Action | {case['recommended_action']} |
+
+>
 
 ## ANALYST ASSESSMENT
 
 {case['assessment']}
 
->>
+>
 
-{research_scope}
+{scope}
 
->>
+>
 
 ## OPERATIONAL METRICS
 
 | Metric | Value |
-|--------|------|
-| Total Investigations | {total_cases} |
-| High Severity | {high} |
-| Critical Severity | {critical} |
-| Active Phase | {phase} |
+|---------|------:|
+| Total Investigations | {total} |
+| High Severity Cases | {high} |
+| Critical Severity Cases | {critical} |
+| Current Phase | {phase} |
 
->>
+>
 
 ## RECENT INVESTIGATIONS
 
-{history_table}
+| Case ID | Classification | Severity |
+|---------|---------------|----------|
+{recent_rows}
 
 <!-- FSE-REPORT-END -->
 """
 
-# -----------------------------
-# SAFE WRITEBACK
-# -----------------------------
 with open("README.md", "r", encoding="utf-8") as f:
-    content = f.read()
+    readme = f.read()
 
 start = "<!-- FSE-REPORT-START -->"
 end = "<!-- FSE-REPORT-END -->"
 
-if start in content and end in content:
-    before = content.split(start)[0]
-    after = content.split(end)[1]
-    new_content = before + report + after
+if start in readme and end in readme:
+
+    before = readme.split(start)[0]
+
+    after = readme.split(end)[1]
+
+    readme = before + report + after
+
 else:
-    new_content = content + "\n\n" + report
+
+    readme += "\n\n" + report
 
 with open("README.md", "w", encoding="utf-8") as f:
-    f.write(new_content)
+    f.write(readme)
 
-print("README updated (header + research scope locked).")
+print("README updated.")
