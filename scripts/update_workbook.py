@@ -1,54 +1,93 @@
 import json
-from openpyxl import Workbook, load_workbook
 from pathlib import Path
+from openpyxl import Workbook, load_workbook
 
-workbook_path = "workbooks/Exposure-Tracking-Matrix.xlsx"
+WORKBOOK = Path("workbooks/Exposure-Tracking-Matrix.xlsx")
 
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-# NEW: derived analyst metrics (adds realism)
-risk_score = int(case.get("confidence", 0)) * {
+severity_weight = {
     "LOW": 1,
     "MODERATE": 2,
     "HIGH": 3,
     "CRITICAL": 4
-}.get(case.get("severity", "LOW"), 1)
+}
 
-attack_surface = len(case.get("affected_assets", [])) if isinstance(case.get("affected_assets"), list) else case.get("affected_assets", 0)
+risk_score = (
+    severity_weight.get(case["severity"], 1)
+    * case["confidence"]
+)
 
-if not Path(workbook_path).exists():
+if not WORKBOOK.exists():
+
     wb = Workbook()
+
     ws = wb.active
+
+    ws.title = "Investigations"
 
     ws.append([
         "Date",
         "Case ID",
+        "Operation",
         "Classification",
         "Severity",
-        "Platform",
-        "Confidence",
+        "Priority",
         "Risk Score",
-        "Attack Surface",
+        "Confidence",
+        "Evidence",
+        "IOCs",
+        "Assets",
+        "Platform",
+        "Vendor",
+        "Network Zone",
+        "Lead Analyst",
         "Status"
     ])
 
 else:
-    wb = load_workbook(workbook_path)
-    ws = wb.active
+
+    wb = load_workbook(WORKBOOK)
+
+    ws = wb["Investigations"]
 
 ws.append([
+
     case["date"],
+
     case["case_id"],
+
+    case["operation"],
+
     case["classification"],
+
     case["severity"],
-    case["affected_platform"],
-    case["confidence"],
+
+    case["priority"],
+
     risk_score,
-    attack_surface,
+
+    case["confidence"],
+
+    case["evidence_count"],
+
+    case["ioc_count"],
+
+    case["affected_assets"],
+
+    case["affected_platform"],
+
+    case["vendor"],
+
+    case["network_zone"],
+
+    case["lead_analyst"],
+
     case["status"]
+
 ])
 
-wb.save(workbook_path)
+wb.save(WORKBOOK)
 
-print("Workbook updated with analyst metrics.")
+print("Workbook updated.")
