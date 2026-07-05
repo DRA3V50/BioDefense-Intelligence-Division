@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-6034
+BID-2026-1736
 
 ## Platform
 Network Appliance
 
 ## Firmware Classification
-Firmware Integrity Alert
+Supply Chain Validation Review
 
 ## Processor Architecture
-MIPS
+x86 Embedded
 
 ## Bootloader
-Coreboot
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

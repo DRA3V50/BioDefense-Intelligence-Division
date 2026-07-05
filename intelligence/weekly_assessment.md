@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-6034
+Case ID: BID-2026-1736
 
-Classification: Firmware Integrity Alert
+Classification: Supply Chain Validation Review
 
-Severity: HIGH
+Severity: MODERATE
 
-Status: Monitoring
+Status: Analysis
 
 ## Assessment
 
-Boot sequence integrity requires further validation.
+Firmware signature verification remains pending.

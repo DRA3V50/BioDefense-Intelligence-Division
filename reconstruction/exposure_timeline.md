@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-04
+## 2026-07-05
 
 ### Case Opened
-Case ID: BID-2026-6034
+Case ID: BID-2026-1736
 
 ### Classification
-Firmware Integrity Alert
+Supply Chain Validation Review
 
 ### Initial Assessment
-Observed firmware integrity deviations requiring immediate validation.
+Evidence supports possible firmware manipulation.
 
 ### Current Status
-Monitoring
+Analysis
 
 ### Severity
-HIGH
+MODERATE
 
 ---

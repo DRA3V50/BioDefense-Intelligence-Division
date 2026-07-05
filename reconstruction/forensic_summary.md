@@ -2,15 +2,15 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-6034
+Case ID: BID-2026-1736
 
-Date Opened: 2026-07-04
+Date Opened: 2026-07-05
 
-Status: Monitoring
+Status: Analysis
 
-Classification: Firmware Integrity Alert
+Classification: Supply Chain Validation Review
 
-Severity: HIGH
+Severity: MODERATE
 
 Affected Platform: Network Appliance
 
@@ -48,11 +48,11 @@ Evidence collected to date remains internally consistent with the current invest
 
 ## Risk Assessment
 
-Confidence: 91%
+Confidence: 71%
 
-Affected Assets: 23
+Affected Assets: 2
 
-Current Risk Level: HIGH
+Current Risk Level: MODERATE
 
 ---
 

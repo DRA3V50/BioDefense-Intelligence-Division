@@ -3,22 +3,22 @@
 ## Operational Overview
 
 Current Campaign ID:
-BID-2026-6034
+BID-2026-1736
 
 Current Classification:
-Firmware Integrity Alert
+Supply Chain Validation Review
 
 Operational Phase:
-Monitoring
+Analysis
 
 Investigations Recorded:
-32
+33
 
 Affected Platform:
 Network Appliance
 
 Current Confidence:
-91%
+71%
 
 ---
 

@@ -1,16 +1,16 @@
 # Active Findings
 
 ## Finding 1
-Firmware hash mismatch detected.
+Configuration persistence indicator observed.
 
 ## Finding 2
-Supply chain verification remains incomplete.
-
-## Finding 3
 Embedded device telemetry anomaly detected.
 
+## Finding 3
+Unsigned module identified during validation.
+
 ## Case ID
-BID-2026-6034
+BID-2026-1736
 
 ## Analyst Confidence
-91%
+71%

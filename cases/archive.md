@@ -253,3 +253,15 @@ Evidence supports possible firmware manipulation.
 Observed firmware integrity deviations requiring immediate validation.
 
 ---
+
+## BID-2026-1736
+
+- Date: 2026-07-05
+- Classification: Supply Chain Validation Review
+- Severity: MODERATE
+- Status: Analysis
+- Confidence: 71%
+
+Evidence supports possible firmware manipulation.
+
+---

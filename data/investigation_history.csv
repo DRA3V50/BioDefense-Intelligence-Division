@@ -31,3 +31,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-03,BID-2026-7583,Embedded Device Exposure,MODERATE,Analysis,91
 2026-07-04,BID-2026-3469,Firmware Integrity Alert,CRITICAL,Open,87
 2026-07-04,BID-2026-6034,Firmware Integrity Alert,HIGH,Monitoring,91
+2026-07-05,BID-2026-1736,Supply Chain Validation Review,MODERATE,Analysis,71
