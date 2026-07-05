@@ -1,70 +1,82 @@
 import json
 import random
-import os
 
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-iocs = [
-
-    ("SHA256",
-     "5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214"),
-
-    ("SHA256",
-     "71cfd17cda12cb2d6679b1f6c7496c7d91e7f3488d4d5ac5eaf9d617af28e441"),
-
-    ("IP Address",
-     "185.193.126.44"),
-
-    ("IP Address",
-     "91.214.124.18"),
-
-    ("Domain",
-     "fw-update-check.net"),
-
-    ("Domain",
-     "embedded-sync.org"),
-
-    ("Registry Key",
-     "HKLM\\Software\\Firmware\\Persistence"),
-
-    ("Registry Key",
-     "HKCU\\Software\\BootMonitor"),
-
-    ("Service",
-     "FirmwareHealthService"),
-
-    ("Process",
-     "fwupdate.exe")
+ioc_pool = [
+    ("SHA256", "5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214"),
+    ("SHA256", "71cfd17cda12cb2d6679b1f6c7496c7d91e7f3488d4d5ac5eaf9d617af28e441"),
+    ("IPv4", "185.193.126.44"),
+    ("IPv4", "91.214.124.18"),
+    ("Domain", "telemetry-sync.net"),
+    ("Domain", "device-update.org"),
+    ("Hostname", "LAB-GW-014"),
+    ("Hostname", "MED-NODE-22"),
+    ("Service", "TelemetryMonitor"),
+    ("Service", "DeviceIntegrityService"),
+    ("Registry", "HKLM\\Software\\DeviceSecurity"),
+    ("Process", "diagservice.exe"),
+    ("Certificate", "Unsigned Embedded Certificate"),
+    ("Firmware", "Unexpected boot image hash")
 ]
 
-random.shuffle(iocs)
+selected = random.sample(ioc_pool, 6)
 
-selected = iocs[:5]
+report = f"""# Intelligence Bulletin
 
-output = f"""# Indicators of Compromise
+## Investigation
 
-Investigation: {case['case_id']}
+Case ID: {case["case_id"]}
 
-Classification: {case['classification']}
+Operation: {case["operation"]}
+
+Classification: {case["classification"]}
+
+Threat Family: {case["threat_family"]}
+
+Priority: {case["priority"]}
 
 ---
 
-| IOC Type | Indicator |
-|-----------|-----------|
+## Indicators of Interest
+
+| Type | Indicator |
+|------|-----------|
 """
 
-for ioc_type, value in selected:
+for t, v in selected:
+    report += f"| {t} | {v} |\n"
 
-    output += f"| {ioc_type} | {value} |\n"
-
-output += f"""
+report += f"""
 
 ---
 
-Confidence: {case['confidence']}%
+## Analytical Notes
 
-Status: Active Investigation
+Current indicators require additional validation before attribution.
+
+No indicator should be considered independently conclusive.
+
+Correlation with collected evidence remains ongoing.
+
+---
+
+## Investigation Metrics
+
+Evidence Items: {case["evidence_count"]}
+
+Indicator Count: {case["ioc_count"]}
+
+Confidence: {case["confidence"]}%
+
+Status: {case["status"]}
+
+Lead Analyst: {case["lead_analyst"]}
+
+Recommended Action:
+
+{case["recommended_action"]}
 """
 
 with open(
@@ -72,7 +84,6 @@ with open(
     "w",
     encoding="utf-8"
 ) as f:
+    f.write(report)
 
-    f.write(output)
-
-print("IOC database updated.")
+print("IOC intelligence bulletin updated.")
