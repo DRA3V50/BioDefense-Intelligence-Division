@@ -277,3 +277,15 @@ Evidence supports possible firmware manipulation.
 Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.
 
 ---
+
+## BID-2026-3702
+
+- Date: 2026-07-05
+- Classification: Supply Chain Validation Review
+- Severity: HIGH
+- Status: Analysis
+- Confidence: 79%
+
+Device artifacts require additional reconstruction to determine operational impact.
+
+---

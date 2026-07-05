@@ -1,43 +1,67 @@
-# Campaign Summary
+# Operational Campaign Summary
 
-## Operational Overview
+## Current Investigation
 
-Current Campaign ID:
-BID-2026-3145
+Case ID: BID-2026-3702
 
-Current Classification:
-Bootloader Anomaly
+Operation: Operation Eclipse
 
-Operational Phase:
-Analysis
+Threat Family: Firmware Rootkit
 
-Investigations Recorded:
-34
+Classification: Supply Chain Validation Review
 
-Affected Platform:
-Security Appliance
+Current Phase: Analysis
 
-Current Confidence:
-91%
+Priority: Priority II
+
+Lead Analyst: Analyst Team Sigma
 
 ---
 
-## Division Assessment
+## Operational Activity
 
-Current investigative activity remains focused on identifying embedded device compromise, firmware integrity deviations, and recurring exposure behavior across monitored operational environments.
+Total Investigations Recorded: 35
 
-Analysts continue evidence correlation, forensic reconstruction, and device attribution while monitoring for additional indicators requiring containment.
+High Severity Cases: 0
+
+Critical Severity Cases: 0
+
+Current Confidence: 79%
+
+Affected Assets: 3
+
+Evidence Collected: 31
+
+Indicators Recorded: 9
 
 ---
 
-## Current Operational Priority
+## Intelligence Assessment
 
-Firmware Integrity Analysis
+Current investigative activity indicates continued monitoring of a suspected digital biosecurity event.
 
-Exposure Path Reconstruction
+Analysts are correlating recovered evidence, validating exposure indicators, reconstructing observed activity, and assessing potential operational impact.
 
-Device Attribution
+No attribution has been established at this stage.
 
-Evidence Correlation
+---
 
-Operational Monitoring
+## Operational Priorities
+
+• Evidence correlation
+
+• Digital forensic reconstruction
+
+• Embedded system validation
+
+• Device integrity verification
+
+• Indicator analysis
+
+• Operational monitoring
+
+---
+
+## Recommended Action
+
+Continue evidence collection.

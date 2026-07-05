@@ -1,16 +1,16 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-3145
+BID-2026-3702
 
 ## Platform
-Security Appliance
+Embedded Linux Device
 
 ## Firmware Classification
-Bootloader Anomaly
+Supply Chain Validation Review
 
 ## Processor Architecture
-x86 Embedded
+PowerPC
 
 ## Bootloader
 Barebox

@@ -4,13 +4,13 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3145 |
-| Operation | Operation Ashcroft |
+| Case ID | BID-2026-3702 |
+| Operation | Operation Eclipse |
 | Investigation Date | 2026-07-05 |
-| Classification | Bootloader Anomaly |
-| Threat Family | Configuration Tampering |
+| Classification | Supply Chain Validation Review |
+| Threat Family | Firmware Rootkit |
 | Investigation Status | Analysis |
-| Containment Phase | Collection |
+| Containment Phase | Correlation |
 
 ---
 
@@ -28,12 +28,12 @@ At this stage no attribution has been established and investigative activities r
 
 | Attribute | Value |
 |----------|-------|
-| Platform | Security Appliance |
-| Device Family | Medical Controller |
-| Vendor | Juniper |
-| Firmware Version | 7.5.2 |
-| Network Zone | Operations VLAN |
-| Affected Assets | 35 |
+| Platform | Embedded Linux Device |
+| Device Family | Embedded Sensor |
+| Vendor | Advantech |
+| Firmware Version | 1.9.3 |
+| Network Zone | DMZ |
+| Affected Assets | 3 |
 
 ---
 
@@ -61,19 +61,19 @@ Evidence collection remains active while additional artifacts are validated.
 
 Threat Family:
 
-Configuration Tampering
+Firmware Rootkit
 
 Initial Access Vector:
 
-Supply Chain
+Remote Access
 
 Observed Risk Score:
 
-96
+48
 
 Confidence Level:
 
-91%
+79%
 
 Priority:
 
@@ -83,7 +83,7 @@ Priority II
 
 ## Analyst Assessment
 
-Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.
+Device artifacts require additional reconstruction to determine operational impact.
 
 ---
 
@@ -91,7 +91,7 @@ Embedded telemetry demonstrates abnormal execution behavior consistent with pers
 
 Primary Recommendation
 
-Acquire complete firmware image.
+Continue evidence collection.
 
 Additional investigative actions:
 
@@ -107,7 +107,7 @@ Additional investigative actions:
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Sigma
 
 Current Status:
 
@@ -115,15 +115,15 @@ Analysis
 
 Evidence Items:
 
-44
+31
 
 Indicators of Interest:
 
-20
+9
 
 Containment Phase:
 
-Collection
+Correlation
 
 ---
 

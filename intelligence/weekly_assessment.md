@@ -2,14 +2,14 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-3145
+Case ID: BID-2026-3702
 
-Classification: Bootloader Anomaly
+Classification: Supply Chain Validation Review
 
-Severity: MODERATE
+Severity: HIGH
 
 Status: Analysis
 
 ## Assessment
 
-Boot sequence integrity requires further validation.
+Firmware signature verification remains pending.

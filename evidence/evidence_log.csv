@@ -43,3 +43,4 @@ EV-0041,2026-07-04,BID-2026-3469,Firmware Image,Evidence supports possible firmw
 EV-0042,2026-07-04,BID-2026-6034,Firmware Image,Observed firmware integrity deviations requiring immediate validation.
 EV-0043,2026-07-05,BID-2026-1736,Supply Chain Record,Evidence supports possible firmware manipulation.
 EV-0044,2026-07-05,BID-2026-3145,Boot Artifact,Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.
+EV-0045,2026-07-05,BID-2026-3702,Supply Chain Record,Device artifacts require additional reconstruction to determine operational impact.
