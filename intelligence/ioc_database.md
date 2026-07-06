@@ -2,15 +2,15 @@
 
 ## Investigation
 
-Case ID: BID-2026-3702
+Case ID: BID-2026-6201
 
-Operation: Operation Eclipse
+Operation: Operation Ashcroft
 
-Classification: Supply Chain Validation Review
+Classification: Memory Artifact Investigation
 
-Threat Family: Firmware Rootkit
+Threat Family: Unauthorized Boot Module
 
-Priority: Priority II
+Priority: Priority I
 
 ---
 
@@ -18,11 +18,11 @@ Priority: Priority II
 
 | Type | Indicator |
 |------|-----------|
+| Registry | HKLM\Software\DeviceSecurity |
 | SHA256 | 71cfd17cda12cb2d6679b1f6c7496c7d91e7f3488d4d5ac5eaf9d617af28e441 |
-| Certificate | Unsigned Embedded Certificate |
-| IPv4 | 185.193.126.44 |
-| IPv4 | 91.214.124.18 |
-| Hostname | LAB-GW-014 |
+| Service | TelemetryMonitor |
+| Service | DeviceIntegrityService |
+| Domain | telemetry-sync.net |
 | Hostname | MED-NODE-22 |
 
 
@@ -40,16 +40,16 @@ Correlation with collected evidence remains ongoing.
 
 ## Investigation Metrics
 
-Evidence Items: 31
+Evidence Items: 15
 
-Indicator Count: 9
+Indicator Count: 12
 
-Confidence: 79%
+Confidence: 78%
 
-Status: Analysis
+Status: Evidence Collection
 
-Lead Analyst: Analyst Team Sigma
+Lead Analyst: Analyst Team Delta
 
 Recommended Action:
 
-Continue evidence collection.
+Acquire complete firmware image.

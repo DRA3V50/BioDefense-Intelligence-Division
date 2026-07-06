@@ -2,37 +2,37 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-3702
+Case ID: BID-2026-6201
 
-Operation: Operation Eclipse
+Operation: Operation Ashcroft
 
-Threat Family: Firmware Rootkit
+Threat Family: Unauthorized Boot Module
 
-Classification: Supply Chain Validation Review
+Classification: Memory Artifact Investigation
 
-Current Phase: Analysis
+Current Phase: Evidence Collection
 
-Priority: Priority II
+Priority: Priority I
 
-Lead Analyst: Analyst Team Sigma
+Lead Analyst: Analyst Team Delta
 
 ---
 
 ## Operational Activity
 
-Total Investigations Recorded: 35
+Total Investigations Recorded: 36
 
 High Severity Cases: 0
 
 Critical Severity Cases: 0
 
-Current Confidence: 79%
+Current Confidence: 78%
 
-Affected Assets: 3
+Affected Assets: 38
 
-Evidence Collected: 31
+Evidence Collected: 15
 
-Indicators Recorded: 9
+Indicators Recorded: 12
 
 ---
 
@@ -64,4 +64,4 @@ No attribution has been established at this stage.
 
 ## Recommended Action
 
-Continue evidence collection.
+Acquire complete firmware image.

@@ -4,13 +4,13 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3702 |
-| Operation | Operation Eclipse |
-| Investigation Date | 2026-07-05 |
-| Classification | Supply Chain Validation Review |
-| Threat Family | Firmware Rootkit |
-| Investigation Status | Analysis |
-| Containment Phase | Correlation |
+| Case ID | BID-2026-6201 |
+| Operation | Operation Ashcroft |
+| Investigation Date | 2026-07-06 |
+| Classification | Memory Artifact Investigation |
+| Threat Family | Unauthorized Boot Module |
+| Investigation Status | Evidence Collection |
+| Containment Phase | Detection |
 
 ---
 
@@ -28,12 +28,12 @@ At this stage no attribution has been established and investigative activities r
 
 | Attribute | Value |
 |----------|-------|
-| Platform | Embedded Linux Device |
+| Platform | Industrial Gateway |
 | Device Family | Embedded Sensor |
 | Vendor | Advantech |
-| Firmware Version | 1.9.3 |
-| Network Zone | DMZ |
-| Affected Assets | 3 |
+| Firmware Version | 3.1.6 |
+| Network Zone | Internal Core |
+| Affected Assets | 38 |
 
 ---
 
@@ -61,7 +61,7 @@ Evidence collection remains active while additional artifacts are validated.
 
 Threat Family:
 
-Firmware Rootkit
+Unauthorized Boot Module
 
 Initial Access Vector:
 
@@ -69,21 +69,21 @@ Remote Access
 
 Observed Risk Score:
 
-48
+73
 
 Confidence Level:
 
-79%
+78%
 
 Priority:
 
-Priority II
+Priority I
 
 ---
 
 ## Analyst Assessment
 
-Device artifacts require additional reconstruction to determine operational impact.
+Collected evidence indicates unauthorized modification requiring additional forensic acquisition.
 
 ---
 
@@ -91,7 +91,7 @@ Device artifacts require additional reconstruction to determine operational impa
 
 Primary Recommendation
 
-Continue evidence collection.
+Acquire complete firmware image.
 
 Additional investigative actions:
 
@@ -107,23 +107,23 @@ Additional investigative actions:
 
 Lead Analyst:
 
-Analyst Team Sigma
+Analyst Team Delta
 
 Current Status:
 
-Analysis
+Evidence Collection
 
 Evidence Items:
 
-31
+15
 
 Indicators of Interest:
 
-9
+12
 
 Containment Phase:
 
-Correlation
+Detection
 
 ---
 
