@@ -1,37 +1,92 @@
 import json
 import random
 
-with open("data/current_case.json") as f:
+with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-findings = [
-    "No evidence of lateral movement detected.",
-    "Firmware validation remains ongoing.",
-    "Additional artifact correlation required.",
-    "Exposure indicators remain under review.",
-    "Telemetry analysis identified abnormal execution patterns.",
-    "Boot sequence integrity requires further validation.",
-    "Firmware signature verification remains pending.",
-    "Analyst confidence increased following artifact review.",
-    "Evidence collection continues across affected assets.",
-    "Containment recommendations remain unchanged."
+observations = [
+
+    "Current evidence supports continued investigative activity.",
+
+    "Observed indicators remain consistent with the current operational assessment.",
+
+    "Additional forensic validation is required before investigative conclusions can be established.",
+
+    "Evidence correlation remains in progress across collected artifacts.",
+
+    "Operational monitoring continues while analysts validate recovered evidence.",
+
+    "No confirmed attribution has been established during the current investigation.",
+
+    "Analysts continue evaluating recovered indicators for operational significance.",
+
+    "Current findings support maintaining the existing investigation priority."
+
 ]
 
-report = f"""# Weekly Exposure Assessment
+report = f"""# Operational Assessment
 
-## Current Investigation
+## Investigation Overview
 
-Case ID: {case['case_id']}
+Case ID: {case["case_id"]}
 
-Classification: {case['classification']}
+Operation: {case["operation"]}
 
-Severity: {case['severity']}
+Classification: {case["classification"]}
 
-Status: {case['status']}
+Threat Family: {case["threat_family"]}
 
-## Assessment
+Current Status: {case["status"]}
 
-{random.choice(findings)}
+Containment Phase: {case["containment_phase"]}
+
+---
+
+## Executive Assessment
+
+{random.choice(observations)}
+
+{case["assessment"]}
+
+---
+
+## Operational Metrics
+
+Priority:
+{case["priority"]}
+
+Risk Score:
+{case["risk_score"]}
+
+Confidence:
+{case["confidence"]}%
+
+Affected Assets:
+{case["affected_assets"]}
+
+Evidence Collected:
+{case["evidence_count"]}
+
+Indicators Recorded:
+{case["ioc_count"]}
+
+---
+
+## Recommended Action
+
+{case["recommended_action"]}
+
+---
+
+## Analyst
+
+Lead Investigator:
+
+{case["lead_analyst"]}
+
+Date:
+
+{case["date"]}
 """
 
 with open(
@@ -41,4 +96,4 @@ with open(
 ) as f:
     f.write(report)
 
-print("Assessment updated.")
+print("Operational assessment updated.")
