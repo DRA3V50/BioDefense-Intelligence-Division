@@ -2,37 +2,37 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-6201
+Case ID: BID-2026-7522
 
-Operation: Operation Ashcroft
+Operation: Operation Night Watch
 
-Threat Family: Unauthorized Boot Module
+Threat Family: Embedded Persistence
 
 Classification: Memory Artifact Investigation
 
-Current Phase: Evidence Collection
+Current Phase: Monitoring
 
 Priority: Priority I
 
-Lead Analyst: Analyst Team Delta
+Lead Analyst: Analyst Team Alpha
 
 ---
 
 ## Operational Activity
 
-Total Investigations Recorded: 36
+Total Investigations Recorded: 37
 
 High Severity Cases: 0
 
 Critical Severity Cases: 0
 
-Current Confidence: 78%
+Current Confidence: 92%
 
-Affected Assets: 38
+Affected Assets: 36
 
-Evidence Collected: 15
+Evidence Collected: 28
 
-Indicators Recorded: 12
+Indicators Recorded: 23
 
 ---
 
@@ -64,4 +64,4 @@ No attribution has been established at this stage.
 
 ## Recommended Action
 
-Acquire complete firmware image.
+Verify firmware signatures.

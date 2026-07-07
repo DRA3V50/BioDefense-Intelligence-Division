@@ -4,13 +4,13 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6201 |
-| Operation | Operation Ashcroft |
-| Investigation Date | 2026-07-06 |
+| Case ID | BID-2026-7522 |
+| Operation | Operation Night Watch |
+| Investigation Date | 2026-07-07 |
 | Classification | Memory Artifact Investigation |
-| Threat Family | Unauthorized Boot Module |
-| Investigation Status | Evidence Collection |
-| Containment Phase | Detection |
+| Threat Family | Embedded Persistence |
+| Investigation Status | Monitoring |
+| Containment Phase | Collection |
 
 ---
 
@@ -28,12 +28,12 @@ At this stage no attribution has been established and investigative activities r
 
 | Attribute | Value |
 |----------|-------|
-| Platform | Industrial Gateway |
-| Device Family | Embedded Sensor |
-| Vendor | Advantech |
-| Firmware Version | 3.1.6 |
-| Network Zone | Internal Core |
-| Affected Assets | 38 |
+| Platform | Embedded Linux Device |
+| Device Family | Medical Controller |
+| Vendor | Cisco |
+| Firmware Version | 1.8.2 |
+| Network Zone | Operations VLAN |
+| Affected Assets | 36 |
 
 ---
 
@@ -61,19 +61,19 @@ Evidence collection remains active while additional artifacts are validated.
 
 Threat Family:
 
-Unauthorized Boot Module
+Embedded Persistence
 
 Initial Access Vector:
 
-Remote Access
+USB Media
 
 Observed Risk Score:
 
-73
+54
 
 Confidence Level:
 
-78%
+92%
 
 Priority:
 
@@ -83,7 +83,7 @@ Priority I
 
 ## Analyst Assessment
 
-Collected evidence indicates unauthorized modification requiring additional forensic acquisition.
+Device artifacts require additional reconstruction to determine operational impact.
 
 ---
 
@@ -91,7 +91,7 @@ Collected evidence indicates unauthorized modification requiring additional fore
 
 Primary Recommendation
 
-Acquire complete firmware image.
+Verify firmware signatures.
 
 Additional investigative actions:
 
@@ -107,23 +107,23 @@ Additional investigative actions:
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha
 
 Current Status:
 
-Evidence Collection
+Monitoring
 
 Evidence Items:
 
-15
+28
 
 Indicators of Interest:
 
-12
+23
 
 Containment Phase:
 
-Detection
+Collection
 
 ---
 

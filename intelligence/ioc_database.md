@@ -2,13 +2,13 @@
 
 ## Investigation
 
-Case ID: BID-2026-6201
+Case ID: BID-2026-7522
 
-Operation: Operation Ashcroft
+Operation: Operation Night Watch
 
 Classification: Memory Artifact Investigation
 
-Threat Family: Unauthorized Boot Module
+Threat Family: Embedded Persistence
 
 Priority: Priority I
 
@@ -18,12 +18,12 @@ Priority: Priority I
 
 | Type | Indicator |
 |------|-----------|
-| Registry | HKLM\Software\DeviceSecurity |
-| SHA256 | 71cfd17cda12cb2d6679b1f6c7496c7d91e7f3488d4d5ac5eaf9d617af28e441 |
-| Service | TelemetryMonitor |
-| Service | DeviceIntegrityService |
+| Process | diagservice.exe |
 | Domain | telemetry-sync.net |
-| Hostname | MED-NODE-22 |
+| Hostname | LAB-GW-014 |
+| Registry | HKLM\Software\DeviceSecurity |
+| SHA256 | 5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214 |
+| Service | TelemetryMonitor |
 
 
 ---
@@ -40,16 +40,16 @@ Correlation with collected evidence remains ongoing.
 
 ## Investigation Metrics
 
-Evidence Items: 15
+Evidence Items: 28
 
-Indicator Count: 12
+Indicator Count: 23
 
-Confidence: 78%
+Confidence: 92%
 
-Status: Evidence Collection
+Status: Monitoring
 
-Lead Analyst: Analyst Team Delta
+Lead Analyst: Analyst Team Alpha
 
 Recommended Action:
 
-Acquire complete firmware image.
+Verify firmware signatures.

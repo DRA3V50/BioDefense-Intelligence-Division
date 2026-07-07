@@ -1,16 +1,16 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-6201
+BID-2026-7522
 
 ## Platform
-Industrial Gateway
+Embedded Linux Device
 
 ## Firmware Classification
 Memory Artifact Investigation
 
 ## Processor Architecture
-ARM64
+PowerPC
 
 ## Bootloader
 Coreboot
