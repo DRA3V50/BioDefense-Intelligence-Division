@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-1455
+BID-2026-2028
 
 ## Platform
-Medical Research Laboratory
+Research Network
 
 ## Firmware Classification
 Unauthorized Research System Access
 
 ## Processor Architecture
-MIPS
+ARM
 
 ## Bootloader
-Vendor Proprietary
+U-Boot
 
 ## Exposure Status
 Under Investigation

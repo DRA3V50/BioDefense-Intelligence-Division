@@ -325,3 +325,15 @@ Device artifacts require additional reconstruction to determine operational impa
 Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
 
 ---
+
+## BID-2026-2028
+
+- Date: 2026-07-08
+- Classification: Unauthorized Research System Access
+- Severity: MODERATE
+- Status: Evidence Collection
+- Confidence: 99%
+
+Analysts identified suspicious activity affecting protected research resources.
+
+---

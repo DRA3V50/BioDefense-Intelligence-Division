@@ -47,3 +47,4 @@ EV-0045,2026-07-05,BID-2026-3702,Supply Chain Record,Device artifacts require ad
 EV-0046,2026-07-06,BID-2026-6201,Memory Dump,Collected evidence indicates unauthorized modification requiring additional forensic acquisition.
 EV-0047,2026-07-07,BID-2026-7522,Memory Dump,Device artifacts require additional reconstruction to determine operational impact.
 EV-0048,2026-07-08,BID-2026-1455,Digital Artifact,Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+EV-0049,2026-07-08,BID-2026-2028,Digital Artifact,Analysts identified suspicious activity affecting protected research resources.

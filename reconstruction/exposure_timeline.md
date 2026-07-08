@@ -4,18 +4,18 @@
 ## 2026-07-08
 
 ### Case Opened
-Case ID: BID-2026-1455
+Case ID: BID-2026-2028
 
 ### Classification
 Unauthorized Research System Access
 
 ### Initial Assessment
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Analysts identified suspicious activity affecting protected research resources.
 
 ### Current Status
-Intelligence Analysis
+Evidence Collection
 
 ### Severity
-HIGH
+MODERATE
 
 ---

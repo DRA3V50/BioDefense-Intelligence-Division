@@ -2,15 +2,15 @@
 
 ## Investigation
 
-Case ID: BID-2026-1455
+Case ID: BID-2026-2028
 
-Operation: Operation Chimera
+Operation: Operation Eclipse
 
 Classification: Unauthorized Research System Access
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Synthetic Genome Theft
 
-Priority: Priority II
+Priority: Priority III
 
 ---
 
@@ -18,12 +18,12 @@ Priority: Priority II
 
 | Type | Indicator |
 |------|-----------|
-| Process | diagservice.exe |
-| Certificate | Unsigned Embedded Certificate |
-| Domain | telemetry-sync.net |
+| Service | TelemetryMonitor |
 | Registry | HKLM\Software\DeviceSecurity |
-| IPv4 | 185.193.126.44 |
-| Domain | device-update.org |
+| Hostname | MED-NODE-22 |
+| Service | DeviceIntegrityService |
+| Process | diagservice.exe |
+| SHA256 | 5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214 |
 
 
 ---
@@ -40,16 +40,16 @@ Correlation with collected evidence remains ongoing.
 
 ## Investigation Metrics
 
-Evidence Items: 50
+Evidence Items: 20
 
-Indicator Count: 32
+Indicator Count: 6
 
-Confidence: 81%
+Confidence: 99%
 
-Status: Intelligence Analysis
+Status: Evidence Collection
 
-Lead Analyst: Analyst Team Delta
+Lead Analyst: Analyst Team Bravo
 
 Recommended Action:
 
-Correlate collected intelligence with previous investigations.
+Maintain operational monitoring.

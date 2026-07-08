@@ -4,13 +4,13 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1455 |
-| Operation | Operation Chimera |
+| Case ID | BID-2026-2028 |
+| Operation | Operation Eclipse |
 | Investigation Date | 2026-07-08 |
 | Classification | Unauthorized Research System Access |
-| Threat Family | Biological Data Exfiltration |
-| Investigation Status | Intelligence Analysis |
-| Containment Phase | Containment |
+| Threat Family | Synthetic Genome Theft |
+| Investigation Status | Evidence Collection |
+| Containment Phase | Recovery |
 
 ---
 
@@ -28,12 +28,12 @@ At this stage no attribution has been established and investigative activities r
 
 | Attribute | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device Family | Research Cluster |
-| Vendor | Dell |
-| Firmware Version | 2.9.3 |
-| Network Zone | Federal Operations |
-| Affected Assets | 45 |
+| Platform | Research Network |
+| Device Family | Clinical Database |
+| Vendor | VMware |
+| Firmware Version | 5.4.9 |
+| Network Zone | Evidence Network |
+| Affected Assets | 28 |
 
 ---
 
@@ -61,29 +61,29 @@ Evidence collection remains active while additional artifacts are validated.
 
 Threat Family:
 
-Biological Data Exfiltration
+Synthetic Genome Theft
 
 Initial Access Vector:
 
-Phishing
+Remote Access
 
 Observed Risk Score:
 
-56
+71
 
 Confidence Level:
 
-81%
+99%
 
 Priority:
 
-Priority II
+Priority III
 
 ---
 
 ## Analyst Assessment
 
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Analysts identified suspicious activity affecting protected research resources.
 
 ---
 
@@ -91,7 +91,7 @@ Evidence suggests coordinated reconnaissance against protected biomedical infras
 
 Primary Recommendation
 
-Correlate collected intelligence with previous investigations.
+Maintain operational monitoring.
 
 Additional investigative actions:
 
@@ -107,23 +107,23 @@ Additional investigative actions:
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo
 
 Current Status:
 
-Intelligence Analysis
+Evidence Collection
 
 Evidence Items:
 
-50
+20
 
 Indicators of Interest:
 
-32
+6
 
 Containment Phase:
 
-Containment
+Recovery
 
 ---
 

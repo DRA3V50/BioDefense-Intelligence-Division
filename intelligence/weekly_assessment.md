@@ -2,53 +2,53 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1455
+Case ID: BID-2026-2028
 
-Operation: Operation Chimera
+Operation: Operation Eclipse
 
 Classification: Unauthorized Research System Access
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Synthetic Genome Theft
 
-Current Status: Intelligence Analysis
+Current Status: Evidence Collection
 
-Containment Phase: Containment
+Containment Phase: Recovery
 
 ---
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Current findings support maintaining the existing investigation priority.
 
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Analysts identified suspicious activity affecting protected research resources.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-Priority II
+Priority III
 
 Risk Score:
-56
+71
 
 Confidence:
-81%
+99%
 
 Affected Assets:
-45
+28
 
 Evidence Collected:
-50
+20
 
 Indicators Recorded:
-32
+6
 
 ---
 
 ## Recommended Action
 
-Correlate collected intelligence with previous investigations.
+Maintain operational monitoring.
 
 ---
 
@@ -56,7 +56,7 @@ Correlate collected intelligence with previous investigations.
 
 Lead Investigator:
 
-Analyst Team Delta
+Analyst Team Bravo
 
 Date:
 

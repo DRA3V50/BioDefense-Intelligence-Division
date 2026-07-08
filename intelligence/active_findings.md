@@ -2,15 +2,15 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-1455
+Case ID: BID-2026-2028
 
-Operation: Operation Chimera
+Operation: Operation Eclipse
 
 Classification: Unauthorized Research System Access
 
-Severity: HIGH
+Severity: MODERATE
 
-Priority: Priority II
+Priority: Priority III
 
 ---
 
@@ -18,15 +18,15 @@ Priority: Priority II
 
 ### Finding 1
 
-Investigation data suggests elevated operational risk within the affected environment.
+Current evidence remains insufficient for attribution.
 
 ### Finding 2
 
-Observed indicators remain under active analytical review.
+Analysts observed integrity deviations requiring additional validation.
 
 ### Finding 3
 
-Analysts observed integrity deviations requiring additional validation.
+Collected records indicate potential unauthorized system interaction.
 
 ### Finding 4
 
@@ -34,32 +34,32 @@ Evidence review identified anomalous activity requiring continued investigation.
 
 ### Finding 5
 
-Multiple artifacts require correlation before final assessment can be established.
+Observed indicators remain under active analytical review.
 
 ---
 
 ## Investigation Metrics
 
 Evidence Items:
-50
+20
 
 Indicators Recorded:
-32
+6
 
 Affected Assets:
-45
+28
 
 Confidence:
-81%
+99%
 
 ---
 
 ## Analyst Assessment
 
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Analysts identified suspicious activity affecting protected research resources.
 
 ---
 
 ## Current Status
 
-Intelligence Analysis
+Evidence Collection
