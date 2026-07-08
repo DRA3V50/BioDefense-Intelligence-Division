@@ -2,15 +2,15 @@
 
 ## Investigation
 
-Case ID: BID-2026-7522
+Case ID: BID-2026-1455
 
-Operation: Operation Night Watch
+Operation: Operation Chimera
 
-Classification: Memory Artifact Investigation
+Classification: Unauthorized Research System Access
 
-Threat Family: Embedded Persistence
+Threat Family: Biological Data Exfiltration
 
-Priority: Priority I
+Priority: Priority II
 
 ---
 
@@ -19,11 +19,11 @@ Priority: Priority I
 | Type | Indicator |
 |------|-----------|
 | Process | diagservice.exe |
+| Certificate | Unsigned Embedded Certificate |
 | Domain | telemetry-sync.net |
-| Hostname | LAB-GW-014 |
 | Registry | HKLM\Software\DeviceSecurity |
-| SHA256 | 5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214 |
-| Service | TelemetryMonitor |
+| IPv4 | 185.193.126.44 |
+| Domain | device-update.org |
 
 
 ---
@@ -40,16 +40,16 @@ Correlation with collected evidence remains ongoing.
 
 ## Investigation Metrics
 
-Evidence Items: 28
+Evidence Items: 50
 
-Indicator Count: 23
+Indicator Count: 32
 
-Confidence: 92%
+Confidence: 81%
 
-Status: Monitoring
+Status: Intelligence Analysis
 
-Lead Analyst: Analyst Team Alpha
+Lead Analyst: Analyst Team Delta
 
 Recommended Action:
 
-Verify firmware signatures.
+Correlate collected intelligence with previous investigations.

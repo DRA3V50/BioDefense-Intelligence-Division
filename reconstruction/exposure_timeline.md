@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-07
+## 2026-07-08
 
 ### Case Opened
-Case ID: BID-2026-7522
+Case ID: BID-2026-1455
 
 ### Classification
-Memory Artifact Investigation
+Unauthorized Research System Access
 
 ### Initial Assessment
-Device artifacts require additional reconstruction to determine operational impact.
+Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
 
 ### Current Status
-Monitoring
+Intelligence Analysis
 
 ### Severity
 HIGH

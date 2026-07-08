@@ -2,15 +2,15 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-7522
+Case ID: BID-2026-1455
 
-Operation: Operation Night Watch
+Operation: Operation Chimera
 
-Classification: Memory Artifact Investigation
+Classification: Unauthorized Research System Access
 
 Severity: HIGH
 
-Priority: Priority I
+Priority: Priority II
 
 ---
 
@@ -18,48 +18,48 @@ Priority: Priority I
 
 ### Finding 1
 
-Evidence supports continued monitoring of affected infrastructure.
+Investigation data suggests elevated operational risk within the affected environment.
 
 ### Finding 2
 
-Multiple artifacts require correlation before final assessment can be established.
+Observed indicators remain under active analytical review.
 
 ### Finding 3
 
-Current evidence remains insufficient for attribution.
+Analysts observed integrity deviations requiring additional validation.
 
 ### Finding 4
 
-Device telemetry contained indicators inconsistent with expected operational behavior.
+Evidence review identified anomalous activity requiring continued investigation.
 
 ### Finding 5
 
-Evidence review identified anomalous activity requiring continued investigation.
+Multiple artifacts require correlation before final assessment can be established.
 
 ---
 
 ## Investigation Metrics
 
 Evidence Items:
-28
+50
 
 Indicators Recorded:
-23
+32
 
 Affected Assets:
-36
+45
 
 Confidence:
-92%
+81%
 
 ---
 
 ## Analyst Assessment
 
-Device artifacts require additional reconstruction to determine operational impact.
+Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
 
 ---
 
 ## Current Status
 
-Monitoring
+Intelligence Analysis

@@ -4,13 +4,13 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7522 |
-| Operation | Operation Night Watch |
-| Investigation Date | 2026-07-07 |
-| Classification | Memory Artifact Investigation |
-| Threat Family | Embedded Persistence |
-| Investigation Status | Monitoring |
-| Containment Phase | Collection |
+| Case ID | BID-2026-1455 |
+| Operation | Operation Chimera |
+| Investigation Date | 2026-07-08 |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Biological Data Exfiltration |
+| Investigation Status | Intelligence Analysis |
+| Containment Phase | Containment |
 
 ---
 
@@ -28,12 +28,12 @@ At this stage no attribution has been established and investigative activities r
 
 | Attribute | Value |
 |----------|-------|
-| Platform | Embedded Linux Device |
-| Device Family | Medical Controller |
-| Vendor | Cisco |
-| Firmware Version | 1.8.2 |
-| Network Zone | Operations VLAN |
-| Affected Assets | 36 |
+| Platform | Medical Research Laboratory |
+| Device Family | Research Cluster |
+| Vendor | Dell |
+| Firmware Version | 2.9.3 |
+| Network Zone | Federal Operations |
+| Affected Assets | 45 |
 
 ---
 
@@ -61,29 +61,29 @@ Evidence collection remains active while additional artifacts are validated.
 
 Threat Family:
 
-Embedded Persistence
+Biological Data Exfiltration
 
 Initial Access Vector:
 
-USB Media
+Phishing
 
 Observed Risk Score:
 
-54
+56
 
 Confidence Level:
 
-92%
+81%
 
 Priority:
 
-Priority I
+Priority II
 
 ---
 
 ## Analyst Assessment
 
-Device artifacts require additional reconstruction to determine operational impact.
+Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
 
 ---
 
@@ -91,7 +91,7 @@ Device artifacts require additional reconstruction to determine operational impa
 
 Primary Recommendation
 
-Verify firmware signatures.
+Correlate collected intelligence with previous investigations.
 
 Additional investigative actions:
 
@@ -107,23 +107,23 @@ Additional investigative actions:
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Current Status:
 
-Monitoring
+Intelligence Analysis
 
 Evidence Items:
 
-28
+50
 
 Indicators of Interest:
 
-23
+32
 
 Containment Phase:
 
-Collection
+Containment
 
 ---
 

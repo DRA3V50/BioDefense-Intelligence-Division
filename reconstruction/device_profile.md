@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-7522
+BID-2026-1455
 
 ## Platform
-Embedded Linux Device
+Medical Research Laboratory
 
 ## Firmware Classification
-Memory Artifact Investigation
+Unauthorized Research System Access
 
 ## Processor Architecture
-PowerPC
+MIPS
 
 ## Bootloader
-Coreboot
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

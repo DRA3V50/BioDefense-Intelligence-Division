@@ -36,3 +36,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-05,BID-2026-3702,Supply Chain Validation Review,HIGH,Analysis,79
 2026-07-06,BID-2026-6201,Memory Artifact Investigation,LOW,Evidence Collection,78
 2026-07-07,BID-2026-7522,Memory Artifact Investigation,HIGH,Monitoring,92
+2026-07-08,BID-2026-1455,Unauthorized Research System Access,HIGH,Intelligence Analysis,81

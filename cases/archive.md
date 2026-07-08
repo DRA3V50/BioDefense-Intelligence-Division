@@ -313,3 +313,15 @@ Collected evidence indicates unauthorized modification requiring additional fore
 Device artifacts require additional reconstruction to determine operational impact.
 
 ---
+
+## BID-2026-1455
+
+- Date: 2026-07-08
+- Classification: Unauthorized Research System Access
+- Severity: HIGH
+- Status: Intelligence Analysis
+- Confidence: 81%
+
+Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+
+---
