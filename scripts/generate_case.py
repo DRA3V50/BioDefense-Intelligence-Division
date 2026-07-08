@@ -2,45 +2,52 @@
 
 import json
 import random
-from datetime import datetime
+from datetime import date
 
-today = datetime.utcnow().strftime("%Y-%m-%d")
+today = date.today().isoformat()
 
-operation_names = [
-    "Operation Sentinel",
-    "Operation Black Horizon",
-    "Operation Helix",
-    "Operation Iron Shield",
-    "Operation Eclipse",
-    "Operation Aegis",
-    "Operation Catalyst",
+operations = [
     "Operation Ashcroft",
-    "Operation Silent Vector",
-    "Operation Night Watch"
+    "Operation Black Archive",
+    "Operation Cerberus",
+    "Operation Eclipse",
+    "Operation Lazarus",
+    "Operation Genesis",
+    "Operation Nightfall",
+    "Operation Cold Harbor",
+    "Operation Outbreak",
+    "Operation Sentinel",
+    "Operation Chimera",
+    "Operation Dead Signal"
 ]
 
 classifications = [
-    "Embedded Device Exposure",
-    "Firmware Integrity Alert",
-    "Unauthorized Firmware Modification",
-    "Bootloader Anomaly",
-    "Persistence Indicator Review",
-    "Supply Chain Validation Review",
-    "Memory Artifact Investigation",
-    "Firmware Signature Failure"
+    "Biosecurity Infrastructure Investigation",
+    "Biomedical Network Exposure",
+    "Laboratory Security Breach",
+    "Digital Pathogen Intelligence Review",
+    "Research Facility Intrusion",
+    "Biocontainment Network Investigation",
+    "Medical Device Security Assessment",
+    "Unauthorized Research System Access",
+    "Evidence Reconstruction Investigation",
+    "Counter-Bioterror Intelligence Case"
 ]
 
 threat_families = [
-    "Firmware Rootkit",
-    "Embedded Persistence",
-    "Supply Chain Implant",
-    "Memory Injection",
-    "Unauthorized Boot Module",
-    "Configuration Tampering",
-    "Privilege Escalation Component"
+    "Synthetic Genome Theft",
+    "Laboratory Credential Abuse",
+    "Research Network Persistence",
+    "Medical Infrastructure Sabotage",
+    "Unauthorized Experiment Access",
+    "Biological Data Exfiltration",
+    "Specimen Tracking Manipulation",
+    "Secure Facility Reconnaissance",
+    "Insider Research Compromise",
+    "Digital Outbreak Simulation"
 ]
 
-severity_levels = [
+severity = [
     "LOW",
     "MODERATE",
     "HIGH",
@@ -50,63 +57,69 @@ severity_levels = [
 statuses = [
     "Open",
     "Evidence Collection",
-    "Analysis",
+    "Intelligence Analysis",
+    "Field Coordination",
     "Containment",
     "Monitoring"
 ]
 
-containment_phases = [
+containment = [
     "Detection",
-    "Collection",
-    "Analysis",
-    "Correlation",
+    "Acquisition",
+    "Forensic Analysis",
     "Containment",
-    "Recovery"
+    "Recovery",
+    "Closed"
 ]
 
 platforms = [
-    "Industrial Controller",
-    "Industrial Gateway",
-    "Router Firmware",
-    "Embedded Linux Device",
-    "Medical Embedded Device",
-    "Security Appliance",
-    "Network Appliance"
+    "Research Network",
+    "Biocontainment Facility",
+    "Medical Research Laboratory",
+    "Genomics Server",
+    "Hospital Infrastructure",
+    "Clinical Trial Environment",
+    "Federal Investigation Network",
+    "Digital Evidence Repository"
 ]
 
 device_families = [
-    "Industrial Router",
-    "Programmable Logic Controller",
-    "Embedded Sensor",
-    "Access Gateway",
-    "Medical Controller",
-    "SCADA Controller"
-]
-
-network_zones = [
-    "Research VLAN",
-    "Operations VLAN",
-    "Manufacturing Network",
-    "DMZ",
-    "Internal Core",
-    "Secure Segment"
+    "Laboratory Controller",
+    "Evidence Storage Server",
+    "Biomedical Workstation",
+    "Research Cluster",
+    "Clinical Database",
+    "Forensic Imaging Station",
+    "Specimen Tracking Server",
+    "Access Control System"
 ]
 
 vendors = [
     "Cisco",
-    "Siemens",
-    "Schneider Electric",
-    "Juniper",
     "Dell",
-    "Advantech"
+    "Microsoft",
+    "Palo Alto Networks",
+    "Fortinet",
+    "VMware",
+    "Lenovo",
+    "Red Hat"
 ]
 
-vectors = [
-    "Supply Chain",
-    "Remote Access",
-    "Firmware Update",
+zones = [
+    "Internal Research",
+    "Evidence Network",
+    "Secure Operations",
+    "Federal Operations",
+    "Quarantine Zone",
+    "Biosecurity Segment"
+]
+
+access = [
     "Credential Abuse",
-    "USB Media",
+    "Remote Access",
+    "Supply Chain",
+    "Phishing",
+    "Compromised VPN",
     "Unknown"
 ]
 
@@ -114,41 +127,54 @@ analysts = [
     "Analyst Team Alpha",
     "Analyst Team Bravo",
     "Analyst Team Delta",
-    "Analyst Team Sigma"
+    "Analyst Team Echo",
+    "Special Response Unit",
+    "BioDefense Task Force"
+]
+
+priorities = [
+    "Priority III",
+    "Priority II",
+    "Priority I"
+]
+
+actions = [
+    "Acquire volatile evidence from affected systems.",
+    "Coordinate with federal response partners.",
+    "Expand forensic acquisition across impacted hosts.",
+    "Correlate collected intelligence with previous investigations.",
+    "Validate chain of custody documentation.",
+    "Review laboratory access records.",
+    "Continue digital evidence reconstruction.",
+    "Maintain operational monitoring."
 ]
 
 assessments = [
-    "Firmware integrity deviations require continued validation before containment decisions are finalized.",
-    "Collected evidence indicates unauthorized modification requiring additional forensic acquisition.",
-    "Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.",
-    "Device artifacts require additional reconstruction to determine operational impact.",
-    "Investigation remains active while analysts continue evidence correlation and firmware verification."
-]
-
-recommendations = [
-    "Acquire complete firmware image.",
-    "Expand forensic acquisition.",
-    "Verify firmware signatures.",
-    "Perform hash validation.",
-    "Isolate affected devices.",
-    "Continue evidence collection."
+    "Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.",
+    "Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.",
+    "Analysts identified suspicious activity affecting protected research resources.",
+    "Current evidence supports expansion of the investigation into additional connected assets.",
+    "Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.",
+    "Digital evidence continues to be evaluated to determine operational scope and attribution."
 ]
 
 case = {
-    "case_id": f"BID-{datetime.utcnow().year}-{random.randint(1000,9999)}",
+
+    "case_id": f"BID-{date.today().year}-{random.randint(1000,9999)}",
+
     "date": today,
 
-    "operation": random.choice(operation_names),
+    "operation": random.choice(operations),
 
     "classification": random.choice(classifications),
 
     "threat_family": random.choice(threat_families),
 
-    "severity": random.choice(severity_levels),
+    "severity": random.choice(severity),
 
     "status": random.choice(statuses),
 
-    "containment_phase": random.choice(containment_phases),
+    "containment_phase": random.choice(containment),
 
     "affected_platform": random.choice(platforms),
 
@@ -156,34 +182,27 @@ case = {
 
     "vendor": random.choice(vendors),
 
-    "network_zone": random.choice(network_zones),
+    "network_zone": random.choice(zones),
 
-    "firmware_version":
-        f"{random.randint(1,8)}."
-        f"{random.randint(0,9)}."
-        f"{random.randint(0,9)}",
+    "firmware_version": f"{random.randint(1,5)}.{random.randint(0,9)}.{random.randint(0,9)}",
 
-    "confidence": random.randint(75,99),
+    "confidence": random.randint(78,99),
 
-    "risk_score": random.randint(40,100),
+    "risk_score": random.randint(45,100),
 
-    "affected_assets": random.randint(3,40),
+    "affected_assets": random.randint(4,45),
 
-    "evidence_count": random.randint(8,60),
+    "evidence_count": random.randint(10,60),
 
-    "ioc_count": random.randint(2,25),
+    "ioc_count": random.randint(5,35),
 
-    "initial_access": random.choice(vectors),
+    "initial_access": random.choice(access),
 
     "lead_analyst": random.choice(analysts),
 
-    "priority": random.choice([
-        "Priority I",
-        "Priority II",
-        "Priority III"
-    ]),
+    "priority": random.choice(priorities),
 
-    "recommended_action": random.choice(recommendations),
+    "recommended_action": random.choice(actions),
 
     "assessment": random.choice(assessments)
 }
