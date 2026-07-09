@@ -27,16 +27,21 @@ if os.path.exists("data/investigation_history.csv"):
 total = len(history)
 
 critical = sum(
-    1 for h in history
-    if h.get("severity") == "CRITICAL"
+    1
+    for h in history
+    if h.get("severity", "").strip().upper() == "CRITICAL"
 )
 
 high = sum(
-    1 for h in history
-    if h.get("severity") == "HIGH"
+    1
+    for h in history
+    if h.get("severity", "").strip().upper() == "HIGH"
 )
 
-recent = history[-5:]
+recent = [
+    h for h in history
+    if h.get("case_id")
+][-5:]
 
 recent_table = ""
 
@@ -56,10 +61,10 @@ if recent:
 else:
 
     recent_table = (
-        "| Case | Classification | Severity |\n"
-        "|------|---------------|----------|\n"
-        "| None | None | None |\n"
-    )
+    "| Case | Classification | Severity |\n"
+    "|------|---------------|----------|\n"
+    "| No archived investigations | — | — |\n"
+)
 
 report = f"""
 <!-- FSE-REPORT-START -->
