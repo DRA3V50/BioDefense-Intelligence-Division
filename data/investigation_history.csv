@@ -39,3 +39,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-08,BID-2026-1455,Unauthorized Research System Access,HIGH,Intelligence Analysis,81
 2026-07-08,BID-2026-2028,Unauthorized Research System Access,MODERATE,Evidence Collection,99
 2026-07-09,BID-2026-1982,Counter-Bioterror Intelligence Case,MODERATE,Monitoring,96
+2026-07-09,BID-2026-6598,Operation Lazarus,Digital Pathogen Intelligence Review,Biological Data Exfiltration,HIGH,Containment,Containment,Digital Evidence Repository,Access Control System,Fortinet,Biosecurity Segment,95,52,5,36,34,Phishing,Special Response Unit,Priority III

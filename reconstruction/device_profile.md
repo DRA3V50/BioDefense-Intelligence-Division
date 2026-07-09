@@ -1,19 +1,19 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-1982
+BID-2026-6598
 
 ## Platform
-Genomics Server
+Digital Evidence Repository
 
 ## Firmware Classification
-Counter-Bioterror Intelligence Case
+Digital Pathogen Intelligence Review
 
 ## Processor Architecture
-PowerPC
+ARM64
 
 ## Bootloader
-U-Boot
+Vendor Proprietary
 
 ## Exposure Status
 Under Investigation

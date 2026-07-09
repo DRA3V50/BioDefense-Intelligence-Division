@@ -4,18 +4,18 @@
 ## 2026-07-09
 
 ### Case Opened
-Case ID: BID-2026-1982
+Case ID: BID-2026-6598
 
 ### Classification
-Counter-Bioterror Intelligence Case
+Digital Pathogen Intelligence Review
 
 ### Initial Assessment
 Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ### Current Status
-Monitoring
+Containment
 
 ### Severity
-MODERATE
+HIGH
 
 ---

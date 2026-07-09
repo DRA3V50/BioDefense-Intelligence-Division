@@ -2,37 +2,37 @@
 
 ## Current Investigation
 
-Case ID: BID-2026-1982
+Case ID: BID-2026-6598
 
-Operation: Operation Eclipse
+Operation: Operation Lazarus
 
-Threat Family: Synthetic Genome Theft
+Threat Family: Biological Data Exfiltration
 
-Classification: Counter-Bioterror Intelligence Case
+Classification: Digital Pathogen Intelligence Review
 
-Current Phase: Monitoring
+Current Phase: Containment
 
-Priority: Priority I
+Priority: Priority III
 
-Lead Analyst: BioDefense Task Force
+Lead Analyst: Special Response Unit
 
 ---
 
 ## Operational Activity
 
-Total Investigations Recorded: 40
+Total Investigations Recorded: 41
 
 High Severity Cases: 0
 
 Critical Severity Cases: 0
 
-Current Confidence: 96%
+Current Confidence: 95%
 
-Affected Assets: 10
+Affected Assets: 5
 
-Evidence Collected: 44
+Evidence Collected: 36
 
-Indicators Recorded: 26
+Indicators Recorded: 34
 
 ---
 
@@ -64,4 +64,4 @@ No attribution has been established at this stage.
 
 ## Recommended Action
 
-Acquire volatile evidence from affected systems.
+Correlate collected intelligence with previous investigations.

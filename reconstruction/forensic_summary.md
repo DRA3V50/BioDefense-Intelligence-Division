@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1982 |
-| Operation | Operation Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Severity | MODERATE |
-| Status | Monitoring |
-| Lead Analyst | BioDefense Task Force |
+| Case ID | BID-2026-6598 |
+| Operation | Operation Lazarus |
+| Classification | Digital Pathogen Intelligence Review |
+| Severity | HIGH |
+| Status | Containment |
+| Lead Analyst | Special Response Unit |
 
 ---
 
@@ -26,27 +26,27 @@ scope, attribution, and operational impact.
 
 Threat Family:
 
-**Synthetic Genome Theft**
+**Biological Data Exfiltration**
 
 Affected Platform:
 
-**Genomics Server**
+**Digital Evidence Repository**
 
 Device Family:
 
-**Forensic Imaging Station**
+**Access Control System**
 
 Network Zone:
 
-**Federal Operations**
+**Biosecurity Segment**
 
 Vendor:
 
-**Lenovo**
+**Fortinet**
 
 Firmware Version:
 
-**3.3.9**
+**1.8.1**
 
 ---
 
@@ -54,11 +54,11 @@ Firmware Version:
 
 | Metric | Value |
 |---------|------:|
-| Confidence | 96% |
-| Risk Score | 48 |
-| Evidence Items | 44 |
-| Indicators | 26 |
-| Affected Assets | 10 |
+| Confidence | 95% |
+| Risk Score | 52 |
+| Evidence Items | 36 |
+| Indicators | 34 |
+| Affected Assets | 5 |
 
 ---
 
@@ -70,7 +70,7 @@ Indicators remain consistent with a sophisticated cyber-enabled biosecurity inve
 
 ## Recommended Response
 
-Acquire volatile evidence from affected systems.
+Correlate collected intelligence with previous investigations.
 
 ---
 

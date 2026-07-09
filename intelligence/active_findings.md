@@ -2,15 +2,15 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-1982
+Case ID: BID-2026-6598
 
-Operation: Operation Eclipse
+Operation: Operation Lazarus
 
-Classification: Counter-Bioterror Intelligence Case
+Classification: Digital Pathogen Intelligence Review
 
-Severity: MODERATE
+Severity: HIGH
 
-Priority: Priority I
+Priority: Priority III
 
 ---
 
@@ -18,15 +18,15 @@ Priority: Priority I
 
 ### Finding 1
 
-Analysts observed integrity deviations requiring additional validation.
+Evidence review identified anomalous activity requiring continued investigation.
 
 ### Finding 2
 
-Collected records indicate potential unauthorized system interaction.
+Multiple artifacts require correlation before final assessment can be established.
 
 ### Finding 3
 
-Multiple artifacts require correlation before final assessment can be established.
+Current evidence remains insufficient for attribution.
 
 ### Finding 4
 
@@ -34,23 +34,23 @@ Evidence supports continued monitoring of affected infrastructure.
 
 ### Finding 5
 
-Investigation data suggests elevated operational risk within the affected environment.
+Device telemetry contained indicators inconsistent with expected operational behavior.
 
 ---
 
 ## Investigation Metrics
 
 Evidence Items:
-44
+36
 
 Indicators Recorded:
-26
+34
 
 Affected Assets:
-10
+5
 
 Confidence:
-96%
+95%
 
 ---
 
@@ -62,4 +62,4 @@ Indicators remain consistent with a sophisticated cyber-enabled biosecurity inve
 
 ## Current Status
 
-Monitoring
+Containment

@@ -2,15 +2,15 @@
 
 ## Investigation
 
-Case ID: BID-2026-1982
+Case ID: BID-2026-6598
 
-Operation: Operation Eclipse
+Operation: Operation Lazarus
 
-Classification: Counter-Bioterror Intelligence Case
+Classification: Digital Pathogen Intelligence Review
 
-Threat Family: Synthetic Genome Theft
+Threat Family: Biological Data Exfiltration
 
-Priority: Priority I
+Priority: Priority III
 
 ---
 
@@ -18,12 +18,12 @@ Priority: Priority I
 
 | Type | Indicator |
 |------|-----------|
-| Domain | telemetry-sync.net |
-| Service | TelemetryMonitor |
-| SHA256 | 71cfd17cda12cb2d6679b1f6c7496c7d91e7f3488d4d5ac5eaf9d617af28e441 |
-| SHA256 | 5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214 |
-| Certificate | Unsigned Embedded Certificate |
+| Hostname | LAB-GW-014 |
 | IPv4 | 185.193.126.44 |
+| Service | TelemetryMonitor |
+| Firmware | Unexpected boot image hash |
+| IPv4 | 91.214.124.18 |
+| Registry | HKLM\Software\DeviceSecurity |
 
 
 ---
@@ -40,16 +40,16 @@ Correlation with collected evidence remains ongoing.
 
 ## Investigation Metrics
 
-Evidence Items: 44
+Evidence Items: 36
 
-Indicator Count: 26
+Indicator Count: 34
 
-Confidence: 96%
+Confidence: 95%
 
-Status: Monitoring
+Status: Containment
 
-Lead Analyst: BioDefense Task Force
+Lead Analyst: Special Response Unit
 
 Recommended Action:
 
-Acquire volatile evidence from affected systems.
+Correlate collected intelligence with previous investigations.
