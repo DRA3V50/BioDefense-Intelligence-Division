@@ -4,58 +4,66 @@ from pathlib import Path
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-# Create individual case file
-case_file = Path(f"cases/{case['case_id']}.md")
+cases_dir = Path("cases")
+cases_dir.mkdir(exist_ok=True)
 
-case_content = f"""# {case['case_id']}
+report = f"""# {case["case_id"]}
 
 ## Investigation Summary
 
-Date: {case['date']}
+| Item | Value |
+|------|-------|
+| Operation | {case["operation"]} |
+| Classification | {case["classification"]} |
+| Threat Family | {case["threat_family"]} |
+| Severity | {case["severity"]} |
+| Status | {case["status"]} |
+| Phase | {case["containment_phase"]} |
 
-Classification: {case['classification']}
+---
 
-Severity: {case['severity']}
+## Infrastructure
 
-Status: {case['status']}
+- Platform: {case["affected_platform"]}
+- Device: {case["device_family"]}
+- Vendor: {case["vendor"]}
+- Network Zone: {case["network_zone"]}
 
-Confidence: {case['confidence']}%
+---
 
-Affected Assets: {case['affected_assets']}
+## Investigation Metrics
 
-Affected Platform: {case['affected_platform']}
+- Confidence: {case["confidence"]}%
+- Risk Score: {case["risk_score"]}
+- Evidence Items: {case["evidence_count"]}
+- Indicators: {case["ioc_count"]}
+- Affected Assets: {case["affected_assets"]}
+
+---
+
+## Operational Response
+
+Lead Analyst:
+{case["lead_analyst"]}
+
+Initial Access:
+{case["initial_access"]}
+
+Recommended Action:
+{case["recommended_action"]}
+
+---
 
 ## Analyst Assessment
 
-{case['assessment']}
-"""
-
-case_file.write_text(case_content, encoding="utf-8")
-
-# Update archive
-archive_file = Path("cases/archive.md")
-
-if not archive_file.exists():
-    archive_file.write_text(
-        "# Archived Investigations\n\n---\n",
-        encoding="utf-8"
-    )
-
-archive_entry = f"""
-## {case['case_id']}
-
-- Date: {case['date']}
-- Classification: {case['classification']}
-- Severity: {case['severity']}
-- Status: {case['status']}
-- Confidence: {case['confidence']}%
-
-{case['assessment']}
+{case["assessment"]}
 
 ---
+
+Generated automatically by BioDefense Intelligence Division.
 """
 
-with open(archive_file, "a", encoding="utf-8") as f:
-    f.write(archive_entry)
+output = cases_dir / f"{case['case_id']}.md"
+output.write_text(report, encoding="utf-8")
 
-print(f"Archived {case['case_id']}")
+print(f"Archived investigation: {output.name}")
