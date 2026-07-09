@@ -64,13 +64,13 @@ else:
 report = f"""
 <!-- FSE-REPORT-START -->
 
-# BIODEFENSE INTELLIGENCE DIVISION
+# BioDefense-Intelligence-Division
 
 Federal cyber-biosecurity investigative environment dedicated to digital evidence reconstruction, laboratory infrastructure protection, cyber-enabled bioterror intelligence, and operational forensic analysis.
 
 ---
 
-# ACTIVE INVESTIGATION
+# Active Investigation
 
 | Investigation | Classification |
 |---------------|----------------|
@@ -84,13 +84,13 @@ Federal cyber-biosecurity investigative environment dedicated to digital evidenc
 
 ---
 
-# ANALYST ASSESSMENT
+# Analyst Assessment
 
 {case["assessment"]}
 
 ---
 
-# CURRENT RESPONSE
+# Current Response
 
 - Lead Analyst: **{case["lead_analyst"]}**
 - Initial Access: **{case["initial_access"]}**
@@ -98,7 +98,7 @@ Federal cyber-biosecurity investigative environment dedicated to digital evidenc
 
 ---
 
-# OPERATIONAL METRICS
+# Operational Metrics
 
 | Metric | Value |
 |---------|------:|
@@ -109,13 +109,13 @@ Federal cyber-biosecurity investigative environment dedicated to digital evidenc
 
 ---
 
-# RECENT INVESTIGATIONS
+# Recent Investigations
 
 {recent_table}
 
 ---
 
-# DIVISION MISSION
+# Division Mission
 
 BioDefense Intelligence Division is a defensive cybersecurity research project centered on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, and coordinated incident response. The repository simulates how analysts document, track, and reconstruct complex investigations involving sensitive biomedical environments and critical operational systems.
 
