@@ -71,7 +71,7 @@ report = f"""
 
 # BioDefense-Intelligence-Division
 
-A cyber-biosecurity investigative environment dedicated to digital evidence reconstruction, laboratory infrastructure protection, protected biomedical infrastructure, laboratory network security, and structured forensic case management. The project automates investigative workflows, evidence tracking, reporting, and analyst documentation using Python and C#.
+A federal cyber-biosecurity investigative environment focused on digital evidence reconstruction, cyber-enabled bioterror intelligence, protected biomedical infrastructure, laboratory network defense, and structured forensic case management. The project automates investigative workflows, evidence tracking, reporting, and operational analyst documentation using Python and C#.
 
 ---
 
