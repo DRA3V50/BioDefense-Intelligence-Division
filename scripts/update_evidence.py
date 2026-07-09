@@ -1,3 +1,4 @@
+import csv
 import json
 import os
 
@@ -6,39 +7,70 @@ with open("data/current_case.json", "r", encoding="utf-8") as f:
 
 evidence_file = "evidence/evidence_log.csv"
 
-if os.path.exists(evidence_file):
-    with open(evidence_file, "r", encoding="utf-8") as f:
-        lines = f.readlines()
-
-    evidence_number = len(lines)
-else:
-    evidence_number = 1
-
-evidence_id = f"EV-{evidence_number:04d}"
-
-artifact_types = {
-    "Bootloader Anomaly": "Boot Artifact",
-    "Firmware Integrity Alert": "Firmware Image",
+artifact_map = {
+    "Unauthorized Research System Access": "Authentication Logs",
+    "Synthetic Genome Theft": "Research Database Export",
+    "Memory Artifact Investigation": "Memory Capture",
+    "Laboratory Network Intrusion": "Network Packet Capture",
+    "Biomedical Data Exfiltration": "Data Archive",
+    "Embedded Device Exposure": "Embedded Device Image",
     "Unauthorized Firmware Modification": "Firmware Binary",
-    "Embedded Device Exposure": "Embedded Log",
-    "Persistence Indicator Review": "Configuration Artifact",
-    "Supply Chain Validation Review": "Supply Chain Record",
-    "Unsigned Firmware Detection": "Firmware Signature",
-    "Memory Artifact Investigation": "Memory Dump"
+    "Firmware Integrity Alert": "Firmware Image"
 }
 
-artifact = artifact_types.get(
+artifact = artifact_map.get(
     case["classification"],
-    "Digital Artifact"
+    "Digital Evidence"
 )
 
-with open(evidence_file, "a", encoding="utf-8") as f:
-    f.write(
-        f"{evidence_id},"
-        f"{case['date']},"
-        f"{case['case_id']},"
-        f"{artifact},"
-        f"{case['assessment']}\n"
-    )
+headers = [
+    "Evidence ID",
+    "Case ID",
+    "Date",
+    "Operation",
+    "Classification",
+    "Artifact Type",
+    "Platform",
+    "Device",
+    "Collected By",
+    "Status"
+]
 
-print("Evidence logged.")
+write_header = (
+    not os.path.exists(evidence_file)
+    or os.path.getsize(evidence_file) == 0
+)
+
+evidence_number = 1
+
+if os.path.exists(evidence_file):
+
+    with open(evidence_file, newline="", encoding="utf-8") as f:
+
+        reader = csv.reader(f)
+
+        evidence_number = max(len(list(reader)), 1)
+
+evidence_id = f"EV-{evidence_number:05d}"
+
+with open(evidence_file, "a", newline="", encoding="utf-8") as f:
+
+    writer = csv.writer(f)
+
+    if write_header:
+        writer.writerow(headers)
+
+    writer.writerow([
+        evidence_id,
+        case["case_id"],
+        case["date"],
+        case["operation"],
+        case["classification"],
+        artifact,
+        case["affected_platform"],
+        case["device_family"],
+        case["lead_analyst"],
+        "Collected"
+    ])
+
+print(f"Evidence recorded: {evidence_id}")
