@@ -6,46 +6,65 @@ with open("data/current_case.json", "r", encoding="utf-8") as f:
 
 findings_pool = [
 
-    "Evidence review identified anomalous activity requiring continued investigation.",
+    "Unauthorized access to protected biomedical research resources was confirmed during evidence review.",
 
-    "Device telemetry contained indicators inconsistent with expected operational behavior.",
+    "Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.",
 
-    "Analysts observed integrity deviations requiring additional validation.",
+    "Digital evidence suggests attempted collection of sensitive genomic research datasets.",
 
-    "Multiple artifacts require correlation before final assessment can be established.",
+    "Multiple investigative artifacts require additional correlation before attribution can be established.",
 
-    "Evidence supports continued monitoring of affected infrastructure.",
+    "Evidence preservation procedures successfully secured affected systems for forensic reconstruction.",
 
-    "Collected records indicate potential unauthorized system interaction.",
+    "Suspicious outbound communication was detected prior to containment operations.",
 
-    "Investigation data suggests elevated operational risk within the affected environment.",
+    "Privilege escalation activity was observed within a protected research environment.",
 
-    "Additional forensic acquisition is recommended to determine full scope of activity.",
+    "Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.",
 
-    "Observed indicators remain under active analytical review.",
+    "No destructive malware activity has been identified at this stage of the investigation.",
 
-    "Current evidence remains insufficient for attribution."
+    "Chain-of-custody documentation has been completed for all acquired digital evidence.",
+
+    "Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.",
+
+    "Additional forensic examination is required to determine the full operational scope.",
+
+    "Evidence indicates possible insider-assisted access to protected laboratory resources.",
+
+    "Collected indicators continue to support an active counter-bioterrorism investigation.",
+
+    "Laboratory network telemetry remains under continuous monitoring pending case closure."
+
 ]
 
 selected = random.sample(findings_pool, 5)
 
 report = f"""# Active Investigation Findings
 
-## Investigation Information
+## Investigation
 
-Case ID: {case["case_id"]}
+Case ID:
+{case["case_id"]}
 
-Operation: {case["operation"]}
+Operation:
+{case["operation"]}
 
-Classification: {case["classification"]}
+Classification:
+{case["classification"]}
 
-Severity: {case["severity"]}
+Threat Family:
+{case["threat_family"]}
 
-Priority: {case["priority"]}
+Severity:
+{case["severity"]}
+
+Priority:
+{case["priority"]}
 
 ---
 
-## Analytical Findings
+# Investigative Findings
 
 ### Finding 1
 
@@ -69,31 +88,43 @@ Priority: {case["priority"]}
 
 ---
 
-## Investigation Metrics
-
-Evidence Items:
-{case["evidence_count"]}
-
-Indicators Recorded:
-{case["ioc_count"]}
+# Investigation Metrics
 
 Affected Assets:
 {case["affected_assets"]}
 
-Confidence:
+Evidence Collected:
+{case["evidence_count"]}
+
+Indicators Identified:
+{case["ioc_count"]}
+
+Analyst Confidence:
 {case["confidence"]}%
+
+Containment Phase:
+{case["containment_phase"]}
 
 ---
 
-## Analyst Assessment
+# Analyst Assessment
 
 {case["assessment"]}
 
 ---
 
-## Current Status
+# Operational Status
 
+Current Status:
 {case["status"]}
+
+Recommended Action:
+
+{case["recommended_action"]}
+
+Lead Analyst:
+
+{case["lead_analyst"]}
 """
 
 with open(
@@ -103,4 +134,4 @@ with open(
 ) as f:
     f.write(report)
 
-print("Investigation findings updated.")
+print("Active findings updated.")
