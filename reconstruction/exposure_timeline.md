@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-08
+## 2026-07-09
 
 ### Case Opened
-Case ID: BID-2026-2028
+Case ID: BID-2026-1982
 
 ### Classification
-Unauthorized Research System Access
+Counter-Bioterror Intelligence Case
 
 ### Initial Assessment
-Analysts identified suspicious activity affecting protected research resources.
+Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ### Current Status
-Evidence Collection
+Monitoring
 
 ### Severity
 MODERATE

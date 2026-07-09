@@ -1,16 +1,16 @@
 # Device Exposure Profile
 
 ## Case ID
-BID-2026-2028
+BID-2026-1982
 
 ## Platform
-Research Network
+Genomics Server
 
 ## Firmware Classification
-Unauthorized Research System Access
+Counter-Bioterror Intelligence Case
 
 ## Processor Architecture
-ARM
+PowerPC
 
 ## Bootloader
 U-Boot

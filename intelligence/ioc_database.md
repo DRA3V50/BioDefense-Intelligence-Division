@@ -2,15 +2,15 @@
 
 ## Investigation
 
-Case ID: BID-2026-2028
+Case ID: BID-2026-1982
 
 Operation: Operation Eclipse
 
-Classification: Unauthorized Research System Access
+Classification: Counter-Bioterror Intelligence Case
 
 Threat Family: Synthetic Genome Theft
 
-Priority: Priority III
+Priority: Priority I
 
 ---
 
@@ -18,12 +18,12 @@ Priority: Priority III
 
 | Type | Indicator |
 |------|-----------|
+| Domain | telemetry-sync.net |
 | Service | TelemetryMonitor |
-| Registry | HKLM\Software\DeviceSecurity |
-| Hostname | MED-NODE-22 |
-| Service | DeviceIntegrityService |
-| Process | diagservice.exe |
+| SHA256 | 71cfd17cda12cb2d6679b1f6c7496c7d91e7f3488d4d5ac5eaf9d617af28e441 |
 | SHA256 | 5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214 |
+| Certificate | Unsigned Embedded Certificate |
+| IPv4 | 185.193.126.44 |
 
 
 ---
@@ -40,16 +40,16 @@ Correlation with collected evidence remains ongoing.
 
 ## Investigation Metrics
 
-Evidence Items: 20
+Evidence Items: 44
 
-Indicator Count: 6
+Indicator Count: 26
 
-Confidence: 99%
+Confidence: 96%
 
-Status: Evidence Collection
+Status: Monitoring
 
-Lead Analyst: Analyst Team Bravo
+Lead Analyst: BioDefense Task Force
 
 Recommended Action:
 
-Maintain operational monitoring.
+Acquire volatile evidence from affected systems.

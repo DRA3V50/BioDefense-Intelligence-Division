@@ -2,15 +2,15 @@
 
 ## Investigation Information
 
-Case ID: BID-2026-2028
+Case ID: BID-2026-1982
 
 Operation: Operation Eclipse
 
-Classification: Unauthorized Research System Access
+Classification: Counter-Bioterror Intelligence Case
 
 Severity: MODERATE
 
-Priority: Priority III
+Priority: Priority I
 
 ---
 
@@ -18,48 +18,48 @@ Priority: Priority III
 
 ### Finding 1
 
-Current evidence remains insufficient for attribution.
+Analysts observed integrity deviations requiring additional validation.
 
 ### Finding 2
 
-Analysts observed integrity deviations requiring additional validation.
+Collected records indicate potential unauthorized system interaction.
 
 ### Finding 3
 
-Collected records indicate potential unauthorized system interaction.
+Multiple artifacts require correlation before final assessment can be established.
 
 ### Finding 4
 
-Evidence review identified anomalous activity requiring continued investigation.
+Evidence supports continued monitoring of affected infrastructure.
 
 ### Finding 5
 
-Observed indicators remain under active analytical review.
+Investigation data suggests elevated operational risk within the affected environment.
 
 ---
 
 ## Investigation Metrics
 
 Evidence Items:
-20
+44
 
 Indicators Recorded:
-6
+26
 
 Affected Assets:
-28
+10
 
 Confidence:
-99%
+96%
 
 ---
 
 ## Analyst Assessment
 
-Analysts identified suspicious activity affecting protected research resources.
+Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ---
 
 ## Current Status
 
-Evidence Collection
+Monitoring

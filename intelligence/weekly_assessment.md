@@ -2,53 +2,53 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-2028
+Case ID: BID-2026-1982
 
 Operation: Operation Eclipse
 
-Classification: Unauthorized Research System Access
+Classification: Counter-Bioterror Intelligence Case
 
 Threat Family: Synthetic Genome Theft
 
-Current Status: Evidence Collection
+Current Status: Monitoring
 
-Containment Phase: Recovery
+Containment Phase: Closed
 
 ---
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Observed indicators remain consistent with the current operational assessment.
 
-Analysts identified suspicious activity affecting protected research resources.
+Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-Priority III
+Priority I
 
 Risk Score:
-71
+48
 
 Confidence:
-99%
+96%
 
 Affected Assets:
-28
+10
 
 Evidence Collected:
-20
+44
 
 Indicators Recorded:
-6
+26
 
 ---
 
 ## Recommended Action
 
-Maintain operational monitoring.
+Acquire volatile evidence from affected systems.
 
 ---
 
@@ -56,8 +56,8 @@ Maintain operational monitoring.
 
 Lead Investigator:
 
-Analyst Team Bravo
+BioDefense Task Force
 
 Date:
 
-2026-07-08
+2026-07-09

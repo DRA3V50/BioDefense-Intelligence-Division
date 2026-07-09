@@ -337,3 +337,15 @@ Evidence suggests coordinated reconnaissance against protected biomedical infras
 Analysts identified suspicious activity affecting protected research resources.
 
 ---
+
+## BID-2026-1982
+
+- Date: 2026-07-09
+- Classification: Counter-Bioterror Intelligence Case
+- Severity: MODERATE
+- Status: Monitoring
+- Confidence: 96%
+
+Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+
+---
