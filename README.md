@@ -1,61 +1,12 @@
-# BioDefense-Intelligence-Division
-A defensive cyber intelligence and digital forensics program dedicated to researching firmware compromise, embedded system threats, and cyber incidents affecting critical infrastructure and biosecurity environments. The project combines Python automation, C# analysis tooling, structured investigations, evidence management, reconstruction workflows, and analyst reporting modern investigative operations.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- FSE-REPORT-START -->
 
-# BIODEFENSE INTELLIGENCE DIVISION
+# BioDefense-Intelligence-Division
 
 Federal cyber-biosecurity investigative environment dedicated to digital evidence reconstruction, laboratory infrastructure protection, cyber-enabled bioterror intelligence, and operational forensic analysis.
 
 ---
 
-# ACTIVE INVESTIGATION
-
+# ACTIVE Investigation
 | Investigation | Classification |
 |---------------|----------------|
 | **Case ID**<br>BID-2026-2028<br><br>**Operation**<br>Operation Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Unauthorized Research System Access<br><br>**Threat Family**<br>Synthetic Genome Theft<br><br>**Severity**<br>MODERATE |
