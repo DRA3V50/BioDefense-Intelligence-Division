@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-09
+## 2026-07-10
 
 ### Case Opened
-Case ID: BID-2026-6598
+Case ID: BID-2026-6042
 
 ### Classification
-Digital Pathogen Intelligence Review
+Medical Device Security Assessment
 
 ### Initial Assessment
-Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+Current evidence supports expansion of the investigation into additional connected assets.
 
 ### Current Status
-Containment
+Monitoring
 
 ### Severity
 HIGH

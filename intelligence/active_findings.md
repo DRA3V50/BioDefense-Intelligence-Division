@@ -1,65 +1,85 @@
 # Active Investigation Findings
 
-## Investigation Information
+## Investigation
 
-Case ID: BID-2026-6598
+Case ID:
+BID-2026-6042
 
-Operation: Operation Lazarus
+Operation:
+Operation Dead Signal
 
-Classification: Digital Pathogen Intelligence Review
+Classification:
+Medical Device Security Assessment
 
-Severity: HIGH
+Threat Family:
+Insider Research Compromise
 
-Priority: Priority III
+Severity:
+HIGH
+
+Priority:
+Priority I
 
 ---
 
-## Analytical Findings
+# Investigative Findings
 
 ### Finding 1
 
-Evidence review identified anomalous activity requiring continued investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Multiple artifacts require correlation before final assessment can be established.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Current evidence remains insufficient for attribution.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Evidence supports continued monitoring of affected infrastructure.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-Device telemetry contained indicators inconsistent with expected operational behavior.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
-## Investigation Metrics
-
-Evidence Items:
-36
-
-Indicators Recorded:
-34
+# Investigation Metrics
 
 Affected Assets:
-5
+35
 
-Confidence:
-95%
+Evidence Collected:
+56
+
+Indicators Identified:
+10
+
+Analyst Confidence:
+81%
+
+Containment Phase:
+Closed
 
 ---
 
-## Analyst Assessment
+# Analyst Assessment
 
-Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+Current evidence supports expansion of the investigation into additional connected assets.
 
 ---
 
-## Current Status
+# Operational Status
 
-Containment
+Current Status:
+Monitoring
+
+Recommended Action:
+
+Acquire volatile evidence from affected systems.
+
+Lead Analyst:
+
+Analyst Team Alpha

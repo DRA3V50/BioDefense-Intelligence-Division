@@ -40,3 +40,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-08,BID-2026-2028,Unauthorized Research System Access,MODERATE,Evidence Collection,99
 2026-07-09,BID-2026-1982,Counter-Bioterror Intelligence Case,MODERATE,Monitoring,96
 2026-07-09,BID-2026-6598,Operation Lazarus,Digital Pathogen Intelligence Review,Biological Data Exfiltration,HIGH,Containment,Containment,Digital Evidence Repository,Access Control System,Fortinet,Biosecurity Segment,95,52,5,36,34,Phishing,Special Response Unit,Priority III
+2026-07-10,BID-2026-6042,Operation Dead Signal,Medical Device Security Assessment,Insider Research Compromise,HIGH,Monitoring,Closed,Clinical Trial Environment,Forensic Imaging Station,Cisco,Internal Research,81,100,35,56,10,Phishing,Analyst Team Alpha,Priority I

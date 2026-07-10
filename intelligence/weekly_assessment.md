@@ -2,53 +2,53 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6598
+Case ID: BID-2026-6042
 
-Operation: Operation Lazarus
+Operation: Operation Dead Signal
 
-Classification: Digital Pathogen Intelligence Review
+Classification: Medical Device Security Assessment
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Insider Research Compromise
 
-Current Status: Containment
+Current Status: Monitoring
 
-Containment Phase: Containment
+Containment Phase: Closed
 
 ---
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+Current evidence supports expansion of the investigation into additional connected assets.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-Priority III
+Priority I
 
 Risk Score:
-52
+100
 
 Confidence:
-95%
+81%
 
 Affected Assets:
-5
+35
 
 Evidence Collected:
-36
+56
 
 Indicators Recorded:
-34
+10
 
 ---
 
 ## Recommended Action
 
-Correlate collected intelligence with previous investigations.
+Acquire volatile evidence from affected systems.
 
 ---
 
@@ -56,8 +56,8 @@ Correlate collected intelligence with previous investigations.
 
 Lead Investigator:
 
-Special Response Unit
+Analyst Team Alpha
 
 Date:
 
-2026-07-09
+2026-07-10

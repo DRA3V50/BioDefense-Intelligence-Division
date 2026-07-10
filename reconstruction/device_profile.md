@@ -1,22 +1,69 @@
-# Device Exposure Profile
+# Protected Asset Profile
 
-## Case ID
-BID-2026-6598
+## Investigation
 
-## Platform
-Digital Evidence Repository
+Case ID:
+BID-2026-6042
 
-## Firmware Classification
-Digital Pathogen Intelligence Review
+Operation:
+Operation Dead Signal
 
-## Processor Architecture
-ARM64
+Classification:
+Medical Device Security Assessment
 
-## Bootloader
-Vendor Proprietary
+Threat Family:
+Insider Research Compromise
 
-## Exposure Status
-Under Investigation
+---
+
+## Protected Asset
+
+Facility:
+Ashcroft Biomedical Center
+
+Platform:
+Clinical Trial Environment
+
+Device:
+Forensic Imaging Station
+
+Vendor:
+Cisco
+
+Operating System:
+Ubuntu Server 24.04 LTS
+
+Security Zone:
+Internal Research
+
+---
+
+## Investigation Status
+
+Current Phase:
+Closed
+
+Status:
+Awaiting Laboratory Review
+
+Priority:
+Priority I
+
+Confidence:
+81%
+
+---
+
+## Analyst Assessment
+
+Lead Analyst:
+Analyst Team Alpha
+
+Recommended Action:
+Acquire volatile evidence from affected systems.
+
+---
 
 ## Reconstruction Notes
-Analysts are reconstructing firmware execution behavior and validating integrity indicators associated with this investigation.
+
+Evidence indicates unauthorized access to restricted research resources.

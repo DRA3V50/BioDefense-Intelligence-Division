@@ -1,55 +1,50 @@
-# Intelligence Bulletin
+# Investigation Artifacts
 
 ## Investigation
 
-Case ID: BID-2026-6598
+Case ID:
+BID-2026-6042
 
-Operation: Operation Lazarus
+Operation:
+Operation Dead Signal
 
-Classification: Digital Pathogen Intelligence Review
-
-Threat Family: Biological Data Exfiltration
-
-Priority: Priority III
+Classification:
+Medical Device Security Assessment
 
 ---
 
-## Indicators of Interest
-
-| Type | Indicator |
-|------|-----------|
-| Hostname | LAB-GW-014 |
-| IPv4 | 185.193.126.44 |
-| Service | TelemetryMonitor |
-| Firmware | Unexpected boot image hash |
-| IPv4 | 91.214.124.18 |
-| Registry | HKLM\Software\DeviceSecurity |
+| Category | Observation |
+|----------|-------------|
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
 
-## Analytical Notes
+## Investigation Statistics
 
-Current indicators require additional validation before attribution.
+Evidence Collected:
+56
 
-No indicator should be considered independently conclusive.
+Indicators Reviewed:
+10
 
-Correlation with collected evidence remains ongoing.
+Risk Score:
+100
+
+Confidence:
+81%
 
 ---
 
-## Investigation Metrics
+Lead Analyst:
 
-Evidence Items: 36
+Analyst Team Alpha
 
-Indicator Count: 34
+Current Status:
 
-Confidence: 95%
-
-Status: Containment
-
-Lead Analyst: Special Response Unit
-
-Recommended Action:
-
-Correlate collected intelligence with previous investigations.
+Monitoring
