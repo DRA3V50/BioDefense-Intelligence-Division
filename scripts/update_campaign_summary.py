@@ -2,101 +2,108 @@ import json
 import csv
 from pathlib import Path
 
-current_case = Path("data/current_case.json")
-history = Path("data/investigation_history.csv")
-output = Path("intelligence/campaign_summary.md")
+case_file = Path("data/current_case.json")
+history_file = Path("data/investigation_history.csv")
+output_file = Path("intelligence/campaign_summary.md")
 
-with open(current_case, "r", encoding="utf-8") as f:
+with open(case_file, "r", encoding="utf-8") as f:
     case = json.load(f)
 
 total_cases = 0
-critical_cases = 0
-high_cases = 0
 
-if history.exists():
-    with open(history, newline="", encoding="utf-8") as csvfile:
+if history_file.exists():
+    with open(history_file, newline="", encoding="utf-8") as csvfile:
         reader = csv.DictReader(csvfile)
+        total_cases = sum(1 for _ in reader)
 
-        for row in reader:
-
-            total_cases += 1
-
-            if row.get("severity") == "CRITICAL":
-                critical_cases += 1
-
-            elif row.get("severity") == "HIGH":
-                high_cases += 1
-
-report = f"""# Operational Campaign Summary
+report = f"""# Operational Investigation Summary
 
 ## Current Investigation
 
-Case ID: {case["case_id"]}
+Case ID:
+{case["case_id"]}
 
-Operation: {case["operation"]}
+Operation:
+{case["operation"]}
 
-Threat Family: {case["threat_family"]}
+Classification:
+{case["classification"]}
 
-Classification: {case["classification"]}
+Threat Family:
+{case["threat_family"]}
 
-Current Phase: {case["status"]}
+Current Phase:
+{case["containment_phase"]}
 
-Priority: {case["priority"]}
-
-Lead Analyst: {case["lead_analyst"]}
-
----
-
-## Operational Activity
-
-Total Investigations Recorded: {total_cases}
-
-High Severity Cases: {high_cases}
-
-Critical Severity Cases: {critical_cases}
-
-Current Confidence: {case["confidence"]}%
-
-Affected Assets: {case["affected_assets"]}
-
-Evidence Collected: {case["evidence_count"]}
-
-Indicators Recorded: {case["ioc_count"]}
+Status:
+{case["status"]}
 
 ---
 
-## Intelligence Assessment
+## Protected Environment
 
-Current investigative activity indicates continued monitoring of a suspected digital biosecurity event.
+Platform:
+{case["affected_platform"]}
 
-Analysts are correlating recovered evidence, validating exposure indicators, reconstructing observed activity, and assessing potential operational impact.
+Device:
+{case["device_family"]}
 
-No attribution has been established at this stage.
+Vendor:
+{case["vendor"]}
 
----
-
-## Operational Priorities
-
-• Evidence correlation
-
-• Digital forensic reconstruction
-
-• Embedded system validation
-
-• Device integrity verification
-
-• Indicator analysis
-
-• Operational monitoring
+Security Zone:
+{case["network_zone"]}
 
 ---
 
-## Recommended Action
+## Investigation Metrics
 
-{case["recommended_action"]}
+Investigations Recorded:
+{total_cases}
+
+Evidence Collected:
+{case["evidence_count"]}
+
+Indicators Identified:
+{case["ioc_count"]}
+
+Affected Assets:
+{case["affected_assets"]}
+
+Confidence:
+{case["confidence"]}%
+
+Risk Score:
+{case["risk_score"]}
+
+---
+
+## Operational Assessment
+
+Current investigative activity remains focused on identifying unauthorized access affecting protected biomedical infrastructure.
+
+Digital evidence continues to be correlated to establish investigative scope, determine potential attribution, and preserve forensic integrity.
+
+No destructive activity has been confirmed during the current phase of this investigation.
+
+---
+
+## Recommended Operational Priorities
+
+• Continue forensic acquisition
+
+• Preserve digital evidence
+
+• Correlate investigative artifacts
+
+• Monitor protected laboratory infrastructure
+
+• Complete attribution analysis
+
+• Prepare investigative findings for final review
 """
 
-with open(output, "w", encoding="utf-8") as f:
+with open(output_file, "w", encoding="utf-8") as f:
     f.write(report)
 
-print("Campaign summary updated.")
+print("Operational investigation summary updated.")
