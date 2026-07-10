@@ -2,7 +2,7 @@ name: Daily Investigation
 
 on:
   schedule:
-    - cron: '0 14 * * *'
+    - cron: "0 14 * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,30 +13,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      ###############################################################
+      # Repository
+      ###############################################################
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl
 
-      - name: Create Data Directory
-        run: mkdir -p data
+      ###############################################################
+      # Phase I — Investigation Generation
+      ###############################################################
 
-      - name: Generate Investigation Case
+      - name: Generate Investigation
         run: python scripts/generate_case.py
 
-      - name: Update Investigation Progress
+      - name: Advance Investigation Lifecycle
         run: python scripts/update_case_progress.py
-
-      - name: Update README
-        run: python scripts/update_readme.py
 
       - name: Archive Investigation
         run: python scripts/archive_case.py
@@ -44,48 +47,65 @@ jobs:
       - name: Update Investigation History
         run: python scripts/update_history.py
 
-      - name: Update Evidence Log
+      ###############################################################
+      # Phase II — Evidence Collection
+      ###############################################################
+
+      - name: Update Evidence Database
         run: python scripts/update_evidence.py
 
-      - name: Update Exposure Timeline
+      - name: Update Investigation Timeline
         run: python scripts/update_timeline.py
-
-      - name: Update Weekly Assessment
-        run: python scripts/update_assessment.py
-
-      - name: Update Findings
-        run: python scripts/update_findings.py
-
-      - name: Update Campaign Summary
-        run: python scripts/update_campaign_summary.py
-
-      - name: Update IOC Database
-        run: python scripts/update_ioc_database.py
-
-      - name: Update Campaign Summary
-        run: python scripts/update_campaign_summary.py
-
-      - name: Update Forensic Summary
-        run: python scripts/update_forensic_summary.py
-
-      - name: Update Device Profile
-        run: python scripts/update_device_profile.py
 
       - name: Update Workbook
         run: python scripts/update_workbook.py
 
-      - name: Commit Updated Case
+      ###############################################################
+      # Phase III — Intelligence Production
+      ###############################################################
+
+      - name: Generate Investigation Findings
+        run: python scripts/update_findings.py
+
+      - name: Generate Operational Assessment
+        run: python scripts/update_assessment.py
+
+      - name: Generate Operational Summary
+        run: python scripts/update_campaign_summary.py
+
+      - name: Generate Investigation Artifacts
+        run: python scripts/update_ioc_database.py
+
+      ###############################################################
+      # Phase IV — Forensic Reconstruction
+      ###############################################################
+
+      - name: Generate Device Profile
+        run: python scripts/update_device_profile.py
+
+      - name: Generate Forensic Summary
+        run: python scripts/update_forensic_summary.py
+
+      ###############################################################
+      # Phase V — Dashboard & Publication
+      ###############################################################
+
+      - name: Generate Investigation Dashboard
+        run: python scripts/generate_case_dashboard.py
+
+      - name: Update README
+        run: python scripts/update_readme.py
+
+      ###############################################################
+      # Commit
+      ###############################################################
+
+      - name: Commit Investigation
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add README.md
-          git add data/
-          git add cases/
-          git add evidence/
-          git add reconstruction/
-          git add intelligence/
-          git add workbooks/
+          git add .
 
           git diff --staged --quiet || git commit -m "Daily investigation update"
 
