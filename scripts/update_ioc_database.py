@@ -4,79 +4,77 @@ import random
 with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-ioc_pool = [
-    ("SHA256", "5e4c9b8f73a4b4d11873f4d8d36c1b9c72d62bfc991a6d3c7ad2a6c74f82e214"),
-    ("SHA256", "71cfd17cda12cb2d6679b1f6c7496c7d91e7f3488d4d5ac5eaf9d617af28e441"),
-    ("IPv4", "185.193.126.44"),
-    ("IPv4", "91.214.124.18"),
-    ("Domain", "telemetry-sync.net"),
-    ("Domain", "device-update.org"),
-    ("Hostname", "LAB-GW-014"),
-    ("Hostname", "MED-NODE-22"),
-    ("Service", "TelemetryMonitor"),
-    ("Service", "DeviceIntegrityService"),
-    ("Registry", "HKLM\\Software\\DeviceSecurity"),
-    ("Process", "diagservice.exe"),
-    ("Certificate", "Unsigned Embedded Certificate"),
-    ("Firmware", "Unexpected boot image hash")
+artifacts = [
+
+    ("Network Artifact", "Suspicious outbound TLS session to untrusted infrastructure"),
+    ("Authentication", "Privileged account authenticated outside approved maintenance window"),
+    ("Research Storage", "Unauthorized access to protected genomic repository"),
+    ("Endpoint Activity", "Unsigned executable observed within laboratory environment"),
+    ("System Log", "Unexpected privilege escalation recorded"),
+    ("PowerShell", "Encoded administrative command execution detected"),
+    ("Database", "Protected biomedical dataset queried outside normal operating hours"),
+    ("Identity", "Credential reuse detected across isolated research segments"),
+    ("Network", "Unexpected east-west traffic between laboratory VLANs"),
+    ("Evidence", "Acquired forensic image verified using SHA-256"),
+    ("Infrastructure", "Firewall policy deviation identified"),
+    ("Cloud", "Restricted research archive synchronized to unauthorized destination"),
+    ("Device", "Protected workstation entered evidence preservation mode"),
+    ("Security", "Multi-factor authentication bypass attempt recorded"),
+    ("Email", "Targeted spear-phishing message delivered to laboratory personnel")
+
 ]
 
-selected = random.sample(ioc_pool, 6)
+selected = random.sample(artifacts, 6)
 
-report = f"""# Intelligence Bulletin
+report = f"""# Investigation Artifacts
 
 ## Investigation
 
-Case ID: {case["case_id"]}
+Case ID:
+{case["case_id"]}
 
-Operation: {case["operation"]}
+Operation:
+{case["operation"]}
 
-Classification: {case["classification"]}
-
-Threat Family: {case["threat_family"]}
-
-Priority: {case["priority"]}
+Classification:
+{case["classification"]}
 
 ---
 
-## Indicators of Interest
-
-| Type | Indicator |
-|------|-----------|
+| Category | Observation |
+|----------|-------------|
 """
 
-for t, v in selected:
-    report += f"| {t} | {v} |\n"
+for category, observation in selected:
+    report += f"| {category} | {observation} |\n"
 
 report += f"""
 
 ---
 
-## Analytical Notes
+## Investigation Statistics
 
-Current indicators require additional validation before attribution.
+Evidence Collected:
+{case["evidence_count"]}
 
-No indicator should be considered independently conclusive.
+Indicators Reviewed:
+{case["ioc_count"]}
 
-Correlation with collected evidence remains ongoing.
+Risk Score:
+{case["risk_score"]}
+
+Confidence:
+{case["confidence"]}%
 
 ---
 
-## Investigation Metrics
+Lead Analyst:
 
-Evidence Items: {case["evidence_count"]}
+{case["lead_analyst"]}
 
-Indicator Count: {case["ioc_count"]}
+Current Status:
 
-Confidence: {case["confidence"]}%
-
-Status: {case["status"]}
-
-Lead Analyst: {case["lead_analyst"]}
-
-Recommended Action:
-
-{case["recommended_action"]}
+{case["status"]}
 """
 
 with open(
@@ -86,4 +84,4 @@ with open(
 ) as f:
     f.write(report)
 
-print("IOC intelligence bulletin updated.")
+print("Investigation artifact database updated.")
