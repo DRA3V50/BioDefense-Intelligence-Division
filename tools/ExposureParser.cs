@@ -1,63 +1,65 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+using System.Text.Json;
 
 namespace BioDefenseIntelligenceDivision
 {
-    class ExposureParser
+    internal class ExposureParser
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            string input = "evidence/evidence_log.csv";
-            string output = "reconstruction/evidence_summary.md";
+            const string caseFile = "data/current_case.json";
 
-            if (!File.Exists(input))
+            if (!File.Exists(caseFile))
             {
-                Console.WriteLine("Evidence log not found.");
+                Console.WriteLine("Investigation file not found.");
                 return;
             }
 
-            var lines = File.ReadAllLines(input);
+            string json = File.ReadAllText(caseFile);
 
-            var summary = new Dictionary<string, int>();
+            using JsonDocument document = JsonDocument.Parse(json);
 
-            foreach (var line in lines.Skip(1))
+            JsonElement root = document.RootElement;
+
+            Console.WriteLine("==========================================");
+            Console.WriteLine(" BioDefense Intelligence Division");
+            Console.WriteLine(" Investigation Overview");
+            Console.WriteLine("==========================================");
+
+            Print(root, "case_id", "Case ID");
+            Print(root, "operation", "Operation");
+            Print(root, "classification", "Classification");
+            Print(root, "threat_family", "Threat Family");
+            Print(root, "severity", "Severity");
+            Print(root, "status", "Status");
+            Print(root, "containment_phase", "Phase");
+            Print(root, "affected_platform", "Platform");
+            Print(root, "device_family", "Device");
+            Print(root, "network_zone", "Network Zone");
+            Print(root, "vendor", "Vendor");
+            Print(root, "lead_analyst", "Lead Analyst");
+            Print(root, "confidence", "Confidence");
+            Print(root, "risk_score", "Risk Score");
+
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("Assessment");
+            Console.WriteLine("------------------------------------------");
+
+            if (root.TryGetProperty("assessment", out JsonElement assessment))
             {
-                if (string.IsNullOrWhiteSpace(line))
-                    continue;
-
-                var columns = line.Split(',');
-
-                if (columns.Length < 4)
-                    continue;
-
-                string artifact = columns[3].Trim();
-
-                if (!summary.ContainsKey(artifact))
-                    summary[artifact] = 0;
-
-                summary[artifact]++;
+                Console.WriteLine(assessment.GetString());
             }
 
-            using (StreamWriter writer = new StreamWriter(output))
+            Console.WriteLine("==========================================");
+        }
+
+        static void Print(JsonElement root, string key, string label)
+        {
+            if (root.TryGetProperty(key, out JsonElement value))
             {
-                writer.WriteLine("# Evidence Summary");
-                writer.WriteLine();
-
-                writer.WriteLine("| Artifact Type | Count |");
-                writer.WriteLine("|--------------|------:|");
-
-                foreach (var item in summary.OrderByDescending(x => x.Value))
-                {
-                    writer.WriteLine($"| {item.Key} | {item.Value} |");
-                }
-
-                writer.WriteLine();
-                writer.WriteLine($"Generated: {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC");
+                Console.WriteLine($"{label,-18}: {value}");
             }
-
-            Console.WriteLine("Evidence summary generated.");
         }
     }
 }
