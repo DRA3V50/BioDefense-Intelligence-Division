@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6042 |
-| Operation | Operation Dead Signal |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Insider Research Compromise |
-| Severity | HIGH |
-| Status | Monitoring |
+| Case ID | BID-2026-5446 |
+| Operation | Operation Lazarus |
+| Classification | Biosecurity Infrastructure Investigation |
+| Threat Family | Unauthorized Experiment Access |
+| Severity | LOW |
+| Status | Field Coordination |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Clinical Trial Environment |
-| Device | Forensic Imaging Station |
-| Vendor | Cisco |
-| Security Zone | Internal Research |
+| Device | Access Control System |
+| Vendor | Red Hat |
+| Security Zone | Secure Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 100 |
-| Confidence | 81% |
+| Risk Score | 49 |
+| Confidence | 88% |
 | Evidence Collected | 56 |
-| Indicators Identified | 10 |
-| Affected Assets | 35 |
+| Indicators Identified | 27 |
+| Affected Assets | 5 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Current evidence supports expansion of the investigation into additional connected assets.
+Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ---
 
@@ -85,12 +85,12 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Field Coordination**
 
 Priority:
 
-**Priority I**
+**Priority II**
 
 Recommended Action:
 
-**Acquire volatile evidence from affected systems.**
+**Maintain operational monitoring.**

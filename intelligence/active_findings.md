@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-6042
+BID-2026-5446
 
 Operation:
-Operation Dead Signal
+Operation Lazarus
 
 Classification:
-Medical Device Security Assessment
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Insider Research Compromise
+Unauthorized Experiment Access
 
 Severity:
-HIGH
+LOW
 
 Priority:
-Priority I
+Priority II
 
 ---
 
@@ -26,39 +26,39 @@ Priority I
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-35
+5
 
 Evidence Collected:
 56
 
 Indicators Identified:
-10
+27
 
 Analyst Confidence:
-81%
+88%
 
 Containment Phase:
 Closed
@@ -67,19 +67,19 @@ Closed
 
 # Analyst Assessment
 
-Current evidence supports expansion of the investigation into additional connected assets.
+Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Field Coordination
 
 Recommended Action:
 
-Acquire volatile evidence from affected systems.
+Maintain operational monitoring.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta

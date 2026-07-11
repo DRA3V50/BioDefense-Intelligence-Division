@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6042
+BID-2026-5446
 
 Operation:
-Operation Dead Signal
+Operation Lazarus
 
 Classification:
-Medical Device Security Assessment
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Insider Research Compromise
+Unauthorized Experiment Access
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
 Clinical Trial Environment
 
 Device:
-Forensic Imaging Station
+Access Control System
 
 Vendor:
-Cisco
+Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
-Internal Research
+Secure Operations
 
 ---
 
@@ -47,23 +47,23 @@ Status:
 Awaiting Laboratory Review
 
 Priority:
-Priority I
+Priority II
 
 Confidence:
-81%
+88%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Delta
 
 Recommended Action:
-Acquire volatile evidence from affected systems.
+Maintain operational monitoring.
 
 ---
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Digital evidence preserved for laboratory forensic examination.

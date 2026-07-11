@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6042
+Case ID: BID-2026-5446
 
-Operation: Operation Dead Signal
+Operation: Operation Lazarus
 
-Classification: Medical Device Security Assessment
+Classification: Biosecurity Infrastructure Investigation
 
-Threat Family: Insider Research Compromise
+Threat Family: Unauthorized Experiment Access
 
-Current Status: Monitoring
+Current Status: Field Coordination
 
 Containment Phase: Closed
 
@@ -18,37 +18,37 @@ Containment Phase: Closed
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Current findings support maintaining the existing investigation priority.
 
-Current evidence supports expansion of the investigation into additional connected assets.
+Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-Priority I
+Priority II
 
 Risk Score:
-100
+49
 
 Confidence:
-81%
+88%
 
 Affected Assets:
-35
+5
 
 Evidence Collected:
 56
 
 Indicators Recorded:
-10
+27
 
 ---
 
 ## Recommended Action
 
-Acquire volatile evidence from affected systems.
+Maintain operational monitoring.
 
 ---
 
@@ -56,8 +56,8 @@ Acquire volatile evidence from affected systems.
 
 Lead Investigator:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Date:
 
-2026-07-10
+2026-07-11

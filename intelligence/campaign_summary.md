@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6042
+BID-2026-5446
 
 Operation:
-Operation Dead Signal
+Operation Lazarus
 
 Classification:
-Medical Device Security Assessment
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Insider Research Compromise
+Unauthorized Experiment Access
 
 Current Phase:
 Closed
 
 Status:
-Monitoring
+Field Coordination
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Clinical Trial Environment
 
 Device:
-Forensic Imaging Station
+Access Control System
 
 Vendor:
-Cisco
+Red Hat
 
 Security Zone:
-Internal Research
+Secure Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-42
+43
 
 Evidence Collected:
 56
 
 Indicators Identified:
-10
+27
 
 Affected Assets:
-35
+5
 
 Confidence:
-81%
+88%
 
 Risk Score:
-100
+49
 
 ---
 

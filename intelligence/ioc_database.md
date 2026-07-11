@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6042
+BID-2026-5446
 
 Operation:
-Operation Dead Signal
+Operation Lazarus
 
 Classification:
-Medical Device Security Assessment
+Biosecurity Infrastructure Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Evidence | Acquired forensic image verified using SHA-256 |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Identity | Credential reuse detected across isolated research segments |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -31,20 +31,20 @@ Evidence Collected:
 56
 
 Indicators Reviewed:
-10
+27
 
 Risk Score:
-100
+49
 
 Confidence:
-81%
+88%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Current Status:
 
-Monitoring
+Field Coordination
