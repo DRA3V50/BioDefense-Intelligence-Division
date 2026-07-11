@@ -62,30 +62,35 @@ BioDefense Intelligence Division is a defensive cybersecurity research project c
 
 ---
 
-# Investigation Toolkit
+# BioDefense Intelligence Toolkit (C#)
 
-| Utility | Language | Purpose |
-|---------|----------|---------|
-| ExposureParser | C# | Parses the active investigation case. |
-| EvidenceParser | C# | Reviews collected evidence. |
-| ChainOfCustody | C# | Verifies custody records. |
-| InvestigationExporter | C# | Produces an operational investigation briefing. |
+The repository includes lightweight C# utilities representing internal applications used by a federal cyber-biosecurity investigative division during cyber-enabled bioterrorism investigations.
+
+| Utility | Purpose |
+|---------|---------|
+| BioThreatIntelligence | Correlates laboratory intrusion activity with active biosecurity investigations. |
+| GenomeEvidenceAnalyzer | Reviews genomic research evidence and validates chain-of-custody metadata. |
+| OutbreakCorrelationEngine | Links multiple cyber incidents into a single coordinated bioterror campaign. |
+| IncidentBriefGenerator | Produces executive intelligence briefings for command staff and partner agencies. |
 
 ---
 
-# Generated Intelligence
+# Automated Intelligence Products
 
-The repository automatically produces:
+Every investigation automatically generates operational intelligence including:
 
-- Active investigation reports
-- Operational assessments
-- Device exposure profiles
-- Evidence logs
-- Chain-of-custody records
-- IOC databases
-- Forensic summaries
-- Investigation workbooks
-
+- Digital bioterrorism case files
+- Laboratory intrusion assessments
+- Protected research facility exposure reports
+- Evidence reconstruction logs
+- Chain-of-custody documentation
+- Threat actor campaign summaries
+- Biological research impact assessments
+- Digital pathogen intelligence reports
+- Compromised laboratory asset inventories
+- Intelligence workbooks for investigative review
+- Executive operational briefings
+- Federal cyber-biosecurity situation reports
 
 
 
