@@ -1,22 +1,23 @@
 
+
 <!-- FSE-REPORT-START -->
 
 # BioDefense-Intelligence-Division
 
-- BioDefense Intelligence Division is a cyber-biothreat investigation and digital forensics initiative inspired by federal investigative workflows. The project simulates how analysts identify, document, reconstruct, and manage cyber-enabled threats targeting biomedical research environments, protected laboratory infrastructure, and critical biosecurity systems through automated investigative workflows using Python and C#.
+BioDefense Intelligence Division is a cyber-biothreat investigation and digital forensics initiative inspired by federal investigative workflows. The project simulates how analysts identify, document, reconstruct, and manage cyber-enabled threats targeting biomedical research environments, protected laboratory infrastructure, and critical biosecurity systems through automated investigative workflows using Python and C#.
 ---
 
 # Active Investigation
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-5446<br><br>**Operation**<br>Operation Lazarus<br><br>**Phase**<br>Detection | **Classification**<br>Biosecurity Infrastructure Investigation<br><br>**Threat Family**<br>Unauthorized Experiment Access<br><br>**Severity**<br>LOW |
+| **Case ID**<br>BID-2026-8339<br><br>**Operation**<br>Operation Cold Harbor<br><br>**Phase**<br>Detection | **Classification**<br>Research Facility Intrusion<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>LOW |
 
 ---
 
 | Device Profile | Investigation Status |
 |---------------|----------------------|
-| **Platform**<br>Clinical Trial Environment<br><br>**Device**<br>Access Control System<br><br>**Vendor**<br>Red Hat<br><br>**Zone**<br>Secure Operations | **Priority**<br>Priority II<br><br>**Confidence**<br>88%<br><br>**Evidence**<br>56<br><br>**Indicators**<br>27 |
+| **Platform**<br>Federal Investigation Network<br><br>**Device**<br>Laboratory Controller<br><br>**Vendor**<br>Dell<br><br>**Zone**<br>Biosecurity Segment | **Priority**<br>Priority III<br><br>**Confidence**<br>90%<br><br>**Evidence**<br>16<br><br>**Indicators**<br>31 |
 
 ---
 
@@ -28,9 +29,9 @@ Indicators remain consistent with a sophisticated cyber-enabled biosecurity inve
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Delta**
-- Initial Access: **Compromised VPN**
-- Recommended Action: **Maintain operational monitoring.**
+- Lead Analyst: **Analyst Team Bravo**
+- Initial Access: **Credential Abuse**
+- Recommended Action: **Expand forensic acquisition across impacted hosts.**
 
 ---
 
@@ -38,7 +39,7 @@ Indicators remain consistent with a sophisticated cyber-enabled biosecurity inve
 
 | Metric | Value |
 |---------|------:|
-| Investigations | 43 |
+| Investigations | 44 |
 | High Severity | 0 |
 | Critical Severity | 0 |
 | Current Phase | Detection |
@@ -59,6 +60,7 @@ Indicators remain consistent with a sophisticated cyber-enabled biosecurity inve
 BioDefense Intelligence Division is a defensive cybersecurity research project centered on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, and coordinated incident response. The repository simulates how analysts document, track, and reconstruct complex investigations involving sensitive biomedical environments and critical operational systems.
 
 <!-- FSE-REPORT-END -->
+
 
 ---
 

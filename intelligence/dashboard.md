@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-5446 |
-| Operation | Operation Lazarus |
-| Classification | Biosecurity Infrastructure Investigation |
-| Threat Family | Unauthorized Experiment Access |
+| Case ID | BID-2026-8339 |
+| Operation | Operation Cold Harbor |
+| Classification | Research Facility Intrusion |
+| Threat Family | Biological Data Exfiltration |
 | Severity | LOW |
-| Status | Field Coordination |
+| Status | Monitoring |
 | Phase | Closed |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Trial Environment |
-| Device | Access Control System |
-| Vendor | Red Hat |
-| Network Zone | Secure Operations |
+| Platform | Federal Investigation Network |
+| Device | Laboratory Controller |
+| Vendor | Dell |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,21 +29,21 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 49 |
-| Confidence | 88% |
-| Evidence | 56 |
-| Indicators | 27 |
-| Affected Assets | 5 |
+| Risk Score | 50 |
+| Confidence | 90% |
+| Evidence | 16 |
+| Indicators | 31 |
+| Affected Assets | 37 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
-Maintain operational monitoring.
+Expand forensic acquisition across impacted hosts.
 
 Assessment:
 

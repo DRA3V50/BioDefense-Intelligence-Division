@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-5446
+BID-2026-8339
 
 Operation:
-Operation Lazarus
+Operation Cold Harbor
 
 Classification:
-Biosecurity Infrastructure Investigation
+Research Facility Intrusion
 
 Threat Family:
-Unauthorized Experiment Access
+Biological Data Exfiltration
 
 Severity:
 LOW
 
 Priority:
-Priority II
+Priority III
 
 ---
 
@@ -26,39 +26,39 @@ Priority II
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-5
+37
 
 Evidence Collected:
-56
+16
 
 Indicators Identified:
-27
+31
 
 Analyst Confidence:
-88%
+90%
 
 Containment Phase:
 Closed
@@ -74,12 +74,12 @@ Indicators remain consistent with a sophisticated cyber-enabled biosecurity inve
 # Operational Status
 
 Current Status:
-Field Coordination
+Monitoring
 
 Recommended Action:
 
-Maintain operational monitoring.
+Expand forensic acquisition across impacted hosts.
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo

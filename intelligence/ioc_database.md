@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-5446
+BID-2026-8339
 
 Operation:
-Operation Lazarus
+Operation Cold Harbor
 
 Classification:
-Biosecurity Infrastructure Investigation
+Research Facility Intrusion
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
+| System Log | Unexpected privilege escalation recorded |
 | Identity | Credential reuse detected across isolated research segments |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -28,23 +28,23 @@ Biosecurity Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-56
+16
 
 Indicators Reviewed:
-27
+31
 
 Risk Score:
-49
+50
 
 Confidence:
-88%
+90%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo
 
 Current Status:
 
-Field Coordination
+Monitoring

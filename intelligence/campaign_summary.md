@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5446
+BID-2026-8339
 
 Operation:
-Operation Lazarus
+Operation Cold Harbor
 
 Classification:
-Biosecurity Infrastructure Investigation
+Research Facility Intrusion
 
 Threat Family:
-Unauthorized Experiment Access
+Biological Data Exfiltration
 
 Current Phase:
 Closed
 
 Status:
-Field Coordination
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Trial Environment
+Federal Investigation Network
 
 Device:
-Access Control System
+Laboratory Controller
 
 Vendor:
-Red Hat
+Dell
 
 Security Zone:
-Secure Operations
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-43
+44
 
 Evidence Collected:
-56
+16
 
 Indicators Identified:
-27
+31
 
 Affected Assets:
-5
+37
 
 Confidence:
-88%
+90%
 
 Risk Score:
-49
+50
 
 ---
 

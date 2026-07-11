@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-5446
+BID-2026-8339
 
 Operation:
-Operation Lazarus
+Operation Cold Harbor
 
 Classification:
-Biosecurity Infrastructure Investigation
+Research Facility Intrusion
 
 Threat Family:
-Unauthorized Experiment Access
+Biological Data Exfiltration
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Raccoon Research Annex
 
 Platform:
-Clinical Trial Environment
+Federal Investigation Network
 
 Device:
-Access Control System
+Laboratory Controller
 
 Vendor:
-Red Hat
+Dell
 
 Operating System:
-VMware ESXi 9
+Windows Server 2025
 
 Security Zone:
-Secure Operations
+Biosecurity Segment
 
 ---
 
@@ -44,26 +44,26 @@ Current Phase:
 Closed
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
-Priority II
+Priority III
 
 Confidence:
-88%
+90%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Bravo
 
 Recommended Action:
-Maintain operational monitoring.
+Expand forensic acquisition across impacted hosts.
 
 ---
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
