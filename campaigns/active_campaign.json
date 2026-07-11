@@ -1,0 +1,50 @@
+{
+    "campaign_id": "BDC-2026-001",
+    "operation": "Operation Black Eclipse",
+    "status": "ACTIVE",
+
+    "campaign_phase": "Initial Investigation",
+
+    "campaign_objective": "Investigate coordinated cyber-enabled bioterror activity targeting protected biomedical research facilities and federal laboratory infrastructure.",
+
+    "threat_actor": "Unknown Organization",
+
+    "threat_designation": "BIOCELL-01",
+
+    "incident_type": "Cyber-Enabled Bioterror Campaign",
+
+    "priority": "National",
+
+    "containment_level": "ELEVATED",
+
+    "affected_facilities": 4,
+
+    "affected_states": 3,
+
+    "confirmed_intrusions": 9,
+
+    "active_cases": 44,
+
+    "evidence_collected": 126,
+
+    "digital_artifacts": 71,
+
+    "ioc_count": 38,
+
+    "laboratories_under_review": [
+        "Federal Biomedical Laboratory",
+        "National Pathogen Research Center",
+        "Advanced Genome Institute",
+        "Regional Biosecurity Laboratory"
+    ],
+
+    "investigation_lead": "BioDefense Intelligence Division",
+
+    "opened": "2026-07-01",
+
+    "last_updated": "2026-07-11",
+
+    "campaign_summary": "Multiple coordinated cyber intrusions have targeted protected biomedical research infrastructure. Investigators are correlating evidence to determine whether the activity represents a single organized bioterror campaign.",
+
+    "next_objective": "Continue evidence acquisition and identify infrastructure used by the threat organization."
+}
