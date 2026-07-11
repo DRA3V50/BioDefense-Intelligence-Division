@@ -2,25 +2,25 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8339
+Case ID: BID-2026-5848
 
-Operation: Operation Cold Harbor
+Operation: Operation Nightfall
 
-Classification: Research Facility Intrusion
+Classification: Biomedical Network Exposure
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Research Network Persistence
 
-Current Status: Monitoring
+Current Status: Evidence Collection
 
-Containment Phase: Closed
+Containment Phase: Forensic Analysis
 
 ---
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Observed indicators remain consistent with the current operational assessment.
 
-Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+Digital evidence continues to be evaluated to determine operational scope and attribution.
 
 ---
 
@@ -30,25 +30,25 @@ Priority:
 Priority III
 
 Risk Score:
-50
+89
 
 Confidence:
-90%
+87%
 
 Affected Assets:
-37
+10
 
 Evidence Collected:
-16
+50
 
 Indicators Recorded:
-31
+10
 
 ---
 
 ## Recommended Action
 
-Expand forensic acquisition across impacted hosts.
+Review laboratory access records.
 
 ---
 
@@ -56,7 +56,7 @@ Expand forensic acquisition across impacted hosts.
 
 Lead Investigator:
 
-Analyst Team Bravo
+Special Response Unit
 
 Date:
 

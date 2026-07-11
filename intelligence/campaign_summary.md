@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8339
+BID-2026-5848
 
 Operation:
-Operation Cold Harbor
+Operation Nightfall
 
 Classification:
-Research Facility Intrusion
+Biomedical Network Exposure
 
 Threat Family:
-Biological Data Exfiltration
+Research Network Persistence
 
 Current Phase:
-Closed
+Forensic Analysis
 
 Status:
-Monitoring
+Evidence Collection
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Federal Investigation Network
 
 Device:
-Laboratory Controller
+Forensic Imaging Station
 
 Vendor:
-Dell
+Lenovo
 
 Security Zone:
-Biosecurity Segment
+Quarantine Zone
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-44
+45
 
 Evidence Collected:
-16
+50
 
 Indicators Identified:
-31
+10
 
 Affected Assets:
-37
+10
 
 Confidence:
-90%
+87%
 
 Risk Score:
-50
+89
 
 ---
 

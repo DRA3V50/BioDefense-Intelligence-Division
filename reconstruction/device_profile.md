@@ -3,67 +3,67 @@
 ## Investigation
 
 Case ID:
-BID-2026-8339
+BID-2026-5848
 
 Operation:
-Operation Cold Harbor
+Operation Nightfall
 
 Classification:
-Research Facility Intrusion
+Biomedical Network Exposure
 
 Threat Family:
-Biological Data Exfiltration
+Research Network Persistence
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
 Federal Investigation Network
 
 Device:
-Laboratory Controller
+Forensic Imaging Station
 
 Vendor:
-Dell
+Lenovo
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Biosecurity Segment
+Quarantine Zone
 
 ---
 
 ## Investigation Status
 
 Current Phase:
-Closed
+Forensic Analysis
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
 Priority III
 
 Confidence:
-90%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Special Response Unit
 
 Recommended Action:
-Expand forensic acquisition across impacted hosts.
+Review laboratory access records.
 
 ---
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.

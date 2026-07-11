@@ -4,13 +4,13 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8339 |
-| Operation | Operation Cold Harbor |
-| Classification | Research Facility Intrusion |
-| Threat Family | Biological Data Exfiltration |
-| Severity | LOW |
-| Status | Monitoring |
-| Phase | Closed |
+| Case ID | BID-2026-5848 |
+| Operation | Operation Nightfall |
+| Classification | Biomedical Network Exposure |
+| Threat Family | Research Network Persistence |
+| Severity | MODERATE |
+| Status | Evidence Collection |
+| Phase | Forensic Analysis |
 
 ---
 
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Federal Investigation Network |
-| Device | Laboratory Controller |
-| Vendor | Dell |
-| Network Zone | Biosecurity Segment |
+| Device | Forensic Imaging Station |
+| Vendor | Lenovo |
+| Network Zone | Quarantine Zone |
 
 ---
 
@@ -29,22 +29,22 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 50 |
-| Confidence | 90% |
-| Evidence | 16 |
-| Indicators | 31 |
-| Affected Assets | 37 |
+| Risk Score | 89 |
+| Confidence | 87% |
+| Evidence | 50 |
+| Indicators | 10 |
+| Affected Assets | 10 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Special Response Unit**
 
 Recommended Action:
 
-Expand forensic acquisition across impacted hosts.
+Review laboratory access records.
 
 Assessment:
 
-Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+Digital evidence continues to be evaluated to determine operational scope and attribution.

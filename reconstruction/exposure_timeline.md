@@ -4,18 +4,18 @@
 ## 2026-07-11
 
 ### Case Opened
-Case ID: BID-2026-8339
+Case ID: BID-2026-5848
 
 ### Classification
-Research Facility Intrusion
+Biomedical Network Exposure
 
 ### Initial Assessment
-Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+Digital evidence continues to be evaluated to determine operational scope and attribution.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
-LOW
+MODERATE
 
 ---

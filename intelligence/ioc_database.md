@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8339
+BID-2026-5848
 
 Operation:
-Operation Cold Harbor
+Operation Nightfall
 
 Classification:
-Research Facility Intrusion
+Biomedical Network Exposure
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
-| Device | Protected workstation entered evidence preservation mode |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | PowerShell | Encoded administrative command execution detected |
-| System Log | Unexpected privilege escalation recorded |
-| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -28,23 +28,23 @@ Research Facility Intrusion
 ## Investigation Statistics
 
 Evidence Collected:
-16
-
-Indicators Reviewed:
-31
-
-Risk Score:
 50
 
+Indicators Reviewed:
+10
+
+Risk Score:
+89
+
 Confidence:
-90%
+87%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+Special Response Unit
 
 Current Status:
 
-Monitoring
+Evidence Collection

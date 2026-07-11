@@ -3,19 +3,19 @@
 ## Investigation
 
 Case ID:
-BID-2026-8339
+BID-2026-5848
 
 Operation:
-Operation Cold Harbor
+Operation Nightfall
 
 Classification:
-Research Facility Intrusion
+Biomedical Network Exposure
 
 Threat Family:
-Biological Data Exfiltration
+Research Network Persistence
 
 Severity:
-LOW
+MODERATE
 
 Priority:
 Priority III
@@ -26,60 +26,60 @@ Priority III
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-37
+10
 
 Evidence Collected:
-16
+50
 
 Indicators Identified:
-31
+10
 
 Analyst Confidence:
-90%
+87%
 
 Containment Phase:
-Closed
+Forensic Analysis
 
 ---
 
 # Analyst Assessment
 
-Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+Digital evidence continues to be evaluated to determine operational scope and attribution.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Evidence Collection
 
 Recommended Action:
 
-Expand forensic acquisition across impacted hosts.
+Review laboratory access records.
 
 Lead Analyst:
 
-Analyst Team Bravo
+Special Response Unit
