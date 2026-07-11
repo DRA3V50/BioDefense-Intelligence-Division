@@ -39,6 +39,9 @@ jobs:
       - name: Generate Investigation
         run: python scripts/generate_case.py
 
+      - name: Update Active Operation
+        run: python scripts/campaign_manager.py
+
       - name: Advance Investigation Lifecycle
         run: python scripts/update_case_progress.py
 
