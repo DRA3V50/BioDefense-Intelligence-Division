@@ -64,10 +64,31 @@ BioDefense Intelligence Division is a defensive cybersecurity research project c
 
 <!-- FSE-REPORT-END -->
 
+---
 
+# Investigation Toolkit
 
+| Utility | Language | Purpose |
+|---------|----------|---------|
+| ExposureParser | C# | Parses the active investigation case. |
+| EvidenceParser | C# | Reviews collected evidence. |
+| ChainOfCustody | C# | Verifies custody records. |
+| InvestigationExporter | C# | Produces an operational investigation briefing. |
 
+---
 
+# Generated Intelligence
+
+The repository automatically produces:
+
+- Active investigation reports
+- Operational assessments
+- Device exposure profiles
+- Evidence logs
+- Chain-of-custody records
+- IOC databases
+- Forensic summaries
+- Investigation workbooks
 
 
 
