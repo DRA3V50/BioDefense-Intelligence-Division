@@ -1,12 +1,9 @@
 
-
-
-
 <!-- FSE-REPORT-START -->
 
 # BioDefense-Intelligence-Division
 
-BioDefense Intelligence Division is a cyber-biothreat investigation and digital forensics initiative inspired by federal investigative workflows. The project simulates how analysts identify, document, reconstruct, and manage cyber-enabled threats targeting biomedical research environments, protected laboratory infrastructure, and critical biosecurity systems through automated investigative workflows using Python and C#.
+- BioDefense Intelligence Division is a cyber-biothreat investigation and digital forensics initiative inspired by federal investigative workflows. The project simulates how analysts identify, document, reconstruct, and manage cyber-enabled threats targeting biomedical research environments, protected laboratory infrastructure, and critical biosecurity systems through automated investigative workflows using Python and C#.
 ---
 
 # Active Investigation
