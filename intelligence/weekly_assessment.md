@@ -2,25 +2,25 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-5848
+Case ID: BID-2026-8029
 
 Operation: Operation Nightfall
 
-Classification: Biomedical Network Exposure
+Classification: Biocontainment Network Investigation
 
-Threat Family: Research Network Persistence
+Threat Family: Insider Research Compromise
 
 Current Status: Evidence Collection
 
-Containment Phase: Forensic Analysis
+Containment Phase: Containment
 
 ---
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Evidence correlation remains in progress across collected artifacts.
 
-Digital evidence continues to be evaluated to determine operational scope and attribution.
+Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.
 
 ---
 
@@ -30,25 +30,25 @@ Priority:
 Priority III
 
 Risk Score:
-89
+65
 
 Confidence:
-87%
+90%
 
 Affected Assets:
-10
+8
 
 Evidence Collected:
-50
+21
 
 Indicators Recorded:
-10
+25
 
 ---
 
 ## Recommended Action
 
-Review laboratory access records.
+Validate chain of custody documentation.
 
 ---
 
@@ -56,8 +56,8 @@ Review laboratory access records.
 
 Lead Investigator:
 
-Special Response Unit
+Analyst Team Bravo
 
 Date:
 
-2026-07-11
+2026-07-12

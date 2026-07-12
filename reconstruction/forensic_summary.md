@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5848 |
+| Case ID | BID-2026-8029 |
 | Operation | Operation Nightfall |
-| Classification | Biomedical Network Exposure |
-| Threat Family | Research Network Persistence |
-| Severity | MODERATE |
+| Classification | Biocontainment Network Investigation |
+| Threat Family | Insider Research Compromise |
+| Severity | HIGH |
 | Status | Evidence Collection |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Federal Investigation Network |
-| Device | Forensic Imaging Station |
+| Platform | Medical Research Laboratory |
+| Device | Research Cluster |
 | Vendor | Lenovo |
-| Security Zone | Quarantine Zone |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 89 |
-| Confidence | 87% |
-| Evidence Collected | 50 |
-| Indicators Identified | 10 |
-| Affected Assets | 10 |
+| Risk Score | 65 |
+| Confidence | 90% |
+| Evidence Collected | 21 |
+| Indicators Identified | 25 |
+| Affected Assets | 8 |
 
 ---
 
 # Lead Investigator
 
-**Special Response Unit**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Digital evidence continues to be evaluated to determine operational scope and attribution.
+Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.
 
 ---
 
@@ -81,7 +81,7 @@ _Evidence summary unavailable._
 
 Current Phase:
 
-**Forensic Analysis**
+**Containment**
 
 Current Status:
 
@@ -93,4 +93,4 @@ Priority:
 
 Recommended Action:
 
-**Review laboratory access records.**
+**Validate chain of custody documentation.**

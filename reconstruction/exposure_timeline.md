@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-11
+## 2026-07-12
 
 ### Case Opened
-Case ID: BID-2026-5848
+Case ID: BID-2026-8029
 
 ### Classification
-Biomedical Network Exposure
+Biocontainment Network Investigation
 
 ### Initial Assessment
-Digital evidence continues to be evaluated to determine operational scope and attribution.
+Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.
 
 ### Current Status
 Evidence Collection
 
 ### Severity
-MODERATE
+HIGH
 
 ---

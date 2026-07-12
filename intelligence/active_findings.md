@@ -3,19 +3,19 @@
 ## Investigation
 
 Case ID:
-BID-2026-5848
+BID-2026-8029
 
 Operation:
 Operation Nightfall
 
 Classification:
-Biomedical Network Exposure
+Biocontainment Network Investigation
 
 Threat Family:
-Research Network Persistence
+Insider Research Compromise
 
 Severity:
-MODERATE
+HIGH
 
 Priority:
 Priority III
@@ -26,48 +26,48 @@ Priority III
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-10
+8
 
 Evidence Collected:
-50
+21
 
 Indicators Identified:
-10
+25
 
 Analyst Confidence:
-87%
+90%
 
 Containment Phase:
-Forensic Analysis
+Containment
 
 ---
 
 # Analyst Assessment
 
-Digital evidence continues to be evaluated to determine operational scope and attribution.
+Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.
 
 ---
 
@@ -78,8 +78,8 @@ Evidence Collection
 
 Recommended Action:
 
-Review laboratory access records.
+Validate chain of custody documentation.
 
 Lead Analyst:
 
-Special Response Unit
+Analyst Team Bravo

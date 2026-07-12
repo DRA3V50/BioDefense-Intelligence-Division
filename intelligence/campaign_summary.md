@@ -3,19 +3,19 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5848
+BID-2026-8029
 
 Operation:
 Operation Nightfall
 
 Classification:
-Biomedical Network Exposure
+Biocontainment Network Investigation
 
 Threat Family:
-Research Network Persistence
+Insider Research Compromise
 
 Current Phase:
-Forensic Analysis
+Containment
 
 Status:
 Evidence Collection
@@ -25,38 +25,38 @@ Evidence Collection
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Medical Research Laboratory
 
 Device:
-Forensic Imaging Station
+Research Cluster
 
 Vendor:
 Lenovo
 
 Security Zone:
-Quarantine Zone
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-45
+46
 
 Evidence Collected:
-50
+21
 
 Indicators Identified:
-10
+25
 
 Affected Assets:
-10
+8
 
 Confidence:
-87%
+90%
 
 Risk Score:
-89
+65
 
 ---
 

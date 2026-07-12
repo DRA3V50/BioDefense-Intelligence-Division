@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-5848
+BID-2026-8029
 
 Operation:
 Operation Nightfall
 
 Classification:
-Biomedical Network Exposure
+Biocontainment Network Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| System Log | Unexpected privilege escalation recorded |
 | PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,22 +28,22 @@ Biomedical Network Exposure
 ## Investigation Statistics
 
 Evidence Collected:
-50
+21
 
 Indicators Reviewed:
-10
+25
 
 Risk Score:
-89
+65
 
 Confidence:
-87%
+90%
 
 ---
 
 Lead Analyst:
 
-Special Response Unit
+Analyst Team Bravo
 
 Current Status:
 
