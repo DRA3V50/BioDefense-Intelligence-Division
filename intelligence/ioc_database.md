@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8029
+BID-2026-4594
 
 Operation:
-Operation Nightfall
+Operation Outbreak
 
 Classification:
-Biocontainment Network Investigation
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | System Log | Unexpected privilege escalation recorded |
-| PowerShell | Encoded administrative command execution detected |
 | Device | Protected workstation entered evidence preservation mode |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Identity | Credential reuse detected across isolated research segments |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -31,19 +31,19 @@ Evidence Collected:
 21
 
 Indicators Reviewed:
-25
+24
 
 Risk Score:
-65
+98
 
 Confidence:
-90%
+79%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+BioDefense Task Force
 
 Current Status:
 

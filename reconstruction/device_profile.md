@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-8029
+BID-2026-4594
 
 Operation:
-Operation Nightfall
+Operation Outbreak
 
 Classification:
-Biocontainment Network Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Insider Research Compromise
+Medical Infrastructure Sabotage
 
 ---
 
@@ -22,45 +22,45 @@ Facility:
 Ashcroft Biomedical Center
 
 Platform:
-Medical Research Laboratory
+Digital Evidence Repository
 
 Device:
-Research Cluster
+Access Control System
 
 Vendor:
 Lenovo
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Federal Operations
+Internal Research
 
 ---
 
 ## Investigation Status
 
 Current Phase:
-Containment
+Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
 Priority III
 
 Confidence:
-90%
+79%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+BioDefense Task Force
 
 Recommended Action:
-Validate chain of custody documentation.
+Review laboratory access records.
 
 ---
 

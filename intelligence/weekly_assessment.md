@@ -2,25 +2,25 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8029
+Case ID: BID-2026-4594
 
-Operation: Operation Nightfall
+Operation: Operation Outbreak
 
-Classification: Biocontainment Network Investigation
+Classification: Medical Device Security Assessment
 
-Threat Family: Insider Research Compromise
+Threat Family: Medical Infrastructure Sabotage
 
 Current Status: Evidence Collection
 
-Containment Phase: Containment
+Containment Phase: Recovery
 
 ---
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.
+Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
 
 ---
 
@@ -30,25 +30,25 @@ Priority:
 Priority III
 
 Risk Score:
-65
+98
 
 Confidence:
-90%
+79%
 
 Affected Assets:
-8
+18
 
 Evidence Collected:
 21
 
 Indicators Recorded:
-25
+24
 
 ---
 
 ## Recommended Action
 
-Validate chain of custody documentation.
+Review laboratory access records.
 
 ---
 
@@ -56,7 +56,7 @@ Validate chain of custody documentation.
 
 Lead Investigator:
 
-Analyst Team Bravo
+BioDefense Task Force
 
 Date:
 

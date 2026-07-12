@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8029 |
-| Operation | Operation Nightfall |
-| Classification | Biocontainment Network Investigation |
-| Threat Family | Insider Research Compromise |
-| Severity | HIGH |
+| Case ID | BID-2026-4594 |
+| Operation | Operation Outbreak |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Medical Infrastructure Sabotage |
+| Severity | CRITICAL |
 | Status | Evidence Collection |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Research Cluster |
+| Platform | Digital Evidence Repository |
+| Device | Access Control System |
 | Vendor | Lenovo |
-| Security Zone | Federal Operations |
+| Security Zone | Internal Research |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 65 |
-| Confidence | 90% |
+| Risk Score | 98 |
+| Confidence | 79% |
 | Evidence Collected | 21 |
-| Indicators Identified | 25 |
-| Affected Assets | 8 |
+| Indicators Identified | 24 |
+| Affected Assets | 18 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.
+Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
 
 ---
 
@@ -81,7 +81,7 @@ _Evidence summary unavailable._
 
 Current Phase:
 
-**Containment**
+**Recovery**
 
 Current Status:
 
@@ -93,4 +93,4 @@ Priority:
 
 Recommended Action:
 
-**Validate chain of custody documentation.**
+**Review laboratory access records.**

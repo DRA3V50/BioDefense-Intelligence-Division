@@ -4,18 +4,18 @@
 ## 2026-07-12
 
 ### Case Opened
-Case ID: BID-2026-8029
+Case ID: BID-2026-4594
 
 ### Classification
-Biocontainment Network Investigation
+Medical Device Security Assessment
 
 ### Initial Assessment
-Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.
+Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
 
 ### Current Status
 Evidence Collection
 
 ### Severity
-HIGH
+CRITICAL
 
 ---
