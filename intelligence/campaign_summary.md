@@ -3,29 +3,29 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5173
+BID-2026-7533
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Laboratory Security Breach
 
 Threat Family:
 Insider Laboratory Compromise
 
 Current Phase:
-Evidence Correlation
+Threat Attribution
 
 Status:
-Containment
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Federal Investigation Network
 
 Device:
 Biomedical Workstation
@@ -34,29 +34,29 @@ Vendor:
 Fortinet
 
 Security Zone:
-Secure Laboratory
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-50
+51
 
 Evidence Collected:
-94
+109
 
 Indicators Identified:
-34
+29
 
 Affected Assets:
-14
+9
 
 Confidence:
-92%
+93%
 
 Risk Score:
-95
+53
 
 ---
 

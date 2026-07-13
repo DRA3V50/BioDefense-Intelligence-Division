@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5173 |
+| Case ID | BID-2026-7533 |
 | Operation | Operation Black Eclipse |
-| Classification | Unauthorized Research System Access |
+| Classification | Laboratory Security Breach |
 | Threat Family | Insider Laboratory Compromise |
-| Severity | CRITICAL |
-| Status | Containment |
+| Severity | MODERATE |
+| Status | Monitoring |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
+| Platform | Federal Investigation Network |
 | Device | Biomedical Workstation |
 | Vendor | Fortinet |
-| Security Zone | Secure Laboratory |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 95 |
-| Confidence | 92% |
-| Evidence Collected | 94 |
-| Indicators Identified | 34 |
-| Affected Assets | 14 |
+| Risk Score | 53 |
+| Confidence | 93% |
+| Evidence Collected | 109 |
+| Indicators Identified | 29 |
+| Affected Assets | 9 |
 
 ---
 
@@ -81,15 +81,15 @@ _Evidence summary unavailable._
 
 Current Phase:
 
-**Evidence Correlation**
+**Threat Attribution**
 
 Current Status:
 
-**Containment**
+**Monitoring**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

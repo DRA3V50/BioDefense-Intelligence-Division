@@ -3,13 +3,13 @@
 ## Investigation
 
 Case ID:
-BID-2026-5173
+BID-2026-7533
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Laboratory Security Breach
 
 Threat Family:
 Insider Laboratory Compromise
@@ -19,10 +19,10 @@ Insider Laboratory Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Advanced Genome Security Laboratory
 
 Platform:
-Evidence Processing Network
+Federal Investigation Network
 
 Device:
 Biomedical Workstation
@@ -31,26 +31,26 @@ Vendor:
 Fortinet
 
 Operating System:
-VMware ESXi 9
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Secure Laboratory
+Evidence Network
 
 ---
 
 ## Investigation Status
 
 Current Phase:
-Evidence Correlation
+Threat Attribution
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-92%
+93%
 
 ---
 
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.
