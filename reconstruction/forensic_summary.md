@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4594 |
-| Operation | Operation Outbreak |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Medical Infrastructure Sabotage |
-| Severity | CRITICAL |
-| Status | Evidence Collection |
+| Case ID | BID-2026-7771 |
+| Operation | Operation Black Eclipse |
+| Classification | Research Facility Intrusion |
+| Threat Family | Biological Data Exfiltration |
+| Severity | MODERATE |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Digital Evidence Repository |
-| Device | Access Control System |
-| Vendor | Lenovo |
-| Security Zone | Internal Research |
+| Platform | Laboratory Control Network |
+| Device | Specimen Tracking Server |
+| Vendor | Microsoft |
+| Security Zone | Research Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 98 |
-| Confidence | 79% |
-| Evidence Collected | 21 |
-| Indicators Identified | 24 |
-| Affected Assets | 18 |
+| Risk Score | 51 |
+| Confidence | 94% |
+| Evidence Collected | 50 |
+| Indicators Identified | 29 |
+| Affected Assets | 26 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -81,16 +81,16 @@ _Evidence summary unavailable._
 
 Current Phase:
 
-**Recovery**
+**Evidence Correlation**
 
 Current Status:
 
-**Evidence Collection**
+**Containment**
 
 Priority:
 
-**Priority III**
+**ELEVATED**
 
 Recommended Action:
 
-**Review laboratory access records.**
+**Continue evidence acquisition and identify infrastructure used by the threat organization.**

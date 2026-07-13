@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4594
+BID-2026-7771
 
 Operation:
-Operation Outbreak
+Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Research Facility Intrusion
 
 Threat Family:
-Medical Infrastructure Sabotage
+Biological Data Exfiltration
 
 Current Phase:
-Recovery
+Evidence Correlation
 
 Status:
-Evidence Collection
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Digital Evidence Repository
+Laboratory Control Network
 
 Device:
-Access Control System
+Specimen Tracking Server
 
 Vendor:
-Lenovo
+Microsoft
 
 Security Zone:
-Internal Research
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-47
+48
 
 Evidence Collected:
-21
+50
 
 Indicators Identified:
-24
+29
 
 Affected Assets:
-18
+26
 
 Confidence:
-79%
+94%
 
 Risk Score:
-98
+51
 
 ---
 

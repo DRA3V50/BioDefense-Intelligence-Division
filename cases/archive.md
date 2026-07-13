@@ -349,3 +349,33 @@ Analysts identified suspicious activity affecting protected research resources.
 Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
 
 ---
+
+## BID-2026-7771
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Research Facility Intrusion
+
+Threat:
+Biological Data Exfiltration
+
+Severity:
+MODERATE
+
+Status:
+Containment
+
+Confidence:
+94%
+
+Assessment:
+
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+
+---
+

@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-4594
+BID-2026-7771
 
 Operation:
-Operation Outbreak
+Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Research Facility Intrusion
 
 Threat Family:
-Medical Infrastructure Sabotage
+Biological Data Exfiltration
 
 Severity:
-CRITICAL
+MODERATE
 
 Priority:
-Priority III
+ELEVATED
 
 ---
 
@@ -26,60 +26,60 @@ Priority III
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-18
+26
 
 Evidence Collected:
-21
+50
 
 Indicators Identified:
-24
+29
 
 Analyst Confidence:
-79%
+94%
 
 Containment Phase:
-Recovery
+Evidence Correlation
 
 ---
 
 # Analyst Assessment
 
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Containment
 
 Recommended Action:
 
-Review laboratory access records.
+Continue evidence acquisition and identify infrastructure used by the threat organization.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo

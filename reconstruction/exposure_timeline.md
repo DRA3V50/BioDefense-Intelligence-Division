@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-12
+## 2026-07-13
 
 ### Case Opened
-Case ID: BID-2026-4594
+Case ID: BID-2026-7771
 
 ### Classification
-Medical Device Security Assessment
+Research Facility Intrusion
 
 ### Initial Assessment
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Evidence Collection
+Containment
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

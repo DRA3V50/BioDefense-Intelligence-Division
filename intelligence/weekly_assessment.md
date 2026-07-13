@@ -2,53 +2,53 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-4594
+Case ID: BID-2026-7771
 
-Operation: Operation Outbreak
+Operation: Operation Black Eclipse
 
-Classification: Medical Device Security Assessment
+Classification: Research Facility Intrusion
 
-Threat Family: Medical Infrastructure Sabotage
+Threat Family: Biological Data Exfiltration
 
-Current Status: Evidence Collection
+Current Status: Containment
 
-Containment Phase: Recovery
+Containment Phase: Evidence Correlation
 
 ---
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Current evidence supports continued investigative activity.
 
-Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-Priority III
+ELEVATED
 
 Risk Score:
-98
+51
 
 Confidence:
-79%
+94%
 
 Affected Assets:
-18
+26
 
 Evidence Collected:
-21
+50
 
 Indicators Recorded:
-24
+29
 
 ---
 
 ## Recommended Action
 
-Review laboratory access records.
+Continue evidence acquisition and identify infrastructure used by the threat organization.
 
 ---
 
@@ -56,8 +56,8 @@ Review laboratory access records.
 
 Lead Investigator:
 
-BioDefense Task Force
+Analyst Team Bravo
 
 Date:
 
-2026-07-12
+2026-07-13

@@ -3,67 +3,67 @@
 ## Investigation
 
 Case ID:
-BID-2026-4594
+BID-2026-7771
 
 Operation:
-Operation Outbreak
+Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Research Facility Intrusion
 
 Threat Family:
-Medical Infrastructure Sabotage
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Digital Evidence Repository
+Laboratory Control Network
 
 Device:
-Access Control System
+Specimen Tracking Server
 
 Vendor:
-Lenovo
+Microsoft
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
-Internal Research
+Research Operations
 
 ---
 
 ## Investigation Status
 
 Current Phase:
-Recovery
+Evidence Correlation
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
-Priority III
+ELEVATED
 
 Confidence:
-79%
+94%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Bravo
 
 Recommended Action:
-Review laboratory access records.
+Continue evidence acquisition and identify infrastructure used by the threat organization.
 
 ---
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Evidence indicates unauthorized access to restricted research resources.

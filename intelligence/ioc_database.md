@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4594
+BID-2026-7771
 
 Operation:
-Operation Outbreak
+Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Research Facility Intrusion
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| System Log | Unexpected privilege escalation recorded |
 | Device | Protected workstation entered evidence preservation mode |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Identity | Credential reuse detected across isolated research segments |
 | Database | Protected biomedical dataset queried outside normal operating hours |
+| PowerShell | Encoded administrative command execution detected |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,23 +28,23 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-21
+50
 
 Indicators Reviewed:
-24
+29
 
 Risk Score:
-98
+51
 
 Confidence:
-79%
+94%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo
 
 Current Status:
 
-Evidence Collection
+Containment
