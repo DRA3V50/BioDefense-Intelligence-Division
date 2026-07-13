@@ -6,120 +6,95 @@ from datetime import date
 
 today = date.today().isoformat()
 
-operations = [
-    "Operation Ashcroft",
-    "Operation Black Archive",
-    "Operation Cerberus",
-    "Operation Eclipse",
-    "Operation Lazarus",
-    "Operation Genesis",
-    "Operation Nightfall",
-    "Operation Cold Harbor",
-    "Operation Outbreak",
-    "Operation Sentinel",
-    "Operation Chimera",
-    "Operation Dead Signal"
-]
+# -------------------------------------------------
+# LOAD ACTIVE OPERATION
+# -------------------------------------------------
+
+with open(
+    "operations/active_operation.json",
+    "r",
+    encoding="utf-8"
+) as f:
+    operation = json.load(f)
+
+# -------------------------------------------------
+# CASE DATA
+# -------------------------------------------------
 
 classifications = [
     "Biosecurity Infrastructure Investigation",
     "Biomedical Network Exposure",
-    "Laboratory Security Breach",
-    "Digital Pathogen Intelligence Review",
     "Research Facility Intrusion",
-    "Biocontainment Network Investigation",
+    "Digital Pathogen Intelligence Review",
+    "Counter-Bioterror Intelligence Case",
+    "Laboratory Security Breach",
     "Medical Device Security Assessment",
-    "Unauthorized Research System Access",
     "Evidence Reconstruction Investigation",
-    "Counter-Bioterror Intelligence Case"
+    "Unauthorized Research System Access",
+    "Biological Intelligence Collection"
 ]
 
 threat_families = [
     "Synthetic Genome Theft",
+    "Digital Pathogen Deployment",
+    "Biological Data Exfiltration",
     "Laboratory Credential Abuse",
     "Research Network Persistence",
-    "Medical Infrastructure Sabotage",
-    "Unauthorized Experiment Access",
-    "Biological Data Exfiltration",
+    "Biocontainment Sabotage",
     "Specimen Tracking Manipulation",
-    "Secure Facility Reconnaissance",
-    "Insider Research Compromise",
-    "Digital Outbreak Simulation"
-]
-
-severity = [
-    "LOW",
-    "MODERATE",
-    "HIGH",
-    "CRITICAL"
-]
-
-statuses = [
-    "Open",
-    "Evidence Collection",
-    "Intelligence Analysis",
-    "Field Coordination",
-    "Containment",
-    "Monitoring"
-]
-
-containment = [
-    "Detection",
-    "Acquisition",
-    "Forensic Analysis",
-    "Containment",
-    "Recovery",
-    "Closed"
+    "Insider Laboratory Compromise",
+    "Unauthorized Genome Modification",
+    "Biomedical Infrastructure Reconnaissance"
 ]
 
 platforms = [
-    "Research Network",
-    "Biocontainment Facility",
-    "Medical Research Laboratory",
-    "Genomics Server",
-    "Hospital Infrastructure",
-    "Clinical Trial Environment",
     "Federal Investigation Network",
-    "Digital Evidence Repository"
+    "Research Network",
+    "Biomedical Analysis Cluster",
+    "Genome Sequencing Environment",
+    "Laboratory Control Network",
+    "Biosecurity Operations Center",
+    "Clinical Research Environment",
+    "Evidence Processing Network"
 ]
 
 device_families = [
     "Laboratory Controller",
-    "Evidence Storage Server",
+    "Genome Sequencing Server",
     "Biomedical Workstation",
-    "Research Cluster",
-    "Clinical Database",
-    "Forensic Imaging Station",
+    "Evidence Repository",
     "Specimen Tracking Server",
-    "Access Control System"
+    "Research Database",
+    "Access Control System",
+    "Digital Evidence Appliance"
 ]
 
 vendors = [
     "Cisco",
     "Dell",
     "Microsoft",
-    "Palo Alto Networks",
-    "Fortinet",
     "VMware",
-    "Lenovo",
-    "Red Hat"
+    "Fortinet",
+    "Palo Alto Networks",
+    "Red Hat",
+    "Lenovo"
 ]
 
 zones = [
-    "Internal Research",
+    "Biosecurity Segment",
     "Evidence Network",
-    "Secure Operations",
+    "Research Operations",
     "Federal Operations",
-    "Quarantine Zone",
-    "Biosecurity Segment"
+    "Secure Laboratory",
+    "Containment Network"
 ]
 
-access = [
+access_vectors = [
     "Credential Abuse",
     "Remote Access",
     "Supply Chain",
-    "Phishing",
     "Compromised VPN",
+    "Phishing",
     "Unknown"
 ]
 
@@ -127,54 +102,71 @@ analysts = [
     "Analyst Team Alpha",
     "Analyst Team Bravo",
     "Analyst Team Delta",
-    "Analyst Team Echo",
-    "Special Response Unit",
-    "BioDefense Task Force"
-]
-
-priorities = [
-    "Priority III",
-    "Priority II",
-    "Priority I"
-]
-
-actions = [
-    "Acquire volatile evidence from affected systems.",
-    "Coordinate with federal response partners.",
-    "Expand forensic acquisition across impacted hosts.",
-    "Correlate collected intelligence with previous investigations.",
-    "Validate chain of custody documentation.",
-    "Review laboratory access records.",
-    "Continue digital evidence reconstruction.",
-    "Maintain operational monitoring."
+    "BioDefense Task Force",
+    "National Response Cell",
+    "Joint Cyber Investigation Unit"
 ]
 
 assessments = [
-    "Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.",
-    "Collected intelligence indicates unauthorized access requiring continued forensic reconstruction.",
-    "Analysts identified suspicious activity affecting protected research resources.",
-    "Current evidence supports expansion of the investigation into additional connected assets.",
-    "Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.",
-    "Digital evidence continues to be evaluated to determine operational scope and attribution."
+    "Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.",
+    "Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.",
+    "Collected artifacts support continued investigation into cyber-enabled bioterror activities.",
+    "Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.",
+    "Analysts continue correlating evidence to determine campaign scope and operational objectives.",
+    "Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence."
 ]
+
+# -------------------------------------------------
+# DERIVED VALUES
+# -------------------------------------------------
+
+severity = random.choices(
+    ["LOW", "MODERATE", "HIGH", "CRITICAL"],
+    weights=[20, 35, 30, 15],
+    k=1
+)[0]
+
+status = random.choice([
+    "Open",
+    "Evidence Collection",
+    "Intelligence Analysis",
+    "Field Coordination",
+    "Containment",
+    "Monitoring"
+])
+
+if severity == "LOW":
+    risk_score = random.randint(30, 49)
+elif severity == "MODERATE":
+    risk_score = random.randint(50, 69)
+elif severity == "HIGH":
+    risk_score = random.randint(70, 89)
+else:
+    risk_score = random.randint(90, 100)
+
+# -------------------------------------------------
+# BUILD CASE
+# -------------------------------------------------
 
 case = {
 
     "case_id": f"BID-{date.today().year}-{random.randint(1000,9999)}",
 
+    "campaign_id": operation["campaign_id"],
+
     "date": today,
 
-    "operation": random.choice(operations),
+    "operation": operation["operation"],
 
     "classification": random.choice(classifications),
 
     "threat_family": random.choice(threat_families),
 
-    "severity": random.choice(severity),
+    "severity": severity,
 
-    "status": random.choice(statuses),
+    "status": status,
 
-    "containment_phase": random.choice(containment),
+    "containment_phase": operation["campaign_phase"],
 
     "affected_platform": random.choice(platforms),
 
@@ -186,26 +178,30 @@ case = {
 
     "firmware_version": f"{random.randint(1,5)}.{random.randint(0,9)}.{random.randint(0,9)}",
 
-    "confidence": random.randint(78,99),
+    "confidence": random.randint(84, 99),
 
-    "risk_score": random.randint(45,100),
+    "risk_score": risk_score,
 
-    "affected_assets": random.randint(4,45),
+    "affected_assets": random.randint(6, 40),
 
-    "evidence_count": random.randint(10,60),
+    "evidence_count": random.randint(20, operation["evidence_collected"]),
 
-    "ioc_count": random.randint(5,35),
+    "ioc_count": random.randint(8, operation["ioc_count"]),
 
-    "initial_access": random.choice(access),
+    "initial_access": random.choice(access_vectors),
 
     "lead_analyst": random.choice(analysts),
 
-    "priority": random.choice(priorities),
+    "priority": operation["containment_level"],
 
-    "recommended_action": random.choice(actions),
+    "recommended_action": operation["next_objective"],
 
     "assessment": random.choice(assessments)
 }
+
+# -------------------------------------------------
+# SAVE
+# -------------------------------------------------
 
 with open(
     "data/current_case.json",
