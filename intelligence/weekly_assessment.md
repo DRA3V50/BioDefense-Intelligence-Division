@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7533
+Case ID: BID-2026-2187
 
 Operation: Operation Black Eclipse
 
-Classification: Laboratory Security Breach
+Classification: Unauthorized Research System Access
 
-Threat Family: Insider Laboratory Compromise
+Threat Family: Biomedical Infrastructure Reconnaissance
 
-Current Status: Monitoring
+Current Status: Open
 
 Containment Phase: Threat Attribution
 
@@ -18,9 +18,9 @@ Containment Phase: Threat Attribution
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 HIGH
 
 Risk Score:
-53
+65
 
 Confidence:
-93%
+90%
 
 Affected Assets:
-9
+28
 
 Evidence Collected:
-109
+100
 
 Indicators Recorded:
-29
+25
 
 ---
 

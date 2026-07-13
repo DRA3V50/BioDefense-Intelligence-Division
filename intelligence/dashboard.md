@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-7533 |
+| Case ID | BID-2026-2187 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
-| Threat Family | Insider Laboratory Compromise |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Biomedical Infrastructure Reconnaissance |
 | Severity | MODERATE |
-| Status | Monitoring |
+| Status | Open |
 | Phase | Threat Attribution |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Federal Investigation Network |
-| Device | Biomedical Workstation |
-| Vendor | Fortinet |
-| Network Zone | Evidence Network |
+| Platform | Biomedical Analysis Cluster |
+| Device | Access Control System |
+| Vendor | Microsoft |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 53 |
-| Confidence | 93% |
-| Evidence | 109 |
-| Indicators | 29 |
-| Affected Assets | 9 |
+| Risk Score | 65 |
+| Confidence | 90% |
+| Evidence | 100 |
+| Indicators | 25 |
+| Affected Assets | 28 |
 
 ---
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.

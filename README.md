@@ -7,6 +7,7 @@
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # BioDefense-Intelligence-Division
@@ -18,26 +19,26 @@
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-7533<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Insider Laboratory Compromise<br><br>**Severity**<br>MODERATE |
+| **Case ID**<br>BID-2026-2187<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Unauthorized Research System Access<br><br>**Threat Family**<br>Biomedical Infrastructure Reconnaissance<br><br>**Severity**<br>MODERATE |
 
 ---
 
 | Device Profile | Investigation Status |
 |---------------|----------------------|
-| **Platform**<br>Federal Investigation Network<br><br>**Device**<br>Biomedical Workstation<br><br>**Vendor**<br>Fortinet<br><br>**Zone**<br>Evidence Network | **Priority**<br>HIGH<br><br>**Confidence**<br>93%<br><br>**Evidence**<br>109<br><br>**Indicators**<br>29 |
+| **Platform**<br>Biomedical Analysis Cluster<br><br>**Device**<br>Access Control System<br><br>**Vendor**<br>Microsoft<br><br>**Zone**<br>Research Operations | **Priority**<br>HIGH<br><br>**Confidence**<br>90%<br><br>**Evidence**<br>100<br><br>**Indicators**<br>25 |
 
 ---
 
 # Analyst Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Current Response
 
 - Lead Analyst: **Analyst Team Bravo**
-- Initial Access: **Supply Chain**
+- Initial Access: **Compromised VPN**
 - Recommended Action: **Continue evidence acquisition and identify infrastructure used by the threat organization.**
 
 ---
@@ -46,7 +47,7 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 | Metric | Value |
 |---------|------:|
-| Investigations | 51 |
+| Investigations | 52 |
 | High Severity | 0 |
 | Critical Severity | 0 |
 | Current Phase | Detection |
@@ -67,6 +68,7 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 - BioDefense Intelligence Division is a defensive cybersecurity research project centered on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, and coordinated incident response. The repository simulates how analysts document, track, and reconstruct complex investigations involving sensitive biomedical environments and critical operational systems.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

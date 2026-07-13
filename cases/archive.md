@@ -469,3 +469,33 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 ---
 
+
+## BID-2026-2187
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Unauthorized Research System Access
+
+Threat:
+Biomedical Infrastructure Reconnaissance
+
+Severity:
+MODERATE
+
+Status:
+Open
+
+Confidence:
+90%
+
+Assessment:
+
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
+
+---
+

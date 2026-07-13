@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7533
+BID-2026-2187
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Unauthorized Research System Access
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
 | Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Research Storage | Unauthorized access to protected genomic repository |
-| System Log | Unexpected privilege escalation recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -28,16 +28,16 @@ Laboratory Security Breach
 ## Investigation Statistics
 
 Evidence Collected:
-109
+100
 
 Indicators Reviewed:
-29
+25
 
 Risk Score:
-53
+65
 
 Confidence:
-93%
+90%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Bravo
 
 Current Status:
 
-Monitoring
+Open
