@@ -379,3 +379,33 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 ---
 
+
+## BID-2026-3923
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Biological Intelligence Collection
+
+Threat:
+Synthetic Genome Theft
+
+Severity:
+CRITICAL
+
+Status:
+Open
+
+Confidence:
+95%
+
+Assessment:
+
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
+
+---
+

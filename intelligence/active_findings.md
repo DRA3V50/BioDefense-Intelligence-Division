@@ -3,19 +3,19 @@
 ## Investigation
 
 Case ID:
-BID-2026-7771
+BID-2026-3923
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biological Intelligence Collection
 
 Threat Family:
-Biological Data Exfiltration
+Synthetic Genome Theft
 
 Severity:
-MODERATE
+CRITICAL
 
 Priority:
 ELEVATED
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Additional forensic examination is required to determine the full operational scope.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-26
+35
 
 Evidence Collected:
-50
+129
 
 Indicators Identified:
-29
+40
 
 Analyst Confidence:
-94%
+95%
 
 Containment Phase:
 Evidence Correlation
@@ -67,14 +67,14 @@ Evidence Correlation
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Operational Status
 
 Current Status:
-Containment
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Alpha

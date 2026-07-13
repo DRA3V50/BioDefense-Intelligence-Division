@@ -3,29 +3,29 @@
 ## Investigation
 
 Case ID:
-BID-2026-7771
+BID-2026-3923
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biological Intelligence Collection
 
 Threat Family:
-Biological Data Exfiltration
+Synthetic Genome Theft
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Federal Biosecurity Laboratory
 
 Platform:
 Laboratory Control Network
 
 Device:
-Specimen Tracking Server
+Biomedical Workstation
 
 Vendor:
 Microsoft
@@ -34,7 +34,7 @@ Operating System:
 Windows Server 2025
 
 Security Zone:
-Research Operations
+Federal Operations
 
 ---
 
@@ -50,14 +50,14 @@ Priority:
 ELEVATED
 
 Confidence:
-94%
+95%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Alpha
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.

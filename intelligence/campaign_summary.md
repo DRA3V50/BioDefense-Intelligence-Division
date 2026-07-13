@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7771
+BID-2026-3923
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biological Intelligence Collection
 
 Threat Family:
-Biological Data Exfiltration
+Synthetic Genome Theft
 
 Current Phase:
 Evidence Correlation
 
 Status:
-Containment
+Open
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Laboratory Control Network
 
 Device:
-Specimen Tracking Server
+Biomedical Workstation
 
 Vendor:
 Microsoft
 
 Security Zone:
-Research Operations
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-48
+49
 
 Evidence Collected:
-50
+129
 
 Indicators Identified:
-29
+40
 
 Affected Assets:
-26
+35
 
 Confidence:
-94%
+95%
 
 Risk Score:
-51
+96
 
 ---
 

@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7771
+Case ID: BID-2026-3923
 
 Operation: Operation Black Eclipse
 
-Classification: Research Facility Intrusion
+Classification: Biological Intelligence Collection
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Synthetic Genome Theft
 
-Current Status: Containment
+Current Status: Open
 
 Containment Phase: Evidence Correlation
 
@@ -18,9 +18,9 @@ Containment Phase: Evidence Correlation
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+No confirmed attribution has been established during the current investigation.
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ELEVATED
 
 Risk Score:
-51
+96
 
 Confidence:
-94%
+95%
 
 Affected Assets:
-26
+35
 
 Evidence Collected:
-50
+129
 
 Indicators Recorded:
-29
+40
 
 ---
 
@@ -56,7 +56,7 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Investigator:
 
-Analyst Team Bravo
+Analyst Team Alpha
 
 Date:
 

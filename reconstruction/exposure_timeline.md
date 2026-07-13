@@ -4,18 +4,18 @@
 ## 2026-07-13
 
 ### Case Opened
-Case ID: BID-2026-7771
+Case ID: BID-2026-3923
 
 ### Classification
-Research Facility Intrusion
+Biological Intelligence Collection
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Containment
+Open
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---

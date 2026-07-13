@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-7771 |
+| Case ID | BID-2026-3923 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Biological Data Exfiltration |
-| Severity | MODERATE |
-| Status | Containment |
+| Classification | Biological Intelligence Collection |
+| Threat Family | Synthetic Genome Theft |
+| Severity | CRITICAL |
+| Status | Open |
 | Phase | Evidence Correlation |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Laboratory Control Network |
-| Device | Specimen Tracking Server |
+| Device | Biomedical Workstation |
 | Vendor | Microsoft |
-| Network Zone | Research Operations |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 51 |
-| Confidence | 94% |
-| Evidence | 50 |
-| Indicators | 29 |
-| Affected Assets | 26 |
+| Risk Score | 96 |
+| Confidence | 95% |
+| Evidence | 129 |
+| Indicators | 40 |
+| Affected Assets | 35 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
