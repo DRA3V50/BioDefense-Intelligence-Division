@@ -4,16 +4,16 @@
 ## 2026-07-13
 
 ### Case Opened
-Case ID: BID-2026-3923
+Case ID: BID-2026-5173
 
 ### Classification
-Biological Intelligence Collection
+Unauthorized Research System Access
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Open
+Containment
 
 ### Severity
 CRITICAL

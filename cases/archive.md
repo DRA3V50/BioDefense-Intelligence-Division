@@ -409,3 +409,33 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 ---
 
+
+## BID-2026-5173
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Unauthorized Research System Access
+
+Threat:
+Insider Laboratory Compromise
+
+Severity:
+CRITICAL
+
+Status:
+Containment
+
+Confidence:
+92%
+
+Assessment:
+
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+
+---
+

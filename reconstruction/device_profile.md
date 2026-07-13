@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-3923
+BID-2026-5173
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Intelligence Collection
+Unauthorized Research System Access
 
 Threat Family:
-Synthetic Genome Theft
+Insider Laboratory Compromise
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Federal Biosecurity Laboratory
 
 Platform:
-Laboratory Control Network
+Evidence Processing Network
 
 Device:
 Biomedical Workstation
 
 Vendor:
-Microsoft
+Fortinet
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
-Federal Operations
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Evidence Correlation
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 ELEVATED
 
 Confidence:
-95%
+92%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

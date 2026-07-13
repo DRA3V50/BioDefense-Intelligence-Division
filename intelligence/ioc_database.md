@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3923
+BID-2026-5173
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Intelligence Collection
+Unauthorized Research System Access
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Identity | Credential reuse detected across isolated research segments |
-| Infrastructure | Firewall policy deviation identified |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
 | Evidence | Acquired forensic image verified using SHA-256 |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -28,23 +28,23 @@ Biological Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-129
+94
 
 Indicators Reviewed:
-40
+34
 
 Risk Score:
-96
+95
 
 Confidence:
-95%
+92%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo
 
 Current Status:
 
-Open
+Containment

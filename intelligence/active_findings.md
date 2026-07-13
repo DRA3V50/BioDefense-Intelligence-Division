@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-3923
+BID-2026-5173
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Intelligence Collection
+Unauthorized Research System Access
 
 Threat Family:
-Synthetic Genome Theft
+Insider Laboratory Compromise
 
 Severity:
 CRITICAL
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-35
+14
 
 Evidence Collected:
-129
+94
 
 Indicators Identified:
-40
+34
 
 Analyst Confidence:
-95%
+92%
 
 Containment Phase:
 Evidence Correlation
@@ -67,14 +67,14 @@ Evidence Correlation
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Containment
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo

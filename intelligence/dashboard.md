@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3923 |
+| Case ID | BID-2026-5173 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Intelligence Collection |
-| Threat Family | Synthetic Genome Theft |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Insider Laboratory Compromise |
 | Severity | CRITICAL |
-| Status | Open |
+| Status | Containment |
 | Phase | Evidence Correlation |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
+| Platform | Evidence Processing Network |
 | Device | Biomedical Workstation |
-| Vendor | Microsoft |
-| Network Zone | Federal Operations |
+| Vendor | Fortinet |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 96 |
-| Confidence | 95% |
-| Evidence | 129 |
-| Indicators | 40 |
-| Affected Assets | 35 |
+| Risk Score | 95 |
+| Confidence | 92% |
+| Evidence | 94 |
+| Indicators | 34 |
+| Affected Assets | 14 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
