@@ -1,69 +1,49 @@
+#!/usr/bin/env python3
+
 import csv
 import json
-import os
+from pathlib import Path
 
-case_file = "data/current_case.json"
-history_file = "data/investigation_history.csv"
+history_file = Path("data/investigation_history.csv")
 
-with open(case_file, "r", encoding="utf-8") as f:
+with open("data/current_case.json", "r", encoding="utf-8") as f:
     case = json.load(f)
 
-headers = [
+header = [
     "date",
+    "campaign_id",
     "case_id",
     "operation",
     "classification",
     "threat_family",
     "severity",
     "status",
-    "containment_phase",
-    "affected_platform",
-    "device_family",
-    "vendor",
-    "network_zone",
     "confidence",
-    "risk_score",
-    "affected_assets",
-    "evidence_count",
-    "ioc_count",
-    "initial_access",
-    "lead_analyst",
-    "priority"
+    "risk_score"
 ]
 
-write_header = (
-    not os.path.exists(history_file)
-    or os.path.getsize(history_file) == 0
-)
+write_header = not history_file.exists()
 
-with open(history_file, "a", newline="", encoding="utf-8") as f:
+with open(history_file, "a", newline="", encoding="utf-8") as csvfile:
 
-    writer = csv.DictWriter(f, fieldnames=headers)
+    writer = csv.writer(csvfile)
 
     if write_header:
-        writer.writeheader()
+        writer.writerow(header)
 
-    writer.writerow({
-        "date": case["date"],
-        "case_id": case["case_id"],
-        "operation": case["operation"],
-        "classification": case["classification"],
-        "threat_family": case["threat_family"],
-        "severity": case["severity"],
-        "status": case["status"],
-        "containment_phase": case["containment_phase"],
-        "affected_platform": case["affected_platform"],
-        "device_family": case["device_family"],
-        "vendor": case["vendor"],
-        "network_zone": case["network_zone"],
-        "confidence": case["confidence"],
-        "risk_score": case["risk_score"],
-        "affected_assets": case["affected_assets"],
-        "evidence_count": case["evidence_count"],
-        "ioc_count": case["ioc_count"],
-        "initial_access": case["initial_access"],
-        "lead_analyst": case["lead_analyst"],
-        "priority": case["priority"]
-    })
+    writer.writerow([
+        case["date"],
+        case["campaign_id"],
+        case["case_id"],
+        case["operation"],
+        case["classification"],
+        case["threat_family"],
+        case["severity"],
+        case["status"],
+        case["confidence"],
+        case["risk_score"]
+    ])
+
+print(f"History updated for {case['case_id']}")
 
 print(f"Investigation archived: {case['case_id']}")
