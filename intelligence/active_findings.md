@@ -3,19 +3,19 @@
 ## Investigation
 
 Case ID:
-BID-2026-2187
+BID-2026-3673
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Digital Pathogen Intelligence Review
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Specimen Tracking Manipulation
 
 Severity:
-MODERATE
+HIGH
 
 Priority:
 HIGH
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-28
+10
 
 Evidence Collected:
-100
+75
 
 Indicators Identified:
-25
+24
 
 Analyst Confidence:
-90%
+96%
 
 Containment Phase:
 Threat Attribution
@@ -67,14 +67,14 @@ Threat Attribution
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Containment
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-Analyst Team Bravo
+BioDefense Task Force

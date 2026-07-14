@@ -499,3 +499,33 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 ---
 
+
+## BID-2026-3673
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Digital Pathogen Intelligence Review
+
+Threat:
+Specimen Tracking Manipulation
+
+Severity:
+HIGH
+
+Status:
+Containment
+
+Confidence:
+96%
+
+Assessment:
+
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+
+---
+

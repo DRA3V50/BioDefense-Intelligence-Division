@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2187 |
+| Case ID | BID-2026-3673 |
 | Operation | Operation Black Eclipse |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
-| Severity | MODERATE |
-| Status | Open |
+| Classification | Digital Pathogen Intelligence Review |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | HIGH |
+| Status | Containment |
 | Phase | Threat Attribution |
 
 ---
@@ -20,8 +20,8 @@
 |------|------|
 | Platform | Biomedical Analysis Cluster |
 | Device | Access Control System |
-| Vendor | Microsoft |
-| Network Zone | Research Operations |
+| Vendor | Cisco |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 65 |
-| Confidence | 90% |
-| Evidence | 100 |
-| Indicators | 25 |
-| Affected Assets | 28 |
+| Risk Score | 89 |
+| Confidence | 96% |
+| Evidence | 75 |
+| Indicators | 24 |
+| Affected Assets | 10 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.

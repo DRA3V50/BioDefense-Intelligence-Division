@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-2187
+Case ID: BID-2026-3673
 
 Operation: Operation Black Eclipse
 
-Classification: Unauthorized Research System Access
+Classification: Digital Pathogen Intelligence Review
 
-Threat Family: Biomedical Infrastructure Reconnaissance
+Threat Family: Specimen Tracking Manipulation
 
-Current Status: Open
+Current Status: Containment
 
 Containment Phase: Threat Attribution
 
@@ -18,9 +18,9 @@ Containment Phase: Threat Attribution
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 HIGH
 
 Risk Score:
-65
+89
 
 Confidence:
-90%
+96%
 
 Affected Assets:
-28
+10
 
 Evidence Collected:
-100
+75
 
 Indicators Recorded:
-25
+24
 
 ---
 
@@ -56,8 +56,8 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Investigator:
 
-Analyst Team Bravo
+BioDefense Task Force
 
 Date:
 
-2026-07-13
+2026-07-14
