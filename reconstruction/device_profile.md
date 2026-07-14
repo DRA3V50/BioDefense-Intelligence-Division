@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-4042
+BID-2026-8491
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Biomedical Network Exposure
 
 Threat Family:
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
-Clinical Research Environment
+Federal Investigation Network
 
 Device:
-Access Control System
+Specimen Tracking Server
 
 Vendor:
 Cisco
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
@@ -47,10 +47,10 @@ Status:
 Isolated From Production
 
 Priority:
-CRITICAL
+SEVERE
 
 Confidence:
-93%
+86%
 
 ---
 
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.

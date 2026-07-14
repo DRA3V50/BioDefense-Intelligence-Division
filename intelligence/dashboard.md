@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4042 |
+| Case ID | BID-2026-8491 |
 | Operation | Operation Black Eclipse |
-| Classification | Biosecurity Infrastructure Investigation |
-| Threat Family | Laboratory Credential Abuse |
+| Classification | Biomedical Network Exposure |
+| Threat Family | Biological Data Exfiltration |
 | Severity | MODERATE |
-| Status | Field Coordination |
+| Status | Intelligence Analysis |
 | Phase | Threat Attribution |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Research Environment |
-| Device | Access Control System |
+| Platform | Federal Investigation Network |
+| Device | Specimen Tracking Server |
 | Vendor | Cisco |
-| Network Zone | Federal Operations |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 55 |
-| Confidence | 93% |
-| Evidence | 120 |
-| Indicators | 20 |
-| Affected Assets | 31 |
+| Risk Score | 50 |
+| Confidence | 86% |
+| Evidence | 158 |
+| Indicators | 31 |
+| Affected Assets | 13 |
 
 ---
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.

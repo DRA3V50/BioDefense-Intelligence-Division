@@ -559,3 +559,33 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 
 ---
 
+
+## BID-2026-8491
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Biomedical Network Exposure
+
+Threat:
+Biological Data Exfiltration
+
+Severity:
+MODERATE
+
+Status:
+Intelligence Analysis
+
+Confidence:
+86%
+
+Assessment:
+
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+
+---
+

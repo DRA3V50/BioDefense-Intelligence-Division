@@ -10,6 +10,7 @@
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # BioDefense-Intelligence-Division
@@ -21,19 +22,19 @@
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-4042<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Biosecurity Infrastructure Investigation<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>MODERATE |
+| **Case ID**<br>BID-2026-8491<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Biomedical Network Exposure<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>MODERATE |
 
 ---
 
 | Device Profile | Investigation Status |
 |---------------|----------------------|
-| **Platform**<br>Clinical Research Environment<br><br>**Device**<br>Access Control System<br><br>**Vendor**<br>Cisco<br><br>**Zone**<br>Federal Operations | **Priority**<br>CRITICAL<br><br>**Confidence**<br>93%<br><br>**Evidence**<br>120<br><br>**Indicators**<br>20 |
+| **Platform**<br>Federal Investigation Network<br><br>**Device**<br>Specimen Tracking Server<br><br>**Vendor**<br>Cisco<br><br>**Zone**<br>Research Operations | **Priority**<br>SEVERE<br><br>**Confidence**<br>86%<br><br>**Evidence**<br>158<br><br>**Indicators**<br>31 |
 
 ---
 
 # Analyst Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -49,7 +50,7 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 
 | Metric | Value |
 |---------|------:|
-| Investigations | 54 |
+| Investigations | 55 |
 | High Severity | 0 |
 | Critical Severity | 0 |
 | Current Phase | Detection |
@@ -70,6 +71,7 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 - BioDefense Intelligence Division is a defensive cybersecurity research project centered on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, and coordinated incident response. The repository simulates how analysts document, track, and reconstruct complex investigations involving sensitive biomedical environments and critical operational systems.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

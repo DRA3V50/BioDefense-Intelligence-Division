@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4042
+BID-2026-8491
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Biomedical Network Exposure
 
 Threat Family:
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 Current Phase:
 Threat Attribution
 
 Status:
-Field Coordination
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Federal Investigation Network
 
 Device:
-Access Control System
+Specimen Tracking Server
 
 Vendor:
 Cisco
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-54
+55
 
 Evidence Collected:
-120
+158
 
 Indicators Identified:
-20
-
-Affected Assets:
 31
 
+Affected Assets:
+13
+
 Confidence:
-93%
+86%
 
 Risk Score:
-55
+50
 
 ---
 

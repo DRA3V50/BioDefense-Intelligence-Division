@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4042
+BID-2026-8491
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Biomedical Network Exposure
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Identity | Credential reuse detected across isolated research segments |
-| System Log | Unexpected privilege escalation recorded |
 | Database | Protected biomedical dataset queried outside normal operating hours |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -28,16 +28,16 @@ Biosecurity Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-120
+158
 
 Indicators Reviewed:
-20
+31
 
 Risk Score:
-55
+50
 
 Confidence:
-93%
+86%
 
 ---
 
@@ -47,4 +47,4 @@ National Response Cell
 
 Current Status:
 
-Field Coordination
+Intelligence Analysis

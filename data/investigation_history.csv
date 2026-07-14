@@ -53,3 +53,4 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-13,BID-2026-2187,Operation Black Eclipse,Unauthorized Research System Access,Biomedical Infrastructure Reconnaissance,MODERATE,Open,Threat Attribution,Biomedical Analysis Cluster,Access Control System,Microsoft,Research Operations,90,65,28,100,25,Compromised VPN,Analyst Team Bravo,HIGH
 2026-07-14,BDC-2026-001,BID-2026-3673,Operation Black Eclipse,Digital Pathogen Intelligence Review,Specimen Tracking Manipulation,HIGH,Containment,96,89
 2026-07-14,BDC-2026-001,BID-2026-4042,Operation Black Eclipse,Biosecurity Infrastructure Investigation,Laboratory Credential Abuse,MODERATE,Field Coordination,93,55
+2026-07-14,BDC-2026-001,BID-2026-8491,Operation Black Eclipse,Biomedical Network Exposure,Biological Data Exfiltration,MODERATE,Intelligence Analysis,86,50
