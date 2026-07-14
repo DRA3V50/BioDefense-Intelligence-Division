@@ -40,7 +40,7 @@ jobs:
         run: python scripts/generate_case.py
 
       - name: Update Active Operation
-        run: python scripts/campaign_manager.py
+        run: python scripts/update_operation.py
 
       - name: Advance Investigation Lifecycle
         run: python scripts/update_case_progress.py
@@ -80,6 +80,9 @@ jobs:
       - name: Generate Investigation Artifacts
         run: python scripts/update_ioc_database.py
 
+      - name: Generate Biothreat Report
+        run: python scripts/generate_biothreat_report.py
+
       ###############################################################
       # Phase IV — Forensic Reconstruction
       ###############################################################
@@ -112,5 +115,7 @@ jobs:
           git add .
 
           git diff --staged --quiet || git commit -m "Daily investigation update"
+
+          git push
 
           git push
