@@ -4,18 +4,18 @@
 ## 2026-07-14
 
 ### Case Opened
-Case ID: BID-2026-3673
+Case ID: BID-2026-4042
 
 ### Classification
-Digital Pathogen Intelligence Review
+Biosecurity Infrastructure Investigation
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
-Containment
+Field Coordination
 
 ### Severity
-HIGH
+MODERATE
 
 ---

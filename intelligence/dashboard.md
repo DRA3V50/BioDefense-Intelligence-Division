@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3673 |
+| Case ID | BID-2026-4042 |
 | Operation | Operation Black Eclipse |
-| Classification | Digital Pathogen Intelligence Review |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | HIGH |
-| Status | Containment |
+| Classification | Biosecurity Infrastructure Investigation |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | MODERATE |
+| Status | Field Coordination |
 | Phase | Threat Attribution |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biomedical Analysis Cluster |
+| Platform | Clinical Research Environment |
 | Device | Access Control System |
 | Vendor | Cisco |
-| Network Zone | Secure Laboratory |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 89 |
-| Confidence | 96% |
-| Evidence | 75 |
-| Indicators | 24 |
-| Affected Assets | 10 |
+| Risk Score | 55 |
+| Confidence | 93% |
+| Evidence | 120 |
+| Indicators | 20 |
+| Affected Assets | 31 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **BioDefense Task Force**
+Lead Analyst: **National Response Cell**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.

@@ -529,3 +529,33 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 ---
 
+
+## BID-2026-4042
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Biosecurity Infrastructure Investigation
+
+Threat:
+Laboratory Credential Abuse
+
+Severity:
+MODERATE
+
+Status:
+Field Coordination
+
+Confidence:
+93%
+
+Assessment:
+
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+
+---
+

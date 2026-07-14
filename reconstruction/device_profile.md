@@ -3,26 +3,26 @@
 ## Investigation
 
 Case ID:
-BID-2026-3673
+BID-2026-4042
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Digital Pathogen Intelligence Review
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Laboratory Credential Abuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
-Biomedical Analysis Cluster
+Clinical Research Environment
 
 Device:
 Access Control System
@@ -31,10 +31,10 @@ Vendor:
 Cisco
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Isolated From Production
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-96%
+93%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+National Response Cell
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

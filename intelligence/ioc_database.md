@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3673
+BID-2026-4042
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Digital Pathogen Intelligence Review
+Biosecurity Infrastructure Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Research Storage | Unauthorized access to protected genomic repository |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Identity | Credential reuse detected across isolated research segments |
+| System Log | Unexpected privilege escalation recorded |
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -28,23 +28,23 @@ Digital Pathogen Intelligence Review
 ## Investigation Statistics
 
 Evidence Collected:
-75
+120
 
 Indicators Reviewed:
-24
+20
 
 Risk Score:
-89
+55
 
 Confidence:
-96%
+93%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+National Response Cell
 
 Current Status:
 
-Containment
+Field Coordination
