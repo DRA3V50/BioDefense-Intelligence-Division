@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-8491
+BID-2026-6092
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Biological Intelligence Collection
 
 Threat Family:
-Biological Data Exfiltration
+Digital Pathogen Deployment
 
 Severity:
-MODERATE
+CRITICAL
 
 Priority:
-SEVERE
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ SEVERE
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-13
+26
 
 Evidence Collected:
-158
+162
 
 Indicators Identified:
-31
+51
 
 Analyst Confidence:
-86%
+94%
 
 Containment Phase:
 Threat Attribution
@@ -67,7 +67,7 @@ Threat Attribution
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ---
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Alpha

@@ -589,3 +589,33 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 ---
 
+
+## BID-2026-6092
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Biological Intelligence Collection
+
+Threat:
+Digital Pathogen Deployment
+
+Severity:
+CRITICAL
+
+Status:
+Intelligence Analysis
+
+Confidence:
+94%
+
+Assessment:
+
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+
+---
+

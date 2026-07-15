@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8491
+Case ID: BID-2026-6092
 
 Operation: Operation Black Eclipse
 
-Classification: Biomedical Network Exposure
+Classification: Biological Intelligence Collection
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Digital Pathogen Deployment
 
 Current Status: Intelligence Analysis
 
@@ -18,31 +18,31 @@ Containment Phase: Threat Attribution
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Observed indicators remain consistent with the current operational assessment.
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-SEVERE
+CRITICAL
 
 Risk Score:
-50
+96
 
 Confidence:
-86%
+94%
 
 Affected Assets:
-13
+26
 
 Evidence Collected:
-158
+162
 
 Indicators Recorded:
-31
+51
 
 ---
 
@@ -56,8 +56,8 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Alpha
 
 Date:
 
-2026-07-14
+2026-07-15

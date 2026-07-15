@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8491 |
+| Case ID | BID-2026-6092 |
 | Operation | Operation Black Eclipse |
-| Classification | Biomedical Network Exposure |
-| Threat Family | Biological Data Exfiltration |
-| Severity | MODERATE |
+| Classification | Biological Intelligence Collection |
+| Threat Family | Digital Pathogen Deployment |
+| Severity | CRITICAL |
 | Status | Intelligence Analysis |
 | Phase | Threat Attribution |
 
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Federal Investigation Network |
-| Device | Specimen Tracking Server |
-| Vendor | Cisco |
-| Network Zone | Research Operations |
+| Platform | Clinical Research Environment |
+| Device | Digital Evidence Appliance |
+| Vendor | Lenovo |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 50 |
-| Confidence | 86% |
-| Evidence | 158 |
-| Indicators | 31 |
-| Affected Assets | 13 |
+| Risk Score | 96 |
+| Confidence | 94% |
+| Evidence | 162 |
+| Indicators | 51 |
+| Affected Assets | 26 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.

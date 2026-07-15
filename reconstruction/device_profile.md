@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-8491
+BID-2026-6092
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Biological Intelligence Collection
 
 Threat Family:
-Biological Data Exfiltration
+Digital Pathogen Deployment
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Central Evidence Processing Center
 
 Platform:
-Federal Investigation Network
+Clinical Research Environment
 
 Device:
-Specimen Tracking Server
+Digital Evidence Appliance
 
 Vendor:
-Cisco
+Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Threat Attribution
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
-SEVERE
+CRITICAL
 
 Confidence:
-86%
+94%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Alpha
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

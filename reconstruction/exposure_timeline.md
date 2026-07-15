@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-14
+## 2026-07-15
 
 ### Case Opened
-Case ID: BID-2026-8491
+Case ID: BID-2026-6092
 
 ### Classification
-Biomedical Network Exposure
+Biological Intelligence Collection
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ### Current Status
 Intelligence Analysis
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---

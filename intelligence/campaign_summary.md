@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8491
+BID-2026-6092
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Biological Intelligence Collection
 
 Threat Family:
-Biological Data Exfiltration
+Digital Pathogen Deployment
 
 Current Phase:
 Threat Attribution
@@ -25,38 +25,38 @@ Intelligence Analysis
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Clinical Research Environment
 
 Device:
-Specimen Tracking Server
+Digital Evidence Appliance
 
 Vendor:
-Cisco
+Lenovo
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-55
+56
 
 Evidence Collected:
-158
+162
 
 Indicators Identified:
-31
+51
 
 Affected Assets:
-13
+26
 
 Confidence:
-86%
+94%
 
 Risk Score:
-50
+96
 
 ---
 
