@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6092 |
+| Case ID | BID-2026-4519 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Intelligence Collection |
-| Threat Family | Digital Pathogen Deployment |
-| Severity | CRITICAL |
-| Status | Intelligence Analysis |
+| Classification | Digital Pathogen Intelligence Review |
+| Threat Family | Biomedical Infrastructure Reconnaissance |
+| Severity | MODERATE |
+| Status | Field Coordination |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Clinical Research Environment |
-| Device | Digital Evidence Appliance |
-| Vendor | Lenovo |
-| Security Zone | Secure Laboratory |
+| Device | Access Control System |
+| Vendor | Fortinet |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 96 |
-| Confidence | 94% |
-| Evidence Collected | 162 |
-| Indicators Identified | 51 |
-| Affected Assets | 26 |
+| Risk Score | 66 |
+| Confidence | 89% |
+| Evidence Collected | 68 |
+| Indicators Identified | 89 |
+| Affected Assets | 11 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -81,15 +81,15 @@ _Evidence summary unavailable._
 
 Current Phase:
 
-**Threat Attribution**
+**Containment**
 
 Current Status:
 
-**Intelligence Analysis**
+**Field Coordination**
 
 Priority:
 
-**CRITICAL**
+**SEVERE**
 
 Recommended Action:
 

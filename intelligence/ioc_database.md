@@ -3,23 +3,23 @@
 ## Investigation
 
 Case ID:
-BID-2026-6092
+BID-2026-4519
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Intelligence Collection
+Digital Pathogen Intelligence Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| PowerShell | Encoded administrative command execution detected |
+| Identity | Credential reuse detected across isolated research segments |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| System Log | Unexpected privilege escalation recorded |
 | Network | Unexpected east-west traffic between laboratory VLANs |
 
 
@@ -28,23 +28,23 @@ Biological Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-162
+68
 
 Indicators Reviewed:
-51
+89
 
 Risk Score:
-96
+66
 
 Confidence:
-94%
+89%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo
 
 Current Status:
 
-Intelligence Analysis
+Field Coordination

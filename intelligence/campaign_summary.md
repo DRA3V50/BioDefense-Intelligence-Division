@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6092
+BID-2026-4519
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Intelligence Collection
+Digital Pathogen Intelligence Review
 
 Threat Family:
-Digital Pathogen Deployment
+Biomedical Infrastructure Reconnaissance
 
 Current Phase:
-Threat Attribution
+Containment
 
 Status:
-Intelligence Analysis
+Field Coordination
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Clinical Research Environment
 
 Device:
-Digital Evidence Appliance
+Access Control System
 
 Vendor:
-Lenovo
+Fortinet
 
 Security Zone:
-Secure Laboratory
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-56
+57
 
 Evidence Collected:
-162
+68
 
 Indicators Identified:
-51
+89
 
 Affected Assets:
-26
+11
 
 Confidence:
-94%
+89%
 
 Risk Score:
-96
+66
 
 ---
 

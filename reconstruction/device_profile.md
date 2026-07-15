@@ -3,61 +3,61 @@
 ## Investigation
 
 Case ID:
-BID-2026-6092
+BID-2026-4519
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Intelligence Collection
+Digital Pathogen Intelligence Review
 
 Threat Family:
-Digital Pathogen Deployment
+Biomedical Infrastructure Reconnaissance
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Ashcroft Biomedical Center
 
 Platform:
 Clinical Research Environment
 
 Device:
-Digital Evidence Appliance
+Access Control System
 
 Vendor:
-Lenovo
+Fortinet
 
 Operating System:
-VMware ESXi 9
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Secure Laboratory
+Evidence Network
 
 ---
 
 ## Investigation Status
 
 Current Phase:
-Threat Attribution
+Containment
 
 Status:
 Evidence Acquisition
 
 Priority:
-CRITICAL
+SEVERE
 
 Confidence:
-94%
+89%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

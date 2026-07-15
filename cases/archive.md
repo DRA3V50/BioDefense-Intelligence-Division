@@ -619,3 +619,33 @@ Collected artifacts support continued investigation into cyber-enabled bioterror
 
 ---
 
+
+## BID-2026-4519
+
+Campaign:
+BDC-2026-001
+
+Operation:
+Operation Black Eclipse
+
+Classification:
+Digital Pathogen Intelligence Review
+
+Threat:
+Biomedical Infrastructure Reconnaissance
+
+Severity:
+MODERATE
+
+Status:
+Field Coordination
+
+Confidence:
+89%
+
+Assessment:
+
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+
+---
+

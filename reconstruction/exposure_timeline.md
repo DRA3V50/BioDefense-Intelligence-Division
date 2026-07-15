@@ -4,18 +4,18 @@
 ## 2026-07-15
 
 ### Case Opened
-Case ID: BID-2026-6092
+Case ID: BID-2026-4519
 
 ### Classification
-Biological Intelligence Collection
+Digital Pathogen Intelligence Review
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
-Intelligence Analysis
+Field Coordination
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---
