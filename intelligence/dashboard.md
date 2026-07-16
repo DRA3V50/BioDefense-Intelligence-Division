@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1951 |
+| Case ID | BID-2026-7151 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Biosecurity Infrastructure Investigation |
+| Threat Family | Biological Data Exfiltration |
+| Severity | HIGH |
+| Status | Intelligence Analysis |
 | Phase | Containment |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Clinical Research Environment |
-| Device | Specimen Tracking Server |
-| Vendor | Dell |
-| Network Zone | Secure Laboratory |
+| Device | Laboratory Controller |
+| Vendor | VMware |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 62 |
-| Confidence | 99% |
-| Evidence | 28 |
-| Indicators | 142 |
-| Affected Assets | 24 |
+| Risk Score | 79 |
+| Confidence | 97% |
+| Evidence | 626 |
+| Indicators | 432 |
+| Affected Assets | 38 |
 
 ---
 

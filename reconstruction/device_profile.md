@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1951
+BID-2026-7151
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Central Evidence Processing Center
 
 Platform:
 Clinical Research Environment
 
 Device:
-Specimen Tracking Server
+Laboratory Controller
 
 Vendor:
-Dell
+VMware
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Containment
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
-SEVERE
+ELEVATED
 
 Confidence:
-99%
+97%
 
 ---
 
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.

@@ -16,6 +16,7 @@
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # BioDefense-Intelligence-Division
@@ -27,13 +28,13 @@
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-1951<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Research Facility Intrusion<br><br>**Threat Family**<br>Specimen Tracking Manipulation<br><br>**Severity**<br>MODERATE |
+| **Case ID**<br>BID-2026-7151<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Biosecurity Infrastructure Investigation<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>HIGH |
 
 ---
 
 | Device Profile | Investigation Status |
 |---------------|----------------------|
-| **Platform**<br>Clinical Research Environment<br><br>**Device**<br>Specimen Tracking Server<br><br>**Vendor**<br>Dell<br><br>**Zone**<br>Secure Laboratory | **Priority**<br>SEVERE<br><br>**Confidence**<br>99%<br><br>**Evidence**<br>28<br><br>**Indicators**<br>142 |
+| **Platform**<br>Clinical Research Environment<br><br>**Device**<br>Laboratory Controller<br><br>**Vendor**<br>VMware<br><br>**Zone**<br>Federal Operations | **Priority**<br>ELEVATED<br><br>**Confidence**<br>97%<br><br>**Evidence**<br>626<br><br>**Indicators**<br>432 |
 
 ---
 
@@ -55,8 +56,8 @@ Collected artifacts support continued investigation into cyber-enabled bioterror
 
 | Metric | Value |
 |---------|------:|
-| Investigations | 1 |
-| High Severity | 0 |
+| Investigations | 2 |
+| High Severity | 1 |
 | Critical Severity | 0 |
 | Current Phase | Detection |
 
@@ -66,6 +67,7 @@ Collected artifacts support continued investigation into cyber-enabled bioterror
 
 | Case | Classification | Severity |
 |------|---------------|----------|
+| BID-2026-7151 | Biosecurity Infrastructure Investigation | HIGH |
 | BID-2026-1951 | Research Facility Intrusion | MODERATE |
 
 
@@ -76,6 +78,7 @@ Collected artifacts support continued investigation into cyber-enabled bioterror
 - BioDefense Intelligence Division is a defensive cybersecurity research project centered on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, and coordinated incident response. The repository simulates how analysts document, track, and reconstruct complex investigations involving sensitive biomedical environments and critical operational systems.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

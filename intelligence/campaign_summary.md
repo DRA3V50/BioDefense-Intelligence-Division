@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1951
+BID-2026-7151
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 Current Phase:
 Containment
 
 Status:
-Field Coordination
+Intelligence Analysis
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Clinical Research Environment
 
 Device:
-Specimen Tracking Server
+Laboratory Controller
 
 Vendor:
-Dell
+VMware
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-1
+2
 
 Evidence Collected:
-28
+626
 
 Indicators Identified:
-142
+432
 
 Affected Assets:
-24
+38
 
 Confidence:
-99%
+97%
 
 Risk Score:
-62
+79
 
 ---
 
