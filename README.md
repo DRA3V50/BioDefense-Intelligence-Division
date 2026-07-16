@@ -14,6 +14,7 @@
 
 
 
+
 <!-- FSE-REPORT-START -->
 
 # BioDefense-Intelligence-Division
@@ -25,26 +26,26 @@
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-7923<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Evidence Reconstruction Investigation<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>MODERATE |
+| **Case ID**<br>BID-2026-9568<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Phase**<br>Detection | **Classification**<br>Research Facility Intrusion<br><br>**Threat Family**<br>Research Network Persistence<br><br>**Severity**<br>CRITICAL |
 
 ---
 
 | Device Profile | Investigation Status |
 |---------------|----------------------|
-| **Platform**<br>Biomedical Analysis Cluster<br><br>**Device**<br>Research Database<br><br>**Vendor**<br>Dell<br><br>**Zone**<br>Research Operations | **Priority**<br>CRITICAL<br><br>**Confidence**<br>96%<br><br>**Evidence**<br>23<br><br>**Indicators**<br>128 |
+| **Platform**<br>Laboratory Control Network<br><br>**Device**<br>Digital Evidence Appliance<br><br>**Vendor**<br>Dell<br><br>**Zone**<br>Secure Laboratory | **Priority**<br>SEVERE<br><br>**Confidence**<br>94%<br><br>**Evidence**<br>410<br><br>**Indicators**<br>243 |
 
 ---
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ---
 
 # Current Response
 
 - Lead Analyst: **Analyst Team Bravo**
-- Initial Access: **Supply Chain**
+- Initial Access: **Phishing**
 - Recommended Action: **Continue evidence acquisition and identify infrastructure used by the threat organization.**
 
 ---
@@ -53,7 +54,7 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 | Metric | Value |
 |---------|------:|
-| Investigations | 59 |
+| Investigations | 61 |
 | High Severity | 0 |
 | Critical Severity | 0 |
 | Current Phase | Detection |
@@ -74,6 +75,7 @@ Analysts continue correlating evidence to determine campaign scope and operation
 - BioDefense Intelligence Division is a defensive cybersecurity research project centered on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, and coordinated incident response. The repository simulates how analysts document, track, and reconstruct complex investigations involving sensitive biomedical environments and critical operational systems.
 
 <!-- FSE-REPORT-END -->
+
 
 
 

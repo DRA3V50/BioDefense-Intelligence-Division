@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7923 |
+| Case ID | BID-2026-9568 |
 | Operation | Operation Black Eclipse |
-| Classification | Evidence Reconstruction Investigation |
-| Threat Family | Biological Data Exfiltration |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Research Facility Intrusion |
+| Threat Family | Research Network Persistence |
+| Severity | CRITICAL |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Research Database |
+| Platform | Laboratory Control Network |
+| Device | Digital Evidence Appliance |
 | Vendor | Dell |
-| Security Zone | Research Operations |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 66 |
-| Confidence | 96% |
-| Evidence Collected | 23 |
-| Indicators Identified | 128 |
-| Affected Assets | 11 |
+| Risk Score | 93 |
+| Confidence | 94% |
+| Evidence Collected | 410 |
+| Indicators Identified | 243 |
+| Affected Assets | 19 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Open**
 
 Priority:
 
-**CRITICAL**
+**SEVERE**
 
 Recommended Action:
 

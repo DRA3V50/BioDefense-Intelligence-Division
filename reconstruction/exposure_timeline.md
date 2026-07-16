@@ -4,18 +4,18 @@
 ## 2026-07-16
 
 ### Case Opened
-Case ID: BID-2026-7923
+Case ID: BID-2026-9568
 
 ### Classification
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ### Current Status
-Field Coordination
+Open
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---

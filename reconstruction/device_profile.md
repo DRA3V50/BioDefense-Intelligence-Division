@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-7923
+BID-2026-9568
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 Threat Family:
-Biological Data Exfiltration
+Research Network Persistence
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Biomedical Analysis Cluster
+Laboratory Control Network
 
 Device:
-Research Database
+Digital Evidence Appliance
 
 Vendor:
 Dell
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
@@ -47,10 +47,10 @@ Status:
 Under Forensic Preservation
 
 Priority:
-CRITICAL
+SEVERE
 
 Confidence:
-96%
+94%
 
 ---
 

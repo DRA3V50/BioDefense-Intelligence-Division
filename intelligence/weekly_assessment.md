@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7923
+Case ID: BID-2026-9568
 
 Operation: Operation Black Eclipse
 
-Classification: Evidence Reconstruction Investigation
+Classification: Research Facility Intrusion
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Research Network Persistence
 
-Current Status: Field Coordination
+Current Status: Open
 
 Containment Phase: Containment
 
@@ -18,31 +18,31 @@ Containment Phase: Containment
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+SEVERE
 
 Risk Score:
-66
+93
 
 Confidence:
-96%
+94%
 
 Affected Assets:
-11
+19
 
 Evidence Collected:
-23
+410
 
 Indicators Recorded:
-128
+243
 
 ---
 

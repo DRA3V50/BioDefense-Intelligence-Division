@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7923
+BID-2026-9568
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Infrastructure | Firewall policy deviation identified |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
 | System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -28,16 +28,16 @@ Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-23
+410
 
 Indicators Reviewed:
-128
+243
 
 Risk Score:
-66
+93
 
 Confidence:
-96%
+94%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Bravo
 
 Current Status:
 
-Field Coordination
+Open
