@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-4519
+BID-2026-7923
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Digital Pathogen Intelligence Review
+Evidence Reconstruction Investigation
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Biological Data Exfiltration
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Ashcroft Biomedical Center
 
 Platform:
-Clinical Research Environment
+Biomedical Analysis Cluster
 
 Device:
-Access Control System
+Research Database
 
 Vendor:
-Fortinet
+Dell
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Containment
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
-SEVERE
+CRITICAL
 
 Confidence:
-89%
+96%
 
 ---
 
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.

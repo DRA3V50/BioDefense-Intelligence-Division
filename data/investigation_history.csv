@@ -56,3 +56,5 @@ Date,CaseID,Classification,Severity,Status,Confidence
 2026-07-14,BDC-2026-001,BID-2026-8491,Operation Black Eclipse,Biomedical Network Exposure,Biological Data Exfiltration,MODERATE,Intelligence Analysis,86,50
 2026-07-15,BDC-2026-001,BID-2026-6092,Operation Black Eclipse,Biological Intelligence Collection,Digital Pathogen Deployment,CRITICAL,Intelligence Analysis,94,96
 2026-07-15,BDC-2026-001,BID-2026-4519,Operation Black Eclipse,Digital Pathogen Intelligence Review,Biomedical Infrastructure Reconnaissance,MODERATE,Field Coordination,89,66
+BID-2026-7923,2026-07-16,Operation Black Eclipse,Evidence Reconstruction Investigation,MODERATE,Field Coordination,CRITICAL
+2026-07-16,BDC-2026-001,BID-2026-7923,Operation Black Eclipse,Evidence Reconstruction Investigation,Biological Data Exfiltration,MODERATE,Field Coordination,96,66

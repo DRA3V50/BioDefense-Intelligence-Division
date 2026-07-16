@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4519
+BID-2026-7923
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Digital Pathogen Intelligence Review
+Evidence Reconstruction Investigation
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Biological Data Exfiltration
 
 Current Phase:
 Containment
@@ -25,35 +25,35 @@ Field Coordination
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Biomedical Analysis Cluster
 
 Device:
-Access Control System
+Research Database
 
 Vendor:
-Fortinet
+Dell
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-57
+59
 
 Evidence Collected:
-68
+23
 
 Indicators Identified:
-89
+128
 
 Affected Assets:
 11
 
 Confidence:
-89%
+96%
 
 Risk Score:
 66

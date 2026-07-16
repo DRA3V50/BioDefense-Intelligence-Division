@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-4519
+BID-2026-7923
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Digital Pathogen Intelligence Review
+Evidence Reconstruction Investigation
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Biological Data Exfiltration
 
 Severity:
 MODERATE
 
 Priority:
-SEVERE
+CRITICAL
 
 ---
 
@@ -26,19 +26,19 @@ SEVERE
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 5
 
@@ -52,13 +52,13 @@ Affected Assets:
 11
 
 Evidence Collected:
-68
+23
 
 Indicators Identified:
-89
+128
 
 Analyst Confidence:
-89%
+96%
 
 Containment Phase:
 Containment
@@ -67,7 +67,7 @@ Containment
 
 # Analyst Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 

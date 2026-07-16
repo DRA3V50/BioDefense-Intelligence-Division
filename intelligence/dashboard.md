@@ -4,10 +4,10 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4519 |
+| Case ID | BID-2026-7923 |
 | Operation | Operation Black Eclipse |
-| Classification | Digital Pathogen Intelligence Review |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
+| Classification | Evidence Reconstruction Investigation |
+| Threat Family | Biological Data Exfiltration |
 | Severity | MODERATE |
 | Status | Field Coordination |
 | Phase | Containment |
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Research Environment |
-| Device | Access Control System |
-| Vendor | Fortinet |
-| Network Zone | Evidence Network |
+| Platform | Biomedical Analysis Cluster |
+| Device | Research Database |
+| Vendor | Dell |
+| Network Zone | Research Operations |
 
 ---
 
@@ -30,9 +30,9 @@
 | Metric | Value |
 |------|------:|
 | Risk Score | 66 |
-| Confidence | 89% |
-| Evidence | 68 |
-| Indicators | 89 |
+| Confidence | 96% |
+| Evidence | 23 |
+| Indicators | 128 |
 | Affected Assets | 11 |
 
 ---
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.

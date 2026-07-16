@@ -1,16 +1,16 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-15
+## 2026-07-16
 
 ### Case Opened
-Case ID: BID-2026-4519
+Case ID: BID-2026-7923
 
 ### Classification
-Digital Pathogen Intelligence Review
+Evidence Reconstruction Investigation
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
 Field Coordination

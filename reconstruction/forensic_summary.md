@@ -4,10 +4,10 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4519 |
+| Case ID | BID-2026-7923 |
 | Operation | Operation Black Eclipse |
-| Classification | Digital Pathogen Intelligence Review |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
+| Classification | Evidence Reconstruction Investigation |
+| Threat Family | Biological Data Exfiltration |
 | Severity | MODERATE |
 | Status | Field Coordination |
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Access Control System |
-| Vendor | Fortinet |
-| Security Zone | Evidence Network |
+| Platform | Biomedical Analysis Cluster |
+| Device | Research Database |
+| Vendor | Dell |
+| Security Zone | Research Operations |
 
 ---
 
@@ -29,9 +29,9 @@
 | Metric | Value |
 |--------|------:|
 | Risk Score | 66 |
-| Confidence | 89% |
-| Evidence Collected | 68 |
-| Indicators Identified | 89 |
+| Confidence | 96% |
+| Evidence Collected | 23 |
+| Indicators Identified | 128 |
 | Affected Assets | 11 |
 
 ---
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**SEVERE**
+**CRITICAL**
 
 Recommended Action:
 
