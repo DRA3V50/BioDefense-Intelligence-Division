@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
 import json
+import csv
 from pathlib import Path
 
 # -------------------------------------------------
-# LOAD DATA
+# Load current investigation
 # -------------------------------------------------
 
 with open("data/current_case.json", "r", encoding="utf-8") as f:
@@ -14,127 +15,164 @@ with open("operations/active_operation.json", "r", encoding="utf-8") as f:
     operation = json.load(f)
 
 # -------------------------------------------------
-# CREATE INDIVIDUAL CASE FILE
+# Create archive folders
 # -------------------------------------------------
 
-case_file = Path(f"cases/{case['case_id']}.md")
+archive_json = Path("cases/archive/json")
+archive_md = Path("cases/archive/reports")
 
-content = f"""# {case['case_id']}
+archive_json.mkdir(parents=True, exist_ok=True)
+archive_md.mkdir(parents=True, exist_ok=True)
 
-## Investigation Overview
+# -------------------------------------------------
+# Save JSON archive
+# -------------------------------------------------
 
-Campaign ID: {case['campaign_id']}
+json_file = archive_json / f"{case['case_id']}.json"
 
-Operation: {case['operation']}
+with open(json_file, "w", encoding="utf-8") as f:
+    json.dump(case, f, indent=4)
 
-Campaign Phase: {operation['campaign_phase']}
+# -------------------------------------------------
+# Save Markdown report
+# -------------------------------------------------
 
-Date Opened: {case['date']}
+md_file = archive_md / f"{case['case_id']}.md"
+
+report = f"""# {case['case_id']}
+
+# Investigation Overview
+
+Operation:
+{case["operation"]}
+
+Campaign Phase:
+{operation["campaign_phase"]}
+
+Opened:
+{case["date"]}
 
 ---
 
-## Investigation
+## Classification
 
-Classification: {case['classification']}
+{case["classification"]}
 
-Threat Family: {case['threat_family']}
+Threat Family
 
-Severity: {case['severity']}
+{case["threat_family"]}
 
-Status: {case['status']}
+Severity
 
-Priority: {case['priority']}
+{case["severity"]}
 
-Containment Phase: {case['containment_phase']}
+Priority
+
+{case["priority"]}
+
+Status
+
+{case["status"]}
+
+Containment
+
+{case["containment_phase"]}
 
 ---
 
 ## Environment
 
-Platform: {case['affected_platform']}
+Platform
 
-Device: {case['device_family']}
+{case["affected_platform"]}
 
-Vendor: {case['vendor']}
+Device
 
-Network Zone: {case['network_zone']}
+{case["device_family"]}
 
-Affected Assets: {case['affected_assets']}
+Vendor
 
----
+{case["vendor"]}
 
-## Investigation Metrics
+Zone
 
-Confidence: {case['confidence']}%
+{case["network_zone"]}
 
-Risk Score: {case['risk_score']}
+Affected Assets
 
-Evidence Items: {case['evidence_count']}
-
-Indicators: {case['ioc_count']}
+{case["affected_assets"]}
 
 ---
 
-## Analyst Assessment
+## Metrics
 
-{case['assessment']}
+Confidence
+
+{case["confidence"]}%
+
+Risk Score
+
+{case["risk_score"]}
+
+Evidence
+
+{case["evidence_count"]}
+
+Indicators
+
+{case["ioc_count"]}
 
 ---
 
-Lead Analyst:
-{case['lead_analyst']}
+## Assessment
 
-Recommended Action:
-{case['recommended_action']}
+{case["assessment"]}
+
+---
+
+Lead Analyst
+
+{case["lead_analyst"]}
+
+Recommended Action
+
+{case["recommended_action"]}
 """
 
-case_file.write_text(content, encoding="utf-8")
+md_file.write_text(report, encoding="utf-8")
 
 # -------------------------------------------------
-# UPDATE MASTER ARCHIVE
+# Investigation History
 # -------------------------------------------------
 
-archive = Path("cases/archive.md")
+history_file = Path("data/investigation_history.csv")
 
-if not archive.exists():
-    archive.write_text(
-        "# BioDefense Intelligence Division Case Archive\n\n",
-        encoding="utf-8"
-    )
+new_file = not history_file.exists()
 
-entry = f"""
-## {case['case_id']}
+with open(history_file, "a", newline="", encoding="utf-8") as f:
 
-Campaign:
-{case['campaign_id']}
+    writer = csv.writer(f)
 
-Operation:
-{case['operation']}
+    if new_file:
 
-Classification:
-{case['classification']}
+        writer.writerow([
+            "case_id",
+            "date",
+            "operation",
+            "classification",
+            "severity",
+            "status",
+            "priority"
+        ])
 
-Threat:
-{case['threat_family']}
+    writer.writerow([
+        case["case_id"],
+        case["date"],
+        case["operation"],
+        case["classification"],
+        case["severity"],
+        case["status"],
+        case["priority"]
+    ])
 
-Severity:
-{case['severity']}
-
-Status:
-{case['status']}
-
-Confidence:
-{case['confidence']}%
-
-Assessment:
-
-{case['assessment']}
-
----
-
-"""
-
-with open(archive, "a", encoding="utf-8") as f:
-    f.write(entry)
-
-print(f"Archived investigation {case['case_id']}")
+print(f"Archived {case['case_id']}")
