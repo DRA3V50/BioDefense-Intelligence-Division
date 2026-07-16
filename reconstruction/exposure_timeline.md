@@ -4,7 +4,7 @@
 ## 2026-07-16
 
 ### Case Opened
-Case ID: BID-2026-9568
+Case ID: BID-2026-1951
 
 ### Classification
 Research Facility Intrusion
@@ -13,9 +13,9 @@ Research Facility Intrusion
 Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ### Current Status
-Open
+Field Coordination
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

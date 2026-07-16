@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9568
+BID-2026-1951
 
 Operation:
 Operation Black Eclipse
@@ -12,23 +12,23 @@ Classification:
 Research Facility Intrusion
 
 Threat Family:
-Research Network Persistence
+Specimen Tracking Manipulation
 
 Current Phase:
 Containment
 
 Status:
-Open
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Clinical Research Environment
 
 Device:
-Digital Evidence Appliance
+Specimen Tracking Server
 
 Vendor:
 Dell
@@ -41,22 +41,22 @@ Secure Laboratory
 ## Investigation Metrics
 
 Investigations Recorded:
-61
+1
 
 Evidence Collected:
-410
+28
 
 Indicators Identified:
-243
+142
 
 Affected Assets:
-19
+24
 
 Confidence:
-94%
+99%
 
 Risk Score:
-93
+62
 
 ---
 

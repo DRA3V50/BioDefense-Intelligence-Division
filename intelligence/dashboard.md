@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-9568 |
+| Case ID | BID-2026-1951 |
 | Operation | Operation Black Eclipse |
 | Classification | Research Facility Intrusion |
-| Threat Family | Research Network Persistence |
-| Severity | CRITICAL |
-| Status | Open |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | MODERATE |
+| Status | Field Coordination |
 | Phase | Containment |
 
 ---
@@ -18,8 +18,8 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Digital Evidence Appliance |
+| Platform | Clinical Research Environment |
+| Device | Specimen Tracking Server |
 | Vendor | Dell |
 | Network Zone | Secure Laboratory |
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 93 |
-| Confidence | 94% |
-| Evidence | 410 |
-| Indicators | 243 |
-| Affected Assets | 19 |
+| Risk Score | 62 |
+| Confidence | 99% |
+| Evidence | 28 |
+| Indicators | 142 |
+| Affected Assets | 24 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Joint Cyber Investigation Unit**
 
 Recommended Action:
 

@@ -1,0 +1,2 @@
+date,campaign_id,case_id,operation,classification,threat_family,severity,status,campaign_phase,platform,device,vendor,zone,confidence,risk_score,affected_assets,evidence_count,ioc_count,initial_access,lead_analyst,priority
+2026-07-16,BDC-2026-001,BID-2026-1951,Operation Black Eclipse,Research Facility Intrusion,Specimen Tracking Manipulation,MODERATE,Field Coordination,Containment,Clinical Research Environment,Specimen Tracking Server,Dell,Secure Laboratory,99,62,24,28,142,Credential Abuse,Joint Cyber Investigation Unit,SEVERE
