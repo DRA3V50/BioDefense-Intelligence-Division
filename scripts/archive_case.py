@@ -145,34 +145,4 @@ md_file.write_text(report, encoding="utf-8")
 # Investigation History
 # -------------------------------------------------
 
-history_file = Path("data/investigation_history.csv")
-
-new_file = not history_file.exists()
-
-with open(history_file, "a", newline="", encoding="utf-8") as f:
-
-    writer = csv.writer(f)
-
-    if new_file:
-
-        writer.writerow([
-            "case_id",
-            "date",
-            "operation",
-            "classification",
-            "severity",
-            "status",
-            "priority"
-        ])
-
-    writer.writerow([
-        case["case_id"],
-        case["date"],
-        case["operation"],
-        case["classification"],
-        case["severity"],
-        case["status"],
-        case["priority"]
-    ])
-
-print(f"Archived {case['case_id']}")
+print(f"Archived investigation {case['case_id']}")
