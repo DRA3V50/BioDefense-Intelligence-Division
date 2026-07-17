@@ -3,13 +3,13 @@
 ## Investigation
 
 Case ID:
-BID-2026-1588
+BID-2026-1443
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Biomedical Network Exposure
 
 Threat Family:
 Insider Laboratory Compromise
@@ -19,22 +19,22 @@ Insider Laboratory Compromise
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Ashcroft Biomedical Center
 
 Platform:
 Evidence Processing Network
 
 Device:
-Genome Sequencing Server
+Access Control System
 
 Vendor:
 Red Hat
 
 Operating System:
-VMware ESXi 9
+Hardened Research Appliance OS
 
 Security Zone:
-Biosecurity Segment
+Containment Network
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-ELEVATED
+SEVERE
 
 Confidence:
-96%
+94%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+National Response Cell
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.

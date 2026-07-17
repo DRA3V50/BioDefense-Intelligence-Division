@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1588 |
+| Case ID | BID-2026-1443 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
+| Classification | Biomedical Network Exposure |
 | Threat Family | Insider Laboratory Compromise |
 | Severity | LOW |
-| Status | Containment |
+| Status | Monitoring |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Evidence Processing Network |
-| Device | Genome Sequencing Server |
+| Device | Access Control System |
 | Vendor | Red Hat |
-| Security Zone | Biosecurity Segment |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 33 |
-| Confidence | 96% |
-| Evidence Collected | 1070 |
-| Indicators Identified | 325 |
-| Affected Assets | 27 |
+| Risk Score | 42 |
+| Confidence | 94% |
+| Evidence Collected | 2127 |
+| Indicators Identified | 1008 |
+| Affected Assets | 18 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Monitoring**
 
 Priority:
 
-**ELEVATED**
+**SEVERE**
 
 Recommended Action:
 
