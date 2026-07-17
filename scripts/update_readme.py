@@ -263,7 +263,7 @@ def build_recent_investigations(history: list) -> str:
  
  
 def build_laboratories_section(op: dict) -> str:
-    labs = op.get("laboratories", [])
+    labs = op.get("laboratories_under_review", [])
  
     if isinstance(labs, list) and labs and isinstance(labs[0], dict):
         header = "| Laboratory | Location | Status |\n|------------|----------|--------|\n"
