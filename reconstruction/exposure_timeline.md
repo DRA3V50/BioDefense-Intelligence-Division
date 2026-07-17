@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-16
+## 2026-07-17
 
 ### Case Opened
-Case ID: BID-2026-7151
+Case ID: BID-2026-1588
 
 ### Classification
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 ### Initial Assessment
 Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ### Current Status
-Intelligence Analysis
+Containment
 
 ### Severity
-HIGH
+LOW
 
 ---

@@ -3,19 +3,19 @@
 ## Investigation
 
 Case ID:
-BID-2026-7151
+BID-2026-1588
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 Threat Family:
-Biological Data Exfiltration
+Insider Laboratory Compromise
 
 Severity:
-HIGH
+LOW
 
 Priority:
 ELEVATED
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-38
+27
 
 Evidence Collected:
-626
+1070
 
 Indicators Identified:
-432
+325
 
 Analyst Confidence:
-97%
+96%
 
 Containment Phase:
 Containment
@@ -74,7 +74,7 @@ Collected artifacts support continued investigation into cyber-enabled bioterror
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+Containment
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+Analyst Team Bravo

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7151 |
+| Case ID | BID-2026-1588 |
 | Operation | Operation Black Eclipse |
-| Classification | Biosecurity Infrastructure Investigation |
-| Threat Family | Biological Data Exfiltration |
-| Severity | HIGH |
-| Status | Intelligence Analysis |
+| Classification | Laboratory Security Breach |
+| Threat Family | Insider Laboratory Compromise |
+| Severity | LOW |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Laboratory Controller |
-| Vendor | VMware |
-| Security Zone | Federal Operations |
+| Platform | Evidence Processing Network |
+| Device | Genome Sequencing Server |
+| Vendor | Red Hat |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 79 |
-| Confidence | 97% |
-| Evidence Collected | 626 |
-| Indicators Identified | 432 |
-| Affected Assets | 38 |
+| Risk Score | 33 |
+| Confidence | 96% |
+| Evidence Collected | 1070 |
+| Indicators Identified | 325 |
+| Affected Assets | 27 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**Analyst Team Bravo**
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Containment**
 
 Priority:
 

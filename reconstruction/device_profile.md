@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-7151
+BID-2026-1588
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 Threat Family:
-Biological Data Exfiltration
+Insider Laboratory Compromise
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Central Evidence Processing Center
 
 Platform:
-Clinical Research Environment
+Evidence Processing Network
 
 Device:
-Laboratory Controller
+Genome Sequencing Server
 
 Vendor:
-VMware
+Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Containment
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
 ELEVATED
 
 Confidence:
-97%
+96%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+Analyst Team Bravo
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.

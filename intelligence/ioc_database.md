@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7151
+BID-2026-1588
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| System Log | Unexpected privilege escalation recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -28,23 +28,23 @@ Biosecurity Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-626
+1070
 
 Indicators Reviewed:
-432
+325
 
 Risk Score:
-79
+33
 
 Confidence:
-97%
+96%
 
 ---
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+Analyst Team Bravo
 
 Current Status:
 
-Intelligence Analysis
+Containment
