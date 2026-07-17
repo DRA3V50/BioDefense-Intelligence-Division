@@ -202,7 +202,7 @@ def build_campaign_dashboard(op: dict) -> str:
         f"**Active Cases**<br>{field(op, 'active_cases')}<br><br>"
         f"**Evidence Collected**<br>{field(op, 'evidence_collected')}<br><br>"
         f"**Digital Artifacts**<br>{field(op, 'digital_artifacts')}<br><br>"
-        f"**Indicators**<br>{field(op, "indicators")} |\n\n"
+        f"**Indicators**<br>{field(op, "ioc_count")} |\n\n"
         "---\n\n"
         f"**Campaign Objective:** {field(op, 'campaign_objective')}\n\n"
         f"**Next Objective:** {field(op, 'next_objective')}\n\n"
