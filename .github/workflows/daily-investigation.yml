@@ -42,6 +42,9 @@ jobs:
       - name: Update Active Operation
         run: python scripts/update_operation.py
 
+      - name: Recalculate Campaign Metrics
+        run: python scripts/recalculate_campaign_metrics.py
+
       - name: Advance Investigation Lifecycle
         run: python scripts/update_case_progress.py
 
