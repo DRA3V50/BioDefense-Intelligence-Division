@@ -77,6 +77,20 @@ jobs:
       - name: Generate Operational Summary
         run: python scripts/update_campaign_summary.py
 
+      ###############################################################
+      # NEW — Threat Actor Intelligence
+      ###############################################################
+
+      - name: Generate Threat Actor Profile
+        run: python scripts/update_actor_profile.py
+
+      - name: Update Threat Actor Database
+        run: python scripts/update_actor_database.py
+
+      ###############################################################
+      # Existing Intelligence
+      ###############################################################
+
       - name: Generate Investigation Artifacts
         run: python scripts/update_ioc_database.py
 
@@ -115,7 +129,5 @@ jobs:
           git add .
 
           git diff --staged --quiet || git commit -m "Daily investigation update"
-
-          git push
 
           git push
