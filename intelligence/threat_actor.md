@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Synthetic Genome Theft
+Digital Pathogen Deployment
 
 ---
 
 ## Primary Alias
-Project Chimera
+Cerberus Group
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Multiple Regions
 
 ---
 
@@ -21,29 +21,29 @@ Research Data Theft
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-84%
+95%
 
 ---
 
 ## Observed Techniques
-- Supply Chain
-- Encrypted Data Staging
-- Laboratory Control System Manipulation
-- Laboratory Network Reconnaissance
-- Biosecurity System Tampering
-- Command and Control
+- Credential Abuse
+- Lateral Movement
+- Privilege Escalation
+- Insider Access Abuse
+- Laboratory Data Manipulation
+- Long-Term Network Foothold
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Delta
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 

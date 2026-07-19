@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5303
+BID-2026-2269
 
 Operation:
 Operation Black Eclipse
@@ -12,13 +12,13 @@ Classification:
 Counter-Bioterror Intelligence Case
 
 Threat Family:
-Synthetic Genome Theft
+Digital Pathogen Deployment
 
 Severity:
-CRITICAL
+MODERATE
 
 Priority:
-HIGH
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-23
+32
 
 Evidence Collected:
-11528
+15907
 
 Indicators Identified:
-6017
+9194
 
 Analyst Confidence:
-84%
+95%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta

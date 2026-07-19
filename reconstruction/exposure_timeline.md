@@ -4,18 +4,18 @@
 ## 2026-07-19
 
 ### Case Opened
-Case ID: BID-2026-5303
+Case ID: BID-2026-2269
 
 ### Classification
 Counter-Bioterror Intelligence Case
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Intelligence Analysis
+Evidence Collection
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

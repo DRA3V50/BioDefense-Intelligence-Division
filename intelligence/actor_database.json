@@ -7,6 +7,14 @@
             "cases": 1,
             "severity": "CRITICAL",
             "confidence": 84
+        },
+        {
+            "name": "Digital Pathogen Deployment",
+            "first_seen": "2026-07-19",
+            "last_seen": "2026-07-19",
+            "cases": 1,
+            "severity": "MODERATE",
+            "confidence": 95
         }
     ]
 }

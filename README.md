@@ -11,15 +11,15 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>CRITICAL | **Confirmed Intrusions**<br>34<br><br>**Active Cases**<br>78<br><br>**Evidence Collected**<br>23869<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>19127 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>9<br><br>**Evidence Collected**<br>38943<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>27750 |
 
 ---
 
 **Campaign Objective:** Investigate coordinated cyber-enabled bioterror activity targeting protected biomedical research facilities and federal laboratory infrastructure.
 
-**Next Objective:** Continue evidence acquisition and identify infrastructure used by the threat organization.
+**Next Objective:** Verify recovery controls and prepare the final operational assessment.
 
-**Affected Facilities:** 17
+**Affected Facilities:** 0
 
 **Affected States:** 3
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-5303<br><br>**Classification**<br>Counter-Bioterror Intelligence Case<br><br>**Threat Family**<br>Synthetic Genome Theft<br><br>**Severity**<br>CRITICAL | **Platform**<br>Clinical Research Environment<br><br>**Vendor**<br>Red Hat<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Secure Laboratory |
+| **Case ID**<br>BID-2026-2269<br><br>**Classification**<br>Counter-Bioterror Intelligence Case<br><br>**Threat Family**<br>Digital Pathogen Deployment<br><br>**Severity**<br>MODERATE | **Platform**<br>Research Network<br><br>**Vendor**<br>Red Hat<br><br>**Device**<br>Specimen Tracking Server<br><br>**Zone**<br>Evidence Network |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>84%<br><br>**Evidence**<br>11528<br><br>**Indicators**<br>6017 |
+| **Priority**<br>CRITICAL<br><br>**Confidence**<br>95%<br><br>**Evidence**<br>15907<br><br>**Indicators**<br>9194 |
 
 ---
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Alpha**
-- Initial Access: **Supply Chain**
+- Lead Analyst: **Analyst Team Delta**
+- Initial Access: **Credential Abuse**
 - Recommended Action: **Continue evidence acquisition and identify infrastructure used by the threat organization.**
 
 ---
@@ -57,13 +57,13 @@ Collected artifacts support continued investigation into cyber-enabled bioterror
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 8 |
+| Total Investigations | 9 |
 | High Severity Cases | 1 |
 | Critical Severity Cases | 2 |
-| Average Confidence | 93.0% |
-| Total Evidence Collected | 23036 |
-| Total Indicators | 18556 |
-| Active Cases | 8 |
+| Average Confidence | 93.2% |
+| Total Evidence Collected | 38943 |
+| Total Indicators | 27750 |
+| Active Cases | 9 |
 | Confirmed Intrusions | 1 |
 
 ---
@@ -72,11 +72,11 @@ Collected artifacts support continued investigation into cyber-enabled bioterror
 
 | Case | Classification | Severity |
 |------|---------------|----------|
+| BID-2026-2269 | Counter-Bioterror Intelligence Case | MODERATE |
 | BID-2026-5303 | Counter-Bioterror Intelligence Case | CRITICAL |
 | BID-2026-9255 | Counter-Bioterror Intelligence Case | MODERATE |
 | BID-2026-7964 | Medical Device Security Assessment | CRITICAL |
 | BID-2026-1767 | Medical Device Security Assessment | MODERATE |
-| BID-2026-1443 | Biomedical Network Exposure | LOW |
 
 
 ---

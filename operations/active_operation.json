@@ -8,14 +8,14 @@
     "threat_designation": "NEMESIS-12",
     "incident_type": "Cyber-Enabled Bioterror Campaign",
     "priority": "National",
-    "containment_level": "CRITICAL",
-    "affected_facilities": 17,
+    "containment_level": "HIGH",
+    "affected_facilities": 0,
     "affected_states": 3,
-    "confirmed_intrusions": 34,
-    "active_cases": 78,
-    "evidence_collected": 23869,
+    "confirmed_intrusions": 2,
+    "active_cases": 9,
+    "evidence_collected": 38943,
     "digital_artifacts": 151,
-    "ioc_count": 19127,
+    "ioc_count": 27750,
     "laboratories_under_review": [
         "Federal Biomedical Laboratory",
         "National Pathogen Research Center",
@@ -25,6 +25,7 @@
     "investigation_lead": "BioDefense Intelligence Division",
     "opened": "2026-07-01",
     "last_updated": "2026-07-19",
-    "campaign_summary": "Multiple coordinated cyber intrusions have targeted protected biomedical research infrastructure. Investigators are correlating evidence to determine whether the activity represents a single organized bioterror campaign.",
-    "next_objective": "Continue evidence acquisition and identify infrastructure used by the threat organization."
+    "campaign_summary": "Affected environments are undergoing validation and controlled recovery while residual risk is monitored.",
+    "next_objective": "Verify recovery controls and prepare the final operational assessment.",
+    "known_threat_families": 7
 }

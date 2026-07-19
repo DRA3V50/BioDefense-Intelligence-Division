@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5303
+BID-2026-2269
 
 Operation:
 Operation Black Eclipse
@@ -12,29 +12,29 @@ Classification:
 Counter-Bioterror Intelligence Case
 
 Threat Family:
-Synthetic Genome Theft
+Digital Pathogen Deployment
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Advanced Genome Security Laboratory
 
 Platform:
-Clinical Research Environment
+Research Network
 
 Device:
-Access Control System
+Specimen Tracking Server
 
 Vendor:
 Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
-Secure Laboratory
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-84%
+95%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Delta
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Digital evidence preserved for laboratory forensic examination.

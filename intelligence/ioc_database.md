@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5303
+BID-2026-2269
 
 Operation:
 Operation Black Eclipse
@@ -15,12 +15,12 @@ Counter-Bioterror Intelligence Case
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Infrastructure | Firewall policy deviation identified |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | System Log | Unexpected privilege escalation recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -28,23 +28,23 @@ Counter-Bioterror Intelligence Case
 ## Investigation Statistics
 
 Evidence Collected:
-11528
+15907
 
 Indicators Reviewed:
-6017
+9194
 
 Risk Score:
-90
+60
 
 Confidence:
-84%
+95%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Current Status:
 
-Intelligence Analysis
+Evidence Collection

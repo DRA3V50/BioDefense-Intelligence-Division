@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5303 |
+| Case ID | BID-2026-2269 |
 | Operation | Operation Black Eclipse |
 | Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Synthetic Genome Theft |
-| Severity | CRITICAL |
-| Status | Intelligence Analysis |
+| Threat Family | Digital Pathogen Deployment |
+| Severity | MODERATE |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Access Control System |
+| Platform | Research Network |
+| Device | Specimen Tracking Server |
 | Vendor | Red Hat |
-| Security Zone | Secure Laboratory |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 90 |
-| Confidence | 84% |
-| Evidence Collected | 11528 |
-| Indicators Identified | 6017 |
-| Affected Assets | 23 |
+| Risk Score | 60 |
+| Confidence | 95% |
+| Evidence Collected | 15907 |
+| Indicators Identified | 9194 |
+| Affected Assets | 32 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled bioterror activities.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Evidence Collection**
 
 Priority:
 
-**HIGH**
+**CRITICAL**
 
 Recommended Action:
 
