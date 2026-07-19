@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-17
+## 2026-07-19
 
 ### Case Opened
-Case ID: BID-2026-1443
+Case ID: BID-2026-1767
 
 ### Classification
-Biomedical Network Exposure
+Medical Device Security Assessment
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ### Current Status
-Monitoring
+Containment
 
 ### Severity
-LOW
+MODERATE
 
 ---

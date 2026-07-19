@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-1443
+BID-2026-1767
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Medical Device Security Assessment
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 Severity:
-LOW
+MODERATE
 
 Priority:
-SEVERE
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ SEVERE
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-18
+8
 
 Evidence Collected:
-2127
+118
 
 Indicators Identified:
-1008
+1504
 
 Analyst Confidence:
-94%
+90%
 
 Containment Phase:
 Containment
@@ -67,14 +67,14 @@ Containment
 
 # Analyst Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Containment
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Alpha

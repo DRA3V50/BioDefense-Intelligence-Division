@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1443
+BID-2026-1767
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| PowerShell | Encoded administrative command execution detected |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
+| Infrastructure | Firewall policy deviation identified |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Biomedical Network Exposure
 ## Investigation Statistics
 
 Evidence Collected:
-2127
+118
 
 Indicators Reviewed:
-1008
+1504
 
 Risk Score:
-42
+60
 
 Confidence:
-94%
+90%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Alpha
 
 Current Status:
 
-Monitoring
+Containment

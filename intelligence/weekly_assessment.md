@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1443
+Case ID: BID-2026-1767
 
 Operation: Operation Black Eclipse
 
-Classification: Biomedical Network Exposure
+Classification: Medical Device Security Assessment
 
-Threat Family: Insider Laboratory Compromise
+Threat Family: Research Network Persistence
 
-Current Status: Monitoring
+Current Status: Containment
 
 Containment Phase: Containment
 
@@ -18,31 +18,31 @@ Containment Phase: Containment
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-SEVERE
+CRITICAL
 
 Risk Score:
-42
+60
 
 Confidence:
-94%
+90%
 
 Affected Assets:
-18
+8
 
 Evidence Collected:
-2127
+118
 
 Indicators Recorded:
-1008
+1504
 
 ---
 
@@ -56,8 +56,8 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Alpha
 
 Date:
 
-2026-07-17
+2026-07-19

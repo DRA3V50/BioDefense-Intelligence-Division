@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1443
+BID-2026-1767
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Medical Device Security Assessment
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 Current Phase:
 Containment
 
 Status:
-Monitoring
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Laboratory Control Network
 
 Device:
-Access Control System
+Evidence Repository
 
 Vendor:
 Red Hat
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-4
+5
 
 Evidence Collected:
-2127
+118
 
 Indicators Identified:
-1008
+1504
 
 Affected Assets:
-18
+8
 
 Confidence:
-94%
+90%
 
 Risk Score:
-42
+60
 
 ---
 

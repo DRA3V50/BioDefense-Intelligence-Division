@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-1443
+BID-2026-1767
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Medical Device Security Assessment
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 ---
 
@@ -22,10 +22,10 @@ Facility:
 Ashcroft Biomedical Center
 
 Platform:
-Evidence Processing Network
+Laboratory Control Network
 
 Device:
-Access Control System
+Evidence Repository
 
 Vendor:
 Red Hat
@@ -34,7 +34,7 @@ Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-SEVERE
+CRITICAL
 
 Confidence:
-94%
+90%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Alpha
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
