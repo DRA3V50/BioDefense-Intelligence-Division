@@ -1,74 +1,168 @@
 #!/usr/bin/env python3
 
+"""
+Recalculate campaign metrics from investigation_history.csv.
+
+This script treats the investigation history as the source of truth and
+updates both active_operation.json and operation_status.json.
+"""
+
 import csv
 import json
+from collections import Counter
+from datetime import date
 from pathlib import Path
+from statistics import mean
 
-HISTORY = Path("data/investigation_history.csv")
-OPERATION = Path("operations/active_operation.json")
+HISTORY_FILE = Path("data/investigation_history.csv")
+OPERATION_FILE = Path("operations/active_operation.json")
+STATUS_FILE = Path("operations/operation_status.json")
 
-with open(OPERATION,"r",encoding="utf-8") as f:
-    operation=json.load(f)
+CLOSED_STATUSES = {
+    "CLOSED",
+    "RESOLVED",
+    "ARCHIVED",
+    "COMPLETE",
+    "COMPLETED",
+}
 
-rows=[]
 
-if HISTORY.exists():
+def load_json(path: Path) -> dict:
+    if not path.exists():
+        raise FileNotFoundError(f"Required file not found: {path}")
 
-    with open(HISTORY,newline="",encoding="utf-8") as f:
+    with path.open("r", encoding="utf-8") as file:
+        data = json.load(file)
 
-        rows=list(csv.DictReader(f))
+    if not isinstance(data, dict):
+        raise ValueError(f"Expected a JSON object in {path}")
 
-total=len(rows)
+    return data
 
-high=0
-critical=0
 
-evidence=0
-iocs=0
-
-families=set()
-labs=set()
-
-for r in rows:
-
-    sev=r.get("severity","").upper()
-
-    if sev=="HIGH":
-        high+=1
-
-    elif sev=="CRITICAL":
-        critical+=1
-
+def safe_int(value: object) -> int:
     try:
-        evidence+=int(r.get("evidence_count",0))
-    except:
-        pass
+        return int(float(str(value).strip()))
+    except (TypeError, ValueError):
+        return 0
 
-    try:
-        iocs+=int(r.get("ioc_count",0))
-    except:
-        pass
 
-    if r.get("threat_family"):
-        families.add(r["threat_family"])
+def load_history() -> list[dict]:
+    if not HISTORY_FILE.exists():
+        return []
 
-    if r.get("affected_platform"):
-        labs.add(r["affected_platform"])
+    with HISTORY_FILE.open("r", newline="", encoding="utf-8") as file:
+        return list(csv.DictReader(file))
 
-operation["active_cases"]=total
 
-operation["confirmed_intrusions"]=critical
+def main() -> None:
+    operation = load_json(OPERATION_FILE)
+    rows = load_history()
 
-operation["evidence_collected"]=evidence
+    severity_counts = Counter(
+        str(row.get("severity", "")).strip().upper()
+        for row in rows
+    )
 
-operation["ioc_count"]=iocs
+    total_cases = len(rows)
 
-operation["known_threat_families"]=len(families)
+    closed_cases = sum(
+        1
+        for row in rows
+        if str(row.get("status", "")).strip().upper() in CLOSED_STATUSES
+    )
 
-operation["affected_facilities"]=len(labs)
+    active_cases = total_cases - closed_cases
 
-with open(OPERATION,"w",encoding="utf-8") as f:
+    evidence_total = sum(
+        safe_int(row.get("evidence_count"))
+        for row in rows
+    )
 
-    json.dump(operation,f,indent=4)
+    ioc_total = sum(
+        safe_int(row.get("ioc_count"))
+        for row in rows
+    )
 
-print("Campaign metrics recalculated.")
+    confidences = [
+        safe_int(row.get("confidence"))
+        for row in rows
+        if str(row.get("confidence", "")).strip()
+    ]
+
+    average_confidence = (
+        round(mean(confidences), 1)
+        if confidences
+        else 0
+    )
+
+    threat_families = {
+        str(row.get("threat_family", "")).strip()
+        for row in rows
+        if str(row.get("threat_family", "")).strip()
+    }
+
+    affected_platforms = {
+        str(row.get("platform", "")).strip()
+        for row in rows
+        if str(row.get("platform", "")).strip()
+    }
+
+    confirmed_intrusions = severity_counts["CRITICAL"]
+
+    # Update campaign dashboard data.
+    operation["active_cases"] = active_cases
+    operation["confirmed_intrusions"] = confirmed_intrusions
+    operation["evidence_collected"] = evidence_total
+    operation["ioc_count"] = ioc_total
+    operation["known_threat_families"] = len(threat_families)
+
+    # This represents distinct affected platform environments, not the
+    # laboratories_under_review list.
+    operation["affected_facilities"] = len(affected_platforms)
+    operation["last_updated"] = date.today().isoformat()
+
+    status = {
+        "campaign_id": operation.get("campaign_id", "UNKNOWN"),
+        "operation": operation.get("operation", "Unknown Operation"),
+        "campaign_phase": operation.get("campaign_phase", "Unknown"),
+        "total_cases": total_cases,
+        "active_cases": active_cases,
+        "closed_cases": closed_cases,
+        "low_cases": severity_counts["LOW"],
+        "moderate_cases": severity_counts["MODERATE"],
+        "high_cases": severity_counts["HIGH"],
+        "critical_cases": severity_counts["CRITICAL"],
+        "affected_facilities": len(affected_platforms),
+        "affected_states": safe_int(operation.get("affected_states")),
+        "evidence_items": evidence_total,
+        "digital_artifacts": safe_int(operation.get("digital_artifacts")),
+        "ioc_count": ioc_total,
+        "containment_level": operation.get(
+            "containment_level",
+            "ELEVATED",
+        ),
+        "average_confidence": average_confidence,
+        "last_updated": date.today().isoformat(),
+    }
+
+    OPERATION_FILE.parent.mkdir(parents=True, exist_ok=True)
+    STATUS_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    with OPERATION_FILE.open("w", encoding="utf-8") as file:
+        json.dump(operation, file, indent=4)
+
+    with STATUS_FILE.open("w", encoding="utf-8") as file:
+        json.dump(status, file, indent=4)
+
+    print(
+        "Campaign metrics recalculated: "
+        f"{total_cases} total cases, "
+        f"{active_cases} active cases, "
+        f"{evidence_total} evidence items, "
+        f"{ioc_total} indicators."
+    )
+
+
+if __name__ == "__main__":
+    main()
