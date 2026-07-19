@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7964 |
+| Case ID | BID-2026-9255 |
 | Operation | Operation Black Eclipse |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
-| Severity | CRITICAL |
-| Status | Open |
+| Classification | Counter-Bioterror Intelligence Case |
+| Threat Family | Synthetic Genome Theft |
+| Severity | MODERATE |
+| Status | Monitoring |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biomedical Analysis Cluster |
+| Platform | Laboratory Control Network |
 | Device | Access Control System |
 | Vendor | Dell |
-| Security Zone | Biosecurity Segment |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 100 |
-| Confidence | 93% |
-| Evidence Collected | 3904 |
-| Indicators Identified | 2764 |
+| Risk Score | 58 |
+| Confidence | 91% |
+| Evidence Collected | 3635 |
+| Indicators Identified | 6364 |
 | Affected Assets | 37 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -81,15 +81,15 @@ _Evidence summary unavailable._
 
 Current Phase:
 
-**Containment**
+**Operational Recovery**
 
 Current Status:
 
-**Open**
+**Monitoring**
 
 Priority:
 
-**CRITICAL**
+**SEVERE**
 
 Recommended Action:
 

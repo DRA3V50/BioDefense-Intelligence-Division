@@ -3,26 +3,26 @@
 ## Investigation
 
 Case ID:
-BID-2026-7964
+BID-2026-9255
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Counter-Bioterror Intelligence Case
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Synthetic Genome Theft
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Central Evidence Processing Center
 
 Platform:
-Biomedical Analysis Cluster
+Laboratory Control Network
 
 Device:
 Access Control System
@@ -34,30 +34,30 @@ Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Biosecurity Segment
+Containment Network
 
 ---
 
 ## Investigation Status
 
 Current Phase:
-Containment
+Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
-CRITICAL
+SEVERE
 
 Confidence:
-93%
+91%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+National Response Cell
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

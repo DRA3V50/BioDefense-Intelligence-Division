@@ -3,29 +3,29 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7964
+BID-2026-9255
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Counter-Bioterror Intelligence Case
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Synthetic Genome Theft
 
 Current Phase:
-Containment
+Operational Recovery
 
 Status:
-Open
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biomedical Analysis Cluster
+Laboratory Control Network
 
 Device:
 Access Control System
@@ -34,29 +34,29 @@ Vendor:
 Dell
 
 Security Zone:
-Biosecurity Segment
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-6
+7
 
 Evidence Collected:
-3904
+3635
 
 Indicators Identified:
-2764
+6364
 
 Affected Assets:
 37
 
 Confidence:
-93%
+91%
 
 Risk Score:
-100
+58
 
 ---
 

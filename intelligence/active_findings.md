@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-7964
+BID-2026-9255
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Counter-Bioterror Intelligence Case
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Synthetic Genome Theft
 
 Severity:
-CRITICAL
+MODERATE
 
 Priority:
-CRITICAL
+SEVERE
 
 ---
 
@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -52,29 +52,29 @@ Affected Assets:
 37
 
 Evidence Collected:
-3904
+3635
 
 Indicators Identified:
-2764
+6364
 
 Analyst Confidence:
-93%
+91%
 
 Containment Phase:
-Containment
+Operational Recovery
 
 ---
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Monitoring
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-Analyst Team Delta
+National Response Cell

@@ -4,18 +4,18 @@
 ## 2026-07-19
 
 ### Case Opened
-Case ID: BID-2026-7964
+Case ID: BID-2026-9255
 
 ### Classification
-Medical Device Security Assessment
+Counter-Bioterror Intelligence Case
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Open
+Monitoring
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

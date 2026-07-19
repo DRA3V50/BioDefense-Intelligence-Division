@@ -2,47 +2,47 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7964
+Case ID: BID-2026-9255
 
 Operation: Operation Black Eclipse
 
-Classification: Medical Device Security Assessment
+Classification: Counter-Bioterror Intelligence Case
 
-Threat Family: Biomedical Infrastructure Reconnaissance
+Threat Family: Synthetic Genome Theft
 
-Current Status: Open
+Current Status: Monitoring
 
-Containment Phase: Containment
+Containment Phase: Operational Recovery
 
 ---
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+SEVERE
 
 Risk Score:
-100
+58
 
 Confidence:
-93%
+91%
 
 Affected Assets:
 37
 
 Evidence Collected:
-3904
+3635
 
 Indicators Recorded:
-2764
+6364
 
 ---
 
@@ -56,7 +56,7 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Investigator:
 
-Analyst Team Delta
+National Response Cell
 
 Date:
 
