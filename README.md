@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Containment<br><br>**Threat Designation**<br>BIOCELL-02<br><br>**Containment Level**<br>CRITICAL | **Confirmed Intrusions**<br>30<br><br>**Active Cases**<br>73<br><br>**Evidence Collected**<br>4802<br><br>**Digital Artifacts**<br>140<br><br>**Indicators**<br>3982 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>32<br><br>**Active Cases**<br>74<br><br>**Evidence Collected**<br>8706<br><br>**Digital Artifacts**<br>142<br><br>**Indicators**<br>6746 |
 
 ---
 
@@ -19,7 +19,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 **Next Objective:** Continue evidence acquisition and identify infrastructure used by the threat organization.
 
-**Affected Facilities:** 13
+**Affected Facilities:** 14
 
 **Affected States:** 3
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-1767<br><br>**Classification**<br>Medical Device Security Assessment<br><br>**Threat Family**<br>Research Network Persistence<br><br>**Severity**<br>MODERATE | **Platform**<br>Laboratory Control Network<br><br>**Vendor**<br>Red Hat<br><br>**Device**<br>Evidence Repository<br><br>**Zone**<br>Federal Operations |
+| **Case ID**<br>BID-2026-7964<br><br>**Classification**<br>Medical Device Security Assessment<br><br>**Threat Family**<br>Biomedical Infrastructure Reconnaissance<br><br>**Severity**<br>CRITICAL | **Platform**<br>Biomedical Analysis Cluster<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Biosecurity Segment |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>CRITICAL<br><br>**Confidence**<br>90%<br><br>**Evidence**<br>118<br><br>**Indicators**<br>1504 |
+| **Priority**<br>CRITICAL<br><br>**Confidence**<br>93%<br><br>**Evidence**<br>3904<br><br>**Indicators**<br>2764 |
 
 ---
 
 # Analyst Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Alpha**
-- Initial Access: **Supply Chain**
+- Lead Analyst: **Analyst Team Delta**
+- Initial Access: **Phishing**
 - Recommended Action: **Continue evidence acquisition and identify infrastructure used by the threat organization.**
 
 ---
@@ -57,13 +57,13 @@ Evidence indicates an organized campaign attempting unauthorized access to sensi
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 5 |
+| Total Investigations | 6 |
 | High Severity Cases | 1 |
-| Critical Severity Cases | 0 |
-| Average Confidence | 95.2% |
-| Total Evidence Collected | 3969 |
-| Total Indicators | 3411 |
-| Active Cases | 5 |
+| Critical Severity Cases | 1 |
+| Average Confidence | 94.8% |
+| Total Evidence Collected | 7873 |
+| Total Indicators | 6175 |
+| Active Cases | 6 |
 | Confirmed Intrusions | 1 |
 
 ---
@@ -72,11 +72,11 @@ Evidence indicates an organized campaign attempting unauthorized access to sensi
 
 | Case | Classification | Severity |
 |------|---------------|----------|
+| BID-2026-7964 | Medical Device Security Assessment | CRITICAL |
 | BID-2026-1767 | Medical Device Security Assessment | MODERATE |
 | BID-2026-1443 | Biomedical Network Exposure | LOW |
 | BID-2026-1588 | Laboratory Security Breach | LOW |
 | BID-2026-7151 | Biosecurity Infrastructure Investigation | HIGH |
-| BID-2026-1951 | Research Facility Intrusion | MODERATE |
 
 
 ---

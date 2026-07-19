@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1767
+Case ID: BID-2026-7964
 
 Operation: Operation Black Eclipse
 
 Classification: Medical Device Security Assessment
 
-Threat Family: Research Network Persistence
+Threat Family: Biomedical Infrastructure Reconnaissance
 
-Current Status: Containment
+Current Status: Open
 
 Containment Phase: Containment
 
@@ -18,9 +18,9 @@ Containment Phase: Containment
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Current findings support maintaining the existing investigation priority.
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 CRITICAL
 
 Risk Score:
-60
+100
 
 Confidence:
-90%
+93%
 
 Affected Assets:
-8
+37
 
 Evidence Collected:
-118
+3904
 
 Indicators Recorded:
-1504
+2764
 
 ---
 
@@ -56,7 +56,7 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Investigator:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Date:
 

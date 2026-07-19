@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-1767
+BID-2026-7964
 
 Operation:
 Operation Black Eclipse
@@ -12,10 +12,10 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Research Network Persistence
+Biomedical Infrastructure Reconnaissance
 
 Severity:
-MODERATE
+CRITICAL
 
 Priority:
 CRITICAL
@@ -26,11 +26,11 @@ CRITICAL
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
@@ -38,27 +38,27 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-8
+37
 
 Evidence Collected:
-118
+3904
 
 Indicators Identified:
-1504
+2764
 
 Analyst Confidence:
-90%
+93%
 
 Containment Phase:
 Containment
@@ -67,14 +67,14 @@ Containment
 
 # Analyst Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Operational Status
 
 Current Status:
-Containment
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta

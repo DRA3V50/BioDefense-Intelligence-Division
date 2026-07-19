@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-1767
+BID-2026-7964
 
 Operation:
 Operation Black Eclipse
@@ -15,12 +15,12 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
+| PowerShell | Encoded administrative command execution detected |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-118
+3904
 
 Indicators Reviewed:
-1504
+2764
 
 Risk Score:
-60
+100
 
 Confidence:
-90%
+93%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Current Status:
 
-Containment
+Open

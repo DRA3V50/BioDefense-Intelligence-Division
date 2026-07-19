@@ -4,18 +4,18 @@
 ## 2026-07-19
 
 ### Case Opened
-Case ID: BID-2026-1767
+Case ID: BID-2026-7964
 
 ### Classification
 Medical Device Security Assessment
 
 ### Initial Assessment
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Containment
+Open
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---

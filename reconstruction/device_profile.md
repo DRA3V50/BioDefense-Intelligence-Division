@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-1767
+BID-2026-7964
 
 Operation:
 Operation Black Eclipse
@@ -12,29 +12,29 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Research Network Persistence
+Biomedical Infrastructure Reconnaissance
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Federal Biosecurity Laboratory
 
 Platform:
-Laboratory Control Network
+Biomedical Analysis Cluster
 
 Device:
-Evidence Repository
+Access Control System
 
 Vendor:
-Red Hat
+Dell
 
 Operating System:
-Hardened Research Appliance OS
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Containment
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 CRITICAL
 
 Confidence:
-90%
+93%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Delta
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.

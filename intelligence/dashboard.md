@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1767 |
+| Case ID | BID-2026-7964 |
 | Operation | Operation Black Eclipse |
 | Classification | Medical Device Security Assessment |
-| Threat Family | Research Network Persistence |
-| Severity | MODERATE |
-| Status | Containment |
+| Threat Family | Biomedical Infrastructure Reconnaissance |
+| Severity | CRITICAL |
+| Status | Open |
 | Phase | Containment |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Evidence Repository |
-| Vendor | Red Hat |
-| Network Zone | Federal Operations |
+| Platform | Biomedical Analysis Cluster |
+| Device | Access Control System |
+| Vendor | Dell |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 60 |
-| Confidence | 90% |
-| Evidence | 118 |
-| Indicators | 1504 |
-| Affected Assets | 8 |
+| Risk Score | 100 |
+| Confidence | 93% |
+| Evidence | 3904 |
+| Indicators | 2764 |
+| Affected Assets | 37 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.

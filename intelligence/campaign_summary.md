@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1767
+BID-2026-7964
 
 Operation:
 Operation Black Eclipse
@@ -12,51 +12,51 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Research Network Persistence
+Biomedical Infrastructure Reconnaissance
 
 Current Phase:
 Containment
 
 Status:
-Containment
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Biomedical Analysis Cluster
 
 Device:
-Evidence Repository
+Access Control System
 
 Vendor:
-Red Hat
+Dell
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-5
+6
 
 Evidence Collected:
-118
+3904
 
 Indicators Identified:
-1504
+2764
 
 Affected Assets:
-8
+37
 
 Confidence:
-90%
+93%
 
 Risk Score:
-60
+100
 
 ---
 
