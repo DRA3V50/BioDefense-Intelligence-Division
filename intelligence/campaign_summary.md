@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9255
+BID-2026-5303
 
 Operation:
 Operation Black Eclipse
@@ -18,45 +18,45 @@ Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Clinical Research Environment
 
 Device:
 Access Control System
 
 Vendor:
-Dell
+Red Hat
 
 Security Zone:
-Containment Network
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-7
+8
 
 Evidence Collected:
-3635
+11528
 
 Indicators Identified:
-6364
+6017
 
 Affected Assets:
-37
+23
 
 Confidence:
-91%
+84%
 
 Risk Score:
-58
+90
 
 ---
 

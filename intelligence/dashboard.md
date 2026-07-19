@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-9255 |
+| Case ID | BID-2026-5303 |
 | Operation | Operation Black Eclipse |
 | Classification | Counter-Bioterror Intelligence Case |
 | Threat Family | Synthetic Genome Theft |
-| Severity | MODERATE |
-| Status | Monitoring |
+| Severity | CRITICAL |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
+| Platform | Clinical Research Environment |
 | Device | Access Control System |
-| Vendor | Dell |
-| Network Zone | Containment Network |
+| Vendor | Red Hat |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 58 |
-| Confidence | 91% |
-| Evidence | 3635 |
-| Indicators | 6364 |
-| Affected Assets | 37 |
+| Risk Score | 90 |
+| Confidence | 84% |
+| Evidence | 11528 |
+| Indicators | 6017 |
+| Affected Assets | 23 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Assessment:
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.

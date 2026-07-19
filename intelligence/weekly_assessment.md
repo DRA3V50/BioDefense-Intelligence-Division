@@ -2,7 +2,7 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-9255
+Case ID: BID-2026-5303
 
 Operation: Operation Black Eclipse
 
@@ -10,7 +10,7 @@ Classification: Counter-Bioterror Intelligence Case
 
 Threat Family: Synthetic Genome Theft
 
-Current Status: Monitoring
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Current findings support maintaining the existing investigation priority.
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-SEVERE
+HIGH
 
 Risk Score:
-58
+90
 
 Confidence:
-91%
+84%
 
 Affected Assets:
-37
+23
 
 Evidence Collected:
-3635
+11528
 
 Indicators Recorded:
-6364
+6017
 
 ---
 
@@ -56,7 +56,7 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Alpha
 
 Date:
 

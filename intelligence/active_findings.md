@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-9255
+BID-2026-5303
 
 Operation:
 Operation Black Eclipse
@@ -15,10 +15,10 @@ Threat Family:
 Synthetic Genome Theft
 
 Severity:
-MODERATE
+CRITICAL
 
 Priority:
-SEVERE
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ SEVERE
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-37
+23
 
 Evidence Collected:
-3635
+11528
 
 Indicators Identified:
-6364
+6017
 
 Analyst Confidence:
-91%
+84%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled bioterror activities.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Intelligence Analysis
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Alpha

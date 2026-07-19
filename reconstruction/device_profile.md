@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-9255
+BID-2026-5303
 
 Operation:
 Operation Black Eclipse
@@ -19,22 +19,22 @@ Synthetic Genome Theft
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Federal Biosecurity Laboratory
 
 Platform:
-Laboratory Control Network
+Clinical Research Environment
 
 Device:
 Access Control System
 
 Vendor:
-Dell
+Red Hat
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Containment Network
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
-SEVERE
+HIGH
 
 Confidence:
-91%
+84%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Alpha
 
 Recommended Action:
 Continue evidence acquisition and identify infrastructure used by the threat organization.
@@ -66,4 +66,4 @@ Continue evidence acquisition and identify infrastructure used by the threat org
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.
