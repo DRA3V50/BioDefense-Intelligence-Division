@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-2269
+BID-2026-8160
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Medical Device Security Assessment
 
 Threat Family:
-Digital Pathogen Deployment
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
-Research Network
+Biosecurity Operations Center
 
 Device:
-Specimen Tracking Server
+Digital Evidence Appliance
 
 Vendor:
 Red Hat
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
-CRITICAL
+HIGH
 
 Confidence:
-95%
+87%
 
 ---
 
@@ -60,10 +60,10 @@ Lead Analyst:
 Analyst Team Delta
 
 Recommended Action:
-Continue evidence acquisition and identify infrastructure used by the threat organization.
+Verify recovery controls and prepare the final operational assessment.
 
 ---
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Protected research assets remain under continuous monitoring.

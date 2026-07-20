@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2269 |
+| Case ID | BID-2026-8160 |
 | Operation | Operation Black Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Digital Pathogen Deployment |
-| Severity | MODERATE |
-| Status | Evidence Collection |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Biological Data Exfiltration |
+| Severity | LOW |
+| Status | Monitoring |
 
 ---
 
@@ -17,8 +17,8 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Research Network |
-| Device | Specimen Tracking Server |
+| Platform | Biosecurity Operations Center |
+| Device | Digital Evidence Appliance |
 | Vendor | Red Hat |
 | Security Zone | Evidence Network |
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 60 |
-| Confidence | 95% |
-| Evidence Collected | 15907 |
-| Indicators Identified | 9194 |
-| Affected Assets | 32 |
+| Risk Score | 44 |
+| Confidence | 87% |
+| Evidence Collected | 38680 |
+| Indicators Identified | 8618 |
+| Affected Assets | 16 |
 
 ---
 
@@ -85,12 +85,12 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Monitoring**
 
 Priority:
 
-**CRITICAL**
+**HIGH**
 
 Recommended Action:
 
-**Continue evidence acquisition and identify infrastructure used by the threat organization.**
+**Verify recovery controls and prepare the final operational assessment.**

@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-2269
+BID-2026-8160
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Medical Device Security Assessment
 
 Threat Family:
-Digital Pathogen Deployment
+Biological Data Exfiltration
 
 Severity:
-MODERATE
+LOW
 
 Priority:
-CRITICAL
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ CRITICAL
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-32
+16
 
 Evidence Collected:
-15907
+38680
 
 Indicators Identified:
-9194
+8618
 
 Analyst Confidence:
-95%
+87%
 
 Containment Phase:
 Operational Recovery
@@ -74,11 +74,11 @@ Analysts continue correlating evidence to determine campaign scope and operation
 # Operational Status
 
 Current Status:
-Evidence Collection
+Monitoring
 
 Recommended Action:
 
-Continue evidence acquisition and identify infrastructure used by the threat organization.
+Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 

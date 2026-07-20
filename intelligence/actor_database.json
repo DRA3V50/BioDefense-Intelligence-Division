@@ -15,6 +15,14 @@
             "cases": 1,
             "severity": "MODERATE",
             "confidence": 95
+        },
+        {
+            "name": "Biological Data Exfiltration",
+            "first_seen": "2026-07-20",
+            "last_seen": "2026-07-20",
+            "cases": 1,
+            "severity": "LOW",
+            "confidence": 87
         }
     ]
 }

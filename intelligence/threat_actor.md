@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Digital Pathogen Deployment
+Biological Data Exfiltration
 
 ---
 
@@ -11,39 +11,39 @@ Cerberus Group
 ---
 
 ## Attribution
-Multiple Regions
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-95%
+87%
 
 ---
 
 ## Observed Techniques
 - Credential Abuse
-- Lateral Movement
-- Privilege Escalation
-- Insider Access Abuse
+- Covert Remote Access Tooling
+- Supply Chain Compromise
 - Laboratory Data Manipulation
-- Long-Term Network Foothold
+- Command and Control
+- Research Data Exfiltration
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Counter-Bioterror Intelligence Case
+Medical Device Security Assessment
 
 ---
 
 ## Last Updated
-2026-07-19
+2026-07-20

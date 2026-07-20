@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-2269
+BID-2026-8160
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| System Log | Unexpected privilege escalation recorded |
-| Device | Protected workstation entered evidence preservation mode |
-| Identity | Credential reuse detected across isolated research segments |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Device | Protected workstation entered evidence preservation mode |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Infrastructure | Firewall policy deviation identified |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -28,16 +28,16 @@ Counter-Bioterror Intelligence Case
 ## Investigation Statistics
 
 Evidence Collected:
-15907
+38680
 
 Indicators Reviewed:
-9194
+8618
 
 Risk Score:
-60
+44
 
 Confidence:
-95%
+87%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-Evidence Collection
+Monitoring

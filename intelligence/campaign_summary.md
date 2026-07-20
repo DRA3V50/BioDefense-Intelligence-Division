@@ -3,32 +3,32 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2269
+BID-2026-8160
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Medical Device Security Assessment
 
 Threat Family:
-Digital Pathogen Deployment
+Biological Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Research Network
+Biosecurity Operations Center
 
 Device:
-Specimen Tracking Server
+Digital Evidence Appliance
 
 Vendor:
 Red Hat
@@ -41,22 +41,22 @@ Evidence Network
 ## Investigation Metrics
 
 Investigations Recorded:
-9
+10
 
 Evidence Collected:
-15907
+38680
 
 Indicators Identified:
-9194
+8618
 
 Affected Assets:
-32
+16
 
 Confidence:
-95%
+87%
 
 Risk Score:
-60
+44
 
 ---
 

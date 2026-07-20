@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-2269
+Case ID: BID-2026-8160
 
 Operation: Operation Black Eclipse
 
-Classification: Counter-Bioterror Intelligence Case
+Classification: Medical Device Security Assessment
 
-Threat Family: Digital Pathogen Deployment
+Threat Family: Biological Data Exfiltration
 
-Current Status: Evidence Collection
+Current Status: Monitoring
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+No confirmed attribution has been established during the current investigation.
 
 Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
@@ -27,28 +27,28 @@ Analysts continue correlating evidence to determine campaign scope and operation
 ## Operational Metrics
 
 Priority:
-CRITICAL
+HIGH
 
 Risk Score:
-60
+44
 
 Confidence:
-95%
+87%
 
 Affected Assets:
-32
+16
 
 Evidence Collected:
-15907
+38680
 
 Indicators Recorded:
-9194
+8618
 
 ---
 
 ## Recommended Action
 
-Continue evidence acquisition and identify infrastructure used by the threat organization.
+Verify recovery controls and prepare the final operational assessment.
 
 ---
 
@@ -60,4 +60,4 @@ Analyst Team Delta
 
 Date:
 
-2026-07-19
+2026-07-20

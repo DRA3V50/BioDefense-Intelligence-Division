@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-19
+## 2026-07-20
 
 ### Case Opened
-Case ID: BID-2026-2269
+Case ID: BID-2026-8160
 
 ### Classification
-Counter-Bioterror Intelligence Case
+Medical Device Security Assessment
 
 ### Initial Assessment
 Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Evidence Collection
+Monitoring
 
 ### Severity
-MODERATE
+LOW
 
 ---
