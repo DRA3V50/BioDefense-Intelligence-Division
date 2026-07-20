@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8160
+BID-2026-9164
 
 Operation:
 Operation Black Eclipse
@@ -12,7 +12,7 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Biological Data Exfiltration
+Laboratory Credential Abuse
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Monitoring
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Genome Sequencing Environment
 
 Device:
-Digital Evidence Appliance
+Specimen Tracking Server
 
 Vendor:
-Red Hat
+Fortinet
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-10
+11
 
 Evidence Collected:
-38680
+5869
 
 Indicators Identified:
-8618
+22474
 
 Affected Assets:
-16
+26
 
 Confidence:
-87%
+93%
 
 Risk Score:
-44
+71
 
 ---
 

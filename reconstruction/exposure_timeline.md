@@ -4,7 +4,7 @@
 ## 2026-07-20
 
 ### Case Opened
-Case ID: BID-2026-8160
+Case ID: BID-2026-9164
 
 ### Classification
 Medical Device Security Assessment
@@ -16,6 +16,6 @@ Analysts continue correlating evidence to determine campaign scope and operation
 Monitoring
 
 ### Severity
-LOW
+HIGH
 
 ---

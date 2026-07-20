@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8160
+BID-2026-9164
 
 Operation:
 Operation Black Eclipse
@@ -15,12 +15,12 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Device | Protected workstation entered evidence preservation mode |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| System Log | Unexpected privilege escalation recorded |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Infrastructure | Firewall policy deviation identified |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -28,16 +28,16 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-38680
+5869
 
 Indicators Reviewed:
-8618
+22474
 
 Risk Score:
-44
+71
 
 Confidence:
-87%
+93%
 
 ---
 

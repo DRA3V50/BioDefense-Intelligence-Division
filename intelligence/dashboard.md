@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8160 |
+| Case ID | BID-2026-9164 |
 | Operation | Operation Black Eclipse |
 | Classification | Medical Device Security Assessment |
-| Threat Family | Biological Data Exfiltration |
-| Severity | LOW |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | HIGH |
 | Status | Monitoring |
 | Phase | Operational Recovery |
 
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biosecurity Operations Center |
-| Device | Digital Evidence Appliance |
-| Vendor | Red Hat |
-| Network Zone | Evidence Network |
+| Platform | Genome Sequencing Environment |
+| Device | Specimen Tracking Server |
+| Vendor | Fortinet |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 44 |
-| Confidence | 87% |
-| Evidence | 38680 |
-| Indicators | 8618 |
-| Affected Assets | 16 |
+| Risk Score | 71 |
+| Confidence | 93% |
+| Evidence | 5869 |
+| Indicators | 22474 |
+| Affected Assets | 26 |
 
 ---
 

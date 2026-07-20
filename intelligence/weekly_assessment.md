@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8160
+Case ID: BID-2026-9164
 
 Operation: Operation Black Eclipse
 
 Classification: Medical Device Security Assessment
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Laboratory Credential Abuse
 
 Current Status: Monitoring
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
@@ -30,19 +30,19 @@ Priority:
 HIGH
 
 Risk Score:
-44
+71
 
 Confidence:
-87%
+93%
 
 Affected Assets:
-16
+26
 
 Evidence Collected:
-38680
+5869
 
 Indicators Recorded:
-8618
+22474
 
 ---
 

@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8160
+BID-2026-9164
 
 Operation:
 Operation Black Eclipse
@@ -12,29 +12,29 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Biological Data Exfiltration
+Laboratory Credential Abuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+National Pathogen Research Facility
 
 Platform:
-Biosecurity Operations Center
+Genome Sequencing Environment
 
 Device:
-Digital Evidence Appliance
+Specimen Tracking Server
 
 Vendor:
-Red Hat
+Fortinet
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
 HIGH
 
 Confidence:
-87%
+93%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+No destructive activity observed following initial containment.

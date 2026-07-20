@@ -23,6 +23,14 @@
             "cases": 1,
             "severity": "LOW",
             "confidence": 87
+        },
+        {
+            "name": "Laboratory Credential Abuse",
+            "first_seen": "2026-07-20",
+            "last_seen": "2026-07-20",
+            "cases": 1,
+            "severity": "HIGH",
+            "confidence": 93
         }
     ]
 }

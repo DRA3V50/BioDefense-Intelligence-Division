@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biological Data Exfiltration
+Laboratory Credential Abuse
 
 ---
 
@@ -11,39 +11,39 @@ Cerberus Group
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unattributed
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-87%
+93%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Covert Remote Access Tooling
-- Supply Chain Compromise
-- Laboratory Data Manipulation
-- Command and Control
-- Research Data Exfiltration
+- Compromised VPN
+- Long-Term Network Foothold
+- Lateral Movement
+- Concealed Internal Movement
+- Biosecurity System Tampering
+- Laboratory Network Reconnaissance
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 

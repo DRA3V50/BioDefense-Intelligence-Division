@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8160
+BID-2026-9164
 
 Operation:
 Operation Black Eclipse
@@ -12,10 +12,10 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Biological Data Exfiltration
+Laboratory Credential Abuse
 
 Severity:
-LOW
+HIGH
 
 Priority:
 HIGH
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-16
+26
 
 Evidence Collected:
-38680
+5869
 
 Indicators Identified:
-8618
+22474
 
 Analyst Confidence:
-87%
+93%
 
 Containment Phase:
 Operational Recovery
