@@ -2,35 +2,42 @@ name: Daily Investigation
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 8AM EST
-    - cron: '0 1 * * *'    # 8PM EST
+    # Runs at 9:00 AM and 9:00 PM Eastern Standard Time.
+    # GitHub Actions cron uses UTC.
+    - cron: "0 2,14 * * *"
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: daily-investigation
+  cancel-in-progress: false
+
 jobs:
-  investigate:
+  investigation:
+    name: Generate Daily Investigation
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
-
       ###############################################################
-      # Repository
+      # Repository Setup
       ###############################################################
 
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Python
+      - name: Set Up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.x"
 
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install openpyxl
+      - name: Display Python Version
+        run: python --version
 
       ###############################################################
       # Phase I — Investigation Generation
@@ -51,6 +58,14 @@ jobs:
       - name: Update Investigation History
         run: python scripts/update_history.py
 
+      ###############################################################
+      # Campaign Metrics
+      #
+      # This must run after update_history.py because the current
+      # investigation must be present in the CSV before totals are
+      # recalculated.
+      ###############################################################
+
       - name: Recalculate Campaign Metrics
         run: python scripts/recalculate_campaign_metrics.py
 
@@ -64,7 +79,7 @@ jobs:
       - name: Update Investigation Timeline
         run: python scripts/update_timeline.py
 
-      - name: Update Workbook
+      - name: Update Investigation Workbook
         run: python scripts/update_workbook.py
 
       ###############################################################
@@ -77,12 +92,8 @@ jobs:
       - name: Generate Operational Assessment
         run: python scripts/update_assessment.py
 
-      - name: Generate Operational Summary
+      - name: Generate Campaign Summary
         run: python scripts/update_campaign_summary.py
-
-      ###############################################################
-      # NEW — Threat Actor Intelligence
-      ###############################################################
 
       - name: Generate Threat Actor Profile
         run: python scripts/update_actor_profile.py
@@ -90,15 +101,8 @@ jobs:
       - name: Update Threat Actor Database
         run: python scripts/update_actor_database.py
 
-      ###############################################################
-      # Existing Intelligence
-      ###############################################################
-
-      - name: Generate Investigation Artifacts
+      - name: Update IOC Database
         run: python scripts/update_ioc_database.py
-
-      - name: Generate Biothreat Report
-        run: python scripts/generate_biothreat_report.py
 
       ###############################################################
       # Phase IV — Forensic Reconstruction
@@ -111,8 +115,14 @@ jobs:
         run: python scripts/update_forensic_summary.py
 
       ###############################################################
-      # Phase V — Dashboard & Publication
+      # Phase V — Reports and Dashboard
+      #
+      # The combined report runs after all of its source intelligence
+      # and forensic files have been regenerated.
       ###############################################################
+
+      - name: Generate Biothreat Report
+        run: python scripts/generate_biothreat_report.py
 
       - name: Generate Investigation Dashboard
         run: python scripts/generate_case_dashboard.py
@@ -121,16 +131,61 @@ jobs:
         run: python scripts/update_readme.py
 
       ###############################################################
-      # Commit
+      # Validation
+      ###############################################################
+
+      - name: Validate Generated JSON
+        run: |
+          python -m json.tool data/current_case.json > /dev/null
+          python -m json.tool operations/active_operation.json > /dev/null
+          python -m json.tool operations/operation_status.json > /dev/null
+          python -m json.tool intelligence/actor_database.json > /dev/null
+
+      - name: Display Investigation Summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          case_path = Path("data/current_case.json")
+          operation_path = Path("operations/active_operation.json")
+
+          with case_path.open("r", encoding="utf-8") as file:
+              case = json.load(file)
+
+          with operation_path.open("r", encoding="utf-8") as file:
+              operation = json.load(file)
+
+          print("Investigation generated successfully")
+          print(f"Case ID: {case.get('case_id', 'Unknown')}")
+          print(f"Severity: {case.get('severity', 'Unknown')}")
+          print(f"Evidence items: {case.get('evidence_count', 0)}")
+          print(f"Indicators: {case.get('ioc_count', 0)}")
+          print(f"Campaign cases: {operation.get('active_cases', 0)}")
+          print(
+              "Campaign evidence: "
+              f"{operation.get('evidence_collected', 0)}"
+          )
+          print(
+              "Campaign indicators: "
+              f"{operation.get('ioc_count', 0)}"
+          )
+          PY
+
+      ###############################################################
+      # Commit Generated Changes
       ###############################################################
 
       - name: Commit Investigation
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add .
 
-          git diff --staged --quiet || git commit -m "Daily investigation update"
-
-          git push
+          if git diff --staged --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Daily investigation update"
+            git push
+          fi
