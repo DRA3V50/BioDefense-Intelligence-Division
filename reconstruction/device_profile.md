@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-4741
+BID-2026-6233
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 Threat Family:
-Biological Data Exfiltration
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
-Research Network
+Biomedical Analysis Cluster
 
 Device:
-Genome Sequencing Server
+Access Control System
 
 Vendor:
-VMware
+Dell
 
 Operating System:
-Windows Server 2025
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Secure Laboratory
@@ -50,14 +50,14 @@ Priority:
 ELEVATED
 
 Confidence:
-93%
+83%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+No destructive activity observed following initial containment.

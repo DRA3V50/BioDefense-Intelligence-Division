@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biological Data Exfiltration
+Biocontainment System Tampering
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Project Chimera
 
 ---
 
 ## Attribution
-International Infrastructure
+Unknown
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Laboratory System Sabotage
 
 ---
 
@@ -26,24 +26,24 @@ Moderate
 ---
 
 ## Confidence
-93%
+83%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Remote Access
-- Encrypted Data Staging
-- Laboratory Network Reconnaissance
+- Supply Chain Compromise
+- Command and Control
+- Insider Access Abuse
+- Privilege Escalation
 - Laboratory Data Manipulation
-- Research Data Exfiltration
-- Laboratory Control System Manipulation
+- Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+Analyst Team Delta
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 ---
 

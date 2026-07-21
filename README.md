@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>13<br><br>**Evidence Collected**<br>83,770<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>58,909 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>14<br><br>**Evidence Collected**<br>83,838<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>58,919 |
 
 ---
 
@@ -29,13 +29,13 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-4741<br><br>**Classification**<br>Biological Research Intelligence Collection<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>MODERATE | **Platform**<br>Research Network<br><br>**Vendor**<br>VMware<br><br>**Device**<br>Genome Sequencing Server<br><br>**Zone**<br>Secure Laboratory |
+| **Case ID**<br>BID-2026-6233<br><br>**Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Biocontainment System Tampering<br><br>**Severity**<br>MODERATE | **Platform**<br>Biomedical Analysis Cluster<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Secure Laboratory |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ELEVATED<br><br>**Confidence**<br>93%<br><br>**Evidence**<br>89<br><br>**Indicators**<br>21 |
+| **Priority**<br>ELEVATED<br><br>**Confidence**<br>83%<br><br>**Evidence**<br>68<br><br>**Indicators**<br>10 |
 
 ---
 
@@ -47,8 +47,8 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 # Current Response
 
-- Lead Analyst: **Joint Cyber Investigation Unit**
-- Initial Access: **Unauthorized Remote Access**
+- Lead Analyst: **Analyst Team Delta**
+- Initial Access: **Supply Chain Compromise**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,15 +57,15 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 13 |
+| Total Investigations | 14 |
 | Low Severity Cases | 3 |
-| Moderate Severity Cases | 5 |
+| Moderate Severity Cases | 6 |
 | High Severity Cases | 3 |
 | Critical Severity Cases | 2 |
-| Average Confidence | 93.0% |
-| Total Evidence Collected | 83,770 |
-| Total Indicators | 58,909 |
-| Active Cases | 13 |
+| Average Confidence | 92.3% |
+| Total Evidence Collected | 83,838 |
+| Total Indicators | 58,919 |
+| Active Cases | 14 |
 | Confirmed Intrusions | 2 |
 
 ---
@@ -74,11 +74,11 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-6233 | Laboratory Security Breach | MODERATE |
 | BID-2026-4741 | Biological Research Intelligence Collection | MODERATE |
 | BID-2026-5263 | Biological Research Intelligence Collection | HIGH |
 | BID-2026-9164 | Medical Device Security Assessment | HIGH |
 | BID-2026-8160 | Medical Device Security Assessment | LOW |
-| BID-2026-2269 | Counter-Bioterror Intelligence Case | MODERATE |
 
 
 ---

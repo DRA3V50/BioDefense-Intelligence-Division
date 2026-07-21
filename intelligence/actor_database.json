@@ -39,6 +39,14 @@
             "cases": 1,
             "severity": "HIGH",
             "confidence": 97
+        },
+        {
+            "name": "Biocontainment System Tampering",
+            "first_seen": "2026-07-21",
+            "last_seen": "2026-07-21",
+            "cases": 1,
+            "severity": "MODERATE",
+            "confidence": 83
         }
     ]
 }

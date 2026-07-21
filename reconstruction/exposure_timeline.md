@@ -4,10 +4,10 @@
 ## 2026-07-21
 
 ### Case Opened
-Case ID: BID-2026-4741
+Case ID: BID-2026-6233
 
 ### Classification
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 ### Initial Assessment
 Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.

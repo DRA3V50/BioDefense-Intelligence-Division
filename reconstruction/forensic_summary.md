@@ -4,10 +4,10 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4741 |
+| Case ID | BID-2026-6233 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Biological Data Exfiltration |
+| Classification | Laboratory Security Breach |
+| Threat Family | Biocontainment System Tampering |
 | Severity | MODERATE |
 | Status | Intelligence Analysis |
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Research Network |
-| Device | Genome Sequencing Server |
-| Vendor | VMware |
+| Platform | Biomedical Analysis Cluster |
+| Device | Access Control System |
+| Vendor | Dell |
 | Security Zone | Secure Laboratory |
 
 ---
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 56 |
-| Confidence | 93% |
-| Evidence Collected | 89 |
-| Indicators Identified | 21 |
-| Affected Assets | 6 |
+| Risk Score | 69 |
+| Confidence | 83% |
+| Evidence Collected | 68 |
+| Indicators Identified | 10 |
+| Affected Assets | 9 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**Analyst Team Delta**
 
 ---
 
