@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-9164
+BID-2026-5263
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Biological Research Intelligence Collection
 
 Threat Family:
-Laboratory Credential Abuse
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Federal Biosecurity Laboratory
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
-Specimen Tracking Server
+Biomedical Workstation
 
 Vendor:
-Fortinet
+Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
 Research Operations
@@ -50,7 +50,7 @@ Priority:
 HIGH
 
 Confidence:
-93%
+97%
 
 ---
 

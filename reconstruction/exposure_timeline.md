@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-20
+## 2026-07-21
 
 ### Case Opened
-Case ID: BID-2026-9164
+Case ID: BID-2026-5263
 
 ### Classification
-Medical Device Security Assessment
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
-Monitoring
+Field Coordination
 
 ### Severity
 HIGH

@@ -31,6 +31,14 @@
             "cases": 1,
             "severity": "HIGH",
             "confidence": 93
+        },
+        {
+            "name": "Unauthorized Genomic Data Modification",
+            "first_seen": "2026-07-21",
+            "last_seen": "2026-07-21",
+            "cases": 1,
+            "severity": "HIGH",
+            "confidence": 97
         }
     ]
 }

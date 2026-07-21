@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Credential Abuse
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Silent Culture
 
 ---
 
@@ -21,29 +21,29 @@ Disruption of Biosecurity Operations
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-93%
+97%
 
 ---
 
 ## Observed Techniques
-- Compromised VPN
-- Long-Term Network Foothold
-- Lateral Movement
-- Concealed Internal Movement
-- Biosecurity System Tampering
+- Supply Chain Compromise
+- Credential Abuse
+- Research Data Exfiltration
+- Covert Remote Access Tooling
 - Laboratory Network Reconnaissance
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Biological Research Intelligence Collection
 
 ---
 
 ## Last Updated
-2026-07-20
+2026-07-21

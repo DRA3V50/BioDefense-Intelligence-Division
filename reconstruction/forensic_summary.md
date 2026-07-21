@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9164 |
+| Case ID | BID-2026-5263 |
 | Operation | Operation Black Eclipse |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Laboratory Credential Abuse |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Unauthorized Genomic Data Modification |
 | Severity | HIGH |
-| Status | Monitoring |
+| Status | Field Coordination |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Specimen Tracking Server |
-| Vendor | Fortinet |
+| Platform | Evidence Processing Network |
+| Device | Biomedical Workstation |
+| Vendor | Red Hat |
 | Security Zone | Research Operations |
 
 ---
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 71 |
-| Confidence | 93% |
-| Evidence Collected | 5869 |
-| Indicators Identified | 22474 |
-| Affected Assets | 26 |
+| Risk Score | 74 |
+| Confidence | 97% |
+| Evidence Collected | 189 |
+| Indicators Identified | 46 |
+| Affected Assets | 25 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Field Coordination**
 
 Priority:
 

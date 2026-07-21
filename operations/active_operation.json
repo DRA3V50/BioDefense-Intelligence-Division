@@ -12,10 +12,10 @@
     "affected_facilities": 7,
     "affected_states": 3,
     "confirmed_intrusions": 2,
-    "active_cases": 11,
-    "evidence_collected": 83492,
+    "active_cases": 12,
+    "evidence_collected": 83681,
     "digital_artifacts": 151,
-    "ioc_count": 58842,
+    "ioc_count": 58888,
     "laboratories_under_review": [
         "Federal Biomedical Laboratory",
         "National Pathogen Research Center",
@@ -24,8 +24,8 @@
     ],
     "investigation_lead": "BioDefense Intelligence Division",
     "opened": "2026-07-01",
-    "last_updated": "2026-07-20",
+    "last_updated": "2026-07-21",
     "campaign_summary": "Affected environments are undergoing validation and controlled recovery while residual risk is monitored.",
     "next_objective": "Verify recovery controls and prepare the final operational assessment.",
-    "known_threat_families": 8
+    "known_threat_families": 9
 }
