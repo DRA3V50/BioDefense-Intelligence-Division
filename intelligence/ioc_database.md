@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5263
+BID-2026-4741
 
 Operation:
 Operation Black Eclipse
@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
+| Device | Protected workstation entered evidence preservation mode |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| System Log | Unexpected privilege escalation recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Identity | Credential reuse detected across isolated research segments |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-189
+89
 
 Indicators Reviewed:
-46
+21
 
 Risk Score:
-74
+56
 
 Confidence:
-97%
+93%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Current Status:
 
-Field Coordination
+Intelligence Analysis

@@ -4,18 +4,18 @@
 ## 2026-07-21
 
 ### Case Opened
-Case ID: BID-2026-5263
+Case ID: BID-2026-4741
 
 ### Classification
 Biological Research Intelligence Collection
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Field Coordination
+Intelligence Analysis
 
 ### Severity
-HIGH
+MODERATE
 
 ---

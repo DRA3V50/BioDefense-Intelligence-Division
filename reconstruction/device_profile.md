@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5263
+BID-2026-4741
 
 Operation:
 Operation Black Eclipse
@@ -12,29 +12,29 @@ Classification:
 Biological Research Intelligence Collection
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Advanced Genome Security Laboratory
 
 Platform:
-Evidence Processing Network
+Research Network
 
 Device:
-Biomedical Workstation
+Genome Sequencing Server
 
 Vendor:
-Red Hat
+VMware
 
 Operating System:
 Windows Server 2025
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Isolated From Production
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-97%
+93%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.

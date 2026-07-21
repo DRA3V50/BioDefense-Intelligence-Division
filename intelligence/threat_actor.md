@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Genomic Data Modification
+Biological Data Exfiltration
 
 ---
 
 ## Primary Alias
-Silent Culture
+Dark Sequence
 
 ---
 
 ## Attribution
-Unattributed
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Advanced
+Moderate
 
 ---
 
 ## Confidence
-97%
+93%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Credential Abuse
-- Research Data Exfiltration
-- Covert Remote Access Tooling
+- Unauthorized Remote Access
+- Encrypted Data Staging
 - Laboratory Network Reconnaissance
-- Command and Control
+- Laboratory Data Manipulation
+- Research Data Exfiltration
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 

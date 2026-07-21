@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-5263 |
+| Case ID | BID-2026-4741 |
 | Operation | Operation Black Eclipse |
 | Classification | Biological Research Intelligence Collection |
-| Threat Family | Unauthorized Genomic Data Modification |
-| Severity | HIGH |
-| Status | Field Coordination |
+| Threat Family | Biological Data Exfiltration |
+| Severity | MODERATE |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Evidence Processing Network |
-| Device | Biomedical Workstation |
-| Vendor | Red Hat |
-| Network Zone | Research Operations |
+| Platform | Research Network |
+| Device | Genome Sequencing Server |
+| Vendor | VMware |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 74 |
-| Confidence | 97% |
-| Evidence | 189 |
-| Indicators | 46 |
-| Affected Assets | 25 |
+| Risk Score | 56 |
+| Confidence | 93% |
+| Evidence | 89 |
+| Indicators | 21 |
+| Affected Assets | 6 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **Joint Cyber Investigation Unit**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.

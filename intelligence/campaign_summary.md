@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5263
+BID-2026-4741
 
 Operation:
 Operation Black Eclipse
@@ -12,51 +12,51 @@ Classification:
 Biological Research Intelligence Collection
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Biological Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Research Network
 
 Device:
-Biomedical Workstation
+Genome Sequencing Server
 
 Vendor:
-Red Hat
+VMware
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-12
+13
 
 Evidence Collected:
-189
+89
 
 Indicators Identified:
-46
+21
 
 Affected Assets:
-25
+6
 
 Confidence:
-97%
+93%
 
 Risk Score:
-74
+56
 
 ---
 
