@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>15<br><br>**Evidence Collected**<br>83,942<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>58,958 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>16<br><br>**Evidence Collected**<br>84,010<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>58,979 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-4333<br><br>**Classification**<br>Biomedical Network Exposure<br><br>**Threat Family**<br>Insider Laboratory Compromise<br><br>**Severity**<br>HIGH | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Microsoft<br><br>**Device**<br>Research Database<br><br>**Zone**<br>Federal Operations |
+| **Case ID**<br>BID-2026-8048<br><br>**Classification**<br>Unauthorized Research System Access<br><br>**Threat Family**<br>Research Network Persistence<br><br>**Severity**<br>MODERATE | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Red Hat<br><br>**Device**<br>Digital Evidence Appliance<br><br>**Zone**<br>Research Operations |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>86%<br><br>**Evidence**<br>104<br><br>**Indicators**<br>39 |
+| **Priority**<br>ELEVATED<br><br>**Confidence**<br>87%<br><br>**Evidence**<br>68<br><br>**Indicators**<br>21 |
 
 ---
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Current Response
 
 - Lead Analyst: **Analyst Team Delta**
-- Initial Access: **Credential Abuse**
+- Initial Access: **Compromised VPN Account**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,15 +57,15 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 15 |
+| Total Investigations | 16 |
 | Low Severity Cases | 3 |
-| Moderate Severity Cases | 6 |
+| Moderate Severity Cases | 7 |
 | High Severity Cases | 4 |
 | Critical Severity Cases | 2 |
-| Average Confidence | 91.9% |
-| Total Evidence Collected | 83,942 |
-| Total Indicators | 58,958 |
-| Active Cases | 15 |
+| Average Confidence | 91.6% |
+| Total Evidence Collected | 84,010 |
+| Total Indicators | 58,979 |
+| Active Cases | 16 |
 | Confirmed Intrusions | 2 |
 
 ---
@@ -74,11 +74,11 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-8048 | Unauthorized Research System Access | MODERATE |
 | BID-2026-4333 | Biomedical Network Exposure | HIGH |
 | BID-2026-6233 | Laboratory Security Breach | MODERATE |
 | BID-2026-4741 | Biological Research Intelligence Collection | MODERATE |
 | BID-2026-5263 | Biological Research Intelligence Collection | HIGH |
-| BID-2026-9164 | Medical Device Security Assessment | HIGH |
 
 
 ---

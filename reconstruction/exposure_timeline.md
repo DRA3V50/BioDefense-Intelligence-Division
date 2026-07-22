@@ -4,18 +4,18 @@
 ## 2026-07-22
 
 ### Case Opened
-Case ID: BID-2026-4333
+Case ID: BID-2026-8048
 
 ### Classification
-Biomedical Network Exposure
+Unauthorized Research System Access
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Field Coordination
+Monitoring
 
 ### Severity
-HIGH
+MODERATE
 
 ---

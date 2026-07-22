@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-4333
+BID-2026-8048
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Unauthorized Research System Access
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-26
+12
 
 Evidence Collected:
-104
+68
 
 Indicators Identified:
-39
+21
 
 Analyst Confidence:
-86%
+87%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Monitoring
 
 Recommended Action:
 

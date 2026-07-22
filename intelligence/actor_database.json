@@ -55,6 +55,14 @@
             "cases": 1,
             "severity": "HIGH",
             "confidence": 86
+        },
+        {
+            "name": "Research Network Persistence",
+            "first_seen": "2026-07-22",
+            "last_seen": "2026-07-22",
+            "cases": 1,
+            "severity": "MODERATE",
+            "confidence": 87
         }
     ]
 }

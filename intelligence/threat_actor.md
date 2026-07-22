@@ -1,42 +1,42 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Insider Laboratory Compromise
+Research Network Persistence
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Dark Sequence
 
 ---
 
 ## Attribution
-Multiple Regions
+Unattributed
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-86%
+87%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Laboratory Network Reconnaissance
-- Laboratory Control System Manipulation
+- Compromised VPN Account
 - Command and Control
-- Privilege Escalation
-- Laboratory Data Manipulation
+- Long-Term Network Foothold
+- Credential Abuse
+- Research Data Exfiltration
+- Concealed Internal Movement
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biomedical Network Exposure
+Unauthorized Research System Access
 
 ---
 

@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-4333
+BID-2026-8048
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Unauthorized Research System Access
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
 Evidence Processing Network
 
 Device:
-Research Database
+Digital Evidence Appliance
 
 Vendor:
-Microsoft
+Red Hat
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-86%
+87%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.

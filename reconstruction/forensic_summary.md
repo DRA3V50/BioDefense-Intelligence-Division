@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4333 |
+| Case ID | BID-2026-8048 |
 | Operation | Operation Black Eclipse |
-| Classification | Biomedical Network Exposure |
-| Threat Family | Insider Laboratory Compromise |
-| Severity | HIGH |
-| Status | Field Coordination |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Research Network Persistence |
+| Severity | MODERATE |
+| Status | Monitoring |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Evidence Processing Network |
-| Device | Research Database |
-| Vendor | Microsoft |
-| Security Zone | Federal Operations |
+| Device | Digital Evidence Appliance |
+| Vendor | Red Hat |
+| Security Zone | Research Operations |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 79 |
-| Confidence | 86% |
-| Evidence Collected | 104 |
-| Indicators Identified | 39 |
-| Affected Assets | 26 |
+| Risk Score | 64 |
+| Confidence | 87% |
+| Evidence Collected | 68 |
+| Indicators Identified | 21 |
+| Affected Assets | 12 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Monitoring**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 
