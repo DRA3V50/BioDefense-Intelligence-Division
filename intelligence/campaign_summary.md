@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6233
+BID-2026-4333
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Biomedical Network Exposure
 
 Threat Family:
-Biocontainment System Tampering
+Insider Laboratory Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biomedical Analysis Cluster
+Evidence Processing Network
 
 Device:
-Access Control System
+Research Database
 
 Vendor:
-Dell
+Microsoft
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-14
+15
 
 Evidence Collected:
-68
+104
 
 Indicators Identified:
-10
+39
 
 Affected Assets:
-9
+26
 
 Confidence:
-83%
+86%
 
 Risk Score:
-69
+79
 
 ---
 

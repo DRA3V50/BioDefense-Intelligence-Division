@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6233
+BID-2026-4333
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Biomedical Network Exposure
 
 Threat Family:
-Biocontainment System Tampering
+Insider Laboratory Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
-Biomedical Analysis Cluster
+Evidence Processing Network
 
 Device:
-Access Control System
+Research Database
 
 Vendor:
-Dell
+Microsoft
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Awaiting Laboratory Review
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-83%
+86%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.

@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Insider Laboratory Compromise
 
 ---
 
 ## Primary Alias
-Project Chimera
+Ghost Genome
 
 ---
 
 ## Attribution
-Unknown
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Strategic Intelligence Collection
 
 ---
 
@@ -26,24 +26,24 @@ Moderate
 ---
 
 ## Confidence
-83%
+86%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
+- Credential Abuse
+- Laboratory Network Reconnaissance
+- Laboratory Control System Manipulation
 - Command and Control
-- Insider Access Abuse
 - Privilege Escalation
 - Laboratory Data Manipulation
-- Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Laboratory Security Breach
+Biomedical Network Exposure
 
 ---
 
 ## Last Updated
-2026-07-21
+2026-07-22

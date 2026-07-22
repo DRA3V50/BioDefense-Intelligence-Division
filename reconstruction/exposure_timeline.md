@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-21
+## 2026-07-22
 
 ### Case Opened
-Case ID: BID-2026-6233
+Case ID: BID-2026-4333
 
 ### Classification
-Laboratory Security Breach
+Biomedical Network Exposure
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
-Intelligence Analysis
+Field Coordination
 
 ### Severity
-MODERATE
+HIGH
 
 ---

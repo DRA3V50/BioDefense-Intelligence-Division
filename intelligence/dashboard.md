@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6233 |
+| Case ID | BID-2026-4333 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
-| Threat Family | Biocontainment System Tampering |
-| Severity | MODERATE |
-| Status | Intelligence Analysis |
+| Classification | Biomedical Network Exposure |
+| Threat Family | Insider Laboratory Compromise |
+| Severity | HIGH |
+| Status | Field Coordination |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Access Control System |
-| Vendor | Dell |
-| Network Zone | Secure Laboratory |
+| Platform | Evidence Processing Network |
+| Device | Research Database |
+| Vendor | Microsoft |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 69 |
-| Confidence | 83% |
-| Evidence | 68 |
-| Indicators | 10 |
-| Affected Assets | 9 |
+| Risk Score | 79 |
+| Confidence | 86% |
+| Evidence | 104 |
+| Indicators | 39 |
+| Affected Assets | 26 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
