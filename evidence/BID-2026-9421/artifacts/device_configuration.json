@@ -1,0 +1,12 @@
+{
+    "case_id": "BID-2026-9421",
+    "artifact_type": "Device Configuration Snapshot",
+    "generated_at": "2026-07-23T15:53:05Z",
+    "platform": "Unknown Platform",
+    "vendor": "Cisco",
+    "device": "Unknown Device",
+    "firmware_version": "1.8.2",
+    "zone": "Unknown Zone",
+    "security_state": "Under Investigation",
+    "configuration_integrity": "Pending Analyst Validation"
+}

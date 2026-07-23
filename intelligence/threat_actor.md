@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Credential Abuse
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Silent Culture
+Dark Sequence
 
 ---
 
@@ -16,7 +16,7 @@ Unknown
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Research Data Theft
 
 ---
 
@@ -26,22 +26,22 @@ Moderate
 ---
 
 ## Confidence
-97%
+83%
 
 ---
 
 ## Observed Techniques
-- Unknown
-- Laboratory Control System Manipulation
+- Misconfigured External Service
+- Research Data Exfiltration
 - Supply Chain Compromise
-- Credential Abuse
-- Concealed Internal Movement
-- Lateral Movement
+- Command and Control
+- Laboratory Control System Manipulation
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Delta
 
 **Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biomedical Network Exposure
+Evidence Reconstruction Investigation
 
 ---
 

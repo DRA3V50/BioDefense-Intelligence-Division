@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-3767
+BID-2026-9421
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Evidence Reconstruction Investigation
 
 Threat Family:
-Laboratory Credential Abuse
+Specimen Tracking Manipulation
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Advanced Genome Security Laboratory
 
 Platform:
-Evidence Processing Network
+Laboratory Control Network
 
 Device:
-Biomedical Workstation
+Specimen Tracking Server
 
 Vendor:
-Red Hat
+Cisco
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Isolated From Production
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
-97%
+83%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+No destructive activity observed following initial containment.

@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3767
+Case ID: BID-2026-9421
 
 Operation: Operation Black Eclipse
 
-Classification: Biomedical Network Exposure
+Classification: Evidence Reconstruction Investigation
 
-Threat Family: Laboratory Credential Abuse
+Threat Family: Specimen Tracking Manipulation
 
-Current Status: Monitoring
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Evidence correlation remains in progress across collected artifacts.
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ROUTINE
 
 Risk Score:
-72
+46
 
 Confidence:
-97%
+83%
 
 Affected Assets:
-20
+6
 
 Evidence Collected:
-100
+17
 
 Indicators Recorded:
-38
+10
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Delta
 
 Date:
 

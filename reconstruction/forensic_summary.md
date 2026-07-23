@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3767 |
+| Case ID | BID-2026-9421 |
 | Operation | Operation Black Eclipse |
-| Classification | Biomedical Network Exposure |
-| Threat Family | Laboratory Credential Abuse |
-| Severity | HIGH |
-| Status | Monitoring |
+| Classification | Evidence Reconstruction Investigation |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | LOW |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Biomedical Workstation |
-| Vendor | Red Hat |
-| Security Zone | Biosecurity Segment |
+| Platform | Laboratory Control Network |
+| Device | Specimen Tracking Server |
+| Vendor | Cisco |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 72 |
-| Confidence | 97% |
-| Evidence Collected | 100 |
-| Indicators Identified | 38 |
-| Affected Assets | 20 |
+| Risk Score | 46 |
+| Confidence | 83% |
+| Evidence Collected | 17 |
+| Indicators Identified | 10 |
+| Affected Assets | 6 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Intelligence Analysis**
 
 Priority:
 
-**HIGH**
+**ROUTINE**
 
 Recommended Action:
 

@@ -71,6 +71,14 @@
             "cases": 1,
             "severity": "LOW",
             "confidence": 81
+        },
+        {
+            "name": "Specimen Tracking Manipulation",
+            "first_seen": "2026-07-23",
+            "last_seen": "2026-07-23",
+            "cases": 1,
+            "severity": "LOW",
+            "confidence": 83
         }
     ]
 }
