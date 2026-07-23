@@ -2,8 +2,8 @@ name: Daily Investigation
 
 on:
   schedule:
-    # Runs at 9:00 AM and 9:00 PM Eastern Standard Time.
-    # GitHub Actions cron uses UTC.
+    # Runs at approximately 9:00 AM and 9:00 PM EST.
+    # GitHub Actions cron schedules use UTC.
     - cron: "0 2,14 * * *"
 
   workflow_dispatch:
@@ -56,6 +56,9 @@ jobs:
 
       - name: Advance Investigation Lifecycle
         run: python scripts/update_case_progress.py
+
+      - name: Generate Digital Evidence Repository
+        run: python scripts/generate_evidence_repository.py
 
       - name: Archive Investigation
         run: python scripts/archive_case.py
@@ -122,8 +125,8 @@ jobs:
       ###############################################################
       # Phase V — Reports and Dashboard
       #
-      # The combined report runs after all of its source intelligence
-      # and forensic files have been regenerated.
+      # The combined report runs after all source intelligence,
+      # evidence, and forensic files have been regenerated.
       ###############################################################
 
       - name: Generate Biothreat Report
@@ -146,6 +149,113 @@ jobs:
           python -m json.tool operations/operation_status.json > /dev/null
           python -m json.tool intelligence/actor_database.json > /dev/null
 
+      - name: Validate Digital Evidence Repository
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          case_path = Path("data/current_case.json")
+
+          with case_path.open("r", encoding="utf-8") as file:
+              case = json.load(file)
+
+          case_id = case.get("case_id")
+
+          if not case_id:
+              raise SystemExit(
+                  "Evidence validation failed: current case has no case_id."
+              )
+
+          evidence_directory = Path("evidence") / case_id
+          manifest_path = evidence_directory / "evidence_manifest.json"
+          custody_path = evidence_directory / "chain_of_custody.csv"
+          summary_path = evidence_directory / "acquisition_summary.md"
+          artifacts_directory = evidence_directory / "artifacts"
+
+          required_artifacts = [
+              artifacts_directory / "firewall_log.json",
+              artifacts_directory / "access_control_log.json",
+              artifacts_directory / "device_configuration.json",
+              artifacts_directory / "analyst_notes.md",
+          ]
+
+          required_paths = [
+              manifest_path,
+              custody_path,
+              summary_path,
+              artifacts_directory,
+              *required_artifacts,
+          ]
+
+          missing_paths = [
+              str(path)
+              for path in required_paths
+              if not path.exists()
+          ]
+
+          if missing_paths:
+              missing_text = "\n".join(
+                  f"- {path}" for path in missing_paths
+              )
+              raise SystemExit(
+                  "Evidence validation failed. Missing files:\n"
+                  f"{missing_text}"
+              )
+
+          with manifest_path.open("r", encoding="utf-8") as file:
+              manifest = json.load(file)
+
+          expected_count = int(case.get("evidence_count", 0))
+          evidence_items = manifest.get("evidence_items", [])
+          actual_count = len(evidence_items)
+
+          if manifest.get("case_id") != case_id:
+              raise SystemExit(
+                  "Evidence validation failed: manifest case ID "
+                  "does not match the current case."
+              )
+
+          if expected_count != actual_count:
+              raise SystemExit(
+                  "Evidence validation failed: "
+                  f"current_case.json contains {expected_count} evidence "
+                  f"items, but the manifest contains {actual_count}."
+              )
+
+          manifest_count = int(
+              manifest.get("evidence_count", actual_count)
+          )
+
+          if manifest_count != actual_count:
+              raise SystemExit(
+                  "Evidence validation failed: the manifest evidence_count "
+                  "does not match the number of evidence records."
+              )
+
+          evidence_ids = [
+              item.get("evidence_id")
+              for item in evidence_items
+          ]
+
+          if any(not evidence_id for evidence_id in evidence_ids):
+              raise SystemExit(
+                  "Evidence validation failed: at least one evidence "
+                  "record has no evidence_id."
+              )
+
+          if len(evidence_ids) != len(set(evidence_ids)):
+              raise SystemExit(
+                  "Evidence validation failed: duplicate evidence IDs "
+                  "were found."
+              )
+
+          print(
+              f"Evidence validation passed for {case_id}: "
+              f"{actual_count} records."
+          )
+          PY
+
       - name: Display Investigation Summary
         run: |
           python - <<'PY'
@@ -161,11 +271,16 @@ jobs:
           with operation_path.open("r", encoding="utf-8") as file:
               operation = json.load(file)
 
+          case_id = case.get("case_id", "Unknown")
+          evidence_count = case.get("evidence_count", 0)
+          evidence_path = Path("evidence") / case_id
+
           print("Investigation generated successfully")
-          print(f"Case ID: {case.get('case_id', 'Unknown')}")
+          print(f"Case ID: {case_id}")
           print(f"Severity: {case.get('severity', 'Unknown')}")
-          print(f"Evidence items: {case.get('evidence_count', 0)}")
+          print(f"Evidence items: {evidence_count}")
           print(f"Indicators: {case.get('ioc_count', 0)}")
+          print(f"Evidence repository: {evidence_path}")
           print(f"Campaign cases: {operation.get('active_cases', 0)}")
           print(
               "Campaign evidence: "
