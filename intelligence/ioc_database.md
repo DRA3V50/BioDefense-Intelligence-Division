@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8048
+BID-2026-9826
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Cyber-Biothreat Intelligence Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---
@@ -28,23 +28,23 @@ Unauthorized Research System Access
 ## Investigation Statistics
 
 Evidence Collected:
-68
+32
 
 Indicators Reviewed:
-21
+5
 
 Risk Score:
-64
+40
 
 Confidence:
-87%
+81%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+National Response Cell
 
 Current Status:
 
-Monitoring
+Field Coordination

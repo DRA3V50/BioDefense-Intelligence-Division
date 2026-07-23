@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8048
+Case ID: BID-2026-9826
 
 Operation: Operation Black Eclipse
 
-Classification: Unauthorized Research System Access
+Classification: Cyber-Biothreat Intelligence Review
 
-Threat Family: Research Network Persistence
+Threat Family: Biomedical Infrastructure Reconnaissance
 
-Current Status: Monitoring
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Current evidence supports continued investigative activity.
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+ROUTINE
 
 Risk Score:
-64
+40
 
 Confidence:
-87%
+81%
 
 Affected Assets:
-12
+3
 
 Evidence Collected:
-68
+32
 
 Indicators Recorded:
-21
+5
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+National Response Cell
 
 Date:
 
-2026-07-22
+2026-07-23

@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Network Persistence
+Biomedical Infrastructure Reconnaissance
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Project Chimera
 
 ---
 
 ## Attribution
-Unattributed
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Disruption of Biosecurity Operations
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-87%
+81%
 
 ---
 
 ## Observed Techniques
 - Compromised VPN Account
-- Command and Control
 - Long-Term Network Foothold
+- Encrypted Data Staging
 - Credential Abuse
-- Research Data Exfiltration
+- Covert Remote Access Tooling
 - Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+National Response Cell
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Cyber-Biothreat Intelligence Review
 
 ---
 
 ## Last Updated
-2026-07-22
+2026-07-23

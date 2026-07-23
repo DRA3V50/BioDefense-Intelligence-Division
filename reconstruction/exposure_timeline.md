@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-22
+## 2026-07-23
 
 ### Case Opened
-Case ID: BID-2026-8048
+Case ID: BID-2026-9826
 
 ### Classification
-Unauthorized Research System Access
+Cyber-Biothreat Intelligence Review
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ### Current Status
-Monitoring
+Field Coordination
 
 ### Severity
-MODERATE
+LOW
 
 ---

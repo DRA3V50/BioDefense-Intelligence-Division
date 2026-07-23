@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-8048
+BID-2026-9826
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Research Network Persistence
+Biomedical Infrastructure Reconnaissance
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Raccoon Research Annex
 
 Platform:
-Evidence Processing Network
+Clinical Research Environment
 
 Device:
 Digital Evidence Appliance
 
 Vendor:
-Red Hat
+Fortinet
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-87%
+81%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Evidence indicates unauthorized access to restricted research resources.

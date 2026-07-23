@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-8048
+BID-2026-9826
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Research Network Persistence
+Biomedical Infrastructure Reconnaissance
 
 Severity:
-MODERATE
+LOW
 
 Priority:
-ELEVATED
+ROUTINE
 
 ---
 
@@ -26,11 +26,11 @@ ELEVATED
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
@@ -38,27 +38,27 @@ Collected indicators continue to support an active counter-bioterrorism investig
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-12
+3
 
 Evidence Collected:
-68
+32
 
 Indicators Identified:
-21
+5
 
 Analyst Confidence:
-87%
+81%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+National Response Cell

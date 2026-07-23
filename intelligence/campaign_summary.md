@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8048
+BID-2026-9826
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Research Network Persistence
+Biomedical Infrastructure Reconnaissance
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Clinical Research Environment
 
 Device:
 Digital Evidence Appliance
 
 Vendor:
-Red Hat
+Fortinet
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-16
+17
 
 Evidence Collected:
-68
+32
 
 Indicators Identified:
-21
+5
 
 Affected Assets:
-12
+3
 
 Confidence:
-87%
+81%
 
 Risk Score:
-64
+40
 
 ---
 

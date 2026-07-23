@@ -63,6 +63,14 @@
             "cases": 1,
             "severity": "MODERATE",
             "confidence": 87
+        },
+        {
+            "name": "Biomedical Infrastructure Reconnaissance",
+            "first_seen": "2026-07-23",
+            "last_seen": "2026-07-23",
+            "cases": 1,
+            "severity": "LOW",
+            "confidence": 81
         }
     ]
 }

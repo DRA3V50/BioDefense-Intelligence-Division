@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8048 |
+| Case ID | BID-2026-9826 |
 | Operation | Operation Black Eclipse |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Research Network Persistence |
-| Severity | MODERATE |
-| Status | Monitoring |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Biomedical Infrastructure Reconnaissance |
+| Severity | LOW |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
+| Platform | Clinical Research Environment |
 | Device | Digital Evidence Appliance |
-| Vendor | Red Hat |
-| Security Zone | Research Operations |
+| Vendor | Fortinet |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 64 |
-| Confidence | 87% |
-| Evidence Collected | 68 |
-| Indicators Identified | 21 |
-| Affected Assets | 12 |
+| Risk Score | 40 |
+| Confidence | 81% |
+| Evidence Collected | 32 |
+| Indicators Identified | 5 |
+| Affected Assets | 3 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Field Coordination**
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 
