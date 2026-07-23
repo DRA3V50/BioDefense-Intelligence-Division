@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>17<br><br>**Evidence Collected**<br>84,042<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>58,984 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>18<br><br>**Evidence Collected**<br>84,131<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,007 |
 
 ---
 
@@ -19,7 +19,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 **Next Objective:** Verify recovery controls and prepare the final operational assessment.
 
-**Affected Facilities:** 7
+**Affected Facilities:** 8
 
 **Affected States:** 3
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-9826<br><br>**Classification**<br>Cyber-Biothreat Intelligence Review<br><br>**Threat Family**<br>Biomedical Infrastructure Reconnaissance<br><br>**Severity**<br>LOW | **Platform**<br>Clinical Research Environment<br><br>**Vendor**<br>Fortinet<br><br>**Device**<br>Digital Evidence Appliance<br><br>**Zone**<br>Secure Laboratory |
+| **Case ID**<br>BID-2026-2763<br><br>**Classification**<br>Biomedical Network Exposure<br><br>**Threat Family**<br>Unauthorized Genomic Data Modification<br><br>**Severity**<br>MODERATE | **Platform**<br>Federal Investigation Network<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Specimen Tracking Server<br><br>**Zone**<br>Secure Laboratory |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ROUTINE<br><br>**Confidence**<br>81%<br><br>**Evidence**<br>32<br><br>**Indicators**<br>5 |
+| **Priority**<br>ELEVATED<br><br>**Confidence**<br>92%<br><br>**Evidence**<br>89<br><br>**Indicators**<br>23 |
 
 ---
 
 # Analyst Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
 # Current Response
 
 - Lead Analyst: **National Response Cell**
-- Initial Access: **Compromised VPN Account**
+- Initial Access: **Unknown**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,15 +57,15 @@ Evidence indicates an organized campaign attempting unauthorized access to sensi
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 17 |
+| Total Investigations | 18 |
 | Low Severity Cases | 4 |
-| Moderate Severity Cases | 7 |
+| Moderate Severity Cases | 8 |
 | High Severity Cases | 4 |
 | Critical Severity Cases | 2 |
-| Average Confidence | 90.9% |
-| Total Evidence Collected | 84,042 |
-| Total Indicators | 58,984 |
-| Active Cases | 17 |
+| Average Confidence | 91.0% |
+| Total Evidence Collected | 84,131 |
+| Total Indicators | 59,007 |
+| Active Cases | 18 |
 | Confirmed Intrusions | 2 |
 
 ---
@@ -74,11 +74,11 @@ Evidence indicates an organized campaign attempting unauthorized access to sensi
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-2763 | Biomedical Network Exposure | MODERATE |
 | BID-2026-9826 | Cyber-Biothreat Intelligence Review | LOW |
 | BID-2026-8048 | Unauthorized Research System Access | MODERATE |
 | BID-2026-4333 | Biomedical Network Exposure | HIGH |
 | BID-2026-6233 | Laboratory Security Breach | MODERATE |
-| BID-2026-4741 | Biological Research Intelligence Collection | MODERATE |
 
 
 ---

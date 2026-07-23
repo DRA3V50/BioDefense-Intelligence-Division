@@ -1,0 +1,12 @@
+{
+    "case_id": "BID-2026-2763",
+    "artifact_type": "Device Configuration Snapshot",
+    "generated_at": "2026-07-23T02:19:14Z",
+    "platform": "Unknown Platform",
+    "vendor": "Dell",
+    "device": "Unknown Device",
+    "firmware_version": "3.8.3",
+    "zone": "Unknown Zone",
+    "security_state": "Under Investigation",
+    "configuration_integrity": "Pending Analyst Validation"
+}

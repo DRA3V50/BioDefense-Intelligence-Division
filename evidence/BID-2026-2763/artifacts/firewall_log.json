@@ -1,0 +1,25 @@
+{
+    "case_id": "BID-2026-2763",
+    "artifact_type": "Firewall Log",
+    "generated_at": "2026-07-23T02:19:14Z",
+    "source_device": "Unknown Device",
+    "security_zone": "Unknown Zone",
+    "events": [
+        {
+            "event_id": "FW-001",
+            "action": "Blocked",
+            "protocol": "HTTPS",
+            "source": "Simulated External Host",
+            "destination": "Unknown Device",
+            "description": "Simulated unauthorized outbound connection attempt."
+        },
+        {
+            "event_id": "FW-002",
+            "action": "Allowed",
+            "protocol": "DNS",
+            "source": "Unknown Device",
+            "destination": "Authorized DNS Service",
+            "description": "Routine name-resolution activity retained for analysis."
+        }
+    ]
+}

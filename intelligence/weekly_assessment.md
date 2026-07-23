@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-9826
+Case ID: BID-2026-2763
 
 Operation: Operation Black Eclipse
 
-Classification: Cyber-Biothreat Intelligence Review
+Classification: Biomedical Network Exposure
 
-Threat Family: Biomedical Infrastructure Reconnaissance
+Threat Family: Unauthorized Genomic Data Modification
 
 Current Status: Field Coordination
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ROUTINE
+ELEVATED
 
 Risk Score:
-40
+66
 
 Confidence:
-81%
+92%
 
 Affected Assets:
-3
+14
 
 Evidence Collected:
-32
+89
 
 Indicators Recorded:
-5
+23
 
 ---
 

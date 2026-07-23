@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-9826
+BID-2026-2763
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Biomedical Network Exposure
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
-Clinical Research Environment
+Federal Investigation Network
 
 Device:
-Digital Evidence Appliance
+Specimen Tracking Server
 
 Vendor:
-Fortinet
+Dell
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Secure Laboratory
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-81%
+92%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.

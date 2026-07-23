@@ -4,18 +4,18 @@
 ## 2026-07-23
 
 ### Case Opened
-Case ID: BID-2026-9826
+Case ID: BID-2026-2763
 
 ### Classification
-Cyber-Biothreat Intelligence Review
+Biomedical Network Exposure
 
 ### Initial Assessment
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
 Field Coordination
 
 ### Severity
-LOW
+MODERATE
 
 ---

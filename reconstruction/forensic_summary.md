@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9826 |
+| Case ID | BID-2026-2763 |
 | Operation | Operation Black Eclipse |
-| Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
-| Severity | LOW |
+| Classification | Biomedical Network Exposure |
+| Threat Family | Unauthorized Genomic Data Modification |
+| Severity | MODERATE |
 | Status | Field Coordination |
 
 ---
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Digital Evidence Appliance |
-| Vendor | Fortinet |
+| Platform | Federal Investigation Network |
+| Device | Specimen Tracking Server |
+| Vendor | Dell |
 | Security Zone | Secure Laboratory |
 
 ---
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 40 |
-| Confidence | 81% |
-| Evidence Collected | 32 |
-| Indicators Identified | 5 |
-| Affected Assets | 3 |
+| Risk Score | 66 |
+| Confidence | 92% |
+| Evidence Collected | 89 |
+| Indicators Identified | 23 |
+| Affected Assets | 14 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ROUTINE**
+**ELEVATED**
 
 Recommended Action:
 

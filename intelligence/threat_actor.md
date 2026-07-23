@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Infrastructure Reconnaissance
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Primary Alias
-Project Chimera
+Crimson Cell
 
 ---
 
 ## Attribution
-International Infrastructure
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Moderate
 
 ---
 
 ## Confidence
-81%
+92%
 
 ---
 
 ## Observed Techniques
-- Compromised VPN Account
-- Long-Term Network Foothold
+- Unknown
+- Lateral Movement
+- Insider Access Abuse
 - Encrypted Data Staging
-- Credential Abuse
-- Covert Remote Access Tooling
 - Concealed Internal Movement
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
 National Response Cell
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Biomedical Network Exposure
 
 ---
 
