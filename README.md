@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>18<br><br>**Evidence Collected**<br>84,131<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,007 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>19<br><br>**Evidence Collected**<br>84,231<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,045 |
 
 ---
 
@@ -29,19 +29,19 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-2763<br><br>**Classification**<br>Biomedical Network Exposure<br><br>**Threat Family**<br>Unauthorized Genomic Data Modification<br><br>**Severity**<br>MODERATE | **Platform**<br>Federal Investigation Network<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Specimen Tracking Server<br><br>**Zone**<br>Secure Laboratory |
+| **Case ID**<br>BID-2026-3767<br><br>**Classification**<br>Biomedical Network Exposure<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>HIGH | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Red Hat<br><br>**Device**<br>Biomedical Workstation<br><br>**Zone**<br>Biosecurity Segment |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ELEVATED<br><br>**Confidence**<br>92%<br><br>**Evidence**<br>89<br><br>**Indicators**<br>23 |
+| **Priority**<br>HIGH<br><br>**Confidence**<br>97%<br><br>**Evidence**<br>100<br><br>**Indicators**<br>38 |
 
 ---
 
 # Analyst Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -57,15 +57,15 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 18 |
+| Total Investigations | 19 |
 | Low Severity Cases | 4 |
 | Moderate Severity Cases | 8 |
-| High Severity Cases | 4 |
+| High Severity Cases | 5 |
 | Critical Severity Cases | 2 |
-| Average Confidence | 91.0% |
-| Total Evidence Collected | 84,131 |
-| Total Indicators | 59,007 |
-| Active Cases | 18 |
+| Average Confidence | 91.3% |
+| Total Evidence Collected | 84,231 |
+| Total Indicators | 59,045 |
+| Active Cases | 19 |
 | Confirmed Intrusions | 2 |
 
 ---
@@ -74,11 +74,11 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-3767 | Biomedical Network Exposure | HIGH |
 | BID-2026-2763 | Biomedical Network Exposure | MODERATE |
 | BID-2026-9826 | Cyber-Biothreat Intelligence Review | LOW |
 | BID-2026-8048 | Unauthorized Research System Access | MODERATE |
 | BID-2026-4333 | Biomedical Network Exposure | HIGH |
-| BID-2026-6233 | Laboratory Security Breach | MODERATE |
 
 
 ---

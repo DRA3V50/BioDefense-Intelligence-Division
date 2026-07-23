@@ -4,18 +4,18 @@
 ## 2026-07-23
 
 ### Case Opened
-Case ID: BID-2026-2763
+Case ID: BID-2026-3767
 
 ### Classification
 Biomedical Network Exposure
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Field Coordination
+Monitoring
 
 ### Severity
-MODERATE
+HIGH
 
 ---

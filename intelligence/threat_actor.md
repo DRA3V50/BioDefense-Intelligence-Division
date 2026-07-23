@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Genomic Data Modification
+Laboratory Credential Abuse
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Silent Culture
 
 ---
 
 ## Attribution
-Multiple Regions
+Unknown
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Espionage Against Research Programs
 
 ---
 
@@ -26,24 +26,24 @@ Moderate
 ---
 
 ## Confidence
-92%
+97%
 
 ---
 
 ## Observed Techniques
 - Unknown
-- Lateral Movement
-- Insider Access Abuse
-- Encrypted Data Staging
-- Concealed Internal Movement
 - Laboratory Control System Manipulation
+- Supply Chain Compromise
+- Credential Abuse
+- Concealed Internal Movement
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
 National Response Cell
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 

@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2763
+BID-2026-3767
 
 Operation:
 Operation Black Eclipse
@@ -12,51 +12,51 @@ Classification:
 Biomedical Network Exposure
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Laboratory Credential Abuse
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Evidence Processing Network
 
 Device:
-Specimen Tracking Server
+Biomedical Workstation
 
 Vendor:
-Dell
+Red Hat
 
 Security Zone:
-Secure Laboratory
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-18
+19
 
 Evidence Collected:
-89
+100
 
 Indicators Identified:
-23
+38
 
 Affected Assets:
-14
+20
 
 Confidence:
-92%
+97%
 
 Risk Score:
-66
+72
 
 ---
 

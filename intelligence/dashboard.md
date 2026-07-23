@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2763 |
+| Case ID | BID-2026-3767 |
 | Operation | Operation Black Eclipse |
 | Classification | Biomedical Network Exposure |
-| Threat Family | Unauthorized Genomic Data Modification |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | HIGH |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Federal Investigation Network |
-| Device | Specimen Tracking Server |
-| Vendor | Dell |
-| Network Zone | Secure Laboratory |
+| Platform | Evidence Processing Network |
+| Device | Biomedical Workstation |
+| Vendor | Red Hat |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 66 |
-| Confidence | 92% |
-| Evidence | 89 |
-| Indicators | 23 |
-| Affected Assets | 14 |
+| Risk Score | 72 |
+| Confidence | 97% |
+| Evidence | 100 |
+| Indicators | 38 |
+| Affected Assets | 20 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
