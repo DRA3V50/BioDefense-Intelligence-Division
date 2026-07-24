@@ -42,18 +42,18 @@ def main():
     correlations = []
 
     finding_map = {
-    "Firewall Log": "Suspicious Network Activity",
     "Access Control Log": "Unauthorized Facility Access",
     "Authentication Log": "Credential Misuse",
-    "Biomedical Device Configuration": "Laboratory System Modification",
-    "Embedded Controller Log": "Critical Infrastructure Anomaly",
-    "Firmware Metadata": "Digital Evidence Requiring Examination",
-    "Endpoint Event Log": "Endpoint Compromise",
+    "Firewall Log": "Suspicious Network Activity",
+    "Research Workstation Event Log": "Research Workstation Compromise",
+    "Laboratory System Configuration": "Laboratory System Modification",
+    "Research Data Integrity Record": "Research Data Integrity Anomaly",
+    "Laboratory Information System Audit Log": "Laboratory Information System Anomaly",
     "Network Connection Record": "Command-and-Control Communication",
-    "Threat Indicator Record": "Known Threat Actor Indicator",
+    "Threat Intelligence Record": "Known Threat Actor Indicator",
+    "Biosecurity Audit Record": "Biosecurity Policy Violation",
     "Analyst Observation": "Analyst Intelligence Assessment",
     "Containment Validation Record": "Containment Verification",
-    "Laboratory Audit Record": "Biosecurity Policy Violation",
 }
 
     for item in manifest["evidence_items"]:
