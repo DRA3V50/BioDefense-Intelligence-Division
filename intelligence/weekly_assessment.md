@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7645
+Case ID: BID-2026-4432
 
 Operation: Operation Black Eclipse
 
-Classification: Counter-Bioterror Intelligence Case
+Classification: Research Facility Intrusion
 
-Threat Family: Research Data Integrity Manipulation
+Threat Family: Insider Laboratory Compromise
 
-Current Status: Field Coordination
+Current Status: Evidence Collection
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Observed indicators remain consistent with the current operational assessment.
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+HIGH
 
 Risk Score:
-66
+73
 
 Confidence:
-92%
+96%
 
 Affected Assets:
-8
+13
 
 Evidence Collected:
-61
+123
 
 Indicators Recorded:
-16
+37
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-BioDefense Task Force
+Analyst Team Alpha
 
 Date:
 

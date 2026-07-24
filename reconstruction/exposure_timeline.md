@@ -4,18 +4,18 @@
 ## 2026-07-24
 
 ### Case Opened
-Case ID: BID-2026-7645
+Case ID: BID-2026-4432
 
 ### Classification
-Counter-Bioterror Intelligence Case
+Research Facility Intrusion
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
-Field Coordination
+Evidence Collection
 
 ### Severity
-MODERATE
+HIGH
 
 ---

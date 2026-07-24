@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7645 |
+| Case ID | BID-2026-4432 |
 | Operation | Operation Black Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Research Facility Intrusion |
+| Threat Family | Insider Laboratory Compromise |
+| Severity | HIGH |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Digital Evidence Appliance |
-| Vendor | Fortinet |
-| Security Zone | Federal Operations |
+| Platform | Laboratory Control Network |
+| Device | Laboratory Controller |
+| Vendor | Cisco |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 66 |
-| Confidence | 92% |
-| Evidence Collected | 61 |
-| Indicators Identified | 16 |
-| Affected Assets | 8 |
+| Risk Score | 73 |
+| Confidence | 96% |
+| Evidence Collected | 123 |
+| Indicators Identified | 37 |
+| Affected Assets | 13 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Evidence Collection**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

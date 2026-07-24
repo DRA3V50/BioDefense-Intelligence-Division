@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Insider Laboratory Compromise
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Silent Culture
 
 ---
 
 ## Attribution
-Unattributed
+Unknown
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Espionage Against Research Programs
 
 ---
 
@@ -26,24 +26,24 @@ High
 ---
 
 ## Confidence
-92%
+96%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Lateral Movement
-- Concealed Internal Movement
-- Insider Access Abuse
+- Supply Chain Compromise
 - Laboratory Network Reconnaissance
+- Laboratory Data Manipulation
+- Privilege Escalation
 - Biosecurity System Tampering
+- Research Data Exfiltration
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Alpha
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Counter-Bioterror Intelligence Case
+Research Facility Intrusion
 
 ---
 

@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7645
+BID-2026-4432
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Research Facility Intrusion
 
 Threat Family:
-Research Data Integrity Manipulation
+Insider Laboratory Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Laboratory Control Network
 
 Device:
-Digital Evidence Appliance
+Laboratory Controller
 
 Vendor:
-Fortinet
+Cisco
 
 Security Zone:
-Federal Operations
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-22
+23
 
 Evidence Collected:
-61
+123
 
 Indicators Identified:
-16
+37
 
 Affected Assets:
-8
+13
 
 Confidence:
-92%
+96%
 
 Risk Score:
-66
+73
 
 ---
 
