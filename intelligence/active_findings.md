@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8498
+BID-2026-7222
 
 Operation:
 Operation Black Eclipse
@@ -12,13 +12,13 @@ Classification:
 Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Research Network Persistence
 
 Severity:
-HIGH
+CRITICAL
 
 Priority:
-HIGH
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-14
+24
 
 Evidence Collected:
-121
+197
 
 Indicators Identified:
-62
+121
 
 Analyst Confidence:
-95%
+96%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Monitoring
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Joint Cyber Investigation Unit

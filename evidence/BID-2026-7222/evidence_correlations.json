@@ -1,0 +1,1780 @@
+{
+    "case_id": "BID-2026-7222",
+    "generated_at": "2026-07-24T18:35:49Z",
+    "correlation_count": 197,
+    "correlations": [
+        {
+            "evidence_id": "BID-2026-7222-EV-0001",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7621",
+            "finding": "Containment Verification",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0002",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2004",
+            "finding": "Laboratory System Modification",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0003",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9208",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0004",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8376",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0005",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8117",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0006",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1116",
+            "finding": "Research Workstation Compromise",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0007",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5301",
+            "finding": "Credential Misuse",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0008",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6043",
+            "finding": "Containment Verification",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0009",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-4944",
+            "finding": "Suspicious Network Activity",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0010",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-5060",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0011",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8150",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0012",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2014",
+            "finding": "Containment Verification",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0013",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4708",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0014",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4007",
+            "finding": "Containment Verification",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0015",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7563",
+            "finding": "Credential Misuse",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0016",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9240",
+            "finding": "Command-and-Control Communication",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0017",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1987",
+            "finding": "Credential Misuse",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0018",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7427",
+            "finding": "Research Workstation Compromise",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0019",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7749",
+            "finding": "Command-and-Control Communication",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0020",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3133",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0021",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9644",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0022",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3181",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0023",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3311",
+            "finding": "Research Workstation Compromise",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0024",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9266",
+            "finding": "Credential Misuse",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0025",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-7629",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0026",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9031",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0027",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3553",
+            "finding": "Laboratory System Modification",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0028",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-8699",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0029",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1594",
+            "finding": "Research Workstation Compromise",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0030",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7938",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0031",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7144",
+            "finding": "Credential Misuse",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0032",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5100",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 89,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0033",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8630",
+            "finding": "Laboratory System Modification",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0034",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8487",
+            "finding": "Command-and-Control Communication",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0035",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2098",
+            "finding": "Containment Verification",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0036",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7899",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0037",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-3230",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0038",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3226",
+            "finding": "Laboratory System Modification",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0039",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6109",
+            "finding": "Research Workstation Compromise",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0040",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8725",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0041",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-8951",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0042",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6401",
+            "finding": "Credential Misuse",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0043",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1797",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0044",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2085",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0045",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6129",
+            "finding": "Containment Verification",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0046",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-4971",
+            "finding": "Suspicious Network Activity",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0047",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4458",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0048",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-8674",
+            "finding": "Suspicious Network Activity",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0049",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8034",
+            "finding": "Research Workstation Compromise",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0050",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7565",
+            "finding": "Containment Verification",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0051",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-2622",
+            "finding": "Suspicious Network Activity",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0052",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3379",
+            "finding": "Containment Verification",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0053",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7184",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0054",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1630",
+            "finding": "Research Workstation Compromise",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0055",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2775",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0056",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5331",
+            "finding": "Containment Verification",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0057",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7266",
+            "finding": "Credential Misuse",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0058",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1091",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0059",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9640",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0060",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8690",
+            "finding": "Command-and-Control Communication",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0061",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-1386",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0062",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3692",
+            "finding": "Laboratory System Modification",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0063",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8156",
+            "finding": "Containment Verification",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0064",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5511",
+            "finding": "Credential Misuse",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0065",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3930",
+            "finding": "Research Workstation Compromise",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0066",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-2506",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0067",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5424",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0068",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3398",
+            "finding": "Research Workstation Compromise",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0069",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1064",
+            "finding": "Credential Misuse",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0070",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7136",
+            "finding": "Research Workstation Compromise",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0071",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8988",
+            "finding": "Command-and-Control Communication",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0072",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3857",
+            "finding": "Research Workstation Compromise",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0073",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3167",
+            "finding": "Credential Misuse",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0074",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2687",
+            "finding": "Containment Verification",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0075",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1827",
+            "finding": "Credential Misuse",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0076",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9646",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0077",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7306",
+            "finding": "Research Workstation Compromise",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0078",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4023",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0079",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6049",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0080",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3264",
+            "finding": "Credential Misuse",
+            "confidence": 89,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0081",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3106",
+            "finding": "Command-and-Control Communication",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0082",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7130",
+            "finding": "Containment Verification",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0083",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7103",
+            "finding": "Containment Verification",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0084",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4462",
+            "finding": "Containment Verification",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0085",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2929",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0086",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5508",
+            "finding": "Research Workstation Compromise",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0087",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8091",
+            "finding": "Laboratory System Modification",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0088",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6596",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0089",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3220",
+            "finding": "Research Workstation Compromise",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0090",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1469",
+            "finding": "Credential Misuse",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0091",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5134",
+            "finding": "Research Workstation Compromise",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0092",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-2689",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0093",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-2044",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0094",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-8130",
+            "finding": "Suspicious Network Activity",
+            "confidence": 89,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0095",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5246",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0096",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4339",
+            "finding": "Laboratory System Modification",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0097",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-5671",
+            "finding": "Suspicious Network Activity",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0098",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-9205",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0099",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5045",
+            "finding": "Research Workstation Compromise",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0100",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6938",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0101",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4932",
+            "finding": "Credential Misuse",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0102",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7602",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0103",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3088",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0104",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5224",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0105",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7406",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0106",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-2674",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0107",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-5782",
+            "finding": "Suspicious Network Activity",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0108",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6407",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0109",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2702",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0110",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1153",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0111",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6256",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0112",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8791",
+            "finding": "Credential Misuse",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0113",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4666",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0114",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1812",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0115",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4174",
+            "finding": "Research Workstation Compromise",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0116",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7520",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0117",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1147",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 89,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0118",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1005",
+            "finding": "Laboratory System Modification",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0119",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3559",
+            "finding": "Command-and-Control Communication",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0120",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4544",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0121",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1847",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0122",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6895",
+            "finding": "Laboratory System Modification",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0123",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9261",
+            "finding": "Containment Verification",
+            "confidence": 89,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0124",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7149",
+            "finding": "Credential Misuse",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0125",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6618",
+            "finding": "Containment Verification",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0126",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9113",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0127",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1400",
+            "finding": "Research Workstation Compromise",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0128",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2243",
+            "finding": "Credential Misuse",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0129",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7208",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0130",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-4731",
+            "finding": "Suspicious Network Activity",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0131",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4372",
+            "finding": "Credential Misuse",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0132",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3812",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0133",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7846",
+            "finding": "Laboratory System Modification",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0134",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7424",
+            "finding": "Containment Verification",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0135",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9946",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0136",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1893",
+            "finding": "Laboratory System Modification",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0137",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8499",
+            "finding": "Credential Misuse",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0138",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7333",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0139",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3457",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0140",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8881",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0141",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-6434",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0142",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1167",
+            "finding": "Laboratory System Modification",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0143",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4276",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0144",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9312",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0145",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-7801",
+            "finding": "Suspicious Network Activity",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0146",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8225",
+            "finding": "Laboratory System Modification",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0147",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1890",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0148",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7366",
+            "finding": "Credential Misuse",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0149",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1771",
+            "finding": "Credential Misuse",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0150",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8230",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0151",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7490",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 89,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0152",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7380",
+            "finding": "Command-and-Control Communication",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0153",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8594",
+            "finding": "Laboratory System Modification",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0154",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2011",
+            "finding": "Laboratory System Modification",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0155",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3533",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0156",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1602",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0157",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4922",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0158",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4958",
+            "finding": "Laboratory System Modification",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0159",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-1558",
+            "finding": "Suspicious Network Activity",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0160",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7281",
+            "finding": "Command-and-Control Communication",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0161",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9742",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0162",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6633",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0163",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-7241",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0164",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-4610",
+            "finding": "Unauthorized Facility Access",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0165",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5954",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0166",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-5575",
+            "finding": "Suspicious Network Activity",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0167",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-4165",
+            "finding": "Suspicious Network Activity",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0168",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-2383",
+            "finding": "Suspicious Network Activity",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0169",
+            "artifact_type": "Threat Intelligence Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2261",
+            "finding": "Known Threat Actor Indicator",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0170",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6837",
+            "finding": "Research Workstation Compromise",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0171",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4305",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0172",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-2280",
+            "finding": "Suspicious Network Activity",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0173",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9224",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0174",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2484",
+            "finding": "Research Workstation Compromise",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0175",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7697",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0176",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2343",
+            "finding": "Command-and-Control Communication",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0177",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4650",
+            "finding": "Laboratory System Modification",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0178",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7272",
+            "finding": "Research Workstation Compromise",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0179",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2864",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0180",
+            "artifact_type": "Research Workstation Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6137",
+            "finding": "Research Workstation Compromise",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0181",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7329",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0182",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1144",
+            "finding": "Containment Verification",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0183",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5148",
+            "finding": "Credential Misuse",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0184",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7785",
+            "finding": "Containment Verification",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0185",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3896",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0186",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6858",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0187",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6248",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0188",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3940",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0189",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3259",
+            "finding": "Credential Misuse",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0190",
+            "artifact_type": "Laboratory System Configuration",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9900",
+            "finding": "Laboratory System Modification",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0191",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7333",
+            "finding": "Command-and-Control Communication",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0192",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9347",
+            "finding": "Analyst Intelligence Assessment",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0193",
+            "artifact_type": "Biosecurity Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5872",
+            "finding": "Biosecurity Policy Violation",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0194",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8092",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0195",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1741",
+            "finding": "Containment Verification",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0196",
+            "artifact_type": "Laboratory Information System Audit Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3867",
+            "finding": "Laboratory Information System Anomaly",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7222-EV-0197",
+            "artifact_type": "Research Data Integrity Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2887",
+            "finding": "Research Data Integrity Anomaly",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8498
+BID-2026-7222
 
 Operation:
 Operation Black Eclipse
@@ -12,29 +12,29 @@ Classification:
 Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Research Network Persistence
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Central Evidence Processing Center
 
 Platform:
-Evidence Processing Network
+Clinical Research Environment
 
 Device:
-Evidence Repository
+Access Control System
 
 Vendor:
-Cisco
+VMware
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Secure Laboratory
+Research Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Awaiting Laboratory Review
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-95%
+96%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

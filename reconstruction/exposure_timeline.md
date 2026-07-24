@@ -4,18 +4,18 @@
 ## 2026-07-24
 
 ### Case Opened
-Case ID: BID-2026-8498
+Case ID: BID-2026-7222
 
 ### Classification
 Cyber-Biothreat Intelligence Review
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Field Coordination
+Monitoring
 
 ### Severity
-HIGH
+CRITICAL
 
 ---

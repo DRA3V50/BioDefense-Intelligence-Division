@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8498
+BID-2026-7222
 
 Operation:
 Operation Black Eclipse
@@ -15,12 +15,12 @@ Cyber-Biothreat Intelligence Review
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Device | Protected workstation entered evidence preservation mode |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Infrastructure | Firewall policy deviation identified |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | System Log | Unexpected privilege escalation recorded |
+| Infrastructure | Firewall policy deviation identified |
+| Device | Protected workstation entered evidence preservation mode |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Cyber-Biothreat Intelligence Review
 ## Investigation Statistics
 
 Evidence Collected:
-121
+197
 
 Indicators Reviewed:
-62
+121
 
 Risk Score:
-89
+95
 
 Confidence:
-95%
+96%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Current Status:
 
-Field Coordination
+Monitoring

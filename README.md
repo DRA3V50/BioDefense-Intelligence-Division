@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>25<br><br>**Evidence Collected**<br>84,647<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,218 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>CRITICAL | **Confirmed Intrusions**<br>3<br><br>**Active Cases**<br>26<br><br>**Evidence Collected**<br>84,844<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,339 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-8498<br><br>**Classification**<br>Cyber-Biothreat Intelligence Review<br><br>**Threat Family**<br>Unauthorized Genomic Data Modification<br><br>**Severity**<br>HIGH | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Cisco<br><br>**Device**<br>Evidence Repository<br><br>**Zone**<br>Secure Laboratory |
+| **Case ID**<br>BID-2026-7222<br><br>**Classification**<br>Cyber-Biothreat Intelligence Review<br><br>**Threat Family**<br>Research Network Persistence<br><br>**Severity**<br>CRITICAL | **Platform**<br>Clinical Research Environment<br><br>**Vendor**<br>VMware<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Research Operations |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>95%<br><br>**Evidence**<br>121<br><br>**Indicators**<br>62 |
+| **Priority**<br>CRITICAL<br><br>**Confidence**<br>96%<br><br>**Evidence**<br>197<br><br>**Indicators**<br>121 |
 
 ---
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Delta**
-- Initial Access: **Unknown**
+- Lead Analyst: **Joint Cyber Investigation Unit**
+- Initial Access: **Credential Abuse**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,16 +57,16 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 25 |
+| Total Investigations | 26 |
 | Low Severity Cases | 6 |
 | Moderate Severity Cases | 10 |
 | High Severity Cases | 7 |
-| Critical Severity Cases | 2 |
-| Average Confidence | 91.0% |
-| Total Evidence Collected | 84,647 |
-| Total Indicators | 59,218 |
-| Active Cases | 25 |
-| Confirmed Intrusions | 2 |
+| Critical Severity Cases | 3 |
+| Average Confidence | 91.2% |
+| Total Evidence Collected | 84,844 |
+| Total Indicators | 59,339 |
+| Active Cases | 26 |
+| Confirmed Intrusions | 3 |
 
 ---
 
@@ -74,11 +74,11 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-7222 | Cyber-Biothreat Intelligence Review | CRITICAL |
 | BID-2026-8498 | Cyber-Biothreat Intelligence Review | HIGH |
 | BID-2026-3610 | Laboratory Security Breach | MODERATE |
 | BID-2026-4432 | Research Facility Intrusion | HIGH |
 | BID-2026-7645 | Counter-Bioterror Intelligence Case | MODERATE |
-| BID-2026-4404 | Research Facility Intrusion | LOW |
 
 
 ---

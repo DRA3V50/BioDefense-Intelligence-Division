@@ -1,47 +1,47 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Genomic Data Modification
+Research Network Persistence
 
 ---
 
 ## Primary Alias
-Project Chimera
+Vector-9
 
 ---
 
 ## Attribution
-Unknown
+Unattributed
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-95%
+96%
 
 ---
 
 ## Observed Techniques
-- Unknown
-- Lateral Movement
-- Privilege Escalation
-- Laboratory Network Reconnaissance
 - Credential Abuse
-- Long-Term Network Foothold
+- Biosecurity System Tampering
+- Privilege Escalation
+- Concealed Internal Movement
+- Covert Remote Access Tooling
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 **Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 

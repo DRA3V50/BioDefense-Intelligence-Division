@@ -1,0 +1,12 @@
+{
+    "case_id": "BID-2026-7222",
+    "artifact_type": "Laboratory System Configuration",
+    "generated_at": "2026-07-24T18:35:49Z",
+    "platform": "Unknown Platform",
+    "vendor": "VMware",
+    "device": "Unknown Device",
+    "baseline_version": "Baseline Pending Review",
+    "zone": "Unknown Zone",
+    "security_state": "Under Investigation",
+    "configuration_integrity": "Pending Analyst Validation"
+}

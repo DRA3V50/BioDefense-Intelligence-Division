@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8498 |
+| Case ID | BID-2026-7222 |
 | Operation | Operation Black Eclipse |
 | Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Unauthorized Genomic Data Modification |
-| Severity | HIGH |
-| Status | Field Coordination |
+| Threat Family | Research Network Persistence |
+| Severity | CRITICAL |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Evidence Processing Network |
-| Device | Evidence Repository |
-| Vendor | Cisco |
-| Network Zone | Secure Laboratory |
+| Platform | Clinical Research Environment |
+| Device | Access Control System |
+| Vendor | VMware |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 89 |
-| Confidence | 95% |
-| Evidence | 121 |
-| Indicators | 62 |
-| Affected Assets | 14 |
+| Risk Score | 95 |
+| Confidence | 96% |
+| Evidence | 197 |
+| Indicators | 121 |
+| Affected Assets | 24 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **Joint Cyber Investigation Unit**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
