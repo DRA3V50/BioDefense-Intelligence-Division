@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-23
+## 2026-07-24
 
 ### Case Opened
-Case ID: BID-2026-9421
+Case ID: BID-2026-4404
 
 ### Classification
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Intelligence Analysis
+Containment
 
 ### Severity
 LOW

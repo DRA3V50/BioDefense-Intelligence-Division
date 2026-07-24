@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9421
+BID-2026-4404
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 Threat Family:
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Containment
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Laboratory Control Network
 
 Device:
-Specimen Tracking Server
+Genome Sequencing Server
 
 Vendor:
-Cisco
+Microsoft
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-20
+21
 
 Evidence Collected:
-17
+16
 
 Indicators Identified:
-10
+15
 
 Affected Assets:
-6
+5
 
 Confidence:
-83%
+87%
 
 Risk Score:
-46
+40
 
 ---
 

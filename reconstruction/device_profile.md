@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-9421
+BID-2026-4404
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 Threat Family:
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Federal Biosecurity Laboratory
 
 Platform:
 Laboratory Control Network
 
 Device:
-Specimen Tracking Server
+Genome Sequencing Server
 
 Vendor:
-Cisco
+Microsoft
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
 ROUTINE
 
 Confidence:
-83%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.

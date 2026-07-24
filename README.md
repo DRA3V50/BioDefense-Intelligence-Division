@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>20<br><br>**Evidence Collected**<br>84,248<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,055 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>21<br><br>**Evidence Collected**<br>84,264<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,070 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-9421<br><br>**Classification**<br>Evidence Reconstruction Investigation<br><br>**Threat Family**<br>Specimen Tracking Manipulation<br><br>**Severity**<br>LOW | **Platform**<br>Laboratory Control Network<br><br>**Vendor**<br>Cisco<br><br>**Device**<br>Specimen Tracking Server<br><br>**Zone**<br>Federal Operations |
+| **Case ID**<br>BID-2026-4404<br><br>**Classification**<br>Research Facility Intrusion<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>LOW | **Platform**<br>Laboratory Control Network<br><br>**Vendor**<br>Microsoft<br><br>**Device**<br>Genome Sequencing Server<br><br>**Zone**<br>Containment Network |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ROUTINE<br><br>**Confidence**<br>83%<br><br>**Evidence**<br>17<br><br>**Indicators**<br>10 |
+| **Priority**<br>ROUTINE<br><br>**Confidence**<br>87%<br><br>**Evidence**<br>16<br><br>**Indicators**<br>15 |
 
 ---
 
 # Analyst Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Delta**
-- Initial Access: **Misconfigured External Service**
+- Lead Analyst: **Analyst Team Alpha**
+- Initial Access: **Unauthorized Remote Access**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,15 +57,15 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 20 |
-| Low Severity Cases | 5 |
+| Total Investigations | 21 |
+| Low Severity Cases | 6 |
 | Moderate Severity Cases | 8 |
 | High Severity Cases | 5 |
 | Critical Severity Cases | 2 |
-| Average Confidence | 90.9% |
-| Total Evidence Collected | 84,248 |
-| Total Indicators | 59,055 |
-| Active Cases | 20 |
+| Average Confidence | 90.7% |
+| Total Evidence Collected | 84,264 |
+| Total Indicators | 59,070 |
+| Active Cases | 21 |
 | Confirmed Intrusions | 2 |
 
 ---
@@ -74,11 +74,11 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-4404 | Research Facility Intrusion | LOW |
 | BID-2026-9421 | Evidence Reconstruction Investigation | LOW |
 | BID-2026-3767 | Biomedical Network Exposure | HIGH |
 | BID-2026-2763 | Biomedical Network Exposure | MODERATE |
 | BID-2026-9826 | Cyber-Biothreat Intelligence Review | LOW |
-| BID-2026-8048 | Unauthorized Research System Access | MODERATE |
 
 
 ---

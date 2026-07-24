@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9421 |
+| Case ID | BID-2026-4404 |
 | Operation | Operation Black Eclipse |
-| Classification | Evidence Reconstruction Investigation |
-| Threat Family | Specimen Tracking Manipulation |
+| Classification | Research Facility Intrusion |
+| Threat Family | Biological Data Exfiltration |
 | Severity | LOW |
-| Status | Intelligence Analysis |
+| Status | Containment |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Laboratory Control Network |
-| Device | Specimen Tracking Server |
-| Vendor | Cisco |
-| Security Zone | Federal Operations |
+| Device | Genome Sequencing Server |
+| Vendor | Microsoft |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 46 |
-| Confidence | 83% |
-| Evidence Collected | 17 |
-| Indicators Identified | 10 |
-| Affected Assets | 6 |
+| Risk Score | 40 |
+| Confidence | 87% |
+| Evidence Collected | 16 |
+| Indicators Identified | 15 |
+| Affected Assets | 5 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Containment**
 
 Priority:
 

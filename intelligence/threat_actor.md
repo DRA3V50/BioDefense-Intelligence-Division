@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Crimson Cell
 
 ---
 
 ## Attribution
-Unknown
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-83%
+87%
 
 ---
 
 ## Observed Techniques
-- Misconfigured External Service
-- Research Data Exfiltration
-- Supply Chain Compromise
-- Command and Control
+- Unauthorized Remote Access
+- Credential Abuse
+- Biosecurity System Tampering
+- Laboratory Network Reconnaissance
 - Laboratory Control System Manipulation
-- Privilege Escalation
+- Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 ---
 
 ## Last Updated
-2026-07-23
+2026-07-24
