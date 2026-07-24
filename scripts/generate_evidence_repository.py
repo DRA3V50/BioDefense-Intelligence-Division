@@ -22,17 +22,16 @@ EVIDENCE_TYPES = [
     "Access Control Log",
     "Authentication Log",
     "Firewall Log",
-    "Endpoint Event Log",
-    "Biomedical Device Configuration",
-    "Firmware Metadata",
-    "Embedded Controller Log",
+    "Research Workstation Event Log",
+    "Laboratory System Configuration",
+    "Research Data Integrity Record",
+    "Laboratory Information System Audit Log",
     "Network Connection Record",
-    "Threat Indicator Record",
-    "Laboratory Audit Record",
+    "Threat Intelligence Record",
+    "Biosecurity Audit Record",
     "Analyst Observation",
     "Containment Validation Record",
 ]
-
 
 # ---------------------------------------------------------
 # Helper functions
@@ -433,7 +432,7 @@ def write_device_configuration(case, artifacts_directory):
 
     configuration_data = {
         "case_id": case_id,
-        "artifact_type": "Device Configuration Snapshot",
+        "artifact_type": "Laboratory System Configuration",
         "generated_at": current_utc_timestamp(),
         "platform": get_case_value(
             case,
@@ -450,11 +449,11 @@ def write_device_configuration(case, artifacts_directory):
             "device",
             default="Unknown Device",
         ),
-        "firmware_version": get_case_value(
+        "baseline_version": get_case_value(
             case,
-            "firmware_version",
-            "firmware",
-            default="Not Applicable",
+            "baseline_version",
+            "configuration_baseline",
+            default="Baseline Pending Review",
         ),
         "zone": get_case_value(
             case,
