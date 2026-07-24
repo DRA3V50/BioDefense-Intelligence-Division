@@ -41,13 +41,20 @@ def main():
 
     correlations = []
 
-    findings = [
-        "Unauthorized Authentication Activity",
-        "Suspicious Network Traffic",
-        "Device Configuration Change",
-        "Privilege Escalation Indicator",
-        "Laboratory Access Anomaly",
-    ]
+    finding_map = {
+    "Firewall Log": "Suspicious Network Activity",
+    "Access Control Log": "Unauthorized Facility Access",
+    "Authentication Log": "Credential Misuse",
+    "Biomedical Device Configuration": "Laboratory System Modification",
+    "Embedded Controller Log": "Critical Infrastructure Anomaly",
+    "Firmware Metadata": "Digital Evidence Requiring Examination",
+    "Endpoint Event Log": "Endpoint Compromise",
+    "Network Connection Record": "Command-and-Control Communication",
+    "Threat Indicator Record": "Known Threat Actor Indicator",
+    "Analyst Observation": "Analyst Intelligence Assessment",
+    "Containment Validation Record": "Containment Verification",
+    "Laboratory Audit Record": "Biosecurity Policy Violation",
+}
 
     for item in manifest["evidence_items"]:
 
@@ -75,7 +82,7 @@ def main():
                 "related_indicator": (
                     f"IOC-2026-{random.randint(1000,9999)}"
                 ),
-                "finding": random.choice(findings),
+                "finding": finding_map.get(artifact_type,"General Investigative Finding"),
                 "confidence": random.randint(80, 99),
                 "analysis_status": "Correlated",
             }
