@@ -4,18 +4,18 @@
 ## 2026-07-24
 
 ### Case Opened
-Case ID: BID-2026-3610
+Case ID: BID-2026-8498
 
 ### Classification
-Laboratory Security Breach
+Cyber-Biothreat Intelligence Review
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
-Evidence Collection
+Field Coordination
 
 ### Severity
-MODERATE
+HIGH
 
 ---

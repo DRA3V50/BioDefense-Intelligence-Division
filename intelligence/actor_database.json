@@ -35,10 +35,10 @@
         {
             "name": "Unauthorized Genomic Data Modification",
             "first_seen": "2026-07-21",
-            "last_seen": "2026-07-23",
-            "cases": 2,
-            "severity": "MODERATE",
-            "confidence": 92
+            "last_seen": "2026-07-24",
+            "cases": 3,
+            "severity": "HIGH",
+            "confidence": 95
         },
         {
             "name": "Biocontainment System Tampering",

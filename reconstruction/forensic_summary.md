@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3610 |
+| Case ID | BID-2026-8498 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
-| Threat Family | Research Network Persistence |
-| Severity | MODERATE |
-| Status | Evidence Collection |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Unauthorized Genomic Data Modification |
+| Severity | HIGH |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Federal Investigation Network |
-| Device | Access Control System |
-| Vendor | Dell |
-| Security Zone | Federal Operations |
+| Platform | Evidence Processing Network |
+| Device | Evidence Repository |
+| Vendor | Cisco |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 67 |
-| Confidence | 87% |
-| Evidence Collected | 78 |
-| Indicators Identified | 33 |
-| Affected Assets | 17 |
+| Risk Score | 89 |
+| Confidence | 95% |
+| Evidence Collected | 121 |
+| Indicators Identified | 62 |
+| Affected Assets | 14 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Field Coordination**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

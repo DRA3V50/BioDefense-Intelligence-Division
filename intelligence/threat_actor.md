@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Network Persistence
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Project Chimera
 
 ---
 
 ## Attribution
-International Infrastructure
+Unknown
 
 ---
 
@@ -21,29 +21,29 @@ Research Data Theft
 ---
 
 ## Operational Sophistication
-High
+Nation-State Level
 
 ---
 
 ## Confidence
-87%
+95%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Privilege Escalation
+- Unknown
 - Lateral Movement
-- Laboratory Data Manipulation
-- Biosecurity System Tampering
-- Laboratory Control System Manipulation
+- Privilege Escalation
+- Laboratory Network Reconnaissance
+- Credential Abuse
+- Long-Term Network Foothold
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Delta
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Laboratory Security Breach
+Cyber-Biothreat Intelligence Review
 
 ---
 

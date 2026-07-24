@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3610
+Case ID: BID-2026-8498
 
 Operation: Operation Black Eclipse
 
-Classification: Laboratory Security Breach
+Classification: Cyber-Biothreat Intelligence Review
 
-Threat Family: Research Network Persistence
+Threat Family: Unauthorized Genomic Data Modification
 
-Current Status: Evidence Collection
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Current evidence supports continued investigative activity.
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+HIGH
 
 Risk Score:
-67
+89
 
 Confidence:
-87%
+95%
 
 Affected Assets:
-17
+14
 
 Evidence Collected:
-78
+121
 
 Indicators Recorded:
-33
+62
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+Analyst Team Delta
 
 Date:
 

@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3610
+BID-2026-8498
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Research Network Persistence
+Unauthorized Genomic Data Modification
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Evidence Processing Network
 
 Device:
-Access Control System
+Evidence Repository
 
 Vendor:
-Dell
+Cisco
 
 Security Zone:
-Federal Operations
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-24
+25
 
 Evidence Collected:
-78
+121
 
 Indicators Identified:
-33
+62
 
 Affected Assets:
-17
+14
 
 Confidence:
-87%
+95%
 
 Risk Score:
-67
+89
 
 ---
 

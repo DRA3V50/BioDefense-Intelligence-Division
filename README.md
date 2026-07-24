@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>24<br><br>**Evidence Collected**<br>84,526<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,156 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>2<br><br>**Active Cases**<br>25<br><br>**Evidence Collected**<br>84,647<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,218 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-3610<br><br>**Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Research Network Persistence<br><br>**Severity**<br>MODERATE | **Platform**<br>Federal Investigation Network<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Federal Operations |
+| **Case ID**<br>BID-2026-8498<br><br>**Classification**<br>Cyber-Biothreat Intelligence Review<br><br>**Threat Family**<br>Unauthorized Genomic Data Modification<br><br>**Severity**<br>HIGH | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Cisco<br><br>**Device**<br>Evidence Repository<br><br>**Zone**<br>Secure Laboratory |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ELEVATED<br><br>**Confidence**<br>87%<br><br>**Evidence**<br>78<br><br>**Indicators**<br>33 |
+| **Priority**<br>HIGH<br><br>**Confidence**<br>95%<br><br>**Evidence**<br>121<br><br>**Indicators**<br>62 |
 
 ---
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Bravo**
-- Initial Access: **Supply Chain Compromise**
+- Lead Analyst: **Analyst Team Delta**
+- Initial Access: **Unknown**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,15 +57,15 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 24 |
+| Total Investigations | 25 |
 | Low Severity Cases | 6 |
 | Moderate Severity Cases | 10 |
-| High Severity Cases | 6 |
+| High Severity Cases | 7 |
 | Critical Severity Cases | 2 |
-| Average Confidence | 90.8% |
-| Total Evidence Collected | 84,526 |
-| Total Indicators | 59,156 |
-| Active Cases | 24 |
+| Average Confidence | 91.0% |
+| Total Evidence Collected | 84,647 |
+| Total Indicators | 59,218 |
+| Active Cases | 25 |
 | Confirmed Intrusions | 2 |
 
 ---
@@ -74,11 +74,11 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-8498 | Cyber-Biothreat Intelligence Review | HIGH |
 | BID-2026-3610 | Laboratory Security Breach | MODERATE |
 | BID-2026-4432 | Research Facility Intrusion | HIGH |
 | BID-2026-7645 | Counter-Bioterror Intelligence Case | MODERATE |
 | BID-2026-4404 | Research Facility Intrusion | LOW |
-| BID-2026-9421 | Evidence Reconstruction Investigation | LOW |
 
 
 ---
