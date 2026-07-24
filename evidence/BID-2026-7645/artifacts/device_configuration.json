@@ -1,0 +1,12 @@
+{
+    "case_id": "BID-2026-7645",
+    "artifact_type": "Device Configuration Snapshot",
+    "generated_at": "2026-07-24T01:46:32Z",
+    "platform": "Unknown Platform",
+    "vendor": "Fortinet",
+    "device": "Unknown Device",
+    "firmware_version": "1.1.7",
+    "zone": "Unknown Zone",
+    "security_state": "Under Investigation",
+    "configuration_integrity": "Pending Analyst Validation"
+}

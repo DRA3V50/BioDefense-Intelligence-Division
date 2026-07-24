@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4404 |
+| Case ID | BID-2026-7645 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Biological Data Exfiltration |
-| Severity | LOW |
-| Status | Containment |
+| Classification | Counter-Bioterror Intelligence Case |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | MODERATE |
+| Status | Field Coordination |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Genome Sequencing Server |
-| Vendor | Microsoft |
-| Network Zone | Containment Network |
+| Platform | Evidence Processing Network |
+| Device | Digital Evidence Appliance |
+| Vendor | Fortinet |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 40 |
-| Confidence | 87% |
-| Evidence | 16 |
-| Indicators | 15 |
-| Affected Assets | 5 |
+| Risk Score | 66 |
+| Confidence | 92% |
+| Evidence | 61 |
+| Indicators | 16 |
+| Affected Assets | 8 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.

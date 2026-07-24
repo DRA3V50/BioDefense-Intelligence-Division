@@ -1,0 +1,556 @@
+{
+    "case_id": "BID-2026-7645",
+    "generated_at": "2026-07-24T01:46:32Z",
+    "correlation_count": 61,
+    "correlations": [
+        {
+            "evidence_id": "BID-2026-7645-EV-0001",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-3276",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0002",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-9985",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0003",
+            "artifact_type": "Embedded Controller Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4753",
+            "finding": "Device Configuration Change",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0004",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2911",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0005",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1767",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0006",
+            "artifact_type": "Laboratory Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2313",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 96,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0007",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-9755",
+            "finding": "Device Configuration Change",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0008",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-8342",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0009",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-3066",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0010",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-5371",
+            "finding": "Device Configuration Change",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0011",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1387",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0012",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5844",
+            "finding": "Laboratory Access Anomaly",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0013",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-3182",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 83,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0014",
+            "artifact_type": "Embedded Controller Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8471",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0015",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9430",
+            "finding": "Laboratory Access Anomaly",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0016",
+            "artifact_type": "Endpoint Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7560",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0017",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2314",
+            "finding": "Laboratory Access Anomaly",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0018",
+            "artifact_type": "Laboratory Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6471",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 91,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0019",
+            "artifact_type": "Laboratory Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7461",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0020",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7653",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0021",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2473",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0022",
+            "artifact_type": "Endpoint Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3974",
+            "finding": "Device Configuration Change",
+            "confidence": 89,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0023",
+            "artifact_type": "Embedded Controller Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5222",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0024",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-1254",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0025",
+            "artifact_type": "Threat Indicator Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6694",
+            "finding": "Device Configuration Change",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0026",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-4300",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 93,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0027",
+            "artifact_type": "Endpoint Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-9631",
+            "finding": "Device Configuration Change",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0028",
+            "artifact_type": "Threat Indicator Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4712",
+            "finding": "Device Configuration Change",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0029",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2818",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0030",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-9474",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 82,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0031",
+            "artifact_type": "Endpoint Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3867",
+            "finding": "Laboratory Access Anomaly",
+            "confidence": 86,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0032",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5160",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0033",
+            "artifact_type": "Containment Validation Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4129",
+            "finding": "Device Configuration Change",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0034",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7747",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0035",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-5795",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0036",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3240",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0037",
+            "artifact_type": "Endpoint Event Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4206",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0038",
+            "artifact_type": "Threat Indicator Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7090",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0039",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4781",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 88,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0040",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-7648",
+            "finding": "Device Configuration Change",
+            "confidence": 92,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0041",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6153",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0042",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-4925",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0043",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-8158",
+            "finding": "Device Configuration Change",
+            "confidence": 94,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0044",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-3436",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0045",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2675",
+            "finding": "Device Configuration Change",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0046",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5328",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 99,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0047",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-5865",
+            "finding": "Device Configuration Change",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0048",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-5133",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 90,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0049",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-2672",
+            "finding": "Device Configuration Change",
+            "confidence": 81,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0050",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-3088",
+            "finding": "Laboratory Access Anomaly",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0051",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-9551",
+            "finding": "Device Configuration Change",
+            "confidence": 87,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0052",
+            "artifact_type": "Access Control Log",
+            "artifact_path": "artifacts/access_control_log.json",
+            "related_indicator": "IOC-2026-9519",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0053",
+            "artifact_type": "Laboratory Audit Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2054",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0054",
+            "artifact_type": "Firewall Log",
+            "artifact_path": "artifacts/firewall_log.json",
+            "related_indicator": "IOC-2026-7958",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0055",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4669",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 95,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0056",
+            "artifact_type": "Network Connection Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4895",
+            "finding": "Laboratory Access Anomaly",
+            "confidence": 80,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0057",
+            "artifact_type": "Threat Indicator Record",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-6238",
+            "finding": "Privilege Escalation Indicator",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0058",
+            "artifact_type": "Firmware Metadata",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2384",
+            "finding": "Device Configuration Change",
+            "confidence": 85,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0059",
+            "artifact_type": "Analyst Observation",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-4158",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 98,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0060",
+            "artifact_type": "Biomedical Device Configuration",
+            "artifact_path": "artifacts/device_configuration.json",
+            "related_indicator": "IOC-2026-2015",
+            "finding": "Unauthorized Authentication Activity",
+            "confidence": 97,
+            "analysis_status": "Correlated"
+        },
+        {
+            "evidence_id": "BID-2026-7645-EV-0061",
+            "artifact_type": "Authentication Log",
+            "artifact_path": "artifacts/analyst_notes.md",
+            "related_indicator": "IOC-2026-2405",
+            "finding": "Suspicious Network Traffic",
+            "confidence": 84,
+            "analysis_status": "Correlated"
+        }
+    ]
+}

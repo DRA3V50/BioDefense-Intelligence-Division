@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4404
+BID-2026-7645
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Counter-Bioterror Intelligence Case
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -28,23 +28,23 @@ Research Facility Intrusion
 ## Investigation Statistics
 
 Evidence Collected:
-16
+61
 
 Indicators Reviewed:
-15
+16
 
 Risk Score:
-40
+66
 
 Confidence:
-87%
+92%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+BioDefense Task Force
 
 Current Status:
 
-Containment
+Field Coordination

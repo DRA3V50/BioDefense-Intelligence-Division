@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-4404
+BID-2026-7645
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Counter-Bioterror Intelligence Case
 
 Threat Family:
-Biological Data Exfiltration
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
-Laboratory Control Network
+Evidence Processing Network
 
 Device:
-Genome Sequencing Server
+Digital Evidence Appliance
 
 Vendor:
-Microsoft
+Fortinet
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Evidence Acquisition
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-87%
+92%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+No destructive activity observed following initial containment.
