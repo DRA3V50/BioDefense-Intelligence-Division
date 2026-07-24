@@ -60,6 +60,9 @@ jobs:
       - name: Generate Digital Evidence Repository
         run: python scripts/generate_evidence_repository.py
 
+      - name: Correlate Evidence and Indicators
+        run: python scripts/correlate_evidence.py
+
       - name: Archive Investigation
         run: python scripts/archive_case.py
 
