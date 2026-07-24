@@ -59,8 +59,8 @@
         {
             "name": "Research Network Persistence",
             "first_seen": "2026-07-22",
-            "last_seen": "2026-07-22",
-            "cases": 1,
+            "last_seen": "2026-07-24",
+            "cases": 2,
             "severity": "MODERATE",
             "confidence": 87
         },

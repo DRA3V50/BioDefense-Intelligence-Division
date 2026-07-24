@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-4432
+BID-2026-3610
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Laboratory Security Breach
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -30,35 +30,35 @@ Unauthorized access to protected biomedical research resources was confirmed dur
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-13
+17
 
 Evidence Collected:
-123
+78
 
 Indicators Identified:
-37
+33
 
 Analyst Confidence:
-96%
+87%
 
 Containment Phase:
 Operational Recovery
@@ -67,7 +67,7 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo

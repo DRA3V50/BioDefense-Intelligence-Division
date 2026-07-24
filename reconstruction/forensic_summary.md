@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4432 |
+| Case ID | BID-2026-3610 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Insider Laboratory Compromise |
-| Severity | HIGH |
+| Classification | Laboratory Security Breach |
+| Threat Family | Research Network Persistence |
+| Severity | MODERATE |
 | Status | Evidence Collection |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Laboratory Controller |
-| Vendor | Cisco |
-| Security Zone | Evidence Network |
+| Platform | Federal Investigation Network |
+| Device | Access Control System |
+| Vendor | Dell |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 73 |
-| Confidence | 96% |
-| Evidence Collected | 123 |
-| Indicators Identified | 37 |
-| Affected Assets | 13 |
+| Risk Score | 67 |
+| Confidence | 87% |
+| Evidence Collected | 78 |
+| Indicators Identified | 33 |
+| Affected Assets | 17 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

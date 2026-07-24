@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Insider Laboratory Compromise
+Research Network Persistence
 
 ---
 
 ## Primary Alias
-Silent Culture
+Cerberus Group
 
 ---
 
 ## Attribution
-Unknown
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Research Data Theft
 
 ---
 
@@ -26,24 +26,24 @@ High
 ---
 
 ## Confidence
-96%
+87%
 
 ---
 
 ## Observed Techniques
 - Supply Chain Compromise
-- Laboratory Network Reconnaissance
-- Laboratory Data Manipulation
 - Privilege Escalation
+- Lateral Movement
+- Laboratory Data Manipulation
 - Biosecurity System Tampering
-- Research Data Exfiltration
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Bravo
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Research Facility Intrusion
+Laboratory Security Breach
 
 ---
 

@@ -1,0 +1,22 @@
+{
+    "case_id": "BID-2026-3610",
+    "artifact_type": "Access Control Log",
+    "generated_at": "2026-07-24T15:23:22Z",
+    "security_zone": "Unknown Zone",
+    "events": [
+        {
+            "event_id": "AC-001",
+            "result": "Denied",
+            "credential": "Simulated Credential 104",
+            "location": "Unknown Zone",
+            "description": "Access attempt occurred outside the approved schedule."
+        },
+        {
+            "event_id": "AC-002",
+            "result": "Granted",
+            "credential": "Authorized Laboratory Personnel",
+            "location": "Unknown Zone",
+            "description": "Authorized access event retained for timeline comparison."
+        }
+    ]
+}

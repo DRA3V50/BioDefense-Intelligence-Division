@@ -4,18 +4,18 @@
 ## 2026-07-24
 
 ### Case Opened
-Case ID: BID-2026-4432
+Case ID: BID-2026-3610
 
 ### Classification
-Research Facility Intrusion
+Laboratory Security Breach
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
 Evidence Collection
 
 ### Severity
-HIGH
+MODERATE
 
 ---

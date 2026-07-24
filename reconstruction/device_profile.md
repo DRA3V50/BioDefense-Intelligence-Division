@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-4432
+BID-2026-3610
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Laboratory Security Breach
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
-Laboratory Control Network
+Federal Investigation Network
 
 Device:
-Laboratory Controller
+Access Control System
 
 Vendor:
-Cisco
+Dell
 
 Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Evidence Network
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-96%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.
