@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7222
+BID-2026-5964
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Laboratory Security Breach
 
 Threat Family:
-Research Network Persistence
+Laboratory Credential Abuse
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Federal Investigation Network
 
 Device:
-Access Control System
+Digital Evidence Appliance
 
 Vendor:
-VMware
+Microsoft
 
 Security Zone:
 Research Operations
@@ -41,22 +41,22 @@ Research Operations
 ## Investigation Metrics
 
 Investigations Recorded:
-26
+27
 
 Evidence Collected:
-197
+46
 
 Indicators Identified:
-121
+32
 
 Affected Assets:
-24
+18
 
 Confidence:
-96%
+83%
 
 Risk Score:
-95
+51
 
 ---
 

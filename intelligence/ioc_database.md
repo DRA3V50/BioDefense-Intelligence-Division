@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7222
+BID-2026-5964
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Laboratory Security Breach
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
 | Device | Protected workstation entered evidence preservation mode |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Evidence | Acquired forensic image verified using SHA-256 |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -28,23 +28,23 @@ Cyber-Biothreat Intelligence Review
 ## Investigation Statistics
 
 Evidence Collected:
-197
+46
 
 Indicators Reviewed:
-121
+32
 
 Risk Score:
-95
+51
 
 Confidence:
-96%
+83%
 
 ---
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+Analyst Team Delta
 
 Current Status:
 
-Monitoring
+Evidence Collection

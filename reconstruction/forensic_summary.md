@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7222 |
+| Case ID | BID-2026-5964 |
 | Operation | Operation Black Eclipse |
-| Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Research Network Persistence |
-| Severity | CRITICAL |
-| Status | Monitoring |
+| Classification | Laboratory Security Breach |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | MODERATE |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Access Control System |
-| Vendor | VMware |
+| Platform | Federal Investigation Network |
+| Device | Digital Evidence Appliance |
+| Vendor | Microsoft |
 | Security Zone | Research Operations |
 
 ---
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 95 |
-| Confidence | 96% |
-| Evidence Collected | 197 |
-| Indicators Identified | 121 |
-| Affected Assets | 24 |
+| Risk Score | 51 |
+| Confidence | 83% |
+| Evidence Collected | 46 |
+| Indicators Identified | 32 |
+| Affected Assets | 18 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**Analyst Team Delta**
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Evidence Collection**
 
 Priority:
 
-**CRITICAL**
+**ELEVATED**
 
 Recommended Action:
 

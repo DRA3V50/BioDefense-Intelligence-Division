@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-24
+## 2026-07-25
 
 ### Case Opened
-Case ID: BID-2026-7222
+Case ID: BID-2026-5964
 
 ### Classification
-Cyber-Biothreat Intelligence Review
+Laboratory Security Breach
 
 ### Initial Assessment
 Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

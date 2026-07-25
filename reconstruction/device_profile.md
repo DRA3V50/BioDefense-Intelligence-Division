@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-7222
+BID-2026-5964
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Laboratory Security Breach
 
 Threat Family:
-Research Network Persistence
+Laboratory Credential Abuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Federal Biosecurity Laboratory
 
 Platform:
-Clinical Research Environment
+Federal Investigation Network
 
 Device:
-Access Control System
+Digital Evidence Appliance
 
 Vendor:
-VMware
+Microsoft
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Research Operations
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-CRITICAL
+ELEVATED
 
 Confidence:
-96%
+83%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.

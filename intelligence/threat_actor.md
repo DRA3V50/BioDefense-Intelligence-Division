@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Network Persistence
+Laboratory Credential Abuse
 
 ---
 
 ## Primary Alias
-Vector-9
+Ghost Genome
 
 ---
 
 ## Attribution
-Unattributed
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-96%
+83%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Biosecurity System Tampering
+- Misconfigured External Service
 - Privilege Escalation
-- Concealed Internal Movement
-- Covert Remote Access Tooling
-- Laboratory Data Manipulation
+- Research Data Exfiltration
+- Encrypted Data Staging
+- Laboratory Network Reconnaissance
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+Analyst Team Delta
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Laboratory Security Breach
 
 ---
 
 ## Last Updated
-2026-07-24
+2026-07-25
