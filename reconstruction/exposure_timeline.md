@@ -4,18 +4,18 @@
 ## 2026-07-25
 
 ### Case Opened
-Case ID: BID-2026-5964
+Case ID: BID-2026-6782
 
 ### Classification
 Laboratory Security Breach
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Evidence Collection
+Monitoring
 
 ### Severity
-MODERATE
+HIGH
 
 ---

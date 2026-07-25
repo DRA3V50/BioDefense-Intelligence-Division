@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5964 |
+| Case ID | BID-2026-6782 |
 | Operation | Operation Black Eclipse |
 | Classification | Laboratory Security Breach |
 | Threat Family | Laboratory Credential Abuse |
-| Severity | MODERATE |
-| Status | Evidence Collection |
+| Severity | HIGH |
+| Status | Monitoring |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Federal Investigation Network |
-| Device | Digital Evidence Appliance |
-| Vendor | Microsoft |
-| Security Zone | Research Operations |
+| Platform | Biomedical Analysis Cluster |
+| Device | Laboratory Controller |
+| Vendor | Dell |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 51 |
-| Confidence | 83% |
-| Evidence Collected | 46 |
-| Indicators Identified | 32 |
+| Risk Score | 73 |
+| Confidence | 94% |
+| Evidence Collected | 186 |
+| Indicators Identified | 63 |
 | Affected Assets | 18 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Monitoring**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

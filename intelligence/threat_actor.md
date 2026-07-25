@@ -6,17 +6,17 @@ Laboratory Credential Abuse
 ---
 
 ## Primary Alias
-Ghost Genome
+Umbra Bio
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Laboratory System Sabotage
 
 ---
 
@@ -26,24 +26,24 @@ Advanced
 ---
 
 ## Confidence
-83%
+94%
 
 ---
 
 ## Observed Techniques
-- Misconfigured External Service
-- Privilege Escalation
-- Research Data Exfiltration
-- Encrypted Data Staging
+- Unauthorized Remote Access
+- Insider Access Abuse
+- Lateral Movement
+- Supply Chain Compromise
 - Laboratory Network Reconnaissance
-- Command and Control
+- Credential Abuse
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Bravo
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 

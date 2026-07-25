@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>3<br><br>**Active Cases**<br>27<br><br>**Evidence Collected**<br>84,890<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,371 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>3<br><br>**Active Cases**<br>28<br><br>**Evidence Collected**<br>85,076<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,434 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-5964<br><br>**Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>MODERATE | **Platform**<br>Federal Investigation Network<br><br>**Vendor**<br>Microsoft<br><br>**Device**<br>Digital Evidence Appliance<br><br>**Zone**<br>Research Operations |
+| **Case ID**<br>BID-2026-6782<br><br>**Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>HIGH | **Platform**<br>Biomedical Analysis Cluster<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Laboratory Controller<br><br>**Zone**<br>Containment Network |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ELEVATED<br><br>**Confidence**<br>83%<br><br>**Evidence**<br>46<br><br>**Indicators**<br>32 |
+| **Priority**<br>HIGH<br><br>**Confidence**<br>94%<br><br>**Evidence**<br>186<br><br>**Indicators**<br>63 |
 
 ---
 
 # Analyst Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Delta**
-- Initial Access: **Misconfigured External Service**
+- Lead Analyst: **Analyst Team Bravo**
+- Initial Access: **Unauthorized Remote Access**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,15 +57,15 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 27 |
+| Total Investigations | 28 |
 | Low Severity Cases | 6 |
 | Moderate Severity Cases | 11 |
-| High Severity Cases | 7 |
+| High Severity Cases | 8 |
 | Critical Severity Cases | 3 |
-| Average Confidence | 90.9% |
-| Total Evidence Collected | 84,890 |
-| Total Indicators | 59,371 |
-| Active Cases | 27 |
+| Average Confidence | 91.0% |
+| Total Evidence Collected | 85,076 |
+| Total Indicators | 59,434 |
+| Active Cases | 28 |
 | Confirmed Intrusions | 3 |
 
 ---
@@ -74,11 +74,11 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-6782 | Laboratory Security Breach | HIGH |
 | BID-2026-5964 | Laboratory Security Breach | MODERATE |
 | BID-2026-7222 | Cyber-Biothreat Intelligence Review | CRITICAL |
 | BID-2026-8498 | Cyber-Biothreat Intelligence Review | HIGH |
 | BID-2026-3610 | Laboratory Security Breach | MODERATE |
-| BID-2026-4432 | Research Facility Intrusion | HIGH |
 
 
 ---

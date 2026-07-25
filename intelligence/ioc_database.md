@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5964
+BID-2026-6782
 
 Operation:
 Operation Black Eclipse
@@ -15,12 +15,12 @@ Laboratory Security Breach
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Identity | Credential reuse detected across isolated research segments |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Infrastructure | Firewall policy deviation identified |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -28,23 +28,23 @@ Laboratory Security Breach
 ## Investigation Statistics
 
 Evidence Collected:
-46
+186
 
 Indicators Reviewed:
-32
+63
 
 Risk Score:
-51
+73
 
 Confidence:
-83%
+94%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo
 
 Current Status:
 
-Evidence Collection
+Monitoring

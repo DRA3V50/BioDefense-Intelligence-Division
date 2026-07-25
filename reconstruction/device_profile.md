@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5964
+BID-2026-6782
 
 Operation:
 Operation Black Eclipse
@@ -19,22 +19,22 @@ Laboratory Credential Abuse
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Ashcroft Biomedical Center
 
 Platform:
-Federal Investigation Network
+Biomedical Analysis Cluster
 
 Device:
-Digital Evidence Appliance
+Laboratory Controller
 
 Vendor:
-Microsoft
+Dell
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
-Research Operations
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-83%
+94%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.

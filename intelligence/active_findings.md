@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5964
+BID-2026-6782
 
 Operation:
 Operation Black Eclipse
@@ -15,10 +15,10 @@ Threat Family:
 Laboratory Credential Abuse
 
 Severity:
-MODERATE
+HIGH
 
 Priority:
-ELEVATED
+HIGH
 
 ---
 
@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Additional forensic examination is required to determine the full operational scope.
 
 ---
 
@@ -52,13 +52,13 @@ Affected Assets:
 18
 
 Evidence Collected:
-46
+186
 
 Indicators Identified:
-32
+63
 
 Analyst Confidence:
-83%
+94%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Monitoring
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo

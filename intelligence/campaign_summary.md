@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5964
+BID-2026-6782
 
 Operation:
 Operation Black Eclipse
@@ -18,45 +18,45 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Biomedical Analysis Cluster
 
 Device:
-Digital Evidence Appliance
+Laboratory Controller
 
 Vendor:
-Microsoft
+Dell
 
 Security Zone:
-Research Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-27
+28
 
 Evidence Collected:
-46
+186
 
 Indicators Identified:
-32
+63
 
 Affected Assets:
 18
 
 Confidence:
-83%
+94%
 
 Risk Score:
-51
+73
 
 ---
 
