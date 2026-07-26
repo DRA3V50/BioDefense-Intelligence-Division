@@ -138,6 +138,9 @@ jobs:
       - name: Generate Investigation Dashboard
         run: python scripts/generate_case_dashboard.py
 
+      - name: Generate Command Brief
+        run: python scripts/generate_command_brief.py
+
       - name: Update README
         run: python scripts/update_readme.py
 
