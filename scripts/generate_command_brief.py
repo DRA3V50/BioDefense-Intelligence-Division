@@ -103,6 +103,25 @@ Total Indicators:
 
 ---
 
+## Operational Highlights
+
+- {case.get("evidence_count", 0)} evidence items are associated with the active investigation.
+- {case.get("ioc_count", 0)} indicators are currently linked to the case.
+- Containment remains at **{operation.get("containment_level", "Unknown")}**.
+- Analyst confidence is **{case.get("confidence", "Unknown")}%**.
+- Current investigation priority is **{case.get("priority", "Unknown")}**.
+
+---
+
+## Immediate Priorities
+
+1. {case.get("recommended_action", "Continue investigation and review available evidence.")}
+2. Continue IOC correlation across affected systems.
+3. Verify evidence integrity and chain-of-custody records.
+4. Prepare the final operational assessment.
+
+---
+
 End of Command Brief
 """
 
