@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8128
+BID-2026-1198
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Biomedical Network Exposure
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Identity | Credential reuse detected across isolated research segments |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -28,22 +28,22 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-95
+28
 
 Indicators Reviewed:
-13
+5
 
 Risk Score:
-57
+42
 
 Confidence:
-91%
+80%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Delta
 
 Current Status:
 

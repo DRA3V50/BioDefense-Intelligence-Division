@@ -3,13 +3,13 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8128
+BID-2026-1198
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Biomedical Network Exposure
 
 Threat Family:
 Research Network Persistence
@@ -31,32 +31,32 @@ Device:
 Biomedical Workstation
 
 Vendor:
-Lenovo
+VMware
 
 Security Zone:
-Biosecurity Segment
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-35
+36
 
 Evidence Collected:
-95
+28
 
 Indicators Identified:
-13
+5
 
 Affected Assets:
-15
+8
 
 Confidence:
-91%
+80%
 
 Risk Score:
-57
+42
 
 ---
 

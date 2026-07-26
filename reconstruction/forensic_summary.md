@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8128 |
+| Case ID | BID-2026-1198 |
 | Operation | Operation Black Eclipse |
-| Classification | Medical Device Security Assessment |
+| Classification | Biomedical Network Exposure |
 | Threat Family | Research Network Persistence |
-| Severity | MODERATE |
+| Severity | LOW |
 | Status | Open |
 
 ---
@@ -19,8 +19,8 @@
 |----------|-------|
 | Platform | Laboratory Control Network |
 | Device | Biomedical Workstation |
-| Vendor | Lenovo |
-| Security Zone | Biosecurity Segment |
+| Vendor | VMware |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 57 |
-| Confidence | 91% |
-| Evidence Collected | 95 |
-| Indicators Identified | 13 |
-| Affected Assets | 15 |
+| Risk Score | 42 |
+| Confidence | 80% |
+| Evidence Collected | 28 |
+| Indicators Identified | 5 |
+| Affected Assets | 8 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

@@ -3,13 +3,13 @@
 ## Investigation
 
 Case ID:
-BID-2026-8128
+BID-2026-1198
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Biomedical Network Exposure
 
 Threat Family:
 Research Network Persistence
@@ -19,7 +19,7 @@ Research Network Persistence
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Ashcroft Biomedical Center
 
 Platform:
 Laboratory Control Network
@@ -28,13 +28,13 @@ Device:
 Biomedical Workstation
 
 Vendor:
-Lenovo
+VMware
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Biosecurity Segment
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-91%
+80%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

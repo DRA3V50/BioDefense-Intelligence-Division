@@ -4,18 +4,18 @@
 ## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-8128
+Case ID: BID-2026-1198
 
 ### Classification
-Medical Device Security Assessment
+Biomedical Network Exposure
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
 Open
 
 ### Severity
-MODERATE
+LOW
 
 ---

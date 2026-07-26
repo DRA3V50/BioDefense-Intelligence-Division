@@ -6,42 +6,42 @@ Research Network Persistence
 ---
 
 ## Primary Alias
-Ghost Genome
+Silent Culture
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unattributed
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-High
+Nation-State Level
 
 ---
 
 ## Confidence
-91%
+80%
 
 ---
 
 ## Observed Techniques
-- Unknown
-- Privilege Escalation
-- Laboratory Network Reconnaissance
-- Credential Abuse
+- Misconfigured External Service
+- Laboratory Control System Manipulation
 - Encrypted Data Staging
-- Research Data Exfiltration
+- Long-Term Network Foothold
+- Concealed Internal Movement
+- Credential Abuse
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Delta
 
 **Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Biomedical Network Exposure
 
 ---
 

@@ -2,11 +2,11 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8128
+Case ID: BID-2026-1198
 
 Operation: Operation Black Eclipse
 
-Classification: Medical Device Security Assessment
+Classification: Biomedical Network Exposure
 
 Threat Family: Research Network Persistence
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Evidence correlation remains in progress across collected artifacts.
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+ROUTINE
 
 Risk Score:
-57
+42
 
 Confidence:
-91%
+80%
 
 Affected Assets:
-15
+8
 
 Evidence Collected:
-95
+28
 
 Indicators Recorded:
-13
+5
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+Analyst Team Delta
 
 Date:
 
