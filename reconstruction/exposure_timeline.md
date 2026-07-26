@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-25
+## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-6782
+Case ID: BID-2026-3972
 
 ### Classification
-Laboratory Security Breach
+Medical Device Security Assessment
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Monitoring
+Intelligence Analysis
 
 ### Severity
-HIGH
+CRITICAL
 
 ---

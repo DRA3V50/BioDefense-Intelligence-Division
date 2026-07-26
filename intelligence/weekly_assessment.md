@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6782
+Case ID: BID-2026-3972
 
 Operation: Operation Black Eclipse
 
-Classification: Laboratory Security Breach
+Classification: Medical Device Security Assessment
 
-Threat Family: Laboratory Credential Abuse
+Threat Family: Biological Data Exfiltration
 
-Current Status: Monitoring
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,28 +18,28 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Current findings support maintaining the existing investigation priority.
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+CRITICAL
 
 Risk Score:
-73
+97
 
 Confidence:
-94%
+99%
 
 Affected Assets:
-18
+49
 
 Evidence Collected:
-186
+356
 
 Indicators Recorded:
 63
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+Analyst Team Alpha
 
 Date:
 
-2026-07-25
+2026-07-26

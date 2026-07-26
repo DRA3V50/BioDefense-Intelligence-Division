@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6782
+BID-2026-3972
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Medical Device Security Assessment
 
 Threat Family:
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
-Biomedical Analysis Cluster
+Laboratory Control Network
 
 Device:
-Laboratory Controller
+Access Control System
 
 Vendor:
-Dell
+Fortinet
 
 Operating System:
-VMware ESXi 9
+Hardened Research Appliance OS
 
 Security Zone:
-Containment Network
+Research Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-94%
+99%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.

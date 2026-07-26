@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6782
+BID-2026-3972
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Medical Device Security Assessment
 
 Threat Family:
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biomedical Analysis Cluster
+Laboratory Control Network
 
 Device:
-Laboratory Controller
+Access Control System
 
 Vendor:
-Dell
+Fortinet
 
 Security Zone:
-Containment Network
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-28
+29
 
 Evidence Collected:
-186
+356
 
 Indicators Identified:
 63
 
 Affected Assets:
-18
+49
 
 Confidence:
-94%
+99%
 
 Risk Score:
-73
+97
 
 ---
 

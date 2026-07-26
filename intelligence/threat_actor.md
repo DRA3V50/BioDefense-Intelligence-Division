@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 ---
 
 ## Primary Alias
-Umbra Bio
+Black Helix
 
 ---
 
@@ -16,34 +16,34 @@ International Infrastructure
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-94%
+99%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Remote Access
-- Insider Access Abuse
-- Lateral Movement
-- Supply Chain Compromise
+- Phishing
+- Laboratory Control System Manipulation
 - Laboratory Network Reconnaissance
+- Research Data Exfiltration
+- Concealed Internal Movement
 - Credential Abuse
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Alpha
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Laboratory Security Breach
+Medical Device Security Assessment
 
 ---
 
 ## Last Updated
-2026-07-25
+2026-07-26

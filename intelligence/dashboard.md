@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6782 |
+| Case ID | BID-2026-3972 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
-| Threat Family | Laboratory Credential Abuse |
-| Severity | HIGH |
-| Status | Monitoring |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Biological Data Exfiltration |
+| Severity | CRITICAL |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Laboratory Controller |
-| Vendor | Dell |
-| Network Zone | Containment Network |
+| Platform | Laboratory Control Network |
+| Device | Access Control System |
+| Vendor | Fortinet |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 73 |
-| Confidence | 94% |
-| Evidence | 186 |
+| Risk Score | 97 |
+| Confidence | 99% |
+| Evidence | 356 |
 | Indicators | 63 |
-| Affected Assets | 18 |
+| Affected Assets | 49 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.

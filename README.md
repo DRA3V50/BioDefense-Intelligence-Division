@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>3<br><br>**Active Cases**<br>28<br><br>**Evidence Collected**<br>85,076<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,434 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>CRITICAL | **Confirmed Intrusions**<br>4<br><br>**Active Cases**<br>29<br><br>**Evidence Collected**<br>85,432<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,497 |
 
 ---
 
@@ -29,34 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-6782<br><br>**Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>HIGH | **Platform**<br>Biomedical Analysis Cluster<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Laboratory Controller<br><br>**Zone**<br>Containment Network |
-
----
-
-<!-- EVIDENCE_DASHBOARD_START -->
-
-This section is automatically updated.
-
-<!-- EVIDENCE_DASHBOARD_END -->
+| **Case ID**<br>BID-2026-3972<br><br>**Classification**<br>Medical Device Security Assessment<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>CRITICAL | **Platform**<br>Laboratory Control Network<br><br>**Vendor**<br>Fortinet<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Research Operations |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>94%<br><br>**Evidence**<br>186<br><br>**Indicators**<br>63 |
+| **Priority**<br>CRITICAL<br><br>**Confidence**<br>99%<br><br>**Evidence**<br>356<br><br>**Indicators**<br>63 |
 
 ---
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Bravo**
-- Initial Access: **Unauthorized Remote Access**
+- Lead Analyst: **Analyst Team Alpha**
+- Initial Access: **Phishing**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -65,16 +57,16 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 28 |
+| Total Investigations | 29 |
 | Low Severity Cases | 6 |
 | Moderate Severity Cases | 11 |
 | High Severity Cases | 8 |
-| Critical Severity Cases | 3 |
-| Average Confidence | 91.0% |
-| Total Evidence Collected | 85,076 |
-| Total Indicators | 59,434 |
-| Active Cases | 28 |
-| Confirmed Intrusions | 3 |
+| Critical Severity Cases | 4 |
+| Average Confidence | 91.3% |
+| Total Evidence Collected | 85,432 |
+| Total Indicators | 59,497 |
+| Active Cases | 29 |
+| Confirmed Intrusions | 4 |
 
 ---
 
@@ -82,11 +74,11 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-3972 | Medical Device Security Assessment | CRITICAL |
 | BID-2026-6782 | Laboratory Security Breach | HIGH |
 | BID-2026-5964 | Laboratory Security Breach | MODERATE |
 | BID-2026-7222 | Cyber-Biothreat Intelligence Review | CRITICAL |
 | BID-2026-8498 | Cyber-Biothreat Intelligence Review | HIGH |
-| BID-2026-3610 | Laboratory Security Breach | MODERATE |
 
 
 ---
