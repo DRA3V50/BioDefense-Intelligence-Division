@@ -16,8 +16,7 @@ from pathlib import Path
 
 
 CURRENT_CASE = Path("data/current_case.json")
-EVIDENCE_MANIFEST = Path("evidence/evidence_manifest.json")
-EVIDENCE_CORRELATIONS = Path("evidence/evidence_correlations.json")
+EVIDENCE_ROOT = Path("evidence")
 OUTPUT_FILE = Path("evidence/evidence_chain.md")
 
 
@@ -34,6 +33,24 @@ def load_json(path):
     except (json.JSONDecodeError, OSError) as error:
         print(f"Warning: Could not read {path}: {error}")
         return {}
+
+
+def get_case_evidence_paths(case):
+    """Return evidence file paths for the active case directory."""
+
+    case_id = case.get("case_id")
+
+    if not case_id:
+        raise ValueError(
+            "The active case does not contain a case_id."
+        )
+
+    case_directory = EVIDENCE_ROOT / case_id
+
+    manifest_path = case_directory / "evidence_manifest.json"
+    correlations_path = case_directory / "evidence_correlations.json"
+
+    return manifest_path, correlations_path
 
 
 def normalize_list(data, possible_keys):
@@ -166,6 +183,7 @@ def build_finding_groups(correlation_records):
         evidence_value = first_value(
             record,
             [
+                "evidence_id",
                 "evidence_ids",
                 "supporting_evidence",
                 "related_evidence",
@@ -248,16 +266,16 @@ def describe_evidence(evidence_id, evidence_lookup):
         default="Unclassified evidence",
     )
 
-    description = first_value(
+    source_system = first_value(
         record,
-        [
-            "description",
-            "summary",
-            "name",
-            "title",
-            "filename",
-        ],
-        default="No description available",
+        ["source_system", "source", "hostname"],
+        default="Unknown source",
+    )
+
+    vendor = first_value(
+        record,
+        ["vendor", "product_vendor"],
+        default="Unknown vendor",
     )
 
     integrity = first_value(
@@ -270,10 +288,21 @@ def describe_evidence(evidence_id, evidence_lookup):
         default="Not recorded",
     )
 
+    review_status = first_value(
+        record,
+        [
+            "review_status",
+            "analysis_status",
+        ],
+        default="Not recorded",
+    )
+
     return (
-        f"- **{evidence_id}** — {evidence_type}: "
-        f"{description}  \n"
-        f"  Integrity: **{integrity}**"
+        f"- **{evidence_id}** — {evidence_type}  \n"
+        f"  Source: **{source_system}** | "
+        f"Vendor: **{vendor}** | "
+        f"Integrity: **{integrity}** | "
+        f"Review: **{review_status}**"
     )
 
 
@@ -448,8 +477,13 @@ End of Evidence Chain Analysis
 
 def main():
     case_data = load_json(CURRENT_CASE)
-    manifest_data = load_json(EVIDENCE_MANIFEST)
-    correlation_data = load_json(EVIDENCE_CORRELATIONS)
+
+    manifest_path, correlations_path = get_case_evidence_paths(
+        case_data
+    )
+
+    manifest_data = load_json(manifest_path)
+    correlation_data = load_json(correlations_path)
 
     manifest_records = normalize_list(
         manifest_data,
