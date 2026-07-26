@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-5440
+BID-2026-1824
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
-Laboratory Control Network
+Genome Sequencing Environment
 
 Device:
-Access Control System
+Biomedical Workstation
 
 Vendor:
-Red Hat
+VMware
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-87%
+83%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

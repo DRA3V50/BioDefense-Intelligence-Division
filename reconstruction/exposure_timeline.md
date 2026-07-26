@@ -4,18 +4,18 @@
 ## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-5440
+Case ID: BID-2026-1824
 
 ### Classification
-Counter-Bioterror Intelligence Case
+Biosecurity Infrastructure Investigation
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ### Current Status
-Evidence Collection
+Intelligence Analysis
 
 ### Severity
-HIGH
+MODERATE
 
 ---

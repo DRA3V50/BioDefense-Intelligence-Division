@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>32<br><br>**Evidence Collected**<br>86,087<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,708 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>33<br><br>**Evidence Collected**<br>86,148<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,743 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-5440<br><br>**Classification**<br>Counter-Bioterror Intelligence Case<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>HIGH | **Platform**<br>Laboratory Control Network<br><br>**Vendor**<br>Red Hat<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Containment Network |
+| **Case ID**<br>BID-2026-1824<br><br>**Classification**<br>Biosecurity Infrastructure Investigation<br><br>**Threat Family**<br>Biological Data Exfiltration<br><br>**Severity**<br>MODERATE | **Platform**<br>Genome Sequencing Environment<br><br>**Vendor**<br>VMware<br><br>**Device**<br>Biomedical Workstation<br><br>**Zone**<br>Federal Operations |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>87%<br><br>**Evidence**<br>162<br><br>**Indicators**<br>77 |
+| **Priority**<br>ELEVATED<br><br>**Confidence**<br>83%<br><br>**Evidence**<br>61<br><br>**Indicators**<br>35 |
 
 ---
 
 # Analyst Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Bravo**
-- Initial Access: **Phishing**
+- Lead Analyst: **National Response Cell**
+- Initial Access: **Misconfigured External Service**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,56 +57,56 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 ## Latest Digital Evidence Summary
 
-**Active Case:** `BID-2026-5440`
+**Active Case:** `BID-2026-1824`
 
 | Evidence Metric | Value |
 |---|---:|
-| Evidence Records | 162 |
-| Correlated Records | 162 |
-| Integrity Verified | 162 |
-| Pending Analyst Review | 162 |
+| Evidence Records | 61 |
+| Correlated Records | 61 |
+| Integrity Verified | 61 |
+| Pending Analyst Review | 61 |
 
 ### Evidence Breakdown
 
 | Evidence Type | Records |
 |---|---:|
-| Firewall Log | 21 |
-| Biosecurity Audit Record | 20 |
-| Containment Validation Record | 19 |
-| Analyst Observation | 18 |
-| Threat Intelligence Record | 17 |
-| Laboratory System Configuration | 14 |
-| Research Workstation Event Log | 12 |
-| Authentication Log | 11 |
-| Network Connection Record | 11 |
-| Research Data Integrity Record | 8 |
-| Access Control Log | 6 |
+| Analyst Observation | 8 |
+| Firewall Log | 7 |
+| Research Workstation Event Log | 7 |
+| Authentication Log | 6 |
+| Biosecurity Audit Record | 6 |
 | Laboratory Information System Audit Log | 5 |
+| Research Data Integrity Record | 5 |
+| Access Control Log | 4 |
+| Threat Intelligence Record | 4 |
+| Containment Validation Record | 3 |
+| Network Connection Record | 3 |
+| Laboratory System Configuration | 3 |
 
 ### Priority Findings
 
 | Investigative Finding | Correlations |
 |---|---:|
-| Suspicious Network Activity | 21 |
-| Biosecurity Policy Violation | 20 |
-| Containment Verification | 19 |
-| Analyst Intelligence Assessment | 18 |
-| Known Threat Actor Indicator | 17 |
-| Laboratory System Modification | 14 |
-| Research Workstation Compromise | 12 |
-| Credential Misuse | 11 |
-| Command-and-Control Communication | 11 |
-| Research Data Integrity Anomaly | 8 |
-| Unauthorized Facility Access | 6 |
+| Analyst Intelligence Assessment | 8 |
+| Suspicious Network Activity | 7 |
+| Research Workstation Compromise | 7 |
+| Credential Misuse | 6 |
+| Biosecurity Policy Violation | 6 |
 | Laboratory Information System Anomaly | 5 |
+| Research Data Integrity Anomaly | 5 |
+| Unauthorized Facility Access | 4 |
+| Known Threat Actor Indicator | 4 |
+| Containment Verification | 3 |
+| Command-and-Control Communication | 3 |
+| Laboratory System Modification | 3 |
 
 ### Evidence Files
 
-- [Evidence Manifest](evidence/BID-2026-5440/evidence_manifest.json)
-- [Evidence Correlations](evidence/BID-2026-5440/evidence_correlations.json)
-- [Chain of Custody](evidence/BID-2026-5440/chain_of_custody.csv)
+- [Evidence Manifest](evidence/BID-2026-1824/evidence_manifest.json)
+- [Evidence Correlations](evidence/BID-2026-1824/evidence_correlations.json)
+- [Chain of Custody](evidence/BID-2026-1824/chain_of_custody.csv)
 
-**Evidence Repository Updated:** `2026-07-26T15:01:49Z`
+**Evidence Repository Updated:** `2026-07-26T16:18:16Z`
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -116,15 +116,15 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 32 |
+| Total Investigations | 33 |
 | Low Severity Cases | 6 |
-| Moderate Severity Cases | 11 |
+| Moderate Severity Cases | 12 |
 | High Severity Cases | 10 |
 | Critical Severity Cases | 5 |
-| Average Confidence | 91.2% |
-| Total Evidence Collected | 86,087 |
-| Total Indicators | 59,708 |
-| Active Cases | 32 |
+| Average Confidence | 90.9% |
+| Total Evidence Collected | 86,148 |
+| Total Indicators | 59,743 |
+| Active Cases | 33 |
 | Confirmed Intrusions | 5 |
 
 ---
@@ -133,11 +133,11 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-1824 | Biosecurity Infrastructure Investigation | MODERATE |
 | BID-2026-5440 | Counter-Bioterror Intelligence Case | HIGH |
 | BID-2026-7389 | Unauthorized Research System Access | HIGH |
 | BID-2026-8783 | Evidence Reconstruction Investigation | CRITICAL |
 | BID-2026-3972 | Medical Device Security Assessment | CRITICAL |
-| BID-2026-6782 | Laboratory Security Breach | HIGH |
 
 
 ---

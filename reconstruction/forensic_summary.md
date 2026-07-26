@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5440 |
+| Case ID | BID-2026-1824 |
 | Operation | Operation Black Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Laboratory Credential Abuse |
-| Severity | HIGH |
-| Status | Evidence Collection |
+| Classification | Biosecurity Infrastructure Investigation |
+| Threat Family | Biological Data Exfiltration |
+| Severity | MODERATE |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Access Control System |
-| Vendor | Red Hat |
-| Security Zone | Containment Network |
+| Platform | Genome Sequencing Environment |
+| Device | Biomedical Workstation |
+| Vendor | VMware |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 71 |
-| Confidence | 87% |
-| Evidence Collected | 162 |
-| Indicators Identified | 77 |
-| Affected Assets | 25 |
+| Risk Score | 68 |
+| Confidence | 83% |
+| Evidence Collected | 61 |
+| Indicators Identified | 35 |
+| Affected Assets | 15 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Intelligence Analysis**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

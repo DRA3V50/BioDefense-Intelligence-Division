@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 ---
 
 ## Primary Alias
-Umbra Bio
+Vector-9
 
 ---
 
@@ -16,7 +16,7 @@ International Infrastructure
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Medical Infrastructure Disruption
 
 ---
 
@@ -26,22 +26,22 @@ Advanced
 ---
 
 ## Confidence
-87%
+83%
 
 ---
 
 ## Observed Techniques
-- Phishing
+- Misconfigured External Service
+- Laboratory Network Reconnaissance
+- Command and Control
 - Credential Abuse
 - Laboratory Control System Manipulation
-- Laboratory Network Reconnaissance
 - Privilege Escalation
-- Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+National Response Cell
 
 **Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Counter-Bioterror Intelligence Case
+Biosecurity Infrastructure Investigation
 
 ---
 

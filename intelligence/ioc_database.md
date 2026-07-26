@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-5440
+BID-2026-1824
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Biosecurity Infrastructure Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Device | Protected workstation entered evidence preservation mode |
-| PowerShell | Encoded administrative command execution detected |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -28,23 +28,23 @@ Counter-Bioterror Intelligence Case
 ## Investigation Statistics
 
 Evidence Collected:
-162
+61
 
 Indicators Reviewed:
-77
+35
 
 Risk Score:
-71
+68
 
 Confidence:
-87%
+83%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+National Response Cell
 
 Current Status:
 
-Evidence Collection
+Intelligence Analysis

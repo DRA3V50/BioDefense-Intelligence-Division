@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5440
+BID-2026-1824
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Laboratory Credential Abuse
+Biological Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Genome Sequencing Environment
 
 Device:
-Access Control System
+Biomedical Workstation
 
 Vendor:
-Red Hat
+VMware
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-32
+33
 
 Evidence Collected:
-162
+61
 
 Indicators Identified:
-77
+35
 
 Affected Assets:
-25
+15
 
 Confidence:
-87%
+83%
 
 Risk Score:
-71
+68
 
 ---
 
