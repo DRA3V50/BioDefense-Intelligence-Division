@@ -4,16 +4,16 @@
 ## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-3972
+Case ID: BID-2026-8783
 
 ### Classification
-Medical Device Security Assessment
+Evidence Reconstruction Investigation
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
-Intelligence Analysis
+Monitoring
 
 ### Severity
 CRITICAL

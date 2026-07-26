@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3972
+BID-2026-8783
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Evidence Reconstruction Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Identity | Credential reuse detected across isolated research segments |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Device | Protected workstation entered evidence preservation mode |
+| Infrastructure | Firewall policy deviation identified |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -28,23 +28,23 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-356
+279
 
 Indicators Reviewed:
-63
+68
 
 Risk Score:
 97
 
 Confidence:
-99%
+97%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+BioDefense Task Force
 
 Current Status:
 
-Intelligence Analysis
+Monitoring

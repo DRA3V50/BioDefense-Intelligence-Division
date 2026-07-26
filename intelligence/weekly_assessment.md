@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3972
+Case ID: BID-2026-8783
 
 Operation: Operation Black Eclipse
 
-Classification: Medical Device Security Assessment
+Classification: Evidence Reconstruction Investigation
 
-Threat Family: Biological Data Exfiltration
+Threat Family: Research Data Integrity Manipulation
 
-Current Status: Intelligence Analysis
+Current Status: Monitoring
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Observed indicators remain consistent with the current operational assessment.
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -33,16 +33,16 @@ Risk Score:
 97
 
 Confidence:
-99%
+97%
 
 Affected Assets:
-49
+52
 
 Evidence Collected:
-356
+279
 
 Indicators Recorded:
-63
+68
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Alpha
+BioDefense Task Force
 
 Date:
 

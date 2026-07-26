@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-3972
+BID-2026-8783
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Evidence Reconstruction Investigation
 
 Threat Family:
-Biological Data Exfiltration
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Central Evidence Processing Center
 
 Platform:
-Laboratory Control Network
+Evidence Processing Network
 
 Device:
-Access Control System
+Biomedical Workstation
 
 Vendor:
-Fortinet
+Dell
 
 Operating System:
-Hardened Research Appliance OS
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Research Operations
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
 CRITICAL
 
 Confidence:
-99%
+97%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+No destructive activity observed following initial containment.

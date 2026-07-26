@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biological Data Exfiltration
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Black Helix
+Vector-9
 
 ---
 
 ## Attribution
-International Infrastructure
+Multiple Regions
 
 ---
 
@@ -21,29 +21,29 @@ Medical Infrastructure Disruption
 ---
 
 ## Operational Sophistication
-High
+Nation-State Level
 
 ---
 
 ## Confidence
-99%
+97%
 
 ---
 
 ## Observed Techniques
 - Phishing
-- Laboratory Control System Manipulation
 - Laboratory Network Reconnaissance
 - Research Data Exfiltration
-- Concealed Internal Movement
-- Credential Abuse
+- Encrypted Data Staging
+- Lateral Movement
+- Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+BioDefense Task Force
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Evidence Reconstruction Investigation
 
 ---
 

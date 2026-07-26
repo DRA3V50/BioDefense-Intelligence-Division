@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3972 |
+| Case ID | BID-2026-8783 |
 | Operation | Operation Black Eclipse |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Biological Data Exfiltration |
+| Classification | Evidence Reconstruction Investigation |
+| Threat Family | Research Data Integrity Manipulation |
 | Severity | CRITICAL |
-| Status | Intelligence Analysis |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Access Control System |
-| Vendor | Fortinet |
-| Network Zone | Research Operations |
+| Platform | Evidence Processing Network |
+| Device | Biomedical Workstation |
+| Vendor | Dell |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -30,16 +30,16 @@
 | Metric | Value |
 |------|------:|
 | Risk Score | 97 |
-| Confidence | 99% |
-| Evidence | 356 |
-| Indicators | 63 |
-| Affected Assets | 49 |
+| Confidence | 97% |
+| Evidence | 279 |
+| Indicators | 68 |
+| Affected Assets | 52 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
