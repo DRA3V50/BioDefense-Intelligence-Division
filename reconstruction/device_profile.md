@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-9419
+BID-2026-9404
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Biomedical Infrastructure Reconnaissance
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Ashcroft Biomedical Center
 
 Platform:
 Evidence Processing Network
 
 Device:
-Digital Evidence Appliance
+Biomedical Workstation
 
 Vendor:
-VMware
+Dell
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Research Operations
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
 ELEVATED
 
 Confidence:
-85%
+94%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Digital evidence preserved for laboratory forensic examination.

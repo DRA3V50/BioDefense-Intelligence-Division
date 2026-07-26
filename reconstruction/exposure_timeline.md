@@ -4,16 +4,16 @@
 ## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-9419
+Case ID: BID-2026-9404
 
 ### Classification
-Counter-Bioterror Intelligence Case
+Cyber-Biothreat Intelligence Review
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
-Field Coordination
+Evidence Collection
 
 ### Severity
 MODERATE

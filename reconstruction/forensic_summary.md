@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9419 |
+| Case ID | BID-2026-9404 |
 | Operation | Operation Black Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Unauthorized Genomic Data Modification |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Biomedical Infrastructure Reconnaissance |
 | Severity | MODERATE |
-| Status | Field Coordination |
+| Status | Evidence Collection |
 
 ---
 
@@ -18,8 +18,8 @@
 | Property | Value |
 |----------|-------|
 | Platform | Evidence Processing Network |
-| Device | Digital Evidence Appliance |
-| Vendor | VMware |
+| Device | Biomedical Workstation |
+| Vendor | Dell |
 | Security Zone | Research Operations |
 
 ---
@@ -28,10 +28,10 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 69 |
-| Confidence | 85% |
-| Evidence Collected | 85 |
-| Indicators Identified | 30 |
+| Risk Score | 52 |
+| Confidence | 94% |
+| Evidence Collected | 86 |
+| Indicators Identified | 15 |
 | Affected Assets | 13 |
 
 ---
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Evidence Collection**
 
 Priority:
 
