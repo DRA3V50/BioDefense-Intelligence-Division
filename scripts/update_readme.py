@@ -319,6 +319,14 @@ def build_active_investigation(case: dict) -> str:
     )
 
 
+def build_evidence_dashboard_section() -> str:
+    return (
+        "<!-- EVIDENCE_DASHBOARD_START -->\n\n"
+        "Evidence dashboard pending generation.\n\n"
+        "<!-- EVIDENCE_DASHBOARD_END -->"
+    )
+
+
 def build_operational_metrics(
     history_metrics: dict,
     operation: dict,
@@ -452,6 +460,7 @@ def build_report(
         build_overview_section(),
         build_campaign_dashboard(operation),
         build_active_investigation(case),
+        build_evidence_dashboard_section(),
         build_operational_metrics(
             history_metrics,
             operation,
