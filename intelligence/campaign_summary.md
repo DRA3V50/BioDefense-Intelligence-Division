@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1824
+BID-2026-4874
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 Threat Family:
-Biological Data Exfiltration
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Open
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Genome Sequencing Environment
 
 Device:
-Biomedical Workstation
+Access Control System
 
 Vendor:
-VMware
+Cisco
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-33
+34
 
 Evidence Collected:
-61
-
-Indicators Identified:
 35
 
+Indicators Identified:
+7
+
 Affected Assets:
-15
+5
 
 Confidence:
-83%
+80%
 
 Risk Score:
-68
+49
 
 ---
 

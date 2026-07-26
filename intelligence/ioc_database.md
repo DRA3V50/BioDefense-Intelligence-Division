@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1824
+BID-2026-4874
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 ---
 
 | Category | Observation |
 |----------|-------------|
+| PowerShell | Encoded administrative command execution detected |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -28,23 +28,23 @@ Biosecurity Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-61
-
-Indicators Reviewed:
 35
 
+Indicators Reviewed:
+7
+
 Risk Score:
-68
+49
 
 Confidence:
-83%
+80%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Alpha
 
 Current Status:
 
-Intelligence Analysis
+Open

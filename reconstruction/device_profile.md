@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1824
+BID-2026-4874
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 Threat Family:
-Biological Data Exfiltration
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
 Genome Sequencing Environment
 
 Device:
-Biomedical Workstation
+Access Control System
 
 Vendor:
-VMware
+Cisco
 
 Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-83%
+80%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Evidence indicates unauthorized access to restricted research resources.

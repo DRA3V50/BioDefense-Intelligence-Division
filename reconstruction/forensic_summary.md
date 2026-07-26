@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1824 |
+| Case ID | BID-2026-4874 |
 | Operation | Operation Black Eclipse |
-| Classification | Biosecurity Infrastructure Investigation |
-| Threat Family | Biological Data Exfiltration |
-| Severity | MODERATE |
-| Status | Intelligence Analysis |
+| Classification | Laboratory Security Breach |
+| Threat Family | Biocontainment System Tampering |
+| Severity | LOW |
+| Status | Open |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Genome Sequencing Environment |
-| Device | Biomedical Workstation |
-| Vendor | VMware |
-| Security Zone | Federal Operations |
+| Device | Access Control System |
+| Vendor | Cisco |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 68 |
-| Confidence | 83% |
-| Evidence Collected | 61 |
-| Indicators Identified | 35 |
-| Affected Assets | 15 |
+| Risk Score | 49 |
+| Confidence | 80% |
+| Evidence Collected | 35 |
+| Indicators Identified | 7 |
+| Affected Assets | 5 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Open**
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

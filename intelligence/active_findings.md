@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-1824
+BID-2026-4874
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 Threat Family:
-Biological Data Exfiltration
+Biocontainment System Tampering
 
 Severity:
-MODERATE
+LOW
 
 Priority:
-ELEVATED
+ROUTINE
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-15
+5
 
 Evidence Collected:
-61
-
-Indicators Identified:
 35
 
+Indicators Identified:
+7
+
 Analyst Confidence:
-83%
+80%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Alpha

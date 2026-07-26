@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biological Data Exfiltration
+Biocontainment System Tampering
 
 ---
 
 ## Primary Alias
-Vector-9
+Dark Sequence
 
 ---
 
 ## Attribution
-International Infrastructure
+Foreign Intelligence Interest
 
 ---
 
@@ -21,29 +21,29 @@ Medical Infrastructure Disruption
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-83%
+80%
 
 ---
 
 ## Observed Techniques
-- Misconfigured External Service
+- Compromised VPN Account
+- Research Data Exfiltration
+- Supply Chain Compromise
+- Covert Remote Access Tooling
 - Laboratory Network Reconnaissance
-- Command and Control
-- Credential Abuse
-- Laboratory Control System Manipulation
-- Privilege Escalation
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Alpha
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biosecurity Infrastructure Investigation
+Laboratory Security Breach
 
 ---
 
