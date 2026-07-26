@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1198
+Case ID: BID-2026-9301
 
 Operation: Operation Black Eclipse
 
-Classification: Biomedical Network Exposure
+Classification: Cyber-Biothreat Intelligence Review
 
-Threat Family: Research Network Persistence
+Threat Family: Synthetic Genome Data Theft
 
-Current Status: Open
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -20,7 +20,7 @@ Containment Phase: Operational Recovery
 
 Evidence correlation remains in progress across collected artifacts.
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ROUTINE
 
 Risk Score:
-42
+35
 
 Confidence:
-80%
+87%
 
 Affected Assets:
-8
+3
 
 Evidence Collected:
-28
+33
 
 Indicators Recorded:
-5
+6
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Date:
 

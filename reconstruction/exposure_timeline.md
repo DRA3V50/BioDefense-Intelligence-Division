@@ -4,16 +4,16 @@
 ## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-1198
+Case ID: BID-2026-9301
 
 ### Classification
-Biomedical Network Exposure
+Cyber-Biothreat Intelligence Review
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Open
+Intelligence Analysis
 
 ### Severity
 LOW

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1198 |
+| Case ID | BID-2026-9301 |
 | Operation | Operation Black Eclipse |
-| Classification | Biomedical Network Exposure |
-| Threat Family | Research Network Persistence |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Synthetic Genome Data Theft |
 | Severity | LOW |
-| Status | Open |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Biomedical Workstation |
-| Vendor | VMware |
-| Security Zone | Evidence Network |
+| Platform | Biosecurity Operations Center |
+| Device | Genome Sequencing Server |
+| Vendor | Palo Alto Networks |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 42 |
-| Confidence | 80% |
-| Evidence Collected | 28 |
-| Indicators Identified | 5 |
-| Affected Assets | 8 |
+| Risk Score | 35 |
+| Confidence | 87% |
+| Evidence Collected | 33 |
+| Indicators Identified | 6 |
+| Affected Assets | 3 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Joint Cyber Investigation Unit**
 
 ---
 
 # Executive Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Intelligence Analysis**
 
 Priority:
 

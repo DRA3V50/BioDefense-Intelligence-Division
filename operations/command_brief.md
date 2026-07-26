@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-26 16:49 UTC
+**Generated:** 2026-07-26 17:08 UTC
 
 ---
 
@@ -18,29 +18,29 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1198
+**Case ID:** BID-2026-9301
 
-**Classification:** Biomedical Network Exposure
+**Classification:** Cyber-Biothreat Intelligence Review
 
 **Severity:** LOW
 
-**Threat Family:** Research Network Persistence
+**Threat Family:** Synthetic Genome Data Theft
 
-**Confidence:** 80%
+**Confidence:** 87%
 
 ---
 
 ## Investigation Summary
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **28**
+Evidence Collected: **33**
 
-Indicators: **5**
+Indicators: **6**
 
 Priority: **ROUTINE**
 
@@ -49,10 +49,10 @@ Priority: **ROUTINE**
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Delta**
+**Joint Cyber Investigation Unit**
 
 Initial Access:
-**Misconfigured External Service**
+**Credential Abuse**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**36**
+**37**
 
 Confirmed Intrusions:
 **5**
 
 Total Evidence:
-**86306**
+**86339**
 
 Total Indicators:
-**59768**
+**59774**
 
 ---
 
 ## Operational Highlights
 
-- 28 evidence items are associated with the active investigation.
-- 5 indicators are currently linked to the case.
+- 33 evidence items are associated with the active investigation.
+- 6 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **80%**.
+- Analyst confidence is **87%**.
 - Current investigation priority is **ROUTINE**.
 
 ---
@@ -92,6 +92,13 @@ Total Indicators:
 3. Verify evidence integrity and chain-of-custody records.
 4. Prepare the final operational assessment.
 
+---
+
+## Investigation Resources
+
+- [Investigation Timeline](investigation_timeline.md)
+- [Active Operation](active_operation.json)
+- [Operation Status](operation_status.json)
 ---
 
 End of Command Brief

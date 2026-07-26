@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-1198
+BID-2026-9301
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Research Network Persistence
+Synthetic Genome Data Theft
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Ashcroft Biomedical Center
 
 Platform:
-Laboratory Control Network
+Biosecurity Operations Center
 
 Device:
-Biomedical Workstation
+Genome Sequencing Server
 
 Vendor:
-VMware
+Palo Alto Networks
 
 Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Evidence Network
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Active Investigation
 
 Priority:
 ROUTINE
 
 Confidence:
-80%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

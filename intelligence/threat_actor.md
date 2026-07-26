@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Network Persistence
+Synthetic Genome Data Theft
 
 ---
 
 ## Primary Alias
-Silent Culture
+Ghost Genome
 
 ---
 
 ## Attribution
-Unattributed
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-80%
+87%
 
 ---
 
 ## Observed Techniques
-- Misconfigured External Service
-- Laboratory Control System Manipulation
-- Encrypted Data Staging
-- Long-Term Network Foothold
-- Concealed Internal Movement
 - Credential Abuse
+- Laboratory Network Reconnaissance
+- Supply Chain Compromise
+- Command and Control
+- Biosecurity System Tampering
+- Long-Term Network Foothold
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biomedical Network Exposure
+Cyber-Biothreat Intelligence Review
 
 ---
 

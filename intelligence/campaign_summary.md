@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1198
+BID-2026-9301
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Research Network Persistence
+Synthetic Genome Data Theft
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Biosecurity Operations Center
 
 Device:
-Biomedical Workstation
+Genome Sequencing Server
 
 Vendor:
-VMware
+Palo Alto Networks
 
 Security Zone:
-Evidence Network
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-36
+37
 
 Evidence Collected:
-28
+33
 
 Indicators Identified:
-5
+6
 
 Affected Assets:
-8
+3
 
 Confidence:
-80%
+87%
 
 Risk Score:
-42
+35
 
 ---
 

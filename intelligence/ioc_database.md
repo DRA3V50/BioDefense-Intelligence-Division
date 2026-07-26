@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1198
+BID-2026-9301
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Cyber-Biothreat Intelligence Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -28,23 +28,23 @@ Biomedical Network Exposure
 ## Investigation Statistics
 
 Evidence Collected:
-28
+33
 
 Indicators Reviewed:
-5
+6
 
 Risk Score:
-42
+35
 
 Confidence:
-80%
+87%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Current Status:
 
-Open
+Intelligence Analysis

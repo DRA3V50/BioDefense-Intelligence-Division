@@ -12,10 +12,10 @@
     "affected_facilities": 8,
     "affected_states": 3,
     "confirmed_intrusions": 5,
-    "active_cases": 36,
-    "evidence_collected": 86306,
+    "active_cases": 37,
+    "evidence_collected": 86339,
     "digital_artifacts": 151,
-    "ioc_count": 59768,
+    "ioc_count": 59774,
     "laboratories_under_review": [
         "Federal Biomedical Laboratory",
         "National Pathogen Research Center",
@@ -27,5 +27,5 @@
     "last_updated": "2026-07-26",
     "campaign_summary": "Affected environments are undergoing validation and controlled recovery while residual risk is monitored.",
     "next_objective": "Verify recovery controls and prepare the final operational assessment.",
-    "known_threat_families": 11
+    "known_threat_families": 12
 }

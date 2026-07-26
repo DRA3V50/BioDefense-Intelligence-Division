@@ -2,21 +2,21 @@
 
 **Operation:** Operation Black Eclipse
 
-**Case ID:** BID-2026-1198
+**Case ID:** BID-2026-9301
 
-**Generated:** 2026-07-26 16:49 UTC
+**Generated:** 2026-07-26 17:08 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-07-26 10:49 UTC | Initial Detection | Potential activity associated with Research Network Persistence was detected. |
-| 2026-07-26 11:49 UTC | Case Opened | Investigation BID-2026-1198 was opened and assigned to Analyst Team Delta. |
-| 2026-07-26 12:49 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Misconfigured External Service. |
-| 2026-07-26 13:49 UTC | Evidence Collection | 28 evidence items and 5 indicators were associated with the active investigation. |
-| 2026-07-26 14:49 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-07-26 15:49 UTC | Operational Review | Analysts continue correlating evidence to determine campaign scope and operational objectives. |
-| 2026-07-26 16:49 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-07-26 11:08 UTC | Initial Detection | Potential activity associated with Synthetic Genome Data Theft was detected. |
+| 2026-07-26 12:08 UTC | Case Opened | Investigation BID-2026-9301 was opened and assigned to Joint Cyber Investigation Unit. |
+| 2026-07-26 13:08 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Credential Abuse. |
+| 2026-07-26 14:08 UTC | Evidence Collection | 33 evidence items and 6 indicators were associated with the active investigation. |
+| 2026-07-26 15:08 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-07-26 16:08 UTC | Operational Review | Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence. |
+| 2026-07-26 17:08 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
@@ -26,7 +26,7 @@
 
 **Priority:** ROUTINE
 
-**Confidence:** 80%
+**Confidence:** 87%
 
 **Campaign Phase:** Operational Recovery
 
