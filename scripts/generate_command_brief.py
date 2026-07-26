@@ -125,8 +125,10 @@ Total Indicators:
 ## Investigation Resources
 
 - [Investigation Timeline](investigation_timeline.md)
+- [Evidence Chain Analysis](../evidence/evidence_chain.md)
 - [Active Operation](active_operation.json)
 - [Operation Status](operation_status.json)
+
 ---
 
 End of Command Brief
