@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8783
+BID-2026-7389
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Genome Sequencing Environment
 
 Device:
-Biomedical Workstation
+Laboratory Controller
 
 Vendor:
-Dell
+Palo Alto Networks
 
 Security Zone:
 Federal Operations
@@ -41,22 +41,22 @@ Federal Operations
 ## Investigation Metrics
 
 Investigations Recorded:
-30
+31
 
 Evidence Collected:
-279
+214
 
 Indicators Identified:
-68
+66
 
 Affected Assets:
-52
+23
 
 Confidence:
-97%
+86%
 
 Risk Score:
-97
+88
 
 ---
 

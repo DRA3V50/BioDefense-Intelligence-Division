@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-8783
+BID-2026-7389
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+National Pathogen Research Facility
 
 Platform:
-Evidence Processing Network
+Genome Sequencing Environment
 
 Device:
-Biomedical Workstation
+Laboratory Controller
 
 Vendor:
-Dell
+Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
 Federal Operations
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
-CRITICAL
+HIGH
 
 Confidence:
-97%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.

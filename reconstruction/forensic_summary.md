@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8783 |
+| Case ID | BID-2026-7389 |
 | Operation | Operation Black Eclipse |
-| Classification | Evidence Reconstruction Investigation |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | CRITICAL |
-| Status | Monitoring |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Unauthorized Genomic Data Modification |
+| Severity | HIGH |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Biomedical Workstation |
-| Vendor | Dell |
+| Platform | Genome Sequencing Environment |
+| Device | Laboratory Controller |
+| Vendor | Palo Alto Networks |
 | Security Zone | Federal Operations |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 97 |
-| Confidence | 97% |
-| Evidence Collected | 279 |
-| Indicators Identified | 68 |
-| Affected Assets | 52 |
+| Risk Score | 88 |
+| Confidence | 86% |
+| Evidence Collected | 214 |
+| Indicators Identified | 66 |
+| Affected Assets | 23 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Evidence Collection**
 
 Priority:
 
-**CRITICAL**
+**HIGH**
 
 Recommended Action:
 

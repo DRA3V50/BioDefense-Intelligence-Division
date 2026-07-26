@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8783
+BID-2026-7389
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
-| Identity | Credential reuse detected across isolated research segments |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Device | Protected workstation entered evidence preservation mode |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| PowerShell | Encoded administrative command execution detected |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -28,23 +28,23 @@ Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-279
+214
 
 Indicators Reviewed:
-68
+66
 
 Risk Score:
-97
+88
 
 Confidence:
-97%
+86%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Delta
 
 Current Status:
 
-Monitoring
+Evidence Collection

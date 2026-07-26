@@ -4,18 +4,18 @@
 ## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-8783
+Case ID: BID-2026-7389
 
 ### Classification
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
-CRITICAL
+HIGH
 
 ---

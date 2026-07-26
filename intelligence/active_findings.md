@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-8783
+BID-2026-7389
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 Severity:
-CRITICAL
+HIGH
 
 Priority:
-CRITICAL
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ CRITICAL
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-52
+23
 
 Evidence Collected:
-279
+214
 
 Indicators Identified:
-68
+66
 
 Analyst Confidence:
-97%
+86%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Delta

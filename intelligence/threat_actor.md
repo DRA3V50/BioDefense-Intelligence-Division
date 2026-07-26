@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Primary Alias
-Vector-9
+Genome Phantom
 
 ---
 
 ## Attribution
-Multiple Regions
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Moderate
 
 ---
 
 ## Confidence
-97%
+86%
 
 ---
 
 ## Observed Techniques
 - Phishing
-- Laboratory Network Reconnaissance
-- Research Data Exfiltration
+- Command and Control
+- Long-Term Network Foothold
+- Biosecurity System Tampering
 - Encrypted Data Staging
-- Lateral Movement
-- Insider Access Abuse
+- Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Delta
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 ---
 
