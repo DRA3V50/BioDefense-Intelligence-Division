@@ -141,6 +141,10 @@ jobs:
       - name: Update README
         run: python scripts/update_readme.py
 
+      # This must run after the main README updater
+      - name: Update Evidence Dashboard
+        run: python scripts/update_evidence_dashboard.py
+
       ###############################################################
       # Validation
       ###############################################################
@@ -175,6 +179,10 @@ jobs:
           custody_path = evidence_directory / "chain_of_custody.csv"
           summary_path = evidence_directory / "acquisition_summary.md"
           artifacts_directory = evidence_directory / "artifacts"
+          correlations_path = (
+              evidence_directory
+              / "evidence_correlations.json"
+          )
 
           required_artifacts = [
               artifacts_directory / "firewall_log.json",
@@ -185,6 +193,7 @@ jobs:
 
           required_paths = [
               manifest_path,
+              correlations_path,
               custody_path,
               summary_path,
               artifacts_directory,
