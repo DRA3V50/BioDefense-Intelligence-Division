@@ -122,6 +122,13 @@ Total Indicators:
 
 ---
 
+## Investigation Resources
+
+- [Investigation Timeline](investigation_timeline.md)
+- [Active Operation](active_operation.json)
+- [Operation Status](operation_status.json)
+---
+
 End of Command Brief
 """
 
