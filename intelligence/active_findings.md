@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-4874
+BID-2026-8128
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Medical Device Security Assessment
 
 Threat Family:
-Biocontainment System Tampering
+Research Network Persistence
 
 Severity:
-LOW
+MODERATE
 
 Priority:
-ROUTINE
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ ROUTINE
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-5
+15
 
 Evidence Collected:
-35
+95
 
 Indicators Identified:
-7
+13
 
 Analyst Confidence:
-80%
+91%
 
 Containment Phase:
 Operational Recovery
@@ -67,7 +67,7 @@ Operational Recovery
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo

@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-26 16:23 UTC
+**Generated:** 2026-07-26 16:32 UTC
 
 ---
 
@@ -18,41 +18,41 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-4874
+**Case ID:** BID-2026-8128
 
-**Classification:** Laboratory Security Breach
+**Classification:** Medical Device Security Assessment
 
-**Severity:** LOW
+**Severity:** MODERATE
 
-**Threat Family:** Biocontainment System Tampering
+**Threat Family:** Research Network Persistence
 
-**Confidence:** 80%
+**Confidence:** 91%
 
 ---
 
 ## Investigation Summary
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **35**
+Evidence Collected: **95**
 
-Indicators: **7**
+Indicators: **13**
 
-Priority: **ROUTINE**
+Priority: **ELEVATED**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 Initial Access:
-**Compromised VPN Account**
+**Unknown**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,16 +62,35 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**34**
+**35**
 
 Confirmed Intrusions:
 **5**
 
 Total Evidence:
-**86183**
+**86278**
 
 Total Indicators:
-**59750**
+**59763**
+
+---
+
+## Operational Highlights
+
+- 95 evidence items are associated with the active investigation.
+- 13 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **91%**.
+- Current investigation priority is **ELEVATED**.
+
+---
+
+## Immediate Priorities
+
+1. Verify recovery controls and prepare the final operational assessment.
+2. Continue IOC correlation across affected systems.
+3. Verify evidence integrity and chain-of-custody records.
+4. Prepare the final operational assessment.
 
 ---
 

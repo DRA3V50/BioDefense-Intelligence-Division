@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4874
+BID-2026-8128
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Device | Protected workstation entered evidence preservation mode |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -28,22 +28,22 @@ Laboratory Security Breach
 ## Investigation Statistics
 
 Evidence Collected:
-35
+95
 
 Indicators Reviewed:
-7
+13
 
 Risk Score:
-49
+57
 
 Confidence:
-80%
+91%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo
 
 Current Status:
 

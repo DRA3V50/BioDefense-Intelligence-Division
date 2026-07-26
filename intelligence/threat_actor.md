@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Research Network Persistence
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Ghost Genome
 
 ---
 
@@ -16,7 +16,7 @@ Foreign Intelligence Interest
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Laboratory System Sabotage
 
 ---
 
@@ -26,24 +26,24 @@ High
 ---
 
 ## Confidence
-80%
+91%
 
 ---
 
 ## Observed Techniques
-- Compromised VPN Account
-- Research Data Exfiltration
-- Supply Chain Compromise
-- Covert Remote Access Tooling
+- Unknown
+- Privilege Escalation
 - Laboratory Network Reconnaissance
-- Laboratory Data Manipulation
+- Credential Abuse
+- Encrypted Data Staging
+- Research Data Exfiltration
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Bravo
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Laboratory Security Breach
+Medical Device Security Assessment
 
 ---
 

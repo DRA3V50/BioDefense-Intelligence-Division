@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-4874
+BID-2026-8128
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Medical Device Security Assessment
 
 Threat Family:
-Biocontainment System Tampering
+Research Network Persistence
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
-Genome Sequencing Environment
+Laboratory Control Network
 
 Device:
-Access Control System
+Biomedical Workstation
 
 Vendor:
-Cisco
+Lenovo
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
-Containment Network
+Biosecurity Segment
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-80%
+91%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+No destructive activity observed following initial containment.

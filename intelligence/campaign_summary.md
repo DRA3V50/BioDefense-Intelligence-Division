@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4874
+BID-2026-8128
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Medical Device Security Assessment
 
 Threat Family:
-Biocontainment System Tampering
+Research Network Persistence
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Open
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Laboratory Control Network
 
 Device:
-Access Control System
+Biomedical Workstation
 
 Vendor:
-Cisco
+Lenovo
 
 Security Zone:
-Containment Network
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-34
-
-Evidence Collected:
 35
 
+Evidence Collected:
+95
+
 Indicators Identified:
-7
+13
 
 Affected Assets:
-5
+15
 
 Confidence:
-80%
+91%
 
 Risk Score:
-49
+57
 
 ---
 

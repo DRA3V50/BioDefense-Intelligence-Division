@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4874 |
+| Case ID | BID-2026-8128 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
-| Threat Family | Biocontainment System Tampering |
-| Severity | LOW |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Research Network Persistence |
+| Severity | MODERATE |
 | Status | Open |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Access Control System |
-| Vendor | Cisco |
-| Security Zone | Containment Network |
+| Platform | Laboratory Control Network |
+| Device | Biomedical Workstation |
+| Vendor | Lenovo |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 49 |
-| Confidence | 80% |
-| Evidence Collected | 35 |
-| Indicators Identified | 7 |
-| Affected Assets | 5 |
+| Risk Score | 57 |
+| Confidence | 91% |
+| Evidence Collected | 95 |
+| Indicators Identified | 13 |
+| Affected Assets | 15 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ROUTINE**
+**ELEVATED**
 
 Recommended Action:
 

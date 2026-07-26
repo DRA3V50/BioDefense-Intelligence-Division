@@ -59,10 +59,10 @@
         {
             "name": "Research Network Persistence",
             "first_seen": "2026-07-22",
-            "last_seen": "2026-07-24",
-            "cases": 3,
-            "severity": "CRITICAL",
-            "confidence": 96
+            "last_seen": "2026-07-26",
+            "cases": 4,
+            "severity": "MODERATE",
+            "confidence": 91
         },
         {
             "name": "Biomedical Infrastructure Reconnaissance",

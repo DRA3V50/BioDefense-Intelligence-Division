@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>34<br><br>**Evidence Collected**<br>86,183<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,750 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>35<br><br>**Evidence Collected**<br>86,278<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,763 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-4874<br><br>**Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Biocontainment System Tampering<br><br>**Severity**<br>LOW | **Platform**<br>Genome Sequencing Environment<br><br>**Vendor**<br>Cisco<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Containment Network |
+| **Case ID**<br>BID-2026-8128<br><br>**Classification**<br>Medical Device Security Assessment<br><br>**Threat Family**<br>Research Network Persistence<br><br>**Severity**<br>MODERATE | **Platform**<br>Laboratory Control Network<br><br>**Vendor**<br>Lenovo<br><br>**Device**<br>Biomedical Workstation<br><br>**Zone**<br>Biosecurity Segment |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ROUTINE<br><br>**Confidence**<br>80%<br><br>**Evidence**<br>35<br><br>**Indicators**<br>7 |
+| **Priority**<br>ELEVATED<br><br>**Confidence**<br>91%<br><br>**Evidence**<br>95<br><br>**Indicators**<br>13 |
 
 ---
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Alpha**
-- Initial Access: **Compromised VPN Account**
+- Lead Analyst: **Analyst Team Bravo**
+- Initial Access: **Unknown**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,56 +57,56 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 ## Latest Digital Evidence Summary
 
-**Active Case:** `BID-2026-4874`
+**Active Case:** `BID-2026-8128`
 
 | Evidence Metric | Value |
 |---|---:|
-| Evidence Records | 35 |
-| Correlated Records | 35 |
-| Integrity Verified | 35 |
-| Pending Analyst Review | 35 |
+| Evidence Records | 95 |
+| Correlated Records | 95 |
+| Integrity Verified | 95 |
+| Pending Analyst Review | 95 |
 
 ### Evidence Breakdown
 
 | Evidence Type | Records |
 |---|---:|
+| Firewall Log | 13 |
+| Research Workstation Event Log | 11 |
+| Containment Validation Record | 10 |
+| Biosecurity Audit Record | 10 |
+| Authentication Log | 9 |
+| Laboratory System Configuration | 7 |
+| Threat Intelligence Record | 7 |
 | Laboratory Information System Audit Log | 7 |
-| Threat Intelligence Record | 5 |
-| Biosecurity Audit Record | 4 |
+| Access Control Log | 7 |
+| Research Data Integrity Record | 6 |
+| Network Connection Record | 4 |
 | Analyst Observation | 4 |
-| Firewall Log | 4 |
-| Research Workstation Event Log | 3 |
-| Research Data Integrity Record | 2 |
-| Laboratory System Configuration | 2 |
-| Containment Validation Record | 1 |
-| Network Connection Record | 1 |
-| Access Control Log | 1 |
-| Authentication Log | 1 |
 
 ### Priority Findings
 
 | Investigative Finding | Correlations |
 |---|---:|
+| Suspicious Network Activity | 13 |
+| Research Workstation Compromise | 11 |
+| Containment Verification | 10 |
+| Biosecurity Policy Violation | 10 |
+| Credential Misuse | 9 |
+| Laboratory System Modification | 7 |
+| Known Threat Actor Indicator | 7 |
 | Laboratory Information System Anomaly | 7 |
-| Known Threat Actor Indicator | 5 |
-| Biosecurity Policy Violation | 4 |
+| Unauthorized Facility Access | 7 |
+| Research Data Integrity Anomaly | 6 |
+| Command-and-Control Communication | 4 |
 | Analyst Intelligence Assessment | 4 |
-| Suspicious Network Activity | 4 |
-| Research Workstation Compromise | 3 |
-| Research Data Integrity Anomaly | 2 |
-| Laboratory System Modification | 2 |
-| Containment Verification | 1 |
-| Command-and-Control Communication | 1 |
-| Unauthorized Facility Access | 1 |
-| Credential Misuse | 1 |
 
 ### Evidence Files
 
-- [Evidence Manifest](evidence/BID-2026-4874/evidence_manifest.json)
-- [Evidence Correlations](evidence/BID-2026-4874/evidence_correlations.json)
-- [Chain of Custody](evidence/BID-2026-4874/chain_of_custody.csv)
+- [Evidence Manifest](evidence/BID-2026-8128/evidence_manifest.json)
+- [Evidence Correlations](evidence/BID-2026-8128/evidence_correlations.json)
+- [Chain of Custody](evidence/BID-2026-8128/chain_of_custody.csv)
 
-**Evidence Repository Updated:** `2026-07-26T16:23:53Z`
+**Evidence Repository Updated:** `2026-07-26T16:32:56Z`
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -116,15 +116,15 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 34 |
+| Total Investigations | 35 |
 | Low Severity Cases | 7 |
-| Moderate Severity Cases | 12 |
+| Moderate Severity Cases | 13 |
 | High Severity Cases | 10 |
 | Critical Severity Cases | 5 |
 | Average Confidence | 90.6% |
-| Total Evidence Collected | 86,183 |
-| Total Indicators | 59,750 |
-| Active Cases | 34 |
+| Total Evidence Collected | 86,278 |
+| Total Indicators | 59,763 |
+| Active Cases | 35 |
 | Confirmed Intrusions | 5 |
 
 ---
@@ -133,11 +133,11 @@ Analysts continue correlating evidence to determine campaign scope and operation
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-8128 | Medical Device Security Assessment | MODERATE |
 | BID-2026-4874 | Laboratory Security Breach | LOW |
 | BID-2026-1824 | Biosecurity Infrastructure Investigation | MODERATE |
 | BID-2026-5440 | Counter-Bioterror Intelligence Case | HIGH |
 | BID-2026-7389 | Unauthorized Research System Access | HIGH |
-| BID-2026-8783 | Evidence Reconstruction Investigation | CRITICAL |
 
 
 ---
