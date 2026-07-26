@@ -33,6 +33,14 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 ---
 
+<!-- EVIDENCE_DASHBOARD_START -->
+
+This section is automatically updated.
+
+<!-- EVIDENCE_DASHBOARD_END -->
+
+---
+
 | Investigation Status |
 |-----------------------|
 | **Priority**<br>HIGH<br><br>**Confidence**<br>94%<br><br>**Evidence**<br>186<br><br>**Indicators**<br>63 |
