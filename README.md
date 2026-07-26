@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>31<br><br>**Evidence Collected**<br>85,925<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,631 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>32<br><br>**Evidence Collected**<br>86,087<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,708 |
 
 ---
 
@@ -29,25 +29,25 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-7389<br><br>**Classification**<br>Unauthorized Research System Access<br><br>**Threat Family**<br>Unauthorized Genomic Data Modification<br><br>**Severity**<br>HIGH | **Platform**<br>Genome Sequencing Environment<br><br>**Vendor**<br>Palo Alto Networks<br><br>**Device**<br>Laboratory Controller<br><br>**Zone**<br>Federal Operations |
+| **Case ID**<br>BID-2026-5440<br><br>**Classification**<br>Counter-Bioterror Intelligence Case<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>HIGH | **Platform**<br>Laboratory Control Network<br><br>**Vendor**<br>Red Hat<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Containment Network |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>86%<br><br>**Evidence**<br>214<br><br>**Indicators**<br>66 |
+| **Priority**<br>HIGH<br><br>**Confidence**<br>87%<br><br>**Evidence**<br>162<br><br>**Indicators**<br>77 |
 
 ---
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Delta**
+- Lead Analyst: **Analyst Team Bravo**
 - Initial Access: **Phishing**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
@@ -57,56 +57,56 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 ## Latest Digital Evidence Summary
 
-**Active Case:** `BID-2026-7389`
+**Active Case:** `BID-2026-5440`
 
 | Evidence Metric | Value |
 |---|---:|
-| Evidence Records | 214 |
-| Correlated Records | 214 |
-| Integrity Verified | 214 |
-| Pending Analyst Review | 214 |
+| Evidence Records | 162 |
+| Correlated Records | 162 |
+| Integrity Verified | 162 |
+| Pending Analyst Review | 162 |
 
 ### Evidence Breakdown
 
 | Evidence Type | Records |
 |---|---:|
-| Firewall Log | 26 |
-| Biosecurity Audit Record | 22 |
-| Access Control Log | 21 |
-| Research Workstation Event Log | 19 |
+| Firewall Log | 21 |
+| Biosecurity Audit Record | 20 |
 | Containment Validation Record | 19 |
-| Authentication Log | 18 |
-| Research Data Integrity Record | 18 |
-| Laboratory Information System Audit Log | 18 |
-| Laboratory System Configuration | 17 |
-| Threat Intelligence Record | 13 |
-| Network Connection Record | 12 |
-| Analyst Observation | 11 |
+| Analyst Observation | 18 |
+| Threat Intelligence Record | 17 |
+| Laboratory System Configuration | 14 |
+| Research Workstation Event Log | 12 |
+| Authentication Log | 11 |
+| Network Connection Record | 11 |
+| Research Data Integrity Record | 8 |
+| Access Control Log | 6 |
+| Laboratory Information System Audit Log | 5 |
 
 ### Priority Findings
 
 | Investigative Finding | Correlations |
 |---|---:|
-| Suspicious Network Activity | 26 |
-| Biosecurity Policy Violation | 22 |
-| Unauthorized Facility Access | 21 |
-| Research Workstation Compromise | 19 |
+| Suspicious Network Activity | 21 |
+| Biosecurity Policy Violation | 20 |
 | Containment Verification | 19 |
-| Credential Misuse | 18 |
-| Research Data Integrity Anomaly | 18 |
-| Laboratory Information System Anomaly | 18 |
-| Laboratory System Modification | 17 |
-| Known Threat Actor Indicator | 13 |
-| Command-and-Control Communication | 12 |
-| Analyst Intelligence Assessment | 11 |
+| Analyst Intelligence Assessment | 18 |
+| Known Threat Actor Indicator | 17 |
+| Laboratory System Modification | 14 |
+| Research Workstation Compromise | 12 |
+| Credential Misuse | 11 |
+| Command-and-Control Communication | 11 |
+| Research Data Integrity Anomaly | 8 |
+| Unauthorized Facility Access | 6 |
+| Laboratory Information System Anomaly | 5 |
 
 ### Evidence Files
 
-- [Evidence Manifest](evidence/BID-2026-7389/evidence_manifest.json)
-- [Evidence Correlations](evidence/BID-2026-7389/evidence_correlations.json)
-- [Chain of Custody](evidence/BID-2026-7389/chain_of_custody.csv)
+- [Evidence Manifest](evidence/BID-2026-5440/evidence_manifest.json)
+- [Evidence Correlations](evidence/BID-2026-5440/evidence_correlations.json)
+- [Chain of Custody](evidence/BID-2026-5440/chain_of_custody.csv)
 
-**Evidence Repository Updated:** `2026-07-26T05:29:46Z`
+**Evidence Repository Updated:** `2026-07-26T15:01:49Z`
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -116,15 +116,15 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 31 |
+| Total Investigations | 32 |
 | Low Severity Cases | 6 |
 | Moderate Severity Cases | 11 |
-| High Severity Cases | 9 |
+| High Severity Cases | 10 |
 | Critical Severity Cases | 5 |
-| Average Confidence | 91.3% |
-| Total Evidence Collected | 85,925 |
-| Total Indicators | 59,631 |
-| Active Cases | 31 |
+| Average Confidence | 91.2% |
+| Total Evidence Collected | 86,087 |
+| Total Indicators | 59,708 |
+| Active Cases | 32 |
 | Confirmed Intrusions | 5 |
 
 ---
@@ -133,11 +133,11 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-5440 | Counter-Bioterror Intelligence Case | HIGH |
 | BID-2026-7389 | Unauthorized Research System Access | HIGH |
 | BID-2026-8783 | Evidence Reconstruction Investigation | CRITICAL |
 | BID-2026-3972 | Medical Device Security Assessment | CRITICAL |
 | BID-2026-6782 | Laboratory Security Breach | HIGH |
-| BID-2026-5964 | Laboratory Security Breach | MODERATE |
 
 
 ---

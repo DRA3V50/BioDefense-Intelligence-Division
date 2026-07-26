@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-7389
+BID-2026-5440
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Counter-Bioterror Intelligence Case
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Laboratory Credential Abuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
-Genome Sequencing Environment
+Laboratory Control Network
 
 Device:
-Laboratory Controller
+Access Control System
 
 Vendor:
-Palo Alto Networks
+Red Hat
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
 HIGH
 
 Confidence:
-86%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

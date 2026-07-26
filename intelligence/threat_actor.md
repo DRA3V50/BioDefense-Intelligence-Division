@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Genomic Data Modification
+Laboratory Credential Abuse
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Umbra Bio
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Moderate
+Advanced
 
 ---
 
 ## Confidence
-86%
+87%
 
 ---
 
 ## Observed Techniques
 - Phishing
-- Command and Control
-- Long-Term Network Foothold
-- Biosecurity System Tampering
-- Encrypted Data Staging
-- Concealed Internal Movement
+- Credential Abuse
+- Laboratory Control System Manipulation
+- Laboratory Network Reconnaissance
+- Privilege Escalation
+- Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Bravo
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Counter-Bioterror Intelligence Case
 
 ---
 

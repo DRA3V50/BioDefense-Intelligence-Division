@@ -4,10 +4,10 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-7389 |
+| Case ID | BID-2026-5440 |
 | Operation | Operation Black Eclipse |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Unauthorized Genomic Data Modification |
+| Classification | Counter-Bioterror Intelligence Case |
+| Threat Family | Laboratory Credential Abuse |
 | Severity | HIGH |
 | Status | Evidence Collection |
 | Phase | Operational Recovery |
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Genome Sequencing Environment |
-| Device | Laboratory Controller |
-| Vendor | Palo Alto Networks |
-| Network Zone | Federal Operations |
+| Platform | Laboratory Control Network |
+| Device | Access Control System |
+| Vendor | Red Hat |
+| Network Zone | Containment Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 88 |
-| Confidence | 86% |
-| Evidence | 214 |
-| Indicators | 66 |
-| Affected Assets | 23 |
+| Risk Score | 71 |
+| Confidence | 87% |
+| Evidence | 162 |
+| Indicators | 77 |
+| Affected Assets | 25 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.

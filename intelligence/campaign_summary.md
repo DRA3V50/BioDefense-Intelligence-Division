@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7389
+BID-2026-5440
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Counter-Bioterror Intelligence Case
 
 Threat Family:
-Unauthorized Genomic Data Modification
+Laboratory Credential Abuse
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Evidence Collection
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Laboratory Control Network
 
 Device:
-Laboratory Controller
+Access Control System
 
 Vendor:
-Palo Alto Networks
+Red Hat
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-31
+32
 
 Evidence Collected:
-214
+162
 
 Indicators Identified:
-66
+77
 
 Affected Assets:
-23
+25
 
 Confidence:
-86%
+87%
 
 Risk Score:
-88
+71
 
 ---
 

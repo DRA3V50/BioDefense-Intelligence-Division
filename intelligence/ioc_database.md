@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7389
+BID-2026-5440
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Counter-Bioterror Intelligence Case
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Device | Protected workstation entered evidence preservation mode |
-| Research Storage | Unauthorized access to protected genomic repository |
+| System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Device | Protected workstation entered evidence preservation mode |
 | PowerShell | Encoded administrative command execution detected |
-| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -28,22 +28,22 @@ Unauthorized Research System Access
 ## Investigation Statistics
 
 Evidence Collected:
-214
+162
 
 Indicators Reviewed:
-66
+77
 
 Risk Score:
-88
+71
 
 Confidence:
-86%
+87%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo
 
 Current Status:
 
