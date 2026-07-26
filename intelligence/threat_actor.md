@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Infrastructure Reconnaissance
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Cerberus Group
 
 ---
 
 ## Attribution
-Multiple Regions
+International Infrastructure
 
 ---
 
@@ -21,29 +21,29 @@ Strategic Intelligence Collection
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-94%
+84%
 
 ---
 
 ## Observed Techniques
 - Phishing
 - Encrypted Data Staging
-- Laboratory Control System Manipulation
-- Command and Control
-- Laboratory Network Reconnaissance
-- Concealed Internal Movement
+- Long-Term Network Foothold
+- Supply Chain Compromise
+- Research Data Exfiltration
+- Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Alpha
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Biological Research Intelligence Collection
 
 ---
 

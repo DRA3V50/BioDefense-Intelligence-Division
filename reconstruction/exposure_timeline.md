@@ -4,18 +4,18 @@
 ## 2026-07-26
 
 ### Case Opened
-Case ID: BID-2026-9404
+Case ID: BID-2026-9444
 
 ### Classification
-Cyber-Biothreat Intelligence Review
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ### Current Status
 Evidence Collection
 
 ### Severity
-MODERATE
+LOW
 
 ---

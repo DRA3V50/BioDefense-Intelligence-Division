@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-9404
+Case ID: BID-2026-9444
 
 Operation: Operation Black Eclipse
 
-Classification: Cyber-Biothreat Intelligence Review
+Classification: Biological Research Intelligence Collection
 
-Threat Family: Biomedical Infrastructure Reconnaissance
+Threat Family: Specimen Tracking Manipulation
 
 Current Status: Evidence Collection
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+ROUTINE
 
 Risk Score:
-52
+30
 
 Confidence:
-94%
+84%
 
 Affected Assets:
-13
+5
 
 Evidence Collected:
-86
+42
 
 Indicators Recorded:
-15
+9
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Alpha
 
 Date:
 

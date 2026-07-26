@@ -2,31 +2,31 @@
 
 **Operation:** Operation Black Eclipse
 
-**Case ID:** BID-2026-9404
+**Case ID:** BID-2026-9444
 
-**Generated:** 2026-07-26 17:36 UTC
+**Generated:** 2026-07-26 17:47 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-07-26 11:36 UTC | Initial Detection | Potential activity associated with Biomedical Infrastructure Reconnaissance was detected. |
-| 2026-07-26 12:36 UTC | Case Opened | Investigation BID-2026-9404 was opened and assigned to National Response Cell. |
-| 2026-07-26 13:36 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Phishing. |
-| 2026-07-26 14:36 UTC | Evidence Collection | 86 evidence items and 15 indicators were associated with the active investigation. |
-| 2026-07-26 15:36 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-07-26 16:36 UTC | Operational Review | Investigators identified coordinated cyber activity targeting protected biomedical infrastructure. |
-| 2026-07-26 17:36 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-07-26 11:47 UTC | Initial Detection | Potential activity associated with Specimen Tracking Manipulation was detected. |
+| 2026-07-26 12:47 UTC | Case Opened | Investigation BID-2026-9444 was opened and assigned to Analyst Team Alpha. |
+| 2026-07-26 13:47 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Phishing. |
+| 2026-07-26 14:47 UTC | Evidence Collection | 42 evidence items and 9 indicators were associated with the active investigation. |
+| 2026-07-26 15:47 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-07-26 16:47 UTC | Operational Review | Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems. |
+| 2026-07-26 17:47 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** MODERATE
+**Severity:** LOW
 
-**Priority:** ELEVATED
+**Priority:** ROUTINE
 
-**Confidence:** 94%
+**Confidence:** 84%
 
 **Campaign Phase:** Operational Recovery
 

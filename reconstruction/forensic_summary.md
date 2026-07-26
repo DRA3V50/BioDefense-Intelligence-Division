@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9404 |
+| Case ID | BID-2026-9444 |
 | Operation | Operation Black Eclipse |
-| Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
-| Severity | MODERATE |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | LOW |
 | Status | Evidence Collection |
 
 ---
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Evidence Processing Network |
-| Device | Biomedical Workstation |
-| Vendor | Dell |
-| Security Zone | Research Operations |
+| Device | Research Database |
+| Vendor | Fortinet |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 52 |
-| Confidence | 94% |
-| Evidence Collected | 86 |
-| Indicators Identified | 15 |
-| Affected Assets | 13 |
+| Risk Score | 30 |
+| Confidence | 84% |
+| Evidence Collected | 42 |
+| Indicators Identified | 9 |
+| Affected Assets | 5 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

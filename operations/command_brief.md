@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-26 17:36 UTC
+**Generated:** 2026-07-26 17:47 UTC
 
 ---
 
@@ -18,38 +18,38 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-9404
+**Case ID:** BID-2026-9444
 
-**Classification:** Cyber-Biothreat Intelligence Review
+**Classification:** Biological Research Intelligence Collection
 
-**Severity:** MODERATE
+**Severity:** LOW
 
-**Threat Family:** Biomedical Infrastructure Reconnaissance
+**Threat Family:** Specimen Tracking Manipulation
 
-**Confidence:** 94%
+**Confidence:** 84%
 
 ---
 
 ## Investigation Summary
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **86**
+Evidence Collected: **42**
 
-Indicators: **15**
+Indicators: **9**
 
-Priority: **ELEVATED**
+Priority: **ROUTINE**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Analyst Team Alpha**
 
 Initial Access:
 **Phishing**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**39**
+**40**
 
 Confirmed Intrusions:
 **5**
 
 Total Evidence:
-**86510**
+**86552**
 
 Total Indicators:
-**59819**
+**59828**
 
 ---
 
 ## Operational Highlights
 
-- 86 evidence items are associated with the active investigation.
-- 15 indicators are currently linked to the case.
+- 42 evidence items are associated with the active investigation.
+- 9 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **94%**.
-- Current investigation priority is **ELEVATED**.
+- Analyst confidence is **84%**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 
@@ -97,8 +97,10 @@ Total Indicators:
 ## Investigation Resources
 
 - [Investigation Timeline](investigation_timeline.md)
+- [Evidence Chain Analysis](../evidence/evidence_chain.md)
 - [Active Operation](active_operation.json)
 - [Operation Status](operation_status.json)
+
 ---
 
 End of Command Brief

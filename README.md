@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>39<br><br>**Evidence Collected**<br>86,510<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,819 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>5<br><br>**Active Cases**<br>40<br><br>**Evidence Collected**<br>86,552<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>59,828 |
 
 ---
 
@@ -29,25 +29,25 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-9404<br><br>**Classification**<br>Cyber-Biothreat Intelligence Review<br><br>**Threat Family**<br>Biomedical Infrastructure Reconnaissance<br><br>**Severity**<br>MODERATE | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Dell<br><br>**Device**<br>Biomedical Workstation<br><br>**Zone**<br>Research Operations |
+| **Case ID**<br>BID-2026-9444<br><br>**Classification**<br>Biological Research Intelligence Collection<br><br>**Threat Family**<br>Specimen Tracking Manipulation<br><br>**Severity**<br>LOW | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Fortinet<br><br>**Device**<br>Research Database<br><br>**Zone**<br>Secure Laboratory |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ELEVATED<br><br>**Confidence**<br>94%<br><br>**Evidence**<br>86<br><br>**Indicators**<br>15 |
+| **Priority**<br>ROUTINE<br><br>**Confidence**<br>84%<br><br>**Evidence**<br>42<br><br>**Indicators**<br>9 |
 
 ---
 
 # Analyst Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **National Response Cell**
+- Lead Analyst: **Analyst Team Alpha**
 - Initial Access: **Phishing**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
@@ -57,56 +57,54 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 
 ## Latest Digital Evidence Summary
 
-**Active Case:** `BID-2026-9404`
+**Active Case:** `BID-2026-9444`
 
 | Evidence Metric | Value |
 |---|---:|
-| Evidence Records | 86 |
-| Correlated Records | 86 |
-| Integrity Verified | 86 |
-| Pending Analyst Review | 86 |
+| Evidence Records | 42 |
+| Correlated Records | 42 |
+| Integrity Verified | 42 |
+| Pending Analyst Review | 42 |
 
 ### Evidence Breakdown
 
 | Evidence Type | Records |
 |---|---:|
-| Containment Validation Record | 9 |
-| Research Data Integrity Record | 9 |
-| Authentication Log | 9 |
-| Firewall Log | 8 |
-| Network Connection Record | 8 |
-| Analyst Observation | 8 |
-| Biosecurity Audit Record | 8 |
-| Laboratory Information System Audit Log | 7 |
-| Threat Intelligence Record | 6 |
-| Research Workstation Event Log | 6 |
-| Laboratory System Configuration | 5 |
-| Access Control Log | 3 |
+| Research Workstation Event Log | 7 |
+| Containment Validation Record | 5 |
+| Laboratory Information System Audit Log | 5 |
+| Analyst Observation | 5 |
+| Firewall Log | 4 |
+| Research Data Integrity Record | 3 |
+| Authentication Log | 3 |
+| Network Connection Record | 3 |
+| Laboratory System Configuration | 3 |
+| Biosecurity Audit Record | 3 |
+| Access Control Log | 1 |
 
 ### Priority Findings
 
 | Investigative Finding | Correlations |
 |---|---:|
-| Containment Verification | 9 |
-| Research Data Integrity Anomaly | 9 |
-| Credential Misuse | 9 |
-| Suspicious Network Activity | 8 |
-| Command-and-Control Communication | 8 |
-| Analyst Intelligence Assessment | 8 |
-| Biosecurity Policy Violation | 8 |
-| Laboratory Information System Anomaly | 7 |
-| Known Threat Actor Indicator | 6 |
-| Research Workstation Compromise | 6 |
-| Laboratory System Modification | 5 |
-| Unauthorized Facility Access | 3 |
+| Research Workstation Compromise | 7 |
+| Containment Verification | 5 |
+| Laboratory Information System Anomaly | 5 |
+| Analyst Intelligence Assessment | 5 |
+| Suspicious Network Activity | 4 |
+| Research Data Integrity Anomaly | 3 |
+| Credential Misuse | 3 |
+| Command-and-Control Communication | 3 |
+| Laboratory System Modification | 3 |
+| Biosecurity Policy Violation | 3 |
+| Unauthorized Facility Access | 1 |
 
 ### Evidence Files
 
-- [Evidence Manifest](evidence/BID-2026-9404/evidence_manifest.json)
-- [Evidence Correlations](evidence/BID-2026-9404/evidence_correlations.json)
-- [Chain of Custody](evidence/BID-2026-9404/chain_of_custody.csv)
+- [Evidence Manifest](evidence/BID-2026-9444/evidence_manifest.json)
+- [Evidence Correlations](evidence/BID-2026-9444/evidence_correlations.json)
+- [Chain of Custody](evidence/BID-2026-9444/chain_of_custody.csv)
 
-**Evidence Repository Updated:** `2026-07-26T17:36:36Z`
+**Evidence Repository Updated:** `2026-07-26T17:47:10Z`
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -116,15 +114,15 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 39 |
-| Low Severity Cases | 9 |
+| Total Investigations | 40 |
+| Low Severity Cases | 10 |
 | Moderate Severity Cases | 15 |
 | High Severity Cases | 10 |
 | Critical Severity Cases | 5 |
-| Average Confidence | 90.2% |
-| Total Evidence Collected | 86,510 |
-| Total Indicators | 59,819 |
-| Active Cases | 39 |
+| Average Confidence | 90.0% |
+| Total Evidence Collected | 86,552 |
+| Total Indicators | 59,828 |
+| Active Cases | 40 |
 | Confirmed Intrusions | 5 |
 
 ---
@@ -133,11 +131,11 @@ Investigators identified coordinated cyber activity targeting protected biomedic
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-9444 | Biological Research Intelligence Collection | LOW |
 | BID-2026-9404 | Cyber-Biothreat Intelligence Review | MODERATE |
 | BID-2026-9419 | Counter-Bioterror Intelligence Case | MODERATE |
 | BID-2026-9301 | Cyber-Biothreat Intelligence Review | LOW |
 | BID-2026-1198 | Biomedical Network Exposure | LOW |
-| BID-2026-8128 | Medical Device Security Assessment | MODERATE |
 
 
 ---

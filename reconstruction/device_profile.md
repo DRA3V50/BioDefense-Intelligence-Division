@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-9404
+BID-2026-9444
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Biological Research Intelligence Collection
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Specimen Tracking Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
 Evidence Processing Network
 
 Device:
-Biomedical Workstation
+Research Database
 
 Vendor:
-Dell
+Fortinet
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
-Research Operations
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Awaiting Laboratory Review
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-94%
+84%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+System isolated pending malware reverse engineering.
