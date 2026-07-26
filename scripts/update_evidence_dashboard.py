@@ -202,7 +202,58 @@ def build_dashboard(case, manifest, correlations):
 
 
 def update_readme(dashboard):
-    pass
+    """
+    Replace the evidence dashboard section in README.md.
+    """
+
+    start_marker = "<!-- EVIDENCE_DASHBOARD_START -->"
+    end_marker = "<!-- EVIDENCE_DASHBOARD_END -->"
+
+    if not README_FILE.exists():
+        raise FileNotFoundError(
+            f"README file not found: {README_FILE}"
+        )
+
+    readme_content = README_FILE.read_text(
+        encoding="utf-8"
+    )
+
+    if start_marker not in readme_content:
+        raise ValueError(
+            f"Missing README marker: {start_marker}"
+        )
+
+    if end_marker not in readme_content:
+        raise ValueError(
+            f"Missing README marker: {end_marker}"
+        )
+
+    start_index = readme_content.index(start_marker)
+    end_index = readme_content.index(end_marker)
+
+    if end_index < start_index:
+        raise ValueError(
+            "Evidence dashboard markers are in the wrong order."
+        )
+
+    replacement = (
+        f"{start_marker}\n\n"
+        f"{dashboard}\n\n"
+        f"{end_marker}"
+    )
+
+    updated_content = (
+        readme_content[:start_index]
+        + replacement
+        + readme_content[
+            end_index + len(end_marker):
+        ]
+    )
+
+    README_FILE.write_text(
+        updated_content,
+        encoding="utf-8",
+    )
 
 
 def main():
