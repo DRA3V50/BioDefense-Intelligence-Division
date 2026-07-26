@@ -2,31 +2,31 @@
 
 **Operation:** Operation Black Eclipse
 
-**Case ID:** BID-2026-9301
+**Case ID:** BID-2026-9419
 
-**Generated:** 2026-07-26 17:08 UTC
+**Generated:** 2026-07-26 17:22 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-07-26 11:08 UTC | Initial Detection | Potential activity associated with Synthetic Genome Data Theft was detected. |
-| 2026-07-26 12:08 UTC | Case Opened | Investigation BID-2026-9301 was opened and assigned to Joint Cyber Investigation Unit. |
-| 2026-07-26 13:08 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Credential Abuse. |
-| 2026-07-26 14:08 UTC | Evidence Collection | 33 evidence items and 6 indicators were associated with the active investigation. |
-| 2026-07-26 15:08 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-07-26 16:08 UTC | Operational Review | Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence. |
-| 2026-07-26 17:08 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-07-26 11:22 UTC | Initial Detection | Potential activity associated with Unauthorized Genomic Data Modification was detected. |
+| 2026-07-26 12:22 UTC | Case Opened | Investigation BID-2026-9419 was opened and assigned to National Response Cell. |
+| 2026-07-26 13:22 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Supply Chain Compromise. |
+| 2026-07-26 14:22 UTC | Evidence Collection | 85 evidence items and 30 indicators were associated with the active investigation. |
+| 2026-07-26 15:22 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-07-26 16:22 UTC | Operational Review | Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments. |
+| 2026-07-26 17:22 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** LOW
+**Severity:** MODERATE
 
-**Priority:** ROUTINE
+**Priority:** ELEVATED
 
-**Confidence:** 87%
+**Confidence:** 85%
 
 **Campaign Phase:** Operational Recovery
 

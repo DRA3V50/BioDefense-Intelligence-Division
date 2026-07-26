@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-9301 |
+| Case ID | BID-2026-9419 |
 | Operation | Operation Black Eclipse |
-| Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Synthetic Genome Data Theft |
-| Severity | LOW |
-| Status | Intelligence Analysis |
+| Classification | Counter-Bioterror Intelligence Case |
+| Threat Family | Unauthorized Genomic Data Modification |
+| Severity | MODERATE |
+| Status | Field Coordination |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biosecurity Operations Center |
-| Device | Genome Sequencing Server |
-| Vendor | Palo Alto Networks |
-| Network Zone | Federal Operations |
+| Platform | Evidence Processing Network |
+| Device | Digital Evidence Appliance |
+| Vendor | VMware |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 35 |
-| Confidence | 87% |
-| Evidence | 33 |
-| Indicators | 6 |
-| Affected Assets | 3 |
+| Risk Score | 69 |
+| Confidence | 85% |
+| Evidence | 85 |
+| Indicators | 30 |
+| Affected Assets | 13 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Joint Cyber Investigation Unit**
+Lead Analyst: **National Response Cell**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.

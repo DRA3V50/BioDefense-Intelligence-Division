@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-26 17:08 UTC
+**Generated:** 2026-07-26 17:22 UTC
 
 ---
 
@@ -18,41 +18,41 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-9301
+**Case ID:** BID-2026-9419
 
-**Classification:** Cyber-Biothreat Intelligence Review
+**Classification:** Counter-Bioterror Intelligence Case
 
-**Severity:** LOW
+**Severity:** MODERATE
 
-**Threat Family:** Synthetic Genome Data Theft
+**Threat Family:** Unauthorized Genomic Data Modification
 
-**Confidence:** 87%
+**Confidence:** 85%
 
 ---
 
 ## Investigation Summary
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **33**
+Evidence Collected: **85**
 
-Indicators: **6**
+Indicators: **30**
 
-Priority: **ROUTINE**
+Priority: **ELEVATED**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Joint Cyber Investigation Unit**
+**National Response Cell**
 
 Initial Access:
-**Credential Abuse**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**37**
+**38**
 
 Confirmed Intrusions:
 **5**
 
 Total Evidence:
-**86339**
+**86424**
 
 Total Indicators:
-**59774**
+**59804**
 
 ---
 
 ## Operational Highlights
 
-- 33 evidence items are associated with the active investigation.
-- 6 indicators are currently linked to the case.
+- 85 evidence items are associated with the active investigation.
+- 30 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **87%**.
-- Current investigation priority is **ROUTINE**.
+- Analyst confidence is **85%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

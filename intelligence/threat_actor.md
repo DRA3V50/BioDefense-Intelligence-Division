@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Synthetic Genome Data Theft
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Genome Phantom
 
 ---
 
@@ -16,34 +16,34 @@ Multiple Regions
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-87%
+85%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Laboratory Network Reconnaissance
 - Supply Chain Compromise
 - Command and Control
+- Covert Remote Access Tooling
 - Biosecurity System Tampering
-- Long-Term Network Foothold
+- Laboratory Network Reconnaissance
+- Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+National Response Cell
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Counter-Bioterror Intelligence Case
 
 ---
 
