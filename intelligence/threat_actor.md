@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Black Helix
 
 ---
 
 ## Attribution
-International Infrastructure
+Foreign Intelligence Interest
 
 ---
 
@@ -21,29 +21,29 @@ Strategic Intelligence Collection
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-84%
+91%
 
 ---
 
 ## Observed Techniques
-- Phishing
-- Encrypted Data Staging
-- Long-Term Network Foothold
-- Supply Chain Compromise
-- Research Data Exfiltration
+- Credential Abuse
 - Insider Access Abuse
+- Laboratory Control System Manipulation
+- Laboratory Data Manipulation
+- Laboratory Network Reconnaissance
+- Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+National Response Cell
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Research Facility Intrusion
 
 ---
 
 ## Last Updated
-2026-07-26
+2026-07-27

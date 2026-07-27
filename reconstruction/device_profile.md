@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-9444
+BID-2026-1850
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
-Evidence Processing Network
+Biosecurity Operations Center
 
 Device:
-Research Database
+Laboratory Controller
 
 Vendor:
-Fortinet
+Microsoft
 
 Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
-ROUTINE
+CRITICAL
 
 Confidence:
-84%
+91%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.

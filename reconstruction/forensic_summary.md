@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9444 |
+| Case ID | BID-2026-1850 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | LOW |
-| Status | Evidence Collection |
+| Classification | Research Facility Intrusion |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | CRITICAL |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Research Database |
-| Vendor | Fortinet |
-| Security Zone | Secure Laboratory |
+| Platform | Biosecurity Operations Center |
+| Device | Laboratory Controller |
+| Vendor | Microsoft |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 30 |
-| Confidence | 84% |
-| Evidence Collected | 42 |
-| Indicators Identified | 9 |
-| Affected Assets | 5 |
+| Risk Score | 96 |
+| Confidence | 91% |
+| Evidence Collected | 197 |
+| Indicators Identified | 151 |
+| Affected Assets | 54 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Containment**
 
 Priority:
 
-**ROUTINE**
+**CRITICAL**
 
 Recommended Action:
 

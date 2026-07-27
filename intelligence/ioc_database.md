@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-9444
+BID-2026-1850
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Identity | Credential reuse detected across isolated research segments |
-| System Log | Unexpected privilege escalation recorded |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Identity | Credential reuse detected across isolated research segments |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Infrastructure | Firewall policy deviation identified |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,23 +28,23 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-42
+197
 
 Indicators Reviewed:
-9
+151
 
 Risk Score:
-30
+96
 
 Confidence:
-84%
+91%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+National Response Cell
 
 Current Status:
 
-Evidence Collection
+Containment
