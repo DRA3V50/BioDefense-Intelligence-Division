@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1850
+BID-2026-4464
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biological Research Intelligence Collection
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
 Biosecurity Operations Center
 
 Device:
-Laboratory Controller
+Digital Evidence Appliance
 
 Vendor:
-Microsoft
+Lenovo
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 CRITICAL
 
 Confidence:
-91%
+99%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Evidence indicates unauthorized access to restricted research resources.

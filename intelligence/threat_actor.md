@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 ---
 
 ## Primary Alias
-Black Helix
+Project Chimera
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unknown
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-91%
+99%
 
 ---
 
 ## Observed Techniques
 - Credential Abuse
-- Insider Access Abuse
-- Laboratory Control System Manipulation
+- Covert Remote Access Tooling
+- Long-Term Network Foothold
+- Command and Control
 - Laboratory Data Manipulation
-- Laboratory Network Reconnaissance
 - Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Bravo
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Research Facility Intrusion
+Biological Research Intelligence Collection
 
 ---
 

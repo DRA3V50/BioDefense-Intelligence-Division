@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-1850
+BID-2026-4464
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biological Research Intelligence Collection
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 Severity:
 CRITICAL
@@ -26,39 +26,39 @@ CRITICAL
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-54
+33
 
 Evidence Collected:
-197
+371
 
 Indicators Identified:
-151
+126
 
 Analyst Confidence:
-91%
+99%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 # Operational Status
 
 Current Status:
-Containment
+Monitoring
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Bravo

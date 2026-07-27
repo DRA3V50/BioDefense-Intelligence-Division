@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-27 05:46 UTC
+**Generated:** 2026-07-27 16:15 UTC
 
 ---
 
@@ -18,15 +18,15 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1850
+**Case ID:** BID-2026-4464
 
-**Classification:** Research Facility Intrusion
+**Classification:** Biological Research Intelligence Collection
 
 **Severity:** CRITICAL
 
-**Threat Family:** Research Data Integrity Manipulation
+**Threat Family:** Unauthorized Genomic Data Modification
 
-**Confidence:** 91%
+**Confidence:** 99%
 
 ---
 
@@ -38,9 +38,9 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 ## Evidence Summary
 
-Evidence Collected: **197**
+Evidence Collected: **371**
 
-Indicators: **151**
+Indicators: **126**
 
 Priority: **CRITICAL**
 
@@ -49,7 +49,7 @@ Priority: **CRITICAL**
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Analyst Team Bravo**
 
 Initial Access:
 **Credential Abuse**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**41**
+**42**
 
 Confirmed Intrusions:
-**6**
+**7**
 
 Total Evidence:
-**86749**
+**87120**
 
 Total Indicators:
-**59979**
+**60105**
 
 ---
 
 ## Operational Highlights
 
-- 197 evidence items are associated with the active investigation.
-- 151 indicators are currently linked to the case.
+- 371 evidence items are associated with the active investigation.
+- 126 indicators are currently linked to the case.
 - Containment remains at **CRITICAL**.
-- Analyst confidence is **91%**.
+- Analyst confidence is **99%**.
 - Current investigation priority is **CRITICAL**.
 
 ---

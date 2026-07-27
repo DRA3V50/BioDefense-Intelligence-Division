@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1850 |
+| Case ID | BID-2026-4464 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Research Data Integrity Manipulation |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Unauthorized Genomic Data Modification |
 | Severity | CRITICAL |
-| Status | Containment |
+| Status | Monitoring |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Biosecurity Operations Center |
-| Device | Laboratory Controller |
-| Vendor | Microsoft |
-| Security Zone | Federal Operations |
+| Device | Digital Evidence Appliance |
+| Vendor | Lenovo |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 96 |
-| Confidence | 91% |
-| Evidence Collected | 197 |
-| Indicators Identified | 151 |
-| Affected Assets | 54 |
+| Risk Score | 92 |
+| Confidence | 99% |
+| Evidence Collected | 371 |
+| Indicators Identified | 126 |
+| Affected Assets | 33 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Bravo**
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Monitoring**
 
 Priority:
 

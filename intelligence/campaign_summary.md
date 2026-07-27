@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1850
+BID-2026-4464
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biological Research Intelligence Collection
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Genomic Data Modification
 
 Current Phase:
 Operational Recovery
 
 Status:
-Containment
+Monitoring
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Biosecurity Operations Center
 
 Device:
-Laboratory Controller
+Digital Evidence Appliance
 
 Vendor:
-Microsoft
+Lenovo
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-41
+42
 
 Evidence Collected:
-197
+371
 
 Indicators Identified:
-151
+126
 
 Affected Assets:
-54
+33
 
 Confidence:
-91%
+99%
 
 Risk Score:
-96
+92
 
 ---
 
