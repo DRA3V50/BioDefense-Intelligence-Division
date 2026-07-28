@@ -4,13 +4,13 @@
 ## 2026-07-28
 
 ### Case Opened
-Case ID: BID-2026-8255
+Case ID: BID-2026-5296
 
 ### Classification
-Counter-Bioterror Intelligence Case
+Biomedical Network Exposure
 
 ### Initial Assessment
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
 Monitoring

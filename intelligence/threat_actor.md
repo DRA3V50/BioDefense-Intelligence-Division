@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Crimson Cell
 
 ---
 
 ## Attribution
-Unknown
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-87%
+82%
 
 ---
 
 ## Observed Techniques
-- Compromised VPN Account
-- Research Data Exfiltration
-- Privilege Escalation
 - Supply Chain Compromise
-- Long-Term Network Foothold
 - Covert Remote Access Tooling
+- Privilege Escalation
+- Laboratory Control System Manipulation
+- Biosecurity System Tampering
+- Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Counter-Bioterror Intelligence Case
+Biomedical Network Exposure
 
 ---
 

@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8255
+BID-2026-5296
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Biomedical Network Exposure
 
 ---
 
 | Category | Observation |
 |----------|-------------|
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| System Log | Unexpected privilege escalation recorded |
-| PowerShell | Encoded administrative command execution detected |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -28,22 +28,22 @@ Counter-Bioterror Intelligence Case
 ## Investigation Statistics
 
 Evidence Collected:
-95
+93
 
 Indicators Reviewed:
-20
+30
 
 Risk Score:
-56
+63
 
 Confidence:
-87%
+82%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Joint Cyber Investigation Unit
 
 Current Status:
 

@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-28 02:03 UTC
+**Generated:** 2026-07-28 05:12 UTC
 
 ---
 
@@ -18,29 +18,29 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8255
+**Case ID:** BID-2026-5296
 
-**Classification:** Counter-Bioterror Intelligence Case
+**Classification:** Biomedical Network Exposure
 
 **Severity:** MODERATE
 
-**Threat Family:** Biocontainment System Tampering
+**Threat Family:** Specimen Tracking Manipulation
 
-**Confidence:** 87%
+**Confidence:** 82%
 
 ---
 
 ## Investigation Summary
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **95**
+Evidence Collected: **93**
 
-Indicators: **20**
+Indicators: **30**
 
 Priority: **ELEVATED**
 
@@ -49,10 +49,10 @@ Priority: **ELEVATED**
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Alpha**
+**Joint Cyber Investigation Unit**
 
 Initial Access:
-**Compromised VPN Account**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**43**
+**44**
 
 Confirmed Intrusions:
 **7**
 
 Total Evidence:
-**87215**
+**87308**
 
 Total Indicators:
-**60125**
+**60155**
 
 ---
 
 ## Operational Highlights
 
-- 95 evidence items are associated with the active investigation.
-- 20 indicators are currently linked to the case.
+- 93 evidence items are associated with the active investigation.
+- 30 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **87%**.
+- Analyst confidence is **82%**.
 - Current investigation priority is **ELEVATED**.
 
 ---

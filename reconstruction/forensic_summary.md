@@ -4,10 +4,10 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8255 |
+| Case ID | BID-2026-5296 |
 | Operation | Operation Black Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Biocontainment System Tampering |
+| Classification | Biomedical Network Exposure |
+| Threat Family | Specimen Tracking Manipulation |
 | Severity | MODERATE |
 | Status | Monitoring |
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Specimen Tracking Server |
+| Platform | Evidence Processing Network |
+| Device | Biomedical Workstation |
 | Vendor | Lenovo |
-| Security Zone | Research Operations |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 56 |
-| Confidence | 87% |
-| Evidence Collected | 95 |
-| Indicators Identified | 20 |
-| Affected Assets | 18 |
+| Risk Score | 63 |
+| Confidence | 82% |
+| Evidence Collected | 93 |
+| Indicators Identified | 30 |
+| Affected Assets | 7 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Joint Cyber Investigation Unit**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 

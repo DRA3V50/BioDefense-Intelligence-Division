@@ -3,29 +3,29 @@
 ## Investigation
 
 Case ID:
-BID-2026-8255
+BID-2026-5296
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Biomedical Network Exposure
 
 Threat Family:
-Biocontainment System Tampering
+Specimen Tracking Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Biomedical Analysis Cluster
+Evidence Processing Network
 
 Device:
-Specimen Tracking Server
+Biomedical Workstation
 
 Vendor:
 Lenovo
@@ -34,7 +34,7 @@ Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Research Operations
+Containment Network
 
 ---
 
@@ -50,14 +50,14 @@ Priority:
 ELEVATED
 
 Confidence:
-87%
+82%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
