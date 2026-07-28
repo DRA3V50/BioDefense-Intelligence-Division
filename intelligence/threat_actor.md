@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Umbra Bio
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unattributed
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Moderate
+Advanced
 
 ---
 
 ## Confidence
-82%
+91%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Covert Remote Access Tooling
-- Privilege Escalation
+- Credential Abuse
+- Laboratory Data Manipulation
 - Laboratory Control System Manipulation
-- Biosecurity System Tampering
+- Long-Term Network Foothold
+- Concealed Internal Movement
 - Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+National Response Cell
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biomedical Network Exposure
+Research Facility Intrusion
 
 ---
 

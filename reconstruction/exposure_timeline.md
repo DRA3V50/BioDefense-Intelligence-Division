@@ -4,16 +4,16 @@
 ## 2026-07-28
 
 ### Case Opened
-Case ID: BID-2026-5296
+Case ID: BID-2026-2459
 
 ### Classification
-Biomedical Network Exposure
+Research Facility Intrusion
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
 MODERATE

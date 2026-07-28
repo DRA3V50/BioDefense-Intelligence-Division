@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5296
+BID-2026-2459
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Research Facility Intrusion
 
 Threat Family:
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Biosecurity Operations Center
 
 Device:
-Biomedical Workstation
+Specimen Tracking Server
 
 Vendor:
-Lenovo
+Red Hat
 
 Security Zone:
-Containment Network
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-44
+45
 
 Evidence Collected:
-93
+67
 
 Indicators Identified:
-30
+26
 
 Affected Assets:
 7
 
 Confidence:
-82%
+91%
 
 Risk Score:
-63
+56
 
 ---
 

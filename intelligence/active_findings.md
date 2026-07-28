@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-5296
+BID-2026-2459
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Research Facility Intrusion
 
 Threat Family:
-Specimen Tracking Manipulation
+Biological Data Exfiltration
 
 Severity:
 MODERATE
@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
@@ -52,13 +52,13 @@ Affected Assets:
 7
 
 Evidence Collected:
-93
+67
 
 Indicators Identified:
-30
+26
 
 Analyst Confidence:
-82%
+91%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+National Response Cell

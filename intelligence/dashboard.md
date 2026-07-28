@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-5296 |
+| Case ID | BID-2026-2459 |
 | Operation | Operation Black Eclipse |
-| Classification | Biomedical Network Exposure |
-| Threat Family | Specimen Tracking Manipulation |
+| Classification | Research Facility Intrusion |
+| Threat Family | Biological Data Exfiltration |
 | Severity | MODERATE |
-| Status | Monitoring |
+| Status | Evidence Collection |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Evidence Processing Network |
-| Device | Biomedical Workstation |
-| Vendor | Lenovo |
-| Network Zone | Containment Network |
+| Platform | Biosecurity Operations Center |
+| Device | Specimen Tracking Server |
+| Vendor | Red Hat |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 63 |
-| Confidence | 82% |
-| Evidence | 93 |
-| Indicators | 30 |
+| Risk Score | 56 |
+| Confidence | 91% |
+| Evidence | 67 |
+| Indicators | 26 |
 | Affected Assets | 7 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Joint Cyber Investigation Unit**
+Lead Analyst: **National Response Cell**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
