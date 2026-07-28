@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-27
+## 2026-07-28
 
 ### Case Opened
-Case ID: BID-2026-4464
+Case ID: BID-2026-8255
 
 ### Classification
-Biological Research Intelligence Collection
+Counter-Bioterror Intelligence Case
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ### Current Status
 Monitoring
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

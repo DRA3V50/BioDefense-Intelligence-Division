@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4464 |
+| Case ID | BID-2026-8255 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Unauthorized Genomic Data Modification |
-| Severity | CRITICAL |
+| Classification | Counter-Bioterror Intelligence Case |
+| Threat Family | Biocontainment System Tampering |
+| Severity | MODERATE |
 | Status | Monitoring |
 | Phase | Operational Recovery |
 
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biosecurity Operations Center |
-| Device | Digital Evidence Appliance |
+| Platform | Biomedical Analysis Cluster |
+| Device | Specimen Tracking Server |
 | Vendor | Lenovo |
-| Network Zone | Containment Network |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 92 |
-| Confidence | 99% |
-| Evidence | 371 |
-| Indicators | 126 |
-| Affected Assets | 33 |
+| Risk Score | 56 |
+| Confidence | 87% |
+| Evidence | 95 |
+| Indicators | 20 |
+| Affected Assets | 18 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.

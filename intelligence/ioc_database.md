@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4464
+BID-2026-8255
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Counter-Bioterror Intelligence Case
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
 | PowerShell | Encoded administrative command execution detected |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -28,22 +28,22 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-371
+95
 
 Indicators Reviewed:
-126
+20
 
 Risk Score:
-92
+56
 
 Confidence:
-99%
+87%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Alpha
 
 Current Status:
 
