@@ -136,7 +136,12 @@ def build_threat_assessment(case: dict):
 
     containment = get_first_value(
         case,
-        ["containment_status", "containment_level", "status"],
+        [
+            "containment_phase",
+            "containment_status",
+            "containment_level",
+            "status",
+        ],
         "Under investigation",
     )
 
@@ -162,6 +167,7 @@ def build_analyst_assessment(case: dict, evidence_count: int, correlation_count:
     existing_summary = get_first_value(
         case,
         [
+            "assessment",
             "investigation_summary",
             "summary",
             "analyst_assessment",
@@ -202,6 +208,11 @@ def build_recommendations(case: dict):
 
     if isinstance(recommendations, list) and recommendations:
         return [str(item) for item in recommendations]
+
+    single_recommendation = case.get("recommended_action")
+
+    if single_recommendation:
+        return [str(single_recommendation)]
 
     return [
         "Continue collection and preservation of cyber-biothreat evidence.",
@@ -289,6 +300,18 @@ def generate_report():
         f"**Case ID:** {case_id}",
         "",
         f"**Case Status:** {case_status}",
+        "",
+        f"**Priority:** {get_first_value(current_case, ['priority'], 'Not specified')}",
+        "",
+        f"**Risk Score:** {get_first_value(current_case, ['risk_score'], 'Not specified')}",
+        "",
+        f"**Affected Platform:** {get_first_value(current_case, ['affected_platform'], 'Not specified')}",
+        "",
+        f"**Affected Assets:** {get_first_value(current_case, ['affected_assets'], 'Not specified')}",
+        "",
+        f"**Initial Access:** {get_first_value(current_case, ['initial_access'], 'Not specified')}",
+        "",
+        f"**Lead Analyst:** {get_first_value(current_case, ['lead_analyst'], 'Not specified')}",
         "",
         f"**Classification:** {threat_assessment['classification']}",
         "",
