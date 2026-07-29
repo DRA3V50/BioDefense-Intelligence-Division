@@ -147,18 +147,17 @@ jobs:
       - name: Generate Evidence Chain
         run: python scripts/generate_evidence_chain.py
 
-      - name: Generate Cyber-Biothreat Investigation Report
-        run: python scripts/generate_investigation_report.py
-
       - name: Generate Chain of Custody
         run: python scripts/generate_chain_of_custody.py
 
+      - name: Generate Forensic Summary
+        run: python scripts/generate_forensic_summary.py
+
+      - name: Generate Cyber-Biothreat Investigation Report
+        run: python scripts/generate_investigation_report.py
+
       - name: Update README
         run: python scripts/update_readme.py
-
-      # This must run after the main README updater
-      - name: Update Evidence Dashboard
-        run: python scripts/update_evidence_dashboard.py
 
       ###############################################################
       # Validation
