@@ -4,18 +4,18 @@
 ## 2026-07-29
 
 ### Case Opened
-Case ID: BID-2026-9499
+Case ID: BID-2026-2215
 
 ### Classification
 Unauthorized Research System Access
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ### Current Status
-Open
+Field Coordination
 
 ### Severity
-CRITICAL
+HIGH
 
 ---

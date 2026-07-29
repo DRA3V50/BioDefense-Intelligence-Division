@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-9499
+BID-2026-2215
 
 Operation:
 Operation Black Eclipse
@@ -12,13 +12,13 @@ Classification:
 Unauthorized Research System Access
 
 Threat Family:
-Research Network Persistence
+Laboratory Credential Abuse
 
 Severity:
-CRITICAL
+HIGH
 
 Priority:
-CRITICAL
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ CRITICAL
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-47
+18
 
 Evidence Collected:
-364
+168
 
 Indicators Identified:
-80
+75
 
 Analyst Confidence:
-98%
+97%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo

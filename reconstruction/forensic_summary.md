@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9499 |
+| Case ID | BID-2026-2215 |
 | Operation | Operation Black Eclipse |
 | Classification | Unauthorized Research System Access |
-| Threat Family | Research Network Persistence |
-| Severity | CRITICAL |
-| Status | Open |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | HIGH |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Genome Sequencing Server |
-| Vendor | Cisco |
-| Security Zone | Secure Laboratory |
+| Platform | Laboratory Control Network |
+| Device | Laboratory Controller |
+| Vendor | Red Hat |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 95 |
-| Confidence | 98% |
-| Evidence Collected | 364 |
-| Indicators Identified | 80 |
-| Affected Assets | 47 |
+| Risk Score | 85 |
+| Confidence | 97% |
+| Evidence Collected | 168 |
+| Indicators Identified | 75 |
+| Affected Assets | 18 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Field Coordination**
 
 Priority:
 
-**CRITICAL**
+**HIGH**
 
 Recommended Action:
 

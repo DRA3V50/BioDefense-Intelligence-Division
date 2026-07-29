@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Network Persistence
+Laboratory Credential Abuse
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Cerberus Group
 
 ---
 
 ## Attribution
-Multiple Regions
+Unknown
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-98%
+97%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Remote Access
+- Unknown
+- Insider Access Abuse
 - Laboratory Control System Manipulation
-- Encrypted Data Staging
-- Command and Control
-- Laboratory Network Reconnaissance
-- Supply Chain Compromise
+- Concealed Internal Movement
+- Privilege Escalation
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Bravo
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 

@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-9499
+BID-2026-2215
 
 Operation:
 Operation Black Eclipse
@@ -12,29 +12,29 @@ Classification:
 Unauthorized Research System Access
 
 Threat Family:
-Research Network Persistence
+Laboratory Credential Abuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
-Biosecurity Operations Center
+Laboratory Control Network
 
 Device:
-Genome Sequencing Server
+Laboratory Controller
 
 Vendor:
-Cisco
+Red Hat
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Isolated From Production
 
 Priority:
-CRITICAL
+HIGH
 
 Confidence:
-98%
+97%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.

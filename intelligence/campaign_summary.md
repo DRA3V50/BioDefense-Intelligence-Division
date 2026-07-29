@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9499
+BID-2026-2215
 
 Operation:
 Operation Black Eclipse
@@ -12,51 +12,51 @@ Classification:
 Unauthorized Research System Access
 
 Threat Family:
-Research Network Persistence
+Laboratory Credential Abuse
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Laboratory Control Network
 
 Device:
-Genome Sequencing Server
+Laboratory Controller
 
 Vendor:
-Cisco
+Red Hat
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-47
+48
 
 Evidence Collected:
-364
+168
 
 Indicators Identified:
-80
+75
 
 Affected Assets:
-47
+18
 
 Confidence:
-98%
+97%
 
 Risk Score:
-95
+85
 
 ---
 
