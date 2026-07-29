@@ -3,13 +3,13 @@
 ## Investigation
 
 Case ID:
-BID-2026-2215
+BID-2026-4439
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Evidence Reconstruction Investigation
 
 Threat Family:
 Laboratory Credential Abuse
@@ -19,22 +19,22 @@ Laboratory Credential Abuse
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
-Laboratory Control Network
+Biosecurity Operations Center
 
 Device:
-Laboratory Controller
+Research Database
 
 Vendor:
-Red Hat
+VMware
 
 Operating System:
-VMware ESXi 9
+Hardened Research Appliance OS
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-97%
+92%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.

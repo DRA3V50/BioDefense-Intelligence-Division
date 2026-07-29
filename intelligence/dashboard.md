@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2215 |
+| Case ID | BID-2026-4439 |
 | Operation | Operation Black Eclipse |
-| Classification | Unauthorized Research System Access |
+| Classification | Evidence Reconstruction Investigation |
 | Threat Family | Laboratory Credential Abuse |
-| Severity | HIGH |
-| Status | Field Coordination |
+| Severity | MODERATE |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Laboratory Controller |
-| Vendor | Red Hat |
-| Network Zone | Federal Operations |
+| Platform | Biosecurity Operations Center |
+| Device | Research Database |
+| Vendor | VMware |
+| Network Zone | Containment Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 85 |
-| Confidence | 97% |
-| Evidence | 168 |
-| Indicators | 75 |
-| Affected Assets | 18 |
+| Risk Score | 69 |
+| Confidence | 92% |
+| Evidence | 46 |
+| Indicators | 15 |
+| Affected Assets | 11 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.

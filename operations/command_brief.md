@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-29 05:19 UTC
+**Generated:** 2026-07-29 15:48 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-2215
+**Case ID:** BID-2026-4439
 
-**Classification:** Unauthorized Research System Access
+**Classification:** Evidence Reconstruction Investigation
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
 **Threat Family:** Laboratory Credential Abuse
 
-**Confidence:** 97%
+**Confidence:** 92%
 
 ---
 
 ## Investigation Summary
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **168**
+Evidence Collected: **46**
 
-Indicators: **75**
+Indicators: **15**
 
-Priority: **HIGH**
+Priority: **ELEVATED**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Bravo**
+**Analyst Team Delta**
 
 Initial Access:
-**Unknown**
+**Credential Abuse**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**48**
+**49**
 
 Confirmed Intrusions:
 **8**
 
 Total Evidence:
-**87921**
+**87967**
 
 Total Indicators:
-**60350**
+**60365**
 
 ---
 
 ## Operational Highlights
 
-- 168 evidence items are associated with the active investigation.
-- 75 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **97%**.
-- Current investigation priority is **HIGH**.
+- 46 evidence items are associated with the active investigation.
+- 15 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **92%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

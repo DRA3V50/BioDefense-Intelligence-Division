@@ -6,7 +6,7 @@ Laboratory Credential Abuse
 ---
 
 ## Primary Alias
-Cerberus Group
+Project Chimera
 
 ---
 
@@ -16,32 +16,32 @@ Unknown
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-97%
+92%
 
 ---
 
 ## Observed Techniques
-- Unknown
-- Insider Access Abuse
-- Laboratory Control System Manipulation
-- Concealed Internal Movement
-- Privilege Escalation
-- Lateral Movement
+- Credential Abuse
+- Supply Chain Compromise
+- Command and Control
+- Laboratory Network Reconnaissance
+- Long-Term Network Foothold
+- Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Delta
 
 **Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Evidence Reconstruction Investigation
 
 ---
 

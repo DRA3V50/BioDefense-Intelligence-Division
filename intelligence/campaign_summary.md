@@ -3,13 +3,13 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2215
+BID-2026-4439
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Evidence Reconstruction Investigation
 
 Threat Family:
 Laboratory Credential Abuse
@@ -18,45 +18,45 @@ Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Biosecurity Operations Center
 
 Device:
-Laboratory Controller
+Research Database
 
 Vendor:
-Red Hat
+VMware
 
 Security Zone:
-Federal Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-48
+49
 
 Evidence Collected:
-168
+46
 
 Indicators Identified:
-75
+15
 
 Affected Assets:
-18
+11
 
 Confidence:
-97%
+92%
 
 Risk Score:
-85
+69
 
 ---
 
