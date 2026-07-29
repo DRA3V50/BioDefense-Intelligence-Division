@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3308 |
+| Case ID | BID-2026-9499 |
 | Operation | Operation Black Eclipse |
-| Classification | Evidence Reconstruction Investigation |
-| Threat Family | Insider Laboratory Compromise |
-| Severity | LOW |
-| Status | Evidence Collection |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Research Network Persistence |
+| Severity | CRITICAL |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,9 +18,9 @@
 
 | Field | Value |
 |------|------|
-| Platform | Federal Investigation Network |
-| Device | Biomedical Workstation |
-| Vendor | Palo Alto Networks |
+| Platform | Biosecurity Operations Center |
+| Device | Genome Sequencing Server |
+| Vendor | Cisco |
 | Network Zone | Secure Laboratory |
 
 ---
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 41 |
-| Confidence | 84% |
-| Evidence | 14 |
-| Indicators | 14 |
-| Affected Assets | 7 |
+| Risk Score | 95 |
+| Confidence | 98% |
+| Evidence | 364 |
+| Indicators | 80 |
+| Affected Assets | 47 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.

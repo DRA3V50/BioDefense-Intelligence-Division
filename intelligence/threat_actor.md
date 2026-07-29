@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Insider Laboratory Compromise
+Research Network Persistence
 
 ---
 
 ## Primary Alias
-Project Chimera
+Dark Sequence
 
 ---
 
 ## Attribution
-Unattributed
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-84%
+98%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
+- Unauthorized Remote Access
+- Laboratory Control System Manipulation
+- Encrypted Data Staging
 - Command and Control
-- Lateral Movement
+- Laboratory Network Reconnaissance
 - Supply Chain Compromise
-- Laboratory Data Manipulation
-- Biosecurity System Tampering
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 ---
 

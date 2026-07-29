@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>7<br><br>**Active Cases**<br>46<br><br>**Evidence Collected**<br>87,389<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>60,195 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>CRITICAL | **Confirmed Intrusions**<br>8<br><br>**Active Cases**<br>47<br><br>**Evidence Collected**<br>87,753<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>60,275 |
 
 ---
 
@@ -29,76 +29,33 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-3308<br><br>**Classification**<br>Evidence Reconstruction Investigation<br><br>**Threat Family**<br>Insider Laboratory Compromise<br><br>**Severity**<br>LOW | **Platform**<br>Federal Investigation Network<br><br>**Vendor**<br>Palo Alto Networks<br><br>**Device**<br>Biomedical Workstation<br><br>**Zone**<br>Secure Laboratory |
+| **Case ID**<br>BID-2026-9499<br><br>**Classification**<br>Unauthorized Research System Access<br><br>**Threat Family**<br>Research Network Persistence<br><br>**Severity**<br>CRITICAL | **Platform**<br>Biosecurity Operations Center<br><br>**Vendor**<br>Cisco<br><br>**Device**<br>Genome Sequencing Server<br><br>**Zone**<br>Secure Laboratory |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ROUTINE<br><br>**Confidence**<br>84%<br><br>**Evidence**<br>14<br><br>**Indicators**<br>14 |
+| **Priority**<br>CRITICAL<br><br>**Confidence**<br>98%<br><br>**Evidence**<br>364<br><br>**Indicators**<br>80 |
 
 ---
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Delta**
-- Initial Access: **Credential Abuse**
+- Lead Analyst: **Analyst Team Alpha**
+- Initial Access: **Unauthorized Remote Access**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
 
 <!-- EVIDENCE_DASHBOARD_START -->
 
-## Latest Digital Evidence Summary
-
-**Active Case:** `BID-2026-3308`
-
-| Evidence Metric | Value |
-|---|---:|
-| Evidence Records | 14 |
-| Correlated Records | 14 |
-| Integrity Verified | 14 |
-| Pending Analyst Review | 14 |
-
-### Evidence Breakdown
-
-| Evidence Type | Records |
-|---|---:|
-| Authentication Log | 3 |
-| Laboratory System Configuration | 2 |
-| Firewall Log | 2 |
-| Containment Validation Record | 2 |
-| Laboratory Information System Audit Log | 2 |
-| Research Workstation Event Log | 1 |
-| Access Control Log | 1 |
-| Network Connection Record | 1 |
-
-### Priority Findings
-
-| Investigative Finding | Correlations |
-|---|---:|
-| Credential Misuse | 3 |
-| Laboratory System Modification | 2 |
-| Suspicious Network Activity | 2 |
-| Containment Verification | 2 |
-| Laboratory Information System Anomaly | 2 |
-| Research Workstation Compromise | 1 |
-| Unauthorized Facility Access | 1 |
-| Command-and-Control Communication | 1 |
-
-### Evidence Files
-
-- [Evidence Manifest](evidence/BID-2026-3308/evidence_manifest.json)
-- [Evidence Correlations](evidence/BID-2026-3308/evidence_correlations.json)
-- [Chain of Custody](evidence/BID-2026-3308/chain_of_custody.csv)
-
-**Evidence Repository Updated:** `2026-07-29T01:35:27Z`
+Evidence dashboard pending generation.
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -108,16 +65,16 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 46 |
+| Total Investigations | 47 |
 | Low Severity Cases | 11 |
 | Moderate Severity Cases | 18 |
 | High Severity Cases | 10 |
-| Critical Severity Cases | 7 |
-| Average Confidence | 89.9% |
-| Total Evidence Collected | 87,389 |
-| Total Indicators | 60,195 |
-| Active Cases | 46 |
-| Confirmed Intrusions | 7 |
+| Critical Severity Cases | 8 |
+| Average Confidence | 90.1% |
+| Total Evidence Collected | 87,753 |
+| Total Indicators | 60,275 |
+| Active Cases | 47 |
+| Confirmed Intrusions | 8 |
 
 ---
 
@@ -125,11 +82,11 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-9499 | Unauthorized Research System Access | CRITICAL |
 | BID-2026-3308 | Evidence Reconstruction Investigation | LOW |
 | BID-2026-2459 | Research Facility Intrusion | MODERATE |
 | BID-2026-5296 | Biomedical Network Exposure | MODERATE |
 | BID-2026-8255 | Counter-Bioterror Intelligence Case | MODERATE |
-| BID-2026-4464 | Biological Research Intelligence Collection | CRITICAL |
 
 
 ---

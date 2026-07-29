@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3308
+BID-2026-9499
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Biosecurity Operations Center
 
 Device:
-Biomedical Workstation
+Genome Sequencing Server
 
 Vendor:
-Palo Alto Networks
+Cisco
 
 Security Zone:
 Secure Laboratory
@@ -41,22 +41,22 @@ Secure Laboratory
 ## Investigation Metrics
 
 Investigations Recorded:
-46
+47
 
 Evidence Collected:
-14
+364
 
 Indicators Identified:
-14
+80
 
 Affected Assets:
-7
+47
 
 Confidence:
-84%
+98%
 
 Risk Score:
-41
+95
 
 ---
 

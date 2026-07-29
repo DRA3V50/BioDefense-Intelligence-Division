@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-07-29 01:35 UTC
+**Generated:** 2026-07-29 01:51 UTC
 
 ---
 
@@ -12,39 +12,39 @@
 
 **Campaign ID:** BDC-2026-001
 
-**Case ID:** BID-2026-3308
+**Case ID:** BID-2026-9499
 
-**Case Status:** Evidence Collection
+**Case Status:** Open
 
-**Priority:** ROUTINE
+**Priority:** CRITICAL
 
-**Risk Score:** 41
+**Risk Score:** 95
 
-**Affected Platform:** Federal Investigation Network
+**Affected Platform:** Biosecurity Operations Center
 
-**Affected Assets:** 7
+**Affected Assets:** 47
 
-**Initial Access:** Credential Abuse
+**Initial Access:** Unauthorized Remote Access
 
-**Lead Analyst:** Analyst Team Delta
+**Lead Analyst:** Analyst Team Alpha
 
-**Classification:** Evidence Reconstruction Investigation
+**Classification:** Unauthorized Research System Access
 
 ---
 
 ## Executive Summary
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
 ## Cyber-Biothreat Assessment
 
-**Threat Severity:** LOW
+**Threat Severity:** CRITICAL
 
-**Threat Family:** Insider Laboratory Compromise
+**Threat Family:** Research Network Persistence
 
-**Assessment Confidence:** 84%
+**Assessment Confidence:** 98%
 
 **Containment Status:** Operational Recovery
 
@@ -54,9 +54,9 @@ The investigation evaluates whether cyber activity affected biological research,
 
 ## Evidence Summary
 
-**Evidence Records:** 14
+**Evidence Records:** 364
 
-**Correlation Records:** 14
+**Correlation Records:** 364
 
 **Evidence Integrity:** Verified
 
@@ -64,9 +64,9 @@ The investigation evaluates whether cyber activity affected biological research,
 
 **Evidence Correlations:** Available
 
-**Chain of Custody:** Not Available
+**Chain of Custody:** Available
 
-**Forensic Summary:** Not Available
+**Forensic Summary:** Available
 
 ---
 
@@ -89,7 +89,7 @@ No conclusion regarding biological material release should be made unless it is 
 
 ## Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 The current assessment remains subject to revision as evidence is validated, correlated, and reviewed for attribution.
 
@@ -117,10 +117,10 @@ The current assessment remains subject to revision as evidence is validated, cor
 - [Command Brief](../operations/command_brief.md) — Available
 - [Investigation Timeline](../operations/investigation_timeline.md) — Available
 - [Evidence Chain Analysis](../evidence/evidence_chain.md) — Available
-- [Evidence Manifest](../evidence/BID-2026-3308/evidence_manifest.json) — Available
-- [Evidence Correlations](../evidence/BID-2026-3308/evidence_correlations.json) — Available
-- [Chain of Custody](../evidence/BID-2026-3308/chain_of_custody.md) — Not Available
-- [Forensic Summary](../evidence/BID-2026-3308/forensic_summary.md) — Not Available
+- [Evidence Manifest](../evidence/BID-2026-9499/evidence_manifest.json) — Available
+- [Evidence Correlations](../evidence/BID-2026-9499/evidence_correlations.json) — Available
+- [Chain of Custody](../evidence/BID-2026-9499/chain_of_custody.md) — Available
+- [Forensic Summary](../evidence/BID-2026-9499/forensic_summary.md) — Available
 
 ---
 

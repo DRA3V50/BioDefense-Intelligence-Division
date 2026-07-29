@@ -3,32 +3,32 @@
 ## Investigation
 
 Case ID:
-BID-2026-3308
+BID-2026-9499
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Insider Laboratory Compromise
+Research Network Persistence
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
-Federal Investigation Network
+Biosecurity Operations Center
 
 Device:
-Biomedical Workstation
+Genome Sequencing Server
 
 Vendor:
-Palo Alto Networks
+Cisco
 
 Operating System:
 Red Hat Enterprise Linux 10
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
-ROUTINE
+CRITICAL
 
 Confidence:
-84%
+98%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+System isolated pending malware reverse engineering.

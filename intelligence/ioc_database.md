@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3308
+BID-2026-9499
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 ---
 
 | Category | Observation |
 |----------|-------------|
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Authentication | Privileged account authenticated outside approved maintenance window |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Identity | Credential reuse detected across isolated research segments |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Device | Protected workstation entered evidence preservation mode |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -28,23 +28,23 @@ Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-14
+364
 
 Indicators Reviewed:
-14
+80
 
 Risk Score:
-41
+95
 
 Confidence:
-84%
+98%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha
 
 Current Status:
 
-Evidence Collection
+Open

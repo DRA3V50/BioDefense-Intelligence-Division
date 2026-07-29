@@ -4,18 +4,18 @@
 ## 2026-07-29
 
 ### Case Opened
-Case ID: BID-2026-3308
+Case ID: BID-2026-9499
 
 ### Classification
-Evidence Reconstruction Investigation
+Unauthorized Research System Access
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Evidence Collection
+Open
 
 ### Severity
-LOW
+CRITICAL
 
 ---
