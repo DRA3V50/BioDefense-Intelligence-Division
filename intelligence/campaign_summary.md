@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2459
+BID-2026-3308
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Evidence Reconstruction Investigation
 
 Threat Family:
-Biological Data Exfiltration
+Insider Laboratory Compromise
 
 Current Phase:
 Operational Recovery
@@ -25,13 +25,13 @@ Evidence Collection
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Federal Investigation Network
 
 Device:
-Specimen Tracking Server
+Biomedical Workstation
 
 Vendor:
-Red Hat
+Palo Alto Networks
 
 Security Zone:
 Secure Laboratory
@@ -41,22 +41,22 @@ Secure Laboratory
 ## Investigation Metrics
 
 Investigations Recorded:
-45
+46
 
 Evidence Collected:
-67
+14
 
 Indicators Identified:
-26
+14
 
 Affected Assets:
 7
 
 Confidence:
-91%
+84%
 
 Risk Score:
-56
+41
 
 ---
 

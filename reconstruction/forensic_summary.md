@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2459 |
+| Case ID | BID-2026-3308 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Biological Data Exfiltration |
-| Severity | MODERATE |
+| Classification | Evidence Reconstruction Investigation |
+| Threat Family | Insider Laboratory Compromise |
+| Severity | LOW |
 | Status | Evidence Collection |
 
 ---
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Specimen Tracking Server |
-| Vendor | Red Hat |
+| Platform | Federal Investigation Network |
+| Device | Biomedical Workstation |
+| Vendor | Palo Alto Networks |
 | Security Zone | Secure Laboratory |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 56 |
-| Confidence | 91% |
-| Evidence Collected | 67 |
-| Indicators Identified | 26 |
+| Risk Score | 41 |
+| Confidence | 84% |
+| Evidence Collected | 14 |
+| Indicators Identified | 14 |
 | Affected Assets | 7 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

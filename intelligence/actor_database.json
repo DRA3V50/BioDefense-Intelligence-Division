@@ -51,10 +51,10 @@
         {
             "name": "Insider Laboratory Compromise",
             "first_seen": "2026-07-22",
-            "last_seen": "2026-07-24",
-            "cases": 2,
-            "severity": "HIGH",
-            "confidence": 96
+            "last_seen": "2026-07-29",
+            "cases": 3,
+            "severity": "LOW",
+            "confidence": 84
         },
         {
             "name": "Research Network Persistence",

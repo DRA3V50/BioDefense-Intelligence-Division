@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-28
+## 2026-07-29
 
 ### Case Opened
-Case ID: BID-2026-2459
+Case ID: BID-2026-3308
 
 ### Classification
-Research Facility Intrusion
+Evidence Reconstruction Investigation
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
 Evidence Collection
 
 ### Severity
-MODERATE
+LOW
 
 ---

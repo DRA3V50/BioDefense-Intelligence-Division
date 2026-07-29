@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-2459
+BID-2026-3308
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Evidence Reconstruction Investigation
 
 Threat Family:
-Biological Data Exfiltration
+Insider Laboratory Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+National Pathogen Research Facility
 
 Platform:
-Biosecurity Operations Center
+Federal Investigation Network
 
 Device:
-Specimen Tracking Server
+Biomedical Workstation
 
 Vendor:
-Red Hat
+Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Secure Laboratory
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Active Investigation
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-91%
+84%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

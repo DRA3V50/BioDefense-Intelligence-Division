@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biological Data Exfiltration
+Insider Laboratory Compromise
 
 ---
 
 ## Primary Alias
-Umbra Bio
+Project Chimera
 
 ---
 
@@ -21,29 +21,29 @@ Espionage Against Research Programs
 ---
 
 ## Operational Sophistication
-Advanced
+Moderate
 
 ---
 
 ## Confidence
-91%
+84%
 
 ---
 
 ## Observed Techniques
 - Credential Abuse
+- Command and Control
+- Lateral Movement
+- Supply Chain Compromise
 - Laboratory Data Manipulation
-- Laboratory Control System Manipulation
-- Long-Term Network Foothold
-- Concealed Internal Movement
-- Insider Access Abuse
+- Biosecurity System Tampering
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Delta
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Research Facility Intrusion
+Evidence Reconstruction Investigation
 
 ---
 
 ## Last Updated
-2026-07-28
+2026-07-29
