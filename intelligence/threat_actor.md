@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Synthetic Genome Data Theft
+Biomedical Infrastructure Reconnaissance
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Crimson Cell
 
 ---
 
 ## Attribution
-Unknown
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-93%
+86%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Concealed Internal Movement
-- Biosecurity System Tampering
-- Covert Remote Access Tooling
 - Supply Chain Compromise
-- Laboratory Network Reconnaissance
+- Laboratory Control System Manipulation
+- Credential Abuse
+- Long-Term Network Foothold
+- Insider Access Abuse
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Alpha
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Research Facility Intrusion
 
 ---
 

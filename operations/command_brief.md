@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-30 15:42 UTC
+**Generated:** 2026-07-30 15:46 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5457
+**Case ID:** BID-2026-8488
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Research Facility Intrusion
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
-**Threat Family:** Synthetic Genome Data Theft
+**Threat Family:** Biomedical Infrastructure Reconnaissance
 
-**Confidence:** 93%
+**Confidence:** 86%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **160**
+Evidence Collected: **78**
 
-Indicators: **46**
+Indicators: **19**
 
-Priority: **HIGH**
+Priority: **ELEVATED**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Analyst Team Alpha**
 
 Initial Access:
-**Credential Abuse**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**54**
+**55**
 
 Confirmed Intrusions:
 **8**
 
 Total Evidence:
-**88462**
+**88540**
 
 Total Indicators:
-**60556**
+**60575**
 
 ---
 
 ## Operational Highlights
 
-- 160 evidence items are associated with the active investigation.
-- 46 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **93%**.
-- Current investigation priority is **HIGH**.
+- 78 evidence items are associated with the active investigation.
+- 19 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **86%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

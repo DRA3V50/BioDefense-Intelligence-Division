@@ -67,10 +67,10 @@
         {
             "name": "Biomedical Infrastructure Reconnaissance",
             "first_seen": "2026-07-23",
-            "last_seen": "2026-07-26",
-            "cases": 2,
+            "last_seen": "2026-07-30",
+            "cases": 3,
             "severity": "MODERATE",
-            "confidence": 94
+            "confidence": 86
         },
         {
             "name": "Specimen Tracking Manipulation",

@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>8<br><br>**Active Cases**<br>54<br><br>**Evidence Collected**<br>88,462<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>60,556 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>8<br><br>**Active Cases**<br>55<br><br>**Evidence Collected**<br>88,540<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>60,575 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-5457<br><br>**Classification**<br>Biological Research Intelligence Collection<br><br>**Threat Family**<br>Synthetic Genome Data Theft<br><br>**Severity**<br>HIGH | **Platform**<br>Research Network<br><br>**Vendor**<br>Fortinet<br><br>**Device**<br>Access Control System<br><br>**Zone**<br>Evidence Network |
+| **Case ID**<br>BID-2026-8488<br><br>**Classification**<br>Research Facility Intrusion<br><br>**Threat Family**<br>Biomedical Infrastructure Reconnaissance<br><br>**Severity**<br>MODERATE | **Platform**<br>Clinical Research Environment<br><br>**Vendor**<br>Fortinet<br><br>**Device**<br>Digital Evidence Appliance<br><br>**Zone**<br>Federal Operations |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>93%<br><br>**Evidence**<br>160<br><br>**Indicators**<br>46 |
+| **Priority**<br>ELEVATED<br><br>**Confidence**<br>86%<br><br>**Evidence**<br>78<br><br>**Indicators**<br>19 |
 
 ---
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
 # Current Response
 
 - Lead Analyst: **Analyst Team Alpha**
-- Initial Access: **Credential Abuse**
+- Initial Access: **Supply Chain Compromise**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,69 +57,70 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 # Latest Digital Evidence Summary
 
-**Active Case:** BID-2026-5457
+**Active Case:** BID-2026-8488
 
 | Evidence Metric | Value |
 |-----------------|------:|
-| Evidence Records | 160 |
-| Correlated Records | 160 |
-| Integrity Verified | 160 |
-| Pending Analyst Review | 160 |
+| Evidence Records | 78 |
+| Correlated Records | 78 |
+| Integrity Verified | 78 |
+| Pending Analyst Review | 78 |
 
 ## Evidence Breakdown
 
 | Evidence Type | Records |
 |---------------|--------:|
-| Research Workstation Event Log | 19 |
-| Authentication Log | 18 |
-| Laboratory System Configuration | 16 |
-| Analyst Observation | 15 |
-| Research Data Integrity Record | 14 |
-| Laboratory Information System Audit Log | 13 |
-| Network Connection Record | 13 |
-| Threat Intelligence Record | 12 |
-| Biosecurity Audit Record | 12 |
 | Containment Validation Record | 11 |
-| Firewall Log | 10 |
-| Access Control Log | 7 |
+| Authentication Log | 11 |
+| Laboratory Information System Audit Log | 8 |
+| Research Data Integrity Record | 8 |
+| Analyst Observation | 7 |
+| Laboratory System Configuration | 7 |
+| Biosecurity Audit Record | 6 |
+| Firewall Log | 6 |
+| Network Connection Record | 4 |
+| Threat Intelligence Record | 4 |
+| Access Control Log | 4 |
+| Research Workstation Event Log | 2 |
 
 ## Priority Findings
 
 | Investigative Finding | Correlations |
 |-----------------------|-------------:|
-| Research Workstation Compromise | 19 |
-| Credential Misuse | 18 |
-| Laboratory System Modification | 16 |
-| Analyst Intelligence Assessment | 15 |
-| Research Data Integrity Anomaly | 14 |
-| Laboratory Information System Anomaly | 13 |
-| Command-and-Control Communication | 13 |
-| Known Threat Actor Indicator | 12 |
-| Biosecurity Policy Violation | 12 |
 | Containment Verification | 11 |
-| Suspicious Network Activity | 10 |
-| Unauthorized Facility Access | 7 |
+| Credential Misuse | 11 |
+| Laboratory Information System Anomaly | 8 |
+| Research Data Integrity Anomaly | 8 |
+| Analyst Intelligence Assessment | 7 |
+| Laboratory System Modification | 7 |
+| Biosecurity Policy Violation | 6 |
+| Suspicious Network Activity | 6 |
+| Command-and-Control Communication | 4 |
+| Known Threat Actor Indicator | 4 |
+| Unauthorized Facility Access | 4 |
+| Research Workstation Compromise | 2 |
 
 ## Active Case Intelligence Products
 
 | Intelligence Product | Status |
 |----------------------|--------|
 | [Cyber-Biothreat Investigation Report](reports/investigation_report.md) | Available |
+| [Bioterror Threat Assessment](reports/bioterror_threat_assessment.md) | Available |
 | [Investigative Leads and Intelligence Gaps](reports/investigative_leads.md) | Available |
 | [Command Brief](operations/command_brief.md) | Available |
 | [Investigation Timeline](operations/investigation_timeline.md) | Available |
 | [Evidence Chain Analysis](evidence/evidence_chain.md) | Available |
-| [Evidence Manifest](evidence/BID-2026-5457/evidence_manifest.json) | Available |
-| [Evidence Correlations](evidence/BID-2026-5457/evidence_correlations.json) | Available |
-| [Chain of Custody](evidence/BID-2026-5457/chain_of_custody.md) | Available |
-| [Forensic Summary](evidence/BID-2026-5457/forensic_summary.md) | Available |
-| [Acquisition Summary](evidence/BID-2026-5457/acquisition_summary.md) | Available |
+| [Evidence Manifest](evidence/BID-2026-8488/evidence_manifest.json) | Available |
+| [Evidence Correlations](evidence/BID-2026-8488/evidence_correlations.json) | Available |
+| [Chain of Custody](evidence/BID-2026-8488/chain_of_custody.md) | Available |
+| [Forensic Summary](evidence/BID-2026-8488/forensic_summary.md) | Available |
+| [Acquisition Summary](evidence/BID-2026-8488/acquisition_summary.md) | Available |
 
-**Current Threat Family:** Synthetic Genome Data Theft
+**Current Threat Family:** Biomedical Infrastructure Reconnaissance
 
-**Current Assessment:** Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+**Current Assessment:** Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
-**Evidence Repository Updated:** 2026-07-30T15:42:06Z
+**Evidence Repository Updated:** 2026-07-30T15:46:58Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -129,15 +130,15 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 54 |
+| Total Investigations | 55 |
 | Low Severity Cases | 12 |
-| Moderate Severity Cases | 21 |
+| Moderate Severity Cases | 22 |
 | High Severity Cases | 13 |
 | Critical Severity Cases | 8 |
-| Average Confidence | 90.1% |
-| Total Evidence Collected | 88,462 |
-| Total Indicators | 60,556 |
-| Active Cases | 54 |
+| Average Confidence | 90.0% |
+| Total Evidence Collected | 88,540 |
+| Total Indicators | 60,575 |
+| Active Cases | 55 |
 | Confirmed Intrusions | 8 |
 
 ---
@@ -146,11 +147,11 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-8488 | Research Facility Intrusion | MODERATE |
 | BID-2026-5457 | Biological Research Intelligence Collection | HIGH |
 | BID-2026-1532 | Research Facility Intrusion | HIGH |
 | BID-2026-1003 | Biomedical Network Exposure | LOW |
 | BID-2026-3690 | Biological Research Intelligence Collection | MODERATE |
-| BID-2026-2293 | Medical Device Security Assessment | MODERATE |
 
 
 ---
@@ -195,6 +196,7 @@ Every investigation automatically generates operational intelligence including:
 - Threat actor campaign summaries
 - Biological research impact assessments
 - Cyber-biosecurity intelligence reports
+- Bioterror threat assessments
 - Investigative leads and intelligence-gap assessments
 - Compromised laboratory asset inventories
 - Intelligence workbooks for investigative review

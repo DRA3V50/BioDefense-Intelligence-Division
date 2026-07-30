@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-5457
+BID-2026-8488
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion
 
 Threat Family:
-Synthetic Genome Data Theft
+Biomedical Infrastructure Reconnaissance
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
-Research Network
+Clinical Research Environment
 
 Device:
-Access Control System
+Digital Evidence Appliance
 
 Vendor:
 Fortinet
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
-Evidence Network
+Federal Operations
 
 ---
 
@@ -47,10 +47,10 @@ Status:
 Evidence Acquisition
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-93%
+86%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5457 |
+| Case ID | BID-2026-8488 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Synthetic Genome Data Theft |
-| Severity | HIGH |
+| Classification | Research Facility Intrusion |
+| Threat Family | Biomedical Infrastructure Reconnaissance |
+| Severity | MODERATE |
 | Status | Containment |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Research Network |
-| Device | Access Control System |
+| Platform | Clinical Research Environment |
+| Device | Digital Evidence Appliance |
 | Vendor | Fortinet |
-| Security Zone | Evidence Network |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,10 +28,10 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 71 |
-| Confidence | 93% |
-| Evidence Collected | 160 |
-| Indicators Identified | 46 |
+| Risk Score | 64 |
+| Confidence | 86% |
+| Evidence Collected | 78 |
+| Indicators Identified | 19 |
 | Affected Assets | 15 |
 
 ---
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 
