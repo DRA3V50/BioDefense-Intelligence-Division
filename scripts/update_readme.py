@@ -128,6 +128,12 @@ def format_list(
     return "\n".join(f"- {item}" for item in items)
 
 
+def file_availability(path: Path) -> str:
+    """Return a readable availability status for a generated file."""
+
+    return "Available" if path.exists() else "Not Available"
+
+
 # -------------------------------------------------
 # Historical metrics
 # -------------------------------------------------
@@ -319,10 +325,290 @@ def build_active_investigation(case: dict) -> str:
     )
 
 
-def build_evidence_dashboard_section() -> str:
+def build_evidence_dashboard_section(case: dict) -> str:
+    """Build the active-case evidence and intelligence dashboard."""
+
+    case_id = str(
+        field(
+            case,
+            "case_id",
+            "UNKNOWN-CASE",
+        )
+    )
+
+    case_directory = Path("evidence") / case_id
+
+    manifest_path = (
+        case_directory
+        / "evidence_manifest.json"
+    )
+
+    correlations_path = (
+        case_directory
+        / "evidence_correlations.json"
+    )
+
+    chain_of_custody_path = (
+        case_directory
+        / "chain_of_custody.md"
+    )
+
+    forensic_summary_path = (
+        case_directory
+        / "forensic_summary.md"
+    )
+
+    acquisition_summary_path = (
+        case_directory
+        / "acquisition_summary.md"
+    )
+
+    investigation_report_path = Path(
+        "reports/investigation_report.md"
+    )
+
+    command_brief_path = Path(
+        "operations/command_brief.md"
+    )
+
+    timeline_path = Path(
+        "operations/investigation_timeline.md"
+    )
+
+    evidence_chain_path = Path(
+        "evidence/evidence_chain.md"
+    )
+
+    manifest = load_json(manifest_path)
+    correlation_data = load_json(
+        correlations_path
+    )
+
+    evidence_items = manifest.get(
+        "evidence_items",
+        [],
+    )
+
+    if not isinstance(evidence_items, list):
+        evidence_items = []
+
+    correlations = correlation_data.get(
+        "correlations",
+        [],
+    )
+
+    if not isinstance(correlations, list):
+        correlations = []
+
+    evidence_count = len(evidence_items)
+
+    if evidence_count == 0:
+        evidence_count = safe_int(
+            manifest.get(
+                "evidence_count",
+                case.get("evidence_count"),
+            )
+        )
+
+    correlation_count = len(correlations)
+
+    verified_statuses = {
+        "verified",
+        "validated",
+        "confirmed",
+        "intact",
+    }
+
+    verified_count = sum(
+        1
+        for item in evidence_items
+        if str(
+            item.get(
+                "integrity_status",
+                "",
+            )
+        ).strip().lower()
+        in verified_statuses
+    )
+
+    pending_review_count = sum(
+        1
+        for item in evidence_items
+        if any(
+            term in str(
+                item.get(
+                    "review_status",
+                    "",
+                )
+            ).strip().lower()
+            for term in (
+                "pending",
+                "awaiting",
+                "unreviewed",
+            )
+        )
+    )
+
+    artifact_counts = Counter(
+        str(
+            item.get(
+                "artifact_type",
+                "Unspecified Evidence",
+            )
+        ).strip()
+        or "Unspecified Evidence"
+        for item in evidence_items
+    )
+
+    finding_counts = Counter(
+        str(
+            correlation.get(
+                "finding",
+                "Unspecified Finding",
+            )
+        ).strip()
+        or "Unspecified Finding"
+        for correlation in correlations
+    )
+
+    if artifact_counts:
+        evidence_breakdown_rows = "".join(
+            f"| {artifact_type} | {count} |\n"
+            for artifact_type, count
+            in artifact_counts.most_common()
+        )
+    else:
+        evidence_breakdown_rows = (
+            "| No evidence breakdown available | 0 |\n"
+        )
+
+    if finding_counts:
+        finding_rows = "".join(
+            f"| {finding} | {count} |\n"
+            for finding, count
+            in finding_counts.most_common()
+        )
+    else:
+        finding_rows = (
+            "| No correlated findings available | 0 |\n"
+        )
+
+    intelligence_products = [
+        (
+            "Cyber-Biothreat Investigation Report",
+            "reports/investigation_report.md",
+            investigation_report_path,
+        ),
+        (
+            "Command Brief",
+            "operations/command_brief.md",
+            command_brief_path,
+        ),
+        (
+            "Investigation Timeline",
+            "operations/investigation_timeline.md",
+            timeline_path,
+        ),
+        (
+            "Evidence Chain Analysis",
+            "evidence/evidence_chain.md",
+            evidence_chain_path,
+        ),
+        (
+            "Evidence Manifest",
+            (
+                f"evidence/{case_id}/"
+                "evidence_manifest.json"
+            ),
+            manifest_path,
+        ),
+        (
+            "Evidence Correlations",
+            (
+                f"evidence/{case_id}/"
+                "evidence_correlations.json"
+            ),
+            correlations_path,
+        ),
+        (
+            "Chain of Custody",
+            (
+                f"evidence/{case_id}/"
+                "chain_of_custody.md"
+            ),
+            chain_of_custody_path,
+        ),
+        (
+            "Forensic Summary",
+            (
+                f"evidence/{case_id}/"
+                "forensic_summary.md"
+            ),
+            forensic_summary_path,
+        ),
+        (
+            "Acquisition Summary",
+            (
+                f"evidence/{case_id}/"
+                "acquisition_summary.md"
+            ),
+            acquisition_summary_path,
+        ),
+    ]
+
+    product_rows = "".join(
+        f"| [{product_name}]({product_link}) "
+        f"| {file_availability(product_path)} |\n"
+        for (
+            product_name,
+            product_link,
+            product_path,
+        ) in intelligence_products
+    )
+
+    repository_updated = field(
+        manifest,
+        "generated_at",
+        field(
+            case,
+            "date",
+            "Not specified",
+        ),
+    )
+
     return (
         "<!-- EVIDENCE_DASHBOARD_START -->\n\n"
-        "Evidence dashboard pending generation.\n\n"
+        "# Latest Digital Evidence Summary\n\n"
+        f"**Active Case:** {case_id}\n\n"
+        "| Evidence Metric | Value |\n"
+        "|-----------------|------:|\n"
+        f"| Evidence Records "
+        f"| {format_number(evidence_count)} |\n"
+        f"| Correlated Records "
+        f"| {format_number(correlation_count)} |\n"
+        f"| Integrity Verified "
+        f"| {format_number(verified_count)} |\n"
+        f"| Pending Analyst Review "
+        f"| {format_number(pending_review_count)} |\n\n"
+        "## Evidence Breakdown\n\n"
+        "| Evidence Type | Records |\n"
+        "|---------------|--------:|\n"
+        f"{evidence_breakdown_rows}\n"
+        "## Priority Findings\n\n"
+        "| Investigative Finding | Correlations |\n"
+        "|-----------------------|-------------:|\n"
+        f"{finding_rows}\n"
+        "## Active Case Intelligence Products\n\n"
+        "| Intelligence Product | Status |\n"
+        "|----------------------|--------|\n"
+        f"{product_rows}\n"
+        f"**Current Threat Family:** "
+        f"{field(case, 'threat_family')}\n\n"
+        f"**Current Assessment:** "
+        f"{field(case, 'assessment', 'No assessment available.')}"
+        "\n\n"
+        f"**Evidence Repository Updated:** "
+        f"{repository_updated}\n\n"
         "<!-- EVIDENCE_DASHBOARD_END -->"
     )
 
@@ -460,7 +746,7 @@ def build_report(
         build_overview_section(),
         build_campaign_dashboard(operation),
         build_active_investigation(case),
-        build_evidence_dashboard_section(),
+        build_evidence_dashboard_section(case),
         build_operational_metrics(
             history_metrics,
             operation,
