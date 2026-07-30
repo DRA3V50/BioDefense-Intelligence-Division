@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1532
+Case ID: BID-2026-5457
 
 Operation: Operation Black Eclipse
 
-Classification: Research Facility Intrusion
+Classification: Biological Research Intelligence Collection
 
-Threat Family: Laboratory Credential Abuse
+Threat Family: Synthetic Genome Data Theft
 
-Current Status: Open
+Current Status: Containment
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Evidence correlation remains in progress across collected artifacts.
 
 Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
@@ -30,19 +30,19 @@ Priority:
 HIGH
 
 Risk Score:
-81
+71
 
 Confidence:
-91%
+93%
 
 Affected Assets:
-14
+15
 
 Evidence Collected:
-193
+160
 
 Indicators Recorded:
-77
+46
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+Analyst Team Alpha
 
 Date:
 

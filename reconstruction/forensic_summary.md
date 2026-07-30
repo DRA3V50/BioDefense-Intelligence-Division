@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1532 |
+| Case ID | BID-2026-5457 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Laboratory Credential Abuse |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Synthetic Genome Data Theft |
 | Severity | HIGH |
-| Status | Open |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Laboratory Controller |
+| Platform | Research Network |
+| Device | Access Control System |
 | Vendor | Fortinet |
-| Security Zone | Federal Operations |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 81 |
-| Confidence | 91% |
-| Evidence Collected | 193 |
-| Indicators Identified | 77 |
-| Affected Assets | 14 |
+| Risk Score | 71 |
+| Confidence | 93% |
+| Evidence Collected | 160 |
+| Indicators Identified | 46 |
+| Affected Assets | 15 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Alpha**
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Containment**
 
 Priority:
 

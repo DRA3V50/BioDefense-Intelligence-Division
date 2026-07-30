@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1532
+BID-2026-5457
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Biological Research Intelligence Collection
 
 Threat Family:
-Laboratory Credential Abuse
+Synthetic Genome Data Theft
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Biosecurity Operations Center
+Research Network
 
 Device:
-Laboratory Controller
+Access Control System
 
 Vendor:
 Fortinet
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Federal Operations
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 HIGH
 
 Confidence:
-91%
+93%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

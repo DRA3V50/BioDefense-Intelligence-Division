@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Credential Abuse
+Synthetic Genome Data Theft
 
 ---
 
 ## Primary Alias
-Project Chimera
+Genome Phantom
 
 ---
 
@@ -16,34 +16,34 @@ Unknown
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-91%
+93%
 
 ---
 
 ## Observed Techniques
-- Unknown
-- Laboratory Network Reconnaissance
-- Privilege Escalation
+- Credential Abuse
 - Concealed Internal Movement
-- Laboratory Control System Manipulation
-- Long-Term Network Foothold
+- Biosecurity System Tampering
+- Covert Remote Access Tooling
+- Supply Chain Compromise
+- Laboratory Network Reconnaissance
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Research Facility Intrusion
+Biological Research Intelligence Collection
 
 ---
 

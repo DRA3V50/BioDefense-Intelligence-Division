@@ -4,16 +4,16 @@
 ## 2026-07-30
 
 ### Case Opened
-Case ID: BID-2026-1532
+Case ID: BID-2026-5457
 
 ### Classification
-Research Facility Intrusion
+Biological Research Intelligence Collection
 
 ### Initial Assessment
 Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
-Open
+Containment
 
 ### Severity
 HIGH
