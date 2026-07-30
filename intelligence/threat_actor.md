@@ -6,44 +6,44 @@ Laboratory Credential Abuse
 ---
 
 ## Primary Alias
-Project Chimera
+Umbra Bio
 
 ---
 
 ## Attribution
-Unknown
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-92%
+87%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Supply Chain Compromise
-- Command and Control
-- Laboratory Network Reconnaissance
-- Long-Term Network Foothold
+- Phishing
+- Laboratory Data Manipulation
+- Privilege Escalation
+- Insider Access Abuse
+- Biosecurity System Tampering
 - Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+BioDefense Task Force
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Evidence Reconstruction Investigation
+Medical Device Security Assessment
 
 ---
 
 ## Last Updated
-2026-07-29
+2026-07-30

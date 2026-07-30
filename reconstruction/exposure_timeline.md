@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-29
+## 2026-07-30
 
 ### Case Opened
-Case ID: BID-2026-4439
+Case ID: BID-2026-2293
 
 ### Classification
-Evidence Reconstruction Investigation
+Medical Device Security Assessment
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Intelligence Analysis
+Open
 
 ### Severity
 MODERATE

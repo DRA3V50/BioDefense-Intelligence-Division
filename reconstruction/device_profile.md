@@ -3,13 +3,13 @@
 ## Investigation
 
 Case ID:
-BID-2026-4439
+BID-2026-2293
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Medical Device Security Assessment
 
 Threat Family:
 Laboratory Credential Abuse
@@ -19,22 +19,22 @@ Laboratory Credential Abuse
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Raccoon Research Annex
 
 Platform:
 Biosecurity Operations Center
 
 Device:
-Research Database
+Digital Evidence Appliance
 
 Vendor:
-VMware
+Microsoft
 
 Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Containment Network
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
 ELEVATED
 
 Confidence:
-92%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.

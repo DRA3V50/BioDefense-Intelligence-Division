@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4439
+BID-2026-2293
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Infrastructure | Firewall policy deviation identified |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | PowerShell | Encoded administrative command execution detected |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Infrastructure | Firewall policy deviation identified |
+| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -28,23 +28,23 @@ Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-46
+58
 
 Indicators Reviewed:
-15
+25
 
 Risk Score:
-69
+66
 
 Confidence:
-92%
+87%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Current Status:
 
-Intelligence Analysis
+Open

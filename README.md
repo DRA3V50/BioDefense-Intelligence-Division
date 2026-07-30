@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>8<br><br>**Active Cases**<br>49<br><br>**Evidence Collected**<br>87,967<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>60,365 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>HIGH | **Confirmed Intrusions**<br>8<br><br>**Active Cases**<br>50<br><br>**Evidence Collected**<br>88,025<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>60,390 |
 
 ---
 
@@ -29,33 +29,96 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-4439<br><br>**Classification**<br>Evidence Reconstruction Investigation<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>MODERATE | **Platform**<br>Biosecurity Operations Center<br><br>**Vendor**<br>VMware<br><br>**Device**<br>Research Database<br><br>**Zone**<br>Containment Network |
+| **Case ID**<br>BID-2026-2293<br><br>**Classification**<br>Medical Device Security Assessment<br><br>**Threat Family**<br>Laboratory Credential Abuse<br><br>**Severity**<br>MODERATE | **Platform**<br>Biosecurity Operations Center<br><br>**Vendor**<br>Microsoft<br><br>**Device**<br>Digital Evidence Appliance<br><br>**Zone**<br>Evidence Network |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>ELEVATED<br><br>**Confidence**<br>92%<br><br>**Evidence**<br>46<br><br>**Indicators**<br>15 |
+| **Priority**<br>ELEVATED<br><br>**Confidence**<br>87%<br><br>**Evidence**<br>58<br><br>**Indicators**<br>25 |
 
 ---
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Delta**
-- Initial Access: **Credential Abuse**
+- Lead Analyst: **BioDefense Task Force**
+- Initial Access: **Phishing**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
 
 <!-- EVIDENCE_DASHBOARD_START -->
 
-Evidence dashboard pending generation.
+# Latest Digital Evidence Summary
+
+**Active Case:** BID-2026-2293
+
+| Evidence Metric | Value |
+|-----------------|------:|
+| Evidence Records | 58 |
+| Correlated Records | 58 |
+| Integrity Verified | 58 |
+| Pending Analyst Review | 58 |
+
+## Evidence Breakdown
+
+| Evidence Type | Records |
+|---------------|--------:|
+| Firewall Log | 8 |
+| Research Workstation Event Log | 6 |
+| Authentication Log | 5 |
+| Network Connection Record | 5 |
+| Analyst Observation | 5 |
+| Laboratory Information System Audit Log | 5 |
+| Threat Intelligence Record | 4 |
+| Laboratory System Configuration | 4 |
+| Access Control Log | 4 |
+| Containment Validation Record | 4 |
+| Biosecurity Audit Record | 4 |
+| Research Data Integrity Record | 4 |
+
+## Priority Findings
+
+| Investigative Finding | Correlations |
+|-----------------------|-------------:|
+| Suspicious Network Activity | 8 |
+| Research Workstation Compromise | 6 |
+| Credential Misuse | 5 |
+| Command-and-Control Communication | 5 |
+| Analyst Intelligence Assessment | 5 |
+| Laboratory Information System Anomaly | 5 |
+| Known Threat Actor Indicator | 4 |
+| Laboratory System Modification | 4 |
+| Unauthorized Facility Access | 4 |
+| Containment Verification | 4 |
+| Biosecurity Policy Violation | 4 |
+| Research Data Integrity Anomaly | 4 |
+
+## Active Case Intelligence Products
+
+| Intelligence Product | Status |
+|----------------------|--------|
+| [Cyber-Biothreat Investigation Report](reports/investigation_report.md) | Available |
+| [Command Brief](operations/command_brief.md) | Available |
+| [Investigation Timeline](operations/investigation_timeline.md) | Available |
+| [Evidence Chain Analysis](evidence/evidence_chain.md) | Available |
+| [Evidence Manifest](evidence/BID-2026-2293/evidence_manifest.json) | Available |
+| [Evidence Correlations](evidence/BID-2026-2293/evidence_correlations.json) | Available |
+| [Chain of Custody](evidence/BID-2026-2293/chain_of_custody.md) | Available |
+| [Forensic Summary](evidence/BID-2026-2293/forensic_summary.md) | Available |
+| [Acquisition Summary](evidence/BID-2026-2293/acquisition_summary.md) | Available |
+
+**Current Threat Family:** Laboratory Credential Abuse
+
+**Current Assessment:** Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+
+**Evidence Repository Updated:** 2026-07-30T01:59:44Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -65,15 +128,15 @@ Evidence dashboard pending generation.
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 49 |
+| Total Investigations | 50 |
 | Low Severity Cases | 11 |
-| Moderate Severity Cases | 19 |
+| Moderate Severity Cases | 20 |
 | High Severity Cases | 11 |
 | Critical Severity Cases | 8 |
 | Average Confidence | 90.2% |
-| Total Evidence Collected | 87,967 |
-| Total Indicators | 60,365 |
-| Active Cases | 49 |
+| Total Evidence Collected | 88,025 |
+| Total Indicators | 60,390 |
+| Active Cases | 50 |
 | Confirmed Intrusions | 8 |
 
 ---
@@ -82,11 +145,11 @@ Evidence dashboard pending generation.
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-2293 | Medical Device Security Assessment | MODERATE |
 | BID-2026-4439 | Evidence Reconstruction Investigation | MODERATE |
 | BID-2026-2215 | Unauthorized Research System Access | HIGH |
 | BID-2026-9499 | Unauthorized Research System Access | CRITICAL |
 | BID-2026-3308 | Evidence Reconstruction Investigation | LOW |
-| BID-2026-2459 | Research Facility Intrusion | MODERATE |
 
 
 ---

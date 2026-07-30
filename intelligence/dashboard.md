@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4439 |
+| Case ID | BID-2026-2293 |
 | Operation | Operation Black Eclipse |
-| Classification | Evidence Reconstruction Investigation |
+| Classification | Medical Device Security Assessment |
 | Threat Family | Laboratory Credential Abuse |
 | Severity | MODERATE |
-| Status | Intelligence Analysis |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Biosecurity Operations Center |
-| Device | Research Database |
-| Vendor | VMware |
-| Network Zone | Containment Network |
+| Device | Digital Evidence Appliance |
+| Vendor | Microsoft |
+| Network Zone | Evidence Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 69 |
-| Confidence | 92% |
-| Evidence | 46 |
-| Indicators | 15 |
-| Affected Assets | 11 |
+| Risk Score | 66 |
+| Confidence | 87% |
+| Evidence | 58 |
+| Indicators | 25 |
+| Affected Assets | 10 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.

@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-4439
+Case ID: BID-2026-2293
 
 Operation: Operation Black Eclipse
 
-Classification: Evidence Reconstruction Investigation
+Classification: Medical Device Security Assessment
 
 Threat Family: Laboratory Credential Abuse
 
-Current Status: Intelligence Analysis
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ELEVATED
 
 Risk Score:
-69
+66
 
 Confidence:
-92%
+87%
 
 Affected Assets:
-11
+10
 
 Evidence Collected:
-46
+58
 
 Indicators Recorded:
-15
+25
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Date:
 
-2026-07-29
+2026-07-30
