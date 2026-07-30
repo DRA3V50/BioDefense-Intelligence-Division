@@ -367,6 +367,10 @@ def build_evidence_dashboard_section(case: dict) -> str:
         "reports/investigation_report.md"
     )
 
+    bioterror_threat_assessment_path = Path(
+        "reports/bioterror_threat_assessment.md"
+    )
+
     investigative_leads_path = Path(
         "reports/investigative_leads.md"
     )
@@ -502,6 +506,11 @@ def build_evidence_dashboard_section(case: dict) -> str:
             "Cyber-Biothreat Investigation Report",
             "reports/investigation_report.md",
             investigation_report_path,
+        ),
+        (
+            "Bioterror Threat Assessment",
+            "reports/bioterror_threat_assessment.md",
+            bioterror_threat_assessment_path,
         ),
         (
             "Investigative Leads and Intelligence Gaps",
@@ -726,6 +735,7 @@ def build_intelligence_products_section() -> str:
         "Threat actor campaign summaries",
         "Biological research impact assessments",
         "Cyber-biosecurity intelligence reports",
+        "Bioterror threat assessments",
         "Investigative leads and intelligence-gap assessments",
         "Compromised laboratory asset inventories",
         "Intelligence workbooks for investigative review",
