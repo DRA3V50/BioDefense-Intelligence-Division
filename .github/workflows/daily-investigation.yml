@@ -153,6 +153,9 @@ jobs:
       - name: Generate Forensic Summary
         run: python scripts/generate_forensic_summary.py
 
+      - name: Generate Investigative Leads
+        run: python scripts/generate_investigative_leads.py
+
       - name: Generate Cyber-Biothreat Investigation Report
         run: python scripts/generate_investigation_report.py
 
