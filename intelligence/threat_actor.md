@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Infrastructure Reconnaissance
+Laboratory Credential Abuse
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Black Helix
 
 ---
 
@@ -16,7 +16,7 @@ Multiple Regions
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Medical Infrastructure Disruption
 
 ---
 
@@ -26,22 +26,22 @@ High
 ---
 
 ## Confidence
-86%
+90%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
+- Phishing
 - Laboratory Control System Manipulation
+- Concealed Internal Movement
 - Credential Abuse
-- Long-Term Network Foothold
-- Insider Access Abuse
 - Privilege Escalation
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Bravo
 
 **Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Research Facility Intrusion
+Cyber-Biothreat Intelligence Review
 
 ---
 

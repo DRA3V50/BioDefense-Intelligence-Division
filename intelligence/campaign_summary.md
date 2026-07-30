@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8488
+BID-2026-1479
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Laboratory Credential Abuse
 
 Current Phase:
 Operational Recovery
@@ -25,10 +25,10 @@ Containment
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Biosecurity Operations Center
 
 Device:
-Digital Evidence Appliance
+Biomedical Workstation
 
 Vendor:
 Fortinet
@@ -41,22 +41,22 @@ Federal Operations
 ## Investigation Metrics
 
 Investigations Recorded:
-55
+56
 
 Evidence Collected:
-78
+330
 
 Indicators Identified:
-19
+152
 
 Affected Assets:
-15
+25
 
 Confidence:
-86%
+90%
 
 Risk Score:
-64
+97
 
 ---
 

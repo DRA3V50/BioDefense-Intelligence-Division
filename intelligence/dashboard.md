@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8488 |
+| Case ID | BID-2026-1479 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
-| Severity | MODERATE |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | CRITICAL |
 | Status | Containment |
 | Phase | Operational Recovery |
 
@@ -18,8 +18,8 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Research Environment |
-| Device | Digital Evidence Appliance |
+| Platform | Biosecurity Operations Center |
+| Device | Biomedical Workstation |
 | Vendor | Fortinet |
 | Network Zone | Federal Operations |
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 64 |
-| Confidence | 86% |
-| Evidence | 78 |
-| Indicators | 19 |
-| Affected Assets | 15 |
+| Risk Score | 97 |
+| Confidence | 90% |
+| Evidence | 330 |
+| Indicators | 152 |
+| Affected Assets | 25 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.

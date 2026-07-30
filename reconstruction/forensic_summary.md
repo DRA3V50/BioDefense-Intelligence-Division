@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8488 |
+| Case ID | BID-2026-1479 |
 | Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Biomedical Infrastructure Reconnaissance |
-| Severity | MODERATE |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | CRITICAL |
 | Status | Containment |
 
 ---
@@ -17,8 +17,8 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Digital Evidence Appliance |
+| Platform | Biosecurity Operations Center |
+| Device | Biomedical Workstation |
 | Vendor | Fortinet |
 | Security Zone | Federal Operations |
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 64 |
-| Confidence | 86% |
-| Evidence Collected | 78 |
-| Indicators Identified | 19 |
-| Affected Assets | 15 |
+| Risk Score | 97 |
+| Confidence | 90% |
+| Evidence Collected | 330 |
+| Indicators Identified | 152 |
+| Affected Assets | 25 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ELEVATED**
+**CRITICAL**
 
 Recommended Action:
 

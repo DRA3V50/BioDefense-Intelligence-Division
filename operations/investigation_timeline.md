@@ -2,35 +2,35 @@
 
 **Operation:** Operation Black Eclipse
 
-**Case ID:** BID-2026-8488
+**Case ID:** BID-2026-1479
 
-**Generated:** 2026-07-30 15:46 UTC
+**Generated:** 2026-07-30 15:50 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-07-30 09:46 UTC | Initial Detection | Potential activity associated with Biomedical Infrastructure Reconnaissance was detected. |
-| 2026-07-30 10:46 UTC | Case Opened | Investigation BID-2026-8488 was opened and assigned to Analyst Team Alpha. |
-| 2026-07-30 11:46 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Supply Chain Compromise. |
-| 2026-07-30 12:46 UTC | Evidence Collection | 78 evidence items and 19 indicators were associated with the active investigation. |
-| 2026-07-30 13:46 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-07-30 14:46 UTC | Operational Review | Investigators identified coordinated cyber activity targeting protected biomedical infrastructure. |
-| 2026-07-30 15:46 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-07-30 09:50 UTC | Initial Detection | Potential activity associated with Laboratory Credential Abuse was detected. |
+| 2026-07-30 10:50 UTC | Case Opened | Investigation BID-2026-1479 was opened and assigned to Analyst Team Bravo. |
+| 2026-07-30 11:50 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Phishing. |
+| 2026-07-30 12:50 UTC | Evidence Collection | 330 evidence items and 152 indicators were associated with the active investigation. |
+| 2026-07-30 13:50 UTC | Containment Assessment | Containment was assessed at CRITICAL. |
+| 2026-07-30 14:50 UTC | Operational Review | Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition. |
+| 2026-07-30 15:50 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** MODERATE
+**Severity:** CRITICAL
 
-**Priority:** ELEVATED
+**Priority:** CRITICAL
 
-**Confidence:** 86%
+**Confidence:** 90%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** CRITICAL
 
 ---
 

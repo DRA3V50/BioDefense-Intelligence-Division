@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-8488
+BID-2026-1479
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Laboratory Credential Abuse
 
 Severity:
-MODERATE
+CRITICAL
 
 Priority:
-ELEVATED
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-15
+25
 
 Evidence Collected:
-78
+330
 
 Indicators Identified:
-19
+152
 
 Analyst Confidence:
-86%
+90%
 
 Containment Phase:
 Operational Recovery
@@ -67,7 +67,7 @@ Operational Recovery
 
 # Analyst Assessment
 
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo

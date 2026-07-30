@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-8488
+BID-2026-1479
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Biomedical Infrastructure Reconnaissance
+Laboratory Credential Abuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
-Clinical Research Environment
+Biosecurity Operations Center
 
 Device:
-Digital Evidence Appliance
+Biomedical Workstation
 
 Vendor:
 Fortinet
 
 Operating System:
-VMware ESXi 9
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Federal Operations
@@ -47,17 +47,17 @@ Status:
 Evidence Acquisition
 
 Priority:
-ELEVATED
+CRITICAL
 
 Confidence:
-86%
+90%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Digital evidence preserved for laboratory forensic examination.

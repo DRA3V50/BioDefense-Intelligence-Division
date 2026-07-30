@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8488
+BID-2026-1479
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Research Facility Intrusion
+Cyber-Biothreat Intelligence Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -28,22 +28,22 @@ Research Facility Intrusion
 ## Investigation Statistics
 
 Evidence Collected:
-78
+330
 
 Indicators Reviewed:
-19
+152
 
 Risk Score:
-64
+97
 
 Confidence:
-86%
+90%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo
 
 Current Status:
 

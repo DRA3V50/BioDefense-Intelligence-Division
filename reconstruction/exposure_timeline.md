@@ -4,18 +4,18 @@
 ## 2026-07-30
 
 ### Case Opened
-Case ID: BID-2026-8488
+Case ID: BID-2026-1479
 
 ### Classification
-Research Facility Intrusion
+Cyber-Biothreat Intelligence Review
 
 ### Initial Assessment
-Investigators identified coordinated cyber activity targeting protected biomedical infrastructure.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
 Containment
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---
