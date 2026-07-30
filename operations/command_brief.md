@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-30 04:56 UTC
+**Generated:** 2026-07-30 14:23 UTC
 
 ---
 
@@ -18,15 +18,15 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3690
+**Case ID:** BID-2026-1003
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Biomedical Network Exposure
 
-**Severity:** MODERATE
+**Severity:** LOW
 
-**Threat Family:** Specimen Tracking Manipulation
+**Threat Family:** Synthetic Genome Data Theft
 
-**Confidence:** 90%
+**Confidence:** 82%
 
 ---
 
@@ -38,11 +38,11 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 
 ## Evidence Summary
 
-Evidence Collected: **44**
+Evidence Collected: **40**
 
-Indicators: **32**
+Indicators: **11**
 
-Priority: **ELEVATED**
+Priority: **ROUTINE**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Analyst Team Delta**
 
 Initial Access:
-**Unknown**
+**Credential Abuse**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**51**
+**52**
 
 Confirmed Intrusions:
 **8**
 
 Total Evidence:
-**88069**
+**88109**
 
 Total Indicators:
-**60422**
+**60433**
 
 ---
 
 ## Operational Highlights
 
-- 44 evidence items are associated with the active investigation.
-- 32 indicators are currently linked to the case.
+- 40 evidence items are associated with the active investigation.
+- 11 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **90%**.
-- Current investigation priority is **ELEVATED**.
+- Analyst confidence is **82%**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

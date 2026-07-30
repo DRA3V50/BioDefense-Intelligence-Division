@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Synthetic Genome Data Theft
 
 ---
 
 ## Primary Alias
-Vector-9
+Black Helix
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unattributed
 
 ---
 
@@ -21,22 +21,22 @@ Laboratory System Sabotage
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-90%
+82%
 
 ---
 
 ## Observed Techniques
-- Unknown
-- Laboratory Network Reconnaissance
 - Credential Abuse
-- Biosecurity System Tampering
-- Encrypted Data Staging
-- Supply Chain Compromise
+- Concealed Internal Movement
+- Command and Control
+- Lateral Movement
+- Laboratory Data Manipulation
+- Laboratory Network Reconnaissance
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Biomedical Network Exposure
 
 ---
 

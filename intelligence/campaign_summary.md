@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3690
+BID-2026-1003
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Biomedical Network Exposure
 
 Threat Family:
-Specimen Tracking Manipulation
+Synthetic Genome Data Theft
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Genome Sequencing Environment
 
 Device:
-Laboratory Controller
+Specimen Tracking Server
 
 Vendor:
-Cisco
+VMware
 
 Security Zone:
 Biosecurity Segment
@@ -41,22 +41,22 @@ Biosecurity Segment
 ## Investigation Metrics
 
 Investigations Recorded:
-51
+52
 
 Evidence Collected:
-44
+40
 
 Indicators Identified:
-32
+11
 
 Affected Assets:
-9
+6
 
 Confidence:
-90%
+82%
 
 Risk Score:
-55
+32
 
 ---
 

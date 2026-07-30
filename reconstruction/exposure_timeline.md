@@ -4,18 +4,18 @@
 ## 2026-07-30
 
 ### Case Opened
-Case ID: BID-2026-3690
+Case ID: BID-2026-1003
 
 ### Classification
-Biological Research Intelligence Collection
+Biomedical Network Exposure
 
 ### Initial Assessment
 Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Evidence Collection
+Open
 
 ### Severity
-MODERATE
+LOW
 
 ---

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3690 |
+| Case ID | BID-2026-1003 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | MODERATE |
-| Status | Evidence Collection |
+| Classification | Biomedical Network Exposure |
+| Threat Family | Synthetic Genome Data Theft |
+| Severity | LOW |
+| Status | Open |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Laboratory Controller |
-| Vendor | Cisco |
+| Platform | Genome Sequencing Environment |
+| Device | Specimen Tracking Server |
+| Vendor | VMware |
 | Security Zone | Biosecurity Segment |
 
 ---
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 55 |
-| Confidence | 90% |
-| Evidence Collected | 44 |
-| Indicators Identified | 32 |
-| Affected Assets | 9 |
+| Risk Score | 32 |
+| Confidence | 82% |
+| Evidence Collected | 40 |
+| Indicators Identified | 11 |
+| Affected Assets | 6 |
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Open**
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

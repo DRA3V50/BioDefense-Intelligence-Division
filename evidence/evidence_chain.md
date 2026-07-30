@@ -1,18 +1,18 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-07-30 04:56 UTC
+**Generated:** 2026-07-30 14:23 UTC
 
-**Case ID:** BID-2026-3690
+**Case ID:** BID-2026-1003
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Biomedical Network Exposure
 
-**Threat Family:** Specimen Tracking Manipulation
+**Threat Family:** Synthetic Genome Data Theft
 
-**Severity:** MODERATE
+**Severity:** LOW
 
-**Priority:** ELEVATED
+**Priority:** ROUTINE
 
-**Case Confidence:** 90%
+**Case Confidence:** 82%
 
 ---
 
@@ -26,294 +26,22 @@ evidence correlations, and the active case assessment.
 
 ## Evidence Chain Summary
 
-- **Evidence records reviewed:** 44
-- **Correlation records reviewed:** 44
-- **Investigative findings:** 12
+- **Evidence records reviewed:** 40
+- **Correlation records reviewed:** 40
+- **Investigative findings:** 11
 
 ---
 
-## Finding 1: Laboratory System Modification
-
-**Confidence:** 90
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0001** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0004** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0039** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0041** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Laboratory System Modification** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 2: Suspicious Network Activity
-
-**Confidence:** 98
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0002** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0023** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0024** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0030** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Suspicious Network Activity** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 3: Biosecurity Policy Violation
-
-**Confidence:** 81
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0003** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0013** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0027** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Biosecurity Policy Violation** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 4: Research Data Integrity Anomaly
+## Finding 1: Research Workstation Compromise
 
 **Confidence:** 95
 
 ### Supporting Evidence
 
-- **BID-2026-3690-EV-0005** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0026** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0038** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0043** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Research Data Integrity Anomaly** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 5: Credential Misuse
-
-**Confidence:** 82
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0006** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0014** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0018** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0037** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Credential Misuse** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 6: Unauthorized Facility Access
-
-**Confidence:** 90
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0007** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0008** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0021** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0022** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0031** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0044** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Unauthorized Facility Access** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 7: Laboratory Information System Anomaly
-
-**Confidence:** 86
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0009** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0016** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0017** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0028** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0034** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Laboratory Information System Anomaly** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 8: Containment Verification
-
-**Confidence:** 99
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0010** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0029** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Containment Verification** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 9: Analyst Intelligence Assessment
-
-**Confidence:** 81
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0011** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0019** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0025** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Analyst Intelligence Assessment** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 10: Known Threat Actor Indicator
-
-**Confidence:** 89
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0012** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0020** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0033** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0042** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Known Threat Actor Indicator** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 11: Research Workstation Compromise
-
-**Confidence:** 97
-
-### Supporting Evidence
-
-- **BID-2026-3690-EV-0015** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0032** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0035** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-3690-EV-0036** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0001** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0030** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -322,19 +50,137 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Research Workstation Compromise** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 12: Command-and-Control Communication
+## Finding 2: Laboratory Information System Anomaly
 
 **Confidence:** 96
 
 ### Supporting Evidence
 
-- **BID-2026-3690-EV-0040** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0002** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0029** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Laboratory Information System Anomaly** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 3: Biosecurity Policy Violation
+
+**Confidence:** 97
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0003** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0015** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Biosecurity Policy Violation** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 4: Analyst Intelligence Assessment
+
+**Confidence:** 86
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0004** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0023** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0025** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0028** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0033** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Analyst Intelligence Assessment** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 5: Unauthorized Facility Access
+
+**Confidence:** 95
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0005** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0009** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0031** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0035** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0036** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0038** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0040** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Unauthorized Facility Access** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 6: Command-and-Control Communication
+
+**Confidence:** 88
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0006** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0008** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0011** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0013** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0016** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0018** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -343,7 +189,134 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Command-and-Control Communication** within
-investigation **BID-2026-3690**. Evidence integrity, source reliability, and
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 7: Known Threat Actor Indicator
+
+**Confidence:** 98
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0007** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0010** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0020** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0026** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0037** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Known Threat Actor Indicator** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 8: Containment Verification
+
+**Confidence:** 94
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0012** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0024** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0027** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Containment Verification** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 9: Research Data Integrity Anomaly
+
+**Confidence:** 96
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0014** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0021** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0032** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Research Data Integrity Anomaly** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 10: Suspicious Network Activity
+
+**Confidence:** 82
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0017** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0019** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Suspicious Network Activity** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 11: Laboratory System Modification
+
+**Confidence:** 87
+
+### Supporting Evidence
+
+- **BID-2026-1003-EV-0022** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0034** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1003-EV-0039** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Laboratory System Modification** within
+investigation **BID-2026-1003**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---

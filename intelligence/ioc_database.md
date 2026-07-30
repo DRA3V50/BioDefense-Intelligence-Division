@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3690
+BID-2026-1003
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Biomedical Network Exposure
 
 ---
 
 | Category | Observation |
 |----------|-------------|
 | Device | Protected workstation entered evidence preservation mode |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Infrastructure | Firewall policy deviation identified |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| PowerShell | Encoded administrative command execution detected |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -28,16 +28,16 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-44
+40
 
 Indicators Reviewed:
-32
+11
 
 Risk Score:
-55
+32
 
 Confidence:
-90%
+82%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-Evidence Collection
+Open

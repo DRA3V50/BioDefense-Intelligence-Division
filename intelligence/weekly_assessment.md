@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3690
+Case ID: BID-2026-1003
 
 Operation: Operation Black Eclipse
 
-Classification: Biological Research Intelligence Collection
+Classification: Biomedical Network Exposure
 
-Threat Family: Specimen Tracking Manipulation
+Threat Family: Synthetic Genome Data Theft
 
-Current Status: Evidence Collection
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
@@ -27,22 +27,22 @@ Current intelligence suggests multiple related intrusions requiring expanded for
 ## Operational Metrics
 
 Priority:
-ELEVATED
+ROUTINE
 
 Risk Score:
-55
+32
 
 Confidence:
-90%
+82%
 
 Affected Assets:
-9
+6
 
 Evidence Collected:
-44
+40
 
 Indicators Recorded:
-32
+11
 
 ---
 

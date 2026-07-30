@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-3690
+BID-2026-1003
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Biomedical Network Exposure
 
 Threat Family:
-Specimen Tracking Manipulation
+Synthetic Genome Data Theft
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Federal Biosecurity Laboratory
 
 Platform:
-Clinical Research Environment
+Genome Sequencing Environment
 
 Device:
-Laboratory Controller
+Specimen Tracking Server
 
 Vendor:
-Cisco
+VMware
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Biosecurity Segment
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-90%
+82%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.
