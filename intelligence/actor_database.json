@@ -28,9 +28,9 @@
             "name": "Laboratory Credential Abuse",
             "first_seen": "2026-07-20",
             "last_seen": "2026-07-30",
-            "cases": 8,
-            "severity": "MODERATE",
-            "confidence": 87
+            "cases": 9,
+            "severity": "HIGH",
+            "confidence": 91
         },
         {
             "name": "Unauthorized Genomic Data Modification",

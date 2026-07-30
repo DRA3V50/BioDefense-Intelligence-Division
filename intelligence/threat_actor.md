@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Synthetic Genome Data Theft
+Laboratory Credential Abuse
 
 ---
 
 ## Primary Alias
-Black Helix
+Project Chimera
 
 ---
 
 ## Attribution
-Unattributed
+Unknown
 
 ---
 
@@ -21,29 +21,29 @@ Laboratory System Sabotage
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-82%
+91%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
-- Concealed Internal Movement
-- Command and Control
-- Lateral Movement
-- Laboratory Data Manipulation
+- Unknown
 - Laboratory Network Reconnaissance
+- Privilege Escalation
+- Concealed Internal Movement
+- Laboratory Control System Manipulation
+- Long-Term Network Foothold
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biomedical Network Exposure
+Research Facility Intrusion
 
 ---
 

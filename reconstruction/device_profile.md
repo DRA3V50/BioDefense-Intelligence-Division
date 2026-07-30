@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1003
+BID-2026-1532
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Research Facility Intrusion
 
 Threat Family:
-Synthetic Genome Data Theft
+Laboratory Credential Abuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Ashcroft Biomedical Center
 
 Platform:
-Genome Sequencing Environment
+Biosecurity Operations Center
 
 Device:
-Specimen Tracking Server
+Laboratory Controller
 
 Vendor:
-VMware
+Fortinet
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-82%
+91%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

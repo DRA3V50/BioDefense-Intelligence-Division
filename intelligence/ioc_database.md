@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1003
+BID-2026-1532
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biomedical Network Exposure
+Research Facility Intrusion
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| PowerShell | Encoded administrative command execution detected |
 | System Log | Unexpected privilege escalation recorded |
+| Identity | Credential reuse detected across isolated research segments |
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,16 +28,16 @@ Biomedical Network Exposure
 ## Investigation Statistics
 
 Evidence Collected:
-40
+193
 
 Indicators Reviewed:
-11
+77
 
 Risk Score:
-32
+81
 
 Confidence:
-82%
+91%
 
 ---
 

@@ -4,18 +4,18 @@
 ## 2026-07-30
 
 ### Case Opened
-Case ID: BID-2026-1003
+Case ID: BID-2026-1532
 
 ### Classification
-Biomedical Network Exposure
+Research Facility Intrusion
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
 Open
 
 ### Severity
-LOW
+HIGH
 
 ---

@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1003 |
+| Case ID | BID-2026-1532 |
 | Operation | Operation Black Eclipse |
-| Classification | Biomedical Network Exposure |
-| Threat Family | Synthetic Genome Data Theft |
-| Severity | LOW |
+| Classification | Research Facility Intrusion |
+| Threat Family | Laboratory Credential Abuse |
+| Severity | HIGH |
 | Status | Open |
 | Phase | Operational Recovery |
 
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Genome Sequencing Environment |
-| Device | Specimen Tracking Server |
-| Vendor | VMware |
-| Network Zone | Biosecurity Segment |
+| Platform | Biosecurity Operations Center |
+| Device | Laboratory Controller |
+| Vendor | Fortinet |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 32 |
-| Confidence | 82% |
-| Evidence | 40 |
-| Indicators | 11 |
-| Affected Assets | 6 |
+| Risk Score | 81 |
+| Confidence | 91% |
+| Evidence | 193 |
+| Indicators | 77 |
+| Affected Assets | 14 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
