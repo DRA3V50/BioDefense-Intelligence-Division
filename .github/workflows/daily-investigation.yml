@@ -156,6 +156,9 @@ jobs:
       - name: Generate Investigative Leads
         run: python scripts/generate_investigative_leads.py
 
+      - name: Generate Bioterror Threat Assessment
+        run: python scripts/generate_bioterror_threat_assessment.py
+
       - name: Generate Cyber-Biothreat Investigation Report
         run: python scripts/generate_investigation_report.py
 
