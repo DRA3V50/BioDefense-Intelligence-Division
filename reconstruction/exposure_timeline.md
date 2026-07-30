@@ -4,16 +4,16 @@
 ## 2026-07-30
 
 ### Case Opened
-Case ID: BID-2026-2293
+Case ID: BID-2026-3690
 
 ### Classification
-Medical Device Security Assessment
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ### Current Status
-Open
+Evidence Collection
 
 ### Severity
 MODERATE

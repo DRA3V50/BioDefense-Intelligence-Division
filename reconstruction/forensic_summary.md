@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2293 |
+| Case ID | BID-2026-3690 |
 | Operation | Operation Black Eclipse |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Laboratory Credential Abuse |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Specimen Tracking Manipulation |
 | Severity | MODERATE |
-| Status | Open |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Digital Evidence Appliance |
-| Vendor | Microsoft |
-| Security Zone | Evidence Network |
+| Platform | Clinical Research Environment |
+| Device | Laboratory Controller |
+| Vendor | Cisco |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 66 |
-| Confidence | 87% |
-| Evidence Collected | 58 |
-| Indicators Identified | 25 |
-| Affected Assets | 10 |
+| Risk Score | 55 |
+| Confidence | 90% |
+| Evidence Collected | 44 |
+| Indicators Identified | 32 |
+| Affected Assets | 9 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Evidence Collection**
 
 Priority:
 

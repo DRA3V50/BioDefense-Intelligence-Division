@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2293 |
+| Case ID | BID-2026-3690 |
 | Operation | Operation Black Eclipse |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Laboratory Credential Abuse |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Specimen Tracking Manipulation |
 | Severity | MODERATE |
-| Status | Open |
+| Status | Evidence Collection |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biosecurity Operations Center |
-| Device | Digital Evidence Appliance |
-| Vendor | Microsoft |
-| Network Zone | Evidence Network |
+| Platform | Clinical Research Environment |
+| Device | Laboratory Controller |
+| Vendor | Cisco |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 66 |
-| Confidence | 87% |
-| Evidence | 58 |
-| Indicators | 25 |
-| Affected Assets | 10 |
+| Risk Score | 55 |
+| Confidence | 90% |
+| Evidence | 44 |
+| Indicators | 32 |
+| Affected Assets | 9 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **BioDefense Task Force**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.

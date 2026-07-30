@@ -3,23 +3,23 @@
 ## Investigation
 
 Case ID:
-BID-2026-2293
+BID-2026-3690
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Biological Research Intelligence Collection
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Infrastructure | Firewall policy deviation identified |
-| System Log | Unexpected privilege escalation recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Security | Multi-factor authentication bypass attempt recorded |
 
 
@@ -28,23 +28,23 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-58
+44
 
 Indicators Reviewed:
-25
+32
 
 Risk Score:
-66
+55
 
 Confidence:
-87%
+90%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Delta
 
 Current Status:
 
-Open
+Evidence Collection

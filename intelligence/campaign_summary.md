@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2293
+BID-2026-3690
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Biological Research Intelligence Collection
 
 Threat Family:
-Laboratory Credential Abuse
+Specimen Tracking Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Clinical Research Environment
 
 Device:
-Digital Evidence Appliance
+Laboratory Controller
 
 Vendor:
-Microsoft
+Cisco
 
 Security Zone:
-Evidence Network
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-50
+51
 
 Evidence Collected:
-58
+44
 
 Indicators Identified:
-25
+32
 
 Affected Assets:
-10
+9
 
 Confidence:
-87%
+90%
 
 Risk Score:
-66
+55
 
 ---
 

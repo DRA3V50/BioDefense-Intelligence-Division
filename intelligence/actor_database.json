@@ -75,10 +75,10 @@
         {
             "name": "Specimen Tracking Manipulation",
             "first_seen": "2026-07-23",
-            "last_seen": "2026-07-28",
-            "cases": 3,
+            "last_seen": "2026-07-30",
+            "cases": 4,
             "severity": "MODERATE",
-            "confidence": 82
+            "confidence": 90
         },
         {
             "name": "Research Data Integrity Manipulation",

@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-2293
+BID-2026-3690
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Medical Device Security Assessment
+Biological Research Intelligence Collection
 
 Threat Family:
-Laboratory Credential Abuse
+Specimen Tracking Manipulation
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Raccoon Research Annex
 
 Platform:
-Biosecurity Operations Center
+Clinical Research Environment
 
 Device:
-Digital Evidence Appliance
+Laboratory Controller
 
 Vendor:
-Microsoft
+Cisco
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
-Evidence Network
+Biosecurity Segment
 
 ---
 
@@ -50,14 +50,14 @@ Priority:
 ELEVATED
 
 Confidence:
-87%
+90%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
