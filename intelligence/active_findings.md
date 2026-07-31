@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-1479
+BID-2026-7077
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Biological Research Intelligence Collection
 
 Threat Family:
 Laboratory Credential Abuse
 
 Severity:
-CRITICAL
+LOW
 
 Priority:
-CRITICAL
+ROUTINE
 
 ---
 
@@ -26,11 +26,11 @@ CRITICAL
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 3
 
@@ -38,27 +38,27 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-25
+6
 
 Evidence Collected:
-330
+41
 
 Indicators Identified:
-152
+3
 
 Analyst Confidence:
-90%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Containment
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Bravo
+National Response Cell

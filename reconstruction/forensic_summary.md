@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1479 |
+| Case ID | BID-2026-7077 |
 | Operation | Operation Black Eclipse |
-| Classification | Cyber-Biothreat Intelligence Review |
+| Classification | Biological Research Intelligence Collection |
 | Threat Family | Laboratory Credential Abuse |
-| Severity | CRITICAL |
-| Status | Containment |
+| Severity | LOW |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Biomedical Workstation |
+| Platform | Federal Investigation Network |
+| Device | Genome Sequencing Server |
 | Vendor | Fortinet |
-| Security Zone | Federal Operations |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 97 |
-| Confidence | 90% |
-| Evidence Collected | 330 |
-| Indicators Identified | 152 |
-| Affected Assets | 25 |
+| Risk Score | 38 |
+| Confidence | 88% |
+| Evidence Collected | 41 |
+| Indicators Identified | 3 |
+| Affected Assets | 6 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Field Coordination**
 
 Priority:
 
-**CRITICAL**
+**ROUTINE**
 
 Recommended Action:
 

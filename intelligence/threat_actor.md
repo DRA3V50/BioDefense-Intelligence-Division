@@ -6,17 +6,17 @@ Laboratory Credential Abuse
 ---
 
 ## Primary Alias
-Black Helix
+Ghost Genome
 
 ---
 
 ## Attribution
-Multiple Regions
+Unknown
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Research Data Theft
 
 ---
 
@@ -26,24 +26,24 @@ High
 ---
 
 ## Confidence
-90%
+88%
 
 ---
 
 ## Observed Techniques
-- Phishing
-- Laboratory Control System Manipulation
+- Unauthorized Remote Access
 - Concealed Internal Movement
-- Credential Abuse
-- Privilege Escalation
-- Command and Control
+- Lateral Movement
+- Biosecurity System Tampering
+- Laboratory Network Reconnaissance
+- Long-Term Network Foothold
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+National Response Cell
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,9 +53,9 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Biological Research Intelligence Collection
 
 ---
 
 ## Last Updated
-2026-07-30
+2026-07-31

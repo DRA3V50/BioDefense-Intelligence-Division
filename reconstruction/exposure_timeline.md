@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-07-30
+## 2026-07-31
 
 ### Case Opened
-Case ID: BID-2026-1479
+Case ID: BID-2026-7077
 
 ### Classification
-Cyber-Biothreat Intelligence Review
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ### Current Status
-Containment
+Field Coordination
 
 ### Severity
-CRITICAL
+LOW
 
 ---
