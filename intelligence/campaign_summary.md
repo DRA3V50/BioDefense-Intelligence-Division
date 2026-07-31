@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7077
+BID-2026-5363
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 Threat Family:
-Laboratory Credential Abuse
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Genome Sequencing Environment
 
 Device:
-Genome Sequencing Server
+Evidence Repository
 
 Vendor:
-Fortinet
+Red Hat
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-57
+58
 
 Evidence Collected:
-41
+175
 
 Indicators Identified:
-3
+41
 
 Affected Assets:
-6
+31
 
 Confidence:
 88%
 
 Risk Score:
-38
+72
 
 ---
 

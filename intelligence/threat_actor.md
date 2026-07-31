@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Credential Abuse
+Biocontainment System Tampering
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Crimson Cell
 
 ---
 
@@ -16,12 +16,12 @@ Unknown
 ---
 
 ## Observed Motivation
-Research Data Theft
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
@@ -31,19 +31,19 @@ High
 ---
 
 ## Observed Techniques
-- Unauthorized Remote Access
+- Unknown
 - Concealed Internal Movement
-- Lateral Movement
-- Biosecurity System Tampering
-- Laboratory Network Reconnaissance
-- Long-Term Network Foothold
+- Insider Access Abuse
+- Covert Remote Access Tooling
+- Supply Chain Compromise
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 ---
 

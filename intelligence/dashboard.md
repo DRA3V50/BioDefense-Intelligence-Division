@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-7077 |
+| Case ID | BID-2026-5363 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Laboratory Credential Abuse |
-| Severity | LOW |
-| Status | Field Coordination |
+| Classification | Laboratory Security Breach |
+| Threat Family | Biocontainment System Tampering |
+| Severity | HIGH |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Federal Investigation Network |
-| Device | Genome Sequencing Server |
-| Vendor | Fortinet |
-| Network Zone | Biosecurity Segment |
+| Platform | Genome Sequencing Environment |
+| Device | Evidence Repository |
+| Vendor | Red Hat |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 38 |
+| Risk Score | 72 |
 | Confidence | 88% |
-| Evidence | 41 |
-| Indicators | 3 |
-| Affected Assets | 6 |
+| Evidence | 175 |
+| Indicators | 41 |
+| Affected Assets | 31 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Joint Cyber Investigation Unit**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.

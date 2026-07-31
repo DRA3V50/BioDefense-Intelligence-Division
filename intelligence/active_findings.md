@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-7077
+BID-2026-5363
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 Threat Family:
-Laboratory Credential Abuse
+Biocontainment System Tampering
 
 Severity:
-LOW
+HIGH
 
 Priority:
-ROUTINE
+HIGH
 
 ---
 
@@ -26,11 +26,11 @@ ROUTINE
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
@@ -38,24 +38,24 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-6
+31
 
 Evidence Collected:
-41
+175
 
 Indicators Identified:
-3
+41
 
 Analyst Confidence:
 88%
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Intelligence Analysis
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Joint Cyber Investigation Unit

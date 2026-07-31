@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-7077
+BID-2026-5363
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 Threat Family:
-Laboratory Credential Abuse
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
-Federal Investigation Network
+Genome Sequencing Environment
 
 Device:
-Genome Sequencing Server
+Evidence Repository
 
 Vendor:
-Fortinet
+Red Hat
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
@@ -44,10 +44,10 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
 88%
@@ -57,7 +57,7 @@ Confidence:
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+No destructive activity observed following initial containment.

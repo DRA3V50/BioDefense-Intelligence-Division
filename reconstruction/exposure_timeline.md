@@ -4,18 +4,18 @@
 ## 2026-07-31
 
 ### Case Opened
-Case ID: BID-2026-7077
+Case ID: BID-2026-5363
 
 ### Classification
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 ### Initial Assessment
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ### Current Status
-Field Coordination
+Intelligence Analysis
 
 ### Severity
-LOW
+HIGH
 
 ---
