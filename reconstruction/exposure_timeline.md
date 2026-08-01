@@ -4,18 +4,18 @@
 ## 2026-08-01
 
 ### Case Opened
-Case ID: BID-2026-9408
+Case ID: BID-2026-8561
 
 ### Classification
-Counter-Bioterror Intelligence Case
+Unauthorized Research System Access
 
 ### Initial Assessment
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Monitoring
+Open
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

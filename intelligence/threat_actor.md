@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Insider Laboratory Compromise
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Genome Phantom
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unknown
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-96%
+85%
 
 ---
 
 ## Observed Techniques
-- Credential Abuse
+- Unknown
 - Concealed Internal Movement
-- Covert Remote Access Tooling
+- Laboratory Data Manipulation
+- Laboratory Network Reconnaissance
 - Encrypted Data Staging
-- Biosecurity System Tampering
-- Command and Control
+- Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Bravo
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Counter-Bioterror Intelligence Case
+Unauthorized Research System Access
 
 ---
 

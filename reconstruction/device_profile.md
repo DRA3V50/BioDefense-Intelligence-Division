@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-9408
+BID-2026-8561
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Counter-Bioterror Intelligence Case
+Unauthorized Research System Access
 
 Threat Family:
-Biocontainment System Tampering
+Insider Laboratory Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
-Federal Investigation Network
+Laboratory Control Network
 
 Device:
-Research Database
+Biomedical Workstation
 
 Vendor:
-Red Hat
+VMware
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Research Operations
+Containment Network
 
 ---
 
@@ -47,10 +47,10 @@ Status:
 Evidence Acquisition
 
 Priority:
-CRITICAL
+ELEVATED
 
 Confidence:
-96%
+85%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-01 01:24 UTC
+**Generated:** 2026-08-01 01:43 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** CRITICAL
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-9408
+**Case ID:** BID-2026-8561
 
-**Classification:** Counter-Bioterror Intelligence Case
+**Classification:** Unauthorized Research System Access
 
-**Severity:** CRITICAL
+**Severity:** MODERATE
 
-**Threat Family:** Biocontainment System Tampering
+**Threat Family:** Insider Laboratory Compromise
 
-**Confidence:** 96%
+**Confidence:** 85%
 
 ---
 
 ## Investigation Summary
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **348**
+Evidence Collected: **52**
 
-Indicators: **121**
+Indicators: **22**
 
-Priority: **CRITICAL**
+Priority: **ELEVATED**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Analyst Team Bravo**
 
 Initial Access:
-**Credential Abuse**
+**Unknown**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**59**
+**60**
 
 Confirmed Intrusions:
 **10**
 
 Total Evidence:
-**89434**
+**89486**
 
 Total Indicators:
-**60892**
+**60914**
 
 ---
 
 ## Operational Highlights
 
-- 348 evidence items are associated with the active investigation.
-- 121 indicators are currently linked to the case.
-- Containment remains at **CRITICAL**.
-- Analyst confidence is **96%**.
-- Current investigation priority is **CRITICAL**.
+- 52 evidence items are associated with the active investigation.
+- 22 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **85%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9408 |
+| Case ID | BID-2026-8561 |
 | Operation | Operation Black Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Biocontainment System Tampering |
-| Severity | CRITICAL |
-| Status | Monitoring |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Insider Laboratory Compromise |
+| Severity | MODERATE |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Federal Investigation Network |
-| Device | Research Database |
-| Vendor | Red Hat |
-| Security Zone | Research Operations |
+| Platform | Laboratory Control Network |
+| Device | Biomedical Workstation |
+| Vendor | VMware |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 92 |
-| Confidence | 96% |
-| Evidence Collected | 348 |
-| Indicators Identified | 121 |
-| Affected Assets | 47 |
+| Risk Score | 55 |
+| Confidence | 85% |
+| Evidence Collected | 52 |
+| Indicators Identified | 22 |
+| Affected Assets | 6 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Open**
 
 Priority:
 
-**CRITICAL**
+**ELEVATED**
 
 Recommended Action:
 

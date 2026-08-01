@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-9408 |
+| Case ID | BID-2026-8561 |
 | Operation | Operation Black Eclipse |
-| Classification | Counter-Bioterror Intelligence Case |
-| Threat Family | Biocontainment System Tampering |
-| Severity | CRITICAL |
-| Status | Monitoring |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Insider Laboratory Compromise |
+| Severity | MODERATE |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Federal Investigation Network |
-| Device | Research Database |
-| Vendor | Red Hat |
-| Network Zone | Research Operations |
+| Platform | Laboratory Control Network |
+| Device | Biomedical Workstation |
+| Vendor | VMware |
+| Network Zone | Containment Network |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 92 |
-| Confidence | 96% |
-| Evidence | 348 |
-| Indicators | 121 |
-| Affected Assets | 47 |
+| Risk Score | 55 |
+| Confidence | 85% |
+| Evidence | 52 |
+| Indicators | 22 |
+| Affected Assets | 6 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
