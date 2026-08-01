@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Xml.Linq;
 
 internal static class Program
 {
@@ -93,7 +94,19 @@ internal static class Program
                 evidenceItems
             );
 
-            object output = BuildOutput(
+            object jsonOutput = BuildOutput(
+                caseRoot,
+                caseId,
+                scores,
+                overallScore,
+                evidenceItems.Count,
+                correlations.Count,
+                verifiedEvidence,
+                pendingReview,
+                findingCounts
+            );
+
+            XDocument xmlOutput = BuildXmlOutput(
                 caseRoot,
                 caseId,
                 scores,
@@ -112,9 +125,14 @@ internal static class Program
 
             Directory.CreateDirectory(reportsDirectory);
 
-            string outputPath = Path.Combine(
+            string jsonOutputPath = Path.Combine(
                 reportsDirectory,
                 "bioterror_threat_score_csharp.json"
+            );
+
+            string xmlOutputPath = Path.Combine(
+                reportsDirectory,
+                "bioterror_threat_score_csharp.xml"
             );
 
             JsonSerializerOptions options = new()
@@ -124,9 +142,11 @@ internal static class Program
             };
 
             File.WriteAllText(
-                outputPath,
-                JsonSerializer.Serialize(output, options)
+                jsonOutputPath,
+                JsonSerializer.Serialize(jsonOutput, options)
             );
+
+            xmlOutput.Save(xmlOutputPath);
 
             Console.WriteLine(
                 "C# bioterror threat assessment generated successfully."
@@ -145,7 +165,10 @@ internal static class Program
                 $"Correlations reviewed: {correlations.Count}"
             );
             Console.WriteLine(
-                $"Output: {outputPath}"
+                $"JSON output: {jsonOutputPath}"
+            );
+            Console.WriteLine(
+                $"XML output: {xmlOutputPath}"
             );
 
             return 0;
@@ -892,6 +915,265 @@ internal static class Program
                 "educational use. It is not a real-world biological " +
                 "threat determination."
         };
+    }
+
+
+    private static XDocument BuildXmlOutput(
+        JsonElement caseRoot,
+        string caseId,
+        DimensionScores scores,
+        int overallScore,
+        int evidenceCount,
+        int correlationCount,
+        int verifiedEvidence,
+        int pendingReview,
+        IReadOnlyDictionary<string, int> findingCounts
+    )
+    {
+        XElement dimensions = new(
+            "Dimensions",
+            BuildXmlDimension(
+                "ThreatActorIntent",
+                scores.ThreatActorIntent,
+                false
+            ),
+            BuildXmlDimension(
+                "ThreatActorCapability",
+                scores.ThreatActorCapability,
+                false
+            ),
+            BuildXmlDimension(
+                "BiologicalTargetValue",
+                scores.BiologicalTargetValue,
+                false
+            ),
+            BuildXmlDimension(
+                "LaboratoryAndSpecimenImpact",
+                scores.LaboratoryAndSpecimenImpact,
+                false
+            ),
+            BuildXmlDimension(
+                "PublicHealthRisk",
+                scores.PublicHealthRisk,
+                false
+            ),
+            BuildXmlDimension(
+                "CyberToPhysicalEscalation",
+                scores.CyberToPhysicalEscalation,
+                false
+            ),
+            BuildXmlDimension(
+                "AttributionConfidence",
+                scores.AttributionConfidence,
+                true
+            ),
+            BuildXmlDimension(
+                "ContainmentConfidence",
+                scores.ContainmentConfidence,
+                true
+            )
+        );
+
+        XElement priorityFindings = new(
+            "PriorityFindings",
+            findingCounts
+                .OrderByDescending(item => item.Value)
+                .ThenBy(item => item.Key)
+                .Take(12)
+                .Select(
+                    item => new XElement(
+                        "Finding",
+                        new XElement(
+                            "Name",
+                            item.Key
+                        ),
+                        new XElement(
+                            "Correlations",
+                            item.Value
+                        )
+                    )
+                )
+        );
+
+        return new XDocument(
+            new XDeclaration(
+                "1.0",
+                "utf-8",
+                null
+            ),
+            new XElement(
+                "BioterrorThreatAssessment",
+                new XElement(
+                    "GeneratedAt",
+                    DateTime.UtcNow.ToString(
+                        "yyyy-MM-dd HH:mm 'UTC'"
+                    )
+                ),
+                new XElement(
+                    "Engine",
+                    new XElement(
+                        "Name",
+                        "BioDefense C# Bioterror Threat Scoring Engine"
+                    ),
+                    new XElement(
+                        "Version",
+                        "1.0.0"
+                    ),
+                    new XElement(
+                        "Runtime",
+                        ".NET 8"
+                    )
+                ),
+                new XElement(
+                    "Investigation",
+                    new XElement(
+                        "CaseId",
+                        caseId
+                    ),
+                    new XElement(
+                        "CampaignId",
+                        GetString(
+                            caseRoot,
+                            "campaign_id"
+                        )
+                    ),
+                    new XElement(
+                        "Operation",
+                        GetString(
+                            caseRoot,
+                            "operation"
+                        )
+                    ),
+                    new XElement(
+                        "Classification",
+                        GetString(
+                            caseRoot,
+                            "classification"
+                        )
+                    ),
+                    new XElement(
+                        "ThreatFamily",
+                        GetString(
+                            caseRoot,
+                            "threat_family"
+                        )
+                    ),
+                    new XElement(
+                        "Severity",
+                        GetString(
+                            caseRoot,
+                            "severity"
+                        )
+                    ),
+                    new XElement(
+                        "Priority",
+                        GetString(
+                            caseRoot,
+                            "priority"
+                        )
+                    ),
+                    new XElement(
+                        "RiskScore",
+                        GetInt(
+                            caseRoot,
+                            "risk_score"
+                        )
+                    ),
+                    new XElement(
+                        "Confidence",
+                        GetInt(
+                            caseRoot,
+                            "confidence"
+                        )
+                    ),
+                    new XElement(
+                        "ContainmentPhase",
+                        GetString(
+                            caseRoot,
+                            "containment_phase"
+                        )
+                    ),
+                    new XElement(
+                        "AffectedPlatform",
+                        GetString(
+                            caseRoot,
+                            "affected_platform"
+                        )
+                    ),
+                    new XElement(
+                        "AffectedAssets",
+                        GetInt(
+                            caseRoot,
+                            "affected_assets"
+                        )
+                    )
+                ),
+                new XElement(
+                    "Assessment",
+                    new XElement(
+                        "OverallScore",
+                        overallScore
+                    ),
+                    new XElement(
+                        "OverallLevel",
+                        ScoreLabel(overallScore)
+                    ),
+                    dimensions
+                ),
+                new XElement(
+                    "EvidenceBasis",
+                    new XElement(
+                        "EvidenceRecords",
+                        evidenceCount
+                    ),
+                    new XElement(
+                        "CorrelationRecords",
+                        correlationCount
+                    ),
+                    new XElement(
+                        "IntegrityVerifiedRecords",
+                        verifiedEvidence
+                    ),
+                    new XElement(
+                        "PendingAnalystReview",
+                        pendingReview
+                    ),
+                    priorityFindings
+                ),
+                new XElement(
+                    "AnalyticalNotice",
+                    "This output is generated from fictional defensive " +
+                    "cyber-biothreat simulation data for portfolio and " +
+                    "educational use. It is not a real-world biological " +
+                    "threat determination."
+                )
+            )
+        );
+    }
+
+    private static XElement BuildXmlDimension(
+        string name,
+        int score,
+        bool confidenceDimension
+    )
+    {
+        return new XElement(
+            "Dimension",
+            new XAttribute(
+                "Name",
+                name
+            ),
+            new XElement(
+                "Score",
+                score
+            ),
+            new XElement(
+                "Level",
+                confidenceDimension
+                    ? ConfidenceLabel(score)
+                    : ScoreLabel(score)
+            )
+        );
     }
 
     private static object BuildDimension(
