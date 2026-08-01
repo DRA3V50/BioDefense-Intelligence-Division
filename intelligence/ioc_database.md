@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4819
+BID-2026-1115
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Biosecurity Infrastructure Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| PowerShell | Encoded administrative command execution detected |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
@@ -28,23 +28,23 @@ Laboratory Security Breach
 ## Investigation Statistics
 
 Evidence Collected:
-197
+214
 
 Indicators Reviewed:
-76
+37
 
 Risk Score:
-70
+75
 
 Confidence:
-89%
+96%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Delta
 
 Current Status:
 
-Intelligence Analysis
+Monitoring

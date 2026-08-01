@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-08-01 05:24 UTC",
+  "generatedAt": "2026-08-01 14:57 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.0.0",
     "runtime": ".NET 8"
   },
   "investigation": {
-    "caseId": "BID-2026-4819",
+    "caseId": "BID-2026-1115",
     "campaignId": "BDC-2026-001",
     "operation": "Operation Black Eclipse",
-    "classification": "Laboratory Security Breach",
-    "threatFamily": "Insider Laboratory Compromise",
+    "classification": "Biosecurity Infrastructure Investigation",
+    "threatFamily": "Specimen Tracking Manipulation",
     "severity": "HIGH",
     "priority": "HIGH",
-    "riskScore": 70,
-    "confidence": 89,
+    "riskScore": 75,
+    "confidence": 96,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Clinical Research Environment",
-    "affectedAssets": 28
+    "affectedPlatform": "Federal Investigation Network",
+    "affectedAssets": 14
   },
   "assessment": {
-    "overallScore": 97,
+    "overallScore": 98,
     "overallLevel": "CRITICAL",
     "dimensions": {
       "threatActorIntent": {
@@ -48,67 +48,67 @@
         "level": "CRITICAL"
       },
       "attributionConfidence": {
-        "score": 94,
+        "score": 98,
         "level": "HIGH"
       },
       "containmentConfidence": {
-        "score": 95,
+        "score": 98,
         "level": "HIGH"
       }
     }
   },
   "evidenceBasis": {
-    "evidenceRecords": 197,
-    "correlationRecords": 197,
-    "integrityVerifiedRecords": 197,
-    "pendingAnalystReview": 197,
+    "evidenceRecords": 214,
+    "correlationRecords": 214,
+    "integrityVerifiedRecords": 214,
+    "pendingAnalystReview": 214,
     "priorityFindings": [
       {
-        "finding": "Biosecurity Policy Violation",
-        "correlations": 21
+        "finding": "Containment Verification",
+        "correlations": 23
       },
       {
-        "finding": "Known Threat Actor Indicator",
-        "correlations": 21
+        "finding": "Suspicious Network Activity",
+        "correlations": 22
       },
       {
-        "finding": "Analyst Intelligence Assessment",
+        "finding": "Research Workstation Compromise",
         "correlations": 20
       },
       {
-        "finding": "Laboratory Information System Anomaly",
+        "finding": "Analyst Intelligence Assessment",
+        "correlations": 19
+      },
+      {
+        "finding": "Research Data Integrity Anomaly",
         "correlations": 18
+      },
+      {
+        "finding": "Biosecurity Policy Violation",
+        "correlations": 17
+      },
+      {
+        "finding": "Command-and-Control Communication",
+        "correlations": 17
       },
       {
         "finding": "Laboratory System Modification",
         "correlations": 17
       },
       {
-        "finding": "Command-and-Control Communication",
-        "correlations": 16
-      },
-      {
-        "finding": "Research Data Integrity Anomaly",
-        "correlations": 15
-      },
-      {
-        "finding": "Research Workstation Compromise",
-        "correlations": 15
-      },
-      {
-        "finding": "Containment Verification",
-        "correlations": 14
-      },
-      {
-        "finding": "Suspicious Network Activity",
-        "correlations": 14
-      },
-      {
         "finding": "Unauthorized Facility Access",
-        "correlations": 14
+        "correlations": 17
       },
       {
         "finding": "Credential Misuse",
+        "correlations": 16
+      },
+      {
+        "finding": "Known Threat Actor Indicator",
+        "correlations": 16
+      },
+      {
+        "finding": "Laboratory Information System Anomaly",
         "correlations": 12
       }
     ]

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4819 |
+| Case ID | BID-2026-1115 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
-| Threat Family | Insider Laboratory Compromise |
+| Classification | Biosecurity Infrastructure Investigation |
+| Threat Family | Specimen Tracking Manipulation |
 | Severity | HIGH |
-| Status | Intelligence Analysis |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Research Environment |
-| Device | Laboratory Controller |
-| Vendor | VMware |
-| Network Zone | Federal Operations |
+| Platform | Federal Investigation Network |
+| Device | Genome Sequencing Server |
+| Vendor | Red Hat |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 70 |
-| Confidence | 89% |
-| Evidence | 197 |
-| Indicators | 76 |
-| Affected Assets | 28 |
+| Risk Score | 75 |
+| Confidence | 96% |
+| Evidence | 214 |
+| Indicators | 37 |
+| Affected Assets | 14 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
+Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.

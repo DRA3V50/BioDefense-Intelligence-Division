@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4819
+BID-2026-1115
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Biosecurity Infrastructure Investigation
 
 Threat Family:
-Insider Laboratory Compromise
+Specimen Tracking Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Federal Investigation Network
 
 Device:
-Laboratory Controller
+Genome Sequencing Server
 
 Vendor:
-VMware
+Red Hat
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-62
+63
 
 Evidence Collected:
-197
+214
 
 Indicators Identified:
-76
+37
 
 Affected Assets:
-28
+14
 
 Confidence:
-89%
+96%
 
 Risk Score:
-70
+75
 
 ---
 

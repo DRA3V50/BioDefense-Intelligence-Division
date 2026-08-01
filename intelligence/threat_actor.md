@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Insider Laboratory Compromise
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Black Helix
+Umbra Bio
 
 ---
 
 ## Attribution
-International Infrastructure
+Unknown
 
 ---
 
@@ -21,29 +21,29 @@ Research Data Theft
 ---
 
 ## Operational Sophistication
-High
+Nation-State Level
 
 ---
 
 ## Confidence
-89%
+96%
 
 ---
 
 ## Observed Techniques
+- Phishing
+- Research Data Exfiltration
 - Credential Abuse
-- Lateral Movement
 - Long-Term Network Foothold
-- Privilege Escalation
 - Insider Access Abuse
-- Concealed Internal Movement
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Delta
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Laboratory Security Breach
+Biosecurity Infrastructure Investigation
 
 ---
 

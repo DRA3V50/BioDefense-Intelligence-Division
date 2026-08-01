@@ -1,18 +1,18 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-08-01 05:24 UTC
+**Generated:** 2026-08-01 14:57 UTC
 
-**Case ID:** BID-2026-4819
+**Case ID:** BID-2026-1115
 
-**Classification:** Laboratory Security Breach
+**Classification:** Biosecurity Infrastructure Investigation
 
-**Threat Family:** Insider Laboratory Compromise
+**Threat Family:** Specimen Tracking Manipulation
 
 **Severity:** HIGH
 
 **Priority:** HIGH
 
-**Case Confidence:** 89%
+**Case Confidence:** 96%
 
 ---
 
@@ -26,521 +26,64 @@ evidence correlations, and the active case assessment.
 
 ## Evidence Chain Summary
 
-- **Evidence records reviewed:** 197
-- **Correlation records reviewed:** 197
+- **Evidence records reviewed:** 214
+- **Correlation records reviewed:** 214
 - **Investigative findings:** 12
 
 ---
 
-## Finding 1: Credential Misuse
+## Finding 1: Containment Verification
 
-**Confidence:** 94
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0001** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0007** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0014** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0029** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0052** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0057** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0068** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0112** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0133** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0165** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0171** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0193** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Credential Misuse** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 2: Research Data Integrity Anomaly
-
-**Confidence:** 89
+**Confidence:** 85
 
 ### Supporting Evidence
 
-- **BID-2026-4819-EV-0002** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0023** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0026** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0031** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0034** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0042** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0043** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0055** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0066** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0103** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0109** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0126** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0150** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0169** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0189** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Research Data Integrity Anomaly** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 3: Suspicious Network Activity
-
-**Confidence:** 86
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0003** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0013** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0022** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0025** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0033** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0040** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0081** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0082** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0090** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0121** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0130** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0139** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0155** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0192** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Suspicious Network Activity** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 4: Known Threat Actor Indicator
-
-**Confidence:** 95
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0004** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0009** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0018** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0020** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0030** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0035** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0037** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0045** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0063** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0077** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0097** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0102** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0111** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0115** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0134** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0154** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0158** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0175** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0180** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0183** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0186** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Known Threat Actor Indicator** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 5: Command-and-Control Communication
-
-**Confidence:** 90
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0005** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0006** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0012** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0032** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0053** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0070** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0073** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0079** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0091** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0095** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0106** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0127** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0146** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0156** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0170** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0177** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Command-and-Control Communication** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 6: Biosecurity Policy Violation
-
-**Confidence:** 80
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0008** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0010** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0011** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0017** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0054** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0071** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0075** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0085** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0086** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0113** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0117** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0124** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0128** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0132** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0135** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0144** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0152** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0160** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0187** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0195** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0197** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Biosecurity Policy Violation** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 7: Analyst Intelligence Assessment
-
-**Confidence:** 80
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0015** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0019** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0036** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0041** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0047** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0056** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0062** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0064** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0078** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0087** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0088** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0089** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0101** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0107** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0116** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0123** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0138** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0151** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0163** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0184** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Analyst Intelligence Assessment** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 8: Laboratory Information System Anomaly
-
-**Confidence:** 81
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0016** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0038** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0058** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0059** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0083** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0084** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0099** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0118** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0119** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0129** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0141** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0159** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0172** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0173** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0174** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0176** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0191** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0194** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Laboratory Information System Anomaly** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 9: Research Workstation Compromise
-
-**Confidence:** 92
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0021** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0024** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0039** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0044** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0046** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0093** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0096** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0108** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0110** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0131** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0142** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0149** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0157** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0162** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0188** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Research Workstation Compromise** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 10: Containment Verification
-
-**Confidence:** 82
-
-### Supporting Evidence
-
-- **BID-2026-4819-EV-0027** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0067** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0074** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0076** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0092** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0094** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0120** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0140** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0143** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0148** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0161** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0166** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0178** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0185** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0001** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0014** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0040** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0060** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0062** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0076** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0088** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0108** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0112** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0122** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0129** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0132** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0133** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0140** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0143** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0168** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0175** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0178** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0181** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0195** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0202** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0204** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0210** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -549,51 +92,51 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Containment Verification** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 11: Laboratory System Modification
+## Finding 2: Biosecurity Policy Violation
 
-**Confidence:** 95
+**Confidence:** 96
 
 ### Supporting Evidence
 
-- **BID-2026-4819-EV-0028** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0048** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0049** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0050** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0051** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0060** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0061** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0065** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0069** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0100** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0105** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0136** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0137** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0145** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0147** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0153** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0190** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0002** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0007** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0030** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0067** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0087** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0090** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0121** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0128** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0131** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0153** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0154** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0158** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0169** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0196** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0198** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0201** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0205** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -601,46 +144,337 @@ The finding was generated from available evidence correlation records. Additiona
 
 ### Analyst Assessment
 
-The listed evidence supports further review of **Laboratory System Modification** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
+The listed evidence supports further review of **Biosecurity Policy Violation** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 12: Unauthorized Facility Access
+## Finding 3: Suspicious Network Activity
 
-**Confidence:** 90
+**Confidence:** 84
 
 ### Supporting Evidence
 
-- **BID-2026-4819-EV-0072** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0080** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0098** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0104** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0114** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0122** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0125** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0164** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0167** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0168** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0179** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0181** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0182** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-4819-EV-0196** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0003** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0033** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0042** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0044** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0049** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0050** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0052** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0058** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0068** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0098** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0114** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0116** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0125** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0139** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0157** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0163** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0171** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0176** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0199** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0200** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0206** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0212** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Suspicious Network Activity** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 4: Research Workstation Compromise
+
+**Confidence:** 97
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0004** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0010** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0011** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0037** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0039** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0046** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0055** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0057** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0061** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0065** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0072** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0081** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0100** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0102** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0107** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0156** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0160** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0170** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0173** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0191** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Research Workstation Compromise** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 5: Research Data Integrity Anomaly
+
+**Confidence:** 98
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0005** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0008** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0013** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0016** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0019** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0026** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0045** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0054** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0056** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0064** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0073** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0103** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0110** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0130** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0136** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0159** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0174** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0209** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Research Data Integrity Anomaly** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 6: Analyst Intelligence Assessment
+
+**Confidence:** 93
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0006** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0015** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0027** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0029** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0035** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0036** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0038** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0041** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0086** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0092** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0106** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0123** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0126** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0134** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0138** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0141** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0162** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0182** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0207** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Analyst Intelligence Assessment** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 7: Known Threat Actor Indicator
+
+**Confidence:** 82
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0009** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0018** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0024** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0032** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0034** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0082** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0083** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0096** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0097** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0113** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0127** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0152** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0164** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0186** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0193** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0208** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Known Threat Actor Indicator** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 8: Unauthorized Facility Access
+
+**Confidence:** 99
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0012** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0023** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0063** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0075** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0080** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0085** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0089** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0094** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0101** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0137** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0147** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0167** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0180** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0184** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0188** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0194** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0213** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -649,7 +483,207 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Unauthorized Facility Access** within
-investigation **BID-2026-4819**. Evidence integrity, source reliability, and
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 9: Command-and-Control Communication
+
+**Confidence:** 91
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0017** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0020** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0022** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0031** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0053** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0071** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0077** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0109** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0115** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0142** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0146** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0161** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0166** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0172** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0183** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0185** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0192** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Command-and-Control Communication** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 10: Laboratory Information System Anomaly
+
+**Confidence:** 86
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0021** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0025** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0048** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0051** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0069** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0091** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0099** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0118** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0148** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0149** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0190** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0197** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Laboratory Information System Anomaly** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 11: Laboratory System Modification
+
+**Confidence:** 81
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0028** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0043** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0059** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0070** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0074** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0078** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0079** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0084** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0104** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0117** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0119** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0120** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0145** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0150** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0155** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0211** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0214** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Laboratory System Modification** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 12: Credential Misuse
+
+**Confidence:** 83
+
+### Supporting Evidence
+
+- **BID-2026-1115-EV-0047** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0066** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0093** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0095** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0105** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0111** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0124** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0135** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0144** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0151** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0165** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0177** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0179** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0187** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0189** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1115-EV-0203** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Credential Misuse** within
+investigation **BID-2026-1115**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
