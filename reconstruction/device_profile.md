@@ -3,13 +3,13 @@
 ## Investigation
 
 Case ID:
-BID-2026-5363
+BID-2026-9408
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Counter-Bioterror Intelligence Case
 
 Threat Family:
 Biocontainment System Tampering
@@ -19,13 +19,13 @@ Biocontainment System Tampering
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
-Genome Sequencing Environment
+Federal Investigation Network
 
 Device:
-Evidence Repository
+Research Database
 
 Vendor:
 Red Hat
@@ -34,7 +34,7 @@ Operating System:
 VMware ESXi 9
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-88%
+96%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

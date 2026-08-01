@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-08-01 01:24 UTC",
+  "engine": {
+    "name": "BioDefense C# Bioterror Threat Scoring Engine",
+    "version": "1.0.0",
+    "runtime": ".NET 8"
+  },
+  "investigation": {
+    "caseId": "BID-2026-9408",
+    "campaignId": "BDC-2026-001",
+    "operation": "Operation Black Eclipse",
+    "classification": "Counter-Bioterror Intelligence Case",
+    "threatFamily": "Biocontainment System Tampering",
+    "severity": "CRITICAL",
+    "priority": "CRITICAL",
+    "riskScore": 92,
+    "confidence": 96,
+    "containmentPhase": "Operational Recovery",
+    "affectedPlatform": "Federal Investigation Network",
+    "affectedAssets": 47
+  },
+  "assessment": {
+    "overallScore": 99,
+    "overallLevel": "CRITICAL",
+    "dimensions": {
+      "threatActorIntent": {
+        "score": 100,
+        "level": "CRITICAL"
+      },
+      "threatActorCapability": {
+        "score": 100,
+        "level": "CRITICAL"
+      },
+      "biologicalTargetValue": {
+        "score": 100,
+        "level": "CRITICAL"
+      },
+      "laboratoryAndSpecimenImpact": {
+        "score": 100,
+        "level": "CRITICAL"
+      },
+      "publicHealthRisk": {
+        "score": 100,
+        "level": "CRITICAL"
+      },
+      "cyberToPhysicalEscalation": {
+        "score": 100,
+        "level": "CRITICAL"
+      },
+      "attributionConfidence": {
+        "score": 98,
+        "level": "HIGH"
+      },
+      "containmentConfidence": {
+        "score": 98,
+        "level": "HIGH"
+      }
+    }
+  },
+  "evidenceBasis": {
+    "evidenceRecords": 348,
+    "correlationRecords": 348,
+    "integrityVerifiedRecords": 348,
+    "pendingAnalystReview": 348,
+    "priorityFindings": [
+      {
+        "finding": "Biosecurity Policy Violation",
+        "correlations": 38
+      },
+      {
+        "finding": "Laboratory System Modification",
+        "correlations": 36
+      },
+      {
+        "finding": "Analyst Intelligence Assessment",
+        "correlations": 32
+      },
+      {
+        "finding": "Credential Misuse",
+        "correlations": 31
+      },
+      {
+        "finding": "Research Data Integrity Anomaly",
+        "correlations": 30
+      },
+      {
+        "finding": "Suspicious Network Activity",
+        "correlations": 29
+      },
+      {
+        "finding": "Command-and-Control Communication",
+        "correlations": 28
+      },
+      {
+        "finding": "Laboratory Information System Anomaly",
+        "correlations": 28
+      },
+      {
+        "finding": "Research Workstation Compromise",
+        "correlations": 28
+      },
+      {
+        "finding": "Unauthorized Facility Access",
+        "correlations": 27
+      },
+      {
+        "finding": "Containment Verification",
+        "correlations": 23
+      },
+      {
+        "finding": "Known Threat Actor Indicator",
+        "correlations": 18
+      }
+    ]
+  },
+  "analyticalNotice": "This output is generated from fictional defensive cyber-biothreat simulation data for portfolio and educational use. It is not a real-world biological threat determination."
+}

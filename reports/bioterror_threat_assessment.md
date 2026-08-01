@@ -2,45 +2,45 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-07-31 16:00 UTC
+**Generated:** 2026-08-01 01:24 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5363
+**Case ID:** BID-2026-9408
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Operation Black Eclipse
 
-**Classification:** Laboratory Security Breach
+**Classification:** Counter-Bioterror Intelligence Case
 
 **Threat Family:** Biocontainment System Tampering
 
-**Severity:** HIGH
+**Severity:** CRITICAL
 
-**Priority:** HIGH
+**Priority:** CRITICAL
 
-**Risk Score:** 72
+**Risk Score:** 92
 
-**Assessment Confidence:** 88%
+**Assessment Confidence:** 96%
 
 **Containment Phase:** Operational Recovery
 
-**Affected Platform:** Genome Sequencing Environment
+**Affected Platform:** Federal Investigation Network
 
-**Affected Assets:** 31
+**Affected Assets:** 47
 
 ---
 
 ## Executive Assessment
 
-The active Laboratory Security Breach concerns suspected Biocontainment System Tampering. The calculated overall bioterror threat score is **97/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Counter-Bioterror Intelligence Case concerns suspected Biocontainment System Tampering. The calculated overall bioterror threat score is **99/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** CRITICAL
 
-**Overall Bioterror Threat Score:** 97/100
+**Overall Bioterror Threat Score:** 99/100
 
 ---
 
@@ -54,8 +54,8 @@ The active Laboratory Security Breach concerns suspected Biocontainment System T
 | Laboratory and Specimen Impact | 100/100 | CRITICAL |
 | Public-Health Risk | 100/100 | CRITICAL |
 | Cyber-to-Physical Escalation | 100/100 | CRITICAL |
-| Attribution Confidence | 93/100 | HIGH |
-| Containment Confidence | 95/100 | HIGH |
+| Attribution Confidence | 98/100 | HIGH |
+| Containment Confidence | 98/100 | HIGH |
 
 ---
 
@@ -72,28 +72,28 @@ The active Laboratory Security Breach concerns suspected Biocontainment System T
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 175
+**Evidence Records Reviewed:** 348
 
-**Correlation Records Reviewed:** 175
+**Correlation Records Reviewed:** 348
 
-**Integrity-Verified Records:** 175
+**Integrity-Verified Records:** 348
 
-**Pending Analyst Review:** 175
+**Pending Analyst Review:** 348
 
 ### Priority Findings
 
-- **Command-and-Control Communication:** 21
-- **Research Workstation Compromise:** 17
-- **Research Data Integrity Anomaly:** 16
-- **Containment Verification:** 16
-- **Laboratory Information System Anomaly:** 16
-- **Known Threat Actor Indicator:** 16
-- **Laboratory System Modification:** 15
-- **Unauthorized Facility Access:** 15
-- **Biosecurity Policy Violation:** 14
-- **Analyst Intelligence Assessment:** 13
-- **Suspicious Network Activity:** 10
-- **Credential Misuse:** 6
+- **Biosecurity Policy Violation:** 38
+- **Laboratory System Modification:** 36
+- **Analyst Intelligence Assessment:** 32
+- **Credential Misuse:** 31
+- **Research Data Integrity Anomaly:** 30
+- **Suspicious Network Activity:** 29
+- **Command-and-Control Communication:** 28
+- **Research Workstation Compromise:** 28
+- **Laboratory Information System Anomaly:** 28
+- **Unauthorized Facility Access:** 27
+- **Containment Verification:** 23
+- **Known Threat Actor Indicator:** 18
 
 ---
 
@@ -129,9 +129,9 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 ## Attribution and Containment Confidence
 
-**Attribution Confidence:** 93/100 (HIGH)
+**Attribution Confidence:** 98/100 (HIGH)
 
-**Containment Confidence:** 95/100 (HIGH)
+**Containment Confidence:** 98/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -156,10 +156,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-5363/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-5363/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-5363/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-5363/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-9408/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-9408/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-9408/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-9408/forensic_summary.md)
 
 ---
 

@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-5363
+BID-2026-9408
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Laboratory Security Breach
+Counter-Bioterror Intelligence Case
 
 ---
 
 | Category | Observation |
 |----------|-------------|
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| System Log | Unexpected privilege escalation recorded |
-| PowerShell | Encoded administrative command execution detected |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Identity | Credential reuse detected across isolated research segments |
 | Security | Multi-factor authentication bypass attempt recorded |
 | Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Laboratory Security Breach
 ## Investigation Statistics
 
 Evidence Collected:
-175
+348
 
 Indicators Reviewed:
-41
+121
 
 Risk Score:
-72
+92
 
 Confidence:
-88%
+96%
 
 ---
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+Analyst Team Bravo
 
 Current Status:
 
-Intelligence Analysis
+Monitoring

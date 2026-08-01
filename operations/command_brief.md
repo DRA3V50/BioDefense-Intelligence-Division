@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-07-31 16:00 UTC
+**Generated:** 2026-08-01 01:24 UTC
 
 ---
 
@@ -12,21 +12,21 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** CRITICAL
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5363
+**Case ID:** BID-2026-9408
 
-**Classification:** Laboratory Security Breach
+**Classification:** Counter-Bioterror Intelligence Case
 
-**Severity:** HIGH
+**Severity:** CRITICAL
 
 **Threat Family:** Biocontainment System Tampering
 
-**Confidence:** 88%
+**Confidence:** 96%
 
 ---
 
@@ -38,21 +38,21 @@ Protected biomedical infrastructure remains under elevated monitoring while inve
 
 ## Evidence Summary
 
-Evidence Collected: **175**
+Evidence Collected: **348**
 
-Indicators: **41**
+Indicators: **121**
 
-Priority: **HIGH**
+Priority: **CRITICAL**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Joint Cyber Investigation Unit**
+**Analyst Team Bravo**
 
 Initial Access:
-**Unknown**
+**Credential Abuse**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**58**
+**59**
 
 Confirmed Intrusions:
-**9**
+**10**
 
 Total Evidence:
-**89086**
+**89434**
 
 Total Indicators:
-**60771**
+**60892**
 
 ---
 
 ## Operational Highlights
 
-- 175 evidence items are associated with the active investigation.
-- 41 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **88%**.
-- Current investigation priority is **HIGH**.
+- 348 evidence items are associated with the active investigation.
+- 121 indicators are currently linked to the case.
+- Containment remains at **CRITICAL**.
+- Analyst confidence is **96%**.
+- Current investigation priority is **CRITICAL**.
 
 ---
 

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-5363 |
+| Case ID | BID-2026-9408 |
 | Operation | Operation Black Eclipse |
-| Classification | Laboratory Security Breach |
+| Classification | Counter-Bioterror Intelligence Case |
 | Threat Family | Biocontainment System Tampering |
-| Severity | HIGH |
-| Status | Intelligence Analysis |
+| Severity | CRITICAL |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Genome Sequencing Environment |
-| Device | Evidence Repository |
+| Platform | Federal Investigation Network |
+| Device | Research Database |
 | Vendor | Red Hat |
-| Network Zone | Federal Operations |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 72 |
-| Confidence | 88% |
-| Evidence | 175 |
-| Indicators | 41 |
-| Affected Assets | 31 |
+| Risk Score | 92 |
+| Confidence | 96% |
+| Evidence | 348 |
+| Indicators | 121 |
+| Affected Assets | 47 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Joint Cyber Investigation Unit**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
