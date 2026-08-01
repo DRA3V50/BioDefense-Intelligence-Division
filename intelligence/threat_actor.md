@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Insider Laboratory Compromise
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Vector-9
 
 ---
 
 ## Attribution
-Unknown
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Advanced
+Nation-State Level
 
 ---
 
 ## Confidence
-85%
+96%
 
 ---
 
 ## Observed Techniques
-- Unknown
-- Concealed Internal Movement
+- Phishing
 - Laboratory Data Manipulation
-- Laboratory Network Reconnaissance
-- Encrypted Data Staging
-- Covert Remote Access Tooling
+- Biosecurity System Tampering
+- Laboratory Control System Manipulation
+- Research Data Exfiltration
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Bravo
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Biological Research Intelligence Collection
 
 ---
 

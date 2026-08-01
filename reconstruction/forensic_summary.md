@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8561 |
+| Case ID | BID-2026-6443 |
 | Operation | Operation Black Eclipse |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Insider Laboratory Compromise |
-| Severity | MODERATE |
-| Status | Open |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | HIGH |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
+| Platform | Evidence Processing Network |
 | Device | Biomedical Workstation |
-| Vendor | VMware |
+| Vendor | Microsoft |
 | Security Zone | Containment Network |
 
 ---
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 55 |
-| Confidence | 85% |
-| Evidence Collected | 52 |
-| Indicators Identified | 22 |
-| Affected Assets | 6 |
+| Risk Score | 87 |
+| Confidence | 96% |
+| Evidence Collected | 218 |
+| Indicators Identified | 45 |
+| Affected Assets | 27 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Evidence Collection**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

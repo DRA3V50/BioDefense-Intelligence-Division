@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8561
+BID-2026-6443
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Biological Research Intelligence Collection
 
 Threat Family:
-Insider Laboratory Compromise
+Specimen Tracking Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Evidence Processing Network
 
 Device:
 Biomedical Workstation
 
 Vendor:
-VMware
+Microsoft
 
 Security Zone:
 Containment Network
@@ -41,22 +41,22 @@ Containment Network
 ## Investigation Metrics
 
 Investigations Recorded:
-60
+61
 
 Evidence Collected:
-52
+218
 
 Indicators Identified:
-22
+45
 
 Affected Assets:
-6
+27
 
 Confidence:
-85%
+96%
 
 Risk Score:
-55
+87
 
 ---
 

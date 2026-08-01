@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-01 01:43 UTC
+**Generated:** 2026-08-01 02:16 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8561
+**Case ID:** BID-2026-6443
 
-**Classification:** Unauthorized Research System Access
+**Classification:** Biological Research Intelligence Collection
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Threat Family:** Insider Laboratory Compromise
+**Threat Family:** Specimen Tracking Manipulation
 
-**Confidence:** 85%
+**Confidence:** 96%
 
 ---
 
 ## Investigation Summary
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **52**
+Evidence Collected: **218**
 
-Indicators: **22**
+Indicators: **45**
 
-Priority: **ELEVATED**
+Priority: **HIGH**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Analyst Team Bravo**
 
 Initial Access:
-**Unknown**
+**Phishing**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**60**
+**61**
 
 Confirmed Intrusions:
 **10**
 
 Total Evidence:
-**89486**
+**89704**
 
 Total Indicators:
-**60914**
+**60959**
 
 ---
 
 ## Operational Highlights
 
-- 52 evidence items are associated with the active investigation.
-- 22 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **85%**.
-- Current investigation priority is **ELEVATED**.
+- 218 evidence items are associated with the active investigation.
+- 45 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **96%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

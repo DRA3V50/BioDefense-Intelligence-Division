@@ -3,23 +3,23 @@
 ## Investigation
 
 Case ID:
-BID-2026-8561
+BID-2026-6443
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Unauthorized Research System Access
+Biological Research Intelligence Collection
 
 ---
 
 | Category | Observation |
 |----------|-------------|
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Identity | Credential reuse detected across isolated research segments |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | PowerShell | Encoded administrative command execution detected |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Research Storage | Unauthorized access to protected genomic repository |
 
 
@@ -28,16 +28,16 @@ Unauthorized Research System Access
 ## Investigation Statistics
 
 Evidence Collected:
-52
+218
 
 Indicators Reviewed:
-22
+45
 
 Risk Score:
-55
+87
 
 Confidence:
-85%
+96%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Bravo
 
 Current Status:
 
-Open
+Evidence Collection

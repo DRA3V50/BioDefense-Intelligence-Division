@@ -4,18 +4,18 @@
 ## 2026-08-01
 
 ### Case Opened
-Case ID: BID-2026-8561
+Case ID: BID-2026-6443
 
 ### Classification
-Unauthorized Research System Access
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
 
 ### Current Status
-Open
+Evidence Collection
 
 ### Severity
-MODERATE
+HIGH
 
 ---
