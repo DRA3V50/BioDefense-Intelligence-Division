@@ -36,8 +36,16 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Set Up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
       - name: Display Python Version
         run: python --version
+
+      - name: Display .NET Version
+        run: dotnet --version
 
       - name: Install Python Dependencies
         run: |
@@ -158,6 +166,9 @@ jobs:
 
       - name: Generate Bioterror Threat Assessment
         run: python scripts/generate_bioterror_threat_assessment.py
+
+      - name: Run C# Bioterror Threat Scoring Engine
+        run: dotnet run --project tools/BioterrorThreatScoringEngine.csproj --configuration Release
 
       - name: Generate Cyber-Biothreat Investigation Report
         run: python scripts/generate_investigation_report.py
