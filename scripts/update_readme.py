@@ -371,6 +371,18 @@ def build_evidence_dashboard_section(case: dict) -> str:
         "reports/bioterror_threat_assessment.md"
     )
 
+    csharp_threat_score_json_path = Path(
+        "reports/bioterror_threat_score_csharp.json"
+    )
+
+    csharp_threat_score_xml_path = Path(
+        "reports/bioterror_threat_score_csharp.xml"
+    )
+
+    exposure_tracking_workbook_path = Path(
+        "workbooks/Exposure-Tracking-Matrix.xlsx"
+    )
+
     investigative_leads_path = Path(
         "reports/investigative_leads.md"
     )
@@ -511,6 +523,21 @@ def build_evidence_dashboard_section(case: dict) -> str:
             "Bioterror Threat Assessment",
             "reports/bioterror_threat_assessment.md",
             bioterror_threat_assessment_path,
+        ),
+        (
+            "C# Bioterror Threat Score (JSON)",
+            "reports/bioterror_threat_score_csharp.json",
+            csharp_threat_score_json_path,
+        ),
+        (
+            "C# Bioterror Threat Score (XML)",
+            "reports/bioterror_threat_score_csharp.xml",
+            csharp_threat_score_xml_path,
+        ),
+        (
+            "Exposure Tracking Matrix (Excel)",
+            "workbooks/Exposure-Tracking-Matrix.xlsx",
+            exposure_tracking_workbook_path,
         ),
         (
             "Investigative Leads and Intelligence Gaps",
