@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Insider Laboratory Compromise
 
 ---
 
 ## Primary Alias
-Vector-9
+Black Helix
 
 ---
 
@@ -21,29 +21,29 @@ Research Data Theft
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-96%
+89%
 
 ---
 
 ## Observed Techniques
-- Phishing
-- Laboratory Data Manipulation
-- Biosecurity System Tampering
-- Laboratory Control System Manipulation
-- Research Data Exfiltration
-- Command and Control
+- Credential Abuse
+- Lateral Movement
+- Long-Term Network Foothold
+- Privilege Escalation
+- Insider Access Abuse
+- Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+National Response Cell
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 ---
 

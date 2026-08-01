@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6443
+BID-2026-4819
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 Threat Family:
-Specimen Tracking Manipulation
+Insider Laboratory Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Ashcroft Biomedical Center
 
 Platform:
-Evidence Processing Network
+Clinical Research Environment
 
 Device:
-Biomedical Workstation
+Laboratory Controller
 
 Vendor:
-Microsoft
+VMware
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
 HIGH
 
 Confidence:
-96%
+89%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

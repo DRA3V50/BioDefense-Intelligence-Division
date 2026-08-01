@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6443 |
+| Case ID | BID-2026-4819 |
 | Operation | Operation Black Eclipse |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Specimen Tracking Manipulation |
+| Classification | Laboratory Security Breach |
+| Threat Family | Insider Laboratory Compromise |
 | Severity | HIGH |
-| Status | Evidence Collection |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Biomedical Workstation |
-| Vendor | Microsoft |
-| Security Zone | Containment Network |
+| Platform | Clinical Research Environment |
+| Device | Laboratory Controller |
+| Vendor | VMware |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 87 |
-| Confidence | 96% |
-| Evidence Collected | 218 |
-| Indicators Identified | 45 |
-| Affected Assets | 27 |
+| Risk Score | 70 |
+| Confidence | 89% |
+| Evidence Collected | 197 |
+| Indicators Identified | 76 |
+| Affected Assets | 28 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Intelligence Analysis**
 
 Priority:
 

@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6443
+BID-2026-4819
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biological Research Intelligence Collection
+Laboratory Security Breach
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Identity | Credential reuse detected across isolated research segments |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | PowerShell | Encoded administrative command execution detected |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -28,23 +28,23 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-218
+197
 
 Indicators Reviewed:
-45
+76
 
 Risk Score:
-87
+70
 
 Confidence:
-96%
+89%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+National Response Cell
 
 Current Status:
 
-Evidence Collection
+Intelligence Analysis

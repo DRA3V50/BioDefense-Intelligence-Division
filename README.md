@@ -11,7 +11,7 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Campaign Overview | Campaign Status |
 |--------------------|-----------------|
-| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>10<br><br>**Active Cases**<br>61<br><br>**Evidence Collected**<br>89,704<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>60,959 |
+| **Campaign ID**<br>BDC-2026-001<br><br>**Operation**<br>Operation Black Eclipse<br><br>**Campaign Phase**<br>Operational Recovery<br><br>**Threat Designation**<br>NEMESIS-12<br><br>**Containment Level**<br>SEVERE | **Confirmed Intrusions**<br>10<br><br>**Active Cases**<br>62<br><br>**Evidence Collected**<br>89,901<br><br>**Digital Artifacts**<br>151<br><br>**Indicators**<br>61,035 |
 
 ---
 
@@ -29,26 +29,26 @@ BioDefense Intelligence Division is a cyber-biothreat investigation and digital 
 
 | Investigation | Classification |
 |---------------|----------------|
-| **Case ID**<br>BID-2026-6443<br><br>**Classification**<br>Biological Research Intelligence Collection<br><br>**Threat Family**<br>Specimen Tracking Manipulation<br><br>**Severity**<br>HIGH | **Platform**<br>Evidence Processing Network<br><br>**Vendor**<br>Microsoft<br><br>**Device**<br>Biomedical Workstation<br><br>**Zone**<br>Containment Network |
+| **Case ID**<br>BID-2026-4819<br><br>**Classification**<br>Laboratory Security Breach<br><br>**Threat Family**<br>Insider Laboratory Compromise<br><br>**Severity**<br>HIGH | **Platform**<br>Clinical Research Environment<br><br>**Vendor**<br>VMware<br><br>**Device**<br>Laboratory Controller<br><br>**Zone**<br>Federal Operations |
 
 ---
 
 | Investigation Status |
 |-----------------------|
-| **Priority**<br>HIGH<br><br>**Confidence**<br>96%<br><br>**Evidence**<br>218<br><br>**Indicators**<br>45 |
+| **Priority**<br>HIGH<br><br>**Confidence**<br>89%<br><br>**Evidence**<br>197<br><br>**Indicators**<br>76 |
 
 ---
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
 ---
 
 # Current Response
 
-- Lead Analyst: **Analyst Team Bravo**
-- Initial Access: **Phishing**
+- Lead Analyst: **National Response Cell**
+- Initial Access: **Credential Abuse**
 - Recommended Action: **Verify recovery controls and prepare the final operational assessment.**
 
 ---
@@ -57,48 +57,48 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 # Latest Digital Evidence Summary
 
-**Active Case:** BID-2026-6443
+**Active Case:** BID-2026-4819
 
 | Evidence Metric | Value |
 |-----------------|------:|
-| Evidence Records | 218 |
-| Correlated Records | 218 |
-| Integrity Verified | 218 |
-| Pending Analyst Review | 218 |
+| Evidence Records | 197 |
+| Correlated Records | 197 |
+| Integrity Verified | 197 |
+| Pending Analyst Review | 197 |
 
 ## Evidence Breakdown
 
 | Evidence Type | Records |
 |---------------|--------:|
-| Threat Intelligence Record | 23 |
-| Research Workstation Event Log | 22 |
-| Firewall Log | 20 |
-| Laboratory System Configuration | 19 |
-| Network Connection Record | 18 |
-| Research Data Integrity Record | 18 |
-| Authentication Log | 18 |
-| Containment Validation Record | 18 |
-| Laboratory Information System Audit Log | 17 |
-| Access Control Log | 17 |
-| Biosecurity Audit Record | 15 |
-| Analyst Observation | 13 |
+| Threat Intelligence Record | 21 |
+| Biosecurity Audit Record | 21 |
+| Analyst Observation | 20 |
+| Laboratory Information System Audit Log | 18 |
+| Laboratory System Configuration | 17 |
+| Network Connection Record | 16 |
+| Research Data Integrity Record | 15 |
+| Research Workstation Event Log | 15 |
+| Firewall Log | 14 |
+| Containment Validation Record | 14 |
+| Access Control Log | 14 |
+| Authentication Log | 12 |
 
 ## Priority Findings
 
 | Investigative Finding | Correlations |
 |-----------------------|-------------:|
-| Known Threat Actor Indicator | 23 |
-| Research Workstation Compromise | 22 |
-| Suspicious Network Activity | 20 |
-| Laboratory System Modification | 19 |
-| Command-and-Control Communication | 18 |
-| Research Data Integrity Anomaly | 18 |
-| Credential Misuse | 18 |
-| Containment Verification | 18 |
-| Laboratory Information System Anomaly | 17 |
-| Unauthorized Facility Access | 17 |
-| Biosecurity Policy Violation | 15 |
-| Analyst Intelligence Assessment | 13 |
+| Known Threat Actor Indicator | 21 |
+| Biosecurity Policy Violation | 21 |
+| Analyst Intelligence Assessment | 20 |
+| Laboratory Information System Anomaly | 18 |
+| Laboratory System Modification | 17 |
+| Command-and-Control Communication | 16 |
+| Research Data Integrity Anomaly | 15 |
+| Research Workstation Compromise | 15 |
+| Suspicious Network Activity | 14 |
+| Containment Verification | 14 |
+| Unauthorized Facility Access | 14 |
+| Credential Misuse | 12 |
 
 ## Active Case Intelligence Products
 
@@ -113,17 +113,17 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 | [Command Brief](operations/command_brief.md) | Available |
 | [Investigation Timeline](operations/investigation_timeline.md) | Available |
 | [Evidence Chain Analysis](evidence/evidence_chain.md) | Available |
-| [Evidence Manifest](evidence/BID-2026-6443/evidence_manifest.json) | Available |
-| [Evidence Correlations](evidence/BID-2026-6443/evidence_correlations.json) | Available |
-| [Chain of Custody](evidence/BID-2026-6443/chain_of_custody.md) | Available |
-| [Forensic Summary](evidence/BID-2026-6443/forensic_summary.md) | Available |
-| [Acquisition Summary](evidence/BID-2026-6443/acquisition_summary.md) | Available |
+| [Evidence Manifest](evidence/BID-2026-4819/evidence_manifest.json) | Available |
+| [Evidence Correlations](evidence/BID-2026-4819/evidence_correlations.json) | Available |
+| [Chain of Custody](evidence/BID-2026-4819/chain_of_custody.md) | Available |
+| [Forensic Summary](evidence/BID-2026-4819/forensic_summary.md) | Available |
+| [Acquisition Summary](evidence/BID-2026-4819/acquisition_summary.md) | Available |
 
-**Current Threat Family:** Specimen Tracking Manipulation
+**Current Threat Family:** Insider Laboratory Compromise
 
-**Current Assessment:** Collected artifacts support continued investigation into cyber-enabled threat activity affecting protected research environments.
+**Current Assessment:** Protected biomedical infrastructure remains under elevated monitoring while investigators collect additional evidence.
 
-**Evidence Repository Updated:** 2026-08-01T02:16:43Z
+**Evidence Repository Updated:** 2026-08-01T05:24:30Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -133,15 +133,15 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Metric | Value |
 |---------|------:|
-| Total Investigations | 61 |
+| Total Investigations | 62 |
 | Low Severity Cases | 13 |
 | Moderate Severity Cases | 23 |
-| High Severity Cases | 15 |
+| High Severity Cases | 16 |
 | Critical Severity Cases | 10 |
-| Average Confidence | 90.1% |
-| Total Evidence Collected | 89,704 |
-| Total Indicators | 60,959 |
-| Active Cases | 61 |
+| Average Confidence | 90.0% |
+| Total Evidence Collected | 89,901 |
+| Total Indicators | 61,035 |
+| Active Cases | 62 |
 | Confirmed Intrusions | 10 |
 
 ---
@@ -150,11 +150,11 @@ Collected artifacts support continued investigation into cyber-enabled threat ac
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-4819 | Laboratory Security Breach | HIGH |
 | BID-2026-6443 | Biological Research Intelligence Collection | HIGH |
 | BID-2026-8561 | Unauthorized Research System Access | MODERATE |
 | BID-2026-9408 | Counter-Bioterror Intelligence Case | CRITICAL |
 | BID-2026-5363 | Laboratory Security Breach | HIGH |
-| BID-2026-7077 | Biological Research Intelligence Collection | LOW |
 
 
 ---
