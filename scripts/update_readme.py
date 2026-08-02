@@ -326,7 +326,7 @@ def build_campaign_dashboard(
         "| Campaign | Operational Status | Scope |\n"
         "|----------|--------------------|-------|\n"
         f"| **ID:** {markdown_cell(field(operation, 'campaign_id'))}"
-        f"<br>**Operation:** "
+        f"<br>**Campaign:** "
         f"{markdown_cell(field(operation, 'operation'))}"
         f"<br>**Designation:** "
         f"{markdown_cell(field(operation, 'threat_designation'))} "
