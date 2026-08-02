@@ -98,34 +98,173 @@ def safe_int(value: object, default: int = 0) -> int:
         return default
 
 
-def calculate_risk_score(case: dict) -> int:
+def normalized_risk_score(
+    severity: object,
+    confidence: object,
+) -> int:
     """
-    Use the investigation's own risk score when available.
+    Calculate the standardized 0-100 workbook risk score.
 
-    The fallback retains severity and confidence as inputs while keeping
-    the result on a 0-100 scale.
+    Severity controls the maximum score band:
+        LOW       -> 0-25
+        MODERATE  -> 0-50
+        HIGH      -> 0-75
+        CRITICAL  -> 0-100
     """
 
-    if case.get("risk_score") not in (None, ""):
-        return safe_int(case.get("risk_score"))
-
-    severity = str(
-        case.get("severity", "LOW")
+    severity_name = str(
+        severity or "LOW"
     ).strip().upper()
 
-    confidence = max(
+    confidence_value = max(
         0,
         min(
             100,
-            safe_int(case.get("confidence")),
+            safe_int(confidence),
         ),
     )
 
     severity_factor = (
-        SEVERITY_WEIGHT.get(severity, 1) / 4
+        SEVERITY_WEIGHT.get(
+            severity_name,
+            1,
+        )
+        / 4
     )
 
-    return round(severity_factor * confidence)
+    return round(
+        severity_factor
+        * confidence_value
+    )
+
+
+def normalize_legacy_risk_scores(
+    worksheet,
+) -> int:
+    """
+    Convert legacy severity-weighted scores to the 0-100 scale.
+
+    The old workbook formula was:
+        severity weight * confidence
+
+    A row is changed only when its current value exactly matches that
+    legacy formula. Newer case-provided scores are therefore preserved.
+    """
+
+    header_map = {
+        str(
+            worksheet.cell(
+                1,
+                column_number,
+            ).value
+            or ""
+        ).strip(): column_number
+        for column_number in range(
+            1,
+            worksheet.max_column + 1,
+        )
+    }
+
+    required_headers = {
+        "Severity",
+        "Risk Score",
+        "Confidence",
+    }
+
+    if not required_headers.issubset(header_map):
+        return 0
+
+    severity_column = header_map["Severity"]
+    risk_column = header_map["Risk Score"]
+    confidence_column = header_map["Confidence"]
+
+    changed_rows = 0
+
+    for row_number in range(
+        2,
+        worksheet.max_row + 1,
+    ):
+        severity = str(
+            worksheet.cell(
+                row_number,
+                severity_column,
+            ).value
+            or ""
+        ).strip().upper()
+
+        confidence = max(
+            0,
+            min(
+                100,
+                safe_int(
+                    worksheet.cell(
+                        row_number,
+                        confidence_column,
+                    ).value
+                ),
+            ),
+        )
+
+        current_score = safe_int(
+            worksheet.cell(
+                row_number,
+                risk_column,
+            ).value,
+            default=-1,
+        )
+
+        severity_weight = SEVERITY_WEIGHT.get(
+            severity
+        )
+
+        if severity_weight is None:
+            continue
+
+        legacy_score = (
+            severity_weight
+            * confidence
+        )
+
+        standardized_score = normalized_risk_score(
+            severity,
+            confidence,
+        )
+
+        if (
+            current_score == legacy_score
+            and current_score != standardized_score
+        ):
+            worksheet.cell(
+                row_number,
+                risk_column,
+            ).value = standardized_score
+
+            changed_rows += 1
+
+    return changed_rows
+
+
+def calculate_risk_score(case: dict) -> int:
+    """
+    Use the investigation's own 0-100 risk score when available.
+
+    When no case score exists, calculate the same standardized 0-100
+    workbook score used by the legacy-data normalization.
+    """
+
+    if case.get("risk_score") not in (None, ""):
+        return max(
+            0,
+            min(
+                100,
+                safe_int(case.get("risk_score")),
+            ),
+        )
+
+    return normalized_risk_score(
+        case.get("severity"),
+        case.get("confidence"),
+    )
 
 
 def open_workbook():
@@ -298,6 +437,10 @@ def main() -> None:
     case = load_case()
     workbook, worksheet = open_workbook()
 
+    normalized_rows = normalize_legacy_risk_scores(
+        worksheet
+    )
+
     action = upsert_case(
         worksheet,
         build_row(case),
@@ -311,6 +454,10 @@ def main() -> None:
     print(
         f"Workbook {action}: "
         f"{WORKBOOK_PATH}"
+    )
+    print(
+        "Legacy risk scores normalized: "
+        f"{normalized_rows}"
     )
     print(
         f"GitHub CSV preview updated: "
