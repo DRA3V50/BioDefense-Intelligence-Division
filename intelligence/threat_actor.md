@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biological Data Exfiltration
+Credential Misuse
 
 ---
 
 ## Primary Alias
-Silent Culture
+Cerberus Group
 
 ---
 
 ## Attribution
-Unattributed
+Unknown
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Research Data Theft
 
 ---
 
@@ -31,29 +31,29 @@ Nation-State Level
 ---
 
 ## Observed Techniques
-- Phishing
-- Laboratory Network Reconnaissance
+- Exposed Remote Service
+- Laboratory Data Manipulation
 - Long-Term Network Foothold
-- Encrypted Data Staging
+- Biosecurity System Tampering
 - Laboratory Control System Manipulation
-- Command and Control
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
 ## Current Campaign
-Operation Black Eclipse
+Coordinated Biomedical Systems Intrusion
 
 ---
 
 ## Primary Target
-Research Facility Intrusion
+Research Data Integrity Investigation
 
 ---
 

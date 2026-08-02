@@ -90,3 +90,4 @@ Date,Case ID,Operation,Classification,Severity,Priority,Risk Score,Confidence,Ev
 2026-08-01,BID-2026-1115,Operation Black Eclipse,Biosecurity Infrastructure Investigation,HIGH,HIGH,72,96,214,37,14,Federal Investigation Network,Red Hat,Research Operations,Analyst Team Delta,Monitoring
 2026-08-02,BID-2026-5702,Operation Black Eclipse,Evidence Reconstruction Investigation,MODERATE,ELEVATED,65,85,61,13,15,Genome Sequencing Environment,Cisco,Containment Network,BioDefense Task Force,Intelligence Analysis
 2026-08-02,BID-2026-9061,Operation Black Eclipse,Research Facility Intrusion,HIGH,HIGH,75,88,212,38,14,Laboratory Control Network,Fortinet,Containment Network,Analyst Team Bravo,Open
+2026-08-02,BID-2026-9879,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,LOW,ROUTINE,25,88,53,6,10,Laboratory Control Network,Palo Alto Networks,Protected Research Segment,Joint Cyber Investigation Unit,Containment

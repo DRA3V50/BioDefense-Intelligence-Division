@@ -1,30 +1,30 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-02 03:08 UTC
+**Generated:** 2026-08-02 03:25 UTC
 
 ---
 
 ## Operation
 
-**Operation:** Operation Black Eclipse
+**Operation:** Coordinated Biomedical Systems Intrusion
 
 **Campaign ID:** BDC-2026-001
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-9061
+**Case ID:** BID-2026-9879
 
-**Classification:** Research Facility Intrusion
+**Classification:** Research Data Integrity Investigation
 
-**Severity:** HIGH
+**Severity:** LOW
 
-**Threat Family:** Biological Data Exfiltration
+**Threat Family:** Credential Misuse
 
 **Confidence:** 88%
 
@@ -32,27 +32,27 @@
 
 ## Investigation Summary
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **212**
+Evidence Collected: **53**
 
-Indicators: **38**
+Indicators: **6**
 
-Priority: **HIGH**
+Priority: **ROUTINE**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Bravo**
+**Joint Cyber Investigation Unit**
 
 Initial Access:
-**Phishing**
+**Exposed Remote Service**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**65**
+**66**
 
 Confirmed Intrusions:
 **10**
 
 Total Evidence:
-**90388**
+**90441**
 
 Total Indicators:
-**61123**
+**61129**
 
 ---
 
 ## Operational Highlights
 
-- 212 evidence items are associated with the active investigation.
-- 38 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
+- 53 evidence items are associated with the active investigation.
+- 6 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
 - Analyst confidence is **88%**.
-- Current investigation priority is **HIGH**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

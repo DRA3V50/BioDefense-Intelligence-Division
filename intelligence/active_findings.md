@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-9061
+BID-2026-9879
 
 Operation:
-Operation Black Eclipse
+Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion
+Research Data Integrity Investigation
 
 Threat Family:
-Biological Data Exfiltration
+Credential Misuse
 
 Severity:
-HIGH
+LOW
 
 Priority:
-HIGH
+ROUTINE
 
 ---
 
@@ -30,32 +30,32 @@ Privilege escalation activity was observed within a protected research environme
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-14
+10
 
 Evidence Collected:
-212
+53
 
 Indicators Identified:
-38
+6
 
 Analyst Confidence:
 88%
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Containment
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Bravo
+Joint Cyber Investigation Unit

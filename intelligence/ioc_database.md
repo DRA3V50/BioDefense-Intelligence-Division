@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-9061
+BID-2026-9879
 
 Operation:
-Operation Black Eclipse
+Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion
+Research Data Integrity Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Device | Protected workstation entered evidence preservation mode |
-| System Log | Unexpected privilege escalation recorded |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Device | Protected workstation entered evidence preservation mode |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -28,13 +28,13 @@ Research Facility Intrusion
 ## Investigation Statistics
 
 Evidence Collected:
-212
+53
 
 Indicators Reviewed:
-38
+6
 
 Risk Score:
-75
+25
 
 Confidence:
 88%
@@ -43,8 +43,8 @@ Confidence:
 
 Lead Analyst:
 
-Analyst Team Bravo
+Joint Cyber Investigation Unit
 
 Current Status:
 
-Open
+Containment

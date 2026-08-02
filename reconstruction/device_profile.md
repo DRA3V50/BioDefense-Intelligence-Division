@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-9061
+BID-2026-9879
 
 Operation:
-Operation Black Eclipse
+Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion
+Research Data Integrity Investigation
 
 Threat Family:
-Biological Data Exfiltration
+Credential Misuse
 
 ---
 
@@ -25,16 +25,16 @@ Platform:
 Laboratory Control Network
 
 Device:
-Genome Sequencing Server
+Biomedical Workstation
 
 Vendor:
-Fortinet
+Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
-Containment Network
+Protected Research Segment
 
 ---
 
@@ -47,7 +47,7 @@ Status:
 Awaiting Laboratory Review
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
 88%
@@ -57,7 +57,7 @@ Confidence:
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

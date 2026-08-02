@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-9061 |
-| Operation | Operation Black Eclipse |
-| Classification | Research Facility Intrusion |
-| Threat Family | Biological Data Exfiltration |
-| Severity | HIGH |
-| Status | Open |
+| Case ID | BID-2026-9879 |
+| Operation | Coordinated Biomedical Systems Intrusion |
+| Classification | Research Data Integrity Investigation |
+| Threat Family | Credential Misuse |
+| Severity | LOW |
+| Status | Containment |
 | Phase | Operational Recovery |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Laboratory Control Network |
-| Device | Genome Sequencing Server |
-| Vendor | Fortinet |
-| Network Zone | Containment Network |
+| Device | Biomedical Workstation |
+| Vendor | Palo Alto Networks |
+| Network Zone | Protected Research Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 75 |
+| Risk Score | 25 |
 | Confidence | 88% |
-| Evidence | 212 |
-| Indicators | 38 |
-| Affected Assets | 14 |
+| Evidence | 53 |
+| Indicators | 6 |
+| Affected Assets | 10 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Joint Cyber Investigation Unit**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.

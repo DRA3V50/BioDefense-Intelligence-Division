@@ -95,6 +95,14 @@
             "cases": 3,
             "severity": "HIGH",
             "confidence": 93
+        },
+        {
+            "name": "Credential Misuse",
+            "first_seen": "2026-08-02",
+            "last_seen": "2026-08-02",
+            "cases": 1,
+            "severity": "LOW",
+            "confidence": 88
         }
     ]
 }
