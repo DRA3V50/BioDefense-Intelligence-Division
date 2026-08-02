@@ -3,11 +3,15 @@
 """
 update_operation.py
 
-Advances the qualitative state of the active operation.
+Advance the qualitative state of the active BioDefense campaign.
 
 This script does NOT increment cumulative case, evidence, IOC, facility,
 or intrusion totals. Those values are recalculated from
 data/investigation_history.csv by recalculate_campaign_metrics.py.
+
+The JSON key named "operation" is preserved for compatibility, but its
+value is now a restrained campaign title rather than a cinematic
+operation codename.
 """
 
 import json
@@ -18,23 +22,39 @@ from pathlib import Path
 CASE_FILE = Path("data/current_case.json")
 OPERATION_FILE = Path("operations/active_operation.json")
 
+CAMPAIGN_TITLE = "Coordinated Biomedical Systems Intrusion"
+DEFAULT_THREAT_DESIGNATION = "BMSI-01"
+
+LEGACY_DESIGNATIONS = {
+    "NEMESIS-12",
+    "BIOCELL-01",
+}
+
 
 def load_json(path: Path) -> dict:
-    """Load a JSON object and fail clearly if the file is unavailable."""
+    """Load a JSON object and fail clearly if it is unavailable."""
+
     if not path.exists():
-        raise FileNotFoundError(f"Required file not found: {path}")
+        raise FileNotFoundError(
+            f"Required file not found: {path}"
+        )
 
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
 
     if not isinstance(data, dict):
-        raise ValueError(f"Expected a JSON object in {path}")
+        raise ValueError(
+            f"Expected a JSON object in {path}"
+        )
 
     return data
 
 
-def determine_containment_level(phase: str, severity: str) -> str:
-    """Determine containment level from operation phase and case severity."""
+def determine_containment_level(
+    phase: str,
+    severity: str,
+) -> str:
+    """Determine containment level from phase and case severity."""
 
     phase_levels = {
         "Detection": "ELEVATED",
@@ -60,10 +80,16 @@ def determine_containment_level(phase: str, severity: str) -> str:
         "CRITICAL": 4,
     }
 
-    phase_level = phase_levels.get(phase, "ELEVATED")
-    severity_rank = severity_levels.get(severity.upper(), 1)
+    phase_level = phase_levels.get(
+        phase,
+        "ELEVATED",
+    )
 
-    # A critical active case can temporarily raise the operation level.
+    severity_rank = severity_levels.get(
+        severity.upper(),
+        1,
+    )
+
     if severity_rank == 4:
         case_level = "CRITICAL"
     elif severity_rank == 3:
@@ -73,49 +99,59 @@ def determine_containment_level(phase: str, severity: str) -> str:
     else:
         case_level = "ELEVATED"
 
-    if level_rank[case_level] > level_rank[phase_level]:
+    if (
+        level_rank[case_level]
+        > level_rank[phase_level]
+    ):
         return case_level
 
     return phase_level
 
 
 def phase_summary(phase: str) -> str:
-    """Return an operation summary appropriate for the current phase."""
+    """Return a campaign summary appropriate for the current phase."""
 
     summaries = {
         "Detection": (
-            "Initial reporting indicates coordinated unauthorized activity "
-            "affecting protected biomedical research infrastructure."
+            "Initial reporting indicates coordinated unauthorized "
+            "activity affecting protected biomedical research "
+            "infrastructure."
         ),
         "Intelligence Correlation": (
-            "Analysts are correlating related investigations, access records, "
-            "and digital artifacts to identify common infrastructure."
+            "Analysts are correlating related investigations, access "
+            "records, and digital artifacts to identify common "
+            "infrastructure."
         ),
         "Evidence Collection": (
-            "Investigators are expanding forensic acquisition across affected "
-            "laboratory and research systems."
+            "Investigators are expanding forensic acquisition across "
+            "affected laboratory and research systems."
         ),
         "Infrastructure Analysis": (
-            "Recovered evidence is being used to reconstruct the infrastructure "
-            "supporting the coordinated intrusion activity."
+            "Recovered evidence is being used to reconstruct the "
+            "infrastructure supporting the coordinated intrusion "
+            "activity."
         ),
         "Threat Attribution": (
-            "Analysts are evaluating recurring access patterns, actor profiles, "
-            "and linked investigations to support attribution."
+            "Analysts are evaluating recurring access patterns, actor "
+            "profiles, and linked investigations to support "
+            "attribution."
         ),
         "Containment": (
-            "Containment actions are underway across affected research networks "
-            "while evidence preservation continues."
+            "Containment actions are underway across affected research "
+            "networks while evidence preservation continues."
         ),
         "Operational Recovery": (
-            "Affected environments are undergoing validation and controlled "
-            "recovery while residual risk is monitored."
+            "Affected environments are undergoing validation and "
+            "controlled recovery while residual risk is monitored."
         ),
     }
 
     return summaries.get(
         phase,
-        "The active operation remains under continuing investigative review.",
+        (
+            "The active campaign remains under continuing "
+            "investigative review."
+        ),
     )
 
 
@@ -124,25 +160,32 @@ def next_objective(phase: str) -> str:
 
     objectives = {
         "Detection": (
-            "Validate initial reporting and identify affected research systems."
+            "Validate initial reporting and identify affected "
+            "research systems."
         ),
         "Intelligence Correlation": (
-            "Correlate newly recovered artifacts with related investigations."
+            "Correlate newly recovered artifacts with related "
+            "investigations."
         ),
         "Evidence Collection": (
-            "Complete forensic acquisition and preserve chain-of-custody records."
+            "Complete forensic acquisition and preserve "
+            "chain-of-custody records."
         ),
         "Infrastructure Analysis": (
-            "Map infrastructure associated with the coordinated intrusion activity."
+            "Map infrastructure associated with the coordinated "
+            "intrusion activity."
         ),
         "Threat Attribution": (
-            "Assess actor relationships and strengthen attribution confidence."
+            "Assess actor relationships and strengthen attribution "
+            "confidence."
         ),
         "Containment": (
-            "Complete containment actions and validate protected environments."
+            "Complete containment actions and validate protected "
+            "environments."
         ),
         "Operational Recovery": (
-            "Verify recovery controls and prepare the final operational assessment."
+            "Verify recovery controls and prepare the final "
+            "operational assessment."
         ),
     }
 
@@ -166,39 +209,78 @@ def main() -> None:
         "Operational Recovery",
     ]
 
-    current_phase = operation.get("campaign_phase", phases[0])
+    current_phase = operation.get(
+        "campaign_phase",
+        phases[0],
+    )
 
     if current_phase not in phases:
         current_phase = phases[0]
 
     current_index = phases.index(current_phase)
 
-    # The operation may move forward, but it can never move backward.
+    # The campaign may move forward, but it can never move backward.
     if current_index < len(phases) - 1:
         if random.randint(1, 100) <= 25:
             current_phase = phases[current_index + 1]
 
+    # Force a stable, professional campaign title on every run.
+    operation["operation"] = CAMPAIGN_TITLE
     operation["campaign_phase"] = current_phase
 
-    operation["containment_level"] = determine_containment_level(
-        current_phase,
-        str(case.get("severity", "LOW")),
+    operation["containment_level"] = (
+        determine_containment_level(
+            current_phase,
+            str(case.get("severity", "LOW")),
+        )
     )
 
-    # Keep the existing designation stable instead of changing it every run.
-    if not operation.get("threat_designation"):
-        operation["threat_designation"] = "BIOCELL-01"
+    current_designation = str(
+        operation.get(
+            "threat_designation",
+            "",
+        )
+    ).strip()
 
-    operation["campaign_summary"] = phase_summary(current_phase)
-    operation["next_objective"] = next_objective(current_phase)
-    operation["last_updated"] = date.today().isoformat()
+    if (
+        not current_designation
+        or current_designation in LEGACY_DESIGNATIONS
+    ):
+        operation["threat_designation"] = (
+            DEFAULT_THREAT_DESIGNATION
+        )
 
-    with OPERATION_FILE.open("w", encoding="utf-8") as file:
-        json.dump(operation, file, indent=4)
+    operation["campaign_summary"] = phase_summary(
+        current_phase
+    )
+
+    operation["next_objective"] = next_objective(
+        current_phase
+    )
+
+    operation["last_updated"] = (
+        date.today().isoformat()
+    )
+
+    with OPERATION_FILE.open(
+        "w",
+        encoding="utf-8",
+    ) as file:
+        json.dump(
+            operation,
+            file,
+            indent=4,
+        )
 
     print(
-        "Operation updated: "
-        f"{operation.get('operation', 'Unknown')} — {current_phase}"
+        "Campaign updated: "
+        f"{operation['operation']} — "
+        f"{current_phase}"
+    )
+
+    print(
+        "Threat designation: "
+        f"{operation.get('threat_designation', 'Unknown')}"
     )
 
 
