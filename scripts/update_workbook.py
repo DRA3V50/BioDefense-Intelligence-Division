@@ -31,7 +31,7 @@ SHEET_NAME = "Investigations"
 HEADERS = [
     "Date",
     "Case ID",
-    "Operation",
+    "Campaign",
     "Classification",
     "Severity",
     "Priority",
@@ -52,6 +52,31 @@ SEVERITY_WEIGHT = {
     "MODERATE": 2,
     "HIGH": 3,
     "CRITICAL": 4,
+}
+
+LEGACY_CAMPAIGN_NAMES = {
+    "Operation Ashcroft": "Biomedical Evidence Review",
+    "Operation Eclipse": (
+        "Protected Research Access Investigation"
+    ),
+    "Operation Night Watch": "After-Hours Access Review",
+    "Operation Chimera": "Specimen Integrity Investigation",
+    "Operation Lazarus": (
+        "Research System Recovery Assessment"
+    ),
+    "Operation Dead Signal": (
+        "Medical Device Communications Review"
+    ),
+    "Operation Cold Harbor": (
+        "Research Facility Security Assessment"
+    ),
+    "Operation Nightfall": (
+        "Laboratory Network Exposure Review"
+    ),
+    "Operation Outbreak": "Biomedical Containment Incident",
+    "Operation Black Eclipse": (
+        "Coordinated Biomedical Systems Intrusion"
+    ),
 }
 
 COLUMN_WIDTHS = {
@@ -242,6 +267,82 @@ def normalize_legacy_risk_scores(
             changed_rows += 1
 
     return changed_rows
+
+
+def migrate_campaign_names(
+    worksheet,
+) -> tuple[int, bool]:
+    """
+    Rename the legacy Operation column and update historical campaign
+    values to restrained investigative titles.
+
+    Returns:
+        A tuple containing:
+            - the number of historical campaign values changed
+            - whether the column header was renamed
+    """
+
+    header_map = {
+        str(
+            worksheet.cell(
+                1,
+                column_number,
+            ).value
+            or ""
+        ).strip(): column_number
+        for column_number in range(
+            1,
+            worksheet.max_column + 1,
+        )
+    }
+
+    campaign_column = header_map.get(
+        "Campaign"
+    )
+
+    header_renamed = False
+
+    if campaign_column is None:
+        campaign_column = header_map.get(
+            "Operation"
+        )
+
+        if campaign_column is not None:
+            worksheet.cell(
+                1,
+                campaign_column,
+            ).value = "Campaign"
+
+            header_renamed = True
+
+    if campaign_column is None:
+        return 0, header_renamed
+
+    changed_rows = 0
+
+    for row_number in range(
+        2,
+        worksheet.max_row + 1,
+    ):
+        cell = worksheet.cell(
+            row_number,
+            campaign_column,
+        )
+
+        current_name = str(
+            cell.value
+            or ""
+        ).strip()
+
+        replacement = LEGACY_CAMPAIGN_NAMES.get(
+            current_name
+        )
+
+        if replacement and replacement != current_name:
+            cell.value = replacement
+            changed_rows += 1
+
+    return changed_rows, header_renamed
 
 
 def calculate_risk_score(case: dict) -> int:
@@ -437,6 +538,12 @@ def main() -> None:
     case = load_case()
     workbook, worksheet = open_workbook()
 
+    migrated_campaigns, header_renamed = (
+        migrate_campaign_names(
+            worksheet
+        )
+    )
+
     normalized_rows = normalize_legacy_risk_scores(
         worksheet
     )
@@ -454,6 +561,14 @@ def main() -> None:
     print(
         f"Workbook {action}: "
         f"{WORKBOOK_PATH}"
+    )
+    print(
+        "Campaign header renamed: "
+        f"{header_renamed}"
+    )
+    print(
+        "Historical campaign names migrated: "
+        f"{migrated_campaigns}"
     )
     print(
         "Legacy risk scores normalized: "
