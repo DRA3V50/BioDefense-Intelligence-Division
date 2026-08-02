@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6104
+BID-2026-6321
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Laboratory Network Access
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Federal Biosecurity Laboratory
 
 Platform:
-Clinical Research Environment
+Protected Research Network
 
 Device:
-Evidence Repository
+Network Security Appliance
 
 Vendor:
-Lenovo
+HPE
 
 Operating System:
-VMware ESXi 9
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Protected Research Segment
+Federal Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-85%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.

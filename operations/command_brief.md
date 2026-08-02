@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-02 03:33 UTC
+**Generated:** 2026-08-02 05:24 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-6104
+**Case ID:** BID-2026-6321
 
-**Classification:** Research Data Integrity Investigation
+**Classification:** Supply Chain Security Investigation
 
-**Severity:** LOW
+**Severity:** HIGH
 
-**Threat Family:** Research Data Integrity Manipulation
+**Threat Family:** Unauthorized Laboratory Network Access
 
-**Confidence:** 85%
+**Confidence:** 86%
 
 ---
 
 ## Investigation Summary
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **14**
+Evidence Collected: **115**
 
-Indicators: **10**
+Indicators: **40**
 
-Priority: **ROUTINE**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Bravo**
+**BioDefense Task Force**
 
 Initial Access:
-**Third-Party Access**
+**Compromised Credentials**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**67**
+**68**
 
 Confirmed Intrusions:
 **10**
 
 Total Evidence:
-**90455**
+**90570**
 
 Total Indicators:
-**61139**
+**61179**
 
 ---
 
 ## Operational Highlights
 
-- 14 evidence items are associated with the active investigation.
-- 10 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **85%**.
-- Current investigation priority is **ROUTINE**.
+- 115 evidence items are associated with the active investigation.
+- 40 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **86%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

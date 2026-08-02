@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6104 |
+| Case ID | BID-2026-6321 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Data Integrity Investigation |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | LOW |
-| Status | Monitoring |
+| Classification | Supply Chain Security Investigation |
+| Threat Family | Unauthorized Laboratory Network Access |
+| Severity | HIGH |
+| Status | Evidence Collection |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Research Environment |
-| Device | Evidence Repository |
-| Vendor | Lenovo |
-| Network Zone | Protected Research Segment |
+| Platform | Protected Research Network |
+| Device | Network Security Appliance |
+| Vendor | HPE |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 36 |
-| Confidence | 85% |
-| Evidence | 14 |
-| Indicators | 10 |
-| Affected Assets | 4 |
+| Risk Score | 81 |
+| Confidence | 86% |
+| Evidence | 115 |
+| Indicators | 40 |
+| Affected Assets | 31 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.

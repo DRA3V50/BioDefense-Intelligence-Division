@@ -92,3 +92,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-08-02,BID-2026-9061,Coordinated Biomedical Systems Intrusion,Research Facility Intrusion,HIGH,HIGH,75,88,212,38,14,Laboratory Control Network,Fortinet,Containment Network,Analyst Team Bravo,Open
 2026-08-02,BID-2026-9879,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,LOW,ROUTINE,25,88,53,6,10,Laboratory Control Network,Palo Alto Networks,Protected Research Segment,Joint Cyber Investigation Unit,Containment
 2026-08-02,BID-2026-6104,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,LOW,ROUTINE,36,85,14,10,4,Clinical Research Environment,Lenovo,Protected Research Segment,Analyst Team Bravo,Monitoring
+2026-08-02,BID-2026-6321,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,HIGH,HIGH,81,86,115,40,31,Protected Research Network,HPE,Federal Operations,BioDefense Task Force,Evidence Collection

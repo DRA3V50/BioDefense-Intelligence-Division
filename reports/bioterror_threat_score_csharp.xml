@@ -1,100 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BioterrorThreatAssessment>
-  <GeneratedAt>2026-08-02 03:33 UTC</GeneratedAt>
+  <GeneratedAt>2026-08-02 05:24 UTC</GeneratedAt>
   <Engine>
     <Name>BioDefense C# Bioterror Threat Scoring Engine</Name>
     <Version>1.0.0</Version>
     <Runtime>.NET 8</Runtime>
   </Engine>
   <Investigation>
-    <CaseId>BID-2026-6104</CaseId>
+    <CaseId>BID-2026-6321</CaseId>
     <CampaignId>BDC-2026-001</CampaignId>
     <Operation>Coordinated Biomedical Systems Intrusion</Operation>
-    <Classification>Research Data Integrity Investigation</Classification>
-    <ThreatFamily>Research Data Integrity Manipulation</ThreatFamily>
-    <Severity>LOW</Severity>
-    <Priority>ROUTINE</Priority>
-    <RiskScore>36</RiskScore>
-    <Confidence>85</Confidence>
+    <Classification>Supply Chain Security Investigation</Classification>
+    <ThreatFamily>Unauthorized Laboratory Network Access</ThreatFamily>
+    <Severity>HIGH</Severity>
+    <Priority>HIGH</Priority>
+    <RiskScore>81</RiskScore>
+    <Confidence>86</Confidence>
     <ContainmentPhase>Operational Recovery</ContainmentPhase>
-    <AffectedPlatform>Clinical Research Environment</AffectedPlatform>
-    <AffectedAssets>4</AffectedAssets>
+    <AffectedPlatform>Protected Research Network</AffectedPlatform>
+    <AffectedAssets>31</AffectedAssets>
   </Investigation>
   <Assessment>
-    <OverallScore>26</OverallScore>
-    <OverallLevel>GUARDED</OverallLevel>
+    <OverallScore>98</OverallScore>
+    <OverallLevel>CRITICAL</OverallLevel>
     <Dimensions>
       <Dimension Name="ThreatActorIntent">
-        <Score>39</Score>
-        <Level>GUARDED</Level>
+        <Score>100</Score>
+        <Level>CRITICAL</Level>
       </Dimension>
       <Dimension Name="ThreatActorCapability">
-        <Score>34</Score>
-        <Level>GUARDED</Level>
+        <Score>100</Score>
+        <Level>CRITICAL</Level>
       </Dimension>
       <Dimension Name="BiologicalTargetValue">
-        <Score>34</Score>
-        <Level>GUARDED</Level>
+        <Score>100</Score>
+        <Level>CRITICAL</Level>
       </Dimension>
       <Dimension Name="LaboratoryAndSpecimenImpact">
-        <Score>20</Score>
-        <Level>GUARDED</Level>
+        <Score>100</Score>
+        <Level>CRITICAL</Level>
       </Dimension>
       <Dimension Name="PublicHealthRisk">
-        <Score>15</Score>
-        <Level>LOW</Level>
+        <Score>100</Score>
+        <Level>CRITICAL</Level>
       </Dimension>
       <Dimension Name="CyberToPhysicalEscalation">
-        <Score>20</Score>
-        <Level>GUARDED</Level>
+        <Score>100</Score>
+        <Level>CRITICAL</Level>
       </Dimension>
       <Dimension Name="AttributionConfidence">
-        <Score>62</Score>
-        <Level>MODERATE</Level>
+        <Score>92</Score>
+        <Level>HIGH</Level>
       </Dimension>
       <Dimension Name="ContainmentConfidence">
-        <Score>93</Score>
+        <Score>94</Score>
         <Level>HIGH</Level>
       </Dimension>
     </Dimensions>
   </Assessment>
   <EvidenceBasis>
-    <EvidenceRecords>14</EvidenceRecords>
-    <CorrelationRecords>14</CorrelationRecords>
-    <IntegrityVerifiedRecords>14</IntegrityVerifiedRecords>
-    <PendingAnalystReview>14</PendingAnalystReview>
+    <EvidenceRecords>115</EvidenceRecords>
+    <CorrelationRecords>115</CorrelationRecords>
+    <IntegrityVerifiedRecords>115</IntegrityVerifiedRecords>
+    <PendingAnalystReview>115</PendingAnalystReview>
     <PriorityFindings>
       <Finding>
-        <Name>Credential Misuse</Name>
-        <Correlations>5</Correlations>
+        <Name>Containment Verification</Name>
+        <Correlations>18</Correlations>
       </Finding>
       <Finding>
-        <Name>Biosecurity Policy Violation</Name>
-        <Correlations>2</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Command-and-Control Communication</Name>
-        <Correlations>2</Correlations>
+        <Name>Suspicious Network Activity</Name>
+        <Correlations>15</Correlations>
       </Finding>
       <Finding>
         <Name>Analyst Intelligence Assessment</Name>
-        <Correlations>1</Correlations>
+        <Correlations>11</Correlations>
       </Finding>
       <Finding>
-        <Name>Known Threat Actor Indicator</Name>
-        <Correlations>1</Correlations>
+        <Name>Biosecurity Policy Violation</Name>
+        <Correlations>10</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Laboratory Information System Anomaly</Name>
+        <Correlations>10</Correlations>
       </Finding>
       <Finding>
         <Name>Laboratory System Modification</Name>
-        <Correlations>1</Correlations>
+        <Correlations>9</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Credential Misuse</Name>
+        <Correlations>8</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Unauthorized Facility Access</Name>
+        <Correlations>8</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Known Threat Actor Indicator</Name>
+        <Correlations>7</Correlations>
       </Finding>
       <Finding>
         <Name>Research Data Integrity Anomaly</Name>
-        <Correlations>1</Correlations>
+        <Correlations>7</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Command-and-Control Communication</Name>
+        <Correlations>6</Correlations>
       </Finding>
       <Finding>
         <Name>Research Workstation Compromise</Name>
-        <Correlations>1</Correlations>
+        <Correlations>6</Correlations>
       </Finding>
     </PriorityFindings>
   </EvidenceBasis>

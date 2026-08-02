@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Unauthorized Laboratory Network Access
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-85%
+86%
 
 ---
 
 ## Observed Techniques
-- Third-Party Access
+- Compromised Credentials
 - Research Data Exfiltration
-- Insider Access Abuse
-- Lateral Movement
-- Laboratory Network Reconnaissance
-- Laboratory Control System Manipulation
+- Supply Chain Compromise
+- Concealed Internal Movement
+- Privilege Escalation
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+BioDefense Task Force
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Data Integrity Investigation
+Supply Chain Security Investigation
 
 ---
 

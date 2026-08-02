@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6104
+BID-2026-6321
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Supply Chain Security Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| Identity | Credential reuse detected across isolated research segments |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| PowerShell | Encoded administrative command execution detected |
 | Infrastructure | Firewall policy deviation identified |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Research Data Integrity Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-14
+115
 
 Indicators Reviewed:
-10
+40
 
 Risk Score:
-36
+81
 
 Confidence:
-85%
+86%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+BioDefense Task Force
 
 Current Status:
 
-Monitoring
+Evidence Collection

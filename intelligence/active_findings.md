@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-6104
+BID-2026-6321
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Laboratory Network Access
 
 Severity:
-LOW
+HIGH
 
 Priority:
-ROUTINE
+HIGH
 
 ---
 
@@ -26,19 +26,19 @@ ROUTINE
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
@@ -49,16 +49,16 @@ Collected indicators continue to support an active counter-bioterrorism investig
 # Investigation Metrics
 
 Affected Assets:
-4
+31
 
 Evidence Collected:
-14
+115
 
 Indicators Identified:
-10
+40
 
 Analyst Confidence:
-85%
+86%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Bravo
+BioDefense Task Force

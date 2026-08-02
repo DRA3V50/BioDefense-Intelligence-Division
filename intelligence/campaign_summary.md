@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6104
+BID-2026-6321
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Unauthorized Laboratory Network Access
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Protected Research Network
 
 Device:
-Evidence Repository
+Network Security Appliance
 
 Vendor:
-Lenovo
+HPE
 
 Security Zone:
-Protected Research Segment
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-67
+68
 
 Evidence Collected:
-14
+115
 
 Indicators Identified:
-10
+40
 
 Affected Assets:
-4
+31
 
 Confidence:
-85%
+86%
 
 Risk Score:
-36
+81
 
 ---
 

@@ -4,18 +4,18 @@
 ## 2026-08-02
 
 ### Case Opened
-Case ID: BID-2026-6104
+Case ID: BID-2026-6321
 
 ### Classification
-Research Data Integrity Investigation
+Supply Chain Security Investigation
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
-LOW
+HIGH
 
 ---
