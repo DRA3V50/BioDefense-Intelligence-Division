@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-08-02 03:02 UTC",
+  "generatedAt": "2026-08-02 03:08 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.0.0",
     "runtime": ".NET 8"
   },
   "investigation": {
-    "caseId": "BID-2026-5702",
+    "caseId": "BID-2026-9061",
     "campaignId": "BDC-2026-001",
     "operation": "Operation Black Eclipse",
-    "classification": "Evidence Reconstruction Investigation",
-    "threatFamily": "Research Data Integrity Manipulation",
-    "severity": "MODERATE",
-    "priority": "ELEVATED",
-    "riskScore": 65,
-    "confidence": 85,
+    "classification": "Research Facility Intrusion",
+    "threatFamily": "Biological Data Exfiltration",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "riskScore": 75,
+    "confidence": 88,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Genome Sequencing Environment",
-    "affectedAssets": 15
+    "affectedPlatform": "Laboratory Control Network",
+    "affectedAssets": 14
   },
   "assessment": {
-    "overallScore": 88,
+    "overallScore": 97,
     "overallLevel": "CRITICAL",
     "dimensions": {
       "threatActorIntent": {
@@ -32,84 +32,84 @@
         "level": "CRITICAL"
       },
       "biologicalTargetValue": {
-        "score": 96,
+        "score": 100,
         "level": "CRITICAL"
       },
       "laboratoryAndSpecimenImpact": {
-        "score": 93,
+        "score": 100,
         "level": "CRITICAL"
       },
       "publicHealthRisk": {
-        "score": 69,
-        "level": "ELEVATED"
+        "score": 100,
+        "level": "CRITICAL"
       },
       "cyberToPhysicalEscalation": {
-        "score": 88,
+        "score": 100,
         "level": "CRITICAL"
       },
       "attributionConfidence": {
-        "score": 82,
-        "level": "MODERATE"
+        "score": 93,
+        "level": "HIGH"
       },
       "containmentConfidence": {
-        "score": 93,
+        "score": 95,
         "level": "HIGH"
       }
     }
   },
   "evidenceBasis": {
-    "evidenceRecords": 61,
-    "correlationRecords": 61,
-    "integrityVerifiedRecords": 61,
-    "pendingAnalystReview": 61,
+    "evidenceRecords": 212,
+    "correlationRecords": 212,
+    "integrityVerifiedRecords": 212,
+    "pendingAnalystReview": 212,
     "priorityFindings": [
       {
-        "finding": "Credential Misuse",
-        "correlations": 9
-      },
-      {
-        "finding": "Suspicious Network Activity",
-        "correlations": 9
-      },
-      {
-        "finding": "Laboratory Information System Anomaly",
-        "correlations": 6
-      },
-      {
-        "finding": "Laboratory System Modification",
-        "correlations": 6
-      },
-      {
         "finding": "Unauthorized Facility Access",
-        "correlations": 6
-      },
-      {
-        "finding": "Research Data Integrity Anomaly",
-        "correlations": 5
-      },
-      {
-        "finding": "Research Workstation Compromise",
-        "correlations": 5
-      },
-      {
-        "finding": "Command-and-Control Communication",
-        "correlations": 4
-      },
-      {
-        "finding": "Biosecurity Policy Violation",
-        "correlations": 3
+        "correlations": 24
       },
       {
         "finding": "Containment Verification",
-        "correlations": 3
+        "correlations": 22
       },
       {
-        "finding": "Known Threat Actor Indicator",
-        "correlations": 3
+        "finding": "Laboratory System Modification",
+        "correlations": 22
+      },
+      {
+        "finding": "Research Workstation Compromise",
+        "correlations": 21
       },
       {
         "finding": "Analyst Intelligence Assessment",
-        "correlations": 2
+        "correlations": 20
+      },
+      {
+        "finding": "Credential Misuse",
+        "correlations": 19
+      },
+      {
+        "finding": "Known Threat Actor Indicator",
+        "correlations": 17
+      },
+      {
+        "finding": "Laboratory Information System Anomaly",
+        "correlations": 16
+      },
+      {
+        "finding": "Biosecurity Policy Violation",
+        "correlations": 15
+      },
+      {
+        "finding": "Research Data Integrity Anomaly",
+        "correlations": 13
+      },
+      {
+        "finding": "Suspicious Network Activity",
+        "correlations": 12
+      },
+      {
+        "finding": "Command-and-Control Communication",
+        "correlations": 11
       }
     ]
   },

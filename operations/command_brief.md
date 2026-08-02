@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-02 03:02 UTC
+**Generated:** 2026-08-02 03:08 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5702
+**Case ID:** BID-2026-9061
 
-**Classification:** Evidence Reconstruction Investigation
+**Classification:** Research Facility Intrusion
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Threat Family:** Research Data Integrity Manipulation
+**Threat Family:** Biological Data Exfiltration
 
-**Confidence:** 85%
+**Confidence:** 88%
 
 ---
 
 ## Investigation Summary
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **61**
+Evidence Collected: **212**
 
-Indicators: **13**
+Indicators: **38**
 
-Priority: **ELEVATED**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**BioDefense Task Force**
+**Analyst Team Bravo**
 
 Initial Access:
-**Supply Chain Compromise**
+**Phishing**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**64**
+**65**
 
 Confirmed Intrusions:
 **10**
 
 Total Evidence:
-**90176**
+**90388**
 
 Total Indicators:
-**61085**
+**61123**
 
 ---
 
 ## Operational Highlights
 
-- 61 evidence items are associated with the active investigation.
-- 13 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **85%**.
-- Current investigation priority is **ELEVATED**.
+- 212 evidence items are associated with the active investigation.
+- 38 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **88%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

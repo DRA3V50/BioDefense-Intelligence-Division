@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-5702
+BID-2026-9061
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 Threat Family:
-Research Data Integrity Manipulation
+Biological Data Exfiltration
 
 Severity:
-MODERATE
+HIGH
 
 Priority:
-ELEVATED
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-15
+14
 
 Evidence Collected:
-61
+212
 
 Indicators Identified:
-13
+38
 
 Analyst Confidence:
-85%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo

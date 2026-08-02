@@ -4,18 +4,18 @@
 ## 2026-08-02
 
 ### Case Opened
-Case ID: BID-2026-5702
+Case ID: BID-2026-9061
 
 ### Classification
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 ### Initial Assessment
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ### Current Status
-Intelligence Analysis
+Open
 
 ### Severity
-MODERATE
+HIGH
 
 ---

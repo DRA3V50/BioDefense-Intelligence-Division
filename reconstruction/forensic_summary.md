@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5702 |
+| Case ID | BID-2026-9061 |
 | Operation | Operation Black Eclipse |
-| Classification | Evidence Reconstruction Investigation |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | MODERATE |
-| Status | Intelligence Analysis |
+| Classification | Research Facility Intrusion |
+| Threat Family | Biological Data Exfiltration |
+| Severity | HIGH |
+| Status | Open |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Evidence Repository |
-| Vendor | Cisco |
+| Platform | Laboratory Control Network |
+| Device | Genome Sequencing Server |
+| Vendor | Fortinet |
 | Security Zone | Containment Network |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 65 |
-| Confidence | 85% |
-| Evidence Collected | 61 |
-| Indicators Identified | 13 |
-| Affected Assets | 15 |
+| Risk Score | 75 |
+| Confidence | 88% |
+| Evidence Collected | 212 |
+| Indicators Identified | 38 |
+| Affected Assets | 14 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Analysts continue correlating evidence to determine campaign scope and operational objectives.
+Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Open**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

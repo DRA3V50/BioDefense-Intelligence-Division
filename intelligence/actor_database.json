@@ -19,10 +19,10 @@
         {
             "name": "Biological Data Exfiltration",
             "first_seen": "2026-07-20",
-            "last_seen": "2026-07-28",
-            "cases": 6,
-            "severity": "MODERATE",
-            "confidence": 91
+            "last_seen": "2026-08-02",
+            "cases": 7,
+            "severity": "HIGH",
+            "confidence": 88
         },
         {
             "name": "Laboratory Credential Abuse",

@@ -2,35 +2,35 @@
 
 **Operation:** Operation Black Eclipse
 
-**Case ID:** BID-2026-5702
+**Case ID:** BID-2026-9061
 
-**Generated:** 2026-08-02 03:02 UTC
+**Generated:** 2026-08-02 03:08 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-01 21:02 UTC | Initial Detection | Potential activity associated with Research Data Integrity Manipulation was detected. |
-| 2026-08-01 22:02 UTC | Case Opened | Investigation BID-2026-5702 was opened and assigned to BioDefense Task Force. |
-| 2026-08-01 23:02 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Supply Chain Compromise. |
-| 2026-08-02 00:02 UTC | Evidence Collection | 61 evidence items and 13 indicators were associated with the active investigation. |
-| 2026-08-02 01:02 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-02 02:02 UTC | Operational Review | Analysts continue correlating evidence to determine campaign scope and operational objectives. |
-| 2026-08-02 03:02 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-01 21:08 UTC | Initial Detection | Potential activity associated with Biological Data Exfiltration was detected. |
+| 2026-08-01 22:08 UTC | Case Opened | Investigation BID-2026-9061 was opened and assigned to Analyst Team Bravo. |
+| 2026-08-01 23:08 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Phishing. |
+| 2026-08-02 00:08 UTC | Evidence Collection | 212 evidence items and 38 indicators were associated with the active investigation. |
+| 2026-08-02 01:08 UTC | Containment Assessment | Containment was assessed at SEVERE. |
+| 2026-08-02 02:08 UTC | Operational Review | Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems. |
+| 2026-08-02 03:08 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Priority:** ELEVATED
+**Priority:** HIGH
 
-**Confidence:** 85%
+**Confidence:** 88%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 

@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5702
+BID-2026-9061
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 Threat Family:
-Research Data Integrity Manipulation
+Biological Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Laboratory Control Network
 
 Device:
-Evidence Repository
+Genome Sequencing Server
 
 Vendor:
-Cisco
+Fortinet
 
 Security Zone:
 Containment Network
@@ -41,22 +41,22 @@ Containment Network
 ## Investigation Metrics
 
 Investigations Recorded:
-64
+65
 
 Evidence Collected:
-61
+212
 
 Indicators Identified:
-13
+38
 
 Affected Assets:
-15
+14
 
 Confidence:
-85%
+88%
 
 Risk Score:
-65
+75
 
 ---
 

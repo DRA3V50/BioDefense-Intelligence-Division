@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-5702
+BID-2026-9061
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 Threat Family:
-Research Data Integrity Manipulation
+Biological Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Central Evidence Processing Center
 
 Platform:
-Genome Sequencing Environment
+Laboratory Control Network
 
 Device:
-Evidence Repository
+Genome Sequencing Server
 
 Vendor:
-Cisco
+Fortinet
 
 Operating System:
-Windows Server 2025
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-85%
+88%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

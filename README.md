@@ -11,7 +11,7 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Campaign | Operational Status | Scope |
 |----------|--------------------|-------|
-| **ID:** BDC-2026-001<br>**Operation:** Operation Black Eclipse<br>**Designation:** NEMESIS-12 | **Phase:** Operational Recovery<br>**Containment:** HIGH<br>**Intrusions:** 10 | **Active Cases:** 64<br>**Evidence:** 90,176<br>**Indicators:** 61,085<br>**Facilities / States:** 8 / 3 |
+| **ID:** BDC-2026-001<br>**Operation:** Operation Black Eclipse<br>**Designation:** NEMESIS-12 | **Phase:** Operational Recovery<br>**Containment:** SEVERE<br>**Intrusions:** 10 | **Active Cases:** 65<br>**Evidence:** 90,388<br>**Indicators:** 61,123<br>**Facilities / States:** 8 / 3 |
 
 <details>
 <summary><strong>Campaign objective and next action</strong></summary>
@@ -28,12 +28,12 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Case Profile | Target Environment | Response |
 |--------------|--------------------|----------|
-| **Case:** BID-2026-5702<br>**Classification:** Evidence Reconstruction Investigation<br>**Threat Family:** Research Data Integrity Manipulation<br>**Severity / Priority:** MODERATE / ELEVATED | **Platform:** Genome Sequencing Environment<br>**Vendor / Device:** Cisco / Evidence Repository<br>**Zone:** Containment Network<br>**Assets:** 15 | **Confidence:** 85%<br>**Evidence / IOCs:** 61 / 13<br>**Lead:** BioDefense Task Force<br>**Initial Access:** Supply Chain Compromise |
+| **Case:** BID-2026-9061<br>**Classification:** Research Facility Intrusion<br>**Threat Family:** Biological Data Exfiltration<br>**Severity / Priority:** HIGH / HIGH | **Platform:** Laboratory Control Network<br>**Vendor / Device:** Fortinet / Genome Sequencing Server<br>**Zone:** Containment Network<br>**Assets:** 14 | **Confidence:** 88%<br>**Evidence / IOCs:** 212 / 38<br>**Lead:** Analyst Team Bravo<br>**Initial Access:** Phishing |
 
 <details>
 <summary><strong>Analyst assessment and recommended response</strong></summary>
 
-**Assessment:** Analysts continue correlating evidence to determine campaign scope and operational objectives.
+**Assessment:** Evidence indicates an organized campaign attempting unauthorized access to sensitive laboratory systems.
 
 **Recommended action:** Verify recovery controls and prepare the final operational assessment.
 
@@ -45,35 +45,35 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 # Latest Digital Evidence Summary
 
-**Active Case:** BID-2026-5702
+**Active Case:** BID-2026-9061
 
 | Evidence Records | Correlations | Integrity Verified | Pending Review |
 |-----------------:|-------------:|-------------------:|---------------:|
-| 61 | 61 | 61 | 61 |
+| 212 | 212 | 212 | 212 |
 
 ## Active Case Intelligence Products
 
 | Reports & Assessments | Evidence & Forensics | Operations & Data |
 |-----------------------|----------------------|-------------------|
-| ✅ [Investigation Report](reports/investigation_report.md)<br>✅ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>✅ [C# Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>✅ [C# Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>✅ [Investigative Leads](reports/investigative_leads.md) | ✅ [Evidence Chain](evidence/evidence_chain.md)<br>✅ [Evidence Manifest](evidence/BID-2026-5702/evidence_manifest.json)<br>✅ [Evidence Correlations](evidence/BID-2026-5702/evidence_correlations.json)<br>✅ [Chain of Custody](evidence/BID-2026-5702/chain_of_custody.md)<br>✅ [Forensic Summary](evidence/BID-2026-5702/forensic_summary.md)<br>✅ [Acquisition Summary](evidence/BID-2026-5702/acquisition_summary.md) | ✅ [Command Brief](operations/command_brief.md)<br>✅ [Investigation Timeline](operations/investigation_timeline.md)<br>✅ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>✅ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
+| ✅ [Investigation Report](reports/investigation_report.md)<br>✅ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>✅ [C# Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>✅ [C# Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>✅ [Investigative Leads](reports/investigative_leads.md) | ✅ [Evidence Chain](evidence/evidence_chain.md)<br>✅ [Evidence Manifest](evidence/BID-2026-9061/evidence_manifest.json)<br>✅ [Evidence Correlations](evidence/BID-2026-9061/evidence_correlations.json)<br>✅ [Chain of Custody](evidence/BID-2026-9061/chain_of_custody.md)<br>✅ [Forensic Summary](evidence/BID-2026-9061/forensic_summary.md)<br>✅ [Acquisition Summary](evidence/BID-2026-9061/acquisition_summary.md) | ✅ [Command Brief](operations/command_brief.md)<br>✅ [Investigation Timeline](operations/investigation_timeline.md)<br>✅ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>✅ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
 
 <details>
 <summary><strong>Evidence breakdown</strong></summary>
 
 | Evidence Type | Records |
 |---------------|--------:|
-| Authentication Log | 9 |
-| Firewall Log | 9 |
-| Laboratory System Configuration | 6 |
-| Laboratory Information System Audit Log | 6 |
-| Access Control Log | 6 |
-| Research Data Integrity Record | 5 |
-| Research Workstation Event Log | 5 |
-| Network Connection Record | 4 |
-| Containment Validation Record | 3 |
-| Threat Intelligence Record | 3 |
-| Biosecurity Audit Record | 3 |
-| Analyst Observation | 2 |
+| Access Control Log | 24 |
+| Containment Validation Record | 22 |
+| Laboratory System Configuration | 22 |
+| Research Workstation Event Log | 21 |
+| Analyst Observation | 20 |
+| Authentication Log | 19 |
+| Threat Intelligence Record | 17 |
+| Laboratory Information System Audit Log | 16 |
+| Biosecurity Audit Record | 15 |
+| Research Data Integrity Record | 13 |
+| Firewall Log | 12 |
+| Network Connection Record | 11 |
 
 </details>
 
@@ -82,18 +82,18 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Investigative Finding | Correlations |
 |-----------------------|-------------:|
-| Credential Misuse | 9 |
-| Suspicious Network Activity | 9 |
-| Laboratory System Modification | 6 |
-| Laboratory Information System Anomaly | 6 |
-| Unauthorized Facility Access | 6 |
-| Research Data Integrity Anomaly | 5 |
-| Research Workstation Compromise | 5 |
-| Command-and-Control Communication | 4 |
-| Containment Verification | 3 |
-| Known Threat Actor Indicator | 3 |
-| Biosecurity Policy Violation | 3 |
-| Analyst Intelligence Assessment | 2 |
+| Unauthorized Facility Access | 24 |
+| Containment Verification | 22 |
+| Laboratory System Modification | 22 |
+| Research Workstation Compromise | 21 |
+| Analyst Intelligence Assessment | 20 |
+| Credential Misuse | 19 |
+| Known Threat Actor Indicator | 17 |
+| Laboratory Information System Anomaly | 16 |
+| Biosecurity Policy Violation | 15 |
+| Research Data Integrity Anomaly | 13 |
+| Suspicious Network Activity | 12 |
+| Command-and-Control Communication | 11 |
 
 </details>
 
@@ -104,15 +104,15 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Date | Case ID | Severity | Risk | Confidence | Status |
 |------|---------|----------|-----:|-----------:|--------|
+| 2026-08-02 | BID-2026-9061 | HIGH | 75 | 88 | Open |
 | 2026-08-02 | BID-2026-5702 | MODERATE | 65 | 85 | Intelligence Analysis |
-| 2026-08-01 | BID-2026-1115 | HIGH | 288 | 96 | Monitoring |
-| 2026-08-01 | BID-2026-4819 | HIGH | 267 | 89 | Intelligence Analysis |
-| 2026-08-01 | BID-2026-6443 | HIGH | 288 | 96 | Evidence Collection |
-| 2026-08-01 | BID-2026-8561 | MODERATE | 170 | 85 | Open |
+| 2026-08-01 | BID-2026-1115 | HIGH | 72 | 96 | Monitoring |
+| 2026-08-01 | BID-2026-4819 | HIGH | 67 | 89 | Intelligence Analysis |
+| 2026-08-01 | BID-2026-6443 | HIGH | 72 | 96 | Evidence Collection |
 
 </details>
 
-**Threat Family:** Research Data Integrity Manipulation · **Repository Updated:** 2026-08-02T03:02:23Z
+**Threat Family:** Biological Data Exfiltration · **Repository Updated:** 2026-08-02T03:08:02Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -125,23 +125,23 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Metric | Value |
 |--------|------:|
-| Total Investigations | 64 |
+| Total Investigations | 65 |
 | Low / Moderate | 13 / 24 |
-| High / Critical | 17 / 10 |
+| High / Critical | 18 / 10 |
 | Closed Cases | 0 |
-| Average Confidence | 90.1% |
-| Total Evidence | 90,176 |
-| Total Indicators | 61,085 |
+| Average Confidence | 90.0% |
+| Total Evidence | 90,388 |
+| Total Indicators | 61,123 |
 
 ### Recent Investigations
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-9061 | Research Facility Intrusion | HIGH |
 | BID-2026-5702 | Evidence Reconstruction Investigation | MODERATE |
 | BID-2026-1115 | Biosecurity Infrastructure Investigation | HIGH |
 | BID-2026-4819 | Laboratory Security Breach | HIGH |
 | BID-2026-6443 | Biological Research Intelligence Collection | HIGH |
-| BID-2026-8561 | Unauthorized Research System Access | MODERATE |
 
 </details>
 

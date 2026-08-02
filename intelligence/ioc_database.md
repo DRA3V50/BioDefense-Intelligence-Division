@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-5702
+BID-2026-9061
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Identity | Credential reuse detected across isolated research segments |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Device | Protected workstation entered evidence preservation mode |
 | System Log | Unexpected privilege escalation recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -28,23 +28,23 @@ Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-61
+212
 
 Indicators Reviewed:
-13
+38
 
 Risk Score:
-65
+75
 
 Confidence:
-85%
+88%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo
 
 Current Status:
 
-Intelligence Analysis
+Open

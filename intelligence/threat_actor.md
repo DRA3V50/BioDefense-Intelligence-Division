@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Biological Data Exfiltration
 
 ---
 
 ## Primary Alias
-Project Chimera
+Silent Culture
 
 ---
 
 ## Attribution
-International Infrastructure
+Unattributed
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-Advanced
+Nation-State Level
 
 ---
 
 ## Confidence
-85%
+88%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Lateral Movement
-- Insider Access Abuse
+- Phishing
 - Laboratory Network Reconnaissance
-- Laboratory Data Manipulation
+- Long-Term Network Foothold
 - Encrypted Data Staging
+- Laboratory Control System Manipulation
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Bravo
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Operation Black Eclipse
 ---
 
 ## Primary Target
-Evidence Reconstruction Investigation
+Research Facility Intrusion
 
 ---
 
