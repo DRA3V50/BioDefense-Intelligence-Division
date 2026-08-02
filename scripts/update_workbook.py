@@ -1,93 +1,322 @@
+#!/usr/bin/env python3
+
+"""
+Update the investigation workbook and publish a GitHub-viewable CSV copy.
+
+Reads:
+    data/current_case.json
+
+Writes:
+    workbooks/Exposure-Tracking-Matrix.xlsx
+    workbooks/Exposure-Tracking-Matrix.csv
+"""
+
+import csv
 import json
 from pathlib import Path
+
 from openpyxl import Workbook, load_workbook
+from openpyxl.styles import Alignment, Font, PatternFill
 
-WORKBOOK = Path("workbooks/Exposure-Tracking-Matrix.xlsx")
+CASE_PATH = Path("data/current_case.json")
+WORKBOOK_PATH = Path(
+    "workbooks/Exposure-Tracking-Matrix.xlsx"
+)
+CSV_PATH = Path(
+    "workbooks/Exposure-Tracking-Matrix.csv"
+)
 
-with open("data/current_case.json", "r", encoding="utf-8") as f:
-    case = json.load(f)
+SHEET_NAME = "Investigations"
 
-severity_weight = {
+HEADERS = [
+    "Date",
+    "Case ID",
+    "Operation",
+    "Classification",
+    "Severity",
+    "Priority",
+    "Risk Score",
+    "Confidence",
+    "Evidence",
+    "IOCs",
+    "Assets",
+    "Platform",
+    "Vendor",
+    "Network Zone",
+    "Lead Analyst",
+    "Status",
+]
+
+SEVERITY_WEIGHT = {
     "LOW": 1,
     "MODERATE": 2,
     "HIGH": 3,
-    "CRITICAL": 4
+    "CRITICAL": 4,
 }
 
-risk_score = (
-    severity_weight.get(case["severity"], 1)
-    * case["confidence"]
-)
+COLUMN_WIDTHS = {
+    "A": 14,
+    "B": 18,
+    "C": 24,
+    "D": 38,
+    "E": 12,
+    "F": 12,
+    "G": 12,
+    "H": 12,
+    "I": 12,
+    "J": 12,
+    "K": 12,
+    "L": 28,
+    "M": 18,
+    "N": 24,
+    "O": 24,
+    "P": 20,
+}
 
-if not WORKBOOK.exists():
 
-    wb = Workbook()
+def load_case() -> dict:
+    """Load the active investigation record."""
 
-    ws = wb.active
+    with CASE_PATH.open("r", encoding="utf-8") as file:
+        data = json.load(file)
 
-    ws.title = "Investigations"
+    if not isinstance(data, dict):
+        raise ValueError(
+            "data/current_case.json must contain a JSON object."
+        )
 
-    ws.append([
-        "Date",
-        "Case ID",
-        "Operation",
-        "Classification",
-        "Severity",
-        "Priority",
-        "Risk Score",
-        "Confidence",
-        "Evidence",
-        "IOCs",
-        "Assets",
-        "Platform",
-        "Vendor",
-        "Network Zone",
-        "Lead Analyst",
-        "Status"
-    ])
+    return data
 
-else:
 
-    wb = load_workbook(WORKBOOK)
+def safe_int(value: object, default: int = 0) -> int:
+    """Convert a value to an integer safely."""
 
-    ws = wb["Investigations"]
+    try:
+        return int(float(str(value).strip()))
 
-ws.append([
+    except (TypeError, ValueError):
+        return default
 
-    case["date"],
 
-    case["case_id"],
+def calculate_risk_score(case: dict) -> int:
+    """
+    Use the investigation's own risk score when available.
 
-    case["operation"],
+    The fallback retains severity and confidence as inputs while keeping
+    the result on a 0-100 scale.
+    """
 
-    case["classification"],
+    if case.get("risk_score") not in (None, ""):
+        return safe_int(case.get("risk_score"))
 
-    case["severity"],
+    severity = str(
+        case.get("severity", "LOW")
+    ).strip().upper()
 
-    case["priority"],
+    confidence = max(
+        0,
+        min(
+            100,
+            safe_int(case.get("confidence")),
+        ),
+    )
 
-    risk_score,
+    severity_factor = (
+        SEVERITY_WEIGHT.get(severity, 1) / 4
+    )
 
-    case["confidence"],
+    return round(severity_factor * confidence)
 
-    case["evidence_count"],
 
-    case["ioc_count"],
+def open_workbook():
+    """Open the existing workbook or create a new one."""
 
-    case["affected_assets"],
+    WORKBOOK_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
-    case["affected_platform"],
+    if WORKBOOK_PATH.exists():
+        workbook = load_workbook(WORKBOOK_PATH)
+    else:
+        workbook = Workbook()
 
-    case["vendor"],
+    if SHEET_NAME in workbook.sheetnames:
+        worksheet = workbook[SHEET_NAME]
+    else:
+        worksheet = workbook.active
+        worksheet.title = SHEET_NAME
 
-    case["network_zone"],
+    if worksheet.max_row == 1:
+        existing_header = [
+            worksheet.cell(1, column).value
+            for column in range(1, len(HEADERS) + 1)
+        ]
 
-    case["lead_analyst"],
+        if not any(existing_header):
+            worksheet.append(HEADERS)
 
-    case["status"]
+    return workbook, worksheet
 
-])
 
-wb.save(WORKBOOK)
+def build_row(case: dict) -> list[object]:
+    """Build one workbook row from the current case."""
 
-print("Workbook updated.")
+    return [
+        case.get("date", ""),
+        case.get("case_id", ""),
+        case.get("operation", ""),
+        case.get("classification", ""),
+        case.get("severity", ""),
+        case.get("priority", ""),
+        calculate_risk_score(case),
+        safe_int(case.get("confidence")),
+        safe_int(case.get("evidence_count")),
+        safe_int(case.get("ioc_count")),
+        safe_int(case.get("affected_assets")),
+        case.get("affected_platform", ""),
+        case.get("vendor", ""),
+        case.get("network_zone", ""),
+        case.get("lead_analyst", ""),
+        case.get("status", ""),
+    ]
+
+
+def upsert_case(
+    worksheet,
+    row_values: list[object],
+) -> str:
+    """
+    Add the current case or update its existing row.
+
+    This prevents duplicate workbook entries when the same workflow is
+    rerun for an unchanged case.
+    """
+
+    case_id = str(row_values[1]).strip()
+    target_row = None
+
+    if case_id:
+        for row_number in range(
+            2,
+            worksheet.max_row + 1,
+        ):
+            existing_case_id = str(
+                worksheet.cell(
+                    row_number,
+                    2,
+                ).value
+                or ""
+            ).strip()
+
+            if existing_case_id == case_id:
+                target_row = row_number
+                break
+
+    if target_row is None:
+        worksheet.append(row_values)
+        return "added"
+
+    for column_number, value in enumerate(
+        row_values,
+        start=1,
+    ):
+        worksheet.cell(
+            target_row,
+            column_number,
+        ).value = value
+
+    return "updated"
+
+
+def format_worksheet(worksheet) -> None:
+    """Apply readable workbook formatting."""
+
+    header_fill = PatternFill(
+        fill_type="solid",
+        fgColor="1F4E78",
+    )
+
+    header_font = Font(
+        bold=True,
+        color="FFFFFF",
+    )
+
+    for cell in worksheet[1]:
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = Alignment(
+            horizontal="center",
+            vertical="center",
+        )
+
+    for row in worksheet.iter_rows(
+        min_row=2,
+        max_row=worksheet.max_row,
+    ):
+        for cell in row:
+            cell.alignment = Alignment(
+                vertical="top",
+                wrap_text=True,
+            )
+
+    worksheet.freeze_panes = "A2"
+    worksheet.auto_filter.ref = worksheet.dimensions
+    worksheet.row_dimensions[1].height = 24
+
+    for column, width in COLUMN_WIDTHS.items():
+        worksheet.column_dimensions[column].width = width
+
+
+def export_csv(worksheet) -> None:
+    """Write a GitHub-renderable CSV copy of the workbook sheet."""
+
+    CSV_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    with CSV_PATH.open(
+        "w",
+        newline="",
+        encoding="utf-8",
+    ) as file:
+        writer = csv.writer(file)
+
+        for row in worksheet.iter_rows(
+            values_only=True,
+        ):
+            writer.writerow(
+                [
+                    "" if value is None else value
+                    for value in row
+                ]
+            )
+
+
+def main() -> None:
+    case = load_case()
+    workbook, worksheet = open_workbook()
+
+    action = upsert_case(
+        worksheet,
+        build_row(case),
+    )
+
+    format_worksheet(worksheet)
+
+    workbook.save(WORKBOOK_PATH)
+    export_csv(worksheet)
+
+    print(
+        f"Workbook {action}: "
+        f"{WORKBOOK_PATH}"
+    )
+    print(
+        f"GitHub CSV preview updated: "
+        f"{CSV_PATH}"
+    )
+
+
+if __name__ == "__main__":
+    main()
