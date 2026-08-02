@@ -111,6 +111,14 @@
             "cases": 1,
             "severity": "HIGH",
             "confidence": 86
+        },
+        {
+            "name": "Biomedical Supply Chain Compromise",
+            "first_seen": "2026-08-02",
+            "last_seen": "2026-08-02",
+            "cases": 1,
+            "severity": "MODERATE",
+            "confidence": 88
         }
     ]
 }

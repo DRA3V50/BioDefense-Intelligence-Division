@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BioterrorThreatAssessment>
-  <GeneratedAt>2026-08-02 05:24 UTC</GeneratedAt>
+  <GeneratedAt>2026-08-02 14:59 UTC</GeneratedAt>
   <Engine>
     <Name>BioDefense C# Bioterror Threat Scoring Engine</Name>
     <Version>1.0.0</Version>
     <Runtime>.NET 8</Runtime>
   </Engine>
   <Investigation>
-    <CaseId>BID-2026-6321</CaseId>
+    <CaseId>BID-2026-3342</CaseId>
     <CampaignId>BDC-2026-001</CampaignId>
     <Operation>Coordinated Biomedical Systems Intrusion</Operation>
-    <Classification>Supply Chain Security Investigation</Classification>
-    <ThreatFamily>Unauthorized Laboratory Network Access</ThreatFamily>
-    <Severity>HIGH</Severity>
-    <Priority>HIGH</Priority>
-    <RiskScore>81</RiskScore>
-    <Confidence>86</Confidence>
+    <Classification>Biological Research Intelligence Collection</Classification>
+    <ThreatFamily>Biomedical Supply Chain Compromise</ThreatFamily>
+    <Severity>MODERATE</Severity>
+    <Priority>ELEVATED</Priority>
+    <RiskScore>53</RiskScore>
+    <Confidence>88</Confidence>
     <ContainmentPhase>Operational Recovery</ContainmentPhase>
-    <AffectedPlatform>Protected Research Network</AffectedPlatform>
-    <AffectedAssets>31</AffectedAssets>
+    <AffectedPlatform>Evidence Processing Network</AffectedPlatform>
+    <AffectedAssets>17</AffectedAssets>
   </Investigation>
   <Assessment>
-    <OverallScore>98</OverallScore>
+    <OverallScore>95</OverallScore>
     <OverallLevel>CRITICAL</OverallLevel>
     <Dimensions>
       <Dimension Name="ThreatActorIntent">
@@ -49,35 +49,27 @@
         <Level>CRITICAL</Level>
       </Dimension>
       <Dimension Name="AttributionConfidence">
-        <Score>92</Score>
+        <Score>93</Score>
         <Level>HIGH</Level>
       </Dimension>
       <Dimension Name="ContainmentConfidence">
-        <Score>94</Score>
+        <Score>95</Score>
         <Level>HIGH</Level>
       </Dimension>
     </Dimensions>
   </Assessment>
   <EvidenceBasis>
-    <EvidenceRecords>115</EvidenceRecords>
-    <CorrelationRecords>115</CorrelationRecords>
-    <IntegrityVerifiedRecords>115</IntegrityVerifiedRecords>
-    <PendingAnalystReview>115</PendingAnalystReview>
+    <EvidenceRecords>87</EvidenceRecords>
+    <CorrelationRecords>87</CorrelationRecords>
+    <IntegrityVerifiedRecords>87</IntegrityVerifiedRecords>
+    <PendingAnalystReview>87</PendingAnalystReview>
     <PriorityFindings>
       <Finding>
-        <Name>Containment Verification</Name>
-        <Correlations>18</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Suspicious Network Activity</Name>
-        <Correlations>15</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Analyst Intelligence Assessment</Name>
+        <Name>Biosecurity Policy Violation</Name>
         <Correlations>11</Correlations>
       </Finding>
       <Finding>
-        <Name>Biosecurity Policy Violation</Name>
+        <Name>Command-and-Control Communication</Name>
         <Correlations>10</Correlations>
       </Finding>
       <Finding>
@@ -86,31 +78,39 @@
       </Finding>
       <Finding>
         <Name>Laboratory System Modification</Name>
-        <Correlations>9</Correlations>
+        <Correlations>10</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Analyst Intelligence Assessment</Name>
+        <Correlations>8</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Containment Verification</Name>
+        <Correlations>8</Correlations>
       </Finding>
       <Finding>
         <Name>Credential Misuse</Name>
-        <Correlations>8</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Unauthorized Facility Access</Name>
-        <Correlations>8</Correlations>
+        <Correlations>6</Correlations>
       </Finding>
       <Finding>
         <Name>Known Threat Actor Indicator</Name>
-        <Correlations>7</Correlations>
+        <Correlations>6</Correlations>
       </Finding>
       <Finding>
         <Name>Research Data Integrity Anomaly</Name>
-        <Correlations>7</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Command-and-Control Communication</Name>
         <Correlations>6</Correlations>
       </Finding>
       <Finding>
         <Name>Research Workstation Compromise</Name>
-        <Correlations>6</Correlations>
+        <Correlations>5</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Suspicious Network Activity</Name>
+        <Correlations>4</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Unauthorized Facility Access</Name>
+        <Correlations>3</Correlations>
       </Finding>
     </PriorityFindings>
   </EvidenceBasis>

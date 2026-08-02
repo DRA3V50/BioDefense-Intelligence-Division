@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-6321
+BID-2026-3342
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Biomedical Supply Chain Compromise
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-31
+17
 
 Evidence Collected:
-115
+87
 
 Indicators Identified:
-40
+32
 
 Analyst Confidence:
-86%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Alpha

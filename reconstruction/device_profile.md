@@ -3,29 +3,29 @@
 ## Investigation
 
 Case ID:
-BID-2026-6321
+BID-2026-3342
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Ashcroft Biomedical Center
 
 Platform:
-Protected Research Network
+Evidence Processing Network
 
 Device:
-Network Security Appliance
+Access Control Server
 
 Vendor:
 HPE
@@ -34,7 +34,7 @@ Operating System:
 Red Hat Enterprise Linux 10
 
 Security Zone:
-Federal Operations
+Protected Research Segment
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-86%
+88%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

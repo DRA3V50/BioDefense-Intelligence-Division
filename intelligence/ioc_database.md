@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6321
+BID-2026-3342
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Biological Research Intelligence Collection
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Infrastructure | Firewall policy deviation identified |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | System Log | Unexpected privilege escalation recorded |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -28,23 +28,23 @@ Supply Chain Security Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-115
+87
 
 Indicators Reviewed:
-40
+32
 
 Risk Score:
-81
+53
 
 Confidence:
-86%
+88%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Alpha
 
 Current Status:
 
-Evidence Collection
+Field Coordination

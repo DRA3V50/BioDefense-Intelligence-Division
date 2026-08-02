@@ -4,18 +4,18 @@
 ## 2026-08-02
 
 ### Case Opened
-Case ID: BID-2026-6321
+Case ID: BID-2026-3342
 
 ### Classification
-Supply Chain Security Investigation
+Biological Research Intelligence Collection
 
 ### Initial Assessment
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Evidence Collection
+Field Coordination
 
 ### Severity
-HIGH
+MODERATE
 
 ---

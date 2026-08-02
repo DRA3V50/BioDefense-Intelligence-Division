@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Laboratory Network Access
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Project Chimera
+Genome Phantom
 
 ---
 
 ## Attribution
-International Infrastructure
+Foreign Intelligence Interest
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-86%
+88%
 
 ---
 
 ## Observed Techniques
 - Compromised Credentials
-- Research Data Exfiltration
-- Supply Chain Compromise
-- Concealed Internal Movement
-- Privilege Escalation
-- Laboratory Data Manipulation
+- Laboratory Network Reconnaissance
+- Lateral Movement
+- Command and Control
+- Long-Term Network Foothold
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Alpha
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Supply Chain Security Investigation
+Biological Research Intelligence Collection
 
 ---
 

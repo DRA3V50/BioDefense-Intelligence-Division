@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6321 |
+| Case ID | BID-2026-3342 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Supply Chain Security Investigation |
-| Threat Family | Unauthorized Laboratory Network Access |
-| Severity | HIGH |
-| Status | Evidence Collection |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Biomedical Supply Chain Compromise |
+| Severity | MODERATE |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Protected Research Network |
-| Device | Network Security Appliance |
+| Platform | Evidence Processing Network |
+| Device | Access Control Server |
 | Vendor | HPE |
-| Security Zone | Federal Operations |
+| Security Zone | Protected Research Segment |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 81 |
-| Confidence | 86% |
-| Evidence Collected | 115 |
-| Indicators Identified | 40 |
-| Affected Assets | 31 |
+| Risk Score | 53 |
+| Confidence | 88% |
+| Evidence Collected | 87 |
+| Indicators Identified | 32 |
+| Affected Assets | 17 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Alpha**
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Field Coordination**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 
