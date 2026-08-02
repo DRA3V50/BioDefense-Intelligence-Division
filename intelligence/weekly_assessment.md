@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-9879
+Case ID: BID-2026-6104
 
 Operation: Coordinated Biomedical Systems Intrusion
 
 Classification: Research Data Integrity Investigation
 
-Threat Family: Credential Misuse
+Threat Family: Research Data Integrity Manipulation
 
-Current Status: Containment
+Current Status: Monitoring
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ROUTINE
 
 Risk Score:
-25
+36
 
 Confidence:
-88%
+85%
 
 Affected Assets:
-10
+4
 
 Evidence Collected:
-53
+14
 
 Indicators Recorded:
-6
+10
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Joint Cyber Investigation Unit
+Analyst Team Bravo
 
 Date:
 

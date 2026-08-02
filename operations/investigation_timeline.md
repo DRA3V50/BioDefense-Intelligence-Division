@@ -2,21 +2,21 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-9879
+**Case ID:** BID-2026-6104
 
-**Generated:** 2026-08-02 03:25 UTC
+**Generated:** 2026-08-02 03:33 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-01 21:25 UTC | Initial Detection | Potential activity associated with Credential Misuse was detected. |
-| 2026-08-01 22:25 UTC | Case Opened | Investigation BID-2026-9879 was opened and assigned to Joint Cyber Investigation Unit. |
-| 2026-08-01 23:25 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Exposed Remote Service. |
-| 2026-08-02 00:25 UTC | Evidence Collection | 53 evidence items and 6 indicators were associated with the active investigation. |
-| 2026-08-02 01:25 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-02 02:25 UTC | Operational Review | Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation. |
-| 2026-08-02 03:25 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-01 21:33 UTC | Initial Detection | Potential activity associated with Research Data Integrity Manipulation was detected. |
+| 2026-08-01 22:33 UTC | Case Opened | Investigation BID-2026-6104 was opened and assigned to Analyst Team Bravo. |
+| 2026-08-01 23:33 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
+| 2026-08-02 00:33 UTC | Evidence Collection | 14 evidence items and 10 indicators were associated with the active investigation. |
+| 2026-08-02 01:33 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-08-02 02:33 UTC | Operational Review | Available evidence supports expanded review of access records, system changes, and related investigative indicators. |
+| 2026-08-02 03:33 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
@@ -26,7 +26,7 @@
 
 **Priority:** ROUTINE
 
-**Confidence:** 88%
+**Confidence:** 85%
 
 **Campaign Phase:** Operational Recovery
 

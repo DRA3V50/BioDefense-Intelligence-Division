@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9879
+BID-2026-6104
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,26 +12,26 @@ Classification:
 Research Data Integrity Investigation
 
 Threat Family:
-Credential Misuse
+Research Data Integrity Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Containment
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Clinical Research Environment
 
 Device:
-Biomedical Workstation
+Evidence Repository
 
 Vendor:
-Palo Alto Networks
+Lenovo
 
 Security Zone:
 Protected Research Segment
@@ -41,22 +41,22 @@ Protected Research Segment
 ## Investigation Metrics
 
 Investigations Recorded:
-66
+67
 
 Evidence Collected:
-53
+14
 
 Indicators Identified:
-6
-
-Affected Assets:
 10
 
+Affected Assets:
+4
+
 Confidence:
-88%
+85%
 
 Risk Score:
-25
+36
 
 ---
 

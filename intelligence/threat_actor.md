@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Project Chimera
 
 ---
 
 ## Attribution
-Unknown
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Disruption of Biosecurity Operations
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-88%
+85%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
-- Laboratory Data Manipulation
-- Long-Term Network Foothold
-- Biosecurity System Tampering
-- Laboratory Control System Manipulation
+- Third-Party Access
+- Research Data Exfiltration
+- Insider Access Abuse
 - Lateral Movement
+- Laboratory Network Reconnaissance
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+Analyst Team Bravo
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 

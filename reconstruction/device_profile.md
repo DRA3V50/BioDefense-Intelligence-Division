@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-9879
+BID-2026-6104
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,26 +12,26 @@ Classification:
 Research Data Integrity Investigation
 
 Threat Family:
-Credential Misuse
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Advanced Genome Security Laboratory
 
 Platform:
-Laboratory Control Network
+Clinical Research Environment
 
 Device:
-Biomedical Workstation
+Evidence Repository
 
 Vendor:
-Palo Alto Networks
+Lenovo
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Protected Research Segment
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 ROUTINE
 
 Confidence:
-88%
+85%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

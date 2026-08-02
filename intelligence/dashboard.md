@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-9879 |
+| Case ID | BID-2026-6104 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Research Data Integrity Investigation |
-| Threat Family | Credential Misuse |
+| Threat Family | Research Data Integrity Manipulation |
 | Severity | LOW |
-| Status | Containment |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,9 +18,9 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Biomedical Workstation |
-| Vendor | Palo Alto Networks |
+| Platform | Clinical Research Environment |
+| Device | Evidence Repository |
+| Vendor | Lenovo |
 | Network Zone | Protected Research Segment |
 
 ---
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 25 |
-| Confidence | 88% |
-| Evidence | 53 |
-| Indicators | 6 |
-| Affected Assets | 10 |
+| Risk Score | 36 |
+| Confidence | 85% |
+| Evidence | 14 |
+| Indicators | 10 |
+| Affected Assets | 4 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Joint Cyber Investigation Unit**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
