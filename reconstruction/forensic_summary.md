@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1115 |
+| Case ID | BID-2026-5702 |
 | Operation | Operation Black Eclipse |
-| Classification | Biosecurity Infrastructure Investigation |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | HIGH |
-| Status | Monitoring |
+| Classification | Evidence Reconstruction Investigation |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | MODERATE |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Federal Investigation Network |
-| Device | Genome Sequencing Server |
-| Vendor | Red Hat |
-| Security Zone | Research Operations |
+| Platform | Genome Sequencing Environment |
+| Device | Evidence Repository |
+| Vendor | Cisco |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 75 |
-| Confidence | 96% |
-| Evidence Collected | 214 |
-| Indicators Identified | 37 |
-| Affected Assets | 14 |
+| Risk Score | 65 |
+| Confidence | 85% |
+| Evidence Collected | 61 |
+| Indicators Identified | 13 |
+| Affected Assets | 15 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Intelligence Analysis**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

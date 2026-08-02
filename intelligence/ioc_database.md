@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1115
+BID-2026-5702
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Evidence Reconstruction Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Infrastructure | Firewall policy deviation identified |
+| Identity | Credential reuse detected across isolated research segments |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,23 +28,23 @@ Biosecurity Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-214
+61
 
 Indicators Reviewed:
-37
+13
 
 Risk Score:
-75
+65
 
 Confidence:
-96%
+85%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Current Status:
 
-Monitoring
+Intelligence Analysis

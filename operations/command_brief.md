@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-01 14:57 UTC
+**Generated:** 2026-08-02 03:02 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1115
+**Case ID:** BID-2026-5702
 
-**Classification:** Biosecurity Infrastructure Investigation
+**Classification:** Evidence Reconstruction Investigation
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
-**Threat Family:** Specimen Tracking Manipulation
+**Threat Family:** Research Data Integrity Manipulation
 
-**Confidence:** 96%
+**Confidence:** 85%
 
 ---
 
 ## Investigation Summary
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **214**
+Evidence Collected: **61**
 
-Indicators: **37**
+Indicators: **13**
 
-Priority: **HIGH**
+Priority: **ELEVATED**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 Initial Access:
-**Phishing**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**63**
+**64**
 
 Confirmed Intrusions:
 **10**
 
 Total Evidence:
-**90115**
+**90176**
 
 Total Indicators:
-**61072**
+**61085**
 
 ---
 
 ## Operational Highlights
 
-- 214 evidence items are associated with the active investigation.
-- 37 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **96%**.
-- Current investigation priority is **HIGH**.
+- 61 evidence items are associated with the active investigation.
+- 13 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **85%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

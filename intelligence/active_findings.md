@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-1115
+BID-2026-5702
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Evidence Reconstruction Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Privilege escalation activity was observed within a protected research environment.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-14
+15
 
 Evidence Collected:
-214
+61
 
 Indicators Identified:
-37
+13
 
 Analyst Confidence:
-96%
+85%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Intelligence Analysis
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force

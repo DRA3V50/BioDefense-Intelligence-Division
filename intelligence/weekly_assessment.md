@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1115
+Case ID: BID-2026-5702
 
 Operation: Operation Black Eclipse
 
-Classification: Biosecurity Infrastructure Investigation
+Classification: Evidence Reconstruction Investigation
 
-Threat Family: Specimen Tracking Manipulation
+Threat Family: Research Data Integrity Manipulation
 
-Current Status: Monitoring
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Analysts continue evaluating recovered indicators for operational significance.
 
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ELEVATED
 
 Risk Score:
-75
+65
 
 Confidence:
-96%
+85%
 
 Affected Assets:
-14
+15
 
 Evidence Collected:
-214
+61
 
 Indicators Recorded:
-37
+13
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Date:
 
-2026-08-01
+2026-08-02

@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-01
+## 2026-08-02
 
 ### Case Opened
-Case ID: BID-2026-1115
+Case ID: BID-2026-5702
 
 ### Classification
-Biosecurity Infrastructure Investigation
+Evidence Reconstruction Investigation
 
 ### Initial Assessment
-Current intelligence suggests multiple related intrusions requiring expanded forensic acquisition.
+Analysts continue correlating evidence to determine campaign scope and operational objectives.
 
 ### Current Status
-Monitoring
+Intelligence Analysis
 
 ### Severity
-HIGH
+MODERATE
 
 ---

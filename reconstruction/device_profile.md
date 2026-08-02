@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1115
+BID-2026-5702
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Evidence Reconstruction Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
-Federal Investigation Network
+Genome Sequencing Environment
 
 Device:
-Genome Sequencing Server
+Evidence Repository
 
 Vendor:
-Red Hat
+Cisco
 
 Operating System:
 Windows Server 2025
 
 Security Zone:
-Research Operations
+Containment Network
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Evidence Acquisition
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-96%
+85%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

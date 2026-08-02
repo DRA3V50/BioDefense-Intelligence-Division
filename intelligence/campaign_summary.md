@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1115
+BID-2026-5702
 
 Operation:
 Operation Black Eclipse
 
 Classification:
-Biosecurity Infrastructure Investigation
+Evidence Reconstruction Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Genome Sequencing Environment
 
 Device:
-Genome Sequencing Server
+Evidence Repository
 
 Vendor:
-Red Hat
+Cisco
 
 Security Zone:
-Research Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-63
+64
 
 Evidence Collected:
-214
+61
 
 Indicators Identified:
-37
+13
 
 Affected Assets:
-14
+15
 
 Confidence:
-96%
+85%
 
 Risk Score:
-75
+65
 
 ---
 
