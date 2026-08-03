@@ -489,22 +489,29 @@ internal static class Program
             "UNKNOWN"
         ).ToUpperInvariant();
 
-        int riskScore = GetInt(
-            caseRoot,
-            "risk_score",
-            SeverityBaseScore(severity)
+        int riskScore = Clamp(
+            GetInt(
+                caseRoot,
+                "risk_score",
+                SeverityBaseScore(severity)
+            )
         );
 
-        int caseConfidence = GetInt(
-            caseRoot,
-            "confidence",
-            50
+        int caseConfidence = Clamp(
+            GetInt(
+                caseRoot,
+                "confidence",
+                50
+            )
         );
 
-        int affectedAssets = GetInt(
-            caseRoot,
-            "affected_assets",
-            0
+        int affectedAssets = Math.Max(
+            0,
+            GetInt(
+                caseRoot,
+                "affected_assets",
+                0
+            )
         );
 
         int credential = CountMatchingFindings(
@@ -604,77 +611,134 @@ internal static class Program
             "dns"
         );
 
-        int threatActorIntent = Clamp(
-            15
-            + actor * 3
-            + network * 2
-            + research * 2
-            + laboratory * 2
-            + biosecurity * 2
-            + Math.Min(riskScore / 4, 20)
-        );
-
-        int threatActorCapability = Clamp(
-            10
-            + credential * 2
-            + network * 2
-            + workstation * 2
-            + laboratory * 2
-            + actor * 2
-            + Math.Min(affectedAssets, 20)
-        );
-
-        int biologicalTargetValue = Clamp(
+        int credentialSignal = SaturatingSignal(
+            credential,
             20
-            + laboratory * 2
-            + research * 3
-            + biosecurity * 2
-            + Math.Min(laboratoryArtifacts, 15)
-            + Math.Min(researchArtifacts, 20)
         );
 
-        int laboratoryAndSpecimenImpact = Clamp(
-            8
-            + laboratory * 3
-            + research * 2
-            + biosecurity * 2
-            + facility * 2
-            + Math.Min(laboratoryArtifacts, 18)
+        int networkSignal = SaturatingSignal(
+            network,
+            25
         );
 
-        int publicHealthRisk = Clamp(
-            5
-            + biosecurity * 3
-            + laboratory * 2
-            + research * 2
-            + facility * 2
-            + (
-                severity == "CRITICAL"
-                    ? 15
-                    : severity == "HIGH"
-                        ? 8
-                        : 0
-            )
+        int laboratorySignal = SaturatingSignal(
+            laboratory,
+            25
         );
 
-        int cyberToPhysicalEscalation = Clamp(
-            5
-            + facility * 3
-            + laboratory * 2
-            + biosecurity * 3
-            + network
-            + Math.Min(accessArtifacts, 10)
+        int researchSignal = SaturatingSignal(
+            research,
+            25
         );
 
-        int attributionConfidence = Clamp(
-            Convert.ToInt32(
-                Math.Round(
-                    caseConfidence * 0.55
-                    + Math.Min(actor * 5, 25)
-                    + Math.Min(networkArtifacts, 10)
-                    + Math.Min(findingCounts.Count, 10)
-                )
-            )
+        int biosecuritySignal = SaturatingSignal(
+            biosecurity,
+            25
+        );
+
+        int facilitySignal = SaturatingSignal(
+            facility,
+            15
+        );
+
+        int actorSignal = SaturatingSignal(
+            actor,
+            12
+        );
+
+        int workstationSignal = SaturatingSignal(
+            workstation,
+            20
+        );
+
+        int laboratoryArtifactSignal = SaturatingSignal(
+            laboratoryArtifacts,
+            30
+        );
+
+        int researchArtifactSignal = SaturatingSignal(
+            researchArtifacts,
+            30
+        );
+
+        int accessArtifactSignal = SaturatingSignal(
+            accessArtifacts,
+            25
+        );
+
+        int networkArtifactSignal = SaturatingSignal(
+            networkArtifacts,
+            30
+        );
+
+        int assetSignal = SaturatingSignal(
+            affectedAssets,
+            20
+        );
+
+        int findingDiversitySignal = SaturatingSignal(
+            findingCounts.Count,
+            12
+        );
+
+        int threatActorIntent = WeightedScore(
+            (riskScore, 0.45),
+            (actorSignal, 0.20),
+            (networkSignal, 0.10),
+            (researchSignal, 0.10),
+            (laboratorySignal, 0.10),
+            (biosecuritySignal, 0.05)
+        );
+
+        int threatActorCapability = WeightedScore(
+            (riskScore, 0.40),
+            (credentialSignal, 0.15),
+            (networkSignal, 0.15),
+            (workstationSignal, 0.10),
+            (laboratorySignal, 0.10),
+            (actorSignal, 0.05),
+            (assetSignal, 0.05)
+        );
+
+        int biologicalTargetValue = WeightedScore(
+            (riskScore, 0.35),
+            (researchSignal, 0.25),
+            (laboratorySignal, 0.20),
+            (biosecuritySignal, 0.15),
+            (laboratoryArtifactSignal, 0.025),
+            (researchArtifactSignal, 0.025)
+        );
+
+        int laboratoryAndSpecimenImpact = WeightedScore(
+            (riskScore, 0.40),
+            (laboratorySignal, 0.20),
+            (researchSignal, 0.15),
+            (biosecuritySignal, 0.15),
+            (facilitySignal, 0.10)
+        );
+
+        int publicHealthRisk = WeightedScore(
+            (riskScore, 0.45),
+            (biosecuritySignal, 0.20),
+            (laboratorySignal, 0.15),
+            (researchSignal, 0.10),
+            (facilitySignal, 0.10)
+        );
+
+        int cyberToPhysicalEscalation = WeightedScore(
+            (riskScore, 0.40),
+            (facilitySignal, 0.20),
+            (laboratorySignal, 0.15),
+            (biosecuritySignal, 0.15),
+            (networkSignal, 0.05),
+            (accessArtifactSignal, 0.05)
+        );
+
+        int attributionConfidence = WeightedScore(
+            (caseConfidence, 0.75),
+            (actorSignal, 0.15),
+            (networkArtifactSignal, 0.05),
+            (findingDiversitySignal, 0.05)
         );
 
         string containmentPhase = GetString(
@@ -687,7 +751,7 @@ internal static class Program
             )
         );
 
-        int containmentBonus = 0;
+        int containmentAdjustment = 0;
 
         if (
             ContainsAny(
@@ -699,7 +763,7 @@ internal static class Program
             )
         )
         {
-            containmentBonus = 20;
+            containmentAdjustment = 10;
         }
 
         if (
@@ -711,7 +775,7 @@ internal static class Program
             )
         )
         {
-            containmentBonus = -15;
+            containmentAdjustment = -10;
         }
 
         int verifiedCount = CountVerifiedEvidence(
@@ -725,9 +789,9 @@ internal static class Program
         int containmentConfidence = Clamp(
             Convert.ToInt32(
                 Math.Round(
-                    caseConfidence * 0.45
-                    + integrityRatio * 35
-                    + containmentBonus
+                    caseConfidence * 0.55
+                    + integrityRatio * 25
+                    + containmentAdjustment
                 )
             )
         );
@@ -749,28 +813,40 @@ internal static class Program
         JsonElement caseRoot
     )
     {
-        double weightedScore =
-            scores.ThreatActorIntent * 0.16
-            + scores.ThreatActorCapability * 0.14
-            + scores.BiologicalTargetValue * 0.16
-            + scores.LaboratoryAndSpecimenImpact * 0.15
-            + scores.PublicHealthRisk * 0.16
-            + scores.CyberToPhysicalEscalation * 0.13
-            + scores.AttributionConfidence * 0.05
-            - scores.ContainmentConfidence * 0.05;
+        double threatComposite =
+            (
+                scores.ThreatActorIntent
+                + scores.ThreatActorCapability
+                + scores.BiologicalTargetValue
+                + scores.LaboratoryAndSpecimenImpact
+                + scores.PublicHealthRisk
+                + scores.CyberToPhysicalEscalation
+            )
+            / 6.0;
 
-        int caseRiskScore = GetInt(
-            caseRoot,
-            "risk_score",
-            0
+        int caseRiskScore = Clamp(
+            GetInt(
+                caseRoot,
+                "risk_score",
+                SeverityBaseScore(
+                    GetString(
+                        caseRoot,
+                        "severity",
+                        "UNKNOWN"
+                    )
+                )
+            )
         );
+
+        double calibratedScore =
+            threatComposite * 0.45
+            + caseRiskScore * 0.50
+            + scores.AttributionConfidence * 0.10
+            - scores.ContainmentConfidence * 0.05;
 
         return Clamp(
             Convert.ToInt32(
-                Math.Round(
-                    weightedScore
-                    + caseRiskScore * 0.10
-                )
+                Math.Round(calibratedScore)
             )
         );
     }
@@ -844,8 +920,9 @@ internal static class Program
             engine = new
             {
                 name = "BioDefense C# Bioterror Threat Scoring Engine",
-                version = "1.0.0",
-                runtime = ".NET 8"
+                version = "1.1.0",
+                runtime = ".NET 8",
+                scoringModel = "Risk-Anchored Saturating Evidence Model"
             },
             investigation = new
             {
@@ -1017,11 +1094,15 @@ internal static class Program
                     ),
                     new XElement(
                         "Version",
-                        "1.0.0"
+                        "1.1.0"
                     ),
                     new XElement(
                         "Runtime",
                         ".NET 8"
+                    ),
+                    new XElement(
+                        "ScoringModel",
+                        "Risk-Anchored Saturating Evidence Model"
                     )
                 ),
                 new XElement(
@@ -1188,6 +1269,52 @@ internal static class Program
                 ? ConfidenceLabel(score)
                 : ScoreLabel(score)
         };
+    }
+
+    private static int SaturatingSignal(
+        int count,
+        int midpoint
+    )
+    {
+        if (count <= 0)
+        {
+            return 0;
+        }
+
+        int safeMidpoint = Math.Max(
+            1,
+            midpoint
+        );
+
+        return Clamp(
+            Convert.ToInt32(
+                Math.Round(
+                    100.0
+                    * count
+                    / (
+                        count
+                        + safeMidpoint
+                    )
+                )
+            )
+        );
+    }
+
+    private static int WeightedScore(
+        params (int Value, double Weight)[] components
+    )
+    {
+        double weightedTotal = components.Sum(
+            component =>
+                Clamp(component.Value)
+                * component.Weight
+        );
+
+        return Clamp(
+            Convert.ToInt32(
+                Math.Round(weightedTotal)
+            )
+        );
     }
 
     private static int SeverityBaseScore(
