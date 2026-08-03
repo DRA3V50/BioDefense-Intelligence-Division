@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3870 |
+| Case ID | BID-2026-2718 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Access Control Investigation |
-| Threat Family | Biocontainment System Tampering |
-| Severity | LOW |
-| Status | Monitoring |
+| Classification | Biomedical Infrastructure Investigation |
+| Threat Family | Biomedical Supply Chain Compromise |
+| Severity | MODERATE |
+| Status | Field Coordination |
 | Phase | Operational Recovery |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Clinical Research Environment |
-| Device | Clinical Data Server |
+| Device | Network Security Appliance |
 | Vendor | Dell |
-| Network Zone | Research Operations |
+| Network Zone | Evidence Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 36 |
-| Confidence | 87% |
-| Evidence | 51 |
-| Indicators | 10 |
-| Affected Assets | 5 |
+| Risk Score | 62 |
+| Confidence | 86% |
+| Evidence | 92 |
+| Indicators | 39 |
+| Affected Assets | 18 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.

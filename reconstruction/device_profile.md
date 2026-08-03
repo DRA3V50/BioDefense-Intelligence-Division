@@ -3,29 +3,29 @@
 ## Investigation
 
 Case ID:
-BID-2026-3870
+BID-2026-2718
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Central Evidence Processing Center
 
 Platform:
 Clinical Research Environment
 
 Device:
-Clinical Data Server
+Network Security Appliance
 
 Vendor:
 Dell
@@ -34,7 +34,7 @@ Operating System:
 Red Hat Enterprise Linux 10
 
 Security Zone:
-Research Operations
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-87%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.

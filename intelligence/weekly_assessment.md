@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3870
+Case ID: BID-2026-2718
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Access Control Investigation
+Classification: Biomedical Infrastructure Investigation
 
-Threat Family: Biocontainment System Tampering
+Threat Family: Biomedical Supply Chain Compromise
 
-Current Status: Monitoring
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -20,29 +20,29 @@ Containment Phase: Operational Recovery
 
 Additional forensic validation is required before investigative conclusions can be established.
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ROUTINE
+ELEVATED
 
 Risk Score:
-36
+62
 
 Confidence:
-87%
+86%
 
 Affected Assets:
-5
+18
 
 Evidence Collected:
-51
+92
 
 Indicators Recorded:
-10
+39
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Date:
 

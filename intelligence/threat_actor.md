@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Black Helix
+Silent Culture
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Research Data Theft
 
 ---
 
@@ -26,22 +26,22 @@ High
 ---
 
 ## Confidence
-87%
+86%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Laboratory Control System Manipulation
-- Long-Term Network Foothold
-- Supply Chain Compromise
+- Unauthorized Physical Access
 - Covert Remote Access Tooling
 - Credential Abuse
+- Research Data Exfiltration
+- Biosecurity System Tampering
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Delta
 
 **Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Access Control Investigation
+Biomedical Infrastructure Investigation
 
 ---
 

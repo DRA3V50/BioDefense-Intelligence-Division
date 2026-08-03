@@ -2,31 +2,31 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-3870
+**Case ID:** BID-2026-2718
 
-**Generated:** 2026-08-03 02:32 UTC
+**Generated:** 2026-08-03 02:38 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-02 20:32 UTC | Initial Detection | Potential activity associated with Biocontainment System Tampering was detected. |
-| 2026-08-02 21:32 UTC | Case Opened | Investigation BID-2026-3870 was opened and assigned to Analyst Team Alpha. |
-| 2026-08-02 22:32 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Compromised Credentials. |
-| 2026-08-02 23:32 UTC | Evidence Collection | 51 evidence items and 10 indicators were associated with the active investigation. |
-| 2026-08-03 00:32 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-03 01:32 UTC | Operational Review | Available evidence supports expanded review of access records, system changes, and related investigative indicators. |
-| 2026-08-03 02:32 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-02 20:38 UTC | Initial Detection | Potential activity associated with Biomedical Supply Chain Compromise was detected. |
+| 2026-08-02 21:38 UTC | Case Opened | Investigation BID-2026-2718 was opened and assigned to Analyst Team Delta. |
+| 2026-08-02 22:38 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
+| 2026-08-02 23:38 UTC | Evidence Collection | 92 evidence items and 39 indicators were associated with the active investigation. |
+| 2026-08-03 00:38 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-08-03 01:38 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-08-03 02:38 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** LOW
+**Severity:** MODERATE
 
-**Priority:** ROUTINE
+**Priority:** ELEVATED
 
-**Confidence:** 87%
+**Confidence:** 86%
 
 **Campaign Phase:** Operational Recovery
 

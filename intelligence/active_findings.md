@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-3870
+BID-2026-2718
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Biomedical Supply Chain Compromise
 
 Severity:
-LOW
+MODERATE
 
 Priority:
-ROUTINE
+ELEVATED
 
 ---
 
@@ -26,11 +26,11 @@ ROUTINE
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
@@ -38,27 +38,27 @@ Multiple investigative artifacts require additional correlation before attributi
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-5
+18
 
 Evidence Collected:
-51
+92
 
 Indicators Identified:
-10
+39
 
 Analyst Confidence:
-87%
+86%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta

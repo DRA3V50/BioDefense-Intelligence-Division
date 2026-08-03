@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3870
+BID-2026-2718
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Biomedical Supply Chain Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Field Coordination
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Clinical Research Environment
 
 Device:
-Clinical Data Server
+Network Security Appliance
 
 Vendor:
 Dell
 
 Security Zone:
-Research Operations
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-71
+72
 
 Evidence Collected:
-51
+92
 
 Indicators Identified:
-10
+39
 
 Affected Assets:
-5
+18
 
 Confidence:
-87%
+86%
 
 Risk Score:
-36
+62
 
 ---
 

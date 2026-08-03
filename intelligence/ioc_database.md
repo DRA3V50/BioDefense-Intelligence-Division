@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3870
+BID-2026-2718
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Biomedical Infrastructure Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| System Log | Unexpected privilege escalation recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Laboratory Access Control Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-51
+92
 
 Indicators Reviewed:
-10
+39
 
 Risk Score:
-36
+62
 
 Confidence:
-87%
+86%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Current Status:
 
-Monitoring
+Field Coordination
