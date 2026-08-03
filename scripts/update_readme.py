@@ -17,6 +17,7 @@ Only content between the FSE report markers is replaced.
 """
 
 import csv
+import hashlib
 import json
 from collections import Counter
 from pathlib import Path
@@ -313,18 +314,6 @@ def build_overview_section(
 ) -> str:
     """Build the archival case-record header."""
 
-    banner = ""
-
-    if SCANNER_BANNER_PATH.exists():
-        banner = (
-            '<p align="center">\n'
-            '  <img '
-            'src="assets/biodefense-case-scan.gif" '
-            'alt="BioDefense case-record scanner" '
-            'width="900">\n'
-            '</p>\n\n'
-        )
-
     case_id = markdown_cell(
         field(
             case,
@@ -355,9 +344,39 @@ def build_overview_section(
         ).upper()
     )
 
+    # GitHub can cache repository images. This short deterministic
+    # version token changes whenever the current case or campaign data
+    # changes, forcing the README to request the newest generated GIF.
+    banner_state = json.dumps(
+        {
+            "case": case,
+            "operation": operation,
+        },
+        sort_keys=True,
+        default=str,
+        separators=(",", ":"),
+    )
+
+    banner_version = hashlib.sha256(
+        banner_state.encode("utf-8")
+    ).hexdigest()[:12]
+
+    banner = ""
+
+    if SCANNER_BANNER_PATH.exists():
+        banner = (
+            '<p align="center">\n'
+            '  <img '
+            'src="assets/biodefense-case-scan.gif'
+            f'?v={banner_version}" '
+            'alt="Current BioDefense intelligence case interface" '
+            'width="100%">\n'
+            '</p>\n\n'
+        )
+
     return (
         f"{banner}"
-        "# BioDefense Intelligence Division\n\n"
+        "# BioDefense-Intelligence-Division\n\n"
         "> **CONTROLLED TRAINING RECORD** // "
         "Fictional cyber-biothreat investigation data\n\n"
         "| Record Control | Investigative State | Exchange Package |\n"
