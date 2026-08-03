@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3408
+BID-2026-7106
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,51 +12,51 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Laboratory Information System Compromise
+Access Control Record Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biomedical Analysis Cluster
+Protected Research Network
 
 Device:
-Evidence Repository
+Research Database Server
 
 Vendor:
-Microsoft
+HPE
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-77
+78
 
 Evidence Collected:
-54
+140
 
 Indicators Identified:
-15
+44
 
 Affected Assets:
-10
+16
 
 Confidence:
-83%
+86%
 
 Risk Score:
-30
+66
 
 ---
 

@@ -159,6 +159,14 @@
             "cases": 1,
             "severity": "LOW",
             "confidence": 83
+        },
+        {
+            "name": "Access Control Record Manipulation",
+            "first_seen": "2026-08-03",
+            "last_seen": "2026-08-03",
+            "cases": 1,
+            "severity": "HIGH",
+            "confidence": 86
         }
     ]
 }

@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-03 16:21 UTC
+**Generated:** 2026-08-03 17:38 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3408
+**Case ID:** BID-2026-7106
 
 **Classification:** Medical Device Security Assessment
 
-**Severity:** LOW
+**Severity:** HIGH
 
-**Threat Family:** Laboratory Information System Compromise
+**Threat Family:** Access Control Record Manipulation
 
-**Confidence:** 83%
+**Confidence:** 86%
 
 ---
 
 ## Investigation Summary
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **54**
+Evidence Collected: **140**
 
-Indicators: **15**
+Indicators: **44**
 
-Priority: **ROUTINE**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Joint Cyber Investigation Unit**
+**National Response Cell**
 
 Initial Access:
-**Supply Chain Compromise**
+**Insider Misuse**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**77**
+**78**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**91408**
+**91548**
 
 Total Indicators:
-**61472**
+**61516**
 
 ---
 
 ## Operational Highlights
 
-- 54 evidence items are associated with the active investigation.
-- 15 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **83%**.
-- Current investigation priority is **ROUTINE**.
+- 140 evidence items are associated with the active investigation.
+- 44 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **86%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

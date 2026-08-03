@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Information System Compromise
+Access Control Record Manipulation
 
 ---
 
 ## Primary Alias
-Black Helix
+Project Chimera
 
 ---
 
 ## Attribution
-Multiple Regions
+Unattributed
 
 ---
 
@@ -21,29 +21,29 @@ Medical Infrastructure Disruption
 ---
 
 ## Operational Sophistication
-Moderate
+Advanced
 
 ---
 
 ## Confidence
-83%
+86%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
+- Insider Misuse
+- Biosecurity System Tampering
 - Research Data Exfiltration
-- Covert Remote Access Tooling
-- Command and Control
+- Concealed Internal Movement
+- Supply Chain Compromise
 - Insider Access Abuse
-- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+National Response Cell
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 

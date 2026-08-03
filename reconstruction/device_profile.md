@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-3408
+BID-2026-7106
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,29 +12,29 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Laboratory Information System Compromise
+Access Control Record Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
-Biomedical Analysis Cluster
+Protected Research Network
 
 Device:
-Evidence Repository
+Research Database Server
 
 Vendor:
-Microsoft
+HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-83%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3408 |
+| Case ID | BID-2026-7106 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Medical Device Security Assessment |
-| Threat Family | Laboratory Information System Compromise |
-| Severity | LOW |
-| Status | Field Coordination |
+| Threat Family | Access Control Record Manipulation |
+| Severity | HIGH |
+| Status | Evidence Collection |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Evidence Repository |
-| Vendor | Microsoft |
-| Network Zone | Containment Network |
+| Platform | Protected Research Network |
+| Device | Research Database Server |
+| Vendor | HPE |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 30 |
-| Confidence | 83% |
-| Evidence | 54 |
-| Indicators | 15 |
-| Affected Assets | 10 |
+| Risk Score | 66 |
+| Confidence | 86% |
+| Evidence | 140 |
+| Indicators | 44 |
+| Affected Assets | 16 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Joint Cyber Investigation Unit**
+Lead Analyst: **National Response Cell**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.

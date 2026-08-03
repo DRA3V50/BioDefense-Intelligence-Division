@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-3408
+BID-2026-7106
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -15,11 +15,11 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Identity | Credential reuse detected across isolated research segments |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Evidence | Acquired forensic image verified using SHA-256 |
 
 
@@ -28,23 +28,23 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-54
+140
 
 Indicators Reviewed:
-15
+44
 
 Risk Score:
-30
+66
 
 Confidence:
-83%
+86%
 
 ---
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+National Response Cell
 
 Current Status:
 
-Field Coordination
+Evidence Collection
