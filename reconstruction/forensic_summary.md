@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6091 |
+| Case ID | BID-2026-9937 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Protected Research Systems Investigation |
-| Threat Family | Evidence Repository Manipulation |
-| Severity | MODERATE |
-| Status | Containment |
+| Threat Family | Laboratory Information System Compromise |
+| Severity | LOW |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Access Control Server |
-| Vendor | Fortinet |
-| Security Zone | Secure Laboratory |
+| Platform | Evidence Processing Network |
+| Device | Network Security Appliance |
+| Vendor | VMware |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 48 |
-| Confidence | 85% |
-| Evidence Collected | 84 |
-| Indicators Identified | 35 |
-| Affected Assets | 14 |
+| Risk Score | 28 |
+| Confidence | 84% |
+| Evidence Collected | 17 |
+| Indicators Identified | 10 |
+| Affected Assets | 10 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Open**
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

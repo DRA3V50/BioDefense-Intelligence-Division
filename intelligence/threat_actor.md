@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Evidence Repository Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Project Chimera
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-85%
+84%
 
 ---
 
 ## Observed Techniques
-- Insider Misuse
-- Insider Access Abuse
-- Laboratory Network Reconnaissance
-- Covert Remote Access Tooling
-- Research Data Exfiltration
+- Exposed Remote Service
+- Lateral Movement
+- Encrypted Data Staging
+- Concealed Internal Movement
+- Supply Chain Compromise
 - Biosecurity System Tampering
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Bravo
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 

@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6091
+BID-2026-9937
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,51 +12,51 @@ Classification:
 Protected Research Systems Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Laboratory Information System Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Containment
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
-Access Control Server
+Network Security Appliance
 
 Vendor:
-Fortinet
+VMware
 
 Security Zone:
-Secure Laboratory
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-80
+81
 
 Evidence Collected:
-84
+17
 
 Indicators Identified:
-35
+10
 
 Affected Assets:
-14
+10
 
 Confidence:
-85%
+84%
 
 Risk Score:
-48
+28
 
 ---
 

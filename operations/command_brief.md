@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-03 19:47 UTC
+**Generated:** 2026-08-03 20:25 UTC
 
 ---
 
@@ -18,41 +18,41 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-6091
+**Case ID:** BID-2026-9937
 
 **Classification:** Protected Research Systems Investigation
 
-**Severity:** MODERATE
+**Severity:** LOW
 
-**Threat Family:** Evidence Repository Manipulation
+**Threat Family:** Laboratory Information System Compromise
 
-**Confidence:** 85%
+**Confidence:** 84%
 
 ---
 
 ## Investigation Summary
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **84**
+Evidence Collected: **17**
 
-Indicators: **35**
+Indicators: **10**
 
-Priority: **ELEVATED**
+Priority: **ROUTINE**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Analyst Team Bravo**
 
 Initial Access:
-**Insider Misuse**
+**Exposed Remote Service**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**80**
+**81**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**91673**
+**91690**
 
 Total Indicators:
-**61575**
+**61585**
 
 ---
 
 ## Operational Highlights
 
-- 84 evidence items are associated with the active investigation.
-- 35 indicators are currently linked to the case.
+- 17 evidence items are associated with the active investigation.
+- 10 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **85%**.
-- Current investigation priority is **ELEVATED**.
+- Analyst confidence is **84%**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

@@ -12,10 +12,10 @@
     "affected_facilities": 11,
     "affected_states": 3,
     "confirmed_intrusions": 11,
-    "active_cases": 80,
-    "evidence_collected": 91673,
+    "active_cases": 81,
+    "evidence_collected": 91690,
     "digital_artifacts": 151,
-    "ioc_count": 61575,
+    "ioc_count": 61585,
     "laboratories_under_review": [
         "Federal Biomedical Laboratory",
         "National Pathogen Research Center",

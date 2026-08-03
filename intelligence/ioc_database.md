@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-6091
+BID-2026-9937
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Protected Research Systems Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-84
+17
 
 Indicators Reviewed:
-35
+10
 
 Risk Score:
-48
+28
 
 Confidence:
-85%
+84%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Bravo
 
 Current Status:
 
-Containment
+Open

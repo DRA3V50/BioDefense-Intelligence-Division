@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-6091
+BID-2026-9937
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,29 +12,29 @@ Classification:
 Protected Research Systems Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Federal Biosecurity Laboratory
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
-Access Control Server
+Network Security Appliance
 
 Vendor:
-Fortinet
+VMware
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Secure Laboratory
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-85%
+84%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Evidence indicates unauthorized access to restricted research resources.
