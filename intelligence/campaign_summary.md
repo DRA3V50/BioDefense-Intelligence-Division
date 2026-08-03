@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2718
+BID-2026-5077
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Research Data Integrity Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Research Data Repository
 
 Device:
-Network Security Appliance
+Biomedical Workstation
 
 Vendor:
-Dell
+Palo Alto Networks
 
 Security Zone:
 Evidence Network
@@ -41,22 +41,22 @@ Evidence Network
 ## Investigation Metrics
 
 Investigations Recorded:
-72
+73
 
 Evidence Collected:
-92
+49
 
 Indicators Identified:
-39
+14
 
 Affected Assets:
-18
+20
 
 Confidence:
-86%
+88%
 
 Risk Score:
-62
+58
 
 ---
 

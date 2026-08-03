@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-2718
+BID-2026-5077
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Research Data Integrity Manipulation
 
 Severity:
 MODERATE
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-18
+20
 
 Evidence Collected:
-92
+49
 
 Indicators Identified:
-39
+14
 
 Analyst Confidence:
-86%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha

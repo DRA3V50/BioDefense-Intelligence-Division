@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-2718
+BID-2026-5077
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 ---
 
 | Category | Observation |
 |----------|-------------|
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -28,23 +28,23 @@ Biomedical Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-92
+49
 
 Indicators Reviewed:
-39
+14
 
 Risk Score:
-62
+58
 
 Confidence:
-86%
+88%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha
 
 Current Status:
 
-Field Coordination
+Open

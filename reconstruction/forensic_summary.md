@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2718 |
+| Case ID | BID-2026-5077 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Biomedical Supply Chain Compromise |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Research Data Integrity Manipulation |
 | Severity | MODERATE |
-| Status | Field Coordination |
+| Status | Open |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Network Security Appliance |
-| Vendor | Dell |
+| Platform | Research Data Repository |
+| Device | Biomedical Workstation |
+| Vendor | Palo Alto Networks |
 | Security Zone | Evidence Network |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 62 |
-| Confidence | 86% |
-| Evidence Collected | 92 |
-| Indicators Identified | 39 |
-| Affected Assets | 18 |
+| Risk Score | 58 |
+| Confidence | 88% |
+| Evidence Collected | 49 |
+| Indicators Identified | 14 |
+| Affected Assets | 20 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Open**
 
 Priority:
 

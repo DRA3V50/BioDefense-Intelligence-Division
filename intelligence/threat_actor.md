@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Silent Culture
+Crimson Cell
 
 ---
 
@@ -16,32 +16,32 @@ International Infrastructure
 ---
 
 ## Observed Motivation
-Research Data Theft
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-86%
+88%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Physical Access
-- Covert Remote Access Tooling
-- Credential Abuse
+- Web Application Exploitation
+- Concealed Internal Movement
 - Research Data Exfiltration
+- Supply Chain Compromise
+- Long-Term Network Foothold
 - Biosecurity System Tampering
-- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
 **Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 ---
 

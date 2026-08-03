@@ -4,16 +4,16 @@
 ## 2026-08-03
 
 ### Case Opened
-Case ID: BID-2026-2718
+Case ID: BID-2026-5077
 
 ### Classification
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Field Coordination
+Open
 
 ### Severity
 MODERATE

@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-2718
+BID-2026-5077
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Raccoon Research Annex
 
 Platform:
-Clinical Research Environment
+Research Data Repository
 
 Device:
-Network Security Appliance
+Biomedical Workstation
 
 Vendor:
-Dell
+Palo Alto Networks
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -50,14 +50,14 @@ Priority:
 ELEVATED
 
 Confidence:
-86%
+88%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
