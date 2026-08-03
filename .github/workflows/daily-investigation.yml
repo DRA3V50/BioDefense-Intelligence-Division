@@ -50,7 +50,7 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install openpyxl
+          python -m pip install openpyxl Pillow
 
       ###############################################################
       # Phase I — Investigation Generation
@@ -170,6 +170,9 @@ jobs:
       - name: Run C# Bioterror Threat Scoring Engine
         run: dotnet run --project tools/BioterrorThreatScoringEngine.csproj --configuration Release
 
+      - name: Generate Dynamic Case Banner
+        run: python scripts/generate_case_banner.py
+
       - name: Generate Cyber-Biothreat Investigation Report
         run: python scripts/generate_investigation_report.py
 
@@ -186,6 +189,71 @@ jobs:
           python -m json.tool operations/active_operation.json > /dev/null
           python -m json.tool operations/operation_status.json > /dev/null
           python -m json.tool intelligence/actor_database.json > /dev/null
+          python -m json.tool reports/bioterror_threat_score_csharp.json > /dev/null
+
+      - name: Validate C# XML and Dynamic Banner
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          from PIL import Image
+
+          xml_path = Path(
+              "reports/bioterror_threat_score_csharp.xml"
+          )
+          banner_path = Path(
+              "assets/biodefense-case-scan.gif"
+          )
+
+          if not xml_path.exists():
+              raise SystemExit(
+                  "Validation failed: missing C# XML threat assessment."
+              )
+
+          xml_root = ET.parse(xml_path).getroot()
+
+          if xml_root.tag != "BioterrorThreatAssessment":
+              raise SystemExit(
+                  "Validation failed: unexpected XML root element "
+                  f"{xml_root.tag!r}."
+              )
+
+          if not banner_path.exists():
+              raise SystemExit(
+                  "Validation failed: dynamic case banner was not generated."
+              )
+
+          if banner_path.stat().st_size == 0:
+              raise SystemExit(
+                  "Validation failed: dynamic case banner is empty."
+              )
+
+          with Image.open(banner_path) as image:
+              frame_count = getattr(image, "n_frames", 1)
+
+              if image.format != "GIF":
+                  raise SystemExit(
+                      "Validation failed: banner output is not a GIF."
+                  )
+
+              if frame_count < 2:
+                  raise SystemExit(
+                      "Validation failed: banner GIF is not animated."
+                  )
+
+              width, height = image.size
+
+          print(
+              "C# XML validation passed: "
+              f"{xml_path}"
+          )
+          print(
+              "Dynamic banner validation passed: "
+              f"{width}x{height}, "
+              f"{frame_count} frames."
+          )
+          PY
 
       - name: Validate Digital Evidence Repository
         run: |
