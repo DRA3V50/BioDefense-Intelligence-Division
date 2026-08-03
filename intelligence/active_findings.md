@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-4246
+BID-2026-6850
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Clinical Research Data Manipulation
+Evidence Repository Manipulation
 
 Severity:
-CRITICAL
+HIGH
 
 Priority:
-CRITICAL
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ CRITICAL
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-59
+40
 
 Evidence Collected:
-240
+97
 
 Indicators Identified:
-90
+53
 
 Analyst Confidence:
-95%
+87%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Containment
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+BioDefense Task Force

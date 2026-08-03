@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Clinical Research Data Manipulation
+Evidence Repository Manipulation
 
 ---
 
 ## Primary Alias
-Umbra Bio
+Dark Sequence
 
 ---
 
 ## Attribution
-Unattributed
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Moderate
+Advanced
 
 ---
 
 ## Confidence
-95%
+87%
 
 ---
 
 ## Observed Techniques
-- Third-Party Access
+- Unauthorized Physical Access
+- Biosecurity System Tampering
+- Covert Remote Access Tooling
+- Long-Term Network Foothold
 - Credential Abuse
-- Laboratory Control System Manipulation
-- Concealed Internal Movement
-- Supply Chain Compromise
-- Encrypted Data Staging
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+BioDefense Task Force
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biomedical Infrastructure Investigation
+Cyber-Biothreat Intelligence Review
 
 ---
 

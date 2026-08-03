@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4246
+BID-2026-6850
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Clinical Research Data Manipulation
+Evidence Repository Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Protected Research Network
+Biomedical Analysis Cluster
 
 Device:
-Laboratory Information Server
+Evidence Repository
 
 Vendor:
-Dell
+Lenovo
 
 Security Zone:
-Protected Research Segment
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-75
+76
 
 Evidence Collected:
-240
+97
 
 Indicators Identified:
-90
+53
 
 Affected Assets:
-59
+40
 
 Confidence:
-95%
+87%
 
 Risk Score:
-96
+84
 
 ---
 

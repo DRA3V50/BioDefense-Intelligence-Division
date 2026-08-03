@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-4246
+BID-2026-6850
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Clinical Research Data Manipulation
+Evidence Repository Manipulation
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Raccoon Research Annex
 
 Platform:
-Protected Research Network
+Biomedical Analysis Cluster
 
 Device:
-Laboratory Information Server
+Evidence Repository
 
 Vendor:
-Dell
+Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
-Protected Research Segment
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
-CRITICAL
+HIGH
 
 Confidence:
-95%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Protected research assets remain under continuous monitoring.

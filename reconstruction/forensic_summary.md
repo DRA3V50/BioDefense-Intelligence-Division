@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4246 |
+| Case ID | BID-2026-6850 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Clinical Research Data Manipulation |
-| Severity | CRITICAL |
-| Status | Open |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Evidence Repository Manipulation |
+| Severity | HIGH |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Protected Research Network |
-| Device | Laboratory Information Server |
-| Vendor | Dell |
-| Security Zone | Protected Research Segment |
+| Platform | Biomedical Analysis Cluster |
+| Device | Evidence Repository |
+| Vendor | Lenovo |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 96 |
-| Confidence | 95% |
-| Evidence Collected | 240 |
-| Indicators Identified | 90 |
-| Affected Assets | 59 |
+| Risk Score | 84 |
+| Confidence | 87% |
+| Evidence Collected | 97 |
+| Indicators Identified | 53 |
+| Affected Assets | 40 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Containment**
 
 Priority:
 
-**CRITICAL**
+**HIGH**
 
 Recommended Action:
 

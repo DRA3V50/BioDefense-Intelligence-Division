@@ -8,14 +8,14 @@
     "threat_designation": "BMSI-01",
     "incident_type": "Cyber-Enabled Bioterror Campaign",
     "priority": "National",
-    "containment_level": "CRITICAL",
+    "containment_level": "SEVERE",
     "affected_facilities": 11,
     "affected_states": 3,
     "confirmed_intrusions": 11,
-    "active_cases": 75,
-    "evidence_collected": 91257,
+    "active_cases": 76,
+    "evidence_collected": 91354,
     "digital_artifacts": 151,
-    "ioc_count": 61404,
+    "ioc_count": 61457,
     "laboratories_under_review": [
         "Federal Biomedical Laboratory",
         "National Pathogen Research Center",
@@ -27,5 +27,5 @@
     "last_updated": "2026-08-03",
     "campaign_summary": "Affected environments are undergoing validation and controlled recovery while residual risk is monitored.",
     "next_objective": "Verify recovery controls and prepare the final operational assessment.",
-    "known_threat_families": 18
+    "known_threat_families": 19
 }
