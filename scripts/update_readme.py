@@ -33,6 +33,9 @@ WORKBOOK_CSV_PATH = Path(
     "workbooks/Exposure-Tracking-Matrix.csv"
 )
 README_PATH = Path("README.md")
+SCANNER_BANNER_PATH = Path(
+    "assets/biodefense-case-scan.gif"
+)
 
 REPORT_START = "<!-- FSE-REPORT-START -->"
 REPORT_END = "<!-- FSE-REPORT-END -->"
@@ -152,7 +155,7 @@ def markdown_cell(value: object) -> str:
 def file_status(path: Path) -> str:
     """Return a compact generated-file status."""
 
-    return "✅" if path.exists() else "⚠️"
+    return "◆" if path.exists() else "◇"
 
 
 def product_link(
@@ -304,17 +307,73 @@ def workbook_preview_table(
 # README sections
 # -------------------------------------------------
 
-def build_overview_section() -> str:
+def build_overview_section(
+    case: dict,
+    operation: dict,
+) -> str:
+    """Build the archival case-record header."""
+
+    banner = ""
+
+    if SCANNER_BANNER_PATH.exists():
+        banner = (
+            '<p align="center">\n'
+            '  <img '
+            'src="assets/biodefense-case-scan.gif" '
+            'alt="BioDefense case-record scanner" '
+            'width="900">\n'
+            '</p>\n\n'
+        )
+
+    case_id = markdown_cell(
+        field(
+            case,
+            "case_id",
+            "UNKNOWN-CASE",
+        )
+    )
+
+    campaign_id = markdown_cell(
+        field(
+            operation,
+            "campaign_id",
+            field(
+                case,
+                "campaign_id",
+                "UNKNOWN-CAMPAIGN",
+            ),
+        )
+    )
+
+    record_status = markdown_cell(
+        str(
+            field(
+                case,
+                "status",
+                "ACTIVE",
+            )
+        ).upper()
+    )
+
     return (
-        "# BioDefense-Intelligence-Division\n\n"
+        f"{banner}"
+        "# BioDefense Intelligence Division\n\n"
+        "> **CONTROLLED TRAINING RECORD** // "
+        "Fictional cyber-biothreat investigation data\n\n"
+        "| Record Control | Investigative State | Exchange Package |\n"
+        "|----------------|---------------------|------------------|\n"
+        f"| **Case:** `{case_id}`"
+        f"<br>**Campaign:** `{campaign_id}` "
+        f"| **Record:** `{record_status}`"
+        f"<br>**Evidence:** `MANIFEST-TRACKED` "
+        "| `XML` · `JSON` · `CSV` · `XLSX` |\n\n"
         "Automated cyber-biothreat investigation and digital forensics "
         "simulation using Python and C#. The project models federal-style "
         "case management, evidence reconstruction, threat assessment, "
-        "chain of custody, intelligence reporting, and operational "
-        "recovery for fictional threats affecting biomedical research "
-        "and protected laboratory environments."
+        "chain of custody, intelligence reporting, and controlled "
+        "operational recovery for fictional threats affecting biomedical "
+        "research and protected laboratory environments."
     )
-
 
 def build_campaign_dashboard(
     operation: dict,
@@ -322,8 +381,8 @@ def build_campaign_dashboard(
     """Build a compact three-column campaign dashboard."""
 
     return (
-        "# Executive Campaign Dashboard\n\n"
-        "| Campaign | Operational Status | Scope |\n"
+        "# Executive Case File\n\n"
+        "| Campaign Record | Operational Status | Investigative Scope |\n"
         "|----------|--------------------|-------|\n"
         f"| **ID:** {markdown_cell(field(operation, 'campaign_id'))}"
         f"<br>**Campaign:** "
@@ -694,7 +753,7 @@ def build_evidence_dashboard_section(
 
     return (
         "<!-- EVIDENCE_DASHBOARD_START -->\n\n"
-        "# Latest Digital Evidence Summary\n\n"
+        "# Digital Evidence Record\n\n"
         f"**Active Case:** {markdown_cell(case_id)}\n\n"
         "| Evidence Records | Correlations | Integrity Verified "
         "| Pending Review |\n"
@@ -802,7 +861,7 @@ def build_supporting_details(
     ]
 
     return (
-        "# Supporting Intelligence\n\n"
+        "# Supporting Case Records\n\n"
         "<details>\n"
         "<summary><strong>Operational metrics and recent "
         "investigations</strong></summary>\n\n"
@@ -832,7 +891,7 @@ def build_supporting_details(
 
 def build_mission_section() -> str:
     return (
-        "# Division Mission\n\n"
+        "# Investigative Mission\n\n"
         "Defensive cybersecurity research focused on cyber-enabled "
         "biosecurity investigations, protected research infrastructure, "
         "digital evidence management, forensic reconstruction, and "
@@ -850,7 +909,10 @@ def build_report(
     history: list[dict],
 ) -> str:
     sections = [
-        build_overview_section(),
+        build_overview_section(
+            case,
+            operation,
+        ),
         build_campaign_dashboard(operation),
         build_active_investigation(case),
         build_evidence_dashboard_section(case),
