@@ -31,12 +31,16 @@ WHITE = (230, 233, 235, 255)
 TEXT = (176, 182, 187, 255)
 MUTED = (103, 110, 116, 255)
 DIM = (70, 76, 81, 255)
+
 RED = (231, 51, 47, 255)
 RED_DIM = (132, 35, 34, 255)
-RED_GLOW = (255, 76, 70, 120)
-BLUE = (68, 125, 205, 255)
+RED_GLOW = (255, 76, 70, 110)
+
+BLUE = (72, 122, 210, 255)
+BLUE_DIM = (48, 88, 150, 255)
+
 DARK = (3, 7, 9, 244)
-DARK_SOFT = (3, 7, 9, 218)
+DARK_SOFT = (3, 7, 9, 220)
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -175,6 +179,15 @@ def text_width(
     return box[2] - box[0]
 
 
+def text_height(
+    draw: ImageDraw.ImageDraw,
+    rendered: str,
+    font: ImageFont.ImageFont,
+) -> int:
+    box = draw.textbbox((0, 0), rendered, font=font)
+    return box[3] - box[1]
+
+
 def ellipsize(
     draw: ImageDraw.ImageDraw,
     rendered: str,
@@ -225,6 +238,16 @@ def wrap_text(
     return lines
 
 
+def clear_text_line(
+    draw: ImageDraw.ImageDraw,
+    image_width: int,
+    image_height: int,
+    box: tuple[int, int, int, int],
+    fill: tuple[int, int, int, int] = DARK,
+) -> None:
+    draw.rectangle(scaled_box(box, image_width, image_height), fill=fill)
+
+
 def threat_level(score: int) -> str:
     if score >= 85:
         return "CRITICAL"
@@ -249,15 +272,16 @@ def access_level(score: int, severity: str, priority: str) -> int:
 def stage_index(status: str, phase: str) -> int:
     combined = f"{status} {phase}".lower()
 
-    # Check late-stage terms first so "operational recovery" does not get
-    # mistaken for the word "review".
     if any(word in combined for word in ("contain", "recover", "recovery", "close")):
         return 4
     if any(word in combined for word in ("assess", "analysis", "monitor")):
         return 3
     if any(word in combined for word in ("valid", "forensic", "investigation")):
         return 2
-    if any(word in combined for word in ("evidence", "collect", "correlation", "field coordination")):
+    if any(
+        word in combined
+        for word in ("evidence", "collect", "correlation", "field coordination")
+    ):
         return 1
     if any(word in combined for word in ("scan", "open", "detection", "intake")):
         return 0
@@ -431,23 +455,19 @@ def cover_dynamic_regions(
     image_height: int,
 ) -> None:
     regions = [
-        ((1225, 8, 1632, 37), DARK),          # access level and node
-        ((205, 315, 343, 570), DARK),         # left values
-        ((561, 210, 710, 405), DARK),         # center-left values
-        ((928, 210, 1108, 405), DARK),        # center-right values
-        ((1281, 104, 1405, 245), DARK),       # evidence values
-        ((1244, 332, 1360, 545), DARK),       # overview values
-        ((492, 452, 539, 489), DARK_SOFT),    # arrow 1
-        ((646, 452, 694, 489), DARK_SOFT),    # arrow 2
-        ((798, 452, 847, 489), DARK_SOFT),    # arrow 3
-        ((946, 452, 1002, 489), DARK_SOFT),   # arrow 4
-        ((992, 425, 1122, 552), DARK_SOFT),   # neutralize final stage
-        ((45, 650, 400, 754), DARK_SOFT),     # case bars
-        ((686, 638, 759, 762), DARK),         # system status values
-        ((455, 780, 762, 818), DARK_SOFT),    # system waveform
-        ((806, 638, 1185, 828), DARK_SOFT),   # threat monitor content
-        ((1225, 638, 1600, 814), DARK),       # operational brief body
-        ((1392, 842, 1625, 883), DARK),       # single footer timestamp
+        ((1220, 8, 1650, 37), DARK),          # top-right level / node
+        ((205, 315, 343, 573), DARK),         # left panel values
+        ((560, 209, 712, 408), DARK),         # center-left values
+        ((926, 209, 1112, 408), DARK),        # center-right values
+        ((1274, 104, 1414, 229), DARK),       # evidence package values
+        ((1238, 331, 1366, 548), DARK),       # case overview values
+        ((458, 428, 1118, 558), DARK_SOFT),   # procedure arrows + legend
+        ((70, 612, 390, 716), DARK_SOFT),     # active case feed plotting area
+        ((680, 637, 772, 816), DARK),         # system status right values
+        ((456, 786, 760, 816), DARK_SOFT),    # system waveform
+        ((804, 638, 1188, 829), DARK_SOFT),   # threat monitor dynamic area
+        ((1225, 637, 1600, 816), DARK),       # operational brief
+        ((1400, 842, 1626, 883), DARK),       # single footer time
     ]
 
     for box, fill in regions:
@@ -461,10 +481,8 @@ def draw_top_access(
     data: dict[str, Any],
 ) -> None:
     font = scaled_font(image_width, image_height, 13, True)
-    rendered = (
-        f"LEVEL {data['access_level']} • CASE ACCESS  |  NODE: {data['node']}"
-    )
-    right_x, y = scaled_point((1625, 14), image_width, image_height)
+    rendered = f"LEVEL {data['access_level']} • CASE ACCESS  |  NODE: {data['node']}"
+    right_x, y = scaled_point((1628, 14), image_width, image_height)
     draw.text((right_x, y), rendered, font=font, fill=RED, anchor="ra")
 
 
@@ -555,7 +573,12 @@ def draw_center_details(
         lines = wrap_text(draw, rendered, compact_font, left_max, 2)
         for line_index, line in enumerate(lines):
             draw.text(
-                (left_x, y + line_index * scaled_point((0, 17), image_width, image_height)[1]),
+                (
+                    left_x,
+                    y
+                    + line_index
+                    * scaled_point((0, 17), image_width, image_height)[1],
+                ),
                 line,
                 font=compact_font,
                 fill=color,
@@ -569,7 +592,7 @@ def draw_center_details(
         (data["lead"], 262, WHITE),
         (f"{data['evidence']} Records", 302, WHITE),
         (str(data["integrations"]), 342, WHITE),
-        (data["updated_date"], 380, TEXT),
+        (data["updated_compact"], 380, TEXT),
     ]
 
     for rendered, y_ref, color in right_rows:
@@ -588,13 +611,43 @@ def draw_arrow(
     end: tuple[int, int],
     color: tuple[int, int, int, int],
     width: int,
+    glow: bool = False,
 ) -> None:
     x1, y1 = start
     x2, y2 = end
+
+    if glow:
+        glow_width = width + 3
+        draw.line((x1, y1, x2 - glow_width * 2, y2), fill=RED_GLOW, width=glow_width)
+        head = max(8, glow_width * 3)
+        draw.line((x2 - head, y2 - head, x2, y2), fill=RED_GLOW, width=glow_width)
+        draw.line((x2 - head, y2 + head, x2, y2), fill=RED_GLOW, width=glow_width)
+
     draw.line((x1, y1, x2 - width * 2, y2), fill=color, width=width)
     head = max(6, width * 3)
     draw.line((x2 - head, y2 - head, x2, y2), fill=color, width=width)
     draw.line((x2 - head, y2 + head, x2, y2), fill=color, width=width)
+
+
+def draw_status_legend(
+    draw: ImageDraw.ImageDraw,
+    image_width: int,
+    image_height: int,
+) -> None:
+    font = scaled_font(image_width, image_height, 11, True)
+    items = [
+        ("COMPLETED", BLUE, (585, 528)),
+        ("CURRENT", RED, (746, 528)),
+        ("PENDING", DIM, (904, 528)),
+    ]
+
+    line_len = max(24, scaled_point((38, 0), image_width, image_height)[0])
+    line_y_offset = scaled_point((0, 7), image_width, image_height)[1]
+
+    for label, color, point_ref in items:
+        x, y = scaled_point(point_ref, image_width, image_height)
+        draw.line((x - line_len, y + line_y_offset, x - 8, y + line_y_offset), fill=color, width=3 if label == "CURRENT" else 2)
+        draw.text((x, y), label, font=font, fill=color)
 
 
 def draw_procedure_progress(
@@ -613,7 +666,6 @@ def draw_procedure_progress(
 
     stage = stage_index(data["status"], data["phase"])
     active_arrow = 0 if stage == 0 else stage - 1
-    pulse = 0.55 + 0.45 * math.sin(frame_index * 0.65)
     line_width = max(2, round(image_width / 760))
 
     for index, (start_ref, end_ref) in enumerate(arrows_reference):
@@ -621,34 +673,22 @@ def draw_procedure_progress(
         end = scaled_point(end_ref, image_width, image_height)
 
         if index < active_arrow:
-            color = RED_DIM
+            color = BLUE
+            draw_arrow(draw, start, end, color, line_width)
         elif index == active_arrow:
-            color = (
+            pulse = 0.55 + 0.45 * math.sin(frame_index * 0.65)
+            current_width = max(line_width + 2, round(line_width * 1.5))
+            current_color = (
                 231,
-                round(52 + 30 * pulse),
-                round(48 + 28 * pulse),
+                round(42 + 18 * pulse),
+                round(42 + 18 * pulse),
                 255,
             )
+            draw_arrow(draw, start, end, current_color, current_width, glow=True)
         else:
-            color = DIM
+            draw_arrow(draw, start, end, DIM, line_width)
 
-        draw_arrow(draw, start, end, color, line_width)
-
-    # The source artwork had the last icon and label permanently red.
-    # Rebuild that single stage in neutral tones; the arrow now carries state.
-    x1, y1, x2, y2 = scaled_box((1009, 438, 1090, 508), image_width, image_height)
-    draw.rounded_rectangle((x1, y1, x2, y2), radius=5, outline=DIM, width=2)
-
-    cx, cy = scaled_point((1049, 472), image_width, image_height)
-    radius = scaled_point((22, 0), image_width, image_height)[0]
-    draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), outline=TEXT, width=2)
-    draw.ellipse((cx - 5, cy - 5, cx + 5, cy + 5), outline=TEXT, width=2)
-    draw.line((cx - radius - 6, cy, cx + radius + 6, cy), fill=TEXT, width=2)
-    draw.line((cx, cy - radius - 6, cx, cy + radius + 6), fill=TEXT, width=2)
-
-    label_font = scaled_font(image_width, image_height, 12, True)
-    label_x, label_y = scaled_point((1049, 519), image_width, image_height)
-    draw.text((label_x, label_y), "PROBLEM REVIEW", font=label_font, fill=TEXT, anchor="ma")
+    draw_status_legend(draw, image_width, image_height)
 
 
 def draw_evidence_package(
@@ -659,16 +699,25 @@ def draw_evidence_package(
 ) -> None:
     font = scaled_font(image_width, image_height, 11, True)
     x = scaled_point((1284, 0), image_width, image_height)[0]
-    max_width = scaled_point((1400, 0), image_width, image_height)[0] - x
+    max_width = scaled_point((1410, 0), image_width, image_height)[0] - x
 
     values = [
         (data["case_id"], 115),
         (f"{data['evidence']} RECORDS", 151),
         (str(data["integrations"]), 187),
-        (data["updated_date"], 220),
+        (data["updated_compact"], 220),
     ]
 
+    row_height = text_height(draw, "A", font) + 6
+
     for rendered, y_ref in values:
+        clear_text_line(
+            draw,
+            image_width,
+            image_height,
+            (1278, y_ref - 3, 1416, y_ref + 15),
+            DARK,
+        )
         _, y = scaled_point((0, y_ref), image_width, image_height)
         draw.text(
             (x, y),
@@ -698,25 +747,35 @@ def draw_case_overview(
 ) -> None:
     font = scaled_font(image_width, image_height, 10, True)
     x = scaled_point((1246, 0), image_width, image_height)[0]
-    max_width = scaled_point((1357, 0), image_width, image_height)[0] - x
+    max_width = scaled_point((1360, 0), image_width, image_height)[0] - x
+    line_step = scaled_point((0, 15), image_width, image_height)[1]
 
-    values = [
-        (data["classification"], 343, WHITE),
-        (data["threat"], 382, WHITE),
-        (data["status"].title(), 421, RED),
-        (data["severity"].title(), 458, WHITE),
-        (data["date_opened"], 494, WHITE),
-        (data["priority"].title(), 531, RED),
+    rows = [
+        (data["classification"], 343, WHITE, 2),
+        (data["threat"], 385, WHITE, 2),
+        (data["status"].title(), 424, RED, 1),
+        (data["severity"].title(), 461, WHITE, 1),
+        (data["date_opened"], 497, WHITE, 1),
+        (data["priority"].title(), 534, RED, 1),
     ]
 
-    for rendered, y_ref, color in values:
-        _, y = scaled_point((0, y_ref), image_width, image_height)
-        draw.text(
-            (x, y),
-            ellipsize(draw, rendered, font, max_width),
-            font=font,
-            fill=color,
+    for rendered, y_ref, color, max_lines in rows:
+        clear_text_line(
+            draw,
+            image_width,
+            image_height,
+            (1242, y_ref - 3, 1362, y_ref + 28),
+            DARK,
         )
+        _, y = scaled_point((0, y_ref), image_width, image_height)
+        lines = wrap_text(draw, rendered, font, max_width, max_lines)
+        for index, line in enumerate(lines):
+            draw.text(
+                (x, y + index * line_step),
+                line,
+                font=font,
+                fill=color,
+            )
 
 
 def draw_file_network_motion(
@@ -758,7 +817,7 @@ def draw_case_feed(
     data: dict[str, Any],
     frame_index: int,
 ) -> None:
-    x1, y1, x2, y2 = scaled_box((45, 651, 400, 753), image_width, image_height)
+    x1, y1, x2, y2 = scaled_box((78, 618, 386, 713), image_width, image_height)
     seed = sum(ord(character) for character in data["case_id"])
     count = 24
     gap = max(2, scaled_point((5, 0), image_width, image_height)[0])
@@ -778,6 +837,7 @@ def draw_case_feed(
         )
         level = max(0.08, min(0.98, level))
         bar_height = max(4, round(usable_height * level))
+
         x = x1 + index * (bar_width + gap)
         color = RED if index >= count - 2 else (WHITE if index % 4 == 0 else TEXT)
         draw.rectangle((x, y2 - bar_height, x + bar_width, y2), fill=color)
@@ -814,7 +874,9 @@ def draw_system_status(
         ratio = index / 41
         x_point = x1 + ratio * (x2 - x1)
         rng = random.Random(seed + index * 29)
-        offset = 5 * math.sin(frame_index * 0.33 + index * 0.52 + rng.uniform(0, math.tau))
+        offset = 5 * math.sin(
+            frame_index * 0.33 + index * 0.52 + rng.uniform(0, math.tau)
+        )
         y_point = (y1 + y2) / 2 + offset
         points.append((x_point, y_point))
 
@@ -861,8 +923,12 @@ def draw_threat_monitor(
         x_point = x1 + ratio * (x2 - x1)
         y_center = (y1 + y2) / 2
         offset = 0.0
-        offset += 13 * math.sin(frame_index * 0.48 + index * 0.43 + rng.uniform(0, math.tau))
-        offset += 7 * math.sin(frame_index * 0.21 + index * 0.17 + rng.uniform(0, math.tau))
+        offset += 13 * math.sin(
+            frame_index * 0.48 + index * 0.43 + rng.uniform(0, math.tau)
+        )
+        offset += 7 * math.sin(
+            frame_index * 0.21 + index * 0.17 + rng.uniform(0, math.tau)
+        )
         y_point = max(y1 + 4, min(y2 - 4, y_center + offset))
         points.append((x_point, y_point))
 
@@ -872,7 +938,10 @@ def draw_threat_monitor(
         f"• {data['classification']}",
         f"• {data['threat']}",
     ]
-    max_width = scaled_point((1178, 0), image_width, image_height)[0] - scaled_point((812, 0), image_width, image_height)[0]
+    max_width = (
+        scaled_point((1178, 0), image_width, image_height)[0]
+        - scaled_point((812, 0), image_width, image_height)[0]
+    )
 
     for rendered, y_ref in zip(summary_lines, [776, 803]):
         draw.text(
@@ -897,7 +966,11 @@ def draw_operational_brief(
     entries = [
         (data["assessment"], 646, 2),
         (f"Phase: {data['phase']}", 697, 1),
-        (f"Priority review: {data['severity'].title()} / {data['priority'].title()}", 733, 1),
+        (
+            f"Priority review: {data['severity'].title()} / {data['priority'].title()}",
+            733,
+            1,
+        ),
         (f"Next action: {data['next_action']}", 769, 2),
     ]
 
