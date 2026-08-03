@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3583
+BID-2026-5190
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Cyber-Biothreat Intelligence Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Research Storage | Unauthorized access to protected genomic repository |
-| PowerShell | Encoded administrative command execution detected |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| System Log | Unexpected privilege escalation recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,13 +28,13 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-136
+12
 
 Indicators Reviewed:
-29
+17
 
 Risk Score:
-68
+26
 
 Confidence:
 90%
@@ -43,8 +43,8 @@ Confidence:
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Bravo
 
 Current Status:
 
-Intelligence Analysis
+Containment

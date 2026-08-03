@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Black Helix
+Genome Phantom
 
 ---
 
@@ -16,12 +16,12 @@ Multiple Regions
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
@@ -31,19 +31,19 @@ Nation-State Level
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Long-Term Network Foothold
-- Insider Access Abuse
-- Encrypted Data Staging
+- Exposed Remote Service
+- Supply Chain Compromise
 - Privilege Escalation
+- Insider Access Abuse
 - Credential Abuse
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Bravo
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Cyber-Biothreat Intelligence Review
 
 ---
 

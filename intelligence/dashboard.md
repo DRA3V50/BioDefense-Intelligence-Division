@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3583 |
+| Case ID | BID-2026-5190 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Biocontainment System Tampering |
-| Severity | HIGH |
-| Status | Intelligence Analysis |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Medical Device Communications Interference |
+| Severity | LOW |
+| Status | Containment |
 | Phase | Operational Recovery |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Research Data Repository |
-| Device | Clinical Data Server |
-| Vendor | VMware |
-| Network Zone | Biosecurity Segment |
+| Device | Genome Analysis Workstation |
+| Vendor | Microsoft |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 68 |
+| Risk Score | 26 |
 | Confidence | 90% |
-| Evidence | 136 |
-| Indicators | 29 |
-| Affected Assets | 27 |
+| Evidence | 12 |
+| Indicators | 17 |
+| Affected Assets | 5 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.

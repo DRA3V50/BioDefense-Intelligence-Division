@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3583
+BID-2026-5190
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Biocontainment System Tampering
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Containment
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Research Data Repository
 
 Device:
-Clinical Data Server
+Genome Analysis Workstation
 
 Vendor:
-VMware
+Microsoft
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-82
+83
 
 Evidence Collected:
-136
+12
 
 Indicators Identified:
-29
+17
 
 Affected Assets:
-27
+5
 
 Confidence:
 90%
 
 Risk Score:
-68
+26
 
 ---
 

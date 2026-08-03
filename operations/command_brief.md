@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-03 20:47 UTC
+**Generated:** 2026-08-03 21:00 UTC
 
 ---
 
@@ -12,19 +12,19 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3583
+**Case ID:** BID-2026-5190
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Cyber-Biothreat Intelligence Review
 
-**Severity:** HIGH
+**Severity:** LOW
 
-**Threat Family:** Biocontainment System Tampering
+**Threat Family:** Medical Device Communications Interference
 
 **Confidence:** 90%
 
@@ -32,27 +32,27 @@
 
 ## Investigation Summary
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **136**
+Evidence Collected: **12**
 
-Indicators: **29**
+Indicators: **17**
 
-Priority: **HIGH**
+Priority: **ROUTINE**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Analyst Team Bravo**
 
 Initial Access:
-**Compromised Credentials**
+**Exposed Remote Service**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**82**
+**83**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**91826**
+**91838**
 
 Total Indicators:
-**61614**
+**61631**
 
 ---
 
 ## Operational Highlights
 
-- 136 evidence items are associated with the active investigation.
-- 29 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
+- 12 evidence items are associated with the active investigation.
+- 17 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
 - Analyst confidence is **90%**.
-- Current investigation priority is **HIGH**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

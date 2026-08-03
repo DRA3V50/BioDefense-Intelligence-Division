@@ -132,9 +132,9 @@
             "name": "Medical Device Communications Interference",
             "first_seen": "2026-08-03",
             "last_seen": "2026-08-03",
-            "cases": 1,
+            "cases": 2,
             "severity": "LOW",
-            "confidence": 85
+            "confidence": 90
         },
         {
             "name": "Clinical Research Data Manipulation",
