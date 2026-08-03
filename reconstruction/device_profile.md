@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-7175
+BID-2026-6091
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Protected Research Systems Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Evidence Repository Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
-Laboratory Control Network
+Genome Sequencing Environment
 
 Device:
-Genome Analysis Workstation
+Access Control Server
 
 Vendor:
-Red Hat
+Fortinet
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
-Biosecurity Segment
+Secure Laboratory
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
 ELEVATED
 
 Confidence:
-91%
+85%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

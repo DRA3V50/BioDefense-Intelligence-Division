@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-03 18:18 UTC
+**Generated:** 2026-08-03 19:47 UTC
 
 ---
 
@@ -18,29 +18,29 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-7175
+**Case ID:** BID-2026-6091
 
-**Classification:** Research Data Integrity Investigation
+**Classification:** Protected Research Systems Investigation
 
 **Severity:** MODERATE
 
-**Threat Family:** Biocontainment System Tampering
+**Threat Family:** Evidence Repository Manipulation
 
-**Confidence:** 91%
+**Confidence:** 85%
 
 ---
 
 ## Investigation Summary
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **41**
+Evidence Collected: **84**
 
-Indicators: **24**
+Indicators: **35**
 
 Priority: **ELEVATED**
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **National Response Cell**
 
 Initial Access:
-**Exposed Remote Service**
+**Insider Misuse**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**79**
+**80**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**91589**
+**91673**
 
 Total Indicators:
-**61540**
+**61575**
 
 ---
 
 ## Operational Highlights
 
-- 41 evidence items are associated with the active investigation.
-- 24 indicators are currently linked to the case.
+- 84 evidence items are associated with the active investigation.
+- 35 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **91%**.
+- Analyst confidence is **85%**.
 - Current investigation priority is **ELEVATED**.
 
 ---

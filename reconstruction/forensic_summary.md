@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7175 |
+| Case ID | BID-2026-6091 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Data Integrity Investigation |
-| Threat Family | Biocontainment System Tampering |
+| Classification | Protected Research Systems Investigation |
+| Threat Family | Evidence Repository Manipulation |
 | Severity | MODERATE |
-| Status | Open |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Genome Analysis Workstation |
-| Vendor | Red Hat |
-| Security Zone | Biosecurity Segment |
+| Platform | Genome Sequencing Environment |
+| Device | Access Control Server |
+| Vendor | Fortinet |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 46 |
-| Confidence | 91% |
-| Evidence Collected | 41 |
-| Indicators Identified | 24 |
-| Affected Assets | 15 |
+| Risk Score | 48 |
+| Confidence | 85% |
+| Evidence Collected | 84 |
+| Indicators Identified | 35 |
+| Affected Assets | 14 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Containment**
 
 Priority:
 

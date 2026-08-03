@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Evidence Repository Manipulation
 
 ---
 
 ## Primary Alias
-Black Helix
+Dark Sequence
 
 ---
 
 ## Attribution
-Multiple Regions
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-91%
+85%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
+- Insider Misuse
+- Insider Access Abuse
+- Laboratory Network Reconnaissance
 - Covert Remote Access Tooling
-- Lateral Movement
-- Privilege Escalation
+- Research Data Exfiltration
 - Biosecurity System Tampering
-- Command and Control
 
 ---
 
 ## Reviewing Analyst
 National Response Cell
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Data Integrity Investigation
+Protected Research Systems Investigation
 
 ---
 

@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7175
+BID-2026-6091
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Protected Research Systems Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Evidence Repository Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Genome Sequencing Environment
 
 Device:
-Genome Analysis Workstation
+Access Control Server
 
 Vendor:
-Red Hat
+Fortinet
 
 Security Zone:
-Biosecurity Segment
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-79
+80
 
 Evidence Collected:
-41
+84
 
 Indicators Identified:
-24
+35
 
 Affected Assets:
-15
+14
 
 Confidence:
-91%
+85%
 
 Risk Score:
-46
+48
 
 ---
 

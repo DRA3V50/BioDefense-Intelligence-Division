@@ -4,16 +4,16 @@
 ## 2026-08-03
 
 ### Case Opened
-Case ID: BID-2026-7175
+Case ID: BID-2026-6091
 
 ### Classification
-Research Data Integrity Investigation
+Protected Research Systems Investigation
 
 ### Initial Assessment
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
-Open
+Containment
 
 ### Severity
 MODERATE

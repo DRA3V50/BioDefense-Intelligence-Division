@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7175
+BID-2026-6091
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Protected Research Systems Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
 | Authentication | Privileged account authenticated outside approved maintenance window |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -28,16 +28,16 @@ Research Data Integrity Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-41
+84
 
 Indicators Reviewed:
-24
+35
 
 Risk Score:
-46
+48
 
 Confidence:
-91%
+85%
 
 ---
 
@@ -47,4 +47,4 @@ National Response Cell
 
 Current Status:
 
-Open
+Containment
