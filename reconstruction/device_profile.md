@@ -3,23 +3,23 @@
 ## Investigation
 
 Case ID:
-BID-2026-6850
+BID-2026-3408
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Medical Device Security Assessment
 
 Threat Family:
-Evidence Repository Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
 Biomedical Analysis Cluster
@@ -28,13 +28,13 @@ Device:
 Evidence Repository
 
 Vendor:
-Lenovo
+Microsoft
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Secure Laboratory
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
-87%
+83%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.

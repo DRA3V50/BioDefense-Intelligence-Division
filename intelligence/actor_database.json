@@ -151,6 +151,14 @@
             "cases": 1,
             "severity": "HIGH",
             "confidence": 87
+        },
+        {
+            "name": "Laboratory Information System Compromise",
+            "first_seen": "2026-08-03",
+            "last_seen": "2026-08-03",
+            "cases": 1,
+            "severity": "LOW",
+            "confidence": 83
         }
     ]
 }

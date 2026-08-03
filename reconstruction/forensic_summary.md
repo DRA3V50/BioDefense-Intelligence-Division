@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6850 |
+| Case ID | BID-2026-3408 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Evidence Repository Manipulation |
-| Severity | HIGH |
-| Status | Containment |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Laboratory Information System Compromise |
+| Severity | LOW |
+| Status | Field Coordination |
 
 ---
 
@@ -19,8 +19,8 @@
 |----------|-------|
 | Platform | Biomedical Analysis Cluster |
 | Device | Evidence Repository |
-| Vendor | Lenovo |
-| Security Zone | Secure Laboratory |
+| Vendor | Microsoft |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 84 |
-| Confidence | 87% |
-| Evidence Collected | 97 |
-| Indicators Identified | 53 |
-| Affected Assets | 40 |
+| Risk Score | 30 |
+| Confidence | 83% |
+| Evidence Collected | 54 |
+| Indicators Identified | 15 |
+| Affected Assets | 10 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Joint Cyber Investigation Unit**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Field Coordination**
 
 Priority:
 
-**HIGH**
+**ROUTINE**
 
 Recommended Action:
 

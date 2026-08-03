@@ -1,47 +1,47 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Evidence Repository Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Black Helix
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Advanced
+Moderate
 
 ---
 
 ## Confidence
-87%
+83%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Physical Access
-- Biosecurity System Tampering
+- Supply Chain Compromise
+- Research Data Exfiltration
 - Covert Remote Access Tooling
-- Long-Term Network Foothold
-- Credential Abuse
-- Lateral Movement
+- Command and Control
+- Insider Access Abuse
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
 **Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Medical Device Security Assessment
 
 ---
 
