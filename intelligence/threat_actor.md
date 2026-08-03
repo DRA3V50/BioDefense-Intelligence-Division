@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Access Control Record Manipulation
+Biocontainment System Tampering
 
 ---
 
 ## Primary Alias
-Project Chimera
+Black Helix
 
 ---
 
 ## Attribution
-Unattributed
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Advanced
+Moderate
 
 ---
 
 ## Confidence
-86%
+91%
 
 ---
 
 ## Observed Techniques
-- Insider Misuse
+- Exposed Remote Service
+- Covert Remote Access Tooling
+- Lateral Movement
+- Privilege Escalation
 - Biosecurity System Tampering
-- Research Data Exfiltration
-- Concealed Internal Movement
-- Supply Chain Compromise
-- Insider Access Abuse
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
 National Response Cell
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Research Data Integrity Investigation
 
 ---
 

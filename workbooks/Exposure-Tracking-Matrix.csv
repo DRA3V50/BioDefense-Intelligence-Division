@@ -103,3 +103,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-08-03,BID-2026-6850,Coordinated Biomedical Systems Intrusion,Cyber-Biothreat Intelligence Review,HIGH,HIGH,84,87,97,53,40,Biomedical Analysis Cluster,Lenovo,Secure Laboratory,BioDefense Task Force,Containment
 2026-08-03,BID-2026-3408,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,LOW,ROUTINE,30,83,54,15,10,Biomedical Analysis Cluster,Microsoft,Containment Network,Joint Cyber Investigation Unit,Field Coordination
 2026-08-03,BID-2026-7106,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,HIGH,HIGH,66,86,140,44,16,Protected Research Network,HPE,Federal Operations,National Response Cell,Evidence Collection
+2026-08-03,BID-2026-7175,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,MODERATE,ELEVATED,46,91,41,24,15,Laboratory Control Network,Red Hat,Biosecurity Segment,National Response Cell,Open

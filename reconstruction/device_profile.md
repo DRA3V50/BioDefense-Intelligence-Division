@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-7106
+BID-2026-7175
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Research Data Integrity Investigation
 
 Threat Family:
-Access Control Record Manipulation
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
-Protected Research Network
+Laboratory Control Network
 
 Device:
-Research Database Server
+Genome Analysis Workstation
 
 Vendor:
-HPE
+Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-86%
+91%
 
 ---
 

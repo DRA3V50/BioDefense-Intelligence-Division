@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7106
+Case ID: BID-2026-7175
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Medical Device Security Assessment
+Classification: Research Data Integrity Investigation
 
-Threat Family: Access Control Record Manipulation
+Threat Family: Biocontainment System Tampering
 
-Current Status: Evidence Collection
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ELEVATED
 
 Risk Score:
-66
+46
 
 Confidence:
-86%
+91%
 
 Affected Assets:
-16
+15
 
 Evidence Collected:
-140
+41
 
 Indicators Recorded:
-44
+24
 
 ---
 

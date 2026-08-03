@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7106
+BID-2026-7175
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Research Data Integrity Investigation
 
 Threat Family:
-Access Control Record Manipulation
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Protected Research Network
+Laboratory Control Network
 
 Device:
-Research Database Server
+Genome Analysis Workstation
 
 Vendor:
-HPE
+Red Hat
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-78
+79
 
 Evidence Collected:
-140
+41
 
 Indicators Identified:
-44
+24
 
 Affected Assets:
-16
+15
 
 Confidence:
-86%
+91%
 
 Risk Score:
-66
+46
 
 ---
 

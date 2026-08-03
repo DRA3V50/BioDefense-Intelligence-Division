@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-7106
+BID-2026-7175
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Research Data Integrity Investigation
 
 Threat Family:
-Access Control Record Manipulation
+Biocontainment System Tampering
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-16
+15
 
 Evidence Collected:
-140
+41
 
 Indicators Identified:
-44
+24
 
 Analyst Confidence:
-86%
+91%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Open
 
 Recommended Action:
 

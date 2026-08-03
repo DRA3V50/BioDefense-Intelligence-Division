@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-7106
+BID-2026-7175
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Research Data Integrity Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Identity | Credential reuse detected across isolated research segments |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Evidence | Acquired forensic image verified using SHA-256 |
 
@@ -28,16 +28,16 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-140
+41
 
 Indicators Reviewed:
-44
+24
 
 Risk Score:
-66
+46
 
 Confidence:
-86%
+91%
 
 ---
 
@@ -47,4 +47,4 @@ National Response Cell
 
 Current Status:
 
-Evidence Collection
+Open

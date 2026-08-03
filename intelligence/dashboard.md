@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-7106 |
+| Case ID | BID-2026-7175 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Access Control Record Manipulation |
-| Severity | HIGH |
-| Status | Evidence Collection |
+| Classification | Research Data Integrity Investigation |
+| Threat Family | Biocontainment System Tampering |
+| Severity | MODERATE |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Protected Research Network |
-| Device | Research Database Server |
-| Vendor | HPE |
-| Network Zone | Federal Operations |
+| Platform | Laboratory Control Network |
+| Device | Genome Analysis Workstation |
+| Vendor | Red Hat |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 66 |
-| Confidence | 86% |
-| Evidence | 140 |
-| Indicators | 44 |
-| Affected Assets | 16 |
+| Risk Score | 46 |
+| Confidence | 91% |
+| Evidence | 41 |
+| Indicators | 24 |
+| Affected Assets | 15 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
