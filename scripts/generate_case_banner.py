@@ -1,1091 +1,629 @@
 #!/usr/bin/env python3
 
-"""
-Generate the animated README banner for BioDefense-Intelligence-Division.
-
-This script keeps the approved Resident Evil-inspired investigative
-interface as the permanent visual base and updates its case information
-whenever the Daily Investigation workflow runs.
-
-Reads:
-    data/current_case.json
-    operations/active_operation.json
-    reports/bioterror_threat_score_csharp.json
-    assets/biodefense-dashboard-base.png
-
-Writes:
-    assets/biodefense-case-scan.gif
-"""
-
-from __future__ import annotations
-
 import json
 import math
+import random
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont
 
 
-CURRENT_CASE_PATH = Path("data/current_case.json")
-ACTIVE_OPERATION_PATH = Path("operations/active_operation.json")
-THREAT_SCORE_PATH = Path(
-    "reports/bioterror_threat_score_csharp.json"
-)
+CURRENT_CASE_FILE = Path("data/current_case.json")
+ACTIVE_OPERATION_FILE = Path("operations/active_operation.json")
+BASE_IMAGE_FILE = Path("assets/biodefense-dashboard-base.png")
+OUTPUT_GIF_FILE = Path("assets/biodefense-case-scan.gif")
 
-ASSETS_DIRECTORY = Path("assets")
-BASE_IMAGE_PATH = (
-    ASSETS_DIRECTORY
-    / "biodefense-dashboard-base.png"
-)
-OUTPUT_GIF_PATH = (
-    ASSETS_DIRECTORY
-    / "biodefense-case-scan.gif"
-)
-
+WIDTH = 2048
+HEIGHT = 620
 FRAME_COUNT = 16
-FRAME_DURATION_MS = 115
+FRAME_DURATION_MS = 120
 
-TEXT = (201, 219, 220, 255)
-TEXT_BRIGHT = (232, 240, 241, 255)
-TEXT_DIM = (86, 121, 123, 255)
+BG = (3, 9, 12, 255)
+PANEL_FILL = (4, 14, 18, 220)
+PANEL_FILL_SOFT = (2, 10, 14, 175)
+CYAN = (22, 211, 216, 255)
+CYAN_SOFT = (18, 150, 155, 255)
+BLUE = (41, 153, 255, 255)
+RED = (255, 72, 84, 255)
+WHITE = (235, 241, 245, 255)
+MUTED = (130, 145, 160, 255)
+MUTED_2 = (90, 110, 125, 255)
+LINE = (24, 88, 92, 255)
+LINE_SOFT = (18, 54, 58, 255)
+BLACK_FADE = (0, 0, 0, 85)
 
-CYAN = (28, 164, 158, 255)
-CYAN_DARK = (15, 83, 82, 255)
-CYAN_FAINT = (28, 164, 158, 42)
 
-RED = (220, 53, 59, 255)
-
-PANEL = (3, 14, 18, 244)
-PANEL_ALT = (5, 13, 17, 246)
-DIVIDER = (17, 59, 60, 220)
-
-
-def load_json(
-    path: Path,
-    required: bool = True,
-) -> dict[str, Any]:
-    """Load a JSON object from disk."""
-
+def load_json(path: Path) -> dict:
     if not path.exists():
-        if required:
-            raise FileNotFoundError(
-                f"Required file not found: {path}"
-            )
-
-        return {}
+        raise FileNotFoundError(f"Required file not found: {path}")
 
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
 
     if not isinstance(data, dict):
-        if required:
-            raise ValueError(
-                f"Expected a JSON object in {path}"
-            )
-
-        return {}
+        raise ValueError(f"Expected JSON object in {path}")
 
     return data
 
 
-def text_value(
-    value: Any,
-    default: str = "Not available",
-) -> str:
-    """Return a readable string."""
-
+def safe_text(value, fallback="N/A") -> str:
     if value is None:
-        return default
+        return fallback
 
-    rendered = str(value).strip()
-    return rendered if rendered else default
-
-
-def integer_value(
-    value: Any,
-    default: int = 0,
-) -> int:
-    """Convert a value to an integer safely."""
-
-    try:
-        return int(float(str(value).strip()))
-    except (TypeError, ValueError):
-        return default
+    text = str(value).strip()
+    return text if text else fallback
 
 
-def deep_find(
-    data: Any,
-    keys: set[str],
-) -> Any:
-    """Recursively find the first matching key."""
+def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
+    candidates = []
 
-    normalized = {key.lower() for key in keys}
+    if bold:
+        candidates.extend(
+            [
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+                "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
+                "/Library/Fonts/Arial Bold.ttf",
+                "C:/Windows/Fonts/arialbd.ttf",
+            ]
+        )
+    else:
+        candidates.extend(
+            [
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+                "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
+                "/Library/Fonts/Arial.ttf",
+                "C:/Windows/Fonts/arial.ttf",
+            ]
+        )
 
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if str(key).lower() in normalized:
-                return value
-
-        for value in data.values():
-            found = deep_find(value, normalized)
-
-            if found is not None:
-                return found
-
-    elif isinstance(data, list):
-        for item in data:
-            found = deep_find(item, normalized)
-
-            if found is not None:
-                return found
-
-    return None
-
-
-def now_utc() -> str:
-    """Return a compact UTC timestamp."""
-
-    return datetime.now(
-        timezone.utc
-    ).strftime("%Y-%m-%d %H:%M UTC")
-
-
-def build_data(
-    case: dict[str, Any],
-    operation: dict[str, Any],
-    score_data: dict[str, Any],
-) -> dict[str, Any]:
-    """Collect the current values displayed by the banner."""
-
-    overall_score = integer_value(
-        deep_find(
-            score_data,
-            {
-                "overallScore",
-                "overall_score",
-                "score",
-            },
-        ),
-        integer_value(case.get("risk_score"), 0),
-    )
-
-    overall_level = text_value(
-        deep_find(
-            score_data,
-            {
-                "overallLevel",
-                "overall_level",
-                "level",
-                "rating",
-            },
-        ),
-        text_value(case.get("severity"), "Unknown"),
-    ).upper()
-
-    evidence_records = integer_value(
-        deep_find(
-            score_data,
-            {
-                "evidenceRecords",
-                "evidence_records",
-            },
-        ),
-        integer_value(case.get("evidence_count"), 0),
-    )
-
-    return {
-        "case_id": text_value(
-            case.get("case_id"),
-            "UNKNOWN-CASE",
-        ),
-        "classification": text_value(
-            case.get("classification"),
-        ),
-        "threat_family": text_value(
-            case.get("threat_family"),
-        ),
-        "severity": text_value(
-            case.get("severity"),
-        ).upper(),
-        "priority": text_value(
-            case.get("priority"),
-        ).upper(),
-        "lead": text_value(
-            case.get("lead_analyst"),
-        ),
-        "confidence": integer_value(
-            case.get("confidence"),
-            0,
-        ),
-        "evidence": evidence_records,
-        "indicators": integer_value(
-            case.get("ioc_count"),
-            0,
-        ),
-        "risk": integer_value(
-            case.get("risk_score"),
-            0,
-        ),
-        "score": overall_score,
-        "score_level": overall_level,
-        "campaign_id": text_value(
-            operation.get("campaign_id"),
-        ),
-        "campaign": text_value(
-            operation.get("operation"),
-        ),
-        "phase": text_value(
-            operation.get("campaign_phase"),
-        ),
-        "containment": text_value(
-            operation.get("containment_level"),
-        ),
-        "next_action": text_value(
-            operation.get(
-                "next_objective",
-                case.get(
-                    "recommended_action",
-                    "Continue evidence review.",
-                ),
-            ),
-        ),
-        "updated": now_utc(),
-    }
-
-
-def font(
-    size: int,
-    bold: bool = False,
-) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    """Load a monospaced interface font."""
-
-    candidates = [
-        (
-            "/usr/share/fonts/truetype/dejavu/"
-            + (
-                "DejaVuSansMono-Bold.ttf"
-                if bold
-                else "DejaVuSansMono.ttf"
-            )
-        ),
-        (
-            "/usr/share/fonts/truetype/liberation2/"
-            + (
-                "LiberationMono-Bold.ttf"
-                if bold
-                else "LiberationMono-Regular.ttf"
-            )
-        ),
-        (
-            "C:/Windows/Fonts/"
-            + (
-                "consolab.ttf"
-                if bold
-                else "consola.ttf"
-            )
-        ),
+    mono_candidates = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+        "/usr/share/fonts/truetype/liberation2/LiberationMono-Regular.ttf",
+        "C:/Windows/Fonts/consola.ttf",
     ]
 
-    for candidate in candidates:
+    for path in candidates + mono_candidates:
         try:
-            return ImageFont.truetype(
-                candidate,
-                size=size,
-            )
+            return ImageFont.truetype(path, size=size)
         except OSError:
             continue
 
     return ImageFont.load_default()
 
 
-HEADER_FONT = font(16, bold=True)
-LABEL_FONT = font(11)
-VALUE_FONT = font(12)
-VALUE_BOLD_FONT = font(13, bold=True)
-SMALL_FONT = font(10)
-MICRO_FONT = font(8)
+def text_width(draw: ImageDraw.ImageDraw, text: str, font) -> int:
+    box = draw.textbbox((0, 0), text, font=font)
+    return box[2] - box[0]
 
 
-def fit_font(
-    draw: ImageDraw.ImageDraw,
-    value: str,
-    maximum_width: int,
-    preferred_size: int,
-    minimum_size: int = 8,
-    bold: bool = False,
-):
-    """Return the largest font that fits the width."""
+def ellipsize(draw: ImageDraw.ImageDraw, text: str, font, max_width: int) -> str:
+    if text_width(draw, text, font) <= max_width:
+        return text
 
-    size = preferred_size
-
-    while size >= minimum_size:
-        candidate = font(size, bold=bold)
-        box = draw.textbbox(
-            (0, 0),
-            value,
-            font=candidate,
-        )
-
-        if box[2] - box[0] <= maximum_width:
+    trimmed = text
+    while trimmed:
+        candidate = trimmed.rstrip() + "..."
+        if text_width(draw, candidate, font) <= max_width:
             return candidate
+        trimmed = trimmed[:-1]
 
-        size -= 1
-
-    return font(minimum_size, bold=bold)
+    return "..."
 
 
-def shorten(
-    value: str,
-    maximum_characters: int,
-) -> str:
-    """Shorten long values cleanly."""
+def wrap_text(
+    draw: ImageDraw.ImageDraw,
+    text: str,
+    font,
+    max_width: int,
+    max_lines: int = 2,
+):
+    words = text.split()
+    if not words:
+        return [""]
 
-    rendered = text_value(value)
+    lines = []
+    current = words[0]
 
-    if len(rendered) <= maximum_characters:
-        return rendered
+    for word in words[1:]:
+        candidate = f"{current} {word}"
+        if text_width(draw, candidate, font) <= max_width:
+            current = candidate
+        else:
+            lines.append(current)
+            current = word
 
-    return (
-        rendered[: maximum_characters - 1].rstrip()
-        + "…"
+    lines.append(current)
+
+    if len(lines) <= max_lines:
+        return lines
+
+    lines = lines[:max_lines]
+    lines[-1] = ellipsize(draw, lines[-1], font, max_width)
+    return lines
+
+
+def draw_panel(draw: ImageDraw.ImageDraw, box, title: str, title_color=CYAN):
+    x1, y1, x2, y2 = box
+    draw.rounded_rectangle(
+        box,
+        radius=10,
+        fill=PANEL_FILL,
+        outline=LINE,
+        width=2,
+    )
+    draw.text(
+        (x1 + 18, y1 + 14),
+        title,
+        font=load_font(16, bold=True),
+        fill=title_color,
+    )
+    draw.line((x1 + 16, y1 + 42, x2 - 16, y1 + 42), fill=title_color, width=2)
+
+
+def draw_biohazard(draw: ImageDraw.ImageDraw, center, size: int, color):
+    cx, cy = center
+    r = size
+
+    draw.ellipse((cx - r, cy - r, cx + r, cy + r), outline=(0, 95, 100, 255), width=2)
+
+    inner_r = int(r * 0.18)
+    draw.ellipse(
+        (cx - inner_r, cy - inner_r, cx + inner_r, cy + inner_r),
+        outline=color,
+        width=4,
     )
 
+    lobe_r = int(r * 0.33)
+    orbit = int(r * 0.42)
 
-def load_base() -> Image.Image:
-    """Load the approved visual base."""
+    for angle_deg in (270, 30, 150):
+        angle = math.radians(angle_deg)
+        lx = cx + int(math.cos(angle) * orbit)
+        ly = cy + int(math.sin(angle) * orbit)
 
-    if not BASE_IMAGE_PATH.exists():
-        raise FileNotFoundError(
-            "Missing approved banner base: "
-            f"{BASE_IMAGE_PATH}"
+        draw.ellipse(
+            (lx - lobe_r, ly - lobe_r, lx + lobe_r, ly + lobe_r),
+            outline=color,
+            width=4,
         )
+        draw.line((cx, cy, lx, ly), fill=color, width=3)
 
-    image = Image.open(
-        BASE_IMAGE_PATH
-    ).convert("RGBA")
+    spoke_r = int(r * 0.63)
+    for angle_deg in (90, 210, 330):
+        angle = math.radians(angle_deg)
+        px = cx + int(math.cos(angle) * spoke_r)
+        py = cy + int(math.sin(angle) * spoke_r)
+        draw.line((cx, cy, px, py), fill=(0, 70, 72, 255), width=2)
 
-    if image.size != (2043, 629):
-        image = image.resize(
-            (2043, 629),
-            Image.Resampling.LANCZOS,
+
+def draw_shield(draw: ImageDraw.ImageDraw, box, color):
+    x1, y1, x2, y2 = box
+    cx = (x1 + x2) // 2
+    top = y1 + 24
+    bottom = y2 - 24
+    width = (x2 - x1) * 0.26
+
+    points = [
+        (cx, top),
+        (cx + width, top + 28),
+        (cx + width * 0.78, bottom - 40),
+        (cx, bottom),
+        (cx - width * 0.78, bottom - 40),
+        (cx - width, top + 28),
+    ]
+    draw.polygon(points, outline=color, width=4)
+
+    draw.line((cx - 18, top + 64, cx + 18, top + 64), fill=color, width=3)
+    draw.line((cx - 14, top + 90, cx + 14, top + 90), fill=color, width=3)
+    draw.line((cx - 10, top + 116, cx + 10, top + 116), fill=color, width=3)
+
+
+def draw_data_bars(draw: ImageDraw.ImageDraw, box, frame_index: int, seed: int):
+    x1, y1, x2, y2 = box
+    width = x2 - x1
+    height = y2 - y1
+
+    count = 20
+    bar_w = max(8, width // (count * 2))
+    gap = bar_w // 2
+
+    for i in range(count):
+        rng = random.Random(seed + (frame_index * 73) + (i * 97))
+        phase = (i * 0.55) + rng.random() * 1.4
+        wave = math.sin((frame_index * 0.55) + phase)
+        noise = rng.randint(-10, 14)
+
+        bar_h = int((height * 0.18) + ((wave + 1) / 2) * height * 0.52 + noise)
+        bar_h = max(10, min(height - 6, bar_h))
+
+        x = x1 + 18 + i * (bar_w + gap)
+        draw.rectangle((x, y2 - bar_h, x + bar_w, y2), fill=CYAN)
+
+
+def draw_wave_line(draw: ImageDraw.ImageDraw, box, frame_index: int, seed: int, color):
+    x1, y1, x2, y2 = box
+    width = x2 - x1
+    mid_y = y1 + (y2 - y1) // 2
+
+    points = []
+    segments = 26
+    for i in range(segments + 1):
+        ratio = i / segments
+        x = x1 + int(ratio * width)
+
+        rng = random.Random(seed + i * 43)
+        base_phase = rng.random() * 2.8
+        amplitude = 10 + rng.randint(0, 18)
+
+        y = int(
+            mid_y
+            + math.sin((frame_index * 0.6) + (i * 0.55) + base_phase) * amplitude
+            + math.cos((frame_index * 0.33) + (i * 0.25)) * 6
         )
+        points.append((x, y))
+
+    if len(points) > 1:
+        draw.line(points, fill=color, width=2)
+
+
+def current_procedure_index(case_status: str, campaign_phase: str) -> int:
+    status = case_status.lower()
+    phase = campaign_phase.lower()
+
+    if "open" in status or "detection" in phase:
+        return 0
+    if "evidence" in status or "collection" in phase:
+        return 1
+    if "field" in status or "correlation" in phase or "analysis" in status:
+        return 2
+    if "containment" in status or "containment" in phase:
+        return 3
+    if "recovery" in phase or "monitoring" in status:
+        return 4
+
+    return 2
+
+
+def draw_procedure_strip(draw: ImageDraw.ImageDraw, y: int, active_index: int):
+    steps = [
+        "COLLECTION",
+        "CORRELATION",
+        "VALIDATION",
+        "ASSESSMENT",
+        "RECOVERY REVIEW",
+    ]
+    x = 292
+
+    for index, step in enumerate(steps):
+        fill = CYAN if index == active_index else MUTED_2
+        marker = "◆" if index == active_index else "•"
+        draw.text(
+            (x, y),
+            f"{marker}  {step}",
+            font=load_font(14, bold=False),
+            fill=fill,
+        )
+        x += 260 if index < 4 else 0
+
+
+def build_background() -> Image.Image:
+    if BASE_IMAGE_FILE.exists():
+        base = Image.open(BASE_IMAGE_FILE).convert("RGBA").resize((WIDTH, HEIGHT))
+    else:
+        base = Image.new("RGBA", (WIDTH, HEIGHT), BG)
+
+    dark_layer = Image.new("RGBA", base.size, BLACK_FADE)
+    return Image.alpha_composite(base, dark_layer)
+
+
+def compose_frame(case: dict, operation: dict, frame_index: int) -> Image.Image:
+    image = build_background()
+    draw = ImageDraw.Draw(image)
+
+    title_font = load_font(90, bold=True)
+    subtitle_font = load_font(36, bold=False)
+    small_header_font = load_font(13, bold=False)
+    body_font = load_font(17, bold=False)
+    body_bold_font = load_font(17, bold=True)
+    mono_font = load_font(15, bold=False)
+    tiny_font = load_font(12, bold=False)
+
+    case_id = safe_text(case.get("case_id"))
+    classification = safe_text(case.get("classification"))
+    threat_family = safe_text(case.get("threat_family"))
+    severity = safe_text(case.get("severity"))
+    priority = safe_text(case.get("priority"))
+    confidence = safe_text(case.get("confidence"))
+    affected_assets = safe_text(case.get("affected_assets"))
+    risk_score = int(case.get("risk_score", 0))
+    evidence_count = safe_text(case.get("evidence_count", 0))
+    ioc_count = safe_text(case.get("ioc_count", 0))
+    analyst = safe_text(case.get("lead_analyst"))
+    status = safe_text(case.get("status"))
+    initial_access = safe_text(case.get("initial_access"))
+    platform = safe_text(case.get("affected_platform"))
+    vendor = safe_text(case.get("vendor"))
+    device = safe_text(case.get("device_family"))
+    zone = safe_text(case.get("network_zone"))
+    assessment = safe_text(case.get("assessment"))
+    operation_name = safe_text(operation.get("operation"))
+    campaign_id = safe_text(operation.get("campaign_id"))
+    designation = safe_text(operation.get("threat_designation", "BMSI-01"))
+    campaign_phase = safe_text(operation.get("campaign_phase", "Operational Recovery"))
+    containment_level = safe_text(operation.get("containment_level", "HIGH"))
+    next_objective = safe_text(operation.get("next_objective"))
+    updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    seed = sum(ord(ch) for ch in case_id)
+
+    # Header
+    draw.text(
+        (44, 20),
+        "BIODEFENSE INTELLIGENCE DIVISION",
+        font=small_header_font,
+        fill=CYAN,
+    )
+    draw.text(
+        (382, 20),
+        "// CASE SCAN INTERFACE v2.7.14",
+        font=small_header_font,
+        fill=MUTED,
+    )
+
+    # Left badge area
+    draw.rounded_rectangle(
+        (26, 76, 228, 532),
+        radius=10,
+        fill=PANEL_FILL_SOFT,
+        outline=LINE,
+        width=2,
+    )
+    draw.text((70, 122), "BIODEFENSE ANALYSIS", font=tiny_font, fill=CYAN)
+    draw_biohazard(draw, (126, 238), 58, CYAN)
+    draw.text((48, 360), "PORTFOLIO SIMULATION", font=load_font(16, bold=True), fill=RED)
+    draw.text((68, 392), "SYNTHETIC CASE DATA", font=load_font(13), fill=MUTED)
+
+    # Main title
+    draw.text(
+        (282, 178),
+        "BioDefense-Intelligence-Division",
+        font=title_font,
+        fill=WHITE,
+    )
+    draw.text(
+        (284, 286),
+        "Cyber-Biothreat Intelligence & Evidence Analysis",
+        font=subtitle_font,
+        fill=CYAN_SOFT,
+    )
+
+    # Case scan header line and animated scan segment
+    draw.text((280, 118), "✦  CASE SCAN", font=load_font(15, bold=True), fill=CYAN_SOFT)
+    draw.line((302, 166, 760, 166), fill=LINE, width=6)
+    sweep_start = 350 + ((frame_index * 28) % 250)
+    draw.line((sweep_start, 166, sweep_start + 85, 166), fill=CYAN, width=6)
+
+    # Main separators
+    draw.line((280, 362, 1514, 362), fill=LINE, width=2)
+    draw_procedure_strip(
+        draw,
+        400,
+        current_procedure_index(status, campaign_phase),
+    )
+
+    # Top-right evidence package
+    evidence_box = (1532, 30, 2010, 228)
+    draw_panel(draw, evidence_box, "EVIDENCE PACKAGE", title_color=WHITE)
+
+    row_label_font = load_font(15, bold=False)
+    row_value_font = load_font(17, bold=False)
+
+    rows = [
+        ("CASE ID", case_id),
+        ("EVIDENCE", f"{evidence_count} RECORDS"),
+        ("INDICATORS", f"{ioc_count}"),
+        ("UPDATED", updated),
+    ]
+    row_y = 88
+    for label, value in rows:
+        draw.text((1560, row_y), label, font=row_label_font, fill=MUTED)
+        draw.text(
+            (1670, row_y),
+            ellipsize(draw, value, row_value_font, 300),
+            font=row_value_font,
+            fill=WHITE,
+        )
+        row_y += 38
+
+    draw.text(
+        (1560, 182),
+        "SOURCE RECORD: PORTFOLIO SIMULATION",
+        font=load_font(12, bold=False),
+        fill=RED,
+    )
+
+    # Right middle case overview
+    overview_box = (1532, 248, 1756, 500)
+    draw_panel(draw, overview_box, "CASE OVERVIEW", title_color=CYAN)
+
+    overview_x = 1560
+    overview_y = 286
+    overview_fields = [
+        ("TYPE", classification),
+        ("THREAT", threat_family),
+        ("STATUS", f"{severity} / {priority}"),
+        ("ANALYST", analyst),
+        ("CONFIDENCE", f"{confidence}%"),
+    ]
+
+    for label, value in overview_fields:
+        draw.text((overview_x, overview_y), label, font=load_font(14), fill=MUTED)
+        lines = wrap_text(draw, value, load_font(15), 170, max_lines=2)
+        line_y = overview_y + 16
+        for line in lines:
+            draw.text((overview_x, line_y), line, font=load_font(15), fill=WHITE)
+            line_y += 17
+        overview_y += 44
+
+    # Right icon / switch box
+    icon_box = (1782, 248, 2010, 500)
+    draw.rounded_rectangle(
+        icon_box,
+        radius=10,
+        fill=PANEL_FILL_SOFT,
+        outline=LINE,
+        width=2,
+    )
+
+    # Alternate right-side symbol each frame cycle
+    if frame_index % 2 == 0:
+        draw_biohazard(draw, (1896, 368), 64, CYAN_SOFT)
+    else:
+        draw_shield(draw, (1836, 282, 1958, 440), CYAN_SOFT)
+
+    # Animated scan bar on far right
+    bar_top = 268 + ((frame_index * 14) % 170)
+    draw.rectangle((1978, 266, 1988, 480), fill=(8, 34, 36, 255))
+    draw.rectangle((1978, bar_top, 1988, min(bar_top + 80, 480)), fill=CYAN)
+
+    # Bottom-right operational brief
+    brief_box = (1532, 518, 2010, 604)
+    draw_panel(draw, brief_box, "OPERATIONAL BRIEF", title_color=CYAN_SOFT)
+
+    draw.text(
+        (1560, 548),
+        ellipsize(draw, operation_name, body_bold_font, 420),
+        font=body_bold_font,
+        fill=WHITE,
+    )
+    draw.text(
+        (1560, 572),
+        ellipsize(
+            draw,
+            f"{campaign_id}  •  {designation}  •  {campaign_phase}",
+            mono_font,
+            430,
+        ),
+        font=mono_font,
+        fill=MUTED,
+    )
+    objective_lines = wrap_text(draw, next_objective, load_font(14), 438, max_lines=2)
+    y = 592
+    for line in objective_lines[:1]:
+        draw.text((1560, y), line, font=load_font(14), fill=WHITE)
+
+    # Bottom left active case feed
+    feed_box = (260, 476, 646, 604)
+    draw_panel(draw, feed_box, "ACTIVE CASE FEED", title_color=CYAN)
+    draw_data_bars(draw, (280, 498, 620, 578), frame_index, seed)
+    draw.text(
+        (280, 582),
+        f"case-feed://{case_id.lower()}",
+        font=load_font(12),
+        fill=MUTED,
+    )
+
+    # Bottom center system status
+    status_box = (668, 476, 1102, 604)
+    draw_panel(draw, status_box, "SYSTEM STATUS", title_color=CYAN_SOFT)
+
+    status_lines = [
+        ("Evidence Integrity", "VERIFIED"),
+        ("Data Pipeline", "STABLE"),
+        ("Case Record", "CURRENT"),
+        ("Initial Access", initial_access),
+    ]
+    line_y = 506
+    for label, value in status_lines:
+        draw.text((690, line_y), f"• {label}:", font=load_font(15), fill=MUTED)
+        draw.text(
+            (870, line_y),
+            ellipsize(draw, value, load_font(15, bold=True), 200),
+            font=load_font(15, bold=True),
+            fill=CYAN if label != "Initial Access" else WHITE,
+        )
+        line_y += 24
+
+    # Bottom threat monitor
+    threat_box = (1124, 476, 1512, 604)
+    draw_panel(draw, threat_box, "THREAT MONITOR", title_color=RED)
+
+    threat_level = "CRITICAL" if risk_score >= 85 else "HIGH" if risk_score >= 65 else "ELEVATED" if risk_score >= 40 else "GUARDED"
+    monitor_lines = [
+        f"Threat score: {risk_score} ({threat_level})",
+        f"Containment posture: {containment_level}",
+        f"Zone: {zone}",
+    ]
+
+    monitor_y = 508
+    for line in monitor_lines:
+        draw.text((1148, monitor_y), f"• {line}", font=load_font(15), fill=WHITE if "Threat score" not in line else RED)
+        monitor_y += 24
+
+    draw_wave_line(draw, (1146, 556, 1492, 590), frame_index, seed, RED)
+
+    # Small dynamic details line
+    details_line = (
+        f"{platform} • {vendor} • {device} • "
+        f"{confidence}% confidence • {affected_assets} assets"
+    )
+    draw.text(
+        (282, 440),
+        ellipsize(draw, details_line, load_font(16), 1220),
+        font=load_font(16),
+        fill=WHITE,
+    )
+
+    # Bottom footer line
+    draw.line((34, 546, 2012, 546), fill=LINE_SOFT, width=1)
+    draw.text(
+        (58, 570),
+        "Automated case generation • evidence reconstruction • structured threat analysis",
+        font=load_font(14),
+        fill=MUTED,
+    )
+
+    # Slight pulse dot
+    pulse_radius = 7 + int(2 * math.sin(frame_index * 0.8))
+    draw.ellipse(
+        (
+            1478 - pulse_radius,
+            500 - pulse_radius,
+            1478 + pulse_radius,
+            500 + pulse_radius,
+        ),
+        fill=RED,
+        outline=WHITE,
+    )
 
     return image
 
 
-def cover_sample_content(
-    image: Image.Image,
-) -> None:
-    """
-    Hide only the sample government-style and lower-panel content while
-    preserving the approved title, textures, biohazard panel, grid, and
-    overall Resident Evil-inspired interface.
-    """
-
-    draw = ImageDraw.Draw(image, "RGBA")
-
-    regions = [
-        (17, 100, 239, 521, PANEL_ALT),
-        (1582, 24, 2039, 224, PANEL_ALT),
-        (1537, 239, 1790, 480, PANEL_ALT),
-        (270, 474, 655, 628, PANEL),
-        (657, 474, 1082, 628, PANEL),
-        (1087, 474, 1538, 628, PANEL_ALT),
-        (1543, 474, 2042, 628, PANEL),
-    ]
-
-    for x1, y1, x2, y2, fill in regions:
-        draw.rectangle(
-            (x1, y1, x2, y2),
-            fill=fill,
-        )
-
-
-def draw_portfolio_badge(
-    draw: ImageDraw.ImageDraw,
-) -> None:
-    """Replace the seal with an original portfolio emblem."""
-
-    center_x = 124
-    center_y = 238
-
-    for radius, color, width in [
-        (73, CYAN_DARK, 2),
-        (58, CYAN, 2),
-        (44, CYAN_DARK, 1),
-    ]:
-        draw.ellipse(
-            (
-                center_x - radius,
-                center_y - radius,
-                center_x + radius,
-                center_y + radius,
-            ),
-            outline=color,
-            width=width,
-        )
-
-    shield = [
-        (124, 184),
-        (157, 198),
-        (151, 246),
-        (124, 274),
-        (97, 246),
-        (91, 198),
-    ]
-
-    draw.polygon(
-        shield,
-        fill=(4, 23, 27, 220),
-        outline=CYAN,
-    )
-
-    for offset in range(-22, 23, 8):
-        y = center_y + offset
-        wave = int(
-            15 * math.sin(offset / 9)
-        )
-
-        draw.line(
-            (
-                center_x - wave,
-                y,
-                center_x + wave,
-                y,
-            ),
-            fill=CYAN,
-            width=1,
-        )
-
-    draw.text(
-        (center_x, 126),
-        "BIODEFENSE ANALYSIS",
-        font=SMALL_FONT,
-        fill=CYAN,
-        anchor="ma",
-    )
-
-    draw.text(
-        (center_x, 382),
-        "PORTFOLIO SIMULATION",
-        font=VALUE_BOLD_FONT,
-        fill=RED,
-        anchor="ma",
-    )
-
-    draw.text(
-        (center_x, 411),
-        "SYNTHETIC CASE DATA",
-        font=SMALL_FONT,
-        fill=TEXT_DIM,
-        anchor="ma",
-    )
-
-
-def draw_key_value(
-    draw: ImageDraw.ImageDraw,
-    label: str,
-    value: str,
-    x: int,
-    y: int,
-    label_width: int,
-    value_width: int,
-    color=TEXT,
-) -> None:
-    """Draw one compact key-value row."""
-
-    draw.text(
-        (x, y),
-        label.upper(),
-        font=LABEL_FONT,
-        fill=TEXT_DIM,
-    )
-
-    rendered = shorten(value, 64)
-
-    value_font = fit_font(
-        draw,
-        rendered,
-        value_width,
-        preferred_size=12,
-        minimum_size=8,
-    )
-
-    draw.text(
-        (x + label_width, y),
-        rendered,
-        font=value_font,
-        fill=color,
-    )
-
-
-def draw_evidence_package(
-    draw: ImageDraw.ImageDraw,
-    data: dict[str, Any],
-) -> None:
-    """Draw the live evidence package."""
-
-    draw.text(
-        (1606, 40),
-        "EVIDENCE PACKAGE",
-        font=HEADER_FONT,
-        fill=TEXT,
-    )
-
-    draw.line(
-        (1606, 69, 2015, 69),
-        fill=CYAN_DARK,
-        width=1,
-    )
-
-    rows = [
-        ("CASE ID", data["case_id"]),
-        (
-            "EVIDENCE",
-            f"{data['evidence']:,} RECORDS",
-        ),
-        (
-            "INDICATORS",
-            f"{data['indicators']:,}",
-        ),
-        ("UPDATED", data["updated"]),
-        ("SOURCE", "SYNTHETIC REPOSITORY"),
-    ]
-
-    y = 91
-
-    for label, value in rows:
-        draw_key_value(
-            draw,
-            label,
-            value,
-            1606,
-            y,
-            label_width=116,
-            value_width=270,
-        )
-        y += 25
-
-    draw.text(
-        (1606, 197),
-        "RECORD: PORTFOLIO SIMULATION",
-        font=SMALL_FONT,
-        fill=RED,
-    )
-
-
-def draw_case_overview(
-    draw: ImageDraw.ImageDraw,
-    data: dict[str, Any],
-) -> None:
-    """Draw current case details."""
-
-    draw.text(
-        (1558, 252),
-        "CASE OVERVIEW",
-        font=HEADER_FONT,
-        fill=CYAN,
-    )
-
-    rows = [
-        ("TYPE", data["classification"]),
-        ("THREAT", data["threat_family"]),
-        (
-            "STATUS",
-            (
-                f"{data['severity']} / "
-                f"{data['priority']}"
-            ),
-        ),
-        ("ANALYST", data["lead"]),
-        (
-            "CONFIDENCE",
-            f"{data['confidence']}%",
-        ),
-    ]
-
-    y = 288
-
-    for label, value in rows:
-        draw.text(
-            (1558, y),
-            f"{label}:",
-            font=SMALL_FONT,
-            fill=TEXT_DIM,
-        )
-
-        rendered = shorten(value, 35)
-
-        value_font = fit_font(
-            draw,
-            rendered,
-            maximum_width=210,
-            preferred_size=11,
-            minimum_size=8,
-        )
-
-        draw.text(
-            (1558, y + 16),
-            rendered,
-            font=value_font,
-            fill=TEXT,
-        )
-
-        y += 37
-
-
-def draw_case_scan(
-    draw: ImageDraw.ImageDraw,
-    frame_index: int,
-) -> None:
-    """Animate the existing case-scan rail."""
-
-    left = 315
-    right = 746
-    y = 145
-
-    draw.rectangle(
-        (left, y, right, y + 4),
-        fill=(8, 36, 39, 220),
-    )
-
-    segment = 88
-
-    x = (
-        left
-        + int(
-            (
-                right
-                - left
-                - segment
-            )
-            * frame_index
-            / max(
-                FRAME_COUNT - 1,
-                1,
-            )
-        )
-    )
-
-    draw.rectangle(
-        (x, y, x + segment, y + 4),
-        fill=CYAN,
-    )
-
-
-def draw_active_case_feed(
-    draw: ImageDraw.ImageDraw,
-    data: dict[str, Any],
-    frame_index: int,
-) -> None:
-    """Draw the live active-case feed."""
-
-    draw.text(
-        (289, 494),
-        "ACTIVE CASE FEED",
-        font=HEADER_FONT,
-        fill=CYAN,
-    )
-
-    baseline = 574
-
-    for index in range(28):
-        x = 291 + index * 12
-
-        height = (
-            7
-            + (
-                index * 7
-                + frame_index * 5
-                + data["evidence"]
-            )
-            % 42
-        )
-
-        draw.rectangle(
-            (
-                x,
-                baseline - height,
-                x + 6,
-                baseline,
-            ),
-            fill=CYAN,
-        )
-
-    draw.text(
-        (289, 585),
-        shorten(
-            f"case-feed://{data['case_id'].lower()}",
-            48,
-        ),
-        font=SMALL_FONT,
-        fill=TEXT_DIM,
-    )
-
-    draw.text(
-        (289, 604),
-        (
-            f"{data['evidence']:,} evidence records • "
-            f"{data['indicators']:,} indicators"
-        ),
-        font=MICRO_FONT,
-        fill=TEXT_DIM,
-    )
-
-
-def draw_system_status(
-    draw: ImageDraw.ImageDraw,
-    data: dict[str, Any],
-) -> None:
-    """Draw the current system status panel."""
-
-    draw.text(
-        (681, 494),
-        "SYSTEM STATUS",
-        font=HEADER_FONT,
-        fill=CYAN,
-    )
-
-    rows = [
-        ("Evidence Integrity", "VERIFIED"),
-        ("Data Pipeline", "STABLE"),
-        ("Case Record", "CURRENT"),
-        (
-            "Threat Score",
-            (
-                f"{data['score']} / "
-                f"{data['score_level']}"
-            ),
-        ),
-    ]
-
-    y = 529
-
-    for label, value in rows:
-        draw.text(
-            (681, y),
-            f"• {label}:",
-            font=VALUE_FONT,
-            fill=TEXT_DIM,
-        )
-
-        draw.text(
-            (862, y),
-            value,
-            font=VALUE_BOLD_FONT,
-            fill=CYAN,
-        )
-
-        y += 25
-
-    center_x = 1004
-    center_y = 551
-
-    for radius in range(16, 60, 8):
-        draw.arc(
-            (
-                center_x - radius,
-                center_y - radius,
-                center_x + radius,
-                center_y + radius,
-            ),
-            start=195,
-            end=520,
-            fill=CYAN_DARK,
-            width=2,
-        )
-
-
-def draw_threat_monitor(
-    draw: ImageDraw.ImageDraw,
-    data: dict[str, Any],
-    frame_index: int,
-) -> None:
-    """Draw the animated threat-monitor panel."""
-
-    draw.text(
-        (1112, 494),
-        "THREAT MONITOR",
-        font=HEADER_FONT,
-        fill=RED,
-    )
-
-    draw.text(
-        (1112, 528),
-        (
-            f"• Threat score: "
-            f"{data['score']} "
-            f"({data['score_level']})"
-        ),
-        font=VALUE_FONT,
-        fill=RED,
-    )
-
-    draw.text(
-        (1112, 550),
-        (
-            f"• Containment posture: "
-            f"{data['containment']}"
-        ),
-        font=VALUE_FONT,
-        fill=TEXT_DIM,
-    )
-
-    points = []
-
-    for x in range(1112, 1505, 8):
-        phase = (
-            frame_index * 0.5
-            + x * 0.045
-        )
-
-        amplitude = (
-            6
-            + 3 * math.sin(
-                x * 0.02
-            )
-        )
-
-        y = int(
-            592
-            + math.sin(phase)
-            * amplitude
-        )
-
-        points.append((x, y))
-
-    draw.line(
-        points,
-        fill=RED,
-        width=2,
-    )
-
-    draw.text(
-        (1112, 608),
-        "ANALYTICAL MODEL ACTIVE",
-        font=MICRO_FONT,
-        fill=TEXT_DIM,
-    )
-
-
-def draw_operational_brief(
-    draw: ImageDraw.ImageDraw,
-    data: dict[str, Any],
-) -> None:
-    """Draw current campaign and next action."""
-
-    draw.text(
-        (1569, 494),
-        "OPERATIONAL BRIEF",
-        font=HEADER_FONT,
-        fill=CYAN,
-    )
-
-    campaign = shorten(
-        data["campaign"],
-        54,
-    )
-
-    campaign_font = fit_font(
-        draw,
-        campaign,
-        maximum_width=430,
-        preferred_size=11,
-        minimum_size=8,
-        bold=True,
-    )
-
-    draw.text(
-        (1569, 526),
-        campaign,
-        font=campaign_font,
-        fill=TEXT,
-    )
-
-    draw.text(
-        (1569, 549),
-        (
-            f"{data['campaign_id']} • "
-            f"{data['phase']}"
-        ),
-        font=SMALL_FONT,
-        fill=TEXT_DIM,
-    )
-
-    words = shorten(
-        data["next_action"],
-        95,
-    ).split()
-
-    lines = []
-    current = ""
-
-    for word in words:
-        candidate = (
-            f"{current} {word}".strip()
-        )
-
-        if len(candidate) > 49:
-            lines.append(current)
-            current = word
-        else:
-            current = candidate
-
-    if current:
-        lines.append(current)
-
-    draw.multiline_text(
-        (1569, 576),
-        "\n".join(lines[:2]),
-        font=SMALL_FONT,
-        fill=TEXT_DIM,
-        spacing=3,
-    )
-
-
-def draw_biohazard_scan(
-    draw: ImageDraw.ImageDraw,
-    frame_index: int,
-) -> None:
-    """Animate a subtle scan inside the biohazard panel."""
-
-    left = 1816
-    right = 2019
-
-    x = (
-        left
-        + int(
-            (
-                right - left
-            )
-            * frame_index
-            / max(
-                FRAME_COUNT - 1,
-                1,
-            )
-        )
-    )
-
-    draw.rectangle(
-        (x - 6, 253, x + 6, 470),
-        fill=CYAN_FAINT,
-    )
-
-    draw.line(
-        (x, 253, x, 470),
-        fill=CYAN_DARK,
-        width=1,
-    )
-
-
-def render_frame(
-    base: Image.Image,
-    data: dict[str, Any],
-    frame_index: int,
-) -> Image.Image:
-    """Render one frame."""
-
-    frame = base.copy()
-    cover_sample_content(frame)
-
-    draw = ImageDraw.Draw(
-        frame,
-        "RGBA",
-    )
-
-    draw_portfolio_badge(draw)
-    draw_evidence_package(draw, data)
-    draw_case_overview(draw, data)
-    draw_case_scan(draw, frame_index)
-    draw_active_case_feed(
-        draw,
-        data,
-        frame_index,
-    )
-    draw_system_status(draw, data)
-    draw_threat_monitor(
-        draw,
-        data,
-        frame_index,
-    )
-    draw_operational_brief(draw, data)
-    draw_biohazard_scan(
-        draw,
-        frame_index,
-    )
-
-    return frame
-
-
-def main() -> None:
-    """Generate the approved-style dynamic GIF."""
-
-    case = load_json(
-        CURRENT_CASE_PATH,
-        required=True,
-    )
-
-    operation = load_json(
-        ACTIVE_OPERATION_PATH,
-        required=True,
-    )
-
-    score_data = load_json(
-        THREAT_SCORE_PATH,
-        required=False,
-    )
-
-    data = build_data(
-        case,
-        operation,
-        score_data,
-    )
-
-    ASSETS_DIRECTORY.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    base = load_base()
-    frames: list[Image.Image] = []
-
+def main():
+    case = load_json(CURRENT_CASE_FILE)
+    operation = load_json(ACTIVE_OPERATION_FILE)
+
+    frames = []
     for frame_index in range(FRAME_COUNT):
-        frame = render_frame(
-            base,
-            data,
-            frame_index,
-        )
+        frame = compose_frame(case, operation, frame_index)
+        frames.append(frame.convert("P", palette=Image.ADAPTIVE))
 
-        frames.append(
-            frame.convert(
-                "P",
-                palette=Image.ADAPTIVE,
-                colors=192,
-            )
-        )
+    OUTPUT_GIF_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     frames[0].save(
-        OUTPUT_GIF_PATH,
+        OUTPUT_GIF_FILE,
         save_all=True,
         append_images=frames[1:],
         duration=FRAME_DURATION_MS,
         loop=0,
-        optimize=True,
+        optimize=False,
         disposal=2,
     )
 
+    print(f"Generated dynamic case banner: {OUTPUT_GIF_FILE}")
     print(
-        "Generated approved-style dynamic banner: "
-        f"{OUTPUT_GIF_PATH}"
-    )
-
-    print(
-        "Banner details: "
-        f"{base.width}x{base.height}, "
-        f"{FRAME_COUNT} frames, "
-        f"case {data['case_id']}."
+        f"Banner details: {WIDTH}x{HEIGHT}, "
+        f"{FRAME_COUNT} frames, case {case.get('case_id', 'UNKNOWN')}."
     )
 
 
