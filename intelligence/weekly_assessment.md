@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8334
+Case ID: BID-2026-4246
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Unauthorized Research System Access
+Classification: Biomedical Infrastructure Investigation
 
-Threat Family: Medical Device Communications Interference
+Threat Family: Clinical Research Data Manipulation
 
-Current Status: Containment
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -27,22 +27,22 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 ## Operational Metrics
 
 Priority:
-ROUTINE
+CRITICAL
 
 Risk Score:
-21
+96
 
 Confidence:
-85%
+95%
 
 Affected Assets:
-7
+59
 
 Evidence Collected:
-54
+240
 
 Indicators Recorded:
-18
+90
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+Joint Cyber Investigation Unit
 
 Date:
 

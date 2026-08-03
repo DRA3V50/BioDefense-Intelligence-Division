@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-8334
+BID-2026-4246
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Clinical Research Data Manipulation
 
 Severity:
-LOW
+CRITICAL
 
 Priority:
-ROUTINE
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ ROUTINE
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-7
+59
 
 Evidence Collected:
-54
+240
 
 Indicators Identified:
-18
+90
 
 Analyst Confidence:
-85%
+95%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Containment
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Joint Cyber Investigation Unit

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8334 |
+| Case ID | BID-2026-4246 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Medical Device Communications Interference |
-| Severity | LOW |
-| Status | Containment |
+| Classification | Biomedical Infrastructure Investigation |
+| Threat Family | Clinical Research Data Manipulation |
+| Severity | CRITICAL |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Biomedical Workstation |
-| Vendor | Red Hat |
-| Security Zone | Research Operations |
+| Platform | Protected Research Network |
+| Device | Laboratory Information Server |
+| Vendor | Dell |
+| Security Zone | Protected Research Segment |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 21 |
-| Confidence | 85% |
-| Evidence Collected | 54 |
-| Indicators Identified | 18 |
-| Affected Assets | 7 |
+| Risk Score | 96 |
+| Confidence | 95% |
+| Evidence Collected | 240 |
+| Indicators Identified | 90 |
+| Affected Assets | 59 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Joint Cyber Investigation Unit**
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Open**
 
 Priority:
 
-**ROUTINE**
+**CRITICAL**
 
 Recommended Action:
 

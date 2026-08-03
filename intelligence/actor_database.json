@@ -135,6 +135,14 @@
             "cases": 1,
             "severity": "LOW",
             "confidence": 85
+        },
+        {
+            "name": "Clinical Research Data Manipulation",
+            "first_seen": "2026-08-03",
+            "last_seen": "2026-08-03",
+            "cases": 1,
+            "severity": "CRITICAL",
+            "confidence": 95
         }
     ]
 }
