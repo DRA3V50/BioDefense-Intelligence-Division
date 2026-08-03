@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Cerberus Group
 
 ---
 
 ## Attribution
-International Infrastructure
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Medical Infrastructure Disruption
 
 ---
 
@@ -26,24 +26,24 @@ Advanced
 ---
 
 ## Confidence
-88%
+85%
 
 ---
 
 ## Observed Techniques
-- Web Application Exploitation
-- Concealed Internal Movement
-- Research Data Exfiltration
 - Supply Chain Compromise
 - Long-Term Network Foothold
-- Biosecurity System Tampering
+- Covert Remote Access Tooling
+- Encrypted Data Staging
+- Research Data Exfiltration
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Delta
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Unauthorized Research System Access
 
 ---
 

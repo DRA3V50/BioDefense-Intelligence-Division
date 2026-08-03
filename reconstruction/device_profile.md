@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-5077
+BID-2026-8334
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Unauthorized Research System Access
 
 Threat Family:
-Research Data Integrity Manipulation
+Medical Device Communications Interference
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Raccoon Research Annex
 
 Platform:
-Research Data Repository
+Clinical Research Environment
 
 Device:
 Biomedical Workstation
 
 Vendor:
-Palo Alto Networks
+Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-88%
+85%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.

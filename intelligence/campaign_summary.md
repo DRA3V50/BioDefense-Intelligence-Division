@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5077
+BID-2026-8334
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Unauthorized Research System Access
 
 Threat Family:
-Research Data Integrity Manipulation
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Research Data Repository
+Clinical Research Environment
 
 Device:
 Biomedical Workstation
 
 Vendor:
-Palo Alto Networks
+Red Hat
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-73
+74
 
 Evidence Collected:
-49
+54
 
 Indicators Identified:
-14
+18
 
 Affected Assets:
-20
+7
 
 Confidence:
-88%
+85%
 
 Risk Score:
-58
+21
 
 ---
 
