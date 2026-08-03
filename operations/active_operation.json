@@ -9,13 +9,13 @@
     "incident_type": "Cyber-Enabled Bioterror Campaign",
     "priority": "National",
     "containment_level": "HIGH",
-    "affected_facilities": 9,
+    "affected_facilities": 10,
     "affected_states": 3,
     "confirmed_intrusions": 10,
-    "active_cases": 69,
-    "evidence_collected": 90657,
+    "active_cases": 70,
+    "evidence_collected": 90771,
     "digital_artifacts": 151,
-    "ioc_count": 61211,
+    "ioc_count": 61233,
     "laboratories_under_review": [
         "Federal Biomedical Laboratory",
         "National Pathogen Research Center",
@@ -24,8 +24,8 @@
     ],
     "investigation_lead": "BioDefense Intelligence Division",
     "opened": "2026-07-01",
-    "last_updated": "2026-08-02",
+    "last_updated": "2026-08-03",
     "campaign_summary": "Affected environments are undergoing validation and controlled recovery while residual risk is monitored.",
     "next_objective": "Verify recovery controls and prepare the final operational assessment.",
-    "known_threat_families": 15
+    "known_threat_families": 16
 }

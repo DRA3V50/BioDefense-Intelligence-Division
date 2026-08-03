@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-3342
+BID-2026-1278
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Protected Research Systems Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Research Workstation Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Evidence Processing Network
+Medical Research Laboratory
 
 Device:
 Access Control Server
 
 Vendor:
-HPE
+Dell
 
 Operating System:
 Red Hat Enterprise Linux 10
 
 Security Zone:
-Protected Research Segment
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
 ELEVATED
 
 Confidence:
-88%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

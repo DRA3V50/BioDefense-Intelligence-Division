@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-02 14:59 UTC
+**Generated:** 2026-08-03 02:12 UTC
 
 ---
 
@@ -18,15 +18,15 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3342
+**Case ID:** BID-2026-1278
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Protected Research Systems Investigation
 
 **Severity:** MODERATE
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Research Workstation Compromise
 
-**Confidence:** 88%
+**Confidence:** 86%
 
 ---
 
@@ -38,9 +38,9 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 
 ## Evidence Summary
 
-Evidence Collected: **87**
+Evidence Collected: **114**
 
-Indicators: **32**
+Indicators: **22**
 
 Priority: **ELEVATED**
 
@@ -49,10 +49,10 @@ Priority: **ELEVATED**
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Alpha**
+**Analyst Team Delta**
 
 Initial Access:
-**Compromised Credentials**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**69**
+**70**
 
 Confirmed Intrusions:
 **10**
 
 Total Evidence:
-**90657**
+**90771**
 
 Total Indicators:
-**61211**
+**61233**
 
 ---
 
 ## Operational Highlights
 
-- 87 evidence items are associated with the active investigation.
-- 32 indicators are currently linked to the case.
+- 114 evidence items are associated with the active investigation.
+- 22 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **88%**.
+- Analyst confidence is **86%**.
 - Current investigation priority is **ELEVATED**.
 
 ---

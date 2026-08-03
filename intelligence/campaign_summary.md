@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3342
+BID-2026-1278
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Protected Research Systems Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Research Workstation Compromise
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Field Coordination
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Medical Research Laboratory
 
 Device:
 Access Control Server
 
 Vendor:
-HPE
+Dell
 
 Security Zone:
-Protected Research Segment
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-69
+70
 
 Evidence Collected:
-87
+114
 
 Indicators Identified:
-32
+22
 
 Affected Assets:
-17
+16
 
 Confidence:
-88%
+86%
 
 Risk Score:
-53
+46
 
 ---
 

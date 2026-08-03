@@ -4,10 +4,10 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3342 |
+| Case ID | BID-2026-1278 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Biomedical Supply Chain Compromise |
+| Classification | Protected Research Systems Investigation |
+| Threat Family | Research Workstation Compromise |
 | Severity | MODERATE |
 | Status | Field Coordination |
 | Phase | Operational Recovery |
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Evidence Processing Network |
+| Platform | Medical Research Laboratory |
 | Device | Access Control Server |
-| Vendor | HPE |
-| Network Zone | Protected Research Segment |
+| Vendor | Dell |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 53 |
-| Confidence | 88% |
-| Evidence | 87 |
-| Indicators | 32 |
-| Affected Assets | 17 |
+| Risk Score | 46 |
+| Confidence | 86% |
+| Evidence | 114 |
+| Indicators | 22 |
+| Affected Assets | 16 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 

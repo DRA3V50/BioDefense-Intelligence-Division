@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Research Workstation Compromise
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Dark Sequence
 
 ---
 
@@ -16,7 +16,7 @@ Foreign Intelligence Interest
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Medical Infrastructure Disruption
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-88%
+86%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Laboratory Network Reconnaissance
-- Lateral Movement
+- Supply Chain Compromise
 - Command and Control
-- Long-Term Network Foothold
-- Laboratory Control System Manipulation
+- Laboratory Data Manipulation
+- Covert Remote Access Tooling
+- Research Data Exfiltration
+- Biosecurity System Tampering
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Delta
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Protected Research Systems Investigation
 
 ---
 
 ## Last Updated
-2026-08-02
+2026-08-03
