@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-9937
+BID-2026-3583
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Laboratory Information System Compromise
+Biocontainment System Tampering
 
 Severity:
-LOW
+HIGH
 
 Priority:
-ROUTINE
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ ROUTINE
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-10
+27
 
 Evidence Collected:
-17
+136
 
 Indicators Identified:
-10
+29
 
 Analyst Confidence:
-84%
+90%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Intelligence Analysis
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Bravo
+National Response Cell

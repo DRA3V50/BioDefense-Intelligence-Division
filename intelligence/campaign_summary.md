@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9937
+BID-2026-3583
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Laboratory Information System Compromise
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Research Data Repository
 
 Device:
-Network Security Appliance
+Clinical Data Server
 
 Vendor:
 VMware
 
 Security Zone:
-Containment Network
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-81
+82
 
 Evidence Collected:
-17
+136
 
 Indicators Identified:
-10
+29
 
 Affected Assets:
-10
+27
 
 Confidence:
-84%
+90%
 
 Risk Score:
-28
+68
 
 ---
 

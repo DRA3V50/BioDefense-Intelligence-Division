@@ -4,18 +4,18 @@
 ## 2026-08-03
 
 ### Case Opened
-Case ID: BID-2026-9937
+Case ID: BID-2026-3583
 
 ### Classification
-Protected Research Systems Investigation
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Open
+Intelligence Analysis
 
 ### Severity
-LOW
+HIGH
 
 ---

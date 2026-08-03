@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9937 |
+| Case ID | BID-2026-3583 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Protected Research Systems Investigation |
-| Threat Family | Laboratory Information System Compromise |
-| Severity | LOW |
-| Status | Open |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Biocontainment System Tampering |
+| Severity | HIGH |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Network Security Appliance |
+| Platform | Research Data Repository |
+| Device | Clinical Data Server |
 | Vendor | VMware |
-| Security Zone | Containment Network |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 28 |
-| Confidence | 84% |
-| Evidence Collected | 17 |
-| Indicators Identified | 10 |
-| Affected Assets | 10 |
+| Risk Score | 68 |
+| Confidence | 90% |
+| Evidence Collected | 136 |
+| Indicators Identified | 29 |
+| Affected Assets | 27 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Intelligence Analysis**
 
 Priority:
 
-**ROUTINE**
+**HIGH**
 
 Recommended Action:
 

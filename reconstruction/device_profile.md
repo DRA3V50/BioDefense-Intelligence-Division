@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-9937
+BID-2026-3583
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Laboratory Information System Compromise
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
-Evidence Processing Network
+Research Data Repository
 
 Device:
-Network Security Appliance
+Clinical Data Server
 
 Vendor:
 VMware
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
-Containment Network
+Biosecurity Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Awaiting Laboratory Review
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-84%
+90%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.

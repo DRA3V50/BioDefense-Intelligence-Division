@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-03 20:25 UTC
+**Generated:** 2026-08-03 20:47 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-9937
+**Case ID:** BID-2026-3583
 
-**Classification:** Protected Research Systems Investigation
+**Classification:** Biological Research Intelligence Collection
 
-**Severity:** LOW
+**Severity:** HIGH
 
-**Threat Family:** Laboratory Information System Compromise
+**Threat Family:** Biocontainment System Tampering
 
-**Confidence:** 84%
+**Confidence:** 90%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **17**
+Evidence Collected: **136**
 
-Indicators: **10**
+Indicators: **29**
 
-Priority: **ROUTINE**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Bravo**
+**National Response Cell**
 
 Initial Access:
-**Exposed Remote Service**
+**Compromised Credentials**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**81**
+**82**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**91690**
+**91826**
 
 Total Indicators:
-**61585**
+**61614**
 
 ---
 
 ## Operational Highlights
 
-- 17 evidence items are associated with the active investigation.
-- 10 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **84%**.
-- Current investigation priority is **ROUTINE**.
+- 136 evidence items are associated with the active investigation.
+- 29 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **90%**.
+- Current investigation priority is **HIGH**.
 
 ---
 
