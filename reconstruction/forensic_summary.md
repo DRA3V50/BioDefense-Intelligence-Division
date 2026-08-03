@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1278 |
+| Case ID | BID-2026-3870 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Protected Research Systems Investigation |
-| Threat Family | Research Workstation Compromise |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Laboratory Access Control Investigation |
+| Threat Family | Biocontainment System Tampering |
+| Severity | LOW |
+| Status | Monitoring |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Access Control Server |
+| Platform | Clinical Research Environment |
+| Device | Clinical Data Server |
 | Vendor | Dell |
-| Security Zone | Federal Operations |
+| Security Zone | Research Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 46 |
-| Confidence | 86% |
-| Evidence Collected | 114 |
-| Indicators Identified | 22 |
-| Affected Assets | 16 |
+| Risk Score | 36 |
+| Confidence | 87% |
+| Evidence Collected | 51 |
+| Indicators Identified | 10 |
+| Affected Assets | 5 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Monitoring**
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

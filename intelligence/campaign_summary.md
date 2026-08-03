@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1278
+BID-2026-3870
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Laboratory Access Control Investigation
 
 Threat Family:
-Research Workstation Compromise
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Medical Research Laboratory
+Clinical Research Environment
 
 Device:
-Access Control Server
+Clinical Data Server
 
 Vendor:
 Dell
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-70
+71
 
 Evidence Collected:
-114
+51
 
 Indicators Identified:
-22
+10
 
 Affected Assets:
-16
+5
 
 Confidence:
-86%
+87%
 
 Risk Score:
-46
+36
 
 ---
 

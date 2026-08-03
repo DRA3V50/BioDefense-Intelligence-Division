@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Workstation Compromise
+Biocontainment System Tampering
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Black Helix
 
 ---
 
@@ -21,27 +21,27 @@ Medical Infrastructure Disruption
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-86%
+87%
 
 ---
 
 ## Observed Techniques
+- Compromised Credentials
+- Laboratory Control System Manipulation
+- Long-Term Network Foothold
 - Supply Chain Compromise
-- Command and Control
-- Laboratory Data Manipulation
 - Covert Remote Access Tooling
-- Research Data Exfiltration
-- Biosecurity System Tampering
+- Credential Abuse
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
 **Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Protected Research Systems Investigation
+Laboratory Access Control Investigation
 
 ---
 
