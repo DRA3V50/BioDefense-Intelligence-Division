@@ -385,14 +385,14 @@ def draw_biohazard_scan(draw: ImageDraw.ImageDraw, width: int, height: int, fram
 def draw_left_panel(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
     value_font = scaled_font(width, height, 12, True)
     compact_font = scaled_font(width, height, 10, True)
-    status_font = scaled_font(width, height, 10, True)
+    status_font = scaled_font(width, height, 9, True)
+
     x = scaled_point((210, 0), width, height)[0]
     max_width = scaled_point((345, 0), width, height)[0] - x
 
-    rows = [
+    standard_rows = [
         (data["case_id"], 324, WHITE, value_font),
         (data["campaign_id"], 357, WHITE, value_font),
-        (data["status"], 390, RED, status_font),
         (f"{data['severity']} / {data['priority']}", 423, WHITE, compact_font),
         (data["lead"], 456, WHITE, compact_font),
         (data["updated_date"], 489, TEXT, value_font),
@@ -400,17 +400,44 @@ def draw_left_panel(draw: ImageDraw.ImageDraw, width: int, height: int, data: di
         (data["system_integrity"], 557, WHITE, value_font),
     ]
 
-    for rendered, y_ref, color, font in rows:
+    for rendered, y_ref, color, font in standard_rows:
         _, y = scaled_point((0, y_ref), width, height)
         draw.text((x, y), ellipsize(draw, rendered, font, max_width), font=font, fill=color)
+
+    # STATUS gets wrap room instead of ugly truncation
+    _, status_y = scaled_point((0, 390), width, height)
+    step = scaled_point((0, 12), width, height)[1]
+    for i, line in enumerate(wrap_text(draw, data["status"].title(), status_font, max_width, 2)):
+        draw.text((x, status_y + i * step), line, font=status_font, fill=RED)
 
     bar_x, bar_y = scaled_point((284, 548), width, height)
     bar_width = max(3, scaled_point((6, 0), width, height)[0])
     gap = max(2, scaled_point((3, 0), width, height)[0])
+
     for index, ref_height in enumerate((7, 10, 13, 16, 19)):
         bar_height = scaled_point((0, ref_height), width, height)[1]
         x1 = bar_x + index * (bar_width + gap)
         draw.rectangle((x1, bar_y + 20 - bar_height, x1 + bar_width, bar_y + 20), fill=RED)
+
+def draw_logo_scan(draw: ImageDraw.ImageDraw, width: int, height: int, frame_index: int) -> None:
+    # Smooth subtle diagonal scan beam; no harsh center crosshair.
+    x1, y1, x2, y2 = scaled_box((40, 57, 330, 289), width, height)
+    phase = frame_index / FRAME_COUNT
+
+    lw = max(2, round(width / 1400))
+    glow = lw + 2
+
+    offset = round((x2 - x1) * (0.10 + 0.80 * (0.5 + 0.5 * math.sin(phase * math.tau))))
+    sx = x1 + offset
+    sy = y1 + 10
+    ex = max(x1 + 12, min(x2 - 12, sx - round((x2 - x1) * 0.22)))
+    ey = y2 - 10
+
+    draw.line((sx, sy, ex, ey), fill=SCAN_RED_SOFT, width=glow)
+    draw.line((sx, sy, ex, ey), fill=SCAN_RED, width=lw)
+
+    pulse_r = max(5, round((7 + 2 * math.sin(phase * math.tau)) * width / REFERENCE_WIDTH))
+    draw.ellipse((sx - pulse_r, sy - pulse_r, sx + pulse_r, sy + pulse_r), outline=(255, 72, 65, 70), width=1)
 
 
 def draw_center_details(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
