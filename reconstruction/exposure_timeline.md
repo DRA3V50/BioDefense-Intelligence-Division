@@ -4,18 +4,18 @@
 ## 2026-08-04
 
 ### Case Opened
-Case ID: BID-2026-6149
+Case ID: BID-2026-5008
 
 ### Classification
-Supply Chain Security Investigation
+Unauthorized Research System Access
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Evidence Collection
+Field Coordination
 
 ### Severity
-LOW
+MODERATE
 
 ---

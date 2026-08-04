@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6149
+Case ID: BID-2026-5008
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Supply Chain Security Investigation
+Classification: Unauthorized Research System Access
 
-Threat Family: Research Data Integrity Manipulation
+Threat Family: Medical Device Communications Interference
 
-Current Status: Evidence Collection
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Analysts continue evaluating recovered indicators for operational significance.
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ROUTINE
+ELEVATED
 
 Risk Score:
-27
+55
 
 Confidence:
-88%
+95%
 
 Affected Assets:
-7
+14
 
 Evidence Collected:
-49
+97
 
 Indicators Recorded:
-4
+25
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-BioDefense Task Force
+Analyst Team Delta
 
 Date:
 

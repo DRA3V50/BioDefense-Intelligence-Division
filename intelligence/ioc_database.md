@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6149
+BID-2026-5008
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Unauthorized Research System Access
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Supply Chain Security Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-49
+97
 
 Indicators Reviewed:
-4
+25
 
 Risk Score:
-27
+55
 
 Confidence:
-88%
+95%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Delta
 
 Current Status:
 
-Evidence Collection
+Field Coordination

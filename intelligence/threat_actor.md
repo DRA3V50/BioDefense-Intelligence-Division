@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Medical Device Communications Interference
 
 ---
 
@@ -16,7 +16,7 @@ Unknown
 ---
 
 ## Observed Motivation
-Research Data Theft
+Espionage Against Research Programs
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-88%
+95%
 
 ---
 
 ## Observed Techniques
-- Insider Misuse
-- Supply Chain Compromise
+- Compromised Credentials
+- Covert Remote Access Tooling
+- Insider Access Abuse
 - Lateral Movement
 - Laboratory Network Reconnaissance
-- Covert Remote Access Tooling
-- Biosecurity System Tampering
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Delta
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Supply Chain Security Investigation
+Unauthorized Research System Access
 
 ---
 

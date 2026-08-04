@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6149
+BID-2026-5008
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Research Data Integrity Manipulation
+Medical Device Communications Interference
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
-Laboratory Control Network
+Biosecurity Operations Center
 
 Device:
-Access Control Server
+Evidence Repository
 
 Vendor:
-HPE
+Red Hat
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-88%
+95%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6149 |
+| Case ID | BID-2026-5008 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Supply Chain Security Investigation |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | LOW |
-| Status | Evidence Collection |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Medical Device Communications Interference |
+| Severity | MODERATE |
+| Status | Field Coordination |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Access Control Server |
-| Vendor | HPE |
-| Network Zone | Federal Operations |
+| Platform | Biosecurity Operations Center |
+| Device | Evidence Repository |
+| Vendor | Red Hat |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 27 |
-| Confidence | 88% |
-| Evidence | 49 |
-| Indicators | 4 |
-| Affected Assets | 7 |
+| Risk Score | 55 |
+| Confidence | 95% |
+| Evidence | 97 |
+| Indicators | 25 |
+| Affected Assets | 14 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **BioDefense Task Force**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
