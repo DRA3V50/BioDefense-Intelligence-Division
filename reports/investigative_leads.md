@@ -2,37 +2,37 @@
 
 ## Investigative Leads and Intelligence Gaps
 
-**Generated:** 2026-08-04 05:12 UTC
+**Generated:** 2026-08-04 16:10 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5008
+**Case ID:** BID-2026-6459
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
 **Campaign ID:** BDC-2026-001
 
-**Classification:** Unauthorized Research System Access
+**Classification:** Supply Chain Security Investigation
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Specimen Tracking Manipulation
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Risk Score:** 55
+**Risk Score:** 74
 
-**Lead Analyst:** Analyst Team Delta
+**Lead Analyst:** Analyst Team Alpha
 
-**Evidence Records Reviewed:** 97
+**Evidence Records Reviewed:** 118
 
-**Correlation Records Reviewed:** 97
+**Correlation Records Reviewed:** 118
 
 ---
 
 ## Current Analyst Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 This report distinguishes investigative leads and analytical hypotheses from confirmed findings. No hypothesis should be treated as final attribution without supporting evidence.
 
@@ -42,7 +42,7 @@ This report distinguishes investigative leads and analytical hypotheses from con
 
 ### Lead 1: Credential and Identity Compromise
 
-**Supporting Correlations:** 8
+**Supporting Correlations:** 15
 
 Investigators should determine whether compromised credentials were obtained externally, reused from an earlier breach, or provided by an insider.
 
@@ -52,20 +52,20 @@ Investigators should determine whether compromised credentials were obtained ext
 
 **Supporting Evidence:**
 
-- `BID-2026-5008-EV-0002` — Authentication Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0009` — Authentication Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0019` — Authentication Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0029` — Authentication Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0030` — Authentication Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0057` — Authentication Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0061` — Authentication Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0077` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0010` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0015` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0017` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0019` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0021` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0034` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0040` — Authentication Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0054` — Authentication Log; source: Unknown Device; integrity: Verified
 
 **Key Question:** Which account was first compromised, and how was access obtained?
 
 ### Lead 2: Possible Insider or Facility-Assisted Access
 
-**Supporting Correlations:** 10
+**Supporting Correlations:** 15
 
 Access-control and facility evidence may indicate insider assistance, unauthorized physical entry, or misuse of legitimate laboratory privileges.
 
@@ -75,20 +75,20 @@ Access-control and facility evidence may indicate insider assistance, unauthoriz
 
 **Supporting Evidence:**
 
-- `BID-2026-5008-EV-0001` — Access Control Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0016` — Access Control Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0021` — Access Control Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0028` — Access Control Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0036` — Access Control Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0059` — Access Control Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0078` — Access Control Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0083` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0018` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0031` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0036` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0039` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0053` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0056` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0071` — Access Control Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0075` — Access Control Log; source: Unknown Device; integrity: Verified
 
 **Key Question:** Did an employee, contractor, or trusted partner facilitate the intrusion?
 
 ### Lead 3: Laboratory-System Modification
 
-**Supporting Correlations:** 14
+**Supporting Correlations:** 17
 
 Laboratory-system changes require validation to determine whether configuration, workflow, specimen, or research records were altered.
 
@@ -99,20 +99,20 @@ Laboratory-system changes require validation to determine whether configuration,
 
 **Supporting Evidence:**
 
-- `BID-2026-5008-EV-0004` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0007` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0035` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0037` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0044` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0045` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0050` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0063` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0004` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0028` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0030` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0047` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0070` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0083` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0089` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0095` — Laboratory System Configuration; source: Unknown Device; integrity: Verified
 
 **Key Question:** Were the laboratory changes operational, administrative, or intended to affect protected biological research?
 
 ### Lead 4: Research or Genomic Data Integrity
 
-**Supporting Correlations:** 14
+**Supporting Correlations:** 5
 
 Research-data anomalies should be examined for unauthorized modification, deletion, manipulation, or intelligence collection.
 
@@ -122,44 +122,41 @@ Research-data anomalies should be examined for unauthorized modification, deleti
 
 **Supporting Evidence:**
 
-- `BID-2026-5008-EV-0003` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0017` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0022` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0023` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0026` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0031` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0041` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0046` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0011` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0059` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0063` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0088` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0116` — Research Data Integrity Record; source: Unknown Device; integrity: Verified
 
 **Key Question:** Were protected research records changed, copied, or prepared for exfiltration?
 
 ### Lead 5: Command-and-Control and External Infrastructure
 
-**Supporting Correlations:** 20
+**Supporting Correlations:** 17
 
 Network correlations may identify external infrastructure, persistent access, data staging, or communication with a coordinated threat actor.
 
 **Associated Findings:**
 
-- Suspicious Network Activity
 - Command-and-Control Communication
+- Suspicious Network Activity
 
 **Supporting Evidence:**
 
-- `BID-2026-5008-EV-0005` — Firewall Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0006` — Firewall Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0011` — Firewall Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0014` — Firewall Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0027` — Firewall Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0039` — Firewall Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0047` — Firewall Log; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0072` — Firewall Log; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0007` — Network Connection Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0012` — Network Connection Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0035` — Network Connection Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0038` — Network Connection Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0043` — Network Connection Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0046` — Network Connection Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0051` — Network Connection Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0091` — Network Connection Record; source: Unknown Device; integrity: Verified
 
 **Key Question:** Does the external infrastructure connect this case to prior Operation Black Eclipse investigations?
 
 ### Lead 6: Known Threat Actor Association
 
-**Supporting Correlations:** 5
+**Supporting Correlations:** 6
 
 Threat-intelligence indicators should be validated before being used for attribution or campaign linkage.
 
@@ -169,35 +166,36 @@ Threat-intelligence indicators should be validated before being used for attribu
 
 **Supporting Evidence:**
 
-- `BID-2026-5008-EV-0018` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0033` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0068` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0074` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0082` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0032` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0064` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0072` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0073` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0105` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0118` — Threat Intelligence Record; source: Unknown Device; integrity: Verified
 
 **Key Question:** Are the actor indicators independently corroborated by forensic evidence?
 
 ### Lead 7: Biosecurity-Control Bypass
 
-**Supporting Correlations:** 15
+**Supporting Correlations:** 14
 
 Biosecurity-control findings require review to determine whether cyber access could affect protected laboratory operations or support cyber-to-physical escalation.
 
 **Associated Findings:**
 
-- Biosecurity Policy Violation
 - Containment Verification
+- Biosecurity Policy Violation
 
 **Supporting Evidence:**
 
-- `BID-2026-5008-EV-0012` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0048` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0066` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0073` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0088` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0092` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0093` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
-- `BID-2026-5008-EV-0015` — Containment Validation Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0001` — Containment Validation Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0024` — Containment Validation Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0037` — Containment Validation Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0079` — Containment Validation Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0106` — Containment Validation Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0115` — Containment Validation Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0006` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
+- `BID-2026-6459-EV-0013` — Biosecurity Audit Record; source: Unknown Device; integrity: Verified
 
 **Key Question:** Were biosecurity controls bypassed intentionally, and did the bypass affect physical laboratory processes?
 
@@ -244,11 +242,11 @@ The activity may represent reconnaissance, access development, control bypass, o
 
 | Related Case | Classification | Severity | Link Basis |
 |--------------|----------------|----------|------------|
-| BID-2026-9934 | Supply Chain Security Investigation | HIGH | matching threat family |
-| BID-2026-5190 | Cyber-Biothreat Intelligence Review | LOW | matching threat family |
-| BID-2026-8334 | Unauthorized Research System Access | LOW | matching threat family, matching classification |
-| BID-2026-8561 | Unauthorized Research System Access | MODERATE | matching classification |
-| BID-2026-2215 | Unauthorized Research System Access | HIGH | matching classification |
+| BID-2026-6149 | Supply Chain Security Investigation | LOW | matching classification |
+| BID-2026-9934 | Supply Chain Security Investigation | HIGH | matching classification |
+| BID-2026-6321 | Supply Chain Security Investigation | HIGH | matching classification |
+| BID-2026-1115 | Biosecurity Infrastructure Investigation | HIGH | matching threat family |
+| BID-2026-6443 | Biological Research Intelligence Collection | HIGH | matching threat family |
 
 ---
 
@@ -258,7 +256,7 @@ The activity may represent reconnaissance, access development, control bypass, o
 - The investigation has not confirmed whether physical specimens or laboratory processes were affected.
 - The threat actor's final objective—espionage, sabotage, disruption, or attack preparation—remains under assessment.
 - Public-health consequences cannot be determined without validated biological-impact evidence.
-- 97 evidence records remain pending analyst review.
+- 118 evidence records remain pending analyst review.
 
 ---
 
@@ -295,10 +293,10 @@ The activity may represent reconnaissance, access development, control bypass, o
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-5008/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-5008/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-5008/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-5008/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-6459/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-6459/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-6459/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-6459/forensic_summary.md)
 
 ---
 

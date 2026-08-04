@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-5008
+BID-2026-6459
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Supply Chain Security Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Specimen Tracking Manipulation
 
 Severity:
-MODERATE
+HIGH
 
 Priority:
-ELEVATED
+HIGH
 
 ---
 
@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
@@ -52,13 +52,13 @@ Affected Assets:
 14
 
 Evidence Collected:
-97
+118
 
 Indicators Identified:
-25
+52
 
 Analyst Confidence:
-95%
+96%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha

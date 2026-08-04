@@ -3,23 +3,23 @@
 ## Investigation
 
 Case ID:
-BID-2026-5008
+BID-2026-6459
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Supply Chain Security Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
+| Device | Protected workstation entered evidence preservation mode |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Identity | Credential reuse detected across isolated research segments |
 | System Log | Unexpected privilege escalation recorded |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Authentication | Privileged account authenticated outside approved maintenance window |
 
 
@@ -28,23 +28,23 @@ Unauthorized Research System Access
 ## Investigation Statistics
 
 Evidence Collected:
-97
+118
 
 Indicators Reviewed:
-25
+52
 
 Risk Score:
-55
+74
 
 Confidence:
-95%
+96%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha
 
 Current Status:
 
-Field Coordination
+Evidence Collection

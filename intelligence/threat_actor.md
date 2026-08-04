@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Medical Device Communications Interference
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Black Helix
 
 ---
 
 ## Attribution
-Unknown
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-95%
+96%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Covert Remote Access Tooling
-- Insider Access Abuse
-- Lateral Movement
+- Insider Misuse
+- Command and Control
+- Long-Term Network Foothold
+- Supply Chain Compromise
+- Credential Abuse
 - Laboratory Network Reconnaissance
-- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Supply Chain Security Investigation
 
 ---
 

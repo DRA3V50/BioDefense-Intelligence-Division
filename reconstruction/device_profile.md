@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-5008
+BID-2026-6459
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Supply Chain Security Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Specimen Tracking Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Biosecurity Operations Center
+Genome Sequencing Environment
 
 Device:
-Evidence Repository
+Genome Analysis Workstation
 
 Vendor:
-Red Hat
+Dell
 
 Operating System:
-VMware ESXi 9
+Windows Server 2025
 
 Security Zone:
-Biosecurity Segment
+Secure Laboratory
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Evidence Acquisition
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-95%
+96%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

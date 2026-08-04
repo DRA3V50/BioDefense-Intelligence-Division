@@ -1,0 +1,12 @@
+{
+    "case_id": "BID-2026-6459",
+    "artifact_type": "Laboratory System Configuration",
+    "generated_at": "2026-08-04T16:10:25Z",
+    "platform": "Unknown Platform",
+    "vendor": "Dell",
+    "device": "Unknown Device",
+    "baseline_version": "Baseline Pending Review",
+    "zone": "Unknown Zone",
+    "security_state": "Under Investigation",
+    "configuration_integrity": "Pending Analyst Validation"
+}

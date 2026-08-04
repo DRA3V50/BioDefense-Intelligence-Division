@@ -113,3 +113,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-08-04,BID-2026-5598,Coordinated Biomedical Systems Intrusion,Specimen Management Security Review,HIGH,HIGH,69,94,160,94,40,Biosecurity Operations Center,Dell,Containment Network,Analyst Team Bravo,Evidence Collection
 2026-08-04,BID-2026-6149,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,LOW,ROUTINE,27,88,49,4,7,Laboratory Control Network,HPE,Federal Operations,BioDefense Task Force,Evidence Collection
 2026-08-04,BID-2026-5008,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,MODERATE,ELEVATED,55,95,97,25,14,Biosecurity Operations Center,Red Hat,Biosecurity Segment,Analyst Team Delta,Field Coordination
+2026-08-04,BID-2026-6459,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,HIGH,HIGH,74,96,118,52,14,Genome Sequencing Environment,Dell,Secure Laboratory,Analyst Team Alpha,Evidence Collection

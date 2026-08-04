@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5008 |
+| Case ID | BID-2026-6459 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Medical Device Communications Interference |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Supply Chain Security Investigation |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | HIGH |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Evidence Repository |
-| Vendor | Red Hat |
-| Security Zone | Biosecurity Segment |
+| Platform | Genome Sequencing Environment |
+| Device | Genome Analysis Workstation |
+| Vendor | Dell |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 55 |
-| Confidence | 95% |
-| Evidence Collected | 97 |
-| Indicators Identified | 25 |
+| Risk Score | 74 |
+| Confidence | 96% |
+| Evidence Collected | 118 |
+| Indicators Identified | 52 |
 | Affected Assets | 14 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Evidence Collection**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

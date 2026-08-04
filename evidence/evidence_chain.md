@@ -1,18 +1,18 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-08-04 05:12 UTC
+**Generated:** 2026-08-04 16:10 UTC
 
-**Case ID:** BID-2026-5008
+**Case ID:** BID-2026-6459
 
-**Classification:** Unauthorized Research System Access
+**Classification:** Supply Chain Security Investigation
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Specimen Tracking Manipulation
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Priority:** ELEVATED
+**Priority:** HIGH
 
-**Case Confidence:** 95%
+**Case Confidence:** 96%
 
 ---
 
@@ -26,334 +26,30 @@ evidence correlations, and the active case assessment.
 
 ## Evidence Chain Summary
 
-- **Evidence records reviewed:** 97
-- **Correlation records reviewed:** 97
+- **Evidence records reviewed:** 118
+- **Correlation records reviewed:** 118
 - **Investigative findings:** 12
 
 ---
 
-## Finding 1: Unauthorized Facility Access
-
-**Confidence:** 98
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0001** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0016** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0021** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0028** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0036** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0059** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0078** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0083** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0085** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0097** — Access Control Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Unauthorized Facility Access** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 2: Credential Misuse
-
-**Confidence:** 82
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0002** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0009** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0019** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0029** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0030** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0057** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0061** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0077** — Authentication Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Credential Misuse** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 3: Research Data Integrity Anomaly
+## Finding 1: Containment Verification
 
 **Confidence:** 81
 
 ### Supporting Evidence
 
-- **BID-2026-5008-EV-0003** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0017** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0022** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0023** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0026** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0031** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0041** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0046** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0054** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0058** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0062** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0065** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0070** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0071** — Research Data Integrity Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Research Data Integrity Anomaly** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 4: Laboratory System Modification
-
-**Confidence:** 86
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0004** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0007** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0035** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0037** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0044** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0045** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0050** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0063** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0081** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0091** — Laboratory System Configuration  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Laboratory System Modification** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 5: Suspicious Network Activity
-
-**Confidence:** 89
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0005** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0006** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0011** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0014** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0027** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0039** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0047** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0072** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0075** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0090** — Firewall Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Suspicious Network Activity** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 6: Command-and-Control Communication
-
-**Confidence:** 82
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0008** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0013** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0043** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0051** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0052** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0056** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0084** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0089** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0094** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0095** — Network Connection Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Command-and-Control Communication** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 7: Research Workstation Compromise
-
-**Confidence:** 92
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0010** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0032** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0049** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0064** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0096** — Research Workstation Event Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Research Workstation Compromise** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 8: Biosecurity Policy Violation
-
-**Confidence:** 96
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0012** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0048** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0066** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0073** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0088** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0092** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0093** — Biosecurity Audit Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Biosecurity Policy Violation** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 9: Containment Verification
-
-**Confidence:** 80
-
-### Supporting Evidence
-
-- **BID-2026-5008-EV-0015** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0020** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0024** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0040** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0055** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0060** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0086** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0087** — Containment Validation Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0001** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0024** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0037** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0079** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0106** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0115** — Containment Validation Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -362,27 +58,47 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Containment Verification** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 10: Known Threat Actor Indicator
+## Finding 2: Research Workstation Compromise
 
-**Confidence:** 99
+**Confidence:** 90
 
 ### Supporting Evidence
 
-- **BID-2026-5008-EV-0018** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0033** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0068** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0074** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0082** — Threat Intelligence Record  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0002** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0003** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0027** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0041** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0045** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0058** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0061** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0066** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0085** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0094** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0096** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0098** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0103** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0108** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0113** — Research Workstation Event Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -390,30 +106,85 @@ The finding was generated from available evidence correlation records. Additiona
 
 ### Analyst Assessment
 
-The listed evidence supports further review of **Known Threat Actor Indicator** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
+The listed evidence supports further review of **Research Workstation Compromise** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 11: Analyst Intelligence Assessment
+## Finding 3: Laboratory System Modification
+
+**Confidence:** 89
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0004** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0028** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0030** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0047** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0070** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0083** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0089** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0095** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0104** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0111** — Laboratory System Configuration  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Laboratory System Modification** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 4: Analyst Intelligence Assessment
 
 **Confidence:** 96
 
 ### Supporting Evidence
 
-- **BID-2026-5008-EV-0025** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0053** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0067** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0076** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0079** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0080** — Analyst Observation  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0005** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0009** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0014** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0016** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0020** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0023** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0029** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0050** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0055** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0065** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0074** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0076** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0107** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0114** — Analyst Observation  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -422,25 +193,265 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Analyst Intelligence Assessment** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 12: Laboratory Information System Anomaly
+## Finding 5: Biosecurity Policy Violation
+
+**Confidence:** 82
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0006** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0013** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0042** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0067** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0080** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0090** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0110** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0112** — Biosecurity Audit Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Biosecurity Policy Violation** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 6: Command-and-Control Communication
+
+**Confidence:** 84
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0007** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0012** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0035** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0038** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0043** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0046** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0051** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0091** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0097** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0099** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0100** — Network Connection Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Command-and-Control Communication** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 7: Suspicious Network Activity
 
 **Confidence:** 91
 
 ### Supporting Evidence
 
-- **BID-2026-5008-EV-0034** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0038** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0042** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
-- **BID-2026-5008-EV-0069** — Laboratory Information System Audit Log  
-  Source: **Unknown Device** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0008** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0033** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0044** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0057** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0082** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0087** — Firewall Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Suspicious Network Activity** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 8: Credential Misuse
+
+**Confidence:** 83
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0010** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0015** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0017** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0019** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0021** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0034** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0040** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0054** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0060** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0062** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0068** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0078** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0101** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0102** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0109** — Authentication Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Credential Misuse** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 9: Research Data Integrity Anomaly
+
+**Confidence:** 85
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0011** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0059** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0063** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0088** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0116** — Research Data Integrity Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Research Data Integrity Anomaly** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 10: Unauthorized Facility Access
+
+**Confidence:** 90
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0018** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0031** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0036** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0039** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0053** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0056** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0071** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0075** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0077** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0081** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0084** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0086** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0092** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0093** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0117** — Access Control Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Unauthorized Facility Access** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 11: Laboratory Information System Anomaly
+
+**Confidence:** 98
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0022** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0025** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0026** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0048** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0049** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0052** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0069** — Laboratory Information System Audit Log  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -449,7 +460,38 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Laboratory Information System Anomaly** within
-investigation **BID-2026-5008**. Evidence integrity, source reliability, and
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 12: Known Threat Actor Indicator
+
+**Confidence:** 87
+
+### Supporting Evidence
+
+- **BID-2026-6459-EV-0032** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0064** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0072** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0073** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0105** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-6459-EV-0118** — Threat Intelligence Record  
+  Source: **Unknown Device** | Vendor: **Dell** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Known Threat Actor Indicator** within
+investigation **BID-2026-6459**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
