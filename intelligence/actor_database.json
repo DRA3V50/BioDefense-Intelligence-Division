@@ -115,10 +115,10 @@
         {
             "name": "Biomedical Supply Chain Compromise",
             "first_seen": "2026-08-02",
-            "last_seen": "2026-08-03",
-            "cases": 2,
+            "last_seen": "2026-08-04",
+            "cases": 3,
             "severity": "MODERATE",
-            "confidence": 86
+            "confidence": 82
         },
         {
             "name": "Research Workstation Compromise",

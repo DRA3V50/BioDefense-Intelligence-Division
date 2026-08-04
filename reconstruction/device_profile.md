@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6459
+BID-2026-8932
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 Threat Family:
-Specimen Tracking Manipulation
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Federal Biosecurity Laboratory
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
 Genome Analysis Workstation
 
 Vendor:
-Dell
+Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
@@ -47,10 +47,10 @@ Status:
 Evidence Acquisition
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-96%
+82%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+No destructive activity observed following initial containment.

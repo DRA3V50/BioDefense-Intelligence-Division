@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6459
+Case ID: BID-2026-8932
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Supply Chain Security Investigation
+Classification: Specimen Management Security Review
 
-Threat Family: Specimen Tracking Manipulation
+Threat Family: Biomedical Supply Chain Compromise
 
-Current Status: Evidence Collection
+Current Status: Monitoring
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ELEVATED
 
 Risk Score:
-74
+56
 
 Confidence:
-96%
+82%
 
 Affected Assets:
-14
+7
 
 Evidence Collected:
-118
+35
 
 Indicators Recorded:
-52
+16
 
 ---
 

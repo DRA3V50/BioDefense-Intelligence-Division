@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6459
+BID-2026-8932
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Identity | Credential reuse detected across isolated research segments |
+| Infrastructure | Firewall policy deviation identified |
 | System Log | Unexpected privilege escalation recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Identity | Credential reuse detected across isolated research segments |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---
@@ -28,16 +28,16 @@ Supply Chain Security Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-118
+35
 
 Indicators Reviewed:
-52
+16
 
 Risk Score:
-74
+56
 
 Confidence:
-96%
+82%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Alpha
 
 Current Status:
 
-Evidence Collection
+Monitoring

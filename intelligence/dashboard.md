@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6459 |
+| Case ID | BID-2026-8932 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Supply Chain Security Investigation |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | HIGH |
-| Status | Evidence Collection |
+| Classification | Specimen Management Security Review |
+| Threat Family | Biomedical Supply Chain Compromise |
+| Severity | MODERATE |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Genome Sequencing Environment |
+| Platform | Evidence Processing Network |
 | Device | Genome Analysis Workstation |
-| Vendor | Dell |
-| Network Zone | Secure Laboratory |
+| Vendor | Palo Alto Networks |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 74 |
-| Confidence | 96% |
-| Evidence | 118 |
-| Indicators | 52 |
-| Affected Assets | 14 |
+| Risk Score | 56 |
+| Confidence | 82% |
+| Evidence | 35 |
+| Indicators | 16 |
+| Affected Assets | 7 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.

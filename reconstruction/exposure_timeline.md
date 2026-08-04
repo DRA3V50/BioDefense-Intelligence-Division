@@ -4,18 +4,18 @@
 ## 2026-08-04
 
 ### Case Opened
-Case ID: BID-2026-6459
+Case ID: BID-2026-8932
 
 ### Classification
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Evidence Collection
+Monitoring
 
 ### Severity
-HIGH
+MODERATE
 
 ---

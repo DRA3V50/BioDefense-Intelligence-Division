@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6459
+BID-2026-8932
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 Threat Family:
-Specimen Tracking Manipulation
+Biomedical Supply Chain Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
 Genome Analysis Workstation
 
 Vendor:
-Dell
+Palo Alto Networks
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-89
+90
 
 Evidence Collected:
-118
+35
 
 Indicators Identified:
-52
+16
 
 Affected Assets:
-14
+7
 
 Confidence:
-96%
+82%
 
 Risk Score:
-74
+56
 
 ---
 
