@@ -167,6 +167,14 @@
             "cases": 1,
             "severity": "HIGH",
             "confidence": 86
+        },
+        {
+            "name": "Protected Research Data Exfiltration",
+            "first_seen": "2026-08-04",
+            "last_seen": "2026-08-04",
+            "cases": 1,
+            "severity": "HIGH",
+            "confidence": 94
         }
     ]
 }

@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Medical Device Communications Interference
+Protected Research Data Exfiltration
 
 ---
 
 ## Primary Alias
-Silent Culture
+Ghost Genome
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Advanced
+Nation-State Level
 
 ---
 
 ## Confidence
-98%
+94%
 
 ---
 
 ## Observed Techniques
 - Insider Misuse
-- Concealed Internal Movement
 - Encrypted Data Staging
-- Research Data Exfiltration
-- Biosecurity System Tampering
-- Command and Control
+- Laboratory Control System Manipulation
+- Laboratory Data Manipulation
+- Covert Remote Access Tooling
+- Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Bravo
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 ---
 

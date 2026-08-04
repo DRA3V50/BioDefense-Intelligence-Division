@@ -4,16 +4,16 @@
 ## 2026-08-04
 
 ### Case Opened
-Case ID: BID-2026-9934
+Case ID: BID-2026-5598
 
 ### Classification
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 ### Initial Assessment
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Field Coordination
+Evidence Collection
 
 ### Severity
 HIGH

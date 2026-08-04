@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9934 |
+| Case ID | BID-2026-5598 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Supply Chain Security Investigation |
-| Threat Family | Medical Device Communications Interference |
+| Classification | Specimen Management Security Review |
+| Threat Family | Protected Research Data Exfiltration |
 | Severity | HIGH |
-| Status | Field Coordination |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Clinical Data Server |
-| Vendor | Palo Alto Networks |
+| Platform | Biosecurity Operations Center |
+| Device | Biomedical Workstation |
+| Vendor | Dell |
 | Security Zone | Containment Network |
 
 ---
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 70 |
-| Confidence | 98% |
-| Evidence Collected | 145 |
-| Indicators Identified | 29 |
-| Affected Assets | 16 |
+| Risk Score | 69 |
+| Confidence | 94% |
+| Evidence Collected | 160 |
+| Indicators Identified | 94 |
+| Affected Assets | 40 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Bravo**
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Evidence Collection**
 
 Priority:
 

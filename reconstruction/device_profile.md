@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-9934
+BID-2026-5598
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 Threat Family:
-Medical Device Communications Interference
+Protected Research Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
-Laboratory Control Network
+Biosecurity Operations Center
 
 Device:
-Clinical Data Server
+Biomedical Workstation
 
 Vendor:
-Palo Alto Networks
+Dell
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
 Containment Network
@@ -50,14 +50,14 @@ Priority:
 HIGH
 
 Confidence:
-98%
+94%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-9934
+BID-2026-5598
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| System Log | Unexpected privilege escalation recorded |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Supply Chain Security Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-145
+160
 
 Indicators Reviewed:
-29
+94
 
 Risk Score:
-70
+69
 
 Confidence:
-98%
+94%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo
 
 Current Status:
 
-Field Coordination
+Evidence Collection

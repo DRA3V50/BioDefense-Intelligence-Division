@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-04 02:11 UTC
+**Generated:** 2026-08-04 02:31 UTC
 
 ---
 
@@ -18,15 +18,15 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-9934
+**Case ID:** BID-2026-5598
 
-**Classification:** Supply Chain Security Investigation
+**Classification:** Specimen Management Security Review
 
 **Severity:** HIGH
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Protected Research Data Exfiltration
 
-**Confidence:** 98%
+**Confidence:** 94%
 
 ---
 
@@ -38,9 +38,9 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 
 ## Evidence Summary
 
-Evidence Collected: **145**
+Evidence Collected: **160**
 
-Indicators: **29**
+Indicators: **94**
 
 Priority: **HIGH**
 
@@ -49,7 +49,7 @@ Priority: **HIGH**
 ## Current Response
 
 Lead Analyst:
-**BioDefense Task Force**
+**Analyst Team Bravo**
 
 Initial Access:
 **Insider Misuse**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**85**
+**86**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**92207**
+**92367**
 
 Total Indicators:
-**61758**
+**61852**
 
 ---
 
 ## Operational Highlights
 
-- 145 evidence items are associated with the active investigation.
-- 29 indicators are currently linked to the case.
+- 160 evidence items are associated with the active investigation.
+- 94 indicators are currently linked to the case.
 - Containment remains at **SEVERE**.
-- Analyst confidence is **98%**.
+- Analyst confidence is **94%**.
 - Current investigation priority is **HIGH**.
 
 ---

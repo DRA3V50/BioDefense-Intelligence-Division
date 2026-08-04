@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-9934
+BID-2026-5598
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Specimen Management Security Review
 
 Threat Family:
-Medical Device Communications Interference
+Protected Research Data Exfiltration
 
 Severity:
 HIGH
@@ -26,19 +26,19 @@ HIGH
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
@@ -49,16 +49,16 @@ Unauthorized access to protected biomedical research resources was confirmed dur
 # Investigation Metrics
 
 Affected Assets:
-16
+40
 
 Evidence Collected:
-145
+160
 
 Indicators Identified:
-29
+94
 
 Analyst Confidence:
-98%
+94%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 # Operational Status
 
 Current Status:
-Field Coordination
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo
