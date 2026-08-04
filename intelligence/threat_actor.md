@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Information System Compromise
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Umbra Bio
+Silent Culture
 
 ---
 
 ## Attribution
-International Infrastructure
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-96%
+98%
 
 ---
 
 ## Observed Techniques
-- Web Application Exploitation
-- Research Data Exfiltration
-- Insider Access Abuse
-- Lateral Movement
+- Insider Misuse
+- Concealed Internal Movement
 - Encrypted Data Staging
+- Research Data Exfiltration
+- Biosecurity System Tampering
 - Command and Control
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+BioDefense Task Force
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Protected Research Systems Investigation
+Supply Chain Security Investigation
 
 ---
 

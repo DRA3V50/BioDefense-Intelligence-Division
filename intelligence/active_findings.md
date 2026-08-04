@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-7918
+BID-2026-9934
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Medical Device Communications Interference
 
 Severity:
 HIGH
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-18
+16
 
 Evidence Collected:
-224
+145
 
 Indicators Identified:
-98
+29
 
 Analyst Confidence:
-96%
+98%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force

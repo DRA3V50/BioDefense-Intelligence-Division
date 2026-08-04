@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-04 01:45 UTC
+**Generated:** 2026-08-04 02:11 UTC
 
 ---
 
@@ -18,15 +18,15 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-7918
+**Case ID:** BID-2026-9934
 
-**Classification:** Protected Research Systems Investigation
+**Classification:** Supply Chain Security Investigation
 
 **Severity:** HIGH
 
-**Threat Family:** Laboratory Information System Compromise
+**Threat Family:** Medical Device Communications Interference
 
-**Confidence:** 96%
+**Confidence:** 98%
 
 ---
 
@@ -38,9 +38,9 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 
 ## Evidence Summary
 
-Evidence Collected: **224**
+Evidence Collected: **145**
 
-Indicators: **98**
+Indicators: **29**
 
 Priority: **HIGH**
 
@@ -49,10 +49,10 @@ Priority: **HIGH**
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 Initial Access:
-**Web Application Exploitation**
+**Insider Misuse**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**84**
+**85**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**92062**
+**92207**
 
 Total Indicators:
-**61729**
+**61758**
 
 ---
 
 ## Operational Highlights
 
-- 224 evidence items are associated with the active investigation.
-- 98 indicators are currently linked to the case.
+- 145 evidence items are associated with the active investigation.
+- 29 indicators are currently linked to the case.
 - Containment remains at **SEVERE**.
-- Analyst confidence is **96%**.
+- Analyst confidence is **98%**.
 - Current investigation priority is **HIGH**.
 
 ---

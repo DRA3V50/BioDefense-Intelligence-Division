@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7918
+BID-2026-9934
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Medical Research Laboratory
+Laboratory Control Network
 
 Device:
-Network Security Appliance
+Clinical Data Server
 
 Vendor:
 Palo Alto Networks
 
 Security Zone:
-Research Operations
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-84
+85
 
 Evidence Collected:
-224
+145
 
 Indicators Identified:
-98
+29
 
 Affected Assets:
-18
+16
 
 Confidence:
-96%
+98%
 
 Risk Score:
-79
+70
 
 ---
 

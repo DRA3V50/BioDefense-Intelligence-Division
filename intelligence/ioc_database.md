@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7918
+BID-2026-9934
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Supply Chain Security Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| System Log | Unexpected privilege escalation recorded |
-| PowerShell | Encoded administrative command execution detected |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Device | Protected workstation entered evidence preservation mode |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| System Log | Unexpected privilege escalation recorded |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -28,23 +28,23 @@ Protected Research Systems Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-224
+145
 
 Indicators Reviewed:
-98
+29
 
 Risk Score:
-79
+70
 
 Confidence:
-96%
+98%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Current Status:
 
-Intelligence Analysis
+Field Coordination

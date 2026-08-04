@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7918 |
+| Case ID | BID-2026-9934 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Protected Research Systems Investigation |
-| Threat Family | Laboratory Information System Compromise |
+| Classification | Supply Chain Security Investigation |
+| Threat Family | Medical Device Communications Interference |
 | Severity | HIGH |
-| Status | Intelligence Analysis |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Network Security Appliance |
+| Platform | Laboratory Control Network |
+| Device | Clinical Data Server |
 | Vendor | Palo Alto Networks |
-| Security Zone | Research Operations |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 79 |
-| Confidence | 96% |
-| Evidence Collected | 224 |
-| Indicators Identified | 98 |
-| Affected Assets | 18 |
+| Risk Score | 70 |
+| Confidence | 98% |
+| Evidence Collected | 145 |
+| Indicators Identified | 29 |
+| Affected Assets | 16 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Field Coordination**
 
 Priority:
 
