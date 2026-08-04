@@ -149,6 +149,23 @@ def scaled_font(width: int, height: int, size: int, bold: bool = False) -> Image
     return load_font(max(8, round(size * scale)), bold)
 
 
+def fit_scaled_font(
+    draw: ImageDraw.ImageDraw,
+    rendered: str,
+    maximum_width: int,
+    width: int,
+    height: int,
+    preferred_size: int,
+    minimum_size: int = 8,
+    bold: bool = False,
+) -> ImageFont.ImageFont:
+    for size in range(preferred_size, minimum_size - 1, -1):
+        candidate = scaled_font(width, height, size, bold)
+        if text_width(draw, rendered, candidate) <= maximum_width:
+            return candidate
+    return scaled_font(width, height, minimum_size, bold)
+
+
 def text_width(draw: ImageDraw.ImageDraw, rendered: str, font: ImageFont.ImageFont) -> int:
     box = draw.textbbox((0, 0), rendered, font=font)
     return box[2] - box[0]
@@ -330,21 +347,57 @@ def cover(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], width: int,
 def cover_dynamic_regions(draw: ImageDraw.ImageDraw, width: int, height: int) -> None:
     regions = [
         ((1210, 4, 1650, 35), DARK),          # top-right access line
-        ((202, 307, 357, 568), DARK),         # left values
+        ((202, 307, 368, 568), DARK),         # left values
         ((558, 195, 712, 389), DARK),         # center-left values
         ((926, 195, 1110, 389), DARK),        # center-right values
         ((1270, 102, 1410, 249), DARK),       # evidence package values
-        ((1233, 329, 1375, 552), DARK),       # case overview values, removes stray letters
-        ((66, 639, 409, 749), DARK_SOFT),     # chart plot only; preserve axes and labels
-        ((28, 786, 422, 817), DARK),          # chart sync/footer text
+        ((1233, 329, 1375, 552), DARK),       # case overview values
+        ((50, 624, 416, 748), DARK),          # remove baked-in chart bars completely
+        ((18, 775, 424, 808), DARK),          # replace old feed timestamp line
         ((683, 636, 775, 811), DARK),         # system status values
         ((456, 785, 762, 815), DARK_SOFT),    # system waveform
         ((805, 637, 1189, 826), DARK_SOFT),   # threat monitor dynamic content
-        ((1223, 637, 1603, 816), DARK),       # operational brief
-        ((998, 850, 1625, 907), DARK),        # remove both static bottom clocks
+        ((1223, 620, 1603, 816), DARK),       # operational brief body
+        ((998, 850, 1625, 907), DARK),        # remove old bottom clocks
     ]
     for box, fill in regions:
         cover(draw, box, width, height, fill)
+
+
+def draw_biohazard_scan_motion(
+    draw: ImageDraw.ImageDraw,
+    width: int,
+    height: int,
+    frame_index: int,
+) -> None:
+    # Two slow scanning lines remain inside the biohazard viewport.
+    x1, y1, x2, y2 = scaled_box((31, 50, 356, 307), width, height)
+    progress = (frame_index + 0.5) / FRAME_COUNT
+    vertical_x = x1 + round(progress * (x2 - x1))
+    horizontal_y = y2 - round(progress * (y2 - y1))
+
+    glow = max(1, round(width / 1100))
+    core = 1
+
+    draw.rectangle(
+        (vertical_x - glow, y1, vertical_x + glow, y2),
+        fill=(231, 51, 47, 12),
+    )
+    draw.line((vertical_x, y1, vertical_x, y2), fill=(255, 80, 72, 95), width=core)
+
+    draw.rectangle(
+        (x1, horizontal_y - glow, x2, horizontal_y + glow),
+        fill=(231, 51, 47, 10),
+    )
+    draw.line((x1, horizontal_y, x2, horizontal_y), fill=(255, 80, 72, 75), width=core)
+
+    # Small moving intersection marker.
+    radius = max(3, scaled_point((5, 0), width, height)[0])
+    draw.ellipse(
+        (vertical_x - radius, horizontal_y - radius, vertical_x + radius, horizontal_y + radius),
+        outline=RED,
+        width=max(1, core),
+    )
 
 
 def draw_top_access(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
@@ -358,22 +411,27 @@ def draw_left_panel(draw: ImageDraw.ImageDraw, width: int, height: int, data: di
     value_font = scaled_font(width, height, 12, True)
     compact_font = scaled_font(width, height, 10, True)
     x = scaled_point((210, 0), width, height)[0]
-    max_width = scaled_point((345, 0), width, height)[0] - x
+    max_width = scaled_point((350, 0), width, height)[0] - x
 
     rows = [
         (data["case_id"], 324, WHITE, value_font),
         (data["campaign_id"], 357, WHITE, value_font),
-        (data["status"], 390, RED, value_font),
+        (data["status"], 390, RED, None),
         (f"{data['severity']} / {data['priority']}", 423, WHITE, compact_font),
-        (data["lead"], 456, WHITE, compact_font),
+        (data["lead"], 456, WHITE, None),
         (data["updated_date"], 489, TEXT, value_font),
         (data["unit_status"], 524, RED, value_font),
         (data["system_integrity"], 557, WHITE, value_font),
     ]
 
-    for rendered, y_ref, color, font in rows:
+    for rendered, y_ref, color, row_font in rows:
+        if row_font is None:
+            preferred = 11 if y_ref == 390 else 10
+            row_font = fit_scaled_font(
+                draw, rendered, max_width, width, height, preferred, 8, True
+            )
         _, y = scaled_point((0, y_ref), width, height)
-        draw.text((x, y), ellipsize(draw, rendered, font, max_width), font=font, fill=color)
+        draw.text((x, y), rendered, font=row_font, fill=color)
 
     bar_x, bar_y = scaled_point((284, 548), width, height)
     bar_width = max(3, scaled_point((6, 0), width, height)[0])
@@ -567,37 +625,48 @@ def draw_file_network_motion(draw: ImageDraw.ImageDraw, width: int, height: int,
 
 
 def draw_case_feed(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any], frame_index: int) -> None:
-    # Exact interior of the chart. Axes and labels remain untouched.
-    x1, y1, x2, y2 = scaled_box((68, 642, 405, 748), width, height)
+    # The base keeps the axis numbers and labels. Only the static bars are removed.
+    chart_left, chart_top = scaled_point((52, 626), width, height)
+    chart_right, chart_bottom = scaled_point((414, 742), width, height)
 
-    # Rebuild the chart grid so the moving bars sit on the existing axes.
-    for y_ref in (642, 695, 748):
-        x_start, y = scaled_point((59, y_ref), width, height)
-        x_end = scaled_point((407, y_ref), width, height)[0]
-        draw.line((x_start, y, x_end, y), fill=GRID, width=1)
+    # Rebuild the axes and horizontal grid over the cleared plot interior.
+    draw.line((chart_left, chart_top, chart_left, chart_bottom), fill=TEXT, width=1)
+    draw.line((chart_left, chart_bottom, chart_right, chart_bottom), fill=TEXT, width=1)
+    for ratio in (0.0, 0.25, 0.50, 0.75, 1.0):
+        y = round(chart_top + ratio * (chart_bottom - chart_top))
+        draw.line((chart_left, y, chart_right, y), fill=GRID, width=1)
+
+    plot_left = chart_left + scaled_point((10, 0), width, height)[0]
+    plot_right = chart_right - scaled_point((7, 0), width, height)[0]
+    plot_top = chart_top + scaled_point((3, 0), width, height)[0]
+    plot_bottom = chart_bottom - scaled_point((2, 0), width, height)[0]
 
     seed = sum(ord(character) for character in data["case_id"])
     count = 20
     gap = max(3, scaled_point((5, 0), width, height)[0])
-    bar_width = max(4, (x2 - x1 - gap * (count - 1)) // count)
-    usable_height = y2 - y1
+    bar_width = max(4, (plot_right - plot_left - gap * (count - 1)) // count)
+    usable_height = plot_bottom - plot_top
 
     for index in range(count):
         rng = random.Random(seed + index * 137)
         phase_one = rng.uniform(0, math.tau)
         phase_two = rng.uniform(0, math.tau)
         speed = rng.uniform(0.28, 0.92)
-        level = 0.48 + 0.29 * math.sin(frame_index * speed + phase_one) + 0.16 * math.sin(frame_index * 0.39 + phase_two)
+        level = (
+            0.48
+            + 0.29 * math.sin(frame_index * speed + phase_one)
+            + 0.16 * math.sin(frame_index * 0.39 + phase_two)
+        )
         level = max(0.08, min(0.98, level))
         bar_height = max(4, round(usable_height * level))
-        x = x1 + index * (bar_width + gap)
+        x = plot_left + index * (bar_width + gap)
         color = RED if index >= count - 2 else (WHITE if index % 4 == 0 else TEXT)
-        draw.rectangle((x, y2 - bar_height, x + bar_width, y2), fill=color)
+        draw.rectangle((x, plot_bottom - bar_height, x + bar_width, plot_bottom), fill=color)
 
     sync_font = scaled_font(width, height, 9, True)
     sync_text = f"FEED SYNC: {data['updated_compact']}  •  FILTER: ALL  •  STREAM: BID-LIVE"
-    x, y = scaled_point((29, 795), width, height)
-    max_width = scaled_point((415, 0), width, height)[0] - x
+    x, y = scaled_point((24, 786), width, height)
+    max_width = scaled_point((416, 0), width, height)[0] - x
     draw.text((x, y), ellipsize(draw, sync_text, sync_font, max_width), font=sync_font, fill=TEXT)
 
 
@@ -655,24 +724,24 @@ def draw_threat_monitor(draw: ImageDraw.ImageDraw, width: int, height: int, data
 
 
 def draw_operational_brief(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
-    font = scaled_font(width, height, 10)
-    x_bullet = scaled_point((1232, 0), width, height)[0]
-    x_text = scaled_point((1253, 0), width, height)[0]
+    font = scaled_font(width, height, 12)
+    x_bullet = scaled_point((1210, 0), width, height)[0]
+    x_text = scaled_point((1233, 0), width, height)[0]
     max_width = scaled_point((1594, 0), width, height)[0] - x_text
+    line_step = scaled_point((0, 18), width, height)[1]
 
     entries = [
-        (data["assessment"], 646, 2),
-        (f"Phase: {data['phase']}", 697, 1),
-        (f"Priority review: {data['severity'].title()} / {data['priority'].title()}", 733, 1),
-        (f"Next action: {data['next_action']}", 769, 2),
+        (data["assessment"], 632, 2),
+        (f"Phase: {data['phase']}", 688, 1),
+        (f"Priority review: {data['severity'].title()} / {data['priority'].title()}", 727, 1),
+        (f"Next action: {data['next_action']}", 766, 2),
     ]
-    line_step = scaled_point((0, 16), width, height)[1]
-    max_y = scaled_point((0, 806), width, height)[1]
 
-    for rendered, y_ref, max_lines in entries:
+    max_y = scaled_point((0, 810), width, height)[1]
+    for rendered, y_ref, maximum_lines in entries:
         _, y = scaled_point((0, y_ref), width, height)
-        draw.ellipse((x_bullet, y + 4, x_bullet + 5, y + 9), fill=RED)
-        for index, line in enumerate(wrap_text(draw, rendered, font, max_width, max_lines)):
+        draw.ellipse((x_bullet, y + 6, x_bullet + 6, y + 12), fill=RED)
+        for index, line in enumerate(wrap_text(draw, rendered, font, max_width, maximum_lines)):
             line_y = y + index * line_step
             if line_y <= max_y:
                 draw.text((x_text, line_y), line, font=font, fill=TEXT)
@@ -693,6 +762,7 @@ def render_frame(base_image: Image.Image, data: dict[str, Any], frame_index: int
     width, height = frame.size
 
     cover_dynamic_regions(draw, width, height)
+    draw_biohazard_scan_motion(draw, width, height, frame_index)
     draw_top_access(draw, width, height, data)
     draw_left_panel(draw, width, height, data)
     draw_center_details(draw, width, height, data)
