@@ -22,7 +22,7 @@ CSHARP_XML_PATH = Path("reports/bioterror_threat_score_csharp.xml")
 REFERENCE_WIDTH = 1672
 REFERENCE_HEIGHT = 941
 FRAME_COUNT = 16
-FRAME_DURATION_MS = 750  
+FRAME_DURATION_MS = 750  # 16 frames = 12-second loop
 EASTERN_TIME = ZoneInfo("America/New_York")
 
 WHITE = (230, 233, 235, 255)
@@ -37,6 +37,8 @@ BLUE_SOFT = (117, 164, 229, 255)
 DARK = (3, 7, 9, 255)
 DARK_SOFT = (3, 7, 9, 238)
 GRID = (36, 43, 47, 180)
+SCAN_RED = (255, 72, 65, 110)
+SCAN_RED_SOFT = (255, 72, 65, 55)
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -218,13 +220,13 @@ def access_level(score: int, severity: str, priority: str) -> int:
 
 def stage_index(status: str, phase: str) -> int:
     combined = f"{status} {phase}".lower()
-    if any(term in combined for term in ("contain", "problem", "review", "recover", "recovery", "close")):
+    if any(term in combined for term in ("problem review", "contain", "recover", "recovery", "close")):
         return 4
     if any(term in combined for term in ("assess", "analysis", "monitor")):
         return 3
     if any(term in combined for term in ("valid", "forensic", "investigation")):
         return 2
-    if any(term in combined for term in ("evidence", "collect", "correlation", "field coordination")):
+    if any(term in combined for term in ("evidence review", "evidence", "collect", "correlation", "field coordination", "review")):
         return 1
     if any(term in combined for term in ("scan", "open", "detection", "intake")):
         return 0
@@ -357,31 +359,6 @@ def draw_top_access(draw: ImageDraw.ImageDraw, width: int, height: int, data: di
     draw.text((x, y), rendered, font=font, fill=RED, anchor="ra")
 
 
-def draw_biohazard_scan(draw: ImageDraw.ImageDraw, width: int, height: int, frame_index: int) -> None:
-    # Remove the harsh centered static cross and replace with slower scan lines.
-    box = scaled_box((69, 94, 316, 290), width, height)
-    x1, y1, x2, y2 = box
-
-    # mute any existing bright central cross from the base image
-    cx = (x1 + x2) // 2
-    cy = (y1 + y2) // 2
-    draw.rectangle((cx - 3, y1 + 10, cx + 3, y2 - 10), fill=DARK_SOFT)
-    draw.rectangle((x1 + 10, cy - 3, x2 - 10, cy + 3), fill=DARK_SOFT)
-
-    # slower horizontal and vertical scans with independent motion
-    t = frame_index / max(1, FRAME_COUNT - 1)
-    v_pos = x1 + int((x2 - x1) * (0.12 + 0.76 * (0.5 + 0.5 * math.sin(t * math.tau * 0.7 - 1.0))))
-    h_pos = y1 + int((y2 - y1) * (0.18 + 0.64 * (0.5 + 0.5 * math.sin(t * math.tau * 0.55 + 0.8))))
-
-    glow_w = max(4, round(width / 550))
-    core_w = max(2, round(width / 850))
-    draw.rectangle((v_pos - glow_w, y1 + 8, v_pos + glow_w, y2 - 8), fill=(255, 54, 48, 38))
-    draw.rectangle((x1 + 8, h_pos - glow_w, x2 - 8, h_pos + glow_w), fill=(255, 54, 48, 28))
-    draw.line((v_pos, y1 + 8, v_pos, y2 - 8), fill=RED, width=core_w)
-    draw.line((x1 + 8, h_pos, x2 - 8, h_pos), fill=(200, 45, 42, 230), width=core_w)
-
-
-
 def draw_left_panel(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
     value_font = scaled_font(width, height, 12, True)
     compact_font = scaled_font(width, height, 10, True)
@@ -420,24 +397,33 @@ def draw_left_panel(draw: ImageDraw.ImageDraw, width: int, height: int, data: di
         draw.rectangle((x1, bar_y + 20 - bar_height, x1 + bar_width, bar_y + 20), fill=RED)
 
 def draw_logo_scan(draw: ImageDraw.ImageDraw, width: int, height: int, frame_index: int) -> None:
-    # Smooth subtle diagonal scan beam; no harsh center crosshair.
+    # One smooth diagonal scan beam. No permanent centered cross.
     x1, y1, x2, y2 = scaled_box((40, 57, 330, 289), width, height)
     phase = frame_index / FRAME_COUNT
 
-    lw = max(2, round(width / 1400))
-    glow = lw + 2
+    line_width = max(2, round(width / 1400))
+    glow_width = line_width + 2
 
-    offset = round((x2 - x1) * (0.10 + 0.80 * (0.5 + 0.5 * math.sin(phase * math.tau))))
-    sx = x1 + offset
-    sy = y1 + 10
-    ex = max(x1 + 12, min(x2 - 12, sx - round((x2 - x1) * 0.22)))
-    ey = y2 - 10
+    travel = 0.5 - 0.5 * math.cos(phase * math.tau)
+    start_x = x1 + round((x2 - x1) * (0.08 + 0.84 * travel))
+    start_y = y1 + 12
+    end_x = max(x1 + 12, min(x2 - 12, start_x - round((x2 - x1) * 0.20)))
+    end_y = y2 - 12
 
-    draw.line((sx, sy, ex, ey), fill=SCAN_RED_SOFT, width=glow)
-    draw.line((sx, sy, ex, ey), fill=SCAN_RED, width=lw)
+    draw.line((start_x, start_y, end_x, end_y), fill=SCAN_RED_SOFT, width=glow_width)
+    draw.line((start_x, start_y, end_x, end_y), fill=SCAN_RED, width=line_width)
 
-    pulse_r = max(5, round((7 + 2 * math.sin(phase * math.tau)) * width / REFERENCE_WIDTH))
-    draw.ellipse((sx - pulse_r, sy - pulse_r, sx + pulse_r, sy + pulse_r), outline=(255, 72, 65, 70), width=1)
+    pulse_radius = max(5, round((7 + 2 * math.sin(phase * math.tau)) * width / REFERENCE_WIDTH))
+    draw.ellipse(
+        (
+            start_x - pulse_radius,
+            start_y - pulse_radius,
+            start_x + pulse_radius,
+            start_y + pulse_radius,
+        ),
+        outline=(255, 72, 65, 70),
+        width=1,
+    )
 
 
 def draw_center_details(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
@@ -553,25 +539,28 @@ def draw_evidence_package(draw: ImageDraw.ImageDraw, width: int, height: int, da
 
 
 def draw_magnifying_glass(draw: ImageDraw.ImageDraw, width: int, height: int, frame_index: int) -> None:
-    # Slow elliptical scan over the folder. No fixed center magnifier.
-    box = (1418, 110, 1572, 228)
-    bx1, by1, bx2, by2 = box
-    t = frame_index / max(1, FRAME_COUNT - 1)
-    center_x = (bx1 + bx2) / 2 + math.cos(t * math.tau * 0.85 + 0.6) * 38
-    center_y = (by1 + by2) / 2 + math.sin(t * math.tau * 0.65 - 0.8) * 24
-    angle = t * math.tau * 0.7
+    # Only one slow moving magnifier in the evidence artwork panel.
+    phase = frame_index / FRAME_COUNT
 
-    x, y = scaled_point((round(center_x), round(center_y)), width, height)
-    radius = max(8, scaled_point((12, 0), width, height)[0])
-    line_width = max(2, round(width / 900))
-    handle = max(10, scaled_point((17, 0), width, height)[0])
-    hx = x + round(math.cos(angle) * (radius + handle))
-    hy = y + round(math.sin(angle) * (radius + handle))
+    orbit_x = 1506 + 28 * math.cos(phase * math.tau)
+    orbit_y = 176 + 20 * math.sin(phase * math.tau * 1.25 + 0.6)
 
-    draw.ellipse((x - radius, y - radius, x + radius, y + radius), outline=(235, 235, 235, 220), width=line_width)
-    draw.line((x + round(math.cos(angle) * radius), y + round(math.sin(angle) * radius), hx, hy), fill=RED, width=line_width + 1)
+    x, y = scaled_point((round(orbit_x), round(orbit_y)), width, height)
+    radius = max(8, scaled_point((11, 0), width, height)[0])
+    line_width = max(2, round(width / 1000))
+
+    draw.ellipse((x - radius, y - radius, x + radius, y + radius), outline=(235, 235, 235, 200), width=line_width)
+
+    handle_len = max(9, scaled_point((14, 0), width, height)[0])
+    angle = math.radians(35 + 180 * phase)
+
+    hx = x + int(math.cos(angle) * (radius + handle_len))
+    hy = y + int(math.sin(angle) * (radius + handle_len))
+    sx = x + int(math.cos(angle) * (radius - 2))
+    sy = y + int(math.sin(angle) * (radius - 2))
+
+    draw.line((sx, sy, hx, hy), fill=RED, width=line_width + 1)
     draw.ellipse((x - 2, y - 2, x + 2, y + 2), fill=RED)
-
 
 def draw_case_overview(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
     font = scaled_font(width, height, 9, True)
@@ -612,53 +601,39 @@ def draw_file_network_motion(draw: ImageDraw.ImageDraw, width: int, height: int,
 
 
 def draw_case_feed(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any], frame_index: int) -> None:
-    # Clear the old static bars and rebuild the plot so it touches the axes exactly.
-    plot_left, plot_top, plot_right, plot_bottom = scaled_box((58, 620, 406, 748), width, height)
-    axis_x, axis_y = scaled_point((62, 742), width, height)
-    top_y = scaled_point((0, 624), width, height)[1]
-    right_x = scaled_point((392, 0), width, height)[0]
+    # Replace the plot interior only, so bars sit exactly on the chart axes.
+    x1, y1, x2, y2 = scaled_box((69, 642, 404, 748), width, height)
 
-    # clean plot area but preserve surrounding labels.
-    draw.rectangle((plot_left, plot_top, plot_right, plot_bottom), fill=DARK_SOFT)
-
-    # redraw axes and grid.
-    draw.line((axis_x, top_y, axis_x, axis_y), fill=TEXT, width=1)
-    draw.line((axis_x, axis_y, right_x, axis_y), fill=TEXT, width=1)
-    for y_ref in (624, 683, 742):
-        gx1, gy = scaled_point((62, y_ref), width, height)
-        gx2 = scaled_point((392, 0), width, height)[0]
-        draw.line((gx1, gy, gx2, gy), fill=GRID, width=1)
+    for y_ref in (642, 695, 748):
+        x_start, y = scaled_point((59, y_ref), width, height)
+        x_end = scaled_point((404, y_ref), width, height)[0]
+        draw.line((x_start, y, x_end, y), fill=GRID, width=1)
 
     seed = sum(ord(character) for character in data["case_id"])
-    count = 18
-    bar_origin_x = axis_x + max(4, scaled_point((5, 0), width, height)[0])
-    gap = max(3, scaled_point((6, 0), width, height)[0])
-    usable_width = right_x - bar_origin_x - gap * (count - 1)
-    bar_width = max(6, usable_width // count)
-    usable_height = axis_y - top_y - 4
+    count = 20
+    gap = max(3, scaled_point((5, 0), width, height)[0])
+    bar_width = max(4, (x2 - x1 - gap * (count - 1)) // count)
+    usable_height = max(10, y2 - y1)
 
     for index in range(count):
         rng = random.Random(seed + index * 137)
-        phase_one = rng.uniform(0, math.tau)
-        phase_two = rng.uniform(0, math.tau)
-        speed = rng.uniform(0.08, 0.18)  # slower motion
-        level = 0.42 + 0.26 * math.sin(frame_index * speed + phase_one) + 0.14 * math.sin(frame_index * 0.11 + phase_two)
-        level = max(0.10, min(0.98, level))
-        bar_height = max(4, round(usable_height * level))
-        x = bar_origin_x + index * (bar_width + gap)
-        color = RED if index >= count - 2 else (WHITE if index % 4 == 0 else TEXT)
-        draw.rectangle((x, axis_y - bar_height, x + bar_width, axis_y), fill=color)
+        p1 = rng.uniform(0, math.tau)
+        p2 = rng.uniform(0, math.tau)
+        speed = rng.uniform(0.18, 0.42)  # slower / smoother
+        level = 0.46 + 0.24 * math.sin(frame_index * speed + p1) + 0.10 * math.sin(frame_index * 0.16 + p2)
+        level = max(0.10, min(0.95, level))
 
-    # redraw tick labels row so it stays crisp after plot redraw.
-    tick_font = scaled_font(width, height, 9, True)
-    for tick, x_ref in zip(("-60", "-50", "-40", "-30", "-20", "-10", "NOW"), (60, 119, 178, 237, 296, 355, 392)):
-        x_tick, y_tick = scaled_point((x_ref, 748), width, height)
-        draw.text((x_tick, y_tick), tick, font=tick_font, fill=MUTED, anchor="ma")
+        bar_height = max(4, round(usable_height * level))
+        x = x1 + index * (bar_width + gap)
+        color = RED if index >= count - 2 else (WHITE if index % 4 == 0 else TEXT)
+
+        draw.rectangle((x, y2 - bar_height, x + bar_width, y2), fill=color)
 
     sync_font = scaled_font(width, height, 9, True)
     sync_text = f"FEED SYNC: {data['updated_compact']}  •  FILTER: ALL  •  STREAM: BID-LIVE"
     x, y = scaled_point((29, 795), width, height)
     max_width = scaled_point((415, 0), width, height)[0] - x
+
     draw.text((x, y), ellipsize(draw, sync_text, sync_font, max_width), font=sync_font, fill=TEXT)
 
 
@@ -686,7 +661,7 @@ def draw_system_status(draw: ImageDraw.ImageDraw, width: int, height: int, data:
 def draw_threat_monitor(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any], frame_index: int) -> None:
     score_font = scaled_font(width, height, 34, True)
     body_font = scaled_font(width, height, 11, True)
-    small_font = scaled_font(width, height, 11, True)
+    bullet_font = scaled_font(width, height, 10, True)
 
     draw.text(scaled_point((808, 653), width, height), f"{data['score']:03d}", font=score_font, fill=RED)
     draw.text(scaled_point((810, 706), width, height), data["score_level"], font=body_font, fill=WHITE)
@@ -695,49 +670,51 @@ def draw_threat_monitor(draw: ImageDraw.ImageDraw, width: int, height: int, data
     x1, y1, x2, y2 = scaled_box((910, 648, 1182, 730), width, height)
     seed = sum(ord(character) for character in data["case_id"]) + 700
     points = []
+
     for index in range(48):
         rng = random.Random(seed + index * 71)
         ratio = index / 47
         x_point = x1 + ratio * (x2 - x1)
         center = (y1 + y2) / 2
-        offset = 13 * math.sin(frame_index * 0.20 + index * 0.43 + rng.uniform(0, math.tau))
-        offset += 7 * math.sin(frame_index * 0.09 + index * 0.17 + rng.uniform(0, math.tau))
+        offset = 13 * math.sin(frame_index * 0.30 + index * 0.43 + rng.uniform(0, math.tau))
+        offset += 7 * math.sin(frame_index * 0.12 + index * 0.17 + rng.uniform(0, math.tau))
         points.append((x_point, max(y1 + 4, min(y2 - 4, center + offset))))
+
     draw.line(points, fill=RED, width=max(2, round(width / 900)))
 
     max_width = scaled_point((1178, 0), width, height)[0] - scaled_point((812, 0), width, height)[0]
     for rendered, y_ref in zip((f"• {data['classification']}", f"• {data['threat']}"), (776, 803)):
         draw.text(
             scaled_point((812, y_ref), width, height),
-            ellipsize(draw, rendered, small_font, max_width),
-            font=small_font,
+            ellipsize(draw, rendered, bullet_font, max_width),
+            font=bullet_font,
             fill=TEXT,
         )
 
 
 def draw_operational_brief(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
-    font = scaled_font(width, height, 12, True)
+    font = scaled_font(width, height, 11, True)
     x_bullet = scaled_point((1232, 0), width, height)[0]
     x_text = scaled_point((1253, 0), width, height)[0]
     max_width = scaled_point((1594, 0), width, height)[0] - x_text
 
     entries = [
         (data["assessment"], 646, 2),
-        (f"Phase: {data['phase']}", 698, 1),
-        (f"Priority review: {data['severity'].title()} / {data['priority'].title()}", 734, 1),
-        (f"Next action: {data['next_action']}", 770, 2),
+        (f"Phase: {data['phase']}", 697, 1),
+        (f"Priority review: {data['severity'].title()} / {data['priority'].title()}", 733, 1),
+        (f"Next action: {data['next_action']}", 769, 2),
     ]
-    line_step = scaled_point((0, 18), width, height)[1]
-    max_y = scaled_point((0, 808), width, height)[1]
+    line_step = scaled_point((0, 16), width, height)[1]
+    max_y = scaled_point((0, 806), width, height)[1]
 
     for rendered, y_ref, max_lines in entries:
         _, y = scaled_point((0, y_ref), width, height)
         draw.ellipse((x_bullet, y + 4, x_bullet + 5, y + 9), fill=RED)
+
         for index, line in enumerate(wrap_text(draw, rendered, font, max_width, max_lines)):
             line_y = y + index * line_step
             if line_y <= max_y:
                 draw.text((x_text, line_y), line, font=font, fill=TEXT)
-
 
 def draw_footer_time(draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]) -> None:
     label_font = scaled_font(width, height, 12, True)
@@ -755,8 +732,8 @@ def render_frame(base_image: Image.Image, data: dict[str, Any], frame_index: int
 
     cover_dynamic_regions(draw, width, height)
     draw_top_access(draw, width, height, data)
-    draw_biohazard_scan(draw, width, height, frame_index)
     draw_left_panel(draw, width, height, data)
+    draw_logo_scan(draw, width, height, frame_index)
     draw_center_details(draw, width, height, data)
     draw_procedure_progress(draw, width, height, data, frame_index)
     draw_evidence_package(draw, width, height, data)
@@ -768,6 +745,7 @@ def render_frame(base_image: Image.Image, data: dict[str, Any], frame_index: int
     draw_threat_monitor(draw, width, height, data, frame_index)
     draw_operational_brief(draw, width, height, data)
     draw_footer_time(draw, width, height, data)
+
     return frame
 
 
