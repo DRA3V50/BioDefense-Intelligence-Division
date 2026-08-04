@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-5598
+BID-2026-6149
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Supply Chain Security Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Research Data Integrity Manipulation
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 National Pathogen Research Facility
 
 Platform:
-Biosecurity Operations Center
+Laboratory Control Network
 
 Device:
-Biomedical Workstation
+Access Control Server
 
 Vendor:
-Dell
+HPE
 
 Operating System:
 Windows Server 2025
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
-94%
+88%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.

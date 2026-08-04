@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Protected Research Data Exfiltration
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Crimson Cell
 
 ---
 
 ## Attribution
-International Infrastructure
+Unknown
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Research Data Theft
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-94%
+88%
 
 ---
 
 ## Observed Techniques
 - Insider Misuse
-- Encrypted Data Staging
-- Laboratory Control System Manipulation
-- Laboratory Data Manipulation
+- Supply Chain Compromise
+- Lateral Movement
+- Laboratory Network Reconnaissance
 - Covert Remote Access Tooling
-- Insider Access Abuse
+- Biosecurity System Tampering
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+BioDefense Task Force
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Specimen Management Security Review
+Supply Chain Security Investigation
 
 ---
 

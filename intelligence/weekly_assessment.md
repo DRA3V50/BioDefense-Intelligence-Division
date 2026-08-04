@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-5598
+Case ID: BID-2026-6149
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Specimen Management Security Review
+Classification: Supply Chain Security Investigation
 
-Threat Family: Protected Research Data Exfiltration
+Threat Family: Research Data Integrity Manipulation
 
 Current Status: Evidence Collection
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ROUTINE
 
 Risk Score:
-69
+27
 
 Confidence:
-94%
+88%
 
 Affected Assets:
-40
+7
 
 Evidence Collected:
-160
+49
 
 Indicators Recorded:
-94
+4
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+BioDefense Task Force
 
 Date:
 
