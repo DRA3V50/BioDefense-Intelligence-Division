@@ -329,23 +329,22 @@ def cover(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], width: int,
 
 
 def cover_dynamic_regions(draw: ImageDraw.ImageDraw, width: int, height: int) -> None:
+    # Only cover text / dynamic plot areas.
+    # Do NOT cover the big artwork panels.
     regions = [
         ((1210, 4, 1650, 35), DARK),          # top-right access line
         ((202, 307, 357, 568), DARK),         # left values
         ((558, 195, 712, 389), DARK),         # center-left values
         ((926, 195, 1110, 389), DARK),        # center-right values
-        ((1268, 102, 1414, 250), DARK),       # evidence package values, fully cover date area
-        ((1233, 329, 1379, 552), DARK),       # case overview values
-        ((58, 620, 406, 749), DARK_SOFT),     # active feed entire plot region only
-        ((25, 786, 430, 817), DARK),          # chart sync/footer text
+        ((1268, 102, 1388, 255), DARK),       # evidence package text only
+        ((1233, 329, 1368, 552), DARK),       # case overview text only
+        ((66, 639, 409, 749), DARK_SOFT),     # chart interior only
+        ((28, 786, 422, 817), DARK),          # feed sync/footer line
         ((683, 636, 775, 811), DARK),         # system status values
         ((456, 785, 762, 815), DARK_SOFT),    # system waveform
-        ((805, 637, 1189, 826), DARK_SOFT),   # threat monitor dynamic content
+        ((805, 637, 1189, 826), DARK_SOFT),   # threat monitor content
         ((1223, 637, 1603, 816), DARK),       # operational brief
-        ((998, 850, 1625, 907), DARK),        # remove both static bottom clocks
-        ((1378, 115, 1575, 228), DARK_SOFT),  # evidence artwork center so magnifier can be redrawn cleanly
-        ((1452, 343, 1566, 512), DARK_SOFT),  # map center so no static/dynamic overlap
-        ((65, 86, 323, 292), DARK_SOFT),      # biohazard center lines area so scanning is cleaner
+        ((998, 850, 1625, 907), DARK),        # remove bottom static clocks
     ]
     for box, fill in regions:
         cover(draw, box, width, height, fill)
