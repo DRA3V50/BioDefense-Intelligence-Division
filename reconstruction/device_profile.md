@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-5190
+BID-2026-7918
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Protected Research Systems Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Laboratory Information System Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
-Research Data Repository
+Medical Research Laboratory
 
 Device:
-Genome Analysis Workstation
+Network Security Appliance
 
 Vendor:
-Microsoft
+Palo Alto Networks
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-90%
+96%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.

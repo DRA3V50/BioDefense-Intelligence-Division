@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-5190 |
+| Case ID | BID-2026-7918 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Medical Device Communications Interference |
-| Severity | LOW |
-| Status | Containment |
+| Classification | Protected Research Systems Investigation |
+| Threat Family | Laboratory Information System Compromise |
+| Severity | HIGH |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Research Data Repository |
-| Device | Genome Analysis Workstation |
-| Vendor | Microsoft |
-| Network Zone | Federal Operations |
+| Platform | Medical Research Laboratory |
+| Device | Network Security Appliance |
+| Vendor | Palo Alto Networks |
+| Network Zone | Research Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 26 |
-| Confidence | 90% |
-| Evidence | 12 |
-| Indicators | 17 |
-| Affected Assets | 5 |
+| Risk Score | 79 |
+| Confidence | 96% |
+| Evidence | 224 |
+| Indicators | 98 |
+| Affected Assets | 18 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.

@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Medical Device Communications Interference
+Laboratory Information System Compromise
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Umbra Bio
 
 ---
 
 ## Attribution
-Multiple Regions
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-Advanced
+Nation-State Level
 
 ---
 
 ## Confidence
-90%
+96%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
-- Supply Chain Compromise
-- Privilege Escalation
+- Web Application Exploitation
+- Research Data Exfiltration
 - Insider Access Abuse
-- Credential Abuse
 - Lateral Movement
+- Encrypted Data Staging
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Delta
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Protected Research Systems Investigation
 
 ---
 
 ## Last Updated
-2026-08-03
+2026-08-04
