@@ -21,8 +21,8 @@ CSHARP_XML_PATH = Path("reports/bioterror_threat_score_csharp.xml")
 
 REFERENCE_WIDTH = 1672
 REFERENCE_HEIGHT = 941
-FRAME_COUNT = 20
-FRAME_DURATION_MS = 600  # ~12 second loop; noticeably slower motion
+FRAME_COUNT = 16
+FRAME_DURATION_MS = 750  
 EASTERN_TIME = ZoneInfo("America/New_York")
 
 WHITE = (230, 233, 235, 255)
