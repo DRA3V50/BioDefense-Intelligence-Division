@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-8932
+BID-2026-1514
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Protected Research Data Exfiltration
 
 Severity:
 MODERATE
@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
@@ -52,13 +52,13 @@ Affected Assets:
 7
 
 Evidence Collected:
-35
+37
 
 Indicators Identified:
-16
+34
 
 Analyst Confidence:
-82%
+93%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+National Response Cell

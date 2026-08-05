@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8932
+Case ID: BID-2026-1514
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Specimen Management Security Review
+Classification: Digital Evidence Reconstruction Investigation
 
-Threat Family: Biomedical Supply Chain Compromise
+Threat Family: Protected Research Data Exfiltration
 
-Current Status: Monitoring
+Current Status: Evidence Collection
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Current findings support maintaining the existing investigation priority.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ELEVATED
 
 Risk Score:
-56
+46
 
 Confidence:
-82%
+93%
 
 Affected Assets:
 7
 
 Evidence Collected:
-35
+37
 
 Indicators Recorded:
-16
+34
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Alpha
+National Response Cell
 
 Date:
 
-2026-08-04
+2026-08-05

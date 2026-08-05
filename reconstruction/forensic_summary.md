@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8932 |
+| Case ID | BID-2026-1514 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Specimen Management Security Review |
-| Threat Family | Biomedical Supply Chain Compromise |
+| Classification | Digital Evidence Reconstruction Investigation |
+| Threat Family | Protected Research Data Exfiltration |
 | Severity | MODERATE |
-| Status | Monitoring |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Genome Analysis Workstation |
-| Vendor | Palo Alto Networks |
-| Security Zone | Federal Operations |
+| Platform | Clinical Research Environment |
+| Device | Medical Device Gateway |
+| Vendor | Lenovo |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 56 |
-| Confidence | 82% |
-| Evidence Collected | 35 |
-| Indicators Identified | 16 |
+| Risk Score | 46 |
+| Confidence | 93% |
+| Evidence Collected | 37 |
+| Indicators Identified | 34 |
 | Affected Assets | 7 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Evidence Collection**
 
 Priority:
 

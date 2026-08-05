@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Protected Research Data Exfiltration
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Black Helix
 
 ---
 
 ## Attribution
-Unattributed
+Multiple Regions
 
 ---
 
@@ -21,29 +21,29 @@ Laboratory System Sabotage
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-82%
+93%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Lateral Movement
-- Insider Access Abuse
+- Exposed Remote Service
+- Laboratory Data Manipulation
+- Concealed Internal Movement
+- Research Data Exfiltration
+- Privilege Escalation
 - Laboratory Control System Manipulation
-- Biosecurity System Tampering
-- Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+National Response Cell
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Specimen Management Security Review
+Digital Evidence Reconstruction Investigation
 
 ---
 
 ## Last Updated
-2026-08-04
+2026-08-05

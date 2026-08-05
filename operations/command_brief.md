@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-04 22:17 UTC
+**Generated:** 2026-08-05 02:49 UTC
 
 ---
 
@@ -18,29 +18,29 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8932
+**Case ID:** BID-2026-1514
 
-**Classification:** Specimen Management Security Review
+**Classification:** Digital Evidence Reconstruction Investigation
 
 **Severity:** MODERATE
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Protected Research Data Exfiltration
 
-**Confidence:** 82%
+**Confidence:** 93%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **35**
+Evidence Collected: **37**
 
-Indicators: **16**
+Indicators: **34**
 
 Priority: **ELEVATED**
 
@@ -49,10 +49,10 @@ Priority: **ELEVATED**
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Alpha**
+**National Response Cell**
 
 Initial Access:
-**Compromised Credentials**
+**Exposed Remote Service**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**90**
+**91**
 
 Confirmed Intrusions:
 **11**
 
 Total Evidence:
-**92666**
+**92703**
 
 Total Indicators:
-**61949**
+**61983**
 
 ---
 
 ## Operational Highlights
 
-- 35 evidence items are associated with the active investigation.
-- 16 indicators are currently linked to the case.
+- 37 evidence items are associated with the active investigation.
+- 34 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **82%**.
+- Analyst confidence is **93%**.
 - Current investigation priority is **ELEVATED**.
 
 ---

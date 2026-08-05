@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-8932
+BID-2026-1514
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Protected Research Data Exfiltration
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Federal Biosecurity Laboratory
 
 Platform:
-Evidence Processing Network
+Clinical Research Environment
 
 Device:
-Genome Analysis Workstation
+Medical Device Gateway
 
 Vendor:
-Palo Alto Networks
+Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Federal Operations
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 ELEVATED
 
 Confidence:
-82%
+93%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

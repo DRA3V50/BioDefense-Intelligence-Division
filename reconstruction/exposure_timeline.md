@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-04
+## 2026-08-05
 
 ### Case Opened
-Case ID: BID-2026-8932
+Case ID: BID-2026-1514
 
 ### Classification
-Specimen Management Security Review
+Digital Evidence Reconstruction Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Monitoring
+Evidence Collection
 
 ### Severity
 MODERATE

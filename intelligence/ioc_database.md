@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8932
+BID-2026-1514
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Digital Evidence Reconstruction Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Identity | Credential reuse detected across isolated research segments |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Device | Protected workstation entered evidence preservation mode |
+| PowerShell | Encoded administrative command execution detected |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -28,23 +28,23 @@ Specimen Management Security Review
 ## Investigation Statistics
 
 Evidence Collected:
-35
+37
 
 Indicators Reviewed:
-16
+34
 
 Risk Score:
-56
+46
 
 Confidence:
-82%
+93%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+National Response Cell
 
 Current Status:
 
-Monitoring
+Evidence Collection
