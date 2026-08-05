@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1207
+Case ID: BID-2026-5780
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Access Control Investigation
+Classification: Specimen Management Security Review
 
-Threat Family: Evidence Repository Manipulation
+Threat Family: Specimen Tracking Manipulation
 
-Current Status: Intelligence Analysis
+Current Status: Evidence Collection
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Current evidence supports continued investigative activity.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -27,22 +27,22 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 ## Operational Metrics
 
 Priority:
-CRITICAL
+ROUTINE
 
 Risk Score:
-89
+36
 
 Confidence:
-95%
+86%
 
 Affected Assets:
-31
+4
 
 Evidence Collected:
-320
+43
 
 Indicators Recorded:
-109
+8
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Joint Cyber Investigation Unit
+National Response Cell
 
 Date:
 

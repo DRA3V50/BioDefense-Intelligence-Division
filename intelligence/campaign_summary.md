@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1207
+BID-2026-5780
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Specimen Management Security Review
 
 Threat Family:
-Evidence Repository Manipulation
+Specimen Tracking Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Research Data Repository
+Evidence Processing Network
 
 Device:
 Clinical Data Server
 
 Vendor:
-Microsoft
+Red Hat
 
 Security Zone:
-Secure Laboratory
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-92
+93
 
 Evidence Collected:
-320
+43
 
 Indicators Identified:
-109
+8
 
 Affected Assets:
-31
+4
 
 Confidence:
-95%
+86%
 
 Risk Score:
-89
+36
 
 ---
 

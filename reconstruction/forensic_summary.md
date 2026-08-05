@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1207 |
+| Case ID | BID-2026-5780 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Access Control Investigation |
-| Threat Family | Evidence Repository Manipulation |
-| Severity | CRITICAL |
-| Status | Intelligence Analysis |
+| Classification | Specimen Management Security Review |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | LOW |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Research Data Repository |
+| Platform | Evidence Processing Network |
 | Device | Clinical Data Server |
-| Vendor | Microsoft |
-| Security Zone | Secure Laboratory |
+| Vendor | Red Hat |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 89 |
-| Confidence | 95% |
-| Evidence Collected | 320 |
-| Indicators Identified | 109 |
-| Affected Assets | 31 |
+| Risk Score | 36 |
+| Confidence | 86% |
+| Evidence Collected | 43 |
+| Indicators Identified | 8 |
+| Affected Assets | 4 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**National Response Cell**
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Evidence Collection**
 
 Priority:
 
-**CRITICAL**
+**ROUTINE**
 
 Recommended Action:
 

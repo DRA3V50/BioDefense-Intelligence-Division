@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Evidence Repository Manipulation
+Specimen Tracking Manipulation
 
 ---
 
@@ -11,39 +11,39 @@ Crimson Cell
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unattributed
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-High
+Nation-State Level
 
 ---
 
 ## Confidence
-95%
+86%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Biosecurity System Tampering
+- Third-Party Access
 - Lateral Movement
-- Research Data Exfiltration
-- Laboratory Network Reconnaissance
+- Biosecurity System Tampering
+- Concealed Internal Movement
+- Long-Term Network Foothold
 - Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+National Response Cell
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Access Control Investigation
+Specimen Management Security Review
 
 ---
 
