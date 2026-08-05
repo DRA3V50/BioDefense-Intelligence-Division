@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1514 |
+| Case ID | BID-2026-1207 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Digital Evidence Reconstruction Investigation |
-| Threat Family | Protected Research Data Exfiltration |
-| Severity | MODERATE |
-| Status | Evidence Collection |
+| Classification | Laboratory Access Control Investigation |
+| Threat Family | Evidence Repository Manipulation |
+| Severity | CRITICAL |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,9 +18,9 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Research Environment |
-| Device | Medical Device Gateway |
-| Vendor | Lenovo |
+| Platform | Research Data Repository |
+| Device | Clinical Data Server |
+| Vendor | Microsoft |
 | Network Zone | Secure Laboratory |
 
 ---
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 46 |
-| Confidence | 93% |
-| Evidence | 37 |
-| Indicators | 34 |
-| Affected Assets | 7 |
+| Risk Score | 89 |
+| Confidence | 95% |
+| Evidence | 320 |
+| Indicators | 109 |
+| Affected Assets | 31 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Joint Cyber Investigation Unit**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.

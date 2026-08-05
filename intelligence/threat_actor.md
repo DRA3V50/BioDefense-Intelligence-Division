@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Protected Research Data Exfiltration
+Evidence Repository Manipulation
 
 ---
 
 ## Primary Alias
-Black Helix
+Crimson Cell
 
 ---
 
 ## Attribution
-Multiple Regions
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-93%
+95%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
-- Laboratory Data Manipulation
-- Concealed Internal Movement
+- Supply Chain Compromise
+- Biosecurity System Tampering
+- Lateral Movement
 - Research Data Exfiltration
-- Privilege Escalation
-- Laboratory Control System Manipulation
+- Laboratory Network Reconnaissance
+- Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Digital Evidence Reconstruction Investigation
+Laboratory Access Control Investigation
 
 ---
 

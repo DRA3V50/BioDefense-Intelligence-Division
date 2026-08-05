@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1514
+Case ID: BID-2026-1207
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Digital Evidence Reconstruction Investigation
+Classification: Laboratory Access Control Investigation
 
-Threat Family: Protected Research Data Exfiltration
+Threat Family: Evidence Repository Manipulation
 
-Current Status: Evidence Collection
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Evidence correlation remains in progress across collected artifacts.
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+CRITICAL
 
 Risk Score:
-46
+89
 
 Confidence:
-93%
+95%
 
 Affected Assets:
-7
+31
 
 Evidence Collected:
-37
+320
 
 Indicators Recorded:
-34
+109
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Joint Cyber Investigation Unit
 
 Date:
 

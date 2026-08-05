@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-1514
+BID-2026-1207
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Laboratory Access Control Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Evidence Repository Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Ashcroft Biomedical Center
 
 Platform:
-Clinical Research Environment
+Research Data Repository
 
 Device:
-Medical Device Gateway
+Clinical Data Server
 
 Vendor:
-Lenovo
+Microsoft
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
 Secure Laboratory
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Awaiting Laboratory Review
 
 Priority:
-ELEVATED
+CRITICAL
 
 Confidence:
-93%
+95%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.

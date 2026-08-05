@@ -4,18 +4,18 @@
 ## 2026-08-05
 
 ### Case Opened
-Case ID: BID-2026-1514
+Case ID: BID-2026-1207
 
 ### Classification
-Digital Evidence Reconstruction Investigation
+Laboratory Access Control Investigation
 
 ### Initial Assessment
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Evidence Collection
+Intelligence Analysis
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---

@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-05 02:49 UTC
+**Generated:** 2026-08-05 05:12 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** CRITICAL
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1514
+**Case ID:** BID-2026-1207
 
-**Classification:** Digital Evidence Reconstruction Investigation
+**Classification:** Laboratory Access Control Investigation
 
-**Severity:** MODERATE
+**Severity:** CRITICAL
 
-**Threat Family:** Protected Research Data Exfiltration
+**Threat Family:** Evidence Repository Manipulation
 
-**Confidence:** 93%
+**Confidence:** 95%
 
 ---
 
 ## Investigation Summary
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **37**
+Evidence Collected: **320**
 
-Indicators: **34**
+Indicators: **109**
 
-Priority: **ELEVATED**
+Priority: **CRITICAL**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Joint Cyber Investigation Unit**
 
 Initial Access:
-**Exposed Remote Service**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**91**
+**92**
 
 Confirmed Intrusions:
-**11**
+**12**
 
 Total Evidence:
-**92703**
+**93023**
 
 Total Indicators:
-**61983**
+**62092**
 
 ---
 
 ## Operational Highlights
 
-- 37 evidence items are associated with the active investigation.
-- 34 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **93%**.
-- Current investigation priority is **ELEVATED**.
+- 320 evidence items are associated with the active investigation.
+- 109 indicators are currently linked to the case.
+- Containment remains at **CRITICAL**.
+- Analyst confidence is **95%**.
+- Current investigation priority is **CRITICAL**.
 
 ---
 

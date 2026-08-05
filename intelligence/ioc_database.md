@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1514
+BID-2026-1207
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Laboratory Access Control Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Identity | Credential reuse detected across isolated research segments |
-| PowerShell | Encoded administrative command execution detected |
-| System Log | Unexpected privilege escalation recorded |
+| Infrastructure | Firewall policy deviation identified |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Digital Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-37
+320
 
 Indicators Reviewed:
-34
+109
 
 Risk Score:
-46
+89
 
 Confidence:
-93%
+95%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Joint Cyber Investigation Unit
 
 Current Status:
 
-Evidence Collection
+Intelligence Analysis
