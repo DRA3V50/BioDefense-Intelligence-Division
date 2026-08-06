@@ -883,9 +883,9 @@ def draw_threat_monitor(
         "• Repository correlation active",
         "• Evidence chain synchronized",
     ]
-    for rendered, y_ref in zip(bullets, (776, 799, 822, 845)):
+    for rendered, y_ref in zip(bullets, (450, 450, 450, 450)):
         draw.text(
-            scaled_point((812, y_ref), width, height),
+            scaled_point((600, y_ref), width, height),
             ellipsize(draw, rendered, bullet_font, max_width),
             font=bullet_font,
             fill=TEXT,
