@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-3923
+BID-2026-2460
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Credential Misuse
 
 Severity:
-MODERATE
+LOW
 
 Priority:
-ELEVATED
+ROUTINE
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-17
+8
 
 Evidence Collected:
-87
+24
 
 Indicators Identified:
-36
+13
 
 Analyst Confidence:
-86%
+80%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Intelligence Analysis
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Joint Cyber Investigation Unit

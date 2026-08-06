@@ -3,32 +3,32 @@
 ## Investigation
 
 Case ID:
-BID-2026-3923
+BID-2026-2460
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Credential Misuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
-Clinical Research Environment
+Biosecurity Operations Center
 
 Device:
 Access Control Server
 
 Vendor:
-Red Hat
+Fortinet
 
 Operating System:
 Ubuntu Server 24.04 LTS
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-86%
+80%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.

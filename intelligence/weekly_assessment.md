@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3923
+Case ID: BID-2026-2460
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Research Data Integrity Investigation
+Classification: Research Facility Intrusion Investigation
 
-Threat Family: Biomedical Supply Chain Compromise
+Threat Family: Credential Misuse
 
-Current Status: Open
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Observed indicators remain consistent with the current operational assessment.
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+ROUTINE
 
 Risk Score:
-59
+35
 
 Confidence:
-86%
+80%
 
 Affected Assets:
-17
+8
 
 Evidence Collected:
-87
+24
 
 Indicators Recorded:
-36
+13
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Joint Cyber Investigation Unit
 
 Date:
 

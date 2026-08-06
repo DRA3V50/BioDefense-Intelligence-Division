@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3923
+BID-2026-2460
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Credential Misuse
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Biosecurity Operations Center
 
 Device:
 Access Control Server
 
 Vendor:
-Red Hat
+Fortinet
 
 Security Zone:
 Secure Laboratory
@@ -41,22 +41,22 @@ Secure Laboratory
 ## Investigation Metrics
 
 Investigations Recorded:
-95
+96
 
 Evidence Collected:
-87
+24
 
 Indicators Identified:
-36
+13
 
 Affected Assets:
-17
+8
 
 Confidence:
-86%
+80%
 
 Risk Score:
-59
+35
 
 ---
 

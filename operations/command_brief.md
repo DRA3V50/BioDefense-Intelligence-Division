@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-06 02:59 UTC
+**Generated:** 2026-08-06 03:16 UTC
 
 ---
 
@@ -18,38 +18,38 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3923
+**Case ID:** BID-2026-2460
 
-**Classification:** Research Data Integrity Investigation
+**Classification:** Research Facility Intrusion Investigation
 
-**Severity:** MODERATE
+**Severity:** LOW
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Credential Misuse
 
-**Confidence:** 86%
+**Confidence:** 80%
 
 ---
 
 ## Investigation Summary
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **87**
+Evidence Collected: **24**
 
-Indicators: **36**
+Indicators: **13**
 
-Priority: **ELEVATED**
+Priority: **ROUTINE**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Joint Cyber Investigation Unit**
 
 Initial Access:
 **Web Application Exploitation**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**95**
+**96**
 
 Confirmed Intrusions:
 **12**
 
 Total Evidence:
-**93271**
+**93295**
 
 Total Indicators:
-**62236**
+**62249**
 
 ---
 
 ## Operational Highlights
 
-- 87 evidence items are associated with the active investigation.
-- 36 indicators are currently linked to the case.
+- 24 evidence items are associated with the active investigation.
+- 13 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **86%**.
-- Current investigation priority is **ELEVATED**.
+- Analyst confidence is **80%**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3923 |
+| Case ID | BID-2026-2460 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Data Integrity Investigation |
-| Threat Family | Biomedical Supply Chain Compromise |
-| Severity | MODERATE |
-| Status | Open |
+| Classification | Research Facility Intrusion Investigation |
+| Threat Family | Credential Misuse |
+| Severity | LOW |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
+| Platform | Biosecurity Operations Center |
 | Device | Access Control Server |
-| Vendor | Red Hat |
+| Vendor | Fortinet |
 | Security Zone | Secure Laboratory |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 59 |
-| Confidence | 86% |
-| Evidence Collected | 87 |
-| Indicators Identified | 36 |
-| Affected Assets | 17 |
+| Risk Score | 35 |
+| Confidence | 80% |
+| Evidence Collected | 24 |
+| Indicators Identified | 13 |
+| Affected Assets | 8 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Joint Cyber Investigation Unit**
 
 ---
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Intelligence Analysis**
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 
