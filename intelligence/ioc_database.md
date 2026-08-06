@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8917
+BID-2026-3923
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Research Data Integrity Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
-| Identity | Credential reuse detected across isolated research segments |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Identity | Credential reuse detected across isolated research segments |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Unauthorized Research System Access
 ## Investigation Statistics
 
 Evidence Collected:
-118
+87
 
 Indicators Reviewed:
-100
+36
 
 Risk Score:
-69
+59
 
 Confidence:
-90%
+86%
 
 ---
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+National Response Cell
 
 Current Status:
 
-Monitoring
+Open

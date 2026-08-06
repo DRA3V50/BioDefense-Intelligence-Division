@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8917 |
+| Case ID | BID-2026-3923 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | HIGH |
-| Status | Monitoring |
+| Classification | Research Data Integrity Investigation |
+| Threat Family | Biomedical Supply Chain Compromise |
+| Severity | MODERATE |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Laboratory Information Server |
-| Vendor | Dell |
-| Security Zone | Biosecurity Segment |
+| Platform | Clinical Research Environment |
+| Device | Access Control Server |
+| Vendor | Red Hat |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 69 |
-| Confidence | 90% |
-| Evidence Collected | 118 |
-| Indicators Identified | 100 |
-| Affected Assets | 18 |
+| Risk Score | 59 |
+| Confidence | 86% |
+| Evidence Collected | 87 |
+| Indicators Identified | 36 |
+| Affected Assets | 17 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Open**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

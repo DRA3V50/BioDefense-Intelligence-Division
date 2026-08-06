@@ -4,18 +4,18 @@
 ## 2026-08-06
 
 ### Case Opened
-Case ID: BID-2026-8917
+Case ID: BID-2026-3923
 
 ### Classification
-Unauthorized Research System Access
+Research Data Integrity Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-Monitoring
+Open
 
 ### Severity
-HIGH
+MODERATE
 
 ---

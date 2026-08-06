@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-8917
+BID-2026-3923
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Research Data Integrity Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Biomedical Supply Chain Compromise
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,15 +26,15 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
@@ -42,23 +42,23 @@ Analysts identified abnormal authentication activity originating from restricted
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-18
+17
 
 Evidence Collected:
-118
+87
 
 Indicators Identified:
-100
+36
 
 Analyst Confidence:
-90%
+86%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+National Response Cell

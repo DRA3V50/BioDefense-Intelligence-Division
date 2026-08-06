@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8917
+BID-2026-3923
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Research Data Integrity Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Biomedical Supply Chain Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Clinical Research Environment
 
 Device:
-Laboratory Information Server
+Access Control Server
 
 Vendor:
-Dell
+Red Hat
 
 Security Zone:
-Biosecurity Segment
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-94
+95
 
 Evidence Collected:
-118
+87
 
 Indicators Identified:
-100
+36
 
 Affected Assets:
-18
+17
 
 Confidence:
-90%
+86%
 
 Risk Score:
-69
+59
 
 ---
 

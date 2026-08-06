@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Vector-9
+Crimson Cell
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unknown
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Medical Infrastructure Disruption
 
 ---
 
@@ -26,24 +26,24 @@ Advanced
 ---
 
 ## Confidence
-90%
+86%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Lateral Movement
-- Laboratory Network Reconnaissance
-- Laboratory Control System Manipulation
-- Supply Chain Compromise
+- Web Application Exploitation
 - Research Data Exfiltration
+- Laboratory Network Reconnaissance
+- Laboratory Data Manipulation
+- Command and Control
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+National Response Cell
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Research Data Integrity Investigation
 
 ---
 
