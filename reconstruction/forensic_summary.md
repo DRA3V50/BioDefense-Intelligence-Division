@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2460 |
+| Case ID | BID-2026-6446 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Facility Intrusion Investigation |
-| Threat Family | Credential Misuse |
-| Severity | LOW |
-| Status | Intelligence Analysis |
+| Classification | Laboratory Security Breach Investigation |
+| Threat Family | Biocontainment System Tampering |
+| Severity | CRITICAL |
+| Status | Evidence Collection |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Biosecurity Operations Center |
-| Device | Access Control Server |
+| Device | Network Security Appliance |
 | Vendor | Fortinet |
-| Security Zone | Secure Laboratory |
+| Security Zone | Protected Research Segment |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 35 |
-| Confidence | 80% |
-| Evidence Collected | 24 |
-| Indicators Identified | 13 |
-| Affected Assets | 8 |
+| Risk Score | 92 |
+| Confidence | 93% |
+| Evidence Collected | 407 |
+| Indicators Identified | 78 |
+| Affected Assets | 23 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Evidence Collection**
 
 Priority:
 
-**ROUTINE**
+**CRITICAL**
 
 Recommended Action:
 

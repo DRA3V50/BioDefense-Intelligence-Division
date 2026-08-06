@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-2460
+BID-2026-6446
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Credential Misuse
+Biocontainment System Tampering
 
 Severity:
-LOW
+CRITICAL
 
 Priority:
-ROUTINE
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ ROUTINE
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-8
+23
 
 Evidence Collected:
-24
+407
 
 Indicators Identified:
-13
+78
 
 Analyst Confidence:
-80%
+93%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+Evidence Collection
 
 Recommended Action:
 

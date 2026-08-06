@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-06 03:16 UTC
+**Generated:** 2026-08-06 03:21 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** CRITICAL
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-2460
+**Case ID:** BID-2026-6446
 
-**Classification:** Research Facility Intrusion Investigation
+**Classification:** Laboratory Security Breach Investigation
 
-**Severity:** LOW
+**Severity:** CRITICAL
 
-**Threat Family:** Credential Misuse
+**Threat Family:** Biocontainment System Tampering
 
-**Confidence:** 80%
+**Confidence:** 93%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **24**
+Evidence Collected: **407**
 
-Indicators: **13**
+Indicators: **78**
 
-Priority: **ROUTINE**
+Priority: **CRITICAL**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Joint Cyber Investigation Unit**
 
 Initial Access:
-**Web Application Exploitation**
+**Unauthorized Physical Access**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**96**
+**97**
 
 Confirmed Intrusions:
-**12**
+**13**
 
 Total Evidence:
-**93295**
+**93702**
 
 Total Indicators:
-**62249**
+**62327**
 
 ---
 
 ## Operational Highlights
 
-- 24 evidence items are associated with the active investigation.
-- 13 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **80%**.
-- Current investigation priority is **ROUTINE**.
+- 407 evidence items are associated with the active investigation.
+- 78 indicators are currently linked to the case.
+- Containment remains at **CRITICAL**.
+- Analyst confidence is **93%**.
+- Current investigation priority is **CRITICAL**.
 
 ---
 

@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2460
+BID-2026-6446
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Credential Misuse
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Evidence Collection
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Biosecurity Operations Center
 
 Device:
-Access Control Server
+Network Security Appliance
 
 Vendor:
 Fortinet
 
 Security Zone:
-Secure Laboratory
+Protected Research Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-96
+97
 
 Evidence Collected:
-24
+407
 
 Indicators Identified:
-13
+78
 
 Affected Assets:
-8
+23
 
 Confidence:
-80%
+93%
 
 Risk Score:
-35
+92
 
 ---
 

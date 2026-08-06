@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-2460
+BID-2026-6446
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Laboratory Security Breach Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| System Log | Unexpected privilege escalation recorded |
-| Identity | Credential reuse detected across isolated research segments |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Device | Protected workstation entered evidence preservation mode |
+| Infrastructure | Firewall policy deviation identified |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -28,16 +28,16 @@ Research Facility Intrusion Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-24
+407
 
 Indicators Reviewed:
-13
+78
 
 Risk Score:
-35
+92
 
 Confidence:
-80%
+93%
 
 ---
 
@@ -47,4 +47,4 @@ Joint Cyber Investigation Unit
 
 Current Status:
 
-Intelligence Analysis
+Evidence Collection

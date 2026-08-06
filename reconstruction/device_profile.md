@@ -3,29 +3,29 @@
 ## Investigation
 
 Case ID:
-BID-2026-2460
+BID-2026-6446
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Credential Misuse
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Advanced Genome Security Laboratory
 
 Platform:
 Biosecurity Operations Center
 
 Device:
-Access Control Server
+Network Security Appliance
 
 Vendor:
 Fortinet
@@ -34,7 +34,7 @@ Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Secure Laboratory
+Protected Research Segment
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
-ROUTINE
+CRITICAL
 
 Confidence:
-80%
+93%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.

@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Biocontainment System Tampering
 
 ---
 
 ## Primary Alias
-Silent Culture
+Project Chimera
 
 ---
 
 ## Attribution
-Unattributed
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-80%
+93%
 
 ---
 
 ## Observed Techniques
-- Web Application Exploitation
-- Lateral Movement
+- Unauthorized Physical Access
+- Supply Chain Compromise
+- Long-Term Network Foothold
+- Research Data Exfiltration
 - Laboratory Network Reconnaissance
-- Privilege Escalation
-- Laboratory Data Manipulation
-- Insider Access Abuse
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
 Joint Cyber Investigation Unit
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Facility Intrusion Investigation
+Laboratory Security Breach Investigation
 
 ---
 
