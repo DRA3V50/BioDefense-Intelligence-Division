@@ -835,28 +835,28 @@ def draw_threat_monitor(
 ) -> None:
     score_font = scaled_font(width, height, 34, True)
     body_font = scaled_font(width, height, 11, True)
-    bullet_font = scaled_font(width, height, 9, True)
+    bullet_font = scaled_font(width, height, 10, True)
 
     draw.text(
-        scaled_point((800, 646), width, height),
+        scaled_point((808, 653), width, height),
         f"{data['score']:03d}",
         font=score_font,
         fill=RED,
     )
     draw.text(
-        scaled_point((802, 699), width, height),
+        scaled_point((810, 706), width, height),
         data["score_level"],
         font=body_font,
         fill=WHITE,
     )
     draw.text(
-        scaled_point((802, 731), width, height),
+        scaled_point((810, 744), width, height),
         "CURRENT FOOTPRINT",
         font=body_font,
         fill=TEXT,
     )
 
-    x1, y1, x2, y2 = scaled_box((900, 640, 1172, 716), width, height)
+    x1, y1, x2, y2 = scaled_box((910, 648, 1182, 730), width, height)
     seed = sum(ord(character) for character in data["case_id"]) + 700
     points = []
     for index in range(48):
@@ -874,17 +874,18 @@ def draw_threat_monitor(
     draw.line(points, fill=RED, width=max(2, round(width / 900)))
 
     max_width = (
-        scaled_point((1174, 0), width, height)[0]
-        - scaled_point((802, 0), width, height)[0]
+        scaled_point((1178, 0), width, height)[0]
+        - scaled_point((812, 0), width, height)[0]
     )
     bullets = [
         f"• {data['classification']}",
         f"• {data['threat']}",
         "• Repository correlation active",
+        "• Evidence chain synchronized",
     ]
-    for rendered, y_ref in zip(bullets, (764, 788, 812)):
+    for rendered, y_ref in zip(bullets, (776, 799, 822, 845)):
         draw.text(
-            scaled_point((802, y_ref), width, height),
+            scaled_point((812, y_ref), width, height),
             ellipsize(draw, rendered, bullet_font, max_width),
             font=bullet_font,
             fill=TEXT,
