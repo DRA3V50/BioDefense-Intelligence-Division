@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5780 |
+| Case ID | BID-2026-8917 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Specimen Management Security Review |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | LOW |
-| Status | Evidence Collection |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | HIGH |
+| Status | Monitoring |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Clinical Data Server |
-| Vendor | Red Hat |
-| Security Zone | Evidence Network |
+| Platform | Genome Sequencing Environment |
+| Device | Laboratory Information Server |
+| Vendor | Dell |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 36 |
-| Confidence | 86% |
-| Evidence Collected | 43 |
-| Indicators Identified | 8 |
-| Affected Assets | 4 |
+| Risk Score | 69 |
+| Confidence | 90% |
+| Evidence Collected | 118 |
+| Indicators Identified | 100 |
+| Affected Assets | 18 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Joint Cyber Investigation Unit**
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Monitoring**
 
 Priority:
 
-**ROUTINE**
+**HIGH**
 
 Recommended Action:
 

@@ -2,35 +2,35 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-5780
+**Case ID:** BID-2026-8917
 
-**Generated:** 2026-08-05 16:00 UTC
+**Generated:** 2026-08-06 02:39 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-05 10:00 UTC | Initial Detection | Potential activity associated with Specimen Tracking Manipulation was detected. |
-| 2026-08-05 11:00 UTC | Case Opened | Investigation BID-2026-5780 was opened and assigned to National Response Cell. |
-| 2026-08-05 12:00 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
-| 2026-08-05 13:00 UTC | Evidence Collection | 43 evidence items and 8 indicators were associated with the active investigation. |
-| 2026-08-05 14:00 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-05 15:00 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
-| 2026-08-05 16:00 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-05 20:39 UTC | Initial Detection | Potential activity associated with Research Data Integrity Manipulation was detected. |
+| 2026-08-05 21:39 UTC | Case Opened | Investigation BID-2026-8917 was opened and assigned to Joint Cyber Investigation Unit. |
+| 2026-08-05 22:39 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Compromised Credentials. |
+| 2026-08-05 23:39 UTC | Evidence Collection | 118 evidence items and 100 indicators were associated with the active investigation. |
+| 2026-08-06 00:39 UTC | Containment Assessment | Containment was assessed at SEVERE. |
+| 2026-08-06 01:39 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-08-06 02:39 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** LOW
+**Severity:** HIGH
 
-**Priority:** ROUTINE
+**Priority:** HIGH
 
-**Confidence:** 86%
+**Confidence:** 90%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 

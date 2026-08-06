@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-5780
+BID-2026-8917
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Unauthorized Research System Access
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 Severity:
-LOW
+HIGH
 
 Priority:
-ROUTINE
+HIGH
 
 ---
 
@@ -30,35 +30,35 @@ No destructive malware activity has been identified at this stage of the investi
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-4
+18
 
 Evidence Collected:
-43
+118
 
 Indicators Identified:
-8
+100
 
 Analyst Confidence:
-86%
+90%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Evidence Collection
+Monitoring
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Joint Cyber Investigation Unit

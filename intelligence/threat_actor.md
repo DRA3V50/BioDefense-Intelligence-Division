@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Vector-9
 
 ---
 
 ## Attribution
-Unattributed
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-86%
+90%
 
 ---
 
 ## Observed Techniques
-- Third-Party Access
+- Compromised Credentials
 - Lateral Movement
-- Biosecurity System Tampering
-- Concealed Internal Movement
-- Long-Term Network Foothold
-- Insider Access Abuse
+- Laboratory Network Reconnaissance
+- Laboratory Control System Manipulation
+- Supply Chain Compromise
+- Research Data Exfiltration
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Specimen Management Security Review
+Unauthorized Research System Access
 
 ---
 
 ## Last Updated
-2026-08-05
+2026-08-06

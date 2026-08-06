@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-5780
+BID-2026-8917
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Unauthorized Research System Access
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Federal Biosecurity Laboratory
 
 Platform:
-Evidence Processing Network
+Genome Sequencing Environment
 
 Device:
-Clinical Data Server
+Laboratory Information Server
 
 Vendor:
-Red Hat
+Dell
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
-Evidence Network
+Biosecurity Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Awaiting Laboratory Review
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-86%
+90%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
