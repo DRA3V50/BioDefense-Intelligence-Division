@@ -426,28 +426,79 @@ def draw_top_access(
 def draw_biohazard_glow(
     frame: Image.Image, frame_index: int, width: int, height: int
 ) -> Image.Image:
-    # Subtle, professional glow only—no scan line or crosshair.
+    """
+    Subtle red pulse / sweep for the biohazard logo.
+    - no crosshair lines
+    - smoother motion
+    - slightly smaller / more centered glow region
+    - stronger glow across more of the circular diameter
+    """
     phase = frame_index * math.tau / FRAME_COUNT
-    pulse = 0.5 + 0.5 * math.sin(phase)
 
     overlay = Image.new("RGBA", frame.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(overlay, "RGBA")
-    cx, cy = scaled_point((190, 183), width, height)
-    radius = scaled_point((122 + round(6 * pulse), 0), width, height)[0]
 
+    # Slightly adjusted center so the glow reads more centered visually.
+    cx, cy = scaled_point((191, 182), width, height)
+
+    # Slightly smaller radii so the full circular feel is more visible.
+    outer_r = max(24, scaled_point((112, 0), width, height)[0])
+    mid_r = max(20, scaled_point((96, 0), width, height)[0])
+    inner_r = max(16, scaled_point((78, 0), width, height)[0])
+
+    ring_width_outer = max(2, round(width / 720))
+    ring_width_mid = max(2, round(width / 840))
+    ring_width_inner = max(1, round(width / 1100))
+
+    pulse = 0.5 + 0.5 * math.sin(phase * 0.9)
+
+    # Base breathing glow on the ring structure
     draw.ellipse(
-        (cx - radius, cy - radius, cx + radius, cy + radius),
-        fill=(255, 45, 40, round(5 + 9 * pulse)),
-        outline=(255, 54, 48, round(70 + 55 * pulse)),
-        width=max(4, round(width / 500)),
+        (cx - outer_r, cy - outer_r, cx + outer_r, cy + outer_r),
+        outline=(255, 56, 52, int(70 + 40 * pulse)),
+        width=ring_width_outer,
     )
     draw.ellipse(
-        (cx - radius + 18, cy - radius + 18, cx + radius - 18, cy + radius - 18),
-        outline=(255, 54, 48, round(45 + 45 * pulse)),
-        width=max(2, round(width / 800)),
+        (cx - mid_r, cy - mid_r, cx + mid_r, cy + mid_r),
+        outline=(255, 48, 44, int(60 + 34 * pulse)),
+        width=ring_width_mid,
+    )
+    draw.ellipse(
+        (cx - inner_r, cy - inner_r, cx + inner_r, cy + inner_r),
+        outline=(255, 42, 38, int(42 + 28 * pulse)),
+        width=ring_width_inner,
     )
 
-    glow = overlay.filter(ImageFilter.GaussianBlur(radius=max(8, round(width / 150))))
+    # Soft orbiting highlights so more of the red circular lines glow
+    glow_points = []
+    for offset in (0.0, 2.10, 4.20):
+        angle = phase * 0.60 + offset
+        px = cx + int(math.cos(angle) * mid_r)
+        py = cy + int(math.sin(angle) * mid_r)
+        glow_points.append((px, py))
+
+    for px, py in glow_points:
+        spot_r = max(8, round(width / 145))
+        draw.ellipse(
+            (px - spot_r, py - spot_r, px + spot_r, py + spot_r),
+            fill=(255, 62, 58, 52),
+        )
+        draw.ellipse(
+            (px - spot_r // 2, py - spot_r // 2, px + spot_r // 2, py + spot_r // 2),
+            fill=(255, 75, 70, 72),
+        )
+
+    # One slower diagonal sweep flare
+    sweep_angle = phase * 0.45 + 0.6
+    sx = cx + int(math.cos(sweep_angle) * (outer_r - 6))
+    sy = cy + int(math.sin(sweep_angle) * (outer_r - 6))
+    flare_r = max(14, round(width / 100))
+    draw.ellipse(
+        (sx - flare_r, sy - flare_r, sx + flare_r, sy + flare_r),
+        fill=(255, 52, 48, 58),
+    )
+
+    glow = overlay.filter(ImageFilter.GaussianBlur(radius=max(10, round(width / 120))))
     return Image.alpha_composite(frame, glow)
 
 
@@ -704,17 +755,77 @@ def draw_case_overview(
 def draw_map_case_id(
     draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]
 ) -> None:
-    slot = scaled_box((1438, 382, 1538, 410), width, height)
+    """
+    Rebuild the center CASE FILE card in the Case Overview map area
+    so it stays red, readable, and centered.
+    """
+    cx, cy = scaled_point((1492, 427), width, height)
+
+    card_w = max(90, scaled_point((126, 0), width, height)[0])
+    card_h = max(82, scaled_point((108, 0), width, height)[1])
+
+    x1 = cx - card_w // 2
+    y1 = cy - card_h // 2
+    x2 = cx + card_w // 2
+    y2 = cy + card_h // 2
+
+    radius = max(6, round(width / 320))
+
+    # Main red card
     draw.rounded_rectangle(
-        slot,
-        radius=max(2, round(width / 900)),
-        fill=(63, 18, 18, 245),
-        outline=RED_DIM,
+        (x1, y1, x2, y2),
+        radius=radius,
+        fill=(96, 22, 20, 215),
+        outline=RED,
+        width=max(2, round(width / 900)),
+    )
+
+    # Inner frame
+    inset = max(7, round(width / 220))
+    draw.rounded_rectangle(
+        (x1 + inset, y1 + inset, x2 - inset, y2 - inset),
+        radius=max(4, radius - 2),
+        outline=(155, 42, 40, 200),
         width=1,
     )
-    font = scaled_font(width, height, 8, True)
-    x, y = scaled_point((1488, 389), width, height)
-    draw.text((x, y), data["case_id"], font=font, fill=WHITE, anchor="ma")
+
+    # Divider lines
+    draw.line(
+        (x1 + 10, y1 + 26, x2 - 10, y1 + 26),
+        fill=(130, 40, 38, 170),
+        width=1,
+    )
+    draw.line(
+        (x1 + 10, y2 - 22, x2 - 10, y2 - 22),
+        fill=(130, 40, 38, 170),
+        width=1,
+    )
+
+    id_font = scaled_font(width, height, 8, True)
+    title_font = scaled_font(width, height, 13, True)
+    sub_font = scaled_font(width, height, 8, True)
+
+    draw.text(
+        (cx, y1 + 15),
+        data["case_id"],
+        font=id_font,
+        fill=WHITE,
+        anchor="ma",
+    )
+    draw.text(
+        (cx, cy - 2),
+        "CASE FILE",
+        font=title_font,
+        fill=(255, 138, 130, 255),
+        anchor="ma",
+    )
+    draw.text(
+        (cx, y2 - 12),
+        data["priority"].title(),
+        font=sub_font,
+        fill=TEXT,
+        anchor="ma",
+    )
 
 
 def draw_file_network_motion(
@@ -833,7 +944,6 @@ def draw_system_status(
         points.append((x_point, (y1 + y2) / 2 + offset))
     draw.line(points, fill=BLUE, width=1)
 
-
 def draw_threat_monitor(
     draw: ImageDraw.ImageDraw,
     width: int,
@@ -841,30 +951,31 @@ def draw_threat_monitor(
     data: dict[str, Any],
     frame_index: int,
 ) -> None:
-    score_font = scaled_font(width, height, 32, True)
-    body_font = scaled_font(width, height, 10, True)
-    bullet_font = scaled_font(width, height, 9, True)
+    score_font = scaled_font(width, height, 34, True)
+    body_font = scaled_font(width, height, 12, True)
+    bullet_font = scaled_font(width, height, 11, True)
 
     draw.text(
-        scaled_point((792, 628), width, height),
+        scaled_point((808, 653), width, height),
         f"{data['score']:03d}",
         font=score_font,
         fill=RED,
     )
     draw.text(
-        scaled_point((794, 678), width, height),
+        scaled_point((810, 706), width, height),
         data["score_level"],
         font=body_font,
         fill=WHITE,
     )
     draw.text(
-        scaled_point((794, 713), width, height),
+        scaled_point((810, 744), width, height),
         "CURRENT FOOTPRINT",
         font=body_font,
         fill=TEXT,
     )
 
-    x1, y1, x2, y2 = scaled_box((890, 640, 1164, 694), width, height)
+    # waveform
+    x1, y1, x2, y2 = scaled_box((910, 648, 1182, 730), width, height)
     seed = sum(ord(character) for character in data["case_id"]) + 700
     points = []
     for index in range(48):
@@ -872,27 +983,29 @@ def draw_threat_monitor(
         ratio = index / 47
         x_point = x1 + ratio * (x2 - x1)
         center = (y1 + y2) / 2
-        offset = 11 * math.sin(
+        offset = 13 * math.sin(
             frame_index * 0.48 + index * 0.43 + rng.uniform(0, math.tau)
         )
-        offset += 6 * math.sin(
+        offset += 7 * math.sin(
             frame_index * 0.21 + index * 0.17 + rng.uniform(0, math.tau)
         )
-        points.append((x_point, max(y1 + 3, min(y2 - 3, center + offset))))
+        points.append((x_point, max(y1 + 4, min(y2 - 4, center + offset))))
     draw.line(points, fill=RED, width=max(2, round(width / 900)))
 
-    max_width = (
-        scaled_point((1168, 0), width, height)[0]
-        - scaled_point((794, 0), width, height)[0]
-    )
+    # Bigger / clearer bullet lines
+    bullet_x, _ = scaled_point((812, 0), width, height)
+    max_width = scaled_point((1178, 0), width, height)[0] - bullet_x
+
     bullets = [
         f"• {data['classification']}",
         f"• {data['threat']}",
-        "• Evidence chain synchronized",
+        "• Repository correlation active",
     ]
-    for rendered, y_ref in zip(bullets, (742, 768, 794)):
+    line_positions = (776, 806, 836)
+
+    for rendered, y_ref in zip(bullets, line_positions):
         draw.text(
-            scaled_point((794, y_ref), width, height),
+            scaled_point((812, y_ref), width, height),
             ellipsize(draw, rendered, bullet_font, max_width),
             font=bullet_font,
             fill=TEXT,
