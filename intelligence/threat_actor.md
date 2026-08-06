@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Project Chimera
+Vector-9
 
 ---
 
@@ -16,7 +16,7 @@ International Infrastructure
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Strategic Intelligence Collection
 
 ---
 
@@ -26,24 +26,24 @@ High
 ---
 
 ## Confidence
-93%
+85%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Physical Access
-- Supply Chain Compromise
-- Long-Term Network Foothold
-- Research Data Exfiltration
-- Laboratory Network Reconnaissance
+- Insider Misuse
+- Credential Abuse
 - Laboratory Control System Manipulation
+- Biosecurity System Tampering
+- Long-Term Network Foothold
+- Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+National Response Cell
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Security Breach Investigation
+Biomedical Infrastructure Investigation
 
 ---
 

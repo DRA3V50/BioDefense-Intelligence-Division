@@ -4,18 +4,18 @@
 ## 2026-08-06
 
 ### Case Opened
-Case ID: BID-2026-6446
+Case ID: BID-2026-1035
 
 ### Classification
-Laboratory Security Breach Investigation
+Biomedical Infrastructure Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
-Evidence Collection
+Open
 
 ### Severity
-CRITICAL
+LOW
 
 ---

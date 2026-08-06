@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-6446
+BID-2026-1035
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Specimen Tracking Manipulation
 
 Severity:
-CRITICAL
+LOW
 
 Priority:
-CRITICAL
+ROUTINE
 
 ---
 
@@ -30,35 +30,35 @@ Collected indicators continue to support an active counter-bioterrorism investig
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-23
+3
 
 Evidence Collected:
-407
+31
 
 Indicators Identified:
-78
+18
 
 Analyst Confidence:
-93%
+85%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+National Response Cell

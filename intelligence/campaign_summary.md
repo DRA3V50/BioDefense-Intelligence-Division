@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6446
+BID-2026-1035
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Specimen Tracking Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Clinical Research Environment
 
 Device:
-Network Security Appliance
+Laboratory Information Server
 
 Vendor:
-Fortinet
+Cisco
 
 Security Zone:
-Protected Research Segment
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-97
+98
 
 Evidence Collected:
-407
+31
 
 Indicators Identified:
-78
+18
 
 Affected Assets:
-23
+3
 
 Confidence:
-93%
+85%
 
 Risk Score:
-92
+30
 
 ---
 

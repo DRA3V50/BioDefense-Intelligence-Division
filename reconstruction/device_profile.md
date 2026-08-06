@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6446
+BID-2026-1035
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Specimen Tracking Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
-Biosecurity Operations Center
+Clinical Research Environment
 
 Device:
-Network Security Appliance
+Laboratory Information Server
 
 Vendor:
-Fortinet
+Cisco
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
-Protected Research Segment
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Active Investigation
 
 Priority:
-CRITICAL
+ROUTINE
 
 Confidence:
-93%
+85%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Digital evidence preserved for laboratory forensic examination.

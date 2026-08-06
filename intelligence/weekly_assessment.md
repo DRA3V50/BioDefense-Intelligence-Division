@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6446
+Case ID: BID-2026-1035
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Security Breach Investigation
+Classification: Biomedical Infrastructure Investigation
 
-Threat Family: Biocontainment System Tampering
+Threat Family: Specimen Tracking Manipulation
 
-Current Status: Evidence Collection
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -20,29 +20,29 @@ Containment Phase: Operational Recovery
 
 Observed indicators remain consistent with the current operational assessment.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+ROUTINE
 
 Risk Score:
-92
+30
 
 Confidence:
-93%
+85%
 
 Affected Assets:
-23
+3
 
 Evidence Collected:
-407
+31
 
 Indicators Recorded:
-78
+18
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Joint Cyber Investigation Unit
+National Response Cell
 
 Date:
 

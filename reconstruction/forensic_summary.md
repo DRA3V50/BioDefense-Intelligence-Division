@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6446 |
+| Case ID | BID-2026-1035 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Security Breach Investigation |
-| Threat Family | Biocontainment System Tampering |
-| Severity | CRITICAL |
-| Status | Evidence Collection |
+| Classification | Biomedical Infrastructure Investigation |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | LOW |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Network Security Appliance |
-| Vendor | Fortinet |
-| Security Zone | Protected Research Segment |
+| Platform | Clinical Research Environment |
+| Device | Laboratory Information Server |
+| Vendor | Cisco |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 92 |
-| Confidence | 93% |
-| Evidence Collected | 407 |
-| Indicators Identified | 78 |
-| Affected Assets | 23 |
+| Risk Score | 30 |
+| Confidence | 85% |
+| Evidence Collected | 31 |
+| Indicators Identified | 18 |
+| Affected Assets | 3 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Open**
 
 Priority:
 
-**CRITICAL**
+**ROUTINE**
 
 Recommended Action:
 
