@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6053 |
+| Case ID | BID-2026-7379 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Digital Evidence Reconstruction Investigation |
-| Threat Family | Credential Misuse |
-| Severity | LOW |
-| Status | Open |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Biomedical Supply Chain Compromise |
+| Severity | HIGH |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Research Data Repository |
-| Device | Biomedical Workstation |
-| Vendor | Palo Alto Networks |
-| Security Zone | Containment Network |
+| Platform | Laboratory Control Network |
+| Device | Clinical Data Server |
+| Vendor | Microsoft |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 39 |
-| Confidence | 85% |
-| Evidence Collected | 35 |
-| Indicators Identified | 16 |
-| Affected Assets | 9 |
+| Risk Score | 65 |
+| Confidence | 96% |
+| Evidence Collected | 126 |
+| Indicators Identified | 73 |
+| Affected Assets | 27 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Containment**
 
 Priority:
 
-**ROUTINE**
+**HIGH**
 
 Recommended Action:
 

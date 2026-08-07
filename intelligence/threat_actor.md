@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Vector-9
 
 ---
 
 ## Attribution
-Unattributed
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-85%
+96%
 
 ---
 
 ## Observed Techniques
-- Third-Party Access
-- Laboratory Data Manipulation
-- Command and Control
-- Laboratory Network Reconnaissance
-- Biosecurity System Tampering
+- Insider Misuse
+- Research Data Exfiltration
+- Concealed Internal Movement
 - Privilege Escalation
+- Credential Abuse
+- Long-Term Network Foothold
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+BioDefense Task Force
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Digital Evidence Reconstruction Investigation
+Biological Research Intelligence Collection
 
 ---
 

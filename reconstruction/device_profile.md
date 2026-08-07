@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6053
+BID-2026-7379
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Credential Misuse
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+National Pathogen Research Facility
 
 Platform:
-Research Data Repository
+Laboratory Control Network
 
 Device:
-Biomedical Workstation
+Clinical Data Server
 
 Vendor:
-Palo Alto Networks
+Microsoft
 
 Operating System:
 Red Hat Enterprise Linux 10
 
 Security Zone:
-Containment Network
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-85%
+96%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.

@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6053
+BID-2026-7379
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Credential Misuse
+Biomedical Supply Chain Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Research Data Repository
+Laboratory Control Network
 
 Device:
-Biomedical Workstation
+Clinical Data Server
 
 Vendor:
-Palo Alto Networks
+Microsoft
 
 Security Zone:
-Containment Network
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-101
+102
 
 Evidence Collected:
-35
+126
 
 Indicators Identified:
-16
+73
 
 Affected Assets:
-9
+27
 
 Confidence:
-85%
+96%
 
 Risk Score:
-39
+65
 
 ---
 

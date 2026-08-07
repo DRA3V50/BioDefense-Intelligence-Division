@@ -2,7 +2,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=c7783d6d9bbc" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=9aacc7cd5788" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -11,7 +11,7 @@
 
 | Record Control | Investigative State | Exchange Package |
 |----------------|---------------------|------------------|
-| **Case:** `BID-2026-6053`<br>**Campaign:** `BDC-2026-001` | **Record:** `OPEN`<br>**Evidence:** `MANIFEST-TRACKED` | `XML` · `JSON` · `CSV` · `XLSX` |
+| **Case:** `BID-2026-7379`<br>**Campaign:** `BDC-2026-001` | **Record:** `CONTAINMENT`<br>**Evidence:** `MANIFEST-TRACKED` | `XML` · `JSON` · `CSV` · `XLSX` |
 
 Automated cyber-biothreat investigation and digital forensics simulation using Python and C#. The project models federal-style case management, evidence reconstruction, threat assessment, chain of custody, intelligence reporting, and controlled operational recovery for fictional threats affecting biomedical research and protected laboratory environments.
 
@@ -21,7 +21,7 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Campaign Record | Operational Status | Investigative Scope |
 |----------|--------------------|-------|
-| **ID:** BDC-2026-001<br>**Campaign:** Coordinated Biomedical Systems Intrusion<br>**Designation:** BMSI-01 | **Phase:** Operational Recovery<br>**Containment:** HIGH<br>**Intrusions:** 13 | **Active Cases:** 101<br>**Evidence:** 93,950<br>**Indicators:** 62,437<br>**Facilities / States:** 11 / 3 |
+| **ID:** BDC-2026-001<br>**Campaign:** Coordinated Biomedical Systems Intrusion<br>**Designation:** BMSI-01 | **Phase:** Operational Recovery<br>**Containment:** SEVERE<br>**Intrusions:** 13 | **Active Cases:** 102<br>**Evidence:** 94,076<br>**Indicators:** 62,510<br>**Facilities / States:** 11 / 3 |
 
 <details>
 <summary><strong>Campaign objective and next action</strong></summary>
@@ -38,12 +38,12 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Case Profile | Target Environment | Response |
 |--------------|--------------------|----------|
-| **Case:** BID-2026-6053<br>**Classification:** Digital Evidence Reconstruction Investigation<br>**Threat Family:** Credential Misuse<br>**Severity / Priority:** LOW / ROUTINE | **Platform:** Research Data Repository<br>**Vendor / Device:** Palo Alto Networks / Biomedical Workstation<br>**Zone:** Containment Network<br>**Assets:** 9 | **Confidence:** 85%<br>**Evidence / IOCs:** 35 / 16<br>**Lead:** Analyst Team Alpha<br>**Initial Access:** Third-Party Access |
+| **Case:** BID-2026-7379<br>**Classification:** Biological Research Intelligence Collection<br>**Threat Family:** Biomedical Supply Chain Compromise<br>**Severity / Priority:** HIGH / HIGH | **Platform:** Laboratory Control Network<br>**Vendor / Device:** Microsoft / Clinical Data Server<br>**Zone:** Evidence Network<br>**Assets:** 27 | **Confidence:** 96%<br>**Evidence / IOCs:** 126 / 73<br>**Lead:** BioDefense Task Force<br>**Initial Access:** Insider Misuse |
 
 <details>
 <summary><strong>Analyst assessment and recommended response</strong></summary>
 
-**Assessment:** Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+**Assessment:** Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 **Recommended action:** Verify recovery controls and prepare the final operational assessment.
 
@@ -55,35 +55,35 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 # Digital Evidence Record
 
-**Active Case:** BID-2026-6053
+**Active Case:** BID-2026-7379
 
 | Evidence Records | Correlations | Integrity Verified | Pending Review |
 |-----------------:|-------------:|-------------------:|---------------:|
-| 35 | 35 | 35 | 35 |
+| 126 | 126 | 126 | 126 |
 
 ## Active Case Intelligence Products
 
 | Reports & Assessments | Evidence & Forensics | Operations & Data |
 |-----------------------|----------------------|-------------------|
-| ◆ [Investigation Report](reports/investigation_report.md)<br>◆ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>◆ [C# Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>◆ [C# Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>◆ [Investigative Leads](reports/investigative_leads.md) | ◆ [Evidence Chain](evidence/evidence_chain.md)<br>◆ [Evidence Manifest](evidence/BID-2026-6053/evidence_manifest.json)<br>◆ [Evidence Correlations](evidence/BID-2026-6053/evidence_correlations.json)<br>◆ [Chain of Custody](evidence/BID-2026-6053/chain_of_custody.md)<br>◆ [Forensic Summary](evidence/BID-2026-6053/forensic_summary.md)<br>◆ [Acquisition Summary](evidence/BID-2026-6053/acquisition_summary.md) | ◆ [Command Brief](operations/command_brief.md)<br>◆ [Investigation Timeline](operations/investigation_timeline.md)<br>◆ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>◆ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
+| ◆ [Investigation Report](reports/investigation_report.md)<br>◆ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>◆ [C# Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>◆ [C# Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>◆ [Investigative Leads](reports/investigative_leads.md) | ◆ [Evidence Chain](evidence/evidence_chain.md)<br>◆ [Evidence Manifest](evidence/BID-2026-7379/evidence_manifest.json)<br>◆ [Evidence Correlations](evidence/BID-2026-7379/evidence_correlations.json)<br>◆ [Chain of Custody](evidence/BID-2026-7379/chain_of_custody.md)<br>◆ [Forensic Summary](evidence/BID-2026-7379/forensic_summary.md)<br>◆ [Acquisition Summary](evidence/BID-2026-7379/acquisition_summary.md) | ◆ [Command Brief](operations/command_brief.md)<br>◆ [Investigation Timeline](operations/investigation_timeline.md)<br>◆ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>◆ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
 
 <details>
 <summary><strong>Evidence breakdown</strong></summary>
 
 | Evidence Type | Records |
 |---------------|--------:|
-| Access Control Log | 5 |
-| Research Workstation Event Log | 4 |
+| Threat Intelligence Record | 16 |
+| Laboratory System Configuration | 15 |
+| Biosecurity Audit Record | 15 |
+| Authentication Log | 13 |
+| Laboratory Information System Audit Log | 12 |
+| Firewall Log | 11 |
+| Research Workstation Event Log | 10 |
+| Network Connection Record | 8 |
+| Containment Validation Record | 8 |
+| Research Data Integrity Record | 7 |
+| Access Control Log | 7 |
 | Analyst Observation | 4 |
-| Laboratory Information System Audit Log | 3 |
-| Firewall Log | 3 |
-| Containment Validation Record | 3 |
-| Authentication Log | 3 |
-| Network Connection Record | 3 |
-| Biosecurity Audit Record | 3 |
-| Laboratory System Configuration | 2 |
-| Threat Intelligence Record | 1 |
-| Research Data Integrity Record | 1 |
 
 </details>
 
@@ -92,18 +92,18 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Investigative Finding | Correlations |
 |-----------------------|-------------:|
-| Unauthorized Facility Access | 5 |
-| Research Workstation Compromise | 4 |
+| Known Threat Actor Indicator | 16 |
+| Laboratory System Modification | 15 |
+| Biosecurity Policy Violation | 15 |
+| Credential Misuse | 13 |
+| Laboratory Information System Anomaly | 12 |
+| Suspicious Network Activity | 11 |
+| Research Workstation Compromise | 10 |
+| Command-and-Control Communication | 8 |
+| Containment Verification | 8 |
+| Research Data Integrity Anomaly | 7 |
+| Unauthorized Facility Access | 7 |
 | Analyst Intelligence Assessment | 4 |
-| Laboratory Information System Anomaly | 3 |
-| Suspicious Network Activity | 3 |
-| Containment Verification | 3 |
-| Credential Misuse | 3 |
-| Command-and-Control Communication | 3 |
-| Biosecurity Policy Violation | 3 |
-| Laboratory System Modification | 2 |
-| Known Threat Actor Indicator | 1 |
-| Research Data Integrity Anomaly | 1 |
 
 </details>
 
@@ -114,15 +114,15 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Date | Case ID | Severity | Risk | Confidence | Status |
 |------|---------|----------|-----:|-----------:|--------|
+| 2026-08-07 | BID-2026-7379 | HIGH | 65 | 96 | Containment |
 | 2026-08-07 | BID-2026-6053 | LOW | 39 | 85 | Open |
 | 2026-08-07 | BID-2026-1158 | HIGH | 78 | 92 | Evidence Collection |
 | 2026-08-07 | BID-2026-4601 | LOW | 25 | 88 | Open |
 | 2026-08-06 | BID-2026-1035 | LOW | 30 | 85 | Open |
-| 2026-08-06 | BID-2026-6446 | CRITICAL | 92 | 93 | Evidence Collection |
 
 </details>
 
-**Threat Family:** Credential Misuse · **Repository Updated:** 2026-08-07T02:01:21Z
+**Threat Family:** Biomedical Supply Chain Compromise · **Repository Updated:** 2026-08-07T02:46:41Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -135,23 +135,23 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Metric | Value |
 |--------|------:|
-| Total Investigations | 101 |
+| Total Investigations | 102 |
 | Low / Moderate | 26 / 34 |
-| High / Critical | 28 / 13 |
+| High / Critical | 29 / 13 |
 | Closed Cases | 0 |
-| Average Confidence | 89.5% |
-| Total Evidence | 93,950 |
-| Total Indicators | 62,437 |
+| Average Confidence | 89.6% |
+| Total Evidence | 94,076 |
+| Total Indicators | 62,510 |
 
 ### Recent Investigations
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-7379 | Biological Research Intelligence Collection | HIGH |
 | BID-2026-6053 | Digital Evidence Reconstruction Investigation | LOW |
 | BID-2026-1158 | Medical Device Security Assessment | HIGH |
 | BID-2026-4601 | Medical Device Security Assessment | LOW |
 | BID-2026-1035 | Biomedical Infrastructure Investigation | LOW |
-| BID-2026-6446 | Laboratory Security Breach Investigation | CRITICAL |
 
 </details>
 

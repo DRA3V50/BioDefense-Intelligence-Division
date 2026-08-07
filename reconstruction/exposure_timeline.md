@@ -4,18 +4,18 @@
 ## 2026-08-07
 
 ### Case Opened
-Case ID: BID-2026-6053
+Case ID: BID-2026-7379
 
 ### Classification
-Digital Evidence Reconstruction Investigation
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Open
+Containment
 
 ### Severity
-LOW
+HIGH
 
 ---

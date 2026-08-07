@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6053
+BID-2026-7379
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Biological Research Intelligence Collection
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Identity | Credential reuse detected across isolated research segments |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Identity | Credential reuse detected across isolated research segments |
+| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,23 +28,23 @@ Digital Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-35
+126
 
 Indicators Reviewed:
-16
+73
 
 Risk Score:
-39
+65
 
 Confidence:
-85%
+96%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+BioDefense Task Force
 
 Current Status:
 
-Open
+Containment
