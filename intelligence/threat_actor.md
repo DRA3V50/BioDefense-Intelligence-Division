@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Evidence Repository Manipulation
+Credential Misuse
 
 ---
 
 ## Primary Alias
-Project Chimera
+Ghost Genome
 
 ---
 
 ## Attribution
-International Infrastructure
+Unattributed
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-92%
+85%
 
 ---
 
 ## Observed Techniques
-- Insider Misuse
-- Covert Remote Access Tooling
-- Privilege Escalation
+- Third-Party Access
 - Laboratory Data Manipulation
-- Lateral Movement
-- Research Data Exfiltration
+- Command and Control
+- Laboratory Network Reconnaissance
+- Biosecurity System Tampering
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Alpha
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Digital Evidence Reconstruction Investigation
 
 ---
 

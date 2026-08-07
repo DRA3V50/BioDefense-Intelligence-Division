@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-1158
+BID-2026-6053
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Credential Misuse
 
 Severity:
-HIGH
+LOW
 
 Priority:
-HIGH
+ROUTINE
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-11
+9
 
 Evidence Collected:
-152
+35
 
 Indicators Identified:
-71
+16
 
 Analyst Confidence:
-92%
+85%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Alpha

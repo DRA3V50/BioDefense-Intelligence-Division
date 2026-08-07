@@ -124,3 +124,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-08-06,BID-2026-1035,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,LOW,ROUTINE,30,85,31,18,3,Clinical Research Environment,Cisco,Secure Laboratory,National Response Cell,Open
 2026-08-07,BID-2026-4601,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,LOW,ROUTINE,25,88,30,5,9,Clinical Research Environment,Lenovo,Federal Operations,Analyst Team Bravo,Open
 2026-08-07,BID-2026-1158,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,HIGH,HIGH,78,92,152,71,11,Medical Research Laboratory,Lenovo,Biosecurity Segment,BioDefense Task Force,Evidence Collection
+2026-08-07,BID-2026-6053,Coordinated Biomedical Systems Intrusion,Digital Evidence Reconstruction Investigation,LOW,ROUTINE,39,85,35,16,9,Research Data Repository,Palo Alto Networks,Containment Network,Analyst Team Alpha,Open

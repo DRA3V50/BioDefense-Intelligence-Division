@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1158 |
+| Case ID | BID-2026-6053 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Evidence Repository Manipulation |
-| Severity | HIGH |
-| Status | Evidence Collection |
+| Classification | Digital Evidence Reconstruction Investigation |
+| Threat Family | Credential Misuse |
+| Severity | LOW |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Medical Research Laboratory |
-| Device | Specimen Tracking Terminal |
-| Vendor | Lenovo |
-| Network Zone | Biosecurity Segment |
+| Platform | Research Data Repository |
+| Device | Biomedical Workstation |
+| Vendor | Palo Alto Networks |
+| Network Zone | Containment Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 78 |
-| Confidence | 92% |
-| Evidence | 152 |
-| Indicators | 71 |
-| Affected Assets | 11 |
+| Risk Score | 39 |
+| Confidence | 85% |
+| Evidence | 35 |
+| Indicators | 16 |
+| Affected Assets | 9 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **BioDefense Task Force**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.

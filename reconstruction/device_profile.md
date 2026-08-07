@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1158
+BID-2026-6053
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Credential Misuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Central Evidence Processing Center
 
 Platform:
-Medical Research Laboratory
+Research Data Repository
 
 Device:
-Specimen Tracking Terminal
+Biomedical Workstation
 
 Vendor:
-Lenovo
+Palo Alto Networks
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Biosecurity Segment
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
-92%
+85%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

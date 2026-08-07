@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-07 01:38 UTC
+**Generated:** 2026-08-07 02:01 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1158
+**Case ID:** BID-2026-6053
 
-**Classification:** Medical Device Security Assessment
+**Classification:** Digital Evidence Reconstruction Investigation
 
-**Severity:** HIGH
+**Severity:** LOW
 
-**Threat Family:** Evidence Repository Manipulation
+**Threat Family:** Credential Misuse
 
-**Confidence:** 92%
+**Confidence:** 85%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **152**
+Evidence Collected: **35**
 
-Indicators: **71**
+Indicators: **16**
 
-Priority: **HIGH**
+Priority: **ROUTINE**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**BioDefense Task Force**
+**Analyst Team Alpha**
 
 Initial Access:
-**Insider Misuse**
+**Third-Party Access**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**100**
+**101**
 
 Confirmed Intrusions:
 **13**
 
 Total Evidence:
-**93915**
+**93950**
 
 Total Indicators:
-**62421**
+**62437**
 
 ---
 
 ## Operational Highlights
 
-- 152 evidence items are associated with the active investigation.
-- 71 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **92%**.
-- Current investigation priority is **HIGH**.
+- 35 evidence items are associated with the active investigation.
+- 16 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **85%**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

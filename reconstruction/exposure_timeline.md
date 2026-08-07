@@ -4,18 +4,18 @@
 ## 2026-08-07
 
 ### Case Opened
-Case ID: BID-2026-1158
+Case ID: BID-2026-6053
 
 ### Classification
-Medical Device Security Assessment
+Digital Evidence Reconstruction Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
-Evidence Collection
+Open
 
 ### Severity
-HIGH
+LOW
 
 ---
