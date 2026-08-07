@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Vector-9
+Dark Sequence
 
 ---
 
 ## Attribution
-International Infrastructure
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-High
+Nation-State Level
 
 ---
 
 ## Confidence
-85%
+88%
 
 ---
 
 ## Observed Techniques
-- Insider Misuse
-- Credential Abuse
-- Laboratory Control System Manipulation
+- Supply Chain Compromise
 - Biosecurity System Tampering
-- Long-Term Network Foothold
-- Covert Remote Access Tooling
+- Laboratory Control System Manipulation
+- Concealed Internal Movement
+- Credential Abuse
+- Command and Control
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Bravo
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biomedical Infrastructure Investigation
+Medical Device Security Assessment
 
 ---
 
 ## Last Updated
-2026-08-06
+2026-08-07

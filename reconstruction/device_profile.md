@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-1035
+BID-2026-4601
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Specimen Tracking Manipulation
+Biomedical Supply Chain Compromise
 
 ---
 
@@ -25,16 +25,16 @@ Platform:
 Clinical Research Environment
 
 Device:
-Laboratory Information Server
+Evidence Repository
 
 Vendor:
-Cisco
+Lenovo
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Secure Laboratory
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
 ROUTINE
 
 Confidence:
-85%
+88%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+System isolated pending malware reverse engineering.

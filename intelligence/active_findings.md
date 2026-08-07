@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-1035
+BID-2026-4601
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Specimen Tracking Manipulation
+Biomedical Supply Chain Compromise
 
 Severity:
 LOW
@@ -26,39 +26,39 @@ ROUTINE
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-3
+9
 
 Evidence Collected:
-31
+30
 
 Indicators Identified:
-18
+5
 
 Analyst Confidence:
-85%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -67,7 +67,7 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Bravo

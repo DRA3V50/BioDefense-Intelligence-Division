@@ -4,10 +4,10 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1035 |
+| Case ID | BID-2026-4601 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Specimen Tracking Manipulation |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Biomedical Supply Chain Compromise |
 | Severity | LOW |
 | Status | Open |
 | Phase | Operational Recovery |
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Clinical Research Environment |
-| Device | Laboratory Information Server |
-| Vendor | Cisco |
-| Network Zone | Secure Laboratory |
+| Device | Evidence Repository |
+| Vendor | Lenovo |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 30 |
-| Confidence | 85% |
-| Evidence | 31 |
-| Indicators | 18 |
-| Affected Assets | 3 |
+| Risk Score | 25 |
+| Confidence | 88% |
+| Evidence | 30 |
+| Indicators | 5 |
+| Affected Assets | 9 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.

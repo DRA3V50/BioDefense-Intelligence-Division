@@ -2,45 +2,45 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-08-06 05:14 UTC
+**Generated:** 2026-08-07 01:33 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1035
+**Case ID:** BID-2026-4601
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Classification:** Biomedical Infrastructure Investigation
+**Classification:** Medical Device Security Assessment
 
-**Threat Family:** Specimen Tracking Manipulation
+**Threat Family:** Biomedical Supply Chain Compromise
 
 **Severity:** LOW
 
 **Priority:** ROUTINE
 
-**Risk Score:** 30
+**Risk Score:** 25
 
-**Assessment Confidence:** 85%
+**Assessment Confidence:** 88%
 
 **Containment Phase:** Operational Recovery
 
 **Affected Platform:** Clinical Research Environment
 
-**Affected Assets:** 3
+**Affected Assets:** 9
 
 ---
 
 ## Executive Assessment
 
-The active Biomedical Infrastructure Investigation concerns suspected Specimen Tracking Manipulation. The calculated overall bioterror threat score is **48/100 (ELEVATED)**. The strongest risk drivers are containment confidence, attribution confidence, threat actor intent. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Medical Device Security Assessment concerns suspected Biomedical Supply Chain Compromise. The calculated overall bioterror threat score is **50/100 (ELEVATED)**. The strongest risk drivers are containment confidence, attribution confidence, threat actor intent. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** ELEVATED
 
-**Overall Bioterror Threat Score:** 48/100
+**Overall Bioterror Threat Score:** 50/100
 
 ---
 
@@ -48,20 +48,20 @@ The active Biomedical Infrastructure Investigation concerns suspected Specimen T
 
 | Assessment Dimension | Score | Level |
 |----------------------|------:|-------|
-| Threat Actor Intent | 68/100 | ELEVATED |
+| Threat Actor Intent | 71/100 | HIGH |
 | Threat Actor Capability | 49/100 | ELEVATED |
-| Biological Target Value | 59/100 | ELEVATED |
+| Biological Target Value | 60/100 | ELEVATED |
 | Laboratory and Specimen Impact | 46/100 | ELEVATED |
-| Public-Health Risk | 36/100 | GUARDED |
-| Cyber-to-Physical Escalation | 43/100 | GUARDED |
-| Attribution Confidence | 76/100 | MODERATE |
-| Containment Confidence | 93/100 | HIGH |
+| Public-Health Risk | 44/100 | GUARDED |
+| Cyber-to-Physical Escalation | 49/100 | ELEVATED |
+| Attribution Confidence | 83/100 | MODERATE |
+| Containment Confidence | 95/100 | HIGH |
 
 ---
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Specimen Tracking Manipulation**.
+- The investigation currently centers on **Biomedical Supply Chain Compromise**.
 - The current record does not independently establish a direct public-health emergency or confirmed biological-material release.
 - Threat-actor indicators are present, but attribution should remain provisional until corroborated.
 - Research-data or laboratory-system integrity requires continued validation to determine whether observed changes were malicious.
@@ -70,32 +70,33 @@ The active Biomedical Infrastructure Investigation concerns suspected Specimen T
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 31
+**Evidence Records Reviewed:** 30
 
-**Correlation Records Reviewed:** 31
+**Correlation Records Reviewed:** 30
 
-**Integrity-Verified Records:** 31
+**Integrity-Verified Records:** 30
 
-**Pending Analyst Review:** 31
+**Pending Analyst Review:** 30
 
 ### Priority Findings
 
-- **Suspicious Network Activity:** 5
-- **Command-and-Control Communication:** 4
-- **Research Data Integrity Anomaly:** 4
-- **Laboratory System Modification:** 4
-- **Analyst Intelligence Assessment:** 3
-- **Unauthorized Facility Access:** 3
-- **Research Workstation Compromise:** 3
-- **Known Threat Actor Indicator:** 2
-- **Biosecurity Policy Violation:** 2
-- **Containment Verification:** 1
+- **Containment Verification:** 5
+- **Biosecurity Policy Violation:** 4
+- **Known Threat Actor Indicator:** 4
+- **Credential Misuse:** 4
+- **Research Data Integrity Anomaly:** 3
+- **Command-and-Control Communication:** 3
+- **Analyst Intelligence Assessment:** 2
+- **Suspicious Network Activity:** 2
+- **Unauthorized Facility Access:** 1
+- **Laboratory System Modification:** 1
+- **Laboratory Information System Anomaly:** 1
 
 ---
 
 ## Threat Intent and Capability
 
-**Intent Assessment:** 68/100 (ELEVATED)
+**Intent Assessment:** 71/100 (HIGH)
 
 **Capability Assessment:** 49/100 (ELEVATED)
 
@@ -105,7 +106,7 @@ The intent and capability scores are analytical estimates derived from the activ
 
 ## Biological Target and Laboratory Impact
 
-**Biological Target Value:** 59/100 (ELEVATED)
+**Biological Target Value:** 60/100 (ELEVATED)
 
 **Laboratory and Specimen Impact:** 46/100 (ELEVATED)
 
@@ -115,9 +116,9 @@ Analysts should determine whether cyber activity affected protected research rec
 
 ## Public-Health and Cyber-to-Physical Risk
 
-**Public-Health Risk:** 36/100 (GUARDED)
+**Public-Health Risk:** 44/100 (GUARDED)
 
-**Cyber-to-Physical Escalation:** 43/100 (GUARDED)
+**Cyber-to-Physical Escalation:** 49/100 (ELEVATED)
 
 No conclusion regarding biological-agent release, specimen compromise, or public-health impact should be made unless it is directly supported by validated evidence.
 
@@ -125,9 +126,9 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 ## Attribution and Containment Confidence
 
-**Attribution Confidence:** 76/100 (MODERATE)
+**Attribution Confidence:** 83/100 (MODERATE)
 
-**Containment Confidence:** 93/100 (HIGH)
+**Containment Confidence:** 95/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -149,10 +150,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-1035/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-1035/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-1035/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-1035/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-4601/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-4601/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-4601/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-4601/forensic_summary.md)
 
 ---
 

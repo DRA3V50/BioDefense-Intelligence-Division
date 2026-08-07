@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1035
+BID-2026-4601
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Identity | Credential reuse detected across isolated research segments |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -28,22 +28,22 @@ Biomedical Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-31
-
-Indicators Reviewed:
-18
-
-Risk Score:
 30
 
+Indicators Reviewed:
+5
+
+Risk Score:
+25
+
 Confidence:
-85%
+88%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Bravo
 
 Current Status:
 

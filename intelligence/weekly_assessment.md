@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1035
+Case ID: BID-2026-4601
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Biomedical Infrastructure Investigation
+Classification: Medical Device Security Assessment
 
-Threat Family: Specimen Tracking Manipulation
+Threat Family: Biomedical Supply Chain Compromise
 
 Current Status: Open
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Current findings support maintaining the existing investigation priority.
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ROUTINE
 
 Risk Score:
-30
+25
 
 Confidence:
-85%
+88%
 
 Affected Assets:
-3
+9
 
 Evidence Collected:
-31
+30
 
 Indicators Recorded:
-18
+5
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Bravo
 
 Date:
 
-2026-08-06
+2026-08-07
