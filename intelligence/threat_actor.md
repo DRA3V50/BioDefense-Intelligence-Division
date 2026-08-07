@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Research Workstation Compromise
 
 ---
 
@@ -11,39 +11,39 @@ Vector-9
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unattributed
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-96%
+82%
 
 ---
 
 ## Observed Techniques
-- Insider Misuse
-- Research Data Exfiltration
-- Concealed Internal Movement
-- Privilege Escalation
-- Credential Abuse
+- Phishing
+- Lateral Movement
+- Biosecurity System Tampering
 - Long-Term Network Foothold
+- Insider Access Abuse
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
 BioDefense Task Force
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 ---
 

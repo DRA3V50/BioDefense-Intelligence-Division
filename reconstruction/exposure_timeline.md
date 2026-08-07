@@ -4,18 +4,18 @@
 ## 2026-08-07
 
 ### Case Opened
-Case ID: BID-2026-7379
+Case ID: BID-2026-2643
 
 ### Classification
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
-Containment
+Open
 
 ### Severity
-HIGH
+LOW
 
 ---

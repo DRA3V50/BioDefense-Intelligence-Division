@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-7379 |
+| Case ID | BID-2026-2643 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Biomedical Supply Chain Compromise |
-| Severity | HIGH |
-| Status | Containment |
+| Classification | Research Facility Intrusion Investigation |
+| Threat Family | Research Workstation Compromise |
+| Severity | LOW |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Clinical Data Server |
-| Vendor | Microsoft |
-| Network Zone | Evidence Network |
+| Platform | Medical Research Laboratory |
+| Device | Laboratory Information Server |
+| Vendor | Lenovo |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 65 |
-| Confidence | 96% |
-| Evidence | 126 |
-| Indicators | 73 |
-| Affected Assets | 27 |
+| Risk Score | 36 |
+| Confidence | 82% |
+| Evidence | 46 |
+| Indicators | 9 |
+| Affected Assets | 2 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.

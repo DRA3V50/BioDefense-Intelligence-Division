@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-7379
+BID-2026-2643
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Research Workstation Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
-Laboratory Control Network
+Medical Research Laboratory
 
 Device:
-Clinical Data Server
+Laboratory Information Server
 
 Vendor:
-Microsoft
+Lenovo
 
 Operating System:
 Red Hat Enterprise Linux 10
 
 Security Zone:
-Evidence Network
+Federal Operations
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
-96%
+82%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Protected research assets remain under continuous monitoring.

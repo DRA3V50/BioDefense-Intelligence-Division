@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7379
+BID-2026-2643
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Research Workstation Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Containment
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Medical Research Laboratory
 
 Device:
-Clinical Data Server
+Laboratory Information Server
 
 Vendor:
-Microsoft
+Lenovo
 
 Security Zone:
-Evidence Network
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-102
+103
 
 Evidence Collected:
-126
+46
 
 Indicators Identified:
-73
+9
 
 Affected Assets:
-27
+2
 
 Confidence:
-96%
+82%
 
 Risk Score:
-65
+36
 
 ---
 

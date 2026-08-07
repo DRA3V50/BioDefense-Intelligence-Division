@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-07 02:46 UTC
+**Generated:** 2026-08-07 04:23 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-7379
+**Case ID:** BID-2026-2643
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Research Facility Intrusion Investigation
 
-**Severity:** HIGH
+**Severity:** LOW
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Research Workstation Compromise
 
-**Confidence:** 96%
+**Confidence:** 82%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **126**
+Evidence Collected: **46**
 
-Indicators: **73**
+Indicators: **9**
 
-Priority: **HIGH**
+Priority: **ROUTINE**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **BioDefense Task Force**
 
 Initial Access:
-**Insider Misuse**
+**Phishing**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**102**
+**103**
 
 Confirmed Intrusions:
 **13**
 
 Total Evidence:
-**94076**
+**94122**
 
 Total Indicators:
-**62510**
+**62519**
 
 ---
 
 ## Operational Highlights
 
-- 126 evidence items are associated with the active investigation.
-- 73 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **96%**.
-- Current investigation priority is **HIGH**.
+- 46 evidence items are associated with the active investigation.
+- 9 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **82%**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7379
+BID-2026-2643
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
+| Device | Protected workstation entered evidence preservation mode |
+| Research Storage | Unauthorized access to protected genomic repository |
 | Identity | Credential reuse detected across isolated research segments |
-| System Log | Unexpected privilege escalation recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
@@ -28,16 +28,16 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-126
+46
 
 Indicators Reviewed:
-73
+9
 
 Risk Score:
-65
+36
 
 Confidence:
-96%
+82%
 
 ---
 
@@ -47,4 +47,4 @@ BioDefense Task Force
 
 Current Status:
 
-Containment
+Open
