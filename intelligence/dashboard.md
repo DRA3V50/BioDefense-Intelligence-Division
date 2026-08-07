@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2643 |
+| Case ID | BID-2026-6500 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Facility Intrusion Investigation |
-| Threat Family | Research Workstation Compromise |
-| Severity | LOW |
-| Status | Open |
+| Classification | Digital Evidence Reconstruction Investigation |
+| Threat Family | Credential Misuse |
+| Severity | MODERATE |
+| Status | Containment |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Medical Research Laboratory |
+| Platform | Clinical Research Environment |
 | Device | Laboratory Information Server |
-| Vendor | Lenovo |
-| Network Zone | Federal Operations |
+| Vendor | Palo Alto Networks |
+| Network Zone | Protected Research Segment |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 36 |
-| Confidence | 82% |
-| Evidence | 46 |
-| Indicators | 9 |
-| Affected Assets | 2 |
+| Risk Score | 63 |
+| Confidence | 86% |
+| Evidence | 77 |
+| Indicators | 20 |
+| Affected Assets | 8 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.

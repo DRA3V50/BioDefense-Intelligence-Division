@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-2643
+BID-2026-6500
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Research Workstation Compromise
+Credential Misuse
 
 Severity:
-LOW
+MODERATE
 
 Priority:
-ROUTINE
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ ROUTINE
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-2
+8
 
 Evidence Collected:
-46
+77
 
 Indicators Identified:
-9
+20
 
 Analyst Confidence:
-82%
+86%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 # Operational Status
 
 Current Status:
-Open
+Containment
 
 Recommended Action:
 

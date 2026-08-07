@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Workstation Compromise
+Credential Misuse
 
 ---
 
 ## Primary Alias
-Vector-9
+Ghost Genome
 
 ---
 
 ## Attribution
-Unattributed
+Multiple Regions
 
 ---
 
@@ -21,22 +21,22 @@ Research Data Theft
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-82%
+86%
 
 ---
 
 ## Observed Techniques
-- Phishing
+- Third-Party Access
 - Lateral Movement
 - Biosecurity System Tampering
-- Long-Term Network Foothold
-- Insider Access Abuse
-- Laboratory Data Manipulation
+- Covert Remote Access Tooling
+- Encrypted Data Staging
+- Privilege Escalation
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Facility Intrusion Investigation
+Digital Evidence Reconstruction Investigation
 
 ---
 

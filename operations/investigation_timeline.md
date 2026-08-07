@@ -2,31 +2,31 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-2643
+**Case ID:** BID-2026-6500
 
-**Generated:** 2026-08-07 04:23 UTC
+**Generated:** 2026-08-07 14:50 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-06 22:23 UTC | Initial Detection | Potential activity associated with Research Workstation Compromise was detected. |
-| 2026-08-06 23:23 UTC | Case Opened | Investigation BID-2026-2643 was opened and assigned to BioDefense Task Force. |
-| 2026-08-07 00:23 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Phishing. |
-| 2026-08-07 01:23 UTC | Evidence Collection | 46 evidence items and 9 indicators were associated with the active investigation. |
-| 2026-08-07 02:23 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-07 03:23 UTC | Operational Review | Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems. |
-| 2026-08-07 04:23 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-07 08:50 UTC | Initial Detection | Potential activity associated with Credential Misuse was detected. |
+| 2026-08-07 09:50 UTC | Case Opened | Investigation BID-2026-6500 was opened and assigned to BioDefense Task Force. |
+| 2026-08-07 10:50 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
+| 2026-08-07 11:50 UTC | Evidence Collection | 77 evidence items and 20 indicators were associated with the active investigation. |
+| 2026-08-07 12:50 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-08-07 13:50 UTC | Operational Review | Available evidence supports expanded review of access records, system changes, and related investigative indicators. |
+| 2026-08-07 14:50 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** LOW
+**Severity:** MODERATE
 
-**Priority:** ROUTINE
+**Priority:** ELEVATED
 
-**Confidence:** 82%
+**Confidence:** 86%
 
 **Campaign Phase:** Operational Recovery
 

@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-08-07 04:24 UTC
+**Generated:** 2026-08-07 14:51 UTC
 
 ---
 
@@ -12,39 +12,39 @@
 
 **Campaign ID:** BDC-2026-001
 
-**Case ID:** BID-2026-2643
+**Case ID:** BID-2026-6500
 
-**Case Status:** Open
+**Case Status:** Containment
 
-**Priority:** ROUTINE
+**Priority:** ELEVATED
 
-**Risk Score:** 36
+**Risk Score:** 63
 
-**Affected Platform:** Medical Research Laboratory
+**Affected Platform:** Clinical Research Environment
 
-**Affected Assets:** 2
+**Affected Assets:** 8
 
-**Initial Access:** Phishing
+**Initial Access:** Third-Party Access
 
 **Lead Analyst:** BioDefense Task Force
 
-**Classification:** Research Facility Intrusion Investigation
+**Classification:** Digital Evidence Reconstruction Investigation
 
 ---
 
 ## Executive Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Cyber-Biothreat Assessment
 
-**Threat Severity:** LOW
+**Threat Severity:** MODERATE
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Credential Misuse
 
-**Assessment Confidence:** 82%
+**Assessment Confidence:** 86%
 
 **Containment Status:** Operational Recovery
 
@@ -54,9 +54,9 @@ The investigation evaluates whether cyber activity affected biological research,
 
 ## Evidence Summary
 
-**Evidence Records:** 46
+**Evidence Records:** 77
 
-**Correlation Records:** 46
+**Correlation Records:** 77
 
 **Evidence Integrity:** Verified
 
@@ -89,7 +89,7 @@ No conclusion regarding biological material release should be made unless it is 
 
 ## Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 The current assessment remains subject to revision as evidence is validated, correlated, and reviewed for attribution.
 
@@ -117,10 +117,10 @@ The current assessment remains subject to revision as evidence is validated, cor
 - [Command Brief](../operations/command_brief.md) — Available
 - [Investigation Timeline](../operations/investigation_timeline.md) — Available
 - [Evidence Chain Analysis](../evidence/evidence_chain.md) — Available
-- [Evidence Manifest](../evidence/BID-2026-2643/evidence_manifest.json) — Available
-- [Evidence Correlations](../evidence/BID-2026-2643/evidence_correlations.json) — Available
-- [Chain of Custody](../evidence/BID-2026-2643/chain_of_custody.md) — Available
-- [Forensic Summary](../evidence/BID-2026-2643/forensic_summary.md) — Available
+- [Evidence Manifest](../evidence/BID-2026-6500/evidence_manifest.json) — Available
+- [Evidence Correlations](../evidence/BID-2026-6500/evidence_correlations.json) — Available
+- [Chain of Custody](../evidence/BID-2026-6500/chain_of_custody.md) — Available
+- [Forensic Summary](../evidence/BID-2026-6500/forensic_summary.md) — Available
 
 ---
 

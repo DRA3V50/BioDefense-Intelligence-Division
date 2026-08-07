@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-07 04:23 UTC
+**Generated:** 2026-08-07 14:50 UTC
 
 ---
 
@@ -18,31 +18,31 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-2643
+**Case ID:** BID-2026-6500
 
-**Classification:** Research Facility Intrusion Investigation
+**Classification:** Digital Evidence Reconstruction Investigation
 
-**Severity:** LOW
+**Severity:** MODERATE
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Credential Misuse
 
-**Confidence:** 82%
+**Confidence:** 86%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **46**
+Evidence Collected: **77**
 
-Indicators: **9**
+Indicators: **20**
 
-Priority: **ROUTINE**
+Priority: **ELEVATED**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **BioDefense Task Force**
 
 Initial Access:
-**Phishing**
+**Third-Party Access**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**103**
+**104**
 
 Confirmed Intrusions:
 **13**
 
 Total Evidence:
-**94122**
+**94199**
 
 Total Indicators:
-**62519**
+**62539**
 
 ---
 
 ## Operational Highlights
 
-- 46 evidence items are associated with the active investigation.
-- 9 indicators are currently linked to the case.
+- 77 evidence items are associated with the active investigation.
+- 20 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **82%**.
-- Current investigation priority is **ROUTINE**.
+- Analyst confidence is **86%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 
