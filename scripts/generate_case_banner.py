@@ -402,14 +402,17 @@ def cover_dynamic_regions(draw: ImageDraw.ImageDraw, width: int, height: int) ->
         ((918, 188, 1115, 389), DARK),
         ((1268, 96, 1418, 252), DARK),
         ((1214, 318, 1355, 552), DARK),
-        ((1426, 388, 1548, 414), DARK_SOFT),
+        ((1388, 315, 1568, 338), DARK),       # dedicated CASE ID strip in map area
+        ((1426, 388, 1548, 414), DARK),       # remove old case id from folder center
         ((52, 617, 409, 744), DARK_SOFT),     # chart bars only; retain axes/labels
         ((20, 770, 424, 807), DARK),
         ((672, 625, 775, 813), DARK),
-        ((450, 778, 765, 812), DARK_SOFT),    # preserve lower red detail line
-        ((786, 621, 1185, 825), DARK_SOFT),   # clear all static footprint text
+        ((452, 806, 760, 823), DARK),         # clean bottom ghost lines in System Status
+        ((786, 621, 1185, 825), DARK_SOFT),   # clear threat monitor text and graph interior
+        ((786, 806, 1186, 823), DARK),        # clean bottom ghost lines in Threat Monitor
         ((1200, 621, 1610, 816), DARK),
         ((1334, 864, 1637, 896), DARK),       # footer box interior only
+        ((619, 448, 812, 468), DARK),         # remove stray text bleeding into stage lane
     ]
     for box, fill in regions:
         cover(draw, box, width, height, fill)
@@ -427,39 +430,40 @@ def draw_top_access(
 def draw_biohazard_glow(
     frame: Image.Image, frame_index: int, width: int, height: int
 ) -> Image.Image:
-    """Glow the existing red logo/ring pixels without drawing new circles."""
+    """Glow the existing red logo/ring pixels more strongly across the full diameter."""
     phase = frame_index * math.tau / FRAME_COUNT
-    pulse = 0.72 + 0.28 * math.sin(phase)
+    pulse = 0.82 + 0.18 * math.sin(phase)
 
-    # Include the entire biohazard artwork and its outer circular details.
-    x1, y1, x2, y2 = scaled_box((36, 54, 374, 326), width, height)
+    x1, y1, x2, y2 = scaled_box((30, 46, 380, 334), width, height)
     crop = frame.crop((x1, y1, x2, y2)).convert("RGBA")
 
-    # Build a mask only from red-dominant pixels already present in the PNG.
     mask = Image.new("L", crop.size, 0)
-    source_pixels = list(crop.getdata())
     mask_pixels = []
-    for red, green, blue, alpha in source_pixels:
+    for red, green, blue, alpha in crop.getdata():
         dominance = red - max(green, blue)
-        if alpha > 0 and red >= 70 and dominance >= 18:
-            strength = min(255, max(0, int(dominance * 2.8 * pulse)))
+        if alpha > 0 and red >= 58 and dominance >= 14:
+            strength = min(255, max(0, int((red * 0.52 + dominance * 3.2) * pulse)))
             mask_pixels.append(strength)
         else:
             mask_pixels.append(0)
     mask.putdata(mask_pixels)
 
-    # Two blur passes illuminate the real red lines across the whole diameter.
-    wide_mask = mask.filter(ImageFilter.GaussianBlur(radius=max(6, round(width / 180))))
-    tight_mask = mask.filter(ImageFilter.GaussianBlur(radius=max(2, round(width / 520))))
+    wide_mask = mask.filter(ImageFilter.GaussianBlur(radius=max(8, round(width / 150))))
+    mid_mask = mask.filter(ImageFilter.GaussianBlur(radius=max(4, round(width / 320))))
+    tight_mask = mask.filter(ImageFilter.GaussianBlur(radius=max(2, round(width / 600))))
 
-    wide_glow = Image.new("RGBA", crop.size, (255, 38, 34, 0))
-    wide_glow.putalpha(wide_mask.point(lambda value: int(value * 0.55)))
+    wide_glow = Image.new("RGBA", crop.size, (255, 34, 30, 0))
+    wide_glow.putalpha(wide_mask.point(lambda value: int(value * 0.62)))
 
-    tight_glow = Image.new("RGBA", crop.size, (255, 66, 58, 0))
-    tight_glow.putalpha(tight_mask.point(lambda value: int(value * 0.78)))
+    mid_glow = Image.new("RGBA", crop.size, (255, 52, 46, 0))
+    mid_glow.putalpha(mid_mask.point(lambda value: int(value * 0.80)))
+
+    tight_glow = Image.new("RGBA", crop.size, (255, 86, 76, 0))
+    tight_glow.putalpha(tight_mask.point(lambda value: int(value * 0.90)))
 
     overlay = Image.new("RGBA", frame.size, (0, 0, 0, 0))
     overlay.alpha_composite(wide_glow, (x1, y1))
+    overlay.alpha_composite(mid_glow, (x1, y1))
     overlay.alpha_composite(tight_glow, (x1, y1))
     return Image.alpha_composite(frame, overlay)
 
@@ -598,6 +602,18 @@ def draw_procedure_progress(
     for box in arrow_boxes:
         cover(draw, box, width, height, DARK_SOFT)
 
+    # Restore full-square outlines for the stage boxes without changing layout.
+    stage_boxes = [
+        (388, 399, 491, 501),
+        (549, 399, 635, 501),
+        (697, 399, 780, 501),
+        (854, 399, 940, 501),
+        (995, 399, 1088, 501),
+    ]
+    outline_width = max(1, round(width / 1100))
+    for box in stage_boxes:
+        draw.rectangle(scaled_box(box, width, height), outline=(196, 201, 206, 220), width=outline_width)
+
     arrows = [
         ((498, 459), (538, 459)),
         ((646, 459), (690, 459)),
@@ -716,26 +732,15 @@ def draw_case_overview(
 def draw_map_case_id(
     draw: ImageDraw.ImageDraw, width: int, height: int, data: dict[str, Any]
 ) -> None:
-    """Draw the live case ID in the existing cleared strip above CASE FILE."""
-    label_font = scaled_font(width, height, 7, True)
-    value_font = scaled_font(width, height, 8, True)
+    """Draw the live case ID in its own strip above the map folder, not on the folder itself."""
+    font = scaled_font(width, height, 8, True)
+    x1, y1, x2, y2 = scaled_box((1388, 315, 1568, 338), width, height)
+    draw.rectangle((x1, y1, x2, y2), fill=DARK)
 
-    center_x, center_y = scaled_point((1488, 399), width, height)
-    label = "CASE ID"
-    gap = scaled_point((7, 0), width, height)[0]
-    label_width = text_width(draw, label, label_font)
-    value_width = text_width(draw, data["case_id"], value_font)
-    total_width = label_width + gap + value_width
-    start_x = center_x - total_width // 2
-
-    draw.text((start_x, center_y), label, font=label_font, fill=RED, anchor="lm")
-    draw.text(
-        (start_x + label_width + gap, center_y),
-        data["case_id"],
-        font=value_font,
-        fill=WHITE,
-        anchor="lm",
-    )
+    center_x = (x1 + x2) // 2
+    center_y = (y1 + y2) // 2
+    rendered = f"CASE ID  {data['case_id']}"
+    draw.text((center_x, center_y), rendered, font=font, fill=WHITE, anchor="mm")
 
 
 def draw_file_network_motion(
@@ -863,8 +868,8 @@ def draw_threat_monitor(
     frame_index: int,
 ) -> None:
     score_font = scaled_font(width, height, 34, True)
-    body_font = scaled_font(width, height, 11, True)
-    bullet_font = scaled_font(width, height, 11, True)
+    body_font = scaled_font(width, height, 10, True)
+    bullet_font = scaled_font(width, height, 10, True)
 
     draw.text(
         scaled_point((808, 653), width, height),
@@ -879,7 +884,7 @@ def draw_threat_monitor(
         fill=WHITE,
     )
     draw.text(
-        scaled_point((810, 744), width, height),
+        scaled_point((810, 738), width, height),
         "CURRENT FOOTPRINT",
         font=body_font,
         fill=TEXT,
@@ -902,15 +907,15 @@ def draw_threat_monitor(
         points.append((x_point, max(y1 + 4, min(y2 - 4, center + offset))))
     draw.line(points, fill=RED, width=max(2, round(width / 900)))
 
-    # Three readable lines fit inside the panel without crossing the border.
     bullet_x, _ = scaled_point((808, 0), width, height)
     max_width = scaled_point((1172, 0), width, height)[0] - bullet_x
     bullets = [
         f"• {data['classification']}",
         f"• {data['threat']}",
+        f"• Status: {data['status'].title()}",
         "• Repository correlation active",
     ]
-    for rendered, y_ref in zip(bullets, (778, 802, 826)):
+    for rendered, y_ref in zip(bullets, (770, 790, 810, 830)):
         draw.text(
             scaled_point((808, y_ref), width, height),
             ellipsize(draw, rendered, bullet_font, max_width),
@@ -950,12 +955,8 @@ def draw_operational_brief(
 def draw_lower_panel_detail_lines(
     draw: ImageDraw.ImageDraw, width: int, height: int
 ) -> None:
-    # Restore the subtle lower red detail lines erased by the live-data clears.
-    line_color = (92, 24, 24, 210)
-    for x1_ref, x2_ref in ((440, 765), (781, 1185)):
-        x1, y = scaled_point((x1_ref, 824), width, height)
-        x2 = scaled_point((x2_ref, 0), width, height)[0]
-        draw.line((x1, y, x2, y), fill=line_color, width=1)
+    # Intentionally no extra interior red lines; preserve the original panel borders.
+    return
 
 
 def draw_footer_time(
