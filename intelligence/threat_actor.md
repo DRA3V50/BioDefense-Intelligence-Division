@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Evidence Repository Manipulation
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Project Chimera
 
 ---
 
 ## Attribution
-Multiple Regions
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-88%
+92%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Biosecurity System Tampering
-- Laboratory Control System Manipulation
-- Concealed Internal Movement
-- Credential Abuse
-- Command and Control
+- Insider Misuse
+- Covert Remote Access Tooling
+- Privilege Escalation
+- Laboratory Data Manipulation
+- Lateral Movement
+- Research Data Exfiltration
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+BioDefense Task Force
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 

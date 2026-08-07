@@ -2,35 +2,35 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-4601
+**Case ID:** BID-2026-1158
 
-**Generated:** 2026-08-07 01:33 UTC
+**Generated:** 2026-08-07 01:38 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-06 19:33 UTC | Initial Detection | Potential activity associated with Biomedical Supply Chain Compromise was detected. |
-| 2026-08-06 20:33 UTC | Case Opened | Investigation BID-2026-4601 was opened and assigned to Analyst Team Bravo. |
-| 2026-08-06 21:33 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Supply Chain Compromise. |
-| 2026-08-06 22:33 UTC | Evidence Collection | 30 evidence items and 5 indicators were associated with the active investigation. |
-| 2026-08-06 23:33 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-07 00:33 UTC | Operational Review | Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation. |
-| 2026-08-07 01:33 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-06 19:38 UTC | Initial Detection | Potential activity associated with Evidence Repository Manipulation was detected. |
+| 2026-08-06 20:38 UTC | Case Opened | Investigation BID-2026-1158 was opened and assigned to BioDefense Task Force. |
+| 2026-08-06 21:38 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Insider Misuse. |
+| 2026-08-06 22:38 UTC | Evidence Collection | 152 evidence items and 71 indicators were associated with the active investigation. |
+| 2026-08-06 23:38 UTC | Containment Assessment | Containment was assessed at SEVERE. |
+| 2026-08-07 00:38 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-08-07 01:38 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** LOW
+**Severity:** HIGH
 
-**Priority:** ROUTINE
+**Priority:** HIGH
 
-**Confidence:** 88%
+**Confidence:** 92%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 

@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-4601
+BID-2026-1158
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,20 +12,20 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Evidence Repository Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Ashcroft Biomedical Center
 
 Platform:
-Clinical Research Environment
+Medical Research Laboratory
 
 Device:
-Evidence Repository
+Specimen Tracking Terminal
 
 Vendor:
 Lenovo
@@ -34,7 +34,7 @@ Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-88%
+92%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

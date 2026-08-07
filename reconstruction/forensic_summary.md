@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4601 |
+| Case ID | BID-2026-1158 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Medical Device Security Assessment |
-| Threat Family | Biomedical Supply Chain Compromise |
-| Severity | LOW |
-| Status | Open |
+| Threat Family | Evidence Repository Manipulation |
+| Severity | HIGH |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Evidence Repository |
+| Platform | Medical Research Laboratory |
+| Device | Specimen Tracking Terminal |
 | Vendor | Lenovo |
-| Security Zone | Federal Operations |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 25 |
-| Confidence | 88% |
-| Evidence Collected | 30 |
-| Indicators Identified | 5 |
-| Affected Assets | 9 |
+| Risk Score | 78 |
+| Confidence | 92% |
+| Evidence Collected | 152 |
+| Indicators Identified | 71 |
+| Affected Assets | 11 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Evidence Collection**
 
 Priority:
 
-**ROUTINE**
+**HIGH**
 
 Recommended Action:
 

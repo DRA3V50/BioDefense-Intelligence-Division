@@ -4,18 +4,18 @@
 ## 2026-08-07
 
 ### Case Opened
-Case ID: BID-2026-4601
+Case ID: BID-2026-1158
 
 ### Classification
 Medical Device Security Assessment
 
 ### Initial Assessment
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Open
+Evidence Collection
 
 ### Severity
-LOW
+HIGH
 
 ---

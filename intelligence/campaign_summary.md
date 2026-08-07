@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4601
+BID-2026-1158
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,51 +12,51 @@ Classification:
 Medical Device Security Assessment
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Evidence Repository Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Medical Research Laboratory
 
 Device:
-Evidence Repository
+Specimen Tracking Terminal
 
 Vendor:
 Lenovo
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-99
+100
 
 Evidence Collected:
-30
+152
 
 Indicators Identified:
-5
+71
 
 Affected Assets:
-9
+11
 
 Confidence:
-88%
+92%
 
 Risk Score:
-25
+78
 
 ---
 
