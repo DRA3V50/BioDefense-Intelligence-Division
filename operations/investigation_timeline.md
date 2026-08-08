@@ -2,35 +2,35 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-2784
+**Case ID:** BID-2026-3237
 
-**Generated:** 2026-08-08 03:22 UTC
+**Generated:** 2026-08-08 14:28 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-07 21:22 UTC | Initial Detection | Potential activity associated with Unauthorized Laboratory Network Access was detected. |
-| 2026-08-07 22:22 UTC | Case Opened | Investigation BID-2026-2784 was opened and assigned to National Response Cell. |
-| 2026-08-07 23:22 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Web Application Exploitation. |
-| 2026-08-08 00:22 UTC | Evidence Collection | 250 evidence items and 93 indicators were associated with the active investigation. |
-| 2026-08-08 01:22 UTC | Containment Assessment | Containment was assessed at SEVERE. |
-| 2026-08-08 02:22 UTC | Operational Review | Available evidence supports expanded review of access records, system changes, and related investigative indicators. |
-| 2026-08-08 03:22 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-08 08:28 UTC | Initial Detection | Potential activity associated with Protected Research Data Exfiltration was detected. |
+| 2026-08-08 09:28 UTC | Case Opened | Investigation BID-2026-3237 was opened and assigned to BioDefense Task Force. |
+| 2026-08-08 10:28 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Supply Chain Compromise. |
+| 2026-08-08 11:28 UTC | Evidence Collection | 39 evidence items and 15 indicators were associated with the active investigation. |
+| 2026-08-08 12:28 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-08-08 13:28 UTC | Operational Review | Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems. |
+| 2026-08-08 14:28 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** HIGH
+**Severity:** LOW
 
-**Priority:** HIGH
+**Priority:** ROUTINE
 
-**Confidence:** 89%
+**Confidence:** 84%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 

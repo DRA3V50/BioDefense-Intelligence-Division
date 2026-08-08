@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2784 |
+| Case ID | BID-2026-3237 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biocontainment Network Investigation |
-| Threat Family | Unauthorized Laboratory Network Access |
-| Severity | HIGH |
+| Classification | Laboratory Access Control Investigation |
+| Threat Family | Protected Research Data Exfiltration |
+| Severity | LOW |
 | Status | Containment |
 | Phase | Operational Recovery |
 
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Clinical Data Server |
-| Vendor | HPE |
-| Network Zone | Evidence Network |
+| Platform | Laboratory Control Network |
+| Device | Medical Device Gateway |
+| Vendor | Palo Alto Networks |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 72 |
-| Confidence | 89% |
-| Evidence | 250 |
-| Indicators | 93 |
-| Affected Assets | 22 |
+| Risk Score | 34 |
+| Confidence | 84% |
+| Evidence | 39 |
+| Indicators | 15 |
+| Affected Assets | 3 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.

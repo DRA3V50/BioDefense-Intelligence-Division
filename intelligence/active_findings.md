@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-2784
+BID-2026-3237
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Laboratory Access Control Investigation
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Protected Research Data Exfiltration
 
 Severity:
-HIGH
+LOW
 
 Priority:
-HIGH
+ROUTINE
 
 ---
 
@@ -26,7 +26,7 @@ HIGH
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
@@ -34,31 +34,31 @@ Chain-of-custody documentation has been completed for all acquired digital evide
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-22
+3
 
 Evidence Collected:
-250
+39
 
 Indicators Identified:
-93
+15
 
 Analyst Confidence:
-89%
+84%
 
 Containment Phase:
 Operational Recovery
@@ -67,7 +67,7 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+BioDefense Task Force

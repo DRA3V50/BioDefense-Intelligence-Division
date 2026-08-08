@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BioterrorThreatAssessment>
-  <GeneratedAt>2026-08-08 03:22 UTC</GeneratedAt>
+  <GeneratedAt>2026-08-08 14:29 UTC</GeneratedAt>
   <Engine>
     <Name>BioDefense C# Bioterror Threat Scoring Engine</Name>
     <Version>1.1.0</Version>
@@ -8,110 +8,106 @@
     <ScoringModel>Risk-Anchored Saturating Evidence Model</ScoringModel>
   </Engine>
   <Investigation>
-    <CaseId>BID-2026-2784</CaseId>
+    <CaseId>BID-2026-3237</CaseId>
     <CampaignId>BDC-2026-001</CampaignId>
     <Operation>Coordinated Biomedical Systems Intrusion</Operation>
-    <Classification>Biocontainment Network Investigation</Classification>
-    <ThreatFamily>Unauthorized Laboratory Network Access</ThreatFamily>
-    <Severity>HIGH</Severity>
-    <Priority>HIGH</Priority>
-    <RiskScore>72</RiskScore>
-    <Confidence>89</Confidence>
+    <Classification>Laboratory Access Control Investigation</Classification>
+    <ThreatFamily>Protected Research Data Exfiltration</ThreatFamily>
+    <Severity>LOW</Severity>
+    <Priority>ROUTINE</Priority>
+    <RiskScore>34</RiskScore>
+    <Confidence>84</Confidence>
     <ContainmentPhase>Operational Recovery</ContainmentPhase>
-    <AffectedPlatform>Biomedical Analysis Cluster</AffectedPlatform>
-    <AffectedAssets>22</AffectedAssets>
+    <AffectedPlatform>Laboratory Control Network</AffectedPlatform>
+    <AffectedAssets>3</AffectedAssets>
   </Investigation>
   <Assessment>
-    <OverallScore>69</OverallScore>
-    <OverallLevel>ELEVATED</OverallLevel>
+    <OverallScore>31</OverallScore>
+    <OverallLevel>GUARDED</OverallLevel>
     <Dimensions>
       <Dimension Name="ThreatActorIntent">
-        <Score>66</Score>
-        <Level>ELEVATED</Level>
+        <Score>26</Score>
+        <Level>GUARDED</Level>
       </Dimension>
       <Dimension Name="ThreatActorCapability">
-        <Score>61</Score>
-        <Level>ELEVATED</Level>
+        <Score>24</Score>
+        <Level>GUARDED</Level>
       </Dimension>
       <Dimension Name="BiologicalTargetValue">
-        <Score>62</Score>
-        <Level>ELEVATED</Level>
+        <Score>22</Score>
+        <Level>GUARDED</Level>
       </Dimension>
       <Dimension Name="LaboratoryAndSpecimenImpact">
-        <Score>64</Score>
-        <Level>ELEVATED</Level>
+        <Score>24</Score>
+        <Level>GUARDED</Level>
       </Dimension>
       <Dimension Name="PublicHealthRisk">
-        <Score>65</Score>
-        <Level>ELEVATED</Level>
+        <Score>25</Score>
+        <Level>GUARDED</Level>
       </Dimension>
       <Dimension Name="CyberToPhysicalEscalation">
-        <Score>65</Score>
-        <Level>ELEVATED</Level>
+        <Score>25</Score>
+        <Level>GUARDED</Level>
       </Dimension>
       <Dimension Name="AttributionConfidence">
-        <Score>82</Score>
+        <Score>72</Score>
         <Level>MODERATE</Level>
       </Dimension>
       <Dimension Name="ContainmentConfidence">
-        <Score>84</Score>
+        <Score>81</Score>
         <Level>MODERATE</Level>
       </Dimension>
     </Dimensions>
   </Assessment>
   <EvidenceBasis>
-    <EvidenceRecords>250</EvidenceRecords>
-    <CorrelationRecords>250</CorrelationRecords>
-    <IntegrityVerifiedRecords>250</IntegrityVerifiedRecords>
-    <PendingAnalystReview>250</PendingAnalystReview>
+    <EvidenceRecords>39</EvidenceRecords>
+    <CorrelationRecords>39</CorrelationRecords>
+    <IntegrityVerifiedRecords>39</IntegrityVerifiedRecords>
+    <PendingAnalystReview>39</PendingAnalystReview>
     <PriorityFindings>
       <Finding>
-        <Name>Suspicious Network Activity</Name>
-        <Correlations>29</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Laboratory System Modification</Name>
-        <Correlations>28</Correlations>
+        <Name>Containment Verification</Name>
+        <Correlations>6</Correlations>
       </Finding>
       <Finding>
         <Name>Analyst Intelligence Assessment</Name>
-        <Correlations>26</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Containment Verification</Name>
-        <Correlations>25</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Known Threat Actor Indicator</Name>
-        <Correlations>23</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Research Data Integrity Anomaly</Name>
-        <Correlations>22</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Laboratory Information System Anomaly</Name>
-        <Correlations>18</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Unauthorized Facility Access</Name>
-        <Correlations>18</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Research Workstation Compromise</Name>
-        <Correlations>17</Correlations>
-      </Finding>
-      <Finding>
-        <Name>Biosecurity Policy Violation</Name>
-        <Correlations>16</Correlations>
+        <Correlations>5</Correlations>
       </Finding>
       <Finding>
         <Name>Command-and-Control Communication</Name>
-        <Correlations>15</Correlations>
+        <Correlations>4</Correlations>
       </Finding>
       <Finding>
         <Name>Credential Misuse</Name>
-        <Correlations>13</Correlations>
+        <Correlations>4</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Known Threat Actor Indicator</Name>
+        <Correlations>4</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Laboratory Information System Anomaly</Name>
+        <Correlations>4</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Laboratory System Modification</Name>
+        <Correlations>3</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Research Workstation Compromise</Name>
+        <Correlations>3</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Unauthorized Facility Access</Name>
+        <Correlations>3</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Research Data Integrity Anomaly</Name>
+        <Correlations>2</Correlations>
+      </Finding>
+      <Finding>
+        <Name>Biosecurity Policy Violation</Name>
+        <Correlations>1</Correlations>
       </Finding>
     </PriorityFindings>
   </EvidenceBasis>

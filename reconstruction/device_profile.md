@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-2784
+BID-2026-3237
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Laboratory Access Control Investigation
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Protected Research Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+National Pathogen Research Facility
 
 Platform:
-Biomedical Analysis Cluster
+Laboratory Control Network
 
 Device:
-Clinical Data Server
+Medical Device Gateway
 
 Vendor:
-HPE
+Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Evidence Network
+Biosecurity Segment
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Isolated From Production
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
-89%
+84%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+No destructive activity observed following initial containment.

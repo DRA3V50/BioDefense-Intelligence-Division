@@ -171,10 +171,10 @@
         {
             "name": "Protected Research Data Exfiltration",
             "first_seen": "2026-08-04",
-            "last_seen": "2026-08-05",
-            "cases": 2,
-            "severity": "MODERATE",
-            "confidence": 93
+            "last_seen": "2026-08-08",
+            "cases": 3,
+            "severity": "LOW",
+            "confidence": 84
         }
     ]
 }

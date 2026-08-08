@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Laboratory Network Access
+Protected Research Data Exfiltration
 
 ---
 
 ## Primary Alias
-Black Helix
+Cerberus Group
 
 ---
 
@@ -16,32 +16,32 @@ Unattributed
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-89%
+84%
 
 ---
 
 ## Observed Techniques
-- Web Application Exploitation
-- Biosecurity System Tampering
+- Supply Chain Compromise
+- Research Data Exfiltration
 - Concealed Internal Movement
-- Command and Control
-- Laboratory Control System Manipulation
+- Laboratory Network Reconnaissance
 - Laboratory Data Manipulation
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+BioDefense Task Force
 
 **Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biocontainment Network Investigation
+Laboratory Access Control Investigation
 
 ---
 

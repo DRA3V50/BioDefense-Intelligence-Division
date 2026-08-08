@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2784
+BID-2026-3237
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Laboratory Access Control Investigation
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Protected Research Data Exfiltration
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Containment
 ## Protected Environment
 
 Platform:
-Biomedical Analysis Cluster
+Laboratory Control Network
 
 Device:
-Clinical Data Server
+Medical Device Gateway
 
 Vendor:
-HPE
+Palo Alto Networks
 
 Security Zone:
-Evidence Network
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-105
+106
 
 Evidence Collected:
-250
+39
 
 Indicators Identified:
-93
+15
 
 Affected Assets:
-22
+3
 
 Confidence:
-89%
+84%
 
 Risk Score:
-72
+34
 
 ---
 
