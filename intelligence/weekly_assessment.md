@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6500
+Case ID: BID-2026-2784
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Digital Evidence Reconstruction Investigation
+Classification: Biocontainment Network Investigation
 
-Threat Family: Credential Misuse
+Threat Family: Unauthorized Laboratory Network Access
 
 Current Status: Containment
 
@@ -27,22 +27,22 @@ Available evidence supports expanded review of access records, system changes, a
 ## Operational Metrics
 
 Priority:
-ELEVATED
+HIGH
 
 Risk Score:
-63
+72
 
 Confidence:
-86%
+89%
 
 Affected Assets:
-8
+22
 
 Evidence Collected:
-77
+250
 
 Indicators Recorded:
-20
+93
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-BioDefense Task Force
+National Response Cell
 
 Date:
 
-2026-08-07
+2026-08-08

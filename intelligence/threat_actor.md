@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Unauthorized Laboratory Network Access
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Black Helix
 
 ---
 
 ## Attribution
-Multiple Regions
+Unattributed
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Espionage Against Research Programs
 
 ---
 
@@ -26,24 +26,24 @@ Moderate
 ---
 
 ## Confidence
-86%
+89%
 
 ---
 
 ## Observed Techniques
-- Third-Party Access
-- Lateral Movement
+- Web Application Exploitation
 - Biosecurity System Tampering
-- Covert Remote Access Tooling
-- Encrypted Data Staging
-- Privilege Escalation
+- Concealed Internal Movement
+- Command and Control
+- Laboratory Control System Manipulation
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+National Response Cell
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Digital Evidence Reconstruction Investigation
+Biocontainment Network Investigation
 
 ---
 
 ## Last Updated
-2026-08-07
+2026-08-08

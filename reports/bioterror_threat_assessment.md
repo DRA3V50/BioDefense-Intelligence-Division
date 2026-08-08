@@ -2,45 +2,45 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-08-07 14:50 UTC
+**Generated:** 2026-08-08 03:22 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-6500
+**Case ID:** BID-2026-2784
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Classification:** Digital Evidence Reconstruction Investigation
+**Classification:** Biocontainment Network Investigation
 
-**Threat Family:** Credential Misuse
+**Threat Family:** Unauthorized Laboratory Network Access
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Priority:** ELEVATED
+**Priority:** HIGH
 
-**Risk Score:** 63
+**Risk Score:** 72
 
-**Assessment Confidence:** 86%
+**Assessment Confidence:** 89%
 
 **Containment Phase:** Operational Recovery
 
-**Affected Platform:** Clinical Research Environment
+**Affected Platform:** Biomedical Analysis Cluster
 
-**Affected Assets:** 8
+**Affected Assets:** 22
 
 ---
 
 ## Executive Assessment
 
-The active Digital Evidence Reconstruction Investigation concerns suspected Credential Misuse. The calculated overall bioterror threat score is **95/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, biological target value, laboratory and specimen impact. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Biocontainment Network Investigation concerns suspected Unauthorized Laboratory Network Access. The calculated overall bioterror threat score is **97/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** CRITICAL
 
-**Overall Bioterror Threat Score:** 95/100
+**Overall Bioterror Threat Score:** 97/100
 
 ---
 
@@ -49,19 +49,19 @@ The active Digital Evidence Reconstruction Investigation concerns suspected Cred
 | Assessment Dimension | Score | Level |
 |----------------------|------:|-------|
 | Threat Actor Intent | 100/100 | CRITICAL |
-| Threat Actor Capability | 94/100 | CRITICAL |
+| Threat Actor Capability | 100/100 | CRITICAL |
 | Biological Target Value | 100/100 | CRITICAL |
 | Laboratory and Specimen Impact | 100/100 | CRITICAL |
 | Public-Health Risk | 100/100 | CRITICAL |
 | Cyber-to-Physical Escalation | 100/100 | CRITICAL |
-| Attribution Confidence | 92/100 | HIGH |
-| Containment Confidence | 94/100 | HIGH |
+| Attribution Confidence | 94/100 | HIGH |
+| Containment Confidence | 95/100 | HIGH |
 
 ---
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Credential Misuse**.
+- The investigation currently centers on **Unauthorized Laboratory Network Access**.
 - The targeted environment has high intelligence or operational value because it supports protected laboratory, biomedical, genomic, or specimen-related activity.
 - The available evidence indicates a capable actor with access sufficient to affect multiple cyber-biosecurity systems or data sources.
 - The evidence supports elevated public-health review, but direct biological impact still requires validated non-cyber evidence.
@@ -72,28 +72,28 @@ The active Digital Evidence Reconstruction Investigation concerns suspected Cred
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 77
+**Evidence Records Reviewed:** 250
 
-**Correlation Records Reviewed:** 77
+**Correlation Records Reviewed:** 250
 
-**Integrity-Verified Records:** 77
+**Integrity-Verified Records:** 250
 
-**Pending Analyst Review:** 77
+**Pending Analyst Review:** 250
 
 ### Priority Findings
 
-- **Containment Verification:** 10
-- **Laboratory System Modification:** 9
-- **Analyst Intelligence Assessment:** 8
-- **Biosecurity Policy Violation:** 8
-- **Research Data Integrity Anomaly:** 8
-- **Command-and-Control Communication:** 7
-- **Known Threat Actor Indicator:** 6
-- **Unauthorized Facility Access:** 5
-- **Research Workstation Compromise:** 5
-- **Credential Misuse:** 5
-- **Suspicious Network Activity:** 3
-- **Laboratory Information System Anomaly:** 3
+- **Suspicious Network Activity:** 29
+- **Laboratory System Modification:** 28
+- **Analyst Intelligence Assessment:** 26
+- **Containment Verification:** 25
+- **Known Threat Actor Indicator:** 23
+- **Research Data Integrity Anomaly:** 22
+- **Unauthorized Facility Access:** 18
+- **Laboratory Information System Anomaly:** 18
+- **Research Workstation Compromise:** 17
+- **Biosecurity Policy Violation:** 16
+- **Command-and-Control Communication:** 15
+- **Credential Misuse:** 13
 
 ---
 
@@ -101,7 +101,7 @@ The active Digital Evidence Reconstruction Investigation concerns suspected Cred
 
 **Intent Assessment:** 100/100 (CRITICAL)
 
-**Capability Assessment:** 94/100 (CRITICAL)
+**Capability Assessment:** 100/100 (CRITICAL)
 
 The intent and capability scores are analytical estimates derived from the active case, evidence manifest, and correlated findings. They do not constitute final attribution.
 
@@ -129,9 +129,9 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 ## Attribution and Containment Confidence
 
-**Attribution Confidence:** 92/100 (HIGH)
+**Attribution Confidence:** 94/100 (HIGH)
 
-**Containment Confidence:** 94/100 (HIGH)
+**Containment Confidence:** 95/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -156,10 +156,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-6500/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-6500/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-6500/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-6500/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-2784/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-2784/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-2784/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-2784/forensic_summary.md)
 
 ---
 

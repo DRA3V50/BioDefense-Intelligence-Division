@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6500 |
+| Case ID | BID-2026-2784 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Digital Evidence Reconstruction Investigation |
-| Threat Family | Credential Misuse |
-| Severity | MODERATE |
+| Classification | Biocontainment Network Investigation |
+| Threat Family | Unauthorized Laboratory Network Access |
+| Severity | HIGH |
 | Status | Containment |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Laboratory Information Server |
-| Vendor | Palo Alto Networks |
-| Security Zone | Protected Research Segment |
+| Platform | Biomedical Analysis Cluster |
+| Device | Clinical Data Server |
+| Vendor | HPE |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 63 |
-| Confidence | 86% |
-| Evidence Collected | 77 |
-| Indicators Identified | 20 |
-| Affected Assets | 8 |
+| Risk Score | 72 |
+| Confidence | 89% |
+| Evidence Collected | 250 |
+| Indicators Identified | 93 |
+| Affected Assets | 22 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**National Response Cell**
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

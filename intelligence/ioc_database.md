@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6500
+BID-2026-2784
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Biocontainment Network Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Infrastructure | Firewall policy deviation identified |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Device | Protected workstation entered evidence preservation mode |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| System Log | Unexpected privilege escalation recorded |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
@@ -28,22 +28,22 @@ Digital Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-77
+250
 
 Indicators Reviewed:
-20
+93
 
 Risk Score:
-63
+72
 
 Confidence:
-86%
+89%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+National Response Cell
 
 Current Status:
 

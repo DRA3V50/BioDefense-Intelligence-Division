@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-08-07 14:51 UTC
+**Generated:** 2026-08-08 03:22 UTC
 
 ---
 
@@ -12,23 +12,23 @@
 
 **Campaign ID:** BDC-2026-001
 
-**Case ID:** BID-2026-6500
+**Case ID:** BID-2026-2784
 
 **Case Status:** Containment
 
-**Priority:** ELEVATED
+**Priority:** HIGH
 
-**Risk Score:** 63
+**Risk Score:** 72
 
-**Affected Platform:** Clinical Research Environment
+**Affected Platform:** Biomedical Analysis Cluster
 
-**Affected Assets:** 8
+**Affected Assets:** 22
 
-**Initial Access:** Third-Party Access
+**Initial Access:** Web Application Exploitation
 
-**Lead Analyst:** BioDefense Task Force
+**Lead Analyst:** National Response Cell
 
-**Classification:** Digital Evidence Reconstruction Investigation
+**Classification:** Biocontainment Network Investigation
 
 ---
 
@@ -40,11 +40,11 @@ Available evidence supports expanded review of access records, system changes, a
 
 ## Cyber-Biothreat Assessment
 
-**Threat Severity:** MODERATE
+**Threat Severity:** HIGH
 
-**Threat Family:** Credential Misuse
+**Threat Family:** Unauthorized Laboratory Network Access
 
-**Assessment Confidence:** 86%
+**Assessment Confidence:** 89%
 
 **Containment Status:** Operational Recovery
 
@@ -54,9 +54,9 @@ The investigation evaluates whether cyber activity affected biological research,
 
 ## Evidence Summary
 
-**Evidence Records:** 77
+**Evidence Records:** 250
 
-**Correlation Records:** 77
+**Correlation Records:** 250
 
 **Evidence Integrity:** Verified
 
@@ -117,10 +117,10 @@ The current assessment remains subject to revision as evidence is validated, cor
 - [Command Brief](../operations/command_brief.md) — Available
 - [Investigation Timeline](../operations/investigation_timeline.md) — Available
 - [Evidence Chain Analysis](../evidence/evidence_chain.md) — Available
-- [Evidence Manifest](../evidence/BID-2026-6500/evidence_manifest.json) — Available
-- [Evidence Correlations](../evidence/BID-2026-6500/evidence_correlations.json) — Available
-- [Chain of Custody](../evidence/BID-2026-6500/chain_of_custody.md) — Available
-- [Forensic Summary](../evidence/BID-2026-6500/forensic_summary.md) — Available
+- [Evidence Manifest](../evidence/BID-2026-2784/evidence_manifest.json) — Available
+- [Evidence Correlations](../evidence/BID-2026-2784/evidence_correlations.json) — Available
+- [Chain of Custody](../evidence/BID-2026-2784/chain_of_custody.md) — Available
+- [Forensic Summary](../evidence/BID-2026-2784/forensic_summary.md) — Available
 
 ---
 

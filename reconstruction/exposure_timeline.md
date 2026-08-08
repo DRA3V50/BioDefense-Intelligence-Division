@@ -1,13 +1,13 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-07
+## 2026-08-08
 
 ### Case Opened
-Case ID: BID-2026-6500
+Case ID: BID-2026-2784
 
 ### Classification
-Digital Evidence Reconstruction Investigation
+Biocontainment Network Investigation
 
 ### Initial Assessment
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
@@ -16,6 +16,6 @@ Available evidence supports expanded review of access records, system changes, a
 Containment
 
 ### Severity
-MODERATE
+HIGH
 
 ---
