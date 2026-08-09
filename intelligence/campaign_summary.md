@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1692
+BID-2026-8790
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Access Control Record Manipulation
+Unauthorized Laboratory Network Access
 
 Current Phase:
 Operational Recovery
 
 Status:
-Containment
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Protected Research Network
+Biomedical Analysis Cluster
 
 Device:
-Specimen Tracking Terminal
+Laboratory Information Server
 
 Vendor:
-Red Hat
+VMware
 
 Security Zone:
 Evidence Network
@@ -41,22 +41,22 @@ Evidence Network
 ## Investigation Metrics
 
 Investigations Recorded:
-107
+108
 
 Evidence Collected:
-115
+114
 
 Indicators Identified:
-16
+45
 
 Affected Assets:
-17
+35
 
 Confidence:
 91%
 
 Risk Score:
-56
+79
 
 ---
 

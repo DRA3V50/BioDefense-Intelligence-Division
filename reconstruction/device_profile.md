@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-1692
+BID-2026-8790
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Access Control Record Manipulation
+Unauthorized Laboratory Network Access
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Central Evidence Processing Center
 
 Platform:
-Protected Research Network
+Biomedical Analysis Cluster
 
 Device:
-Specimen Tracking Terminal
+Laboratory Information Server
 
 Vendor:
-Red Hat
+VMware
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -44,10 +44,10 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Active Investigation
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
 91%
@@ -57,7 +57,7 @@ Confidence:
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.

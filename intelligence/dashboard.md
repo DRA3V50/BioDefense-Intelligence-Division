@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1692 |
+| Case ID | BID-2026-8790 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Access Control Record Manipulation |
-| Severity | MODERATE |
-| Status | Containment |
+| Classification | Biomedical Infrastructure Investigation |
+| Threat Family | Unauthorized Laboratory Network Access |
+| Severity | HIGH |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,9 +18,9 @@
 
 | Field | Value |
 |------|------|
-| Platform | Protected Research Network |
-| Device | Specimen Tracking Terminal |
-| Vendor | Red Hat |
+| Platform | Biomedical Analysis Cluster |
+| Device | Laboratory Information Server |
+| Vendor | VMware |
 | Network Zone | Evidence Network |
 
 ---
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 56 |
+| Risk Score | 79 |
 | Confidence | 91% |
-| Evidence | 115 |
-| Indicators | 16 |
-| Affected Assets | 17 |
+| Evidence | 114 |
+| Indicators | 45 |
+| Affected Assets | 35 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Joint Cyber Investigation Unit**
+Lead Analyst: **Analyst Team Alpha**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.

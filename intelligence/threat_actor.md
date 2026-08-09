@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Access Control Record Manipulation
+Unauthorized Laboratory Network Access
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Project Chimera
 
 ---
 
 ## Attribution
-Unattributed
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Laboratory System Sabotage
 
 ---
 
@@ -31,19 +31,19 @@ Moderate
 ---
 
 ## Observed Techniques
-- Insider Misuse
-- Laboratory Control System Manipulation
-- Biosecurity System Tampering
+- Compromised Credentials
+- Concealed Internal Movement
 - Lateral Movement
-- Credential Abuse
-- Privilege Escalation
+- Laboratory Network Reconnaissance
+- Biosecurity System Tampering
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+Analyst Team Alpha
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 ---
 

@@ -107,10 +107,10 @@
         {
             "name": "Unauthorized Laboratory Network Access",
             "first_seen": "2026-08-02",
-            "last_seen": "2026-08-08",
-            "cases": 2,
+            "last_seen": "2026-08-09",
+            "cases": 3,
             "severity": "HIGH",
-            "confidence": 89
+            "confidence": 91
         },
         {
             "name": "Biomedical Supply Chain Compromise",

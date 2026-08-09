@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09 03:38 UTC",
+  "generatedAt": "2026-08-09 14:31 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -7,45 +7,45 @@
     "scoringModel": "Risk-Anchored Saturating Evidence Model"
   },
   "investigation": {
-    "caseId": "BID-2026-1692",
+    "caseId": "BID-2026-8790",
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
-    "classification": "Unauthorized Research System Access",
-    "threatFamily": "Access Control Record Manipulation",
-    "severity": "MODERATE",
-    "priority": "ELEVATED",
-    "riskScore": 56,
+    "classification": "Biomedical Infrastructure Investigation",
+    "threatFamily": "Unauthorized Laboratory Network Access",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "riskScore": 79,
     "confidence": 91,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Protected Research Network",
-    "affectedAssets": 17
+    "affectedPlatform": "Biomedical Analysis Cluster",
+    "affectedAssets": 35
   },
   "assessment": {
-    "overallScore": 53,
+    "overallScore": 68,
     "overallLevel": "ELEVATED",
     "dimensions": {
       "threatActorIntent": {
-        "score": 47,
+        "score": 58,
         "level": "ELEVATED"
       },
       "threatActorCapability": {
-        "score": 46,
+        "score": 56,
         "level": "ELEVATED"
       },
       "biologicalTargetValue": {
-        "score": 44,
-        "level": "GUARDED"
+        "score": 52,
+        "level": "ELEVATED"
       },
       "laboratoryAndSpecimenImpact": {
-        "score": 46,
+        "score": 55,
         "level": "ELEVATED"
       },
       "publicHealthRisk": {
-        "score": 48,
+        "score": 58,
         "level": "ELEVATED"
       },
       "cyberToPhysicalEscalation": {
-        "score": 49,
+        "score": 56,
         "level": "ELEVATED"
       },
       "attributionConfidence": {
@@ -59,58 +59,58 @@
     }
   },
   "evidenceBasis": {
-    "evidenceRecords": 115,
-    "correlationRecords": 115,
-    "integrityVerifiedRecords": 115,
-    "pendingAnalystReview": 115,
+    "evidenceRecords": 114,
+    "correlationRecords": 114,
+    "integrityVerifiedRecords": 114,
+    "pendingAnalystReview": 114,
     "priorityFindings": [
       {
         "finding": "Laboratory System Modification",
-        "correlations": 15
+        "correlations": 14
+      },
+      {
+        "finding": "Biosecurity Policy Violation",
+        "correlations": 11
+      },
+      {
+        "finding": "Analyst Intelligence Assessment",
+        "correlations": 10
       },
       {
         "finding": "Command-and-Control Communication",
-        "correlations": 12
-      },
-      {
-        "finding": "Laboratory Information System Anomaly",
-        "correlations": 11
-      },
-      {
-        "finding": "Suspicious Network Activity",
-        "correlations": 11
+        "correlations": 10
       },
       {
         "finding": "Containment Verification",
         "correlations": 10
       },
       {
-        "finding": "Unauthorized Facility Access",
+        "finding": "Credential Misuse",
         "correlations": 10
       },
       {
-        "finding": "Biosecurity Policy Violation",
-        "correlations": 9
+        "finding": "Laboratory Information System Anomaly",
+        "correlations": 10
       },
       {
-        "finding": "Credential Misuse",
-        "correlations": 8
+        "finding": "Suspicious Network Activity",
+        "correlations": 10
       },
       {
         "finding": "Known Threat Actor Indicator",
         "correlations": 8
       },
       {
-        "finding": "Analyst Intelligence Assessment",
-        "correlations": 7
+        "finding": "Research Data Integrity Anomaly",
+        "correlations": 8
       },
       {
-        "finding": "Research Data Integrity Anomaly",
+        "finding": "Unauthorized Facility Access",
         "correlations": 7
       },
       {
         "finding": "Research Workstation Compromise",
-        "correlations": 7
+        "correlations": 6
       }
     ]
   },

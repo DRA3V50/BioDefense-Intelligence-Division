@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-09 03:38 UTC
+**Generated:** 2026-08-09 14:31 UTC
 
 ---
 
@@ -12,19 +12,19 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1692
+**Case ID:** BID-2026-8790
 
-**Classification:** Unauthorized Research System Access
+**Classification:** Biomedical Infrastructure Investigation
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Threat Family:** Access Control Record Manipulation
+**Threat Family:** Unauthorized Laboratory Network Access
 
 **Confidence:** 91%
 
@@ -32,27 +32,27 @@
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **115**
+Evidence Collected: **114**
 
-Indicators: **16**
+Indicators: **45**
 
-Priority: **ELEVATED**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Joint Cyber Investigation Unit**
+**Analyst Team Alpha**
 
 Initial Access:
-**Insider Misuse**
+**Compromised Credentials**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**107**
+**108**
 
 Confirmed Intrusions:
 **13**
 
 Total Evidence:
-**94603**
+**94717**
 
 Total Indicators:
-**62663**
+**62708**
 
 ---
 
 ## Operational Highlights
 
-- 115 evidence items are associated with the active investigation.
-- 16 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
+- 114 evidence items are associated with the active investigation.
+- 45 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
 - Analyst confidence is **91%**.
-- Current investigation priority is **ELEVATED**.
+- Current investigation priority is **HIGH**.
 
 ---
 
