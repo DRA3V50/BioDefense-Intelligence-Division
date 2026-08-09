@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3237 |
+| Case ID | BID-2026-1692 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Access Control Investigation |
-| Threat Family | Protected Research Data Exfiltration |
-| Severity | LOW |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Access Control Record Manipulation |
+| Severity | MODERATE |
 | Status | Containment |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Medical Device Gateway |
-| Vendor | Palo Alto Networks |
-| Security Zone | Biosecurity Segment |
+| Platform | Protected Research Network |
+| Device | Specimen Tracking Terminal |
+| Vendor | Red Hat |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 34 |
-| Confidence | 84% |
-| Evidence Collected | 39 |
-| Indicators Identified | 15 |
-| Affected Assets | 3 |
+| Risk Score | 56 |
+| Confidence | 91% |
+| Evidence Collected | 115 |
+| Indicators Identified | 16 |
+| Affected Assets | 17 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Joint Cyber Investigation Unit**
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ROUTINE**
+**ELEVATED**
 
 Recommended Action:
 

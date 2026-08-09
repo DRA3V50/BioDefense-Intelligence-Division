@@ -1,13 +1,13 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-08
+## 2026-08-09
 
 ### Case Opened
-Case ID: BID-2026-3237
+Case ID: BID-2026-1692
 
 ### Classification
-Laboratory Access Control Investigation
+Unauthorized Research System Access
 
 ### Initial Assessment
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
@@ -16,6 +16,6 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 Containment
 
 ### Severity
-LOW
+MODERATE
 
 ---

@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Protected Research Data Exfiltration
+Access Control Record Manipulation
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Genome Phantom
 
 ---
 
@@ -16,34 +16,34 @@ Unattributed
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Moderate
 
 ---
 
 ## Confidence
-84%
+91%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Research Data Exfiltration
-- Concealed Internal Movement
-- Laboratory Network Reconnaissance
-- Laboratory Data Manipulation
+- Insider Misuse
 - Laboratory Control System Manipulation
+- Biosecurity System Tampering
+- Lateral Movement
+- Credential Abuse
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Access Control Investigation
+Unauthorized Research System Access
 
 ---
 
 ## Last Updated
-2026-08-08
+2026-08-09

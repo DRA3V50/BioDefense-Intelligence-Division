@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3237
+BID-2026-1692
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Protected Research Data Exfiltration
+Access Control Record Manipulation
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Containment
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Protected Research Network
 
 Device:
-Medical Device Gateway
+Specimen Tracking Terminal
 
 Vendor:
-Palo Alto Networks
+Red Hat
 
 Security Zone:
-Biosecurity Segment
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-106
+107
 
 Evidence Collected:
-39
+115
 
 Indicators Identified:
-15
+16
 
 Affected Assets:
-3
+17
 
 Confidence:
-84%
+91%
 
 Risk Score:
-34
+56
 
 ---
 

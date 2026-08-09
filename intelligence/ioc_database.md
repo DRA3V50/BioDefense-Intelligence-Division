@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3237
+BID-2026-1692
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Unauthorized Research System Access
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Identity | Credential reuse detected across isolated research segments |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -28,22 +28,22 @@ Laboratory Access Control Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-39
+115
 
 Indicators Reviewed:
-15
+16
 
 Risk Score:
-34
+56
 
 Confidence:
-84%
+91%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
 Current Status:
 

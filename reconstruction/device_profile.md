@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-3237
+BID-2026-1692
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Protected Research Data Exfiltration
+Access Control Record Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
-Laboratory Control Network
+Protected Research Network
 
 Device:
-Medical Device Gateway
+Specimen Tracking Terminal
 
 Vendor:
-Palo Alto Networks
+Red Hat
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
-Biosecurity Segment
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-84%
+91%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.

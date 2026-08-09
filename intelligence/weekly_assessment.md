@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3237
+Case ID: BID-2026-1692
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Access Control Investigation
+Classification: Unauthorized Research System Access
 
-Threat Family: Protected Research Data Exfiltration
+Threat Family: Access Control Record Manipulation
 
 Current Status: Containment
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Observed indicators remain consistent with the current operational assessment.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
@@ -27,22 +27,22 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 ## Operational Metrics
 
 Priority:
-ROUTINE
+ELEVATED
 
 Risk Score:
-34
+56
 
 Confidence:
-84%
+91%
 
 Affected Assets:
-3
+17
 
 Evidence Collected:
-39
+115
 
 Indicators Recorded:
-15
+16
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
 Date:
 
-2026-08-08
+2026-08-09
