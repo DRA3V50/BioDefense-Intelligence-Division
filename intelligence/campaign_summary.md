@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8790
+BID-2026-1107
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Laboratory Access Control Investigation
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Biomedical Supply Chain Compromise
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Open
 ## Protected Environment
 
 Platform:
-Biomedical Analysis Cluster
+Medical Research Laboratory
 
 Device:
-Laboratory Information Server
+Genome Analysis Workstation
 
 Vendor:
 VMware
 
 Security Zone:
-Evidence Network
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-108
+109
 
 Evidence Collected:
-114
+214
 
 Indicators Identified:
-45
+64
 
 Affected Assets:
-35
+13
 
 Confidence:
-91%
+90%
 
 Risk Score:
-79
+68
 
 ---
 

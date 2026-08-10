@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Laboratory Network Access
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Project Chimera
+Black Helix
 
 ---
 
@@ -21,27 +21,27 @@ Laboratory System Sabotage
 ---
 
 ## Operational Sophistication
-Moderate
+Advanced
 
 ---
 
 ## Confidence
-91%
+90%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Concealed Internal Movement
-- Lateral Movement
-- Laboratory Network Reconnaissance
+- Unauthorized Physical Access
 - Biosecurity System Tampering
-- Laboratory Data Manipulation
+- Supply Chain Compromise
+- Long-Term Network Foothold
+- Insider Access Abuse
+- Encrypted Data Staging
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Bravo
 
 **Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biomedical Infrastructure Investigation
+Laboratory Access Control Investigation
 
 ---
 
 ## Last Updated
-2026-08-09
+2026-08-10

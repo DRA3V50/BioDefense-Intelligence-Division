@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8790
+Case ID: BID-2026-1107
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Biomedical Infrastructure Investigation
+Classification: Laboratory Access Control Investigation
 
-Threat Family: Unauthorized Laboratory Network Access
+Threat Family: Biomedical Supply Chain Compromise
 
 Current Status: Open
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+No confirmed attribution has been established during the current investigation.
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 HIGH
 
 Risk Score:
-79
+68
 
 Confidence:
-91%
+90%
 
 Affected Assets:
-35
+13
 
 Evidence Collected:
-114
+214
 
 Indicators Recorded:
-45
+64
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Alpha
+Analyst Team Bravo
 
 Date:
 
-2026-08-09
+2026-08-10

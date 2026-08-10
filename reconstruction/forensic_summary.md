@@ -4,10 +4,10 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8790 |
+| Case ID | BID-2026-1107 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Unauthorized Laboratory Network Access |
+| Classification | Laboratory Access Control Investigation |
+| Threat Family | Biomedical Supply Chain Compromise |
 | Severity | HIGH |
 | Status | Open |
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Laboratory Information Server |
+| Platform | Medical Research Laboratory |
+| Device | Genome Analysis Workstation |
 | Vendor | VMware |
-| Security Zone | Evidence Network |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 79 |
-| Confidence | 91% |
-| Evidence Collected | 114 |
-| Indicators Identified | 45 |
-| Affected Assets | 35 |
+| Risk Score | 68 |
+| Confidence | 90% |
+| Evidence Collected | 214 |
+| Indicators Identified | 64 |
+| Affected Assets | 13 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
