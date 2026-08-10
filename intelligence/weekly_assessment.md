@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1107
+Case ID: BID-2026-3273
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Access Control Investigation
+Classification: Medical Device Security Assessment
 
-Threat Family: Biomedical Supply Chain Compromise
+Threat Family: Medical Device Communications Interference
 
-Current Status: Open
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
@@ -27,22 +27,22 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 ## Operational Metrics
 
 Priority:
-HIGH
+ELEVATED
 
 Risk Score:
-68
+48
 
 Confidence:
-90%
+86%
 
 Affected Assets:
-13
+15
 
 Evidence Collected:
-214
+73
 
 Indicators Recorded:
-64
+43
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+Analyst Team Delta
 
 Date:
 

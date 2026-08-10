@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1107
+BID-2026-3273
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Medical Research Laboratory
+Laboratory Control Network
 
 Device:
-Genome Analysis Workstation
+Evidence Repository
 
 Vendor:
-VMware
+Palo Alto Networks
 
 Security Zone:
-Secure Laboratory
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-109
+110
 
 Evidence Collected:
-214
+73
 
 Indicators Identified:
-64
+43
 
 Affected Assets:
-13
+15
 
 Confidence:
-90%
+86%
 
 Risk Score:
-68
+48
 
 ---
 

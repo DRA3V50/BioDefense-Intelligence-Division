@@ -2,35 +2,35 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-1107
+**Case ID:** BID-2026-3273
 
-**Generated:** 2026-08-10 03:50 UTC
+**Generated:** 2026-08-10 14:55 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-09 21:50 UTC | Initial Detection | Potential activity associated with Biomedical Supply Chain Compromise was detected. |
-| 2026-08-09 22:50 UTC | Case Opened | Investigation BID-2026-1107 was opened and assigned to Analyst Team Bravo. |
-| 2026-08-09 23:50 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
-| 2026-08-10 00:50 UTC | Evidence Collection | 214 evidence items and 64 indicators were associated with the active investigation. |
-| 2026-08-10 01:50 UTC | Containment Assessment | Containment was assessed at SEVERE. |
-| 2026-08-10 02:50 UTC | Operational Review | Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems. |
-| 2026-08-10 03:50 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-10 08:55 UTC | Initial Detection | Potential activity associated with Medical Device Communications Interference was detected. |
+| 2026-08-10 09:55 UTC | Case Opened | Investigation BID-2026-3273 was opened and assigned to Analyst Team Delta. |
+| 2026-08-10 10:55 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
+| 2026-08-10 11:55 UTC | Evidence Collection | 73 evidence items and 43 indicators were associated with the active investigation. |
+| 2026-08-10 12:55 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-08-10 13:55 UTC | Operational Review | Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems. |
+| 2026-08-10 14:55 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
-**Priority:** HIGH
+**Priority:** ELEVATED
 
-**Confidence:** 90%
+**Confidence:** 86%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 

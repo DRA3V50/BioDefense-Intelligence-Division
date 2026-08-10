@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-1107
+BID-2026-3273
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Medical Device Communications Interference
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-13
+15
 
 Evidence Collected:
-214
+73
 
 Indicators Identified:
-64
+43
 
 Analyst Confidence:
-90%
+86%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 # Operational Status
 
 Current Status:
-Open
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Delta

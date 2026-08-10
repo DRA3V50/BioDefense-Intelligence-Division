@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1107 |
+| Case ID | BID-2026-3273 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Access Control Investigation |
-| Threat Family | Biomedical Supply Chain Compromise |
-| Severity | HIGH |
-| Status | Open |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Medical Device Communications Interference |
+| Severity | MODERATE |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Genome Analysis Workstation |
-| Vendor | VMware |
-| Security Zone | Secure Laboratory |
+| Platform | Laboratory Control Network |
+| Device | Evidence Repository |
+| Vendor | Palo Alto Networks |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 68 |
-| Confidence | 90% |
-| Evidence Collected | 214 |
-| Indicators Identified | 64 |
-| Affected Assets | 13 |
+| Risk Score | 48 |
+| Confidence | 86% |
+| Evidence Collected | 73 |
+| Indicators Identified | 43 |
+| Affected Assets | 15 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**Analyst Team Delta**
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Field Coordination**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

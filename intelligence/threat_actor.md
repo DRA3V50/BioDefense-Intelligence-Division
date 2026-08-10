@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Black Helix
+Ghost Genome
 
 ---
 
@@ -16,34 +16,34 @@ International Infrastructure
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-90%
+86%
 
 ---
 
 ## Observed Techniques
 - Unauthorized Physical Access
-- Biosecurity System Tampering
-- Supply Chain Compromise
-- Long-Term Network Foothold
-- Insider Access Abuse
-- Encrypted Data Staging
+- Research Data Exfiltration
+- Lateral Movement
+- Covert Remote Access Tooling
+- Command and Control
+- Credential Abuse
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Delta
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Access Control Investigation
+Medical Device Security Assessment
 
 ---
 

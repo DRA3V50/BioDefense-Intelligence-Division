@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-10 03:50 UTC
+**Generated:** 2026-08-10 14:55 UTC
 
 ---
 
@@ -12,21 +12,21 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1107
+**Case ID:** BID-2026-3273
 
-**Classification:** Laboratory Access Control Investigation
+**Classification:** Medical Device Security Assessment
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Medical Device Communications Interference
 
-**Confidence:** 90%
+**Confidence:** 86%
 
 ---
 
@@ -38,18 +38,18 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 
 ## Evidence Summary
 
-Evidence Collected: **214**
+Evidence Collected: **73**
 
-Indicators: **64**
+Indicators: **43**
 
-Priority: **HIGH**
+Priority: **ELEVATED**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Bravo**
+**Analyst Team Delta**
 
 Initial Access:
 **Unauthorized Physical Access**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**109**
+**110**
 
 Confirmed Intrusions:
 **13**
 
 Total Evidence:
-**94931**
+**95004**
 
 Total Indicators:
-**62772**
+**62815**
 
 ---
 
 ## Operational Highlights
 
-- 214 evidence items are associated with the active investigation.
-- 64 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **90%**.
-- Current investigation priority is **HIGH**.
+- 73 evidence items are associated with the active investigation.
+- 43 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **86%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 
