@@ -1,27 +1,27 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Protected Research Data Exfiltration
+Access Control Record Manipulation
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Silent Culture
 
 ---
 
 ## Attribution
-International Infrastructure
+Unattributed
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
@@ -31,19 +31,19 @@ High
 ---
 
 ## Observed Techniques
+- Exposed Remote Service
+- Concealed Internal Movement
+- Privilege Escalation
 - Supply Chain Compromise
-- Long-Term Network Foothold
-- Lateral Movement
-- Command and Control
-- Laboratory Network Reconnaissance
-- Research Data Exfiltration
+- Biosecurity System Tampering
+- Encrypted Data Staging
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+National Response Cell
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Security Breach Investigation
+Cyber-Biothreat Intelligence Review
 
 ---
 

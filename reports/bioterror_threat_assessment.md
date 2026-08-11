@@ -2,27 +2,27 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-08-11 03:40 UTC
+**Generated:** 2026-08-11 14:54 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-6424
+**Case ID:** BID-2026-7336
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Classification:** Laboratory Security Breach Investigation
+**Classification:** Cyber-Biothreat Intelligence Review
 
-**Threat Family:** Protected Research Data Exfiltration
+**Threat Family:** Access Control Record Manipulation
 
 **Severity:** HIGH
 
 **Priority:** HIGH
 
-**Risk Score:** 67
+**Risk Score:** 72
 
 **Assessment Confidence:** 97%
 
@@ -30,13 +30,13 @@
 
 **Affected Platform:** Federal Investigation Network
 
-**Affected Assets:** 33
+**Affected Assets:** 14
 
 ---
 
 ## Executive Assessment
 
-The active Laboratory Security Breach Investigation concerns suspected Protected Research Data Exfiltration. The calculated overall bioterror threat score is **97/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Cyber-Biothreat Intelligence Review concerns suspected Access Control Record Manipulation. The calculated overall bioterror threat score is **97/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** CRITICAL
 
@@ -61,7 +61,7 @@ The active Laboratory Security Breach Investigation concerns suspected Protected
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Protected Research Data Exfiltration**.
+- The investigation currently centers on **Access Control Record Manipulation**.
 - The targeted environment has high intelligence or operational value because it supports protected laboratory, biomedical, genomic, or specimen-related activity.
 - The available evidence indicates a capable actor with access sufficient to affect multiple cyber-biosecurity systems or data sources.
 - The evidence supports elevated public-health review, but direct biological impact still requires validated non-cyber evidence.
@@ -72,28 +72,28 @@ The active Laboratory Security Breach Investigation concerns suspected Protected
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 92
+**Evidence Records Reviewed:** 141
 
-**Correlation Records Reviewed:** 92
+**Correlation Records Reviewed:** 141
 
-**Integrity-Verified Records:** 92
+**Integrity-Verified Records:** 141
 
-**Pending Analyst Review:** 92
+**Pending Analyst Review:** 141
 
 ### Priority Findings
 
-- **Suspicious Network Activity:** 11
-- **Biosecurity Policy Violation:** 10
-- **Command-and-Control Communication:** 10
-- **Unauthorized Facility Access:** 9
-- **Containment Verification:** 9
-- **Research Data Integrity Anomaly:** 8
-- **Research Workstation Compromise:** 8
-- **Known Threat Actor Indicator:** 8
-- **Analyst Intelligence Assessment:** 7
-- **Laboratory Information System Anomaly:** 6
-- **Credential Misuse:** 4
-- **Laboratory System Modification:** 2
+- **Credential Misuse:** 17
+- **Containment Verification:** 16
+- **Known Threat Actor Indicator:** 14
+- **Command-and-Control Communication:** 14
+- **Research Workstation Compromise:** 14
+- **Research Data Integrity Anomaly:** 13
+- **Suspicious Network Activity:** 12
+- **Biosecurity Policy Violation:** 11
+- **Laboratory System Modification:** 9
+- **Laboratory Information System Anomaly:** 8
+- **Unauthorized Facility Access:** 7
+- **Analyst Intelligence Assessment:** 6
 
 ---
 
@@ -156,10 +156,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-6424/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-6424/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-6424/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-6424/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-7336/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-7336/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-7336/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-7336/forensic_summary.md)
 
 ---
 

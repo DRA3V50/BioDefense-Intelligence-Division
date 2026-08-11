@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6424
+BID-2026-7336
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Protected Research Data Exfiltration
+Access Control Record Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Field Coordination
 
 ---
 
@@ -28,7 +28,7 @@ Platform:
 Federal Investigation Network
 
 Device:
-Genome Analysis Workstation
+Network Security Appliance
 
 Vendor:
 Microsoft
@@ -41,22 +41,22 @@ Federal Operations
 ## Investigation Metrics
 
 Investigations Recorded:
-111
+112
 
 Evidence Collected:
-92
+141
 
 Indicators Identified:
-66
+94
 
 Affected Assets:
-33
+14
 
 Confidence:
 97%
 
 Risk Score:
-67
+72
 
 ---
 

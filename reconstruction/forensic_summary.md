@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6424 |
+| Case ID | BID-2026-7336 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Security Breach Investigation |
-| Threat Family | Protected Research Data Exfiltration |
+| Classification | Cyber-Biothreat Intelligence Review |
+| Threat Family | Access Control Record Manipulation |
 | Severity | HIGH |
-| Status | Intelligence Analysis |
+| Status | Field Coordination |
 
 ---
 
@@ -18,7 +18,7 @@
 | Property | Value |
 |----------|-------|
 | Platform | Federal Investigation Network |
-| Device | Genome Analysis Workstation |
+| Device | Network Security Appliance |
 | Vendor | Microsoft |
 | Security Zone | Federal Operations |
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 67 |
+| Risk Score | 72 |
 | Confidence | 97% |
-| Evidence Collected | 92 |
-| Indicators Identified | 66 |
-| Affected Assets | 33 |
+| Evidence Collected | 141 |
+| Indicators Identified | 94 |
+| Affected Assets | 14 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**Field Coordination**
 
 Priority:
 

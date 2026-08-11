@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-11 03:40 UTC
+**Generated:** 2026-08-11 14:54 UTC
 
 ---
 
@@ -18,13 +18,13 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-6424
+**Case ID:** BID-2026-7336
 
-**Classification:** Laboratory Security Breach Investigation
+**Classification:** Cyber-Biothreat Intelligence Review
 
 **Severity:** HIGH
 
-**Threat Family:** Protected Research Data Exfiltration
+**Threat Family:** Access Control Record Manipulation
 
 **Confidence:** 97%
 
@@ -32,15 +32,15 @@
 
 ## Investigation Summary
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **92**
+Evidence Collected: **141**
 
-Indicators: **66**
+Indicators: **94**
 
 Priority: **HIGH**
 
@@ -49,10 +49,10 @@ Priority: **HIGH**
 ## Current Response
 
 Lead Analyst:
-**BioDefense Task Force**
+**National Response Cell**
 
 Initial Access:
-**Supply Chain Compromise**
+**Exposed Remote Service**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,23 +62,23 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**111**
+**112**
 
 Confirmed Intrusions:
 **13**
 
 Total Evidence:
-**95096**
+**95237**
 
 Total Indicators:
-**62881**
+**62975**
 
 ---
 
 ## Operational Highlights
 
-- 92 evidence items are associated with the active investigation.
-- 66 indicators are currently linked to the case.
+- 141 evidence items are associated with the active investigation.
+- 94 indicators are currently linked to the case.
 - Containment remains at **SEVERE**.
 - Analyst confidence is **97%**.
 - Current investigation priority is **HIGH**.

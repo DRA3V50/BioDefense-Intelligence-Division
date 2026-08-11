@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-6424
+BID-2026-7336
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Cyber-Biothreat Intelligence Review
 
 Threat Family:
-Protected Research Data Exfiltration
+Access Control Record Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Federal Biosecurity Laboratory
 
 Platform:
 Federal Investigation Network
 
 Device:
-Genome Analysis Workstation
+Network Security Appliance
 
 Vendor:
 Microsoft
 
 Operating System:
-Hardened Research Appliance OS
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Federal Operations
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 HIGH
@@ -57,7 +57,7 @@ Confidence:
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.

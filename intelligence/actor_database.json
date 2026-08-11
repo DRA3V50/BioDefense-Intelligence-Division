@@ -163,10 +163,10 @@
         {
             "name": "Access Control Record Manipulation",
             "first_seen": "2026-08-03",
-            "last_seen": "2026-08-09",
-            "cases": 2,
-            "severity": "MODERATE",
-            "confidence": 91
+            "last_seen": "2026-08-11",
+            "cases": 3,
+            "severity": "HIGH",
+            "confidence": 97
         },
         {
             "name": "Protected Research Data Exfiltration",

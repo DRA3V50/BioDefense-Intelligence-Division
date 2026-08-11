@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6424
+BID-2026-7336
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Cyber-Biothreat Intelligence Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| PowerShell | Encoded administrative command execution detected |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
+| PowerShell | Encoded administrative command execution detected |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,13 +28,13 @@ Laboratory Security Breach Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-92
+141
 
 Indicators Reviewed:
-66
+94
 
 Risk Score:
-67
+72
 
 Confidence:
 97%
@@ -43,8 +43,8 @@ Confidence:
 
 Lead Analyst:
 
-BioDefense Task Force
+National Response Cell
 
 Current Status:
 
-Intelligence Analysis
+Field Coordination
