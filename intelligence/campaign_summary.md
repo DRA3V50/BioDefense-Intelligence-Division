@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3273
+BID-2026-6424
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Security Breach Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Protected Research Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Federal Investigation Network
 
 Device:
-Evidence Repository
+Genome Analysis Workstation
 
 Vendor:
-Palo Alto Networks
+Microsoft
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-110
+111
 
 Evidence Collected:
-73
+92
 
 Indicators Identified:
-43
+66
 
 Affected Assets:
-15
+33
 
 Confidence:
-86%
+97%
 
 Risk Score:
-48
+67
 
 ---
 

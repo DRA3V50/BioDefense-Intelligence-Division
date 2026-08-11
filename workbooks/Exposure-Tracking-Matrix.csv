@@ -134,3 +134,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-08-09,BID-2026-8790,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,HIGH,HIGH,79,91,114,45,35,Biomedical Analysis Cluster,VMware,Evidence Network,Analyst Team Alpha,Open
 2026-08-10,BID-2026-1107,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,HIGH,HIGH,68,90,214,64,13,Medical Research Laboratory,VMware,Secure Laboratory,Analyst Team Bravo,Open
 2026-08-10,BID-2026-3273,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,MODERATE,ELEVATED,48,86,73,43,15,Laboratory Control Network,Palo Alto Networks,Biosecurity Segment,Analyst Team Delta,Field Coordination
+2026-08-11,BID-2026-6424,Coordinated Biomedical Systems Intrusion,Laboratory Security Breach Investigation,HIGH,HIGH,67,97,92,66,33,Federal Investigation Network,Microsoft,Federal Operations,BioDefense Task Force,Intelligence Analysis

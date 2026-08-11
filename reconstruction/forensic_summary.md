@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3273 |
+| Case ID | BID-2026-6424 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Medical Device Communications Interference |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Laboratory Security Breach Investigation |
+| Threat Family | Protected Research Data Exfiltration |
+| Severity | HIGH |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Evidence Repository |
-| Vendor | Palo Alto Networks |
-| Security Zone | Biosecurity Segment |
+| Platform | Federal Investigation Network |
+| Device | Genome Analysis Workstation |
+| Vendor | Microsoft |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 48 |
-| Confidence | 86% |
-| Evidence Collected | 73 |
-| Indicators Identified | 43 |
-| Affected Assets | 15 |
+| Risk Score | 67 |
+| Confidence | 97% |
+| Evidence Collected | 92 |
+| Indicators Identified | 66 |
+| Affected Assets | 33 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Intelligence Analysis**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

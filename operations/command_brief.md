@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-10 14:55 UTC
+**Generated:** 2026-08-11 03:40 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3273
+**Case ID:** BID-2026-6424
 
-**Classification:** Medical Device Security Assessment
+**Classification:** Laboratory Security Breach Investigation
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Protected Research Data Exfiltration
 
-**Confidence:** 86%
+**Confidence:** 97%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **73**
+Evidence Collected: **92**
 
-Indicators: **43**
+Indicators: **66**
 
-Priority: **ELEVATED**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 Initial Access:
-**Unauthorized Physical Access**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**110**
+**111**
 
 Confirmed Intrusions:
 **13**
 
 Total Evidence:
-**95004**
+**95096**
 
 Total Indicators:
-**62815**
+**62881**
 
 ---
 
 ## Operational Highlights
 
-- 73 evidence items are associated with the active investigation.
-- 43 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **86%**.
-- Current investigation priority is **ELEVATED**.
+- 92 evidence items are associated with the active investigation.
+- 66 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **97%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

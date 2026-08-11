@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-3273
+BID-2026-6424
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Security Breach Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Protected Research Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
-Laboratory Control Network
+Federal Investigation Network
 
 Device:
-Evidence Repository
+Genome Analysis Workstation
 
 Vendor:
-Palo Alto Networks
+Microsoft
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-86%
+97%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

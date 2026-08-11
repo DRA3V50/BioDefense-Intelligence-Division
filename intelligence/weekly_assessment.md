@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3273
+Case ID: BID-2026-6424
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Medical Device Security Assessment
+Classification: Laboratory Security Breach Investigation
 
-Threat Family: Medical Device Communications Interference
+Threat Family: Protected Research Data Exfiltration
 
-Current Status: Field Coordination
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+HIGH
 
 Risk Score:
-48
+67
 
 Confidence:
-86%
+97%
 
 Affected Assets:
-15
+33
 
 Evidence Collected:
-73
+92
 
 Indicators Recorded:
-43
+66
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Date:
 
-2026-08-10
+2026-08-11

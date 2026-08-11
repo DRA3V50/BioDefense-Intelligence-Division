@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10 14:55 UTC",
+  "generatedAt": "2026-08-11 03:40 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -7,109 +7,109 @@
     "scoringModel": "Risk-Anchored Saturating Evidence Model"
   },
   "investigation": {
-    "caseId": "BID-2026-3273",
+    "caseId": "BID-2026-6424",
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
-    "classification": "Medical Device Security Assessment",
-    "threatFamily": "Medical Device Communications Interference",
-    "severity": "MODERATE",
-    "priority": "ELEVATED",
-    "riskScore": 48,
-    "confidence": 86,
+    "classification": "Laboratory Security Breach Investigation",
+    "threatFamily": "Protected Research Data Exfiltration",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "riskScore": 67,
+    "confidence": 97,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Laboratory Control Network",
-    "affectedAssets": 15
+    "affectedPlatform": "Federal Investigation Network",
+    "affectedAssets": 33
   },
   "assessment": {
-    "overallScore": 44,
-    "overallLevel": "GUARDED",
+    "overallScore": 59,
+    "overallLevel": "ELEVATED",
     "dimensions": {
       "threatActorIntent": {
-        "score": 38,
-        "level": "GUARDED"
+        "score": 50,
+        "level": "ELEVATED"
       },
       "threatActorCapability": {
-        "score": 37,
-        "level": "GUARDED"
+        "score": 47,
+        "level": "ELEVATED"
       },
       "biologicalTargetValue": {
-        "score": 38,
+        "score": 43,
         "level": "GUARDED"
       },
       "laboratoryAndSpecimenImpact": {
-        "score": 37,
-        "level": "GUARDED"
+        "score": 45,
+        "level": "ELEVATED"
       },
       "publicHealthRisk": {
-        "score": 38,
-        "level": "GUARDED"
+        "score": 49,
+        "level": "ELEVATED"
       },
       "cyberToPhysicalEscalation": {
-        "score": 35,
-        "level": "GUARDED"
+        "score": 48,
+        "level": "ELEVATED"
       },
       "attributionConfidence": {
-        "score": 74,
+        "score": 83,
         "level": "MODERATE"
       },
       "containmentConfidence": {
-        "score": 82,
-        "level": "MODERATE"
+        "score": 88,
+        "level": "HIGH"
       }
     }
   },
   "evidenceBasis": {
-    "evidenceRecords": 73,
-    "correlationRecords": 73,
-    "integrityVerifiedRecords": 73,
-    "pendingAnalystReview": 73,
+    "evidenceRecords": 92,
+    "correlationRecords": 92,
+    "integrityVerifiedRecords": 92,
+    "pendingAnalystReview": 92,
     "priorityFindings": [
       {
-        "finding": "Research Workstation Compromise",
-        "correlations": 10
-      },
-      {
-        "finding": "Research Data Integrity Anomaly",
-        "correlations": 9
+        "finding": "Suspicious Network Activity",
+        "correlations": 11
       },
       {
         "finding": "Biosecurity Policy Violation",
-        "correlations": 8
-      },
-      {
-        "finding": "Laboratory Information System Anomaly",
-        "correlations": 8
-      },
-      {
-        "finding": "Laboratory System Modification",
-        "correlations": 8
+        "correlations": 10
       },
       {
         "finding": "Command-and-Control Communication",
-        "correlations": 7
-      },
-      {
-        "finding": "Suspicious Network Activity",
-        "correlations": 6
-      },
-      {
-        "finding": "Analyst Intelligence Assessment",
-        "correlations": 5
-      },
-      {
-        "finding": "Known Threat Actor Indicator",
-        "correlations": 4
-      },
-      {
-        "finding": "Credential Misuse",
-        "correlations": 3
-      },
-      {
-        "finding": "Unauthorized Facility Access",
-        "correlations": 3
+        "correlations": 10
       },
       {
         "finding": "Containment Verification",
+        "correlations": 9
+      },
+      {
+        "finding": "Unauthorized Facility Access",
+        "correlations": 9
+      },
+      {
+        "finding": "Known Threat Actor Indicator",
+        "correlations": 8
+      },
+      {
+        "finding": "Research Data Integrity Anomaly",
+        "correlations": 8
+      },
+      {
+        "finding": "Research Workstation Compromise",
+        "correlations": 8
+      },
+      {
+        "finding": "Analyst Intelligence Assessment",
+        "correlations": 7
+      },
+      {
+        "finding": "Laboratory Information System Anomaly",
+        "correlations": 6
+      },
+      {
+        "finding": "Credential Misuse",
+        "correlations": 4
+      },
+      {
+        "finding": "Laboratory System Modification",
         "correlations": 2
       }
     ]

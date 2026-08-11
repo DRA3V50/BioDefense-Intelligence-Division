@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-10
+## 2026-08-11
 
 ### Case Opened
-Case ID: BID-2026-3273
+Case ID: BID-2026-6424
 
 ### Classification
-Medical Device Security Assessment
+Laboratory Security Breach Investigation
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-Field Coordination
+Intelligence Analysis
 
 ### Severity
-MODERATE
+HIGH
 
 ---

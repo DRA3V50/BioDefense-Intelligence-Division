@@ -2,35 +2,35 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-3273
+**Case ID:** BID-2026-6424
 
-**Generated:** 2026-08-10 14:55 UTC
+**Generated:** 2026-08-11 03:40 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-10 08:55 UTC | Initial Detection | Potential activity associated with Medical Device Communications Interference was detected. |
-| 2026-08-10 09:55 UTC | Case Opened | Investigation BID-2026-3273 was opened and assigned to Analyst Team Delta. |
-| 2026-08-10 10:55 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
-| 2026-08-10 11:55 UTC | Evidence Collection | 73 evidence items and 43 indicators were associated with the active investigation. |
-| 2026-08-10 12:55 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-10 13:55 UTC | Operational Review | Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems. |
-| 2026-08-10 14:55 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-10 21:40 UTC | Initial Detection | Potential activity associated with Protected Research Data Exfiltration was detected. |
+| 2026-08-10 22:40 UTC | Case Opened | Investigation BID-2026-6424 was opened and assigned to BioDefense Task Force. |
+| 2026-08-10 23:40 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Supply Chain Compromise. |
+| 2026-08-11 00:40 UTC | Evidence Collection | 92 evidence items and 66 indicators were associated with the active investigation. |
+| 2026-08-11 01:40 UTC | Containment Assessment | Containment was assessed at SEVERE. |
+| 2026-08-11 02:40 UTC | Operational Review | Observed activity presents a credible risk to data integrity, case evidence, or protected research operations. |
+| 2026-08-11 03:40 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Priority:** ELEVATED
+**Priority:** HIGH
 
-**Confidence:** 86%
+**Confidence:** 97%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 

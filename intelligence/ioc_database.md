@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3273
+BID-2026-6424
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Security Breach Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Identity | Credential reuse detected across isolated research segments |
+| System Log | Unexpected privilege escalation recorded |
+| PowerShell | Encoded administrative command execution detected |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Infrastructure | Firewall policy deviation identified |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-73
+92
 
 Indicators Reviewed:
-43
+66
 
 Risk Score:
-48
+67
 
 Confidence:
-86%
+97%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Current Status:
 
-Field Coordination
+Intelligence Analysis
