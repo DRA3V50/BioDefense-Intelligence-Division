@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6172 |
+| Case ID | BID-2026-8062 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Data Integrity Investigation |
-| Threat Family | Research Workstation Compromise |
-| Severity | LOW |
-| Status | Open |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | MODERATE |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Laboratory Information Server |
-| Vendor | HPE |
-| Security Zone | Evidence Network |
+| Platform | Research Data Repository |
+| Device | Specimen Tracking Terminal |
+| Vendor | Dell |
+| Security Zone | Research Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 32 |
-| Confidence | 88% |
-| Evidence Collected | 51 |
-| Indicators Identified | 15 |
-| Affected Assets | 5 |
+| Risk Score | 51 |
+| Confidence | 83% |
+| Evidence Collected | 75 |
+| Indicators Identified | 23 |
+| Affected Assets | 20 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Intelligence Analysis**
 
 Priority:
 
-**ROUTINE**
+**ELEVATED**
 
 Recommended Action:
 

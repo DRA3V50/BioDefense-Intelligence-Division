@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6172
+BID-2026-8062
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Research Workstation Compromise
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
-Medical Research Laboratory
+Research Data Repository
 
 Device:
-Laboratory Information Server
+Specimen Tracking Terminal
 
 Vendor:
-HPE
+Dell
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Under Forensic Preservation
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-88%
+83%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.

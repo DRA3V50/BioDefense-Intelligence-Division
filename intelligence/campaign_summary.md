@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6172
+BID-2026-8062
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Research Workstation Compromise
+Research Data Integrity Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Medical Research Laboratory
+Research Data Repository
 
 Device:
-Laboratory Information Server
+Specimen Tracking Terminal
 
 Vendor:
-HPE
+Dell
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-113
+114
 
 Evidence Collected:
-51
+75
 
 Indicators Identified:
-15
+23
 
 Affected Assets:
-5
+20
 
 Confidence:
-88%
+83%
 
 Risk Score:
-32
+51
 
 ---
 

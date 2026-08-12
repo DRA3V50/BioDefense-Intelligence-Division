@@ -4,18 +4,18 @@
 ## 2026-08-12
 
 ### Case Opened
-Case ID: BID-2026-6172
+Case ID: BID-2026-8062
 
 ### Classification
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Open
+Intelligence Analysis
 
 ### Severity
-LOW
+MODERATE
 
 ---

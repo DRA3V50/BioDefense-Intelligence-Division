@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6172
+BID-2026-8062
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
-| System Log | Unexpected privilege escalation recorded |
-| Identity | Credential reuse detected across isolated research segments |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Infrastructure | Firewall policy deviation identified |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Research Data Integrity Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-51
+75
 
 Indicators Reviewed:
-15
+23
 
 Risk Score:
-32
+51
 
 Confidence:
-88%
+83%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Delta
 
 Current Status:
 
-Open
+Intelligence Analysis
