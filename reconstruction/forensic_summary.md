@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7336 |
+| Case ID | BID-2026-6172 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Cyber-Biothreat Intelligence Review |
-| Threat Family | Access Control Record Manipulation |
-| Severity | HIGH |
-| Status | Field Coordination |
+| Classification | Research Data Integrity Investigation |
+| Threat Family | Research Workstation Compromise |
+| Severity | LOW |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Federal Investigation Network |
-| Device | Network Security Appliance |
-| Vendor | Microsoft |
-| Security Zone | Federal Operations |
+| Platform | Medical Research Laboratory |
+| Device | Laboratory Information Server |
+| Vendor | HPE |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 72 |
-| Confidence | 97% |
-| Evidence Collected | 141 |
-| Indicators Identified | 94 |
-| Affected Assets | 14 |
+| Risk Score | 32 |
+| Confidence | 88% |
+| Evidence Collected | 51 |
+| Indicators Identified | 15 |
+| Affected Assets | 5 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Open**
 
 Priority:
 
-**HIGH**
+**ROUTINE**
 
 Recommended Action:
 

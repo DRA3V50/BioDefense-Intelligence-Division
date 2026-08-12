@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-11
+## 2026-08-12
 
 ### Case Opened
-Case ID: BID-2026-7336
+Case ID: BID-2026-6172
 
 ### Classification
-Cyber-Biothreat Intelligence Review
+Research Data Integrity Investigation
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
-Field Coordination
+Open
 
 ### Severity
-HIGH
+LOW
 
 ---

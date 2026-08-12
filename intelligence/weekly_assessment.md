@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7336
+Case ID: BID-2026-6172
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Cyber-Biothreat Intelligence Review
+Classification: Research Data Integrity Investigation
 
-Threat Family: Access Control Record Manipulation
+Threat Family: Research Workstation Compromise
 
-Current Status: Field Coordination
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -20,29 +20,29 @@ Containment Phase: Operational Recovery
 
 Analysts continue evaluating recovered indicators for operational significance.
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ROUTINE
 
 Risk Score:
-72
+32
 
 Confidence:
-97%
+88%
 
 Affected Assets:
-14
+5
 
 Evidence Collected:
-141
+51
 
 Indicators Recorded:
-94
+15
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Bravo
 
 Date:
 
-2026-08-11
+2026-08-12

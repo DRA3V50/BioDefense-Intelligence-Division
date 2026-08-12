@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Access Control Record Manipulation
+Research Workstation Compromise
 
 ---
 
 ## Primary Alias
-Silent Culture
+Cerberus Group
 
 ---
 
 ## Attribution
-Unattributed
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Strategic Intelligence Collection
 
 ---
 
@@ -26,24 +26,24 @@ Moderate
 ---
 
 ## Confidence
-97%
+88%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
-- Concealed Internal Movement
-- Privilege Escalation
+- Web Application Exploitation
+- Command and Control
+- Lateral Movement
 - Supply Chain Compromise
-- Biosecurity System Tampering
-- Encrypted Data Staging
+- Long-Term Network Foothold
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Bravo
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Cyber-Biothreat Intelligence Review
+Research Data Integrity Investigation
 
 ---
 
 ## Last Updated
-2026-08-11
+2026-08-12

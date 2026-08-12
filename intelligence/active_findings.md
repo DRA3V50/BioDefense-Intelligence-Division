@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-7336
+BID-2026-6172
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Cyber-Biothreat Intelligence Review
+Research Data Integrity Investigation
 
 Threat Family:
-Access Control Record Manipulation
+Research Workstation Compromise
 
 Severity:
-HIGH
+LOW
 
 Priority:
-HIGH
+ROUTINE
 
 ---
 
@@ -26,15 +26,15 @@ HIGH
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
@@ -42,23 +42,23 @@ Chain-of-custody documentation has been completed for all acquired digital evide
 
 ### Finding 5
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-14
+5
 
 Evidence Collected:
-141
+51
 
 Indicators Identified:
-94
+15
 
 Analyst Confidence:
-97%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Bravo
