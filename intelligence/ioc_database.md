@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-2880
+BID-2026-5282
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Specimen Management Security Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| System Log | Unexpected privilege escalation recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Device | Protected workstation entered evidence preservation mode |
+| System Log | Unexpected privilege escalation recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -28,22 +28,22 @@ Laboratory Access Control Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-233
+242
 
 Indicators Reviewed:
-61
+74
 
 Risk Score:
-78
+91
 
 Confidence:
-93%
+90%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo
 
 Current Status:
 

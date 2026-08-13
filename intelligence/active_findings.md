@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-2880
+BID-2026-5282
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Specimen Management Security Review
 
 Threat Family:
-Laboratory Information System Compromise
+Credential Misuse
 
 Severity:
-HIGH
+CRITICAL
 
 Priority:
-HIGH
+CRITICAL
 
 ---
 
@@ -30,35 +30,35 @@ Indicators remain consistent with a coordinated cyber-enabled bioterror intellig
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-24
+26
 
 Evidence Collected:
-233
+242
 
 Indicators Identified:
-61
+74
 
 Analyst Confidence:
-93%
+90%
 
 Containment Phase:
 Operational Recovery
@@ -67,7 +67,7 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo

@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2880 |
+| Case ID | BID-2026-5282 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Access Control Investigation |
-| Threat Family | Laboratory Information System Compromise |
-| Severity | HIGH |
+| Classification | Specimen Management Security Review |
+| Threat Family | Credential Misuse |
+| Severity | CRITICAL |
 | Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Genome Sequencing Environment |
-| Device | Laboratory Information Server |
-| Vendor | Red Hat |
-| Network Zone | Protected Research Segment |
+| Platform | Clinical Research Environment |
+| Device | Clinical Data Server |
+| Vendor | VMware |
+| Network Zone | Evidence Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 78 |
-| Confidence | 93% |
-| Evidence | 233 |
-| Indicators | 61 |
-| Affected Assets | 24 |
+| Risk Score | 91 |
+| Confidence | 90% |
+| Evidence | 242 |
+| Indicators | 74 |
+| Affected Assets | 26 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.

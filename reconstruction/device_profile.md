@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-2880
+BID-2026-5282
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Specimen Management Security Review
 
 Threat Family:
-Laboratory Information System Compromise
+Credential Misuse
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Central Evidence Processing Center
 
 Platform:
-Genome Sequencing Environment
+Clinical Research Environment
 
 Device:
-Laboratory Information Server
+Clinical Data Server
 
 Vendor:
-Red Hat
+VMware
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
-Protected Research Segment
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Awaiting Laboratory Review
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-93%
+90%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Digital evidence preserved for laboratory forensic examination.

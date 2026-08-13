@@ -4,18 +4,18 @@
 ## 2026-08-13
 
 ### Case Opened
-Case ID: BID-2026-2880
+Case ID: BID-2026-5282
 
 ### Classification
-Laboratory Access Control Investigation
+Specimen Management Security Review
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
 Intelligence Analysis
 
 ### Severity
-HIGH
+CRITICAL
 
 ---
