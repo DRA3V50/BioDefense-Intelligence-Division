@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8062
+Case ID: BID-2026-2880
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Medical Device Security Assessment
+Classification: Laboratory Access Control Investigation
 
-Threat Family: Research Data Integrity Manipulation
+Threat Family: Laboratory Information System Compromise
 
 Current Status: Intelligence Analysis
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Current evidence supports continued investigative activity.
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+HIGH
 
 Risk Score:
-51
+78
 
 Confidence:
-83%
+93%
 
 Affected Assets:
-20
+24
 
 Evidence Collected:
-75
+233
 
 Indicators Recorded:
-23
+61
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+Analyst Team Alpha
 
 Date:
 
-2026-08-12
+2026-08-13

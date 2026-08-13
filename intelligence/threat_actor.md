@@ -1,47 +1,47 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Primary Alias
-Vector-9
+Cerberus Group
 
 ---
 
 ## Attribution
-International Infrastructure
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-83%
+93%
 
 ---
 
 ## Observed Techniques
 - Web Application Exploitation
-- Credential Abuse
-- Laboratory Data Manipulation
 - Covert Remote Access Tooling
-- Biosecurity System Tampering
-- Privilege Escalation
+- Credential Abuse
+- Supply Chain Compromise
+- Laboratory Data Manipulation
+- Laboratory Network Reconnaissance
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
 **Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Laboratory Access Control Investigation
 
 ---
 
 ## Last Updated
-2026-08-12
+2026-08-13

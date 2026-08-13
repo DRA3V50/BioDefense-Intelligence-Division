@@ -138,3 +138,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-08-11,BID-2026-7336,Coordinated Biomedical Systems Intrusion,Cyber-Biothreat Intelligence Review,HIGH,HIGH,72,97,141,94,14,Federal Investigation Network,Microsoft,Federal Operations,National Response Cell,Field Coordination
 2026-08-12,BID-2026-6172,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,LOW,ROUTINE,32,88,51,15,5,Medical Research Laboratory,HPE,Evidence Network,Analyst Team Bravo,Open
 2026-08-12,BID-2026-8062,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,MODERATE,ELEVATED,51,83,75,23,20,Research Data Repository,Dell,Research Operations,Analyst Team Delta,Intelligence Analysis
+2026-08-13,BID-2026-2880,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,HIGH,HIGH,78,93,233,61,24,Genome Sequencing Environment,Red Hat,Protected Research Segment,Analyst Team Alpha,Intelligence Analysis

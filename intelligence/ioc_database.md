@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8062
+BID-2026-2880
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Access Control Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Evidence | Acquired forensic image verified using SHA-256 |
+| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -28,22 +28,22 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-75
+233
 
 Indicators Reviewed:
-23
+61
 
 Risk Score:
-51
+78
 
 Confidence:
-83%
+93%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha
 
 Current Status:
 

@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-8062
+BID-2026-2880
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Access Control Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
-Research Data Repository
+Genome Sequencing Environment
 
 Device:
-Specimen Tracking Terminal
+Laboratory Information Server
 
 Vendor:
-Dell
+Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Research Operations
+Protected Research Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-83%
+93%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Evidence indicates unauthorized access to restricted research resources.

@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8062 |
+| Case ID | BID-2026-2880 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | MODERATE |
+| Classification | Laboratory Access Control Investigation |
+| Threat Family | Laboratory Information System Compromise |
+| Severity | HIGH |
 | Status | Intelligence Analysis |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Research Data Repository |
-| Device | Specimen Tracking Terminal |
-| Vendor | Dell |
-| Security Zone | Research Operations |
+| Platform | Genome Sequencing Environment |
+| Device | Laboratory Information Server |
+| Vendor | Red Hat |
+| Security Zone | Protected Research Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 51 |
-| Confidence | 83% |
-| Evidence Collected | 75 |
-| Indicators Identified | 23 |
-| Affected Assets | 20 |
+| Risk Score | 78 |
+| Confidence | 93% |
+| Evidence Collected | 233 |
+| Indicators Identified | 61 |
+| Affected Assets | 24 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 
