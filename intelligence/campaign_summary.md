@@ -3,29 +3,29 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4791
+BID-2026-6513
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
 Medical Device Gateway
@@ -34,29 +34,29 @@ Vendor:
 HPE
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-117
+118
 
 Evidence Collected:
-69
+297
 
 Indicators Identified:
-25
+125
 
 Affected Assets:
-18
+42
 
 Confidence:
-86%
+95%
 
 Risk Score:
-59
+97
 
 ---
 

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4791 |
+| Case ID | BID-2026-6513 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Laboratory Information System Compromise |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Biomedical Infrastructure Investigation |
+| Threat Family | Biocontainment System Tampering |
+| Severity | CRITICAL |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
+| Platform | Evidence Processing Network |
 | Device | Medical Device Gateway |
 | Vendor | HPE |
-| Security Zone | Evidence Network |
+| Security Zone | Research Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 59 |
-| Confidence | 86% |
-| Evidence Collected | 69 |
-| Indicators Identified | 25 |
-| Affected Assets | 18 |
+| Risk Score | 97 |
+| Confidence | 95% |
+| Evidence Collected | 297 |
+| Indicators Identified | 125 |
+| Affected Assets | 42 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Evidence Collection**
 
 Priority:
 
-**ELEVATED**
+**CRITICAL**
 
 Recommended Action:
 

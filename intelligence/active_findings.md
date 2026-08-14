@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-4791
+BID-2026-6513
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Biocontainment System Tampering
 
 Severity:
-MODERATE
+CRITICAL
 
 Priority:
-ELEVATED
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-18
+42
 
 Evidence Collected:
-69
+297
 
 Indicators Identified:
-25
+125
 
 Analyst Confidence:
-86%
+95%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+National Response Cell

@@ -4,18 +4,18 @@
 ## 2026-08-14
 
 ### Case Opened
-Case ID: BID-2026-4791
+Case ID: BID-2026-6513
 
 ### Classification
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 ### Initial Assessment
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
-Field Coordination
+Evidence Collection
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---

@@ -3,26 +3,26 @@
 ## Investigation
 
 Case ID:
-BID-2026-4791
+BID-2026-6513
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
 Medical Device Gateway
@@ -31,10 +31,10 @@ Vendor:
 HPE
 
 Operating System:
-VMware ESXi 9
+Hardened Research Appliance OS
 
 Security Zone:
-Evidence Network
+Research Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Active Investigation
 
 Priority:
-ELEVATED
+CRITICAL
 
 Confidence:
-86%
+95%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

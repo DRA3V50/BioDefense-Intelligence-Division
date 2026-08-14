@@ -185,3 +185,4 @@ EV-00183,BID-2026-8062,2026-08-12,Coordinated Biomedical Systems Intrusion,Medic
 EV-00184,BID-2026-2880,2026-08-13,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,Digital Evidence,Genome Sequencing Environment,Laboratory Information Server,Analyst Team Alpha,Collected
 EV-00185,BID-2026-5282,2026-08-13,Coordinated Biomedical Systems Intrusion,Specimen Management Security Review,Digital Evidence,Clinical Research Environment,Clinical Data Server,Analyst Team Bravo,Collected
 EV-00186,BID-2026-4791,2026-08-14,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,Authentication Logs,Genome Sequencing Environment,Medical Device Gateway,Analyst Team Delta,Collected
+EV-00187,BID-2026-6513,2026-08-14,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Evidence Processing Network,Medical Device Gateway,National Response Cell,Collected
