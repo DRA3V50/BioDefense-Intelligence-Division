@@ -155,10 +155,10 @@
         {
             "name": "Laboratory Information System Compromise",
             "first_seen": "2026-08-03",
-            "last_seen": "2026-08-13",
-            "cases": 4,
-            "severity": "HIGH",
-            "confidence": 93
+            "last_seen": "2026-08-14",
+            "cases": 5,
+            "severity": "MODERATE",
+            "confidence": 86
         },
         {
             "name": "Access Control Record Manipulation",

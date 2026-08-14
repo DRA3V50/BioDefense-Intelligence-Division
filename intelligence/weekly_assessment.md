@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-5282
+Case ID: BID-2026-4791
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Specimen Management Security Review
+Classification: Unauthorized Research System Access
 
-Threat Family: Credential Misuse
+Threat Family: Laboratory Information System Compromise
 
-Current Status: Intelligence Analysis
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Evidence correlation remains in progress across collected artifacts.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+ELEVATED
 
 Risk Score:
-91
+59
 
 Confidence:
-90%
+86%
 
 Affected Assets:
-26
+18
 
 Evidence Collected:
-242
+69
 
 Indicators Recorded:
-74
+25
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+Analyst Team Delta
 
 Date:
 
-2026-08-13
+2026-08-14

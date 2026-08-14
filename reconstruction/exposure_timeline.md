@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-13
+## 2026-08-14
 
 ### Case Opened
-Case ID: BID-2026-5282
+Case ID: BID-2026-4791
 
 ### Classification
-Specimen Management Security Review
+Unauthorized Research System Access
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Intelligence Analysis
+Field Coordination
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---

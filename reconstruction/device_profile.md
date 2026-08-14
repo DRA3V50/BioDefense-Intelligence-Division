@@ -3,32 +3,32 @@
 ## Investigation
 
 Case ID:
-BID-2026-5282
+BID-2026-4791
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Unauthorized Research System Access
 
 Threat Family:
-Credential Misuse
+Laboratory Information System Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+National Pathogen Research Facility
 
 Platform:
-Clinical Research Environment
+Genome Sequencing Environment
 
 Device:
-Clinical Data Server
+Medical Device Gateway
 
 Vendor:
-VMware
+HPE
 
 Operating System:
 VMware ESXi 9
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-CRITICAL
+ELEVATED
 
 Confidence:
-90%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

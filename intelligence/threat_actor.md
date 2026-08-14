@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Laboratory Information System Compromise
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Crimson Cell
 
 ---
 
 ## Attribution
-Unattributed
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-90%
+86%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
-- Encrypted Data Staging
-- Covert Remote Access Tooling
-- Lateral Movement
-- Privilege Escalation
-- Insider Access Abuse
+- Web Application Exploitation
+- Credential Abuse
+- Laboratory Network Reconnaissance
+- Research Data Exfiltration
+- Long-Term Network Foothold
+- Supply Chain Compromise
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Delta
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Specimen Management Security Review
+Unauthorized Research System Access
 
 ---
 
 ## Last Updated
-2026-08-13
+2026-08-14

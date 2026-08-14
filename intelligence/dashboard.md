@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-5282 |
+| Case ID | BID-2026-4791 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Specimen Management Security Review |
-| Threat Family | Credential Misuse |
-| Severity | CRITICAL |
-| Status | Intelligence Analysis |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Laboratory Information System Compromise |
+| Severity | MODERATE |
+| Status | Field Coordination |
 | Phase | Operational Recovery |
 
 ---
@@ -18,9 +18,9 @@
 
 | Field | Value |
 |------|------|
-| Platform | Clinical Research Environment |
-| Device | Clinical Data Server |
-| Vendor | VMware |
+| Platform | Genome Sequencing Environment |
+| Device | Medical Device Gateway |
+| Vendor | HPE |
 | Network Zone | Evidence Network |
 
 ---
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 91 |
-| Confidence | 90% |
-| Evidence | 242 |
-| Indicators | 74 |
-| Affected Assets | 26 |
+| Risk Score | 59 |
+| Confidence | 86% |
+| Evidence | 69 |
+| Indicators | 25 |
+| Affected Assets | 18 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
