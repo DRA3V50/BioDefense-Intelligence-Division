@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6513
+Case ID: BID-2026-2801
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Biomedical Infrastructure Investigation
+Classification: Laboratory Access Control Investigation
 
-Threat Family: Biocontainment System Tampering
+Threat Family: Medical Device Communications Interference
 
-Current Status: Evidence Collection
+Current Status: Monitoring
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
@@ -27,22 +27,22 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+HIGH
 
 Risk Score:
-97
+78
 
 Confidence:
-95%
+91%
 
 Affected Assets:
-42
+40
 
 Evidence Collected:
-297
+138
 
 Indicators Recorded:
-125
+58
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Delta
 
 Date:
 
-2026-08-14
+2026-08-15

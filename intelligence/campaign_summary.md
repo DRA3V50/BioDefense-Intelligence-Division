@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6513
+BID-2026-2801
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Laboratory Access Control Investigation
 
 Threat Family:
-Biocontainment System Tampering
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Biosecurity Operations Center
 
 Device:
-Medical Device Gateway
+Network Security Appliance
 
 Vendor:
-HPE
+Dell
 
 Security Zone:
-Research Operations
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-118
+119
 
 Evidence Collected:
-297
+138
 
 Indicators Identified:
-125
+58
 
 Affected Assets:
-42
+40
 
 Confidence:
-95%
+91%
 
 Risk Score:
-97
+78
 
 ---
 

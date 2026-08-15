@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6513 |
+| Case ID | BID-2026-2801 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Biocontainment System Tampering |
-| Severity | CRITICAL |
-| Status | Evidence Collection |
+| Classification | Laboratory Access Control Investigation |
+| Threat Family | Medical Device Communications Interference |
+| Severity | HIGH |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Evidence Processing Network |
-| Device | Medical Device Gateway |
-| Vendor | HPE |
-| Network Zone | Research Operations |
+| Platform | Biosecurity Operations Center |
+| Device | Network Security Appliance |
+| Vendor | Dell |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 97 |
-| Confidence | 95% |
-| Evidence | 297 |
-| Indicators | 125 |
-| Affected Assets | 42 |
+| Risk Score | 78 |
+| Confidence | 91% |
+| Evidence | 138 |
+| Indicators | 58 |
+| Affected Assets | 40 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 

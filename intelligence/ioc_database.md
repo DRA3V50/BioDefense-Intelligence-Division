@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6513
+BID-2026-2801
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Laboratory Access Control Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| System Log | Unexpected privilege escalation recorded |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Infrastructure | Firewall policy deviation identified |
+| Identity | Credential reuse detected across isolated research segments |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Research Storage | Unauthorized access to protected genomic repository |
-| PowerShell | Encoded administrative command execution detected |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -28,23 +28,23 @@ Biomedical Infrastructure Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-297
+138
 
 Indicators Reviewed:
-125
+58
 
 Risk Score:
-97
+78
 
 Confidence:
-95%
+91%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Delta
 
 Current Status:
 
-Evidence Collection
+Monitoring

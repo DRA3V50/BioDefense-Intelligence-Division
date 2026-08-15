@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Genome Phantom
 
 ---
 
 ## Attribution
-International Infrastructure
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-95%
+91%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
+- Exposed Remote Service
 - Research Data Exfiltration
-- Long-Term Network Foothold
-- Encrypted Data Staging
-- Laboratory Data Manipulation
-- Concealed Internal Movement
+- Biosecurity System Tampering
+- Supply Chain Compromise
+- Insider Access Abuse
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Delta
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biomedical Infrastructure Investigation
+Laboratory Access Control Investigation
 
 ---
 
 ## Last Updated
-2026-08-14
+2026-08-15
