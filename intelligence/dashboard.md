@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2801 |
+| Case ID | BID-2026-6717 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Access Control Investigation |
-| Threat Family | Medical Device Communications Interference |
+| Classification | Research Facility Intrusion Investigation |
+| Threat Family | Biocontainment System Tampering |
 | Severity | HIGH |
-| Status | Monitoring |
+| Status | Containment |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biosecurity Operations Center |
-| Device | Network Security Appliance |
-| Vendor | Dell |
-| Network Zone | Biosecurity Segment |
+| Platform | Clinical Research Environment |
+| Device | Laboratory Information Server |
+| Vendor | VMware |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 78 |
-| Confidence | 91% |
-| Evidence | 138 |
-| Indicators | 58 |
-| Affected Assets | 40 |
+| Risk Score | 71 |
+| Confidence | 94% |
+| Evidence | 209 |
+| Indicators | 77 |
+| Affected Assets | 24 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.

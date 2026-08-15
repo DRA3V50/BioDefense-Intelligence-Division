@@ -43,10 +43,10 @@
         {
             "name": "Biocontainment System Tampering",
             "first_seen": "2026-07-21",
-            "last_seen": "2026-08-14",
-            "cases": 10,
-            "severity": "CRITICAL",
-            "confidence": 95
+            "last_seen": "2026-08-15",
+            "cases": 11,
+            "severity": "HIGH",
+            "confidence": 94
         },
         {
             "name": "Insider Laboratory Compromise",

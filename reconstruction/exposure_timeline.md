@@ -4,16 +4,16 @@
 ## 2026-08-15
 
 ### Case Opened
-Case ID: BID-2026-2801
+Case ID: BID-2026-6717
 
 ### Classification
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-Monitoring
+Containment
 
 ### Severity
 HIGH

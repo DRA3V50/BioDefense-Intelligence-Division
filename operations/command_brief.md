@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-15 02:48 UTC
+**Generated:** 2026-08-15 14:18 UTC
 
 ---
 
@@ -18,29 +18,29 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-2801
+**Case ID:** BID-2026-6717
 
-**Classification:** Laboratory Access Control Investigation
+**Classification:** Research Facility Intrusion Investigation
 
 **Severity:** HIGH
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Biocontainment System Tampering
 
-**Confidence:** 91%
+**Confidence:** 94%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **138**
+Evidence Collected: **209**
 
-Indicators: **58**
+Indicators: **77**
 
 Priority: **HIGH**
 
@@ -49,10 +49,10 @@ Priority: **HIGH**
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 Initial Access:
-**Exposed Remote Service**
+**Supply Chain Compromise**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**119**
+**120**
 
 Confirmed Intrusions:
 **15**
 
 Total Evidence:
-**96342**
+**96551**
 
 Total Indicators:
-**63356**
+**63433**
 
 ---
 
 ## Operational Highlights
 
-- 138 evidence items are associated with the active investigation.
-- 58 indicators are currently linked to the case.
+- 209 evidence items are associated with the active investigation.
+- 77 indicators are currently linked to the case.
 - Containment remains at **SEVERE**.
-- Analyst confidence is **91%**.
+- Analyst confidence is **94%**.
 - Current investigation priority is **HIGH**.
 
 ---

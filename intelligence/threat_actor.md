@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Medical Device Communications Interference
+Biocontainment System Tampering
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Vector-9
 
 ---
 
 ## Attribution
-Multiple Regions
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Research Data Theft
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-91%
+94%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
-- Research Data Exfiltration
-- Biosecurity System Tampering
 - Supply Chain Compromise
+- Laboratory Control System Manipulation
+- Long-Term Network Foothold
+- Concealed Internal Movement
+- Encrypted Data Staging
 - Insider Access Abuse
-- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+BioDefense Task Force
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 ---
 

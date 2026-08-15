@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-2801
+BID-2026-6717
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Biocontainment System Tampering
 
 Severity:
 HIGH
@@ -26,11 +26,11 @@ HIGH
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
@@ -38,27 +38,27 @@ Collected indicators continue to support an active counter-bioterrorism investig
 
 ### Finding 4
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-40
+24
 
 Evidence Collected:
-138
+209
 
 Indicators Identified:
-58
+77
 
 Analyst Confidence:
-91%
+94%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 # Operational Status
 
 Current Status:
-Monitoring
+Containment
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force

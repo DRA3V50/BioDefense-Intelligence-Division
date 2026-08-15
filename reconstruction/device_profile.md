@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-2801
+BID-2026-6717
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Biosecurity Operations Center
+Clinical Research Environment
 
 Device:
-Network Security Appliance
+Laboratory Information Server
 
 Vendor:
-Dell
+VMware
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Biosecurity Segment
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 HIGH
 
 Confidence:
-91%
+94%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.
