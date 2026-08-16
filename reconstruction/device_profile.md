@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6717
+BID-2026-4760
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Unauthorized Research System Access
 
 Threat Family:
-Biocontainment System Tampering
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
-Clinical Research Environment
+Protected Research Network
 
 Device:
-Laboratory Information Server
+Clinical Data Server
 
 Vendor:
-VMware
+HPE
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Secure Laboratory
+Research Operations
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Evidence Acquisition
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-94%
+87%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+No destructive activity observed following initial containment.

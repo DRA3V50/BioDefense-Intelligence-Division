@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-15
+## 2026-08-16
 
 ### Case Opened
-Case ID: BID-2026-6717
+Case ID: BID-2026-4760
 
 ### Classification
-Research Facility Intrusion Investigation
+Unauthorized Research System Access
 
 ### Initial Assessment
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Containment
+Field Coordination
 
 ### Severity
-HIGH
+MODERATE
 
 ---

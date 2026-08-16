@@ -1,47 +1,47 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Vector-9
+Crimson Cell
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unattributed
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-94%
+87%
 
 ---
 
 ## Observed Techniques
 - Supply Chain Compromise
-- Laboratory Control System Manipulation
-- Long-Term Network Foothold
-- Concealed Internal Movement
+- Biosecurity System Tampering
+- Command and Control
+- Credential Abuse
 - Encrypted Data Staging
-- Insider Access Abuse
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Delta
 
 **Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Facility Intrusion Investigation
+Unauthorized Research System Access
 
 ---
 
 ## Last Updated
-2026-08-15
+2026-08-16

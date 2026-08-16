@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6717 |
+| Case ID | BID-2026-4760 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Facility Intrusion Investigation |
-| Threat Family | Biocontainment System Tampering |
-| Severity | HIGH |
-| Status | Containment |
+| Classification | Unauthorized Research System Access |
+| Threat Family | Biomedical Supply Chain Compromise |
+| Severity | MODERATE |
+| Status | Field Coordination |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Laboratory Information Server |
-| Vendor | VMware |
-| Security Zone | Secure Laboratory |
+| Platform | Protected Research Network |
+| Device | Clinical Data Server |
+| Vendor | HPE |
+| Security Zone | Research Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 71 |
-| Confidence | 94% |
-| Evidence Collected | 209 |
-| Indicators Identified | 77 |
-| Affected Assets | 24 |
+| Risk Score | 42 |
+| Confidence | 87% |
+| Evidence Collected | 63 |
+| Indicators Identified | 31 |
+| Affected Assets | 15 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Field Coordination**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 
