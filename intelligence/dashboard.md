@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4760 |
+| Case ID | BID-2026-9730 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Unauthorized Research System Access |
-| Threat Family | Biomedical Supply Chain Compromise |
+| Classification | Biomedical Infrastructure Investigation |
+| Threat Family | Credential Misuse |
 | Severity | MODERATE |
-| Status | Field Coordination |
+| Status | Evidence Collection |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Protected Research Network |
-| Device | Clinical Data Server |
-| Vendor | HPE |
-| Network Zone | Research Operations |
+| Platform | Research Data Repository |
+| Device | Research Database Server |
+| Vendor | Dell |
+| Network Zone | Secure Laboratory |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 42 |
-| Confidence | 87% |
-| Evidence | 63 |
-| Indicators | 31 |
-| Affected Assets | 15 |
+| Risk Score | 54 |
+| Confidence | 89% |
+| Evidence | 50 |
+| Indicators | 16 |
+| Affected Assets | 16 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **BioDefense Task Force**
 
 Recommended Action:
 

@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Credential Misuse
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Cerberus Group
 
 ---
 
 ## Attribution
-Unattributed
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-Advanced
+Nation-State Level
 
 ---
 
 ## Confidence
-87%
+89%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Biosecurity System Tampering
-- Command and Control
-- Credential Abuse
+- Exposed Remote Service
+- Concealed Internal Movement
 - Encrypted Data Staging
-- Lateral Movement
+- Laboratory Network Reconnaissance
+- Covert Remote Access Tooling
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+BioDefense Task Force
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Unauthorized Research System Access
+Biomedical Infrastructure Investigation
 
 ---
 

@@ -2,45 +2,45 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-08-16 02:56 UTC
+**Generated:** 2026-08-16 14:19 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-4760
+**Case ID:** BID-2026-9730
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Classification:** Unauthorized Research System Access
+**Classification:** Biomedical Infrastructure Investigation
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Credential Misuse
 
 **Severity:** MODERATE
 
 **Priority:** ELEVATED
 
-**Risk Score:** 42
+**Risk Score:** 54
 
-**Assessment Confidence:** 87%
+**Assessment Confidence:** 89%
 
 **Containment Phase:** Operational Recovery
 
-**Affected Platform:** Protected Research Network
+**Affected Platform:** Research Data Repository
 
-**Affected Assets:** 15
+**Affected Assets:** 16
 
 ---
 
 ## Executive Assessment
 
-The active Unauthorized Research System Access concerns suspected Biomedical Supply Chain Compromise. The calculated overall bioterror threat score is **84/100 (HIGH)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Biomedical Infrastructure Investigation concerns suspected Credential Misuse. The calculated overall bioterror threat score is **74/100 (HIGH)**. The strongest risk drivers are containment confidence, threat actor intent, threat actor capability. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** HIGH
 
-**Overall Bioterror Threat Score:** 84/100
+**Overall Bioterror Threat Score:** 74/100
 
 ---
 
@@ -48,20 +48,20 @@ The active Unauthorized Research System Access concerns suspected Biomedical Sup
 
 | Assessment Dimension | Score | Level |
 |----------------------|------:|-------|
-| Threat Actor Intent | 100/100 | CRITICAL |
-| Threat Actor Capability | 99/100 | CRITICAL |
-| Biological Target Value | 97/100 | CRITICAL |
-| Laboratory and Specimen Impact | 90/100 | CRITICAL |
-| Public-Health Risk | 67/100 | ELEVATED |
-| Cyber-to-Physical Escalation | 81/100 | HIGH |
-| Attribution Confidence | 91/100 | HIGH |
-| Containment Confidence | 94/100 | HIGH |
+| Threat Actor Intent | 93/100 | CRITICAL |
+| Threat Actor Capability | 90/100 | CRITICAL |
+| Biological Target Value | 84/100 | HIGH |
+| Laboratory and Specimen Impact | 68/100 | ELEVATED |
+| Public-Health Risk | 56/100 | ELEVATED |
+| Cyber-to-Physical Escalation | 67/100 | ELEVATED |
+| Attribution Confidence | 82/100 | MODERATE |
+| Containment Confidence | 95/100 | HIGH |
 
 ---
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Biomedical Supply Chain Compromise**.
+- The investigation currently centers on **Credential Misuse**.
 - The targeted environment has high intelligence or operational value because it supports protected laboratory, biomedical, genomic, or specimen-related activity.
 - The available evidence indicates a capable actor with access sufficient to affect multiple cyber-biosecurity systems or data sources.
 - The current record does not independently establish a direct public-health emergency or confirmed biological-material release.
@@ -72,36 +72,36 @@ The active Unauthorized Research System Access concerns suspected Biomedical Sup
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 63
+**Evidence Records Reviewed:** 50
 
-**Correlation Records Reviewed:** 63
+**Correlation Records Reviewed:** 50
 
-**Integrity-Verified Records:** 63
+**Integrity-Verified Records:** 50
 
-**Pending Analyst Review:** 63
+**Pending Analyst Review:** 50
 
 ### Priority Findings
 
-- **Analyst Intelligence Assessment:** 9
-- **Research Workstation Compromise:** 8
-- **Laboratory System Modification:** 7
-- **Unauthorized Facility Access:** 6
-- **Known Threat Actor Indicator:** 6
-- **Research Data Integrity Anomaly:** 5
-- **Credential Misuse:** 4
-- **Laboratory Information System Anomaly:** 4
-- **Command-and-Control Communication:** 4
+- **Credential Misuse:** 9
+- **Laboratory Information System Anomaly:** 6
+- **Research Workstation Compromise:** 5
+- **Containment Verification:** 5
 - **Biosecurity Policy Violation:** 4
+- **Command-and-Control Communication:** 4
 - **Suspicious Network Activity:** 4
-- **Containment Verification:** 2
+- **Analyst Intelligence Assessment:** 4
+- **Research Data Integrity Anomaly:** 4
+- **Known Threat Actor Indicator:** 3
+- **Unauthorized Facility Access:** 1
+- **Laboratory System Modification:** 1
 
 ---
 
 ## Threat Intent and Capability
 
-**Intent Assessment:** 100/100 (CRITICAL)
+**Intent Assessment:** 93/100 (CRITICAL)
 
-**Capability Assessment:** 99/100 (CRITICAL)
+**Capability Assessment:** 90/100 (CRITICAL)
 
 The intent and capability scores are analytical estimates derived from the active case, evidence manifest, and correlated findings. They do not constitute final attribution.
 
@@ -109,9 +109,9 @@ The intent and capability scores are analytical estimates derived from the activ
 
 ## Biological Target and Laboratory Impact
 
-**Biological Target Value:** 97/100 (CRITICAL)
+**Biological Target Value:** 84/100 (HIGH)
 
-**Laboratory and Specimen Impact:** 90/100 (CRITICAL)
+**Laboratory and Specimen Impact:** 68/100 (ELEVATED)
 
 Analysts should determine whether cyber activity affected protected research records, genomic information, laboratory configurations, specimen-tracking systems, or operational biosecurity controls.
 
@@ -119,9 +119,9 @@ Analysts should determine whether cyber activity affected protected research rec
 
 ## Public-Health and Cyber-to-Physical Risk
 
-**Public-Health Risk:** 67/100 (ELEVATED)
+**Public-Health Risk:** 56/100 (ELEVATED)
 
-**Cyber-to-Physical Escalation:** 81/100 (HIGH)
+**Cyber-to-Physical Escalation:** 67/100 (ELEVATED)
 
 No conclusion regarding biological-agent release, specimen compromise, or public-health impact should be made unless it is directly supported by validated evidence.
 
@@ -129,9 +129,9 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 ## Attribution and Containment Confidence
 
-**Attribution Confidence:** 91/100 (HIGH)
+**Attribution Confidence:** 82/100 (MODERATE)
 
-**Containment Confidence:** 94/100 (HIGH)
+**Containment Confidence:** 95/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -141,7 +141,6 @@ Attribution and containment confidence should be reassessed as additional eviden
 
 - Maintain elevated cyber-biosecurity monitoring and formal command oversight.
 - Prioritize validation of laboratory-system changes, research-data integrity, and remote-access activity.
-- Review physical-access, facility-control, specimen-handling, and laboratory workflow records for cyber-to-physical linkage.
 - Preserve all new artifacts under the documented chain-of-custody process.
 - Reassess the threat score whenever new evidence, correlations, or containment results become available.
 
@@ -154,10 +153,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-4760/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-4760/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-4760/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-4760/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-9730/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-9730/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-9730/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-9730/forensic_summary.md)
 
 ---
 

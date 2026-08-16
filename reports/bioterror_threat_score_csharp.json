@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16 02:56 UTC",
+  "generatedAt": "2026-08-16 14:19 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -7,41 +7,41 @@
     "scoringModel": "Risk-Anchored Saturating Evidence Model"
   },
   "investigation": {
-    "caseId": "BID-2026-4760",
+    "caseId": "BID-2026-9730",
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
-    "classification": "Unauthorized Research System Access",
-    "threatFamily": "Biomedical Supply Chain Compromise",
+    "classification": "Biomedical Infrastructure Investigation",
+    "threatFamily": "Credential Misuse",
     "severity": "MODERATE",
     "priority": "ELEVATED",
-    "riskScore": 42,
-    "confidence": 87,
+    "riskScore": 54,
+    "confidence": 89,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Protected Research Network",
-    "affectedAssets": 15
+    "affectedPlatform": "Research Data Repository",
+    "affectedAssets": 16
   },
   "assessment": {
-    "overallScore": 39,
-    "overallLevel": "GUARDED",
+    "overallScore": 46,
+    "overallLevel": "ELEVATED",
     "dimensions": {
       "threatActorIntent": {
-        "score": 34,
+        "score": 36,
         "level": "GUARDED"
       },
       "threatActorCapability": {
-        "score": 33,
+        "score": 37,
         "level": "GUARDED"
       },
       "biologicalTargetValue": {
-        "score": 30,
+        "score": 32,
         "level": "GUARDED"
       },
       "laboratoryAndSpecimenImpact": {
-        "score": 31,
+        "score": 33,
         "level": "GUARDED"
       },
       "publicHealthRisk": {
-        "score": 32,
+        "score": 35,
         "level": "GUARDED"
       },
       "cyberToPhysicalEscalation": {
@@ -49,44 +49,40 @@
         "level": "GUARDED"
       },
       "attributionConfidence": {
-        "score": 74,
+        "score": 73,
         "level": "MODERATE"
       },
       "containmentConfidence": {
-        "score": 83,
+        "score": 84,
         "level": "MODERATE"
       }
     }
   },
   "evidenceBasis": {
-    "evidenceRecords": 63,
-    "correlationRecords": 63,
-    "integrityVerifiedRecords": 63,
-    "pendingAnalystReview": 63,
+    "evidenceRecords": 50,
+    "correlationRecords": 50,
+    "integrityVerifiedRecords": 50,
+    "pendingAnalystReview": 50,
     "priorityFindings": [
       {
-        "finding": "Analyst Intelligence Assessment",
+        "finding": "Credential Misuse",
         "correlations": 9
       },
       {
-        "finding": "Research Workstation Compromise",
-        "correlations": 8
-      },
-      {
-        "finding": "Laboratory System Modification",
-        "correlations": 7
-      },
-      {
-        "finding": "Known Threat Actor Indicator",
+        "finding": "Laboratory Information System Anomaly",
         "correlations": 6
       },
       {
-        "finding": "Unauthorized Facility Access",
-        "correlations": 6
-      },
-      {
-        "finding": "Research Data Integrity Anomaly",
+        "finding": "Containment Verification",
         "correlations": 5
+      },
+      {
+        "finding": "Research Workstation Compromise",
+        "correlations": 5
+      },
+      {
+        "finding": "Analyst Intelligence Assessment",
+        "correlations": 4
       },
       {
         "finding": "Biosecurity Policy Violation",
@@ -97,11 +93,7 @@
         "correlations": 4
       },
       {
-        "finding": "Credential Misuse",
-        "correlations": 4
-      },
-      {
-        "finding": "Laboratory Information System Anomaly",
+        "finding": "Research Data Integrity Anomaly",
         "correlations": 4
       },
       {
@@ -109,8 +101,16 @@
         "correlations": 4
       },
       {
-        "finding": "Containment Verification",
-        "correlations": 2
+        "finding": "Known Threat Actor Indicator",
+        "correlations": 3
+      },
+      {
+        "finding": "Laboratory System Modification",
+        "correlations": 1
+      },
+      {
+        "finding": "Unauthorized Facility Access",
+        "correlations": 1
       }
     ]
   },
