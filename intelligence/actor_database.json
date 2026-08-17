@@ -147,10 +147,10 @@
         {
             "name": "Evidence Repository Manipulation",
             "first_seen": "2026-08-03",
-            "last_seen": "2026-08-07",
-            "cases": 4,
-            "severity": "HIGH",
-            "confidence": 92
+            "last_seen": "2026-08-17",
+            "cases": 5,
+            "severity": "MODERATE",
+            "confidence": 84
         },
         {
             "name": "Laboratory Information System Compromise",

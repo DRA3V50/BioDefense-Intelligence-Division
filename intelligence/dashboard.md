@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-9730 |
+| Case ID | BID-2026-7240 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Credential Misuse |
+| Threat Family | Evidence Repository Manipulation |
 | Severity | MODERATE |
-| Status | Evidence Collection |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Research Data Repository |
-| Device | Research Database Server |
-| Vendor | Dell |
-| Network Zone | Secure Laboratory |
+| Platform | Genome Sequencing Environment |
+| Device | Laboratory Information Server |
+| Vendor | Lenovo |
+| Network Zone | Containment Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 54 |
-| Confidence | 89% |
+| Risk Score | 56 |
+| Confidence | 84% |
 | Evidence | 50 |
-| Indicators | 16 |
-| Affected Assets | 16 |
+| Indicators | 15 |
+| Affected Assets | 19 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **BioDefense Task Force**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.

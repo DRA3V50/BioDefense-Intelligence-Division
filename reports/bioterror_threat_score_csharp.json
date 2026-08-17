@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16 14:19 UTC",
+  "generatedAt": "2026-08-17 02:56 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -7,25 +7,25 @@
     "scoringModel": "Risk-Anchored Saturating Evidence Model"
   },
   "investigation": {
-    "caseId": "BID-2026-9730",
+    "caseId": "BID-2026-7240",
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
     "classification": "Biomedical Infrastructure Investigation",
-    "threatFamily": "Credential Misuse",
+    "threatFamily": "Evidence Repository Manipulation",
     "severity": "MODERATE",
     "priority": "ELEVATED",
-    "riskScore": 54,
-    "confidence": 89,
+    "riskScore": 56,
+    "confidence": 84,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Research Data Repository",
-    "affectedAssets": 16
+    "affectedPlatform": "Genome Sequencing Environment",
+    "affectedAssets": 19
   },
   "assessment": {
-    "overallScore": 46,
+    "overallScore": 47,
     "overallLevel": "ELEVATED",
     "dimensions": {
       "threatActorIntent": {
-        "score": 36,
+        "score": 38,
         "level": "GUARDED"
       },
       "threatActorCapability": {
@@ -33,27 +33,27 @@
         "level": "GUARDED"
       },
       "biologicalTargetValue": {
-        "score": 32,
+        "score": 31,
         "level": "GUARDED"
       },
       "laboratoryAndSpecimenImpact": {
-        "score": 33,
+        "score": 34,
         "level": "GUARDED"
       },
       "publicHealthRisk": {
-        "score": 35,
+        "score": 36,
         "level": "GUARDED"
       },
       "cyberToPhysicalEscalation": {
-        "score": 33,
+        "score": 36,
         "level": "GUARDED"
       },
       "attributionConfidence": {
-        "score": 73,
+        "score": 71,
         "level": "MODERATE"
       },
       "containmentConfidence": {
-        "score": 84,
+        "score": 81,
         "level": "MODERATE"
       }
     }
@@ -65,52 +65,52 @@
     "pendingAnalystReview": 50,
     "priorityFindings": [
       {
-        "finding": "Credential Misuse",
-        "correlations": 9
-      },
-      {
-        "finding": "Laboratory Information System Anomaly",
+        "finding": "Command-and-Control Communication",
         "correlations": 6
       },
       {
-        "finding": "Containment Verification",
-        "correlations": 5
-      },
-      {
         "finding": "Research Workstation Compromise",
-        "correlations": 5
+        "correlations": 6
       },
       {
         "finding": "Analyst Intelligence Assessment",
-        "correlations": 4
+        "correlations": 5
+      },
+      {
+        "finding": "Laboratory System Modification",
+        "correlations": 5
+      },
+      {
+        "finding": "Suspicious Network Activity",
+        "correlations": 5
       },
       {
         "finding": "Biosecurity Policy Violation",
         "correlations": 4
       },
       {
-        "finding": "Command-and-Control Communication",
-        "correlations": 4
-      },
-      {
-        "finding": "Research Data Integrity Anomaly",
-        "correlations": 4
-      },
-      {
-        "finding": "Suspicious Network Activity",
+        "finding": "Containment Verification",
         "correlations": 4
       },
       {
         "finding": "Known Threat Actor Indicator",
+        "correlations": 4
+      },
+      {
+        "finding": "Credential Misuse",
         "correlations": 3
       },
       {
-        "finding": "Laboratory System Modification",
-        "correlations": 1
+        "finding": "Laboratory Information System Anomaly",
+        "correlations": 3
       },
       {
         "finding": "Unauthorized Facility Access",
-        "correlations": 1
+        "correlations": 3
+      },
+      {
+        "finding": "Research Data Integrity Anomaly",
+        "correlations": 2
       }
     ]
   },

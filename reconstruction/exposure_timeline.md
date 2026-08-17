@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-16
+## 2026-08-17
 
 ### Case Opened
-Case ID: BID-2026-9730
+Case ID: BID-2026-7240
 
 ### Classification
 Biomedical Infrastructure Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-Evidence Collection
+Intelligence Analysis
 
 ### Severity
 MODERATE

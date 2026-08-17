@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-16 14:19 UTC
+**Generated:** 2026-08-17 02:56 UTC
 
 ---
 
@@ -18,21 +18,21 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-9730
+**Case ID:** BID-2026-7240
 
 **Classification:** Biomedical Infrastructure Investigation
 
 **Severity:** MODERATE
 
-**Threat Family:** Credential Misuse
+**Threat Family:** Evidence Repository Manipulation
 
-**Confidence:** 89%
+**Confidence:** 84%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -40,7 +40,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 
 Evidence Collected: **50**
 
-Indicators: **16**
+Indicators: **15**
 
 Priority: **ELEVATED**
 
@@ -49,7 +49,7 @@ Priority: **ELEVATED**
 ## Current Response
 
 Lead Analyst:
-**BioDefense Task Force**
+**Analyst Team Bravo**
 
 Initial Access:
 **Exposed Remote Service**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**122**
+**123**
 
 Confirmed Intrusions:
 **15**
 
 Total Evidence:
-**96664**
+**96714**
 
 Total Indicators:
-**63480**
+**63495**
 
 ---
 
 ## Operational Highlights
 
 - 50 evidence items are associated with the active investigation.
-- 16 indicators are currently linked to the case.
+- 15 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **89%**.
+- Analyst confidence is **84%**.
 - Current investigation priority is **ELEVATED**.
 
 ---

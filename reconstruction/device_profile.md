@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-9730
+BID-2026-7240
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,29 +12,29 @@ Classification:
 Biomedical Infrastructure Investigation
 
 Threat Family:
-Credential Misuse
+Evidence Repository Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Federal Biosecurity Laboratory
 
 Platform:
-Research Data Repository
+Genome Sequencing Environment
 
 Device:
-Research Database Server
+Laboratory Information Server
 
 Vendor:
-Dell
+Lenovo
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Secure Laboratory
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 ELEVATED
 
 Confidence:
-89%
+84%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

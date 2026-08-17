@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-9730
+BID-2026-7240
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,7 +12,7 @@ Classification:
 Biomedical Infrastructure Investigation
 
 Threat Family:
-Credential Misuse
+Evidence Repository Manipulation
 
 Severity:
 MODERATE
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-16
+19
 
 Evidence Collected:
 50
 
 Indicators Identified:
-16
+15
 
 Analyst Confidence:
-89%
+84%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Intelligence Analysis
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo

@@ -2,7 +2,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=c23b68b123cd" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=26cbbe568dab" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -11,7 +11,7 @@
 
 | Record Control | Investigative State | Exchange Package |
 |----------------|---------------------|------------------|
-| **Case:** `BID-2026-9730`<br>**Campaign:** `BDC-2026-001` | **Record:** `EVIDENCE COLLECTION`<br>**Evidence:** `MANIFEST-TRACKED` | `XML` · `JSON` · `CSV` · `XLSX` |
+| **Case:** `BID-2026-7240`<br>**Campaign:** `BDC-2026-001` | **Record:** `INTELLIGENCE ANALYSIS`<br>**Evidence:** `MANIFEST-TRACKED` | `XML` · `JSON` · `CSV` · `XLSX` |
 
 Automated cyber-biothreat investigation and digital forensics simulation using Python and C#. The project models federal-style case management, evidence reconstruction, threat assessment, chain of custody, intelligence reporting, and controlled operational recovery for fictional threats affecting biomedical research and protected laboratory environments.
 
@@ -21,7 +21,7 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Campaign Record | Operational Status | Investigative Scope |
 |----------|--------------------|-------|
-| **ID:** BDC-2026-001<br>**Campaign:** Coordinated Biomedical Systems Intrusion<br>**Designation:** BMSI-01 | **Phase:** Operational Recovery<br>**Containment:** HIGH<br>**Intrusions:** 15 | **Active Cases:** 122<br>**Evidence:** 96,664<br>**Indicators:** 63,480<br>**Facilities / States:** 11 / 3 |
+| **ID:** BDC-2026-001<br>**Campaign:** Coordinated Biomedical Systems Intrusion<br>**Designation:** BMSI-01 | **Phase:** Operational Recovery<br>**Containment:** HIGH<br>**Intrusions:** 15 | **Active Cases:** 123<br>**Evidence:** 96,714<br>**Indicators:** 63,495<br>**Facilities / States:** 11 / 3 |
 
 <details>
 <summary><strong>Campaign objective and next action</strong></summary>
@@ -38,12 +38,12 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Case Profile | Target Environment | Response |
 |--------------|--------------------|----------|
-| **Case:** BID-2026-9730<br>**Classification:** Biomedical Infrastructure Investigation<br>**Threat Family:** Credential Misuse<br>**Severity / Priority:** MODERATE / ELEVATED | **Platform:** Research Data Repository<br>**Vendor / Device:** Dell / Research Database Server<br>**Zone:** Secure Laboratory<br>**Assets:** 16 | **Confidence:** 89%<br>**Evidence / IOCs:** 50 / 16<br>**Lead:** BioDefense Task Force<br>**Initial Access:** Exposed Remote Service |
+| **Case:** BID-2026-7240<br>**Classification:** Biomedical Infrastructure Investigation<br>**Threat Family:** Evidence Repository Manipulation<br>**Severity / Priority:** MODERATE / ELEVATED | **Platform:** Genome Sequencing Environment<br>**Vendor / Device:** Lenovo / Laboratory Information Server<br>**Zone:** Containment Network<br>**Assets:** 19 | **Confidence:** 84%<br>**Evidence / IOCs:** 50 / 15<br>**Lead:** Analyst Team Bravo<br>**Initial Access:** Exposed Remote Service |
 
 <details>
 <summary><strong>Analyst assessment and recommended response</strong></summary>
 
-**Assessment:** Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+**Assessment:** Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 **Recommended action:** Verify recovery controls and prepare the final operational assessment.
 
@@ -55,7 +55,7 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 # Digital Evidence Record
 
-**Active Case:** BID-2026-9730
+**Active Case:** BID-2026-7240
 
 | Evidence Records | Correlations | Integrity Verified | Pending Review |
 |-----------------:|-------------:|-------------------:|---------------:|
@@ -65,25 +65,25 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Reports & Assessments | Evidence & Forensics | Operations & Data |
 |-----------------------|----------------------|-------------------|
-| ◆ [Investigation Report](reports/investigation_report.md)<br>◆ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>◆ [C# Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>◆ [C# Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>◆ [Investigative Leads](reports/investigative_leads.md) | ◆ [Evidence Chain](evidence/evidence_chain.md)<br>◆ [Evidence Manifest](evidence/BID-2026-9730/evidence_manifest.json)<br>◆ [Evidence Correlations](evidence/BID-2026-9730/evidence_correlations.json)<br>◆ [Chain of Custody](evidence/BID-2026-9730/chain_of_custody.md)<br>◆ [Forensic Summary](evidence/BID-2026-9730/forensic_summary.md)<br>◆ [Acquisition Summary](evidence/BID-2026-9730/acquisition_summary.md) | ◆ [Command Brief](operations/command_brief.md)<br>◆ [Investigation Timeline](operations/investigation_timeline.md)<br>◆ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>◆ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
+| ◆ [Investigation Report](reports/investigation_report.md)<br>◆ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>◆ [C# Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>◆ [C# Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>◆ [Investigative Leads](reports/investigative_leads.md) | ◆ [Evidence Chain](evidence/evidence_chain.md)<br>◆ [Evidence Manifest](evidence/BID-2026-7240/evidence_manifest.json)<br>◆ [Evidence Correlations](evidence/BID-2026-7240/evidence_correlations.json)<br>◆ [Chain of Custody](evidence/BID-2026-7240/chain_of_custody.md)<br>◆ [Forensic Summary](evidence/BID-2026-7240/forensic_summary.md)<br>◆ [Acquisition Summary](evidence/BID-2026-7240/acquisition_summary.md) | ◆ [Command Brief](operations/command_brief.md)<br>◆ [Investigation Timeline](operations/investigation_timeline.md)<br>◆ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>◆ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
 
 <details>
 <summary><strong>Evidence breakdown</strong></summary>
 
 | Evidence Type | Records |
 |---------------|--------:|
-| Authentication Log | 9 |
-| Laboratory Information System Audit Log | 6 |
-| Research Workstation Event Log | 5 |
-| Containment Validation Record | 5 |
+| Research Workstation Event Log | 6 |
+| Network Connection Record | 6 |
+| Firewall Log | 5 |
+| Analyst Observation | 5 |
+| Laboratory System Configuration | 5 |
+| Containment Validation Record | 4 |
 | Biosecurity Audit Record | 4 |
-| Network Connection Record | 4 |
-| Firewall Log | 4 |
-| Analyst Observation | 4 |
-| Research Data Integrity Record | 4 |
-| Threat Intelligence Record | 3 |
-| Access Control Log | 1 |
-| Laboratory System Configuration | 1 |
+| Threat Intelligence Record | 4 |
+| Authentication Log | 3 |
+| Laboratory Information System Audit Log | 3 |
+| Access Control Log | 3 |
+| Research Data Integrity Record | 2 |
 
 </details>
 
@@ -92,18 +92,18 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Investigative Finding | Correlations |
 |-----------------------|-------------:|
-| Credential Misuse | 9 |
-| Laboratory Information System Anomaly | 6 |
-| Research Workstation Compromise | 5 |
-| Containment Verification | 5 |
+| Research Workstation Compromise | 6 |
+| Command-and-Control Communication | 6 |
+| Suspicious Network Activity | 5 |
+| Analyst Intelligence Assessment | 5 |
+| Laboratory System Modification | 5 |
+| Containment Verification | 4 |
 | Biosecurity Policy Violation | 4 |
-| Command-and-Control Communication | 4 |
-| Suspicious Network Activity | 4 |
-| Analyst Intelligence Assessment | 4 |
-| Research Data Integrity Anomaly | 4 |
-| Known Threat Actor Indicator | 3 |
-| Unauthorized Facility Access | 1 |
-| Laboratory System Modification | 1 |
+| Known Threat Actor Indicator | 4 |
+| Credential Misuse | 3 |
+| Laboratory Information System Anomaly | 3 |
+| Unauthorized Facility Access | 3 |
+| Research Data Integrity Anomaly | 2 |
 
 </details>
 
@@ -114,15 +114,15 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Date | Case ID | Severity | Risk | Confidence | Status |
 |------|---------|----------|-----:|-----------:|--------|
+| 2026-08-17 | BID-2026-7240 | MODERATE | 56 | 84 | Intelligence Analysis |
 | 2026-08-16 | BID-2026-9730 | MODERATE | 54 | 89 | Evidence Collection |
 | 2026-08-16 | BID-2026-4760 | MODERATE | 42 | 87 | Field Coordination |
 | 2026-08-15 | BID-2026-6717 | HIGH | 71 | 94 | Containment |
 | 2026-08-15 | BID-2026-2801 | HIGH | 78 | 91 | Monitoring |
-| 2026-08-14 | BID-2026-6513 | CRITICAL | 97 | 95 | Evidence Collection |
 
 </details>
 
-**Threat Family:** Credential Misuse · **Repository Updated:** 2026-08-16T14:19:20Z
+**Threat Family:** Evidence Repository Manipulation · **Repository Updated:** 2026-08-17T02:56:40Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -135,23 +135,23 @@ Automated cyber-biothreat investigation and digital forensics simulation using P
 
 | Metric | Value |
 |--------|------:|
-| Total Investigations | 122 |
-| Low / Moderate | 29 / 41 |
+| Total Investigations | 123 |
+| Low / Moderate | 29 / 42 |
 | High / Critical | 37 / 15 |
 | Closed Cases | 0 |
-| Average Confidence | 89.6% |
-| Total Evidence | 96,664 |
-| Total Indicators | 63,480 |
+| Average Confidence | 89.5% |
+| Total Evidence | 96,714 |
+| Total Indicators | 63,495 |
 
 ### Recent Investigations
 
 | Case | Classification | Severity |
 |------|----------------|----------|
+| BID-2026-7240 | Biomedical Infrastructure Investigation | MODERATE |
 | BID-2026-9730 | Biomedical Infrastructure Investigation | MODERATE |
 | BID-2026-4760 | Unauthorized Research System Access | MODERATE |
 | BID-2026-6717 | Research Facility Intrusion Investigation | HIGH |
 | BID-2026-2801 | Laboratory Access Control Investigation | HIGH |
-| BID-2026-6513 | Biomedical Infrastructure Investigation | CRITICAL |
 
 </details>
 

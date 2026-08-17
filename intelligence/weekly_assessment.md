@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-9730
+Case ID: BID-2026-7240
 
 Operation: Coordinated Biomedical Systems Intrusion
 
 Classification: Biomedical Infrastructure Investigation
 
-Threat Family: Credential Misuse
+Threat Family: Evidence Repository Manipulation
 
-Current Status: Evidence Collection
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ELEVATED
 
 Risk Score:
-54
+56
 
 Confidence:
-89%
+84%
 
 Affected Assets:
-16
+19
 
 Evidence Collected:
 50
 
 Indicators Recorded:
-16
+15
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-BioDefense Task Force
+Analyst Team Bravo
 
 Date:
 
-2026-08-16
+2026-08-17
