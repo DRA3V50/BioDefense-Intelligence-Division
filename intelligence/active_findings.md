@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-7240
+BID-2026-1008
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,7 +12,7 @@ Classification:
 Biomedical Infrastructure Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Protected Research Data Exfiltration
 
 Severity:
 MODERATE
@@ -26,7 +26,7 @@ ELEVATED
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
@@ -34,31 +34,31 @@ No destructive malware activity has been identified at this stage of the investi
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-19
+8
 
 Evidence Collected:
-50
+80
 
 Indicators Identified:
-15
+44
 
 Analyst Confidence:
-84%
+83%
 
 Containment Phase:
 Operational Recovery
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Delta

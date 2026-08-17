@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7240
+BID-2026-1008
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,7 +12,7 @@ Classification:
 Biomedical Infrastructure Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Protected Research Data Exfiltration
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Intelligence Analysis
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Research Data Repository
 
 Device:
-Laboratory Information Server
+Clinical Data Server
 
 Vendor:
-Lenovo
+Cisco
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-123
+124
 
 Evidence Collected:
-50
+80
 
 Indicators Identified:
-15
+44
 
 Affected Assets:
-19
+8
 
 Confidence:
-84%
+83%
 
 Risk Score:
-56
+43
 
 ---
 

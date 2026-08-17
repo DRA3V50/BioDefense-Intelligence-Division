@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Evidence Repository Manipulation
+Protected Research Data Exfiltration
 
 ---
 
 ## Primary Alias
-Umbra Bio
+Vector-9
 
 ---
 
 ## Attribution
-Unknown
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-High
+Nation-State Level
 
 ---
 
 ## Confidence
-84%
+83%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
+- Supply Chain Compromise
 - Research Data Exfiltration
-- Laboratory Network Reconnaissance
 - Credential Abuse
+- Encrypted Data Staging
 - Biosecurity System Tampering
-- Laboratory Control System Manipulation
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Delta
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 

@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-7240
+BID-2026-1008
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,29 +12,29 @@ Classification:
 Biomedical Infrastructure Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Protected Research Data Exfiltration
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Ashcroft Biomedical Center
 
 Platform:
-Genome Sequencing Environment
+Research Data Repository
 
 Device:
-Laboratory Information Server
+Clinical Data Server
 
 Vendor:
-Lenovo
+Cisco
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
-Containment Network
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Isolated From Production
 
 Priority:
 ELEVATED
 
 Confidence:
-84%
+83%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Evidence indicates unauthorized access to restricted research resources.

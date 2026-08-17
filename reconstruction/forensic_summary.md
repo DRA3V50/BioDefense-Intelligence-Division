@@ -4,10 +4,10 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7240 |
+| Case ID | BID-2026-1008 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Evidence Repository Manipulation |
+| Threat Family | Protected Research Data Exfiltration |
 | Severity | MODERATE |
 | Status | Intelligence Analysis |
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Laboratory Information Server |
-| Vendor | Lenovo |
-| Security Zone | Containment Network |
+| Platform | Research Data Repository |
+| Device | Clinical Data Server |
+| Vendor | Cisco |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 56 |
-| Confidence | 84% |
-| Evidence Collected | 50 |
-| Indicators Identified | 15 |
-| Affected Assets | 19 |
+| Risk Score | 43 |
+| Confidence | 83% |
+| Evidence Collected | 80 |
+| Indicators Identified | 44 |
+| Affected Assets | 8 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**Analyst Team Delta**
 
 ---
 
