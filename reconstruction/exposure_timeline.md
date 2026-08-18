@@ -4,18 +4,18 @@
 ## 2026-08-18
 
 ### Case Opened
-Case ID: BID-2026-9800
+Case ID: BID-2026-8887
 
 ### Classification
-Supply Chain Security Investigation
+Digital Evidence Reconstruction Investigation
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Field Coordination
+Monitoring
 
 ### Severity
-MODERATE
+HIGH
 
 ---

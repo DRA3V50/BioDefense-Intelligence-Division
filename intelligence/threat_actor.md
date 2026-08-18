@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Research Workstation Compromise
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Silent Culture
 
 ---
 
 ## Attribution
-International Infrastructure
+Unknown
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-91%
+95%
 
 ---
 
 ## Observed Techniques
 - Phishing
+- Concealed Internal Movement
+- Credential Abuse
+- Biosecurity System Tampering
+- Laboratory Data Manipulation
 - Laboratory Network Reconnaissance
-- Research Data Exfiltration
-- Covert Remote Access Tooling
-- Insider Access Abuse
-- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+BioDefense Task Force
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Supply Chain Security Investigation
+Digital Evidence Reconstruction Investigation
 
 ---
 

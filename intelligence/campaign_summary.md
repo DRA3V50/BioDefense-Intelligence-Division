@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9800
+BID-2026-8887
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Research Workstation Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-Field Coordination
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Medical Research Laboratory
 
 Device:
-Clinical Data Server
+Specimen Tracking Terminal
 
 Vendor:
-Cisco
+Lenovo
 
 Security Zone:
 Evidence Network
@@ -41,22 +41,22 @@ Evidence Network
 ## Investigation Metrics
 
 Investigations Recorded:
-125
+126
 
 Evidence Collected:
-105
+201
 
 Indicators Identified:
-36
+52
 
 Affected Assets:
-16
+12
 
 Confidence:
-91%
+95%
 
 Risk Score:
-64
+78
 
 ---
 

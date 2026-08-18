@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-9800
+BID-2026-8887
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Research Workstation Compromise
 
 ---
 
@@ -22,16 +22,16 @@ Facility:
 National Pathogen Research Facility
 
 Platform:
-Laboratory Control Network
+Medical Research Laboratory
 
 Device:
-Clinical Data Server
+Specimen Tracking Terminal
 
 Vendor:
-Cisco
+Lenovo
 
 Operating System:
-Hardened Research Appliance OS
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
-ELEVATED
+HIGH
 
 Confidence:
-91%
+95%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Bravo
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.

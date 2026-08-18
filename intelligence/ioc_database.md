@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-9800
+BID-2026-8887
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Digital Evidence Reconstruction Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
 | Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| System Log | Unexpected privilege escalation recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -28,23 +28,23 @@ Supply Chain Security Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-105
+201
 
 Indicators Reviewed:
-36
+52
 
 Risk Score:
-64
+78
 
 Confidence:
-91%
+95%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+BioDefense Task Force
 
 Current Status:
 
-Field Coordination
+Monitoring

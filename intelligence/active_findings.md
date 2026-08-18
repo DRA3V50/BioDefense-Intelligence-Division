@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-9800
+BID-2026-8887
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Digital Evidence Reconstruction Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Research Workstation Compromise
 
 Severity:
-MODERATE
+HIGH
 
 Priority:
-ELEVATED
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-16
+12
 
 Evidence Collected:
-105
+201
 
 Indicators Identified:
-36
+52
 
 Analyst Confidence:
-91%
+95%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 # Operational Status
 
 Current Status:
-Field Coordination
+Monitoring
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Bravo
+BioDefense Task Force

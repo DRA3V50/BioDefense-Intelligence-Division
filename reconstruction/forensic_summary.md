@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9800 |
+| Case ID | BID-2026-8887 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Supply Chain Security Investigation |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | MODERATE |
-| Status | Field Coordination |
+| Classification | Digital Evidence Reconstruction Investigation |
+| Threat Family | Research Workstation Compromise |
+| Severity | HIGH |
+| Status | Monitoring |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Clinical Data Server |
-| Vendor | Cisco |
+| Platform | Medical Research Laboratory |
+| Device | Specimen Tracking Terminal |
+| Vendor | Lenovo |
 | Security Zone | Evidence Network |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 64 |
-| Confidence | 91% |
-| Evidence Collected | 105 |
-| Indicators Identified | 36 |
-| Affected Assets | 16 |
+| Risk Score | 78 |
+| Confidence | 95% |
+| Evidence Collected | 201 |
+| Indicators Identified | 52 |
+| Affected Assets | 12 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Monitoring**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 
