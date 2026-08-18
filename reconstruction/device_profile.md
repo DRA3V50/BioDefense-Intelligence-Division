@@ -3,26 +3,26 @@
 ## Investigation
 
 Case ID:
-BID-2026-1008
+BID-2026-9800
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+National Pathogen Research Facility
 
 Platform:
-Research Data Repository
+Laboratory Control Network
 
 Device:
 Clinical Data Server
@@ -34,7 +34,7 @@ Operating System:
 Hardened Research Appliance OS
 
 Security Zone:
-Federal Operations
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
 ELEVATED
 
 Confidence:
-83%
+91%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.

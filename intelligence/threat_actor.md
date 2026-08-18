@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Protected Research Data Exfiltration
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Vector-9
+Dark Sequence
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+International Infrastructure
 
 ---
 
@@ -21,29 +21,29 @@ Espionage Against Research Programs
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Moderate
 
 ---
 
 ## Confidence
-83%
+91%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
+- Phishing
+- Laboratory Network Reconnaissance
 - Research Data Exfiltration
-- Credential Abuse
-- Encrypted Data Staging
-- Biosecurity System Tampering
+- Covert Remote Access Tooling
+- Insider Access Abuse
 - Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Bravo
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biomedical Infrastructure Investigation
+Supply Chain Security Investigation
 
 ---
 
 ## Last Updated
-2026-08-17
+2026-08-18

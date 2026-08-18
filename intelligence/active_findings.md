@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-1008
+BID-2026-9800
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Research Data Integrity Manipulation
 
 Severity:
 MODERATE
@@ -26,15 +26,15 @@ ELEVATED
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
@@ -42,23 +42,23 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-8
+16
 
 Evidence Collected:
-80
+105
 
 Indicators Identified:
-44
+36
 
 Analyst Confidence:
-83%
+91%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo

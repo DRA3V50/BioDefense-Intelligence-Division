@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-17
+## 2026-08-18
 
 ### Case Opened
-Case ID: BID-2026-1008
+Case ID: BID-2026-9800
 
 ### Classification
-Biomedical Infrastructure Investigation
+Supply Chain Security Investigation
 
 ### Initial Assessment
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
-Intelligence Analysis
+Field Coordination
 
 ### Severity
 MODERATE

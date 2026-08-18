@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1008 |
+| Case ID | BID-2026-9800 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Protected Research Data Exfiltration |
+| Classification | Supply Chain Security Investigation |
+| Threat Family | Research Data Integrity Manipulation |
 | Severity | MODERATE |
-| Status | Intelligence Analysis |
+| Status | Field Coordination |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Research Data Repository |
+| Platform | Laboratory Control Network |
 | Device | Clinical Data Server |
 | Vendor | Cisco |
-| Network Zone | Federal Operations |
+| Network Zone | Evidence Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 43 |
-| Confidence | 83% |
-| Evidence | 80 |
-| Indicators | 44 |
-| Affected Assets | 8 |
+| Risk Score | 64 |
+| Confidence | 91% |
+| Evidence | 105 |
+| Indicators | 36 |
+| Affected Assets | 16 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.

@@ -3,29 +3,29 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1008
+BID-2026-9800
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Supply Chain Security Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Research Data Integrity Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Research Data Repository
+Laboratory Control Network
 
 Device:
 Clinical Data Server
@@ -34,29 +34,29 @@ Vendor:
 Cisco
 
 Security Zone:
-Federal Operations
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-124
+125
 
 Evidence Collected:
-80
+105
 
 Indicators Identified:
-44
+36
 
 Affected Assets:
-8
+16
 
 Confidence:
-83%
+91%
 
 Risk Score:
-43
+64
 
 ---
 

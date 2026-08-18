@@ -2,45 +2,45 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-08-17 14:24 UTC
+**Generated:** 2026-08-18 02:52 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1008
+**Case ID:** BID-2026-9800
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Classification:** Biomedical Infrastructure Investigation
+**Classification:** Supply Chain Security Investigation
 
-**Threat Family:** Protected Research Data Exfiltration
+**Threat Family:** Research Data Integrity Manipulation
 
 **Severity:** MODERATE
 
 **Priority:** ELEVATED
 
-**Risk Score:** 43
+**Risk Score:** 64
 
-**Assessment Confidence:** 83%
+**Assessment Confidence:** 91%
 
 **Containment Phase:** Operational Recovery
 
-**Affected Platform:** Research Data Repository
+**Affected Platform:** Laboratory Control Network
 
-**Affected Assets:** 8
+**Affected Assets:** 16
 
 ---
 
 ## Executive Assessment
 
-The active Biomedical Infrastructure Investigation concerns suspected Protected Research Data Exfiltration. The calculated overall bioterror threat score is **92/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Supply Chain Security Investigation concerns suspected Research Data Integrity Manipulation. The calculated overall bioterror threat score is **96/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** CRITICAL
 
-**Overall Bioterror Threat Score:** 92/100
+**Overall Bioterror Threat Score:** 96/100
 
 ---
 
@@ -52,16 +52,16 @@ The active Biomedical Infrastructure Investigation concerns suspected Protected 
 | Threat Actor Capability | 100/100 | CRITICAL |
 | Biological Target Value | 100/100 | CRITICAL |
 | Laboratory and Specimen Impact | 100/100 | CRITICAL |
-| Public-Health Risk | 84/100 | HIGH |
+| Public-Health Risk | 100/100 | CRITICAL |
 | Cyber-to-Physical Escalation | 100/100 | CRITICAL |
-| Attribution Confidence | 91/100 | HIGH |
-| Containment Confidence | 92/100 | HIGH |
+| Attribution Confidence | 95/100 | HIGH |
+| Containment Confidence | 96/100 | HIGH |
 
 ---
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Protected Research Data Exfiltration**.
+- The investigation currently centers on **Research Data Integrity Manipulation**.
 - The targeted environment has high intelligence or operational value because it supports protected laboratory, biomedical, genomic, or specimen-related activity.
 - The available evidence indicates a capable actor with access sufficient to affect multiple cyber-biosecurity systems or data sources.
 - The evidence supports elevated public-health review, but direct biological impact still requires validated non-cyber evidence.
@@ -72,27 +72,27 @@ The active Biomedical Infrastructure Investigation concerns suspected Protected 
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 80
+**Evidence Records Reviewed:** 105
 
-**Correlation Records Reviewed:** 80
+**Correlation Records Reviewed:** 105
 
-**Integrity-Verified Records:** 80
+**Integrity-Verified Records:** 105
 
-**Pending Analyst Review:** 80
+**Pending Analyst Review:** 105
 
 ### Priority Findings
 
-- **Known Threat Actor Indicator:** 11
-- **Command-and-Control Communication:** 10
+- **Credential Misuse:** 15
+- **Analyst Intelligence Assessment:** 13
+- **Laboratory System Modification:** 10
+- **Laboratory Information System Anomaly:** 10
+- **Known Threat Actor Indicator:** 9
+- **Biosecurity Policy Violation:** 9
+- **Suspicious Network Activity:** 8
 - **Unauthorized Facility Access:** 7
-- **Laboratory Information System Anomaly:** 7
-- **Analyst Intelligence Assessment:** 7
-- **Research Workstation Compromise:** 7
-- **Biosecurity Policy Violation:** 6
-- **Suspicious Network Activity:** 6
-- **Credential Misuse:** 5
-- **Laboratory System Modification:** 5
-- **Containment Verification:** 5
+- **Containment Verification:** 7
+- **Command-and-Control Communication:** 7
+- **Research Workstation Compromise:** 6
 - **Research Data Integrity Anomaly:** 4
 
 ---
@@ -119,7 +119,7 @@ Analysts should determine whether cyber activity affected protected research rec
 
 ## Public-Health and Cyber-to-Physical Risk
 
-**Public-Health Risk:** 84/100 (HIGH)
+**Public-Health Risk:** 100/100 (CRITICAL)
 
 **Cyber-to-Physical Escalation:** 100/100 (CRITICAL)
 
@@ -129,9 +129,9 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 ## Attribution and Containment Confidence
 
-**Attribution Confidence:** 91/100 (HIGH)
+**Attribution Confidence:** 95/100 (HIGH)
 
-**Containment Confidence:** 92/100 (HIGH)
+**Containment Confidence:** 96/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -156,10 +156,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-1008/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-1008/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-1008/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-1008/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-9800/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-9800/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-9800/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-9800/forensic_summary.md)
 
 ---
 
