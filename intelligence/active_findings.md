@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-5842
+BID-2026-8627
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 Severity:
-CRITICAL
+MODERATE
 
 Priority:
-CRITICAL
+ELEVATED
 
 ---
 
@@ -26,19 +26,19 @@ CRITICAL
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
@@ -49,16 +49,16 @@ Evidence preservation procedures successfully secured affected systems for foren
 # Investigation Metrics
 
 Affected Assets:
-41
+16
 
 Evidence Collected:
-342
+103
 
 Indicators Identified:
-177
+19
 
 Analyst Confidence:
-92%
+89%
 
 Containment Phase:
 Operational Recovery
@@ -67,7 +67,7 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Alpha

@@ -2,45 +2,45 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-08-19 02:54 UTC
+**Generated:** 2026-08-19 14:29 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5842
+**Case ID:** BID-2026-8627
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Classification:** Biomedical Infrastructure Investigation
+**Classification:** Biological Research Intelligence Collection
 
-**Threat Family:** Specimen Tracking Manipulation
+**Threat Family:** Research Data Integrity Manipulation
 
-**Severity:** CRITICAL
+**Severity:** MODERATE
 
-**Priority:** CRITICAL
+**Priority:** ELEVATED
 
-**Risk Score:** 92
+**Risk Score:** 56
 
-**Assessment Confidence:** 92%
+**Assessment Confidence:** 89%
 
 **Containment Phase:** Operational Recovery
 
-**Affected Platform:** Biomedical Analysis Cluster
+**Affected Platform:** Genome Sequencing Environment
 
-**Affected Assets:** 41
+**Affected Assets:** 16
 
 ---
 
 ## Executive Assessment
 
-The active Biomedical Infrastructure Investigation concerns suspected Specimen Tracking Manipulation. The calculated overall bioterror threat score is **99/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Biological Research Intelligence Collection concerns suspected Research Data Integrity Manipulation. The calculated overall bioterror threat score is **96/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** CRITICAL
 
-**Overall Bioterror Threat Score:** 99/100
+**Overall Bioterror Threat Score:** 96/100
 
 ---
 
@@ -54,14 +54,14 @@ The active Biomedical Infrastructure Investigation concerns suspected Specimen T
 | Laboratory and Specimen Impact | 100/100 | CRITICAL |
 | Public-Health Risk | 100/100 | CRITICAL |
 | Cyber-to-Physical Escalation | 100/100 | CRITICAL |
-| Attribution Confidence | 96/100 | HIGH |
-| Containment Confidence | 96/100 | HIGH |
+| Attribution Confidence | 94/100 | HIGH |
+| Containment Confidence | 95/100 | HIGH |
 
 ---
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Specimen Tracking Manipulation**.
+- The investigation currently centers on **Research Data Integrity Manipulation**.
 - The targeted environment has high intelligence or operational value because it supports protected laboratory, biomedical, genomic, or specimen-related activity.
 - The available evidence indicates a capable actor with access sufficient to affect multiple cyber-biosecurity systems or data sources.
 - The evidence supports elevated public-health review, but direct biological impact still requires validated non-cyber evidence.
@@ -72,28 +72,28 @@ The active Biomedical Infrastructure Investigation concerns suspected Specimen T
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 342
+**Evidence Records Reviewed:** 103
 
-**Correlation Records Reviewed:** 342
+**Correlation Records Reviewed:** 103
 
-**Integrity-Verified Records:** 342
+**Integrity-Verified Records:** 103
 
-**Pending Analyst Review:** 342
+**Pending Analyst Review:** 103
 
 ### Priority Findings
 
-- **Analyst Intelligence Assessment:** 36
-- **Research Data Integrity Anomaly:** 34
-- **Command-and-Control Communication:** 32
-- **Credential Misuse:** 32
-- **Containment Verification:** 31
-- **Laboratory Information System Anomaly:** 28
-- **Research Workstation Compromise:** 27
-- **Biosecurity Policy Violation:** 26
-- **Known Threat Actor Indicator:** 26
-- **Unauthorized Facility Access:** 26
-- **Laboratory System Modification:** 22
-- **Suspicious Network Activity:** 22
+- **Laboratory Information System Anomaly:** 13
+- **Known Threat Actor Indicator:** 12
+- **Analyst Intelligence Assessment:** 11
+- **Research Data Integrity Anomaly:** 11
+- **Unauthorized Facility Access:** 10
+- **Containment Verification:** 9
+- **Biosecurity Policy Violation:** 9
+- **Laboratory System Modification:** 7
+- **Suspicious Network Activity:** 6
+- **Command-and-Control Communication:** 6
+- **Research Workstation Compromise:** 5
+- **Credential Misuse:** 4
 
 ---
 
@@ -129,9 +129,9 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 ## Attribution and Containment Confidence
 
-**Attribution Confidence:** 96/100 (HIGH)
+**Attribution Confidence:** 94/100 (HIGH)
 
-**Containment Confidence:** 96/100 (HIGH)
+**Containment Confidence:** 95/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -156,10 +156,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-5842/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-5842/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-5842/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-5842/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-8627/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-8627/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-8627/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-8627/forensic_summary.md)
 
 ---
 

@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Crimson Cell
+Vector-9
 
 ---
 
@@ -21,29 +21,29 @@ Research Data Theft
 ---
 
 ## Operational Sophistication
-Nation-State Level
+High
 
 ---
 
 ## Confidence
-92%
+89%
 
 ---
 
 ## Observed Techniques
-- Supply Chain Compromise
-- Research Data Exfiltration
-- Encrypted Data Staging
-- Laboratory Control System Manipulation
-- Command and Control
+- Web Application Exploitation
+- Laboratory Network Reconnaissance
 - Laboratory Data Manipulation
+- Insider Access Abuse
+- Credential Abuse
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Alpha
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 ---
 

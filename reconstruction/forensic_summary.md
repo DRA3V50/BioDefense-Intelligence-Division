@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5842 |
+| Case ID | BID-2026-8627 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biomedical Infrastructure Investigation |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | CRITICAL |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | MODERATE |
 | Status | Containment |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Biomedical Workstation |
-| Vendor | Red Hat |
-| Security Zone | Containment Network |
+| Platform | Genome Sequencing Environment |
+| Device | Network Security Appliance |
+| Vendor | HPE |
+| Security Zone | Protected Research Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 92 |
-| Confidence | 92% |
-| Evidence Collected | 342 |
-| Indicators Identified | 177 |
-| Affected Assets | 41 |
+| Risk Score | 56 |
+| Confidence | 89% |
+| Evidence Collected | 103 |
+| Indicators Identified | 19 |
+| Affected Assets | 16 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**CRITICAL**
+**ELEVATED**
 
 Recommended Action:
 

@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-5842
+BID-2026-8627
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Specimen Tracking Manipulation
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Federal Biosecurity Laboratory
 
 Platform:
-Biomedical Analysis Cluster
+Genome Sequencing Environment
 
 Device:
-Biomedical Workstation
+Network Security Appliance
 
 Vendor:
-Red Hat
+HPE
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
-Containment Network
+Protected Research Segment
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
-CRITICAL
+ELEVATED
 
 Confidence:
-92%
+89%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Alpha
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.

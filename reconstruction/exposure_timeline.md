@@ -4,18 +4,18 @@
 ## 2026-08-19
 
 ### Case Opened
-Case ID: BID-2026-5842
+Case ID: BID-2026-8627
 
 ### Classification
-Biomedical Infrastructure Investigation
+Biological Research Intelligence Collection
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
 Containment
 
 ### Severity
-CRITICAL
+MODERATE
 
 ---
