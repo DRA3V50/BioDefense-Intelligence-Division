@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-8887
+BID-2026-5842
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Research Workstation Compromise
+Specimen Tracking Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
-Medical Research Laboratory
+Biomedical Analysis Cluster
 
 Device:
-Specimen Tracking Terminal
+Biomedical Workstation
 
 Vendor:
-Lenovo
+Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
-Evidence Network
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Active Investigation
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-95%
+92%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.

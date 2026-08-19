@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8887
+Case ID: BID-2026-5842
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Digital Evidence Reconstruction Investigation
+Classification: Biomedical Infrastructure Investigation
 
-Threat Family: Research Workstation Compromise
+Threat Family: Specimen Tracking Manipulation
 
-Current Status: Monitoring
+Current Status: Containment
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+No confirmed attribution has been established during the current investigation.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+CRITICAL
 
 Risk Score:
-78
+92
 
 Confidence:
-95%
+92%
 
 Affected Assets:
-12
+41
 
 Evidence Collected:
-201
+342
 
 Indicators Recorded:
-52
+177
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-BioDefense Task Force
+Analyst Team Delta
 
 Date:
 
-2026-08-18
+2026-08-19

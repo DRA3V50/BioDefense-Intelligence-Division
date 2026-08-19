@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8887
+BID-2026-5842
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Biomedical Infrastructure Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
-| Device | Protected workstation entered evidence preservation mode |
-| Evidence | Acquired forensic image verified using SHA-256 |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -28,23 +28,23 @@ Digital Evidence Reconstruction Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-201
+342
 
 Indicators Reviewed:
-52
+177
 
 Risk Score:
-78
+92
 
 Confidence:
-95%
+92%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Delta
 
 Current Status:
 
-Monitoring
+Containment

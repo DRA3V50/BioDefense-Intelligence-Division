@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8887 |
+| Case ID | BID-2026-5842 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Digital Evidence Reconstruction Investigation |
-| Threat Family | Research Workstation Compromise |
-| Severity | HIGH |
-| Status | Monitoring |
+| Classification | Biomedical Infrastructure Investigation |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | CRITICAL |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Specimen Tracking Terminal |
-| Vendor | Lenovo |
-| Security Zone | Evidence Network |
+| Platform | Biomedical Analysis Cluster |
+| Device | Biomedical Workstation |
+| Vendor | Red Hat |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 78 |
-| Confidence | 95% |
-| Evidence Collected | 201 |
-| Indicators Identified | 52 |
-| Affected Assets | 12 |
+| Risk Score | 92 |
+| Confidence | 92% |
+| Evidence Collected | 342 |
+| Indicators Identified | 177 |
+| Affected Assets | 41 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**Containment**
 
 Priority:
 
-**HIGH**
+**CRITICAL**
 
 Recommended Action:
 

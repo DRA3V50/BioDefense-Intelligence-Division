@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8887
+BID-2026-5842
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Digital Evidence Reconstruction Investigation
+Biomedical Infrastructure Investigation
 
 Threat Family:
-Research Workstation Compromise
+Specimen Tracking Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Medical Research Laboratory
+Biomedical Analysis Cluster
 
 Device:
-Specimen Tracking Terminal
+Biomedical Workstation
 
 Vendor:
-Lenovo
+Red Hat
 
 Security Zone:
-Evidence Network
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-126
+127
 
 Evidence Collected:
-201
+342
 
 Indicators Identified:
-52
+177
 
 Affected Assets:
-12
+41
 
 Confidence:
-95%
+92%
 
 Risk Score:
-78
+92
 
 ---
 

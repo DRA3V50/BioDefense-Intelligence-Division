@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Workstation Compromise
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Silent Culture
+Crimson Cell
 
 ---
 
 ## Attribution
-Unknown
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Research Data Theft
 
 ---
 
@@ -26,24 +26,24 @@ Nation-State Level
 ---
 
 ## Confidence
-95%
+92%
 
 ---
 
 ## Observed Techniques
-- Phishing
-- Concealed Internal Movement
-- Credential Abuse
-- Biosecurity System Tampering
+- Supply Chain Compromise
+- Research Data Exfiltration
+- Encrypted Data Staging
+- Laboratory Control System Manipulation
+- Command and Control
 - Laboratory Data Manipulation
-- Laboratory Network Reconnaissance
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Analyst Team Delta
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Digital Evidence Reconstruction Investigation
+Biomedical Infrastructure Investigation
 
 ---
 
 ## Last Updated
-2026-08-18
+2026-08-19
