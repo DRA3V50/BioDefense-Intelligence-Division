@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7168 |
+| Case ID | BID-2026-2218 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Credential Misuse |
-| Severity | CRITICAL |
-| Status | Open |
+| Classification | Supply Chain Security Investigation |
+| Threat Family | Clinical Research Data Manipulation |
+| Severity | HIGH |
+| Status | Containment |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Clinical Data Server |
-| Vendor | Lenovo |
+| Platform | Evidence Processing Network |
+| Device | Specimen Tracking Terminal |
+| Vendor | Red Hat |
 | Security Zone | Federal Operations |
 
 ---
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 85 |
-| Confidence | 91% |
-| Evidence Collected | 293 |
-| Indicators Identified | 78 |
-| Affected Assets | 51 |
+| Risk Score | 80 |
+| Confidence | 90% |
+| Evidence Collected | 166 |
+| Indicators Identified | 37 |
+| Affected Assets | 37 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**Containment**
 
 Priority:
 
-**CRITICAL**
+**HIGH**
 
 Recommended Action:
 

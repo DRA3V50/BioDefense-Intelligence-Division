@@ -153,3 +153,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-08-19,BID-2026-5842,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,CRITICAL,CRITICAL,92,92,342,177,41,Biomedical Analysis Cluster,Red Hat,Containment Network,Analyst Team Delta,Containment
 2026-08-19,BID-2026-8627,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,MODERATE,ELEVATED,56,89,103,19,16,Genome Sequencing Environment,HPE,Protected Research Segment,Analyst Team Alpha,Containment
 2026-08-20,BID-2026-7168,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,CRITICAL,CRITICAL,85,91,293,78,51,Genome Sequencing Environment,Lenovo,Federal Operations,Analyst Team Delta,Open
+2026-08-20,BID-2026-2218,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,HIGH,HIGH,80,90,166,37,37,Evidence Processing Network,Red Hat,Federal Operations,Analyst Team Delta,Containment

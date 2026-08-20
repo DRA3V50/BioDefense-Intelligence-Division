@@ -4,18 +4,18 @@
 ## 2026-08-20
 
 ### Case Opened
-Case ID: BID-2026-7168
+Case ID: BID-2026-2218
 
 ### Classification
-Medical Device Security Assessment
+Supply Chain Security Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
-Open
+Containment
 
 ### Severity
-CRITICAL
+HIGH
 
 ---

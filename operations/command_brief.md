@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-20 02:53 UTC
+**Generated:** 2026-08-20 14:33 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** CRITICAL
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-7168
+**Case ID:** BID-2026-2218
 
-**Classification:** Medical Device Security Assessment
+**Classification:** Supply Chain Security Investigation
 
-**Severity:** CRITICAL
+**Severity:** HIGH
 
-**Threat Family:** Credential Misuse
+**Threat Family:** Clinical Research Data Manipulation
 
-**Confidence:** 91%
+**Confidence:** 90%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **293**
+Evidence Collected: **166**
 
-Indicators: **78**
+Indicators: **37**
 
-Priority: **CRITICAL**
+Priority: **HIGH**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Analyst Team Delta**
 
 Initial Access:
-**Web Application Exploitation**
+**Phishing**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**129**
+**130**
 
 Confirmed Intrusions:
 **17**
 
 Total Evidence:
-**97838**
+**98004**
 
 Total Indicators:
-**63901**
+**63938**
 
 ---
 
 ## Operational Highlights
 
-- 293 evidence items are associated with the active investigation.
-- 78 indicators are currently linked to the case.
-- Containment remains at **CRITICAL**.
-- Analyst confidence is **91%**.
-- Current investigation priority is **CRITICAL**.
+- 166 evidence items are associated with the active investigation.
+- 37 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **90%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

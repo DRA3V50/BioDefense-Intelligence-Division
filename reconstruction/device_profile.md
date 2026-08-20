@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-7168
+BID-2026-2218
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Supply Chain Security Investigation
 
 Threat Family:
-Credential Misuse
+Clinical Research Data Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
-Clinical Data Server
+Specimen Tracking Terminal
 
 Vendor:
-Lenovo
+Red Hat
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Federal Operations
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
-CRITICAL
+HIGH
 
 Confidence:
-91%
+90%
 
 ---
 

@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7168
+BID-2026-2218
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Supply Chain Security Investigation
 
 Threat Family:
-Credential Misuse
+Clinical Research Data Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-Open
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
-Clinical Data Server
+Specimen Tracking Terminal
 
 Vendor:
-Lenovo
+Red Hat
 
 Security Zone:
 Federal Operations
@@ -41,22 +41,22 @@ Federal Operations
 ## Investigation Metrics
 
 Investigations Recorded:
-129
+130
 
 Evidence Collected:
-293
+166
 
 Indicators Identified:
-78
+37
 
 Affected Assets:
-51
+37
 
 Confidence:
-91%
+90%
 
 Risk Score:
-85
+80
 
 ---
 

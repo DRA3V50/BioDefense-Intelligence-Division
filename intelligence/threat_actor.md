@@ -1,42 +1,42 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Clinical Research Data Manipulation
 
 ---
 
 ## Primary Alias
-Project Chimera
+Umbra Bio
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Research Data Theft
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-91%
+90%
 
 ---
 
 ## Observed Techniques
-- Web Application Exploitation
-- Privilege Escalation
-- Credential Abuse
-- Covert Remote Access Tooling
+- Phishing
+- Supply Chain Compromise
+- Laboratory Data Manipulation
+- Laboratory Network Reconnaissance
 - Command and Control
-- Lateral Movement
+- Credential Abuse
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Supply Chain Security Investigation
 
 ---
 

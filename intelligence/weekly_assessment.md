@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7168
+Case ID: BID-2026-2218
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Medical Device Security Assessment
+Classification: Supply Chain Security Investigation
 
-Threat Family: Credential Misuse
+Threat Family: Clinical Research Data Manipulation
 
-Current Status: Open
+Current Status: Containment
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Evidence correlation remains in progress across collected artifacts.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+HIGH
 
 Risk Score:
-85
+80
 
 Confidence:
-91%
+90%
 
 Affected Assets:
-51
+37
 
 Evidence Collected:
-293
+166
 
 Indicators Recorded:
-78
+37
 
 ---
 
