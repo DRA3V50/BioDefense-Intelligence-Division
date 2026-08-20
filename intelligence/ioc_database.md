@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8627
+BID-2026-7168
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Device | Protected workstation entered evidence preservation mode |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -28,23 +28,23 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-103
+293
 
 Indicators Reviewed:
-19
+78
 
 Risk Score:
-56
+85
 
 Confidence:
-89%
+91%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Delta
 
 Current Status:
 
-Containment
+Open

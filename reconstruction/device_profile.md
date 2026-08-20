@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-8627
+BID-2026-7168
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Medical Device Security Assessment
 
 Threat Family:
-Research Data Integrity Manipulation
+Credential Misuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
 Genome Sequencing Environment
 
 Device:
-Network Security Appliance
+Clinical Data Server
 
 Vendor:
-HPE
+Lenovo
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
-Protected Research Segment
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
-ELEVATED
+CRITICAL
 
 Confidence:
-89%
+91%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Evidence indicates unauthorized access to restricted research resources.

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8627 |
+| Case ID | BID-2026-7168 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | MODERATE |
-| Status | Containment |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Credential Misuse |
+| Severity | CRITICAL |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Genome Sequencing Environment |
-| Device | Network Security Appliance |
-| Vendor | HPE |
-| Network Zone | Protected Research Segment |
+| Device | Clinical Data Server |
+| Vendor | Lenovo |
+| Network Zone | Federal Operations |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 56 |
-| Confidence | 89% |
-| Evidence | 103 |
-| Indicators | 19 |
-| Affected Assets | 16 |
+| Risk Score | 85 |
+| Confidence | 91% |
+| Evidence | 293 |
+| Indicators | 78 |
+| Affected Assets | 51 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.

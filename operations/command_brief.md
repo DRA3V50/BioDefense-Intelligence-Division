@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-19 14:29 UTC
+**Generated:** 2026-08-20 02:53 UTC
 
 ---
 
@@ -12,44 +12,44 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** CRITICAL
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8627
+**Case ID:** BID-2026-7168
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Medical Device Security Assessment
 
-**Severity:** MODERATE
+**Severity:** CRITICAL
 
-**Threat Family:** Research Data Integrity Manipulation
+**Threat Family:** Credential Misuse
 
-**Confidence:** 89%
+**Confidence:** 91%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **103**
+Evidence Collected: **293**
 
-Indicators: **19**
+Indicators: **78**
 
-Priority: **ELEVATED**
+Priority: **CRITICAL**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Alpha**
+**Analyst Team Delta**
 
 Initial Access:
 **Web Application Exploitation**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**128**
+**129**
 
 Confirmed Intrusions:
-**16**
+**17**
 
 Total Evidence:
-**97545**
+**97838**
 
 Total Indicators:
-**63823**
+**63901**
 
 ---
 
 ## Operational Highlights
 
-- 103 evidence items are associated with the active investigation.
-- 19 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **89%**.
-- Current investigation priority is **ELEVATED**.
+- 293 evidence items are associated with the active investigation.
+- 78 indicators are currently linked to the case.
+- Containment remains at **CRITICAL**.
+- Analyst confidence is **91%**.
+- Current investigation priority is **CRITICAL**.
 
 ---
 

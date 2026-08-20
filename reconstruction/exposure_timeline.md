@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-19
+## 2026-08-20
 
 ### Case Opened
-Case ID: BID-2026-8627
+Case ID: BID-2026-7168
 
 ### Classification
-Biological Research Intelligence Collection
+Medical Device Security Assessment
 
 ### Initial Assessment
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Containment
+Open
 
 ### Severity
-MODERATE
+CRITICAL
 
 ---

@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8627
+BID-2026-7168
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Medical Device Security Assessment
 
 Threat Family:
-Research Data Integrity Manipulation
+Credential Misuse
 
 Current Phase:
 Operational Recovery
 
 Status:
-Containment
+Open
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Genome Sequencing Environment
 
 Device:
-Network Security Appliance
+Clinical Data Server
 
 Vendor:
-HPE
+Lenovo
 
 Security Zone:
-Protected Research Segment
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-128
+129
 
 Evidence Collected:
-103
+293
 
 Indicators Identified:
-19
+78
 
 Affected Assets:
-16
+51
 
 Confidence:
-89%
+91%
 
 Risk Score:
-56
+85
 
 ---
 

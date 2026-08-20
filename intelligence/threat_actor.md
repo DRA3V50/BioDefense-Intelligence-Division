@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Credential Misuse
 
 ---
 
 ## Primary Alias
-Vector-9
+Project Chimera
 
 ---
 
@@ -16,7 +16,7 @@ Foreign Intelligence Interest
 ---
 
 ## Observed Motivation
-Research Data Theft
+Medical Infrastructure Disruption
 
 ---
 
@@ -26,24 +26,24 @@ High
 ---
 
 ## Confidence
-89%
+91%
 
 ---
 
 ## Observed Techniques
 - Web Application Exploitation
-- Laboratory Network Reconnaissance
-- Laboratory Data Manipulation
-- Insider Access Abuse
-- Credential Abuse
 - Privilege Escalation
+- Credential Abuse
+- Covert Remote Access Tooling
+- Command and Control
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Delta
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Medical Device Security Assessment
 
 ---
 
 ## Last Updated
-2026-08-19
+2026-08-20
