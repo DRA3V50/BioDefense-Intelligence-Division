@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-20
+## 2026-08-21
 
 ### Case Opened
-Case ID: BID-2026-2218
+Case ID: BID-2026-5945
 
 ### Classification
-Supply Chain Security Investigation
+Laboratory Security Breach Investigation
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
-Containment
+Evidence Collection
 
 ### Severity
-HIGH
+MODERATE
 
 ---

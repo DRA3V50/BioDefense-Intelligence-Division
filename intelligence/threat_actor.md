@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Clinical Research Data Manipulation
+Specimen Tracking Manipulation
 
 ---
 
 ## Primary Alias
-Umbra Bio
+Ghost Genome
 
 ---
 
 ## Attribution
-Multiple Regions
+Foreign Intelligence Interest
 
 ---
 
@@ -26,24 +26,24 @@ Moderate
 ---
 
 ## Confidence
-90%
+88%
 
 ---
 
 ## Observed Techniques
-- Phishing
+- Exposed Remote Service
 - Supply Chain Compromise
-- Laboratory Data Manipulation
-- Laboratory Network Reconnaissance
+- Lateral Movement
+- Privilege Escalation
+- Research Data Exfiltration
 - Command and Control
-- Credential Abuse
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Supply Chain Security Investigation
+Laboratory Security Breach Investigation
 
 ---
 
 ## Last Updated
-2026-08-20
+2026-08-21

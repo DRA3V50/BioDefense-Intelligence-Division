@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-2218
+BID-2026-5945
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Clinical Research Data Manipulation
+Specimen Tracking Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
-Evidence Processing Network
+Laboratory Control Network
 
 Device:
-Specimen Tracking Terminal
+Medical Device Gateway
 
 Vendor:
-Red Hat
+HPE
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Federal Operations
+Biosecurity Segment
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Awaiting Laboratory Review
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-90%
+88%
 
 ---
 

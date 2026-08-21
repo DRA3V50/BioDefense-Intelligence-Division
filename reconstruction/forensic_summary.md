@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2218 |
+| Case ID | BID-2026-5945 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Supply Chain Security Investigation |
-| Threat Family | Clinical Research Data Manipulation |
-| Severity | HIGH |
-| Status | Containment |
+| Classification | Laboratory Security Breach Investigation |
+| Threat Family | Specimen Tracking Manipulation |
+| Severity | MODERATE |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Specimen Tracking Terminal |
-| Vendor | Red Hat |
-| Security Zone | Federal Operations |
+| Platform | Laboratory Control Network |
+| Device | Medical Device Gateway |
+| Vendor | HPE |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 80 |
-| Confidence | 90% |
-| Evidence Collected | 166 |
-| Indicators Identified | 37 |
-| Affected Assets | 37 |
+| Risk Score | 42 |
+| Confidence | 88% |
+| Evidence Collected | 109 |
+| Indicators Identified | 10 |
+| Affected Assets | 19 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**Evidence Collection**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

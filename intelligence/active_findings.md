@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-2218
+BID-2026-5945
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Clinical Research Data Manipulation
+Specimen Tracking Manipulation
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,15 +26,15 @@ HIGH
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
@@ -42,23 +42,23 @@ Analysts identified abnormal authentication activity originating from restricted
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-37
+19
 
 Evidence Collected:
-166
+109
 
 Indicators Identified:
-37
+10
 
 Analyst Confidence:
-90%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 # Operational Status
 
 Current Status:
-Containment
+Evidence Collection
 
 Recommended Action:
 

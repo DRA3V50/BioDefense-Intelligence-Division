@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-20 14:33 UTC
+**Generated:** 2026-08-21 02:58 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-2218
+**Case ID:** BID-2026-5945
 
-**Classification:** Supply Chain Security Investigation
+**Classification:** Laboratory Security Breach Investigation
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
-**Threat Family:** Clinical Research Data Manipulation
+**Threat Family:** Specimen Tracking Manipulation
 
-**Confidence:** 90%
+**Confidence:** 88%
 
 ---
 
 ## Investigation Summary
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **166**
+Evidence Collected: **109**
 
-Indicators: **37**
+Indicators: **10**
 
-Priority: **HIGH**
+Priority: **ELEVATED**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Analyst Team Delta**
 
 Initial Access:
-**Phishing**
+**Exposed Remote Service**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**130**
+**131**
 
 Confirmed Intrusions:
 **17**
 
 Total Evidence:
-**98004**
+**98113**
 
 Total Indicators:
-**63938**
+**63948**
 
 ---
 
 ## Operational Highlights
 
-- 166 evidence items are associated with the active investigation.
-- 37 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **90%**.
-- Current investigation priority is **HIGH**.
+- 109 evidence items are associated with the active investigation.
+- 10 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **88%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

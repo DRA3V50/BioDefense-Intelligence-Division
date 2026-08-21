@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-2218
+BID-2026-5945
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Laboratory Security Breach Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
-| PowerShell | Encoded administrative command execution detected |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Identity | Credential reuse detected across isolated research segments |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| System Log | Unexpected privilege escalation recorded |
+| Device | Protected workstation entered evidence preservation mode |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,16 +28,16 @@ Supply Chain Security Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-166
+109
 
 Indicators Reviewed:
-37
+10
 
 Risk Score:
-80
+42
 
 Confidence:
-90%
+88%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-Containment
+Evidence Collection
