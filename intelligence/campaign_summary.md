@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5945
+BID-2026-1480
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Research Data Integrity Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Unauthorized Laboratory Network Access
 
 Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Laboratory Control Network
+Research Data Repository
 
 Device:
-Medical Device Gateway
+Clinical Data Server
 
 Vendor:
-HPE
+Microsoft
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-131
+132
 
 Evidence Collected:
-109
+25
 
 Indicators Identified:
 10
 
 Affected Assets:
-19
+7
 
 Confidence:
-88%
+82%
 
 Risk Score:
-42
+30
 
 ---
 

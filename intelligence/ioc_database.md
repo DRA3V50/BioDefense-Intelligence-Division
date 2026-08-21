@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-5945
+BID-2026-1480
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Research Data Integrity Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Infrastructure | Firewall policy deviation identified |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | System Log | Unexpected privilege escalation recorded |
-| Device | Protected workstation entered evidence preservation mode |
-| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Laboratory Security Breach Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-109
+25
 
 Indicators Reviewed:
 10
 
 Risk Score:
-42
+30
 
 Confidence:
-88%
+82%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Current Status:
 
-Evidence Collection
+Field Coordination

@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Unauthorized Laboratory Network Access
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Vector-9
 
 ---
 
@@ -16,34 +16,34 @@ Foreign Intelligence Interest
 ---
 
 ## Observed Motivation
-Research Data Theft
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-88%
+82%
 
 ---
 
 ## Observed Techniques
 - Exposed Remote Service
 - Supply Chain Compromise
-- Lateral Movement
-- Privilege Escalation
-- Research Data Exfiltration
 - Command and Control
+- Credential Abuse
+- Concealed Internal Movement
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+BioDefense Task Force
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Security Breach Investigation
+Research Data Integrity Investigation
 
 ---
 

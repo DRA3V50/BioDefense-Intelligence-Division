@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-5945
+Case ID: BID-2026-1480
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Security Breach Investigation
+Classification: Research Data Integrity Investigation
 
-Threat Family: Specimen Tracking Manipulation
+Threat Family: Unauthorized Laboratory Network Access
 
-Current Status: Evidence Collection
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,28 +18,28 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Operational monitoring continues while analysts validate recovered evidence.
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+ROUTINE
 
 Risk Score:
-42
+30
 
 Confidence:
-88%
+82%
 
 Affected Assets:
-19
+7
 
 Evidence Collected:
-109
+25
 
 Indicators Recorded:
 10
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Date:
 

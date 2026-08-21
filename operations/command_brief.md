@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-21 02:58 UTC
+**Generated:** 2026-08-21 14:31 UTC
 
 ---
 
@@ -18,38 +18,38 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-5945
+**Case ID:** BID-2026-1480
 
-**Classification:** Laboratory Security Breach Investigation
+**Classification:** Research Data Integrity Investigation
 
-**Severity:** MODERATE
+**Severity:** LOW
 
-**Threat Family:** Specimen Tracking Manipulation
+**Threat Family:** Unauthorized Laboratory Network Access
 
-**Confidence:** 88%
+**Confidence:** 82%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **109**
+Evidence Collected: **25**
 
 Indicators: **10**
 
-Priority: **ELEVATED**
+Priority: **ROUTINE**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 Initial Access:
 **Exposed Remote Service**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**131**
+**132**
 
 Confirmed Intrusions:
 **17**
 
 Total Evidence:
-**98113**
+**98138**
 
 Total Indicators:
-**63948**
+**63958**
 
 ---
 
 ## Operational Highlights
 
-- 109 evidence items are associated with the active investigation.
+- 25 evidence items are associated with the active investigation.
 - 10 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **88%**.
-- Current investigation priority is **ELEVATED**.
+- Analyst confidence is **82%**.
+- Current investigation priority is **ROUTINE**.
 
 ---
 

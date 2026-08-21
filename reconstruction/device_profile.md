@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-5945
+BID-2026-1480
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Research Data Integrity Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Unauthorized Laboratory Network Access
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Central Evidence Processing Center
 
 Platform:
-Laboratory Control Network
+Research Data Repository
 
 Device:
-Medical Device Gateway
+Clinical Data Server
 
 Vendor:
-HPE
+Microsoft
 
 Operating System:
 Ubuntu Server 24.04 LTS
 
 Security Zone:
-Biosecurity Segment
+Federal Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
-88%
+82%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Digital evidence preserved for laboratory forensic examination.

@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-5945
+BID-2026-1480
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Research Data Integrity Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Unauthorized Laboratory Network Access
 
 Severity:
-MODERATE
+LOW
 
 Priority:
-ELEVATED
+ROUTINE
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-19
+7
 
 Evidence Collected:
-109
+25
 
 Indicators Identified:
 10
 
 Analyst Confidence:
-88%
+82%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 # Operational Status
 
 Current Status:
-Evidence Collection
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+BioDefense Task Force
