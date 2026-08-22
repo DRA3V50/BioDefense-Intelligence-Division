@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3128
+BID-2026-1797
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Biocontainment Network Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| PowerShell | Encoded administrative command execution detected |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Device | Protected workstation entered evidence preservation mode |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| System Log | Unexpected privilege escalation recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,10 +28,10 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-38
+60
 
 Indicators Reviewed:
-31
+25
 
 Risk Score:
 56
@@ -43,8 +43,8 @@ Confidence:
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+Analyst Team Alpha
 
 Current Status:
 
-Field Coordination
+Evidence Collection

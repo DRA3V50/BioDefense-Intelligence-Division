@@ -2,21 +2,21 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-3128
+**Case ID:** BID-2026-1797
 
-**Generated:** 2026-08-22 02:50 UTC
+**Generated:** 2026-08-22 14:17 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-21 20:50 UTC | Initial Detection | Potential activity associated with Clinical Research Data Manipulation was detected. |
-| 2026-08-21 21:50 UTC | Case Opened | Investigation BID-2026-3128 was opened and assigned to Joint Cyber Investigation Unit. |
-| 2026-08-21 22:50 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
-| 2026-08-21 23:50 UTC | Evidence Collection | 38 evidence items and 31 indicators were associated with the active investigation. |
-| 2026-08-22 00:50 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-22 01:50 UTC | Operational Review | Available evidence supports expanded review of access records, system changes, and related investigative indicators. |
-| 2026-08-22 02:50 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-22 08:17 UTC | Initial Detection | Potential activity associated with Protected Research Data Exfiltration was detected. |
+| 2026-08-22 09:17 UTC | Case Opened | Investigation BID-2026-1797 was opened and assigned to Analyst Team Alpha. |
+| 2026-08-22 10:17 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
+| 2026-08-22 11:17 UTC | Evidence Collection | 60 evidence items and 25 indicators were associated with the active investigation. |
+| 2026-08-22 12:17 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-08-22 13:17 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-08-22 14:17 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 

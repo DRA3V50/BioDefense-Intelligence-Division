@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3128
+Case ID: BID-2026-1797
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Medical Device Security Assessment
+Classification: Biocontainment Network Investigation
 
-Threat Family: Clinical Research Data Manipulation
+Threat Family: Protected Research Data Exfiltration
 
-Current Status: Field Coordination
+Current Status: Evidence Collection
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Current findings support maintaining the existing investigation priority.
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -39,10 +39,10 @@ Affected Assets:
 12
 
 Evidence Collected:
-38
+60
 
 Indicators Recorded:
-31
+25
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Joint Cyber Investigation Unit
+Analyst Team Alpha
 
 Date:
 

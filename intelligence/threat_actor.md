@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Clinical Research Data Manipulation
+Protected Research Data Exfiltration
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Project Chimera
 
 ---
 
 ## Attribution
-Unknown
+International Infrastructure
 
 ---
 
@@ -31,19 +31,19 @@ Moderate
 ---
 
 ## Observed Techniques
-- Third-Party Access
-- Laboratory Control System Manipulation
+- Unauthorized Physical Access
 - Research Data Exfiltration
-- Supply Chain Compromise
+- Command and Control
 - Laboratory Network Reconnaissance
-- Concealed Internal Movement
+- Encrypted Data Staging
+- Lateral Movement
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+Analyst Team Alpha
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Medical Device Security Assessment
+Biocontainment Network Investigation
 
 ---
 

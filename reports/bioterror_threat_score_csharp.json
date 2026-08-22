@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22 02:50 UTC",
+  "generatedAt": "2026-08-22 14:18 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -7,49 +7,49 @@
     "scoringModel": "Risk-Anchored Saturating Evidence Model"
   },
   "investigation": {
-    "caseId": "BID-2026-3128",
+    "caseId": "BID-2026-1797",
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
-    "classification": "Medical Device Security Assessment",
-    "threatFamily": "Clinical Research Data Manipulation",
+    "classification": "Biocontainment Network Investigation",
+    "threatFamily": "Protected Research Data Exfiltration",
     "severity": "MODERATE",
     "priority": "ELEVATED",
     "riskScore": 56,
     "confidence": 95,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Laboratory Control Network",
+    "affectedPlatform": "Biomedical Analysis Cluster",
     "affectedAssets": 12
   },
   "assessment": {
-    "overallScore": 46,
+    "overallScore": 49,
     "overallLevel": "ELEVATED",
     "dimensions": {
       "threatActorIntent": {
-        "score": 34,
+        "score": 39,
         "level": "GUARDED"
       },
       "threatActorCapability": {
-        "score": 33,
+        "score": 37,
         "level": "GUARDED"
       },
       "biologicalTargetValue": {
-        "score": 29,
+        "score": 38,
         "level": "GUARDED"
       },
       "laboratoryAndSpecimenImpact": {
-        "score": 32,
+        "score": 40,
         "level": "GUARDED"
       },
       "publicHealthRisk": {
-        "score": 35,
+        "score": 41,
         "level": "GUARDED"
       },
       "cyberToPhysicalEscalation": {
-        "score": 34,
+        "score": 41,
         "level": "GUARDED"
       },
       "attributionConfidence": {
-        "score": 77,
+        "score": 78,
         "level": "MODERATE"
       },
       "containmentConfidence": {
@@ -59,25 +59,41 @@
     }
   },
   "evidenceBasis": {
-    "evidenceRecords": 38,
-    "correlationRecords": 38,
-    "integrityVerifiedRecords": 38,
-    "pendingAnalystReview": 38,
+    "evidenceRecords": 60,
+    "correlationRecords": 60,
+    "integrityVerifiedRecords": 60,
+    "pendingAnalystReview": 60,
     "priorityFindings": [
+      {
+        "finding": "Research Data Integrity Anomaly",
+        "correlations": 9
+      },
       {
         "finding": "Biosecurity Policy Violation",
         "correlations": 7
       },
       {
-        "finding": "Analyst Intelligence Assessment",
+        "finding": "Unauthorized Facility Access",
+        "correlations": 7
+      },
+      {
+        "finding": "Laboratory Information System Anomaly",
+        "correlations": 6
+      },
+      {
+        "finding": "Research Workstation Compromise",
+        "correlations": 6
+      },
+      {
+        "finding": "Laboratory System Modification",
         "correlations": 5
       },
       {
         "finding": "Suspicious Network Activity",
-        "correlations": 4
+        "correlations": 5
       },
       {
-        "finding": "Unauthorized Facility Access",
+        "finding": "Credential Misuse",
         "correlations": 4
       },
       {
@@ -85,32 +101,16 @@
         "correlations": 3
       },
       {
-        "finding": "Credential Misuse",
-        "correlations": 3
-      },
-      {
-        "finding": "Research Data Integrity Anomaly",
-        "correlations": 3
-      },
-      {
-        "finding": "Research Workstation Compromise",
+        "finding": "Containment Verification",
         "correlations": 3
       },
       {
         "finding": "Known Threat Actor Indicator",
+        "correlations": 3
+      },
+      {
+        "finding": "Analyst Intelligence Assessment",
         "correlations": 2
-      },
-      {
-        "finding": "Laboratory Information System Anomaly",
-        "correlations": 2
-      },
-      {
-        "finding": "Containment Verification",
-        "correlations": 1
-      },
-      {
-        "finding": "Laboratory System Modification",
-        "correlations": 1
       }
     ]
   },

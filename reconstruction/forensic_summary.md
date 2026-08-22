@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3128 |
+| Case ID | BID-2026-1797 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Clinical Research Data Manipulation |
+| Classification | Biocontainment Network Investigation |
+| Threat Family | Protected Research Data Exfiltration |
 | Severity | MODERATE |
-| Status | Field Coordination |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Medical Device Gateway |
+| Platform | Biomedical Analysis Cluster |
+| Device | Access Control Server |
 | Vendor | Dell |
-| Security Zone | Research Operations |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -30,21 +30,21 @@
 |--------|------:|
 | Risk Score | 56 |
 | Confidence | 95% |
-| Evidence Collected | 38 |
-| Indicators Identified | 31 |
+| Evidence Collected | 60 |
+| Indicators Identified | 25 |
 | Affected Assets | 12 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**Evidence Collection**
 
 Priority:
 

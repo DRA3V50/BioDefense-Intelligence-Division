@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-08-22 02:50 UTC
+**Generated:** 2026-08-22 14:17 UTC
 
 ---
 
@@ -18,13 +18,13 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3128
+**Case ID:** BID-2026-1797
 
-**Classification:** Medical Device Security Assessment
+**Classification:** Biocontainment Network Investigation
 
 **Severity:** MODERATE
 
-**Threat Family:** Clinical Research Data Manipulation
+**Threat Family:** Protected Research Data Exfiltration
 
 **Confidence:** 95%
 
@@ -32,15 +32,15 @@
 
 ## Investigation Summary
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **38**
+Evidence Collected: **60**
 
-Indicators: **31**
+Indicators: **25**
 
 Priority: **ELEVATED**
 
@@ -49,10 +49,10 @@ Priority: **ELEVATED**
 ## Current Response
 
 Lead Analyst:
-**Joint Cyber Investigation Unit**
+**Analyst Team Alpha**
 
 Initial Access:
-**Third-Party Access**
+**Unauthorized Physical Access**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,23 +62,23 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**133**
+**134**
 
 Confirmed Intrusions:
 **17**
 
 Total Evidence:
-**98176**
+**98236**
 
 Total Indicators:
-**63989**
+**64014**
 
 ---
 
 ## Operational Highlights
 
-- 38 evidence items are associated with the active investigation.
-- 31 indicators are currently linked to the case.
+- 60 evidence items are associated with the active investigation.
+- 25 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
 - Analyst confidence is **95%**.
 - Current investigation priority is **ELEVATED**.

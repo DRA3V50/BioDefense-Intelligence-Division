@@ -4,16 +4,16 @@
 ## 2026-08-22
 
 ### Case Opened
-Case ID: BID-2026-3128
+Case ID: BID-2026-1797
 
 ### Classification
-Medical Device Security Assessment
+Biocontainment Network Investigation
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Field Coordination
+Evidence Collection
 
 ### Severity
 MODERATE
