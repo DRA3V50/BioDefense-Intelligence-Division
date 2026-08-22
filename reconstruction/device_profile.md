@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1480
+BID-2026-3128
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Clinical Research Data Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Ashcroft Biomedical Center
 
 Platform:
-Research Data Repository
+Laboratory Control Network
 
 Device:
-Clinical Data Server
+Medical Device Gateway
 
 Vendor:
-Microsoft
+Dell
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
-ROUTINE
+ELEVATED
 
 Confidence:
-82%
+95%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+No destructive activity observed following initial containment.

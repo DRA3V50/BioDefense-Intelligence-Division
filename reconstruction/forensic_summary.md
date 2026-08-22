@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1480 |
+| Case ID | BID-2026-3128 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Data Integrity Investigation |
-| Threat Family | Unauthorized Laboratory Network Access |
-| Severity | LOW |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Clinical Research Data Manipulation |
+| Severity | MODERATE |
 | Status | Field Coordination |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Research Data Repository |
-| Device | Clinical Data Server |
-| Vendor | Microsoft |
-| Security Zone | Federal Operations |
+| Platform | Laboratory Control Network |
+| Device | Medical Device Gateway |
+| Vendor | Dell |
+| Security Zone | Research Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 30 |
-| Confidence | 82% |
-| Evidence Collected | 25 |
-| Indicators Identified | 10 |
-| Affected Assets | 7 |
+| Risk Score | 56 |
+| Confidence | 95% |
+| Evidence Collected | 38 |
+| Indicators Identified | 31 |
+| Affected Assets | 12 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**Joint Cyber Investigation Unit**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ROUTINE**
+**ELEVATED**
 
 Recommended Action:
 

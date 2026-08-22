@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-21
+## 2026-08-22
 
 ### Case Opened
-Case ID: BID-2026-1480
+Case ID: BID-2026-3128
 
 ### Classification
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 ### Initial Assessment
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
 Field Coordination
 
 ### Severity
-LOW
+MODERATE
 
 ---

@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Unauthorized Laboratory Network Access
+Clinical Research Data Manipulation
 
 ---
 
 ## Primary Alias
-Vector-9
+Dark Sequence
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unknown
 
 ---
 
@@ -21,29 +21,29 @@ Medical Infrastructure Disruption
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-82%
+95%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
+- Third-Party Access
+- Laboratory Control System Manipulation
+- Research Data Exfiltration
 - Supply Chain Compromise
-- Command and Control
-- Credential Abuse
+- Laboratory Network Reconnaissance
 - Concealed Internal Movement
-- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 ---
 
 ## Last Updated
-2026-08-21
+2026-08-22

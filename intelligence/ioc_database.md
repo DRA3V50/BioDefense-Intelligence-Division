@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1480
+BID-2026-3128
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Device | Protected workstation entered evidence preservation mode |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | System Log | Unexpected privilege escalation recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -28,22 +28,22 @@ Research Data Integrity Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-25
+38
 
 Indicators Reviewed:
-10
+31
 
 Risk Score:
-30
+56
 
 Confidence:
-82%
+95%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Joint Cyber Investigation Unit
 
 Current Status:
 

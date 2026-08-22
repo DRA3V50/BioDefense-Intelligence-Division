@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1480
+BID-2026-3128
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Unauthorized Laboratory Network Access
+Clinical Research Data Manipulation
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Field Coordination
 ## Protected Environment
 
 Platform:
-Research Data Repository
+Laboratory Control Network
 
 Device:
-Clinical Data Server
+Medical Device Gateway
 
 Vendor:
-Microsoft
+Dell
 
 Security Zone:
-Federal Operations
+Research Operations
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-132
+133
 
 Evidence Collected:
-25
+38
 
 Indicators Identified:
-10
+31
 
 Affected Assets:
-7
+12
 
 Confidence:
-82%
+95%
 
 Risk Score:
-30
+56
 
 ---
 
