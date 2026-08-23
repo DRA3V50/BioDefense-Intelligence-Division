@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-4817
+Case ID: BID-2026-9736
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Research Data Integrity Investigation
+Classification: Laboratory Security Breach Investigation
 
-Threat Family: Medical Device Communications Interference
+Threat Family: Clinical Research Data Manipulation
 
 Current Status: Evidence Collection
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Additional forensic validation is required before investigative conclusions can be established.
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ELEVATED
+ROUTINE
 
 Risk Score:
-43
+22
 
 Confidence:
 86%
 
 Affected Assets:
-8
+7
 
 Evidence Collected:
-84
+22
 
 Indicators Recorded:
-20
+4
 
 ---
 
@@ -56,7 +56,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Joint Cyber Investigation Unit
+National Response Cell
 
 Date:
 

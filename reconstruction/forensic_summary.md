@@ -4,11 +4,11 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-4817 |
+| Case ID | BID-2026-9736 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Data Integrity Investigation |
-| Threat Family | Medical Device Communications Interference |
-| Severity | MODERATE |
+| Classification | Laboratory Security Breach Investigation |
+| Threat Family | Clinical Research Data Manipulation |
+| Severity | LOW |
 | Status | Evidence Collection |
 
 ---
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Genome Analysis Workstation |
-| Vendor | Cisco |
-| Security Zone | Protected Research Segment |
+| Platform | Genome Sequencing Environment |
+| Device | Evidence Repository |
+| Vendor | Palo Alto Networks |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 43 |
+| Risk Score | 22 |
 | Confidence | 86% |
-| Evidence Collected | 84 |
-| Indicators Identified | 20 |
-| Affected Assets | 8 |
+| Evidence Collected | 22 |
+| Indicators Identified | 4 |
+| Affected Assets | 7 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**National Response Cell**
 
 ---
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -89,7 +89,7 @@ Current Status:
 
 Priority:
 
-**ELEVATED**
+**ROUTINE**
 
 Recommended Action:
 

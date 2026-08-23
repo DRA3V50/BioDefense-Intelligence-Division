@@ -139,10 +139,10 @@
         {
             "name": "Clinical Research Data Manipulation",
             "first_seen": "2026-08-03",
-            "last_seen": "2026-08-22",
-            "cases": 3,
-            "severity": "MODERATE",
-            "confidence": 95
+            "last_seen": "2026-08-23",
+            "cases": 4,
+            "severity": "LOW",
+            "confidence": 86
         },
         {
             "name": "Evidence Repository Manipulation",

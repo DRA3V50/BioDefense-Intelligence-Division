@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Medical Device Communications Interference
+Clinical Research Data Manipulation
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Black Helix
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Multiple Regions
 
 ---
 
@@ -31,19 +31,19 @@ High
 ---
 
 ## Observed Techniques
-- Compromised Credentials
+- Third-Party Access
+- Long-Term Network Foothold
+- Laboratory Network Reconnaissance
 - Credential Abuse
-- Supply Chain Compromise
-- Lateral Movement
 - Covert Remote Access Tooling
-- Privilege Escalation
+- Encrypted Data Staging
 
 ---
 
 ## Reviewing Analyst
-Joint Cyber Investigation Unit
+National Response Cell
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Data Integrity Investigation
+Laboratory Security Breach Investigation
 
 ---
 

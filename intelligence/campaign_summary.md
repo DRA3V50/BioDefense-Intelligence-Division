@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-4817
+BID-2026-9736
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Clinical Research Data Manipulation
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Evidence Collection
 ## Protected Environment
 
 Platform:
-Medical Research Laboratory
+Genome Sequencing Environment
 
 Device:
-Genome Analysis Workstation
+Evidence Repository
 
 Vendor:
-Cisco
+Palo Alto Networks
 
 Security Zone:
-Protected Research Segment
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-135
+136
 
 Evidence Collected:
-84
+22
 
 Indicators Identified:
-20
+4
 
 Affected Assets:
-8
+7
 
 Confidence:
 86%
 
 Risk Score:
-43
+22
 
 ---
 

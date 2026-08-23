@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-4817
+BID-2026-9736
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Data Integrity Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Clinical Research Data Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
-Medical Research Laboratory
+Genome Sequencing Environment
 
 Device:
-Genome Analysis Workstation
+Evidence Repository
 
 Vendor:
-Cisco
+Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Protected Research Segment
+Evidence Network
 
 ---
 
@@ -44,10 +44,10 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Awaiting Laboratory Review
 
 Priority:
-ELEVATED
+ROUTINE
 
 Confidence:
 86%
@@ -57,7 +57,7 @@ Confidence:
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+No destructive activity observed following initial containment.

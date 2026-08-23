@@ -4,11 +4,11 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4817 |
+| Case ID | BID-2026-9736 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Data Integrity Investigation |
-| Threat Family | Medical Device Communications Interference |
-| Severity | MODERATE |
+| Classification | Laboratory Security Breach Investigation |
+| Threat Family | Clinical Research Data Manipulation |
+| Severity | LOW |
 | Status | Evidence Collection |
 | Phase | Operational Recovery |
 
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Medical Research Laboratory |
-| Device | Genome Analysis Workstation |
-| Vendor | Cisco |
-| Network Zone | Protected Research Segment |
+| Platform | Genome Sequencing Environment |
+| Device | Evidence Repository |
+| Vendor | Palo Alto Networks |
+| Network Zone | Evidence Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 43 |
+| Risk Score | 22 |
 | Confidence | 86% |
-| Evidence | 84 |
-| Indicators | 20 |
-| Affected Assets | 8 |
+| Evidence | 22 |
+| Indicators | 4 |
+| Affected Assets | 7 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Joint Cyber Investigation Unit**
+Lead Analyst: **National Response Cell**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
