@@ -34,6 +34,43 @@ from consolidated_dashboard_renderer import (
 FROZEN_V2_SHA256 = "b6dcf76f1767f7e11d900237936f518026225c1bc3e53dbe64824025b508fffb"
 
 
+# Explicit semantic summaries for the approved 205px center-metadata lanes.
+# They are display-only aliases: the complete persisted values remain
+# authoritative and are never rewritten by this wrapper.
+CLASSIFICATION_DISPLAY_ALIASES = {
+    "Biomedical Infrastructure Investigation": "BIOMEDICAL INFRASTRUCTURE",
+    "Biological Research Intelligence Collection": "BIOLOGICAL RESEARCH INTEL",
+    "Biocontainment Network Investigation": "BIOCONTAINMENT NETWORK",
+    "Cyber-Biothreat Intelligence Review": "CYBER-BIOTHREAT REVIEW",
+    "Digital Evidence Reconstruction Investigation": "DIGITAL EVIDENCE REVIEW",
+    "Laboratory Access Control Investigation": "LAB ACCESS CONTROL",
+    "Laboratory Security Breach Investigation": "LAB SECURITY BREACH",
+    "Medical Device Security Assessment": "MEDICAL DEVICE SECURITY",
+    "Protected Research Systems Investigation": "PROTECTED RESEARCH",
+    "Research Data Integrity Investigation": "RESEARCH DATA INTEGRITY",
+    "Research Facility Intrusion Investigation": "RESEARCH FACILITY INTRUSION",
+    "Specimen Management Security Review": "SPECIMEN SECURITY REVIEW",
+    "Supply Chain Security Investigation": "SUPPLY CHAIN INVESTIGATION",
+    "Unauthorized Research System Access": "UNAUTHORIZED ACCESS",
+}
+
+THREAT_FAMILY_DISPLAY_ALIASES = {
+    "Access Control Record Manipulation": "ACCESS CONTROL TAMPERING",
+    "Biomedical Supply Chain Compromise": "SUPPLY CHAIN COMPROMISE",
+    "Biocontainment System Tampering": "BIOCONTAINMENT TAMPERING",
+    "Clinical Research Data Manipulation": "CLINICAL DATA MANIPULATION",
+    "Credential Misuse": "CREDENTIAL MISUSE",
+    "Evidence Repository Manipulation": "EVIDENCE REPO MANIPULATION",
+    "Laboratory Information System Compromise": "LAB INFORMATION COMPROMISE",
+    "Medical Device Communications Interference": "MEDICAL DEVICE INTERFERENCE",
+    "Protected Research Data Exfiltration": "RESEARCH DATA EXFILTRATION",
+    "Research Data Integrity Manipulation": "DATA INTEGRITY MANIPULATION",
+    "Research Workstation Compromise": "RESEARCH WORKSTATION",
+    "Specimen Tracking Manipulation": "SPECIMEN TRACKING",
+    "Unauthorized Laboratory Network Access": "UNAUTHORIZED LAB ACCESS",
+}
+
+
 def repository_root(value: Path | None = None) -> Path:
     return (value or Path(__file__).resolve().parents[1]).resolve()
 
@@ -157,6 +194,57 @@ def current_revision_threat_projection(
     }
 
 
+def apply_display_text_projection(renderer_state: dict[str, Any]) -> dict[str, Any]:
+    """Apply exact-match display aliases without mutating authoritative state.
+
+    Unknown or non-string values deliberately pass through unchanged. The
+    frozen renderer remains the fail-closed authority for any value that does
+    not fit its approved lane.
+    """
+
+    case = renderer_state.get("case")
+    display = renderer_state.get("display")
+    if not isinstance(case, dict) or not isinstance(display, dict):
+        raise RendererContractError("Renderer state is missing the display-only case projection.")
+
+    authoritative_classification = case.get("classification")
+    authoritative_threat_family = case.get("threat_family")
+    display_classification = (
+        CLASSIFICATION_DISPLAY_ALIASES.get(
+            authoritative_classification, authoritative_classification
+        )
+        if isinstance(authoritative_classification, str)
+        else authoritative_classification
+    )
+    display_threat_family = (
+        THREAT_FAMILY_DISPLAY_ALIASES.get(
+            authoritative_threat_family, authoritative_threat_family
+        )
+        if isinstance(authoritative_threat_family, str)
+        else authoritative_threat_family
+    )
+
+    # Replace only the wrapper-local display dictionary. `case` retains the
+    # complete persistent values used by the rest of the #8 state contract.
+    projected_display = copy.deepcopy(display)
+    projected_display["classification"] = display_classification
+    projected_display["threat_family"] = display_threat_family
+    renderer_state["display"] = projected_display
+
+    return {
+        "authoritative_classification": authoritative_classification,
+        "display_classification": display_classification,
+        "classification_projection_applied": (
+            display_classification != authoritative_classification
+        ),
+        "authoritative_threat_family": authoritative_threat_family,
+        "display_threat_family": display_threat_family,
+        "threat_family_projection_applied": (
+            display_threat_family != authoritative_threat_family
+        ),
+    }
+
+
 def inspect_gif(path: Path) -> dict[str, Any]:
     with Image.open(path) as image:
         decoded_hashes: list[str] = []
@@ -249,6 +337,7 @@ def render_and_deploy(
     renderer_state, threat_projection = current_revision_threat_projection(
         authoritative_renderer_state
     )
+    display_projection = apply_display_text_projection(renderer_state)
     case_id = renderer_state["dashboard"]["shared"]["case_id"]
     state_before = hash_authoritative_state(root, case_id)
     context = prepare_context(renderer_state)
@@ -291,6 +380,7 @@ def render_and_deploy(
             "state_read_only": True,
             "frozen_v2_renderer_sha256": renderer_sha256,
             "threat_history_projection": threat_projection,
+            **display_projection,
             "verification": verification,
         }
         atomic_write_text(candidate_qc, json.dumps(candidate_record, indent=2, sort_keys=True) + "\n")
