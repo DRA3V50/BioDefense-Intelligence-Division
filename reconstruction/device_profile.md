@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-1797
+BID-2026-4817
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Research Data Integrity Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Medical Device Communications Interference
 
 ---
 
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+National Pathogen Research Facility
 
 Platform:
-Biomedical Analysis Cluster
+Medical Research Laboratory
 
 Device:
-Access Control Server
+Genome Analysis Workstation
 
 Vendor:
-Dell
+Cisco
 
 Operating System:
-VMware ESXi 9
+Windows Server 2025
 
 Security Zone:
-Federal Operations
+Protected Research Segment
 
 ---
 
@@ -50,14 +50,14 @@ Priority:
 ELEVATED
 
 Confidence:
-95%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Protected research assets remain under continuous monitoring.

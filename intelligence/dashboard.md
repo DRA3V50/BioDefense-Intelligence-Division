@@ -4,10 +4,10 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1797 |
+| Case ID | BID-2026-4817 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biocontainment Network Investigation |
-| Threat Family | Protected Research Data Exfiltration |
+| Classification | Research Data Integrity Investigation |
+| Threat Family | Medical Device Communications Interference |
 | Severity | MODERATE |
 | Status | Evidence Collection |
 | Phase | Operational Recovery |
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biomedical Analysis Cluster |
-| Device | Access Control Server |
-| Vendor | Dell |
-| Network Zone | Federal Operations |
+| Platform | Medical Research Laboratory |
+| Device | Genome Analysis Workstation |
+| Vendor | Cisco |
+| Network Zone | Protected Research Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 56 |
-| Confidence | 95% |
-| Evidence | 60 |
-| Indicators | 25 |
-| Affected Assets | 12 |
+| Risk Score | 43 |
+| Confidence | 86% |
+| Evidence | 84 |
+| Indicators | 20 |
+| Affected Assets | 8 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Joint Cyber Investigation Unit**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.

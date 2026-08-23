@@ -2,13 +2,13 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1797
+Case ID: BID-2026-4817
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Biocontainment Network Investigation
+Classification: Research Data Integrity Investigation
 
-Threat Family: Protected Research Data Exfiltration
+Threat Family: Medical Device Communications Interference
 
 Current Status: Evidence Collection
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+No confirmed attribution has been established during the current investigation.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 ELEVATED
 
 Risk Score:
-56
+43
 
 Confidence:
-95%
+86%
 
 Affected Assets:
-12
+8
 
 Evidence Collected:
-60
+84
 
 Indicators Recorded:
-25
+20
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Alpha
+Joint Cyber Investigation Unit
 
 Date:
 
-2026-08-22
+2026-08-23

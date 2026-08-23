@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Protected Research Data Exfiltration
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Project Chimera
+Genome Phantom
 
 ---
 
 ## Attribution
-International Infrastructure
+Foreign Intelligence Interest
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-95%
+86%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Physical Access
-- Research Data Exfiltration
-- Command and Control
-- Laboratory Network Reconnaissance
-- Encrypted Data Staging
+- Compromised Credentials
+- Credential Abuse
+- Supply Chain Compromise
 - Lateral Movement
+- Covert Remote Access Tooling
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biocontainment Network Investigation
+Research Data Integrity Investigation
 
 ---
 
 ## Last Updated
-2026-08-22
+2026-08-23

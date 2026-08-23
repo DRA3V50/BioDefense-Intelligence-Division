@@ -3,16 +3,16 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1797
+BID-2026-4817
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Research Data Integrity Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
@@ -25,38 +25,38 @@ Evidence Collection
 ## Protected Environment
 
 Platform:
-Biomedical Analysis Cluster
+Medical Research Laboratory
 
 Device:
-Access Control Server
+Genome Analysis Workstation
 
 Vendor:
-Dell
+Cisco
 
 Security Zone:
-Federal Operations
+Protected Research Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-134
+135
 
 Evidence Collected:
-60
+84
 
 Indicators Identified:
-25
+20
 
 Affected Assets:
-12
+8
 
 Confidence:
-95%
+86%
 
 Risk Score:
-56
+43
 
 ---
 
