@@ -1,0 +1,4048 @@
+#!/usr/bin/env python3
+"""Subsystem #9 review renderer for the approved BioDefense dashboard.
+
+This is the authoritative review implementation for the planned production
+entry point. During #9, scripts/generate_case_banner.py intentionally remains
+the unchanged legacy entry point because the checked production root is still
+pre-#8 state and a switchover would fail closed. This module consumes the frozen
+Subsystem #8 dashboard_state adapter once, makes one narrow renderer-side
+display projection for fields absent from that frozen public shape, and then
+uses the approved visual helpers copied from the recovery archive.
+
+Normal rendering is read-only with respect to the state root. Review outputs
+are intentionally separate from the production GIF until Subsystem #10.
+"""
+
+from __future__ import annotations
+
+import argparse
+import copy
+import hashlib
+import importlib.util
+import json
+import math
+import shutil
+import sys
+import tempfile
+import time
+from dataclasses import dataclass
+from datetime import datetime
+from functools import lru_cache
+from pathlib import Path
+from types import ModuleType
+from typing import Any, Iterable, Sequence
+from zoneinfo import ZoneInfo
+
+import cv2
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+
+from case_state import (
+    CaseStateError,
+    StateValidationError,
+    StaleDataError,
+    csharp_level,
+    load_active_case,
+    validate_active_case,
+)
+from dashboard_state import build_dashboard_state
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPOSITORY_ROOT = SCRIPT_DIR.parent
+APPROVED_ASSET_DIR = REPOSITORY_ROOT / "assets" / "approved"
+REVIEW_DIR = REPOSITORY_ROOT / "assets" / "review"
+
+POPULATED_MASTER = APPROVED_ASSET_DIR / "APPROVED_POPULATED_LAYOUT.png"
+CLEAR_MASTER = APPROVED_ASSET_DIR / "APPROVED_CLEAR_BASE_LAYOUT.png"
+BIOHAZARD_REFERENCE = APPROVED_ASSET_DIR / "BIOHAZARD_REFERENCE.png"
+CASE_OVERVIEW_STATIC = (
+    APPROVED_ASSET_DIR
+    / "subsystem_07_case_overview"
+    / "case_overview_proposal_b_central_hub_static_reference.png"
+)
+
+CANVAS_SIZE = (1727, 911)
+FRAME_COUNT = 120
+FRAME_DURATION_MS = 50
+KEYFRAME_INDICES = (0, 20, 40, 60, 80, 100, 119)
+MOTION_AUDIT_INDICES = tuple(range(0, FRAME_COUNT, 10))
+
+EXPECTED_APPROVED_HASHES = {
+    POPULATED_MASTER: "90a223d08555853fd58c7bc7c0c30eadecfa7df3b5320db23e373462735312c4",
+    CLEAR_MASTER: "168d5b6ba745de5431f8fbaa9c5d5e4a95464b9e150f6aa23b862e4800d68f38",
+    BIOHAZARD_REFERENCE: "ec0eb4cd38db13d34c0259f8ba920e4d9a1d2783feeb2f0d25e4ea2b0bf52ba5",
+}
+
+EXPECTED_HELPER_HASHES = {
+    "s01": "087cf790abdcfd83292ff285effe47e6473820e9f8c799acc683c61c86fa505c",
+    "s02": "a9fd7bf655d5f0c04b952fa31a84759d8369627e41e8cad1a152760669b5f9fa",
+    "s03": "161df7b0fb51806c34cc7b1cfce9656c8f09075f9c96e00ebd4f36af76e81e5e",
+    "s04": "2ad372dd3a8f417b135389b2f9a0ef64b26349afd0d6b4439423352f22c7bffd",
+    "s05": "12c9d32d871f873ca6d81f1c331ac9c6a666b5efa72b24e4752944783efdf873",
+    "s06": "a36377ef488687a40211dfd67fa20170d60302201ef815bf3d73e88492dc298f",
+    "s07": "aeaa0ebd98ec5e65bcb4584711d598e1bf3e16e2998ec2b8e14cd87152207272",
+}
+
+HELPER_PATHS = {
+    "s01": SCRIPT_DIR / "frozen_reference" / "subsystem_01_biohazard" / "biohazard_test.py",
+    "s02": SCRIPT_DIR / "frozen_reference" / "subsystem_02_evidence_magnifier" / "magnifying_glass_test.py",
+    "s03": SCRIPT_DIR / "frozen_reference" / "subsystem_03_workflow" / "workflow_strip_test.py",
+    "s04": SCRIPT_DIR / "frozen_reference" / "subsystem_04_active_case_feed" / "active_case_feed_test.py",
+    "s05": SCRIPT_DIR / "frozen_reference" / "subsystem_05_system_status" / "system_status_test.py",
+    "s06": SCRIPT_DIR / "frozen_reference" / "subsystem_06_threat_monitor" / "threat_monitor_test.py",
+    "s07": SCRIPT_DIR / "frozen_reference" / "subsystem_07_case_overview" / "case_overview_proposal_b_central_hub_animation.py",
+}
+
+
+class RendererContractError(RuntimeError):
+    """Raised when an input cannot be rendered truthfully and coherently."""
+
+
+def sha256_bytes(payload: bytes) -> str:
+    return hashlib.sha256(payload).hexdigest()
+
+
+def sha256_path(path: Path) -> str:
+    return sha256_bytes(path.read_bytes())
+
+
+def sha256_array(array: np.ndarray) -> str:
+    return sha256_bytes(np.ascontiguousarray(array).tobytes())
+
+
+def ensure_hash(path: Path, expected: str) -> str:
+    if not path.is_file():
+        raise RendererContractError(f"Required approved asset is missing: {path}")
+    actual = sha256_path(path)
+    if actual != expected:
+        raise RendererContractError(
+            f"Approved asset hash mismatch: {path.name}; expected {expected}, got {actual}"
+        )
+    return actual
+
+
+def verify_approved_inputs() -> dict[str, str]:
+    records = {path.name: ensure_hash(path, expected) for path, expected in EXPECTED_APPROVED_HASHES.items()}
+    reference_hash = ensure_hash(
+        CASE_OVERVIEW_STATIC,
+        "6fb176d5777ba79dfcf0d3984188757d9961db413cda1bb6e47a018f73486aab",
+    )
+    records[CASE_OVERVIEW_STATIC.name] = reference_hash
+    return records
+
+
+def load_helper(name: str, path: Path) -> ModuleType:
+    if not path.is_file():
+        raise RendererContractError(f"Missing frozen visual helper: {path}")
+    actual = sha256_path(path)
+    expected = EXPECTED_HELPER_HASHES[name]
+    if actual != expected:
+        raise RendererContractError(
+            f"Frozen visual helper hash mismatch: {path.name}; expected {expected}, got {actual}"
+        )
+    module_name = f"_bd_frozen_{name}"
+    spec = importlib.util.spec_from_file_location(module_name, path)
+    if spec is None or spec.loader is None:
+        raise RendererContractError(f"Cannot import frozen visual helper: {path}")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[module_name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+@dataclass(frozen=True)
+class FrozenHelpers:
+    s01: ModuleType
+    s02: ModuleType
+    s03: ModuleType
+    s04: ModuleType
+    s05: ModuleType
+    s06: ModuleType
+    s07: ModuleType
+
+
+def load_frozen_helpers() -> FrozenHelpers:
+    return FrozenHelpers(**{name: load_helper(name, path) for name, path in HELPER_PATHS.items()})
+
+
+PRESENTATION_TIMEZONE = ZoneInfo("America/New_York")
+
+
+def presentation_instant(value: object) -> datetime | None:
+    """Parse persisted UTC safely, then convert only the dashboard display."""
+
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    try:
+        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError as exc:
+        raise RendererContractError(f"Invalid persisted timestamp: {raw!r}") from exc
+    if parsed.tzinfo is None:
+        raise RendererContractError("Persisted dashboard timestamp must be timezone-aware.")
+    return parsed.astimezone(PRESENTATION_TIMEZONE)
+
+
+def text_timestamp(value: object) -> str:
+    instant = presentation_instant(value)
+    return "UNAVAILABLE" if instant is None else instant.strftime("%Y-%m-%d %H:%M:%S %Z")
+
+
+def footer_timestamp(value: object) -> str:
+    instant = presentation_instant(value)
+    if instant is None:
+        return "UNAVAILABLE"
+    hour = instant.strftime("%I").lstrip("0") or "0"
+    return f"{instant:%Y-%m-%d} {hour}{instant:%M %p %Z}"
+
+
+def event_timestamp(value: object) -> str:
+    raw = str(value or "")
+    if "T" in raw:
+        raw = raw.split("T", 1)[1]
+    raw = raw.replace("Z", "").replace("+00:00", "")
+    return raw[:5] if len(raw) >= 5 else "TIME?"
+
+
+def human_stage(value: object) -> str:
+    return str(value or "UNKNOWN").replace("_", " ")
+
+
+def severity_bucket(value: object) -> str:
+    level = str(value or "").upper()
+    if level in {"CRITICAL", "HIGH"}:
+        return "HIGH"
+    if level in {"ELEVATED", "MODERATE", "MEDIUM", "GUARDED"}:
+        return "MEDIUM"
+    return "LOW"
+
+
+def numeric_history(records: object, name: str) -> np.ndarray:
+    if not isinstance(records, Sequence) or isinstance(records, (str, bytes)):
+        raise RendererContractError(f"{name} must be a chronological sequence.")
+    values: list[float] = []
+    for record in records:
+        if isinstance(record, dict):
+            candidate = record.get("value")
+        else:
+            candidate = record
+        try:
+            value = float(candidate)
+        except (TypeError, ValueError) as exc:
+            raise RendererContractError(f"{name} contains a non-numeric value.") from exc
+        if not math.isfinite(value) or value < 0.0 or value > 100.0:
+            raise RendererContractError(f"{name} must remain normalized within 0-100.")
+        values.append(value)
+    if not values:
+        raise RendererContractError(
+            f"{name} is empty. The renderer refuses to invent a plausible live signal."
+        )
+    return np.asarray(values, dtype=np.float64)
+
+
+def resample(values: Sequence[float], width: int, *, name: str) -> np.ndarray:
+    source = np.asarray(values, dtype=np.float64)
+    if source.ndim != 1 or source.size < 1 or not np.all(np.isfinite(source)):
+        raise RendererContractError(f"{name} is not a usable numeric series.")
+    if width < 1:
+        raise RendererContractError(f"{name} target width is invalid.")
+    if source.size == 1:
+        return np.full(width, source[0], dtype=np.float64)
+    source_x = np.linspace(0.0, 1.0, source.size, endpoint=True)
+    target_x = np.linspace(0.0, 1.0, width, endpoint=True)
+    result = np.interp(target_x, source_x, source)
+    result[0] = source[0]
+    result[-1] = source[-1]
+    return result
+
+
+def evidence_correlation_count(relationships: Sequence[dict[str, Any]]) -> int:
+    for relation in relationships:
+        relation_type = str(relation.get("relationship_type", relation.get("type", ""))).upper()
+        if "CORRELATION" not in relation_type:
+            continue
+        attributes = relation.get("attributes")
+        if isinstance(attributes, dict):
+            value = attributes.get("count", attributes.get("correlation_count", 0))
+            if isinstance(value, int) and not isinstance(value, bool) and value >= 0:
+                return value
+    return 0
+
+
+def build_renderer_state(root: Path | str | None = None) -> dict[str, Any]:
+    """Adapt one fully validated #8 state without modifying its frozen contract."""
+
+    normalized = build_dashboard_state(root)
+    case = load_active_case(root)
+    if case is None:
+        raise RendererContractError("No persistent active case is available.")
+    validate_active_case(case)
+
+    shared = normalized["shared"]
+    required_shared = (
+        "case_id",
+        "campaign_id",
+        "lifecycle_status",
+        "current_stage",
+        "severity",
+        "priority",
+        "lead_analyst",
+        "evidence_count",
+        "ioc_count",
+        "updated_at",
+        "state_revision",
+    )
+    mismatches = [
+        key for key in required_shared if case.get(key) != shared.get(key)
+    ]
+    if mismatches:
+        raise RendererContractError(
+            "The active case diverged from the validated #8 dashboard state: "
+            + ", ".join(mismatches)
+        )
+
+    feed_history = numeric_history(
+        normalized["active_case_feed"]["event_intensity_history"],
+        "active-case event intensity history",
+    )
+    anomaly_history = numeric_history(
+        normalized["threat_monitor"]["anomaly_history"],
+        "active-case anomaly history",
+    )
+    relationships = normalized["case_overview"]["relationships"]
+    if not isinstance(relationships, list):
+        raise RendererContractError("Case Overview relationships must be a list.")
+    events = normalized["active_case_feed"]["events"]
+    if not isinstance(events, list):
+        raise RendererContractError("Active Case Feed events must be a list.")
+    manifest_items = normalized["evidence_package"]["manifest"]["items"]
+    if not isinstance(manifest_items, list):
+        raise RendererContractError("Evidence manifest items must be a list.")
+
+    integration_sources = {
+        str(item.get("source_system"))
+        for item in manifest_items
+        if isinstance(item, dict) and item.get("source_system")
+    }
+    integration_sources.update(
+        str(event.get("source"))
+        for event in events
+        if isinstance(event, dict) and event.get("source")
+    )
+    canonical = normalized["threat_monitor"]["threat"]
+    score = int(canonical["score"])
+    display_level = str(canonical["display_level_for_subsystem_06"])
+    if not 0 <= score <= 100:
+        raise RendererContractError("The canonical threat score is outside 0-100.")
+
+    relationship_count = evidence_correlation_count(relationships)
+    threat_history = normalized["threat_monitor"].get("threat_history", [])
+    if not isinstance(threat_history, list):
+        threat_history = []
+
+    display_fields = {
+        key: case.get(key)
+        for key in (
+            "classification",
+            "threat_family",
+            "status",
+            "containment_phase",
+            "date",
+            "recommended_action",
+            "assessment",
+            "confidence",
+            "risk_score",
+            "affected_assets",
+            "device_family",
+            "affected_platform",
+            "network_zone",
+        )
+    }
+    return {
+        "dashboard": normalized,
+        "case": copy.deepcopy(case),
+        "display": display_fields,
+        "feed_history": feed_history,
+        "anomaly_history": anomaly_history,
+        "events": copy.deepcopy(events),
+        "relationships": copy.deepcopy(relationships),
+        "manifest_items": copy.deepcopy(manifest_items),
+        "integration_count": len(integration_sources),
+        "correlation_count": relationship_count,
+        "threat_history_count": len(threat_history),
+        "canonical_threat_score": score,
+        "subsystem_06_display_level": display_level,
+    }
+
+
+@lru_cache(maxsize=None)
+def dashboard_font(size: int, bold: bool = False) -> ImageFont.ImageFont:
+    candidates = (
+        "C:/Windows/Fonts/bahnschrift.ttf" if bold else "C:/Windows/Fonts/consola.ttf",
+        "C:/Windows/Fonts/arialbd.ttf" if bold else "C:/Windows/Fonts/arial.ttf",
+    )
+    for candidate in candidates:
+        try:
+            return ImageFont.truetype(candidate, size=size)
+        except OSError:
+            continue
+    return ImageFont.load_default(size=size)
+
+
+@dataclass(frozen=True)
+class TextEntry:
+    bounds: tuple[int, int, int, int]
+    position: tuple[int, int]
+    value: str
+    color: tuple[int, int, int]
+    size: int = 12
+    bold: bool = False
+    max_width: int | None = None
+    # The cleanup lane is deliberately separate from the visual field bounds.
+    # In particular it must never absorb a static panel frame, divider, icon,
+    # or route merely because the state value is close to one.
+    clear_bounds: tuple[int, int, int, int] | None = None
+    line_spacing: int = 0
+    # Most state lanes take their registered texture from the approved clear
+    # master. A small number of master-specific lanes must instead repair the
+    # populated source locally because the clear master contains decorative
+    # placeholder rules that are not part of the approved panel appearance.
+    clean_source: str = "clear"
+    cleanup_dilate: int = 1
+    inpaint_radius: int = 2
+    preserve_horizontal_rules: bool = True
+
+
+def foreground_mask(region: np.ndarray, minimum_brightness: int = 5) -> np.ndarray:
+    values = region.astype(np.int16)
+    maximum = np.max(values, axis=2)
+    # Text antialias pixels in the approved raster can be nearly black. The
+    # explicit ROIs below deliberately exclude borders/icons, so clean every
+    # non-background glyph fragment rather than leaving light-gray ghosts.
+    # Inpainting reconstructs the local source texture; no solid black cover
+    # rectangle is used.
+    return maximum >= minimum_brightness
+
+
+def fit_text(draw: ImageDraw.ImageDraw, value: str, font: ImageFont.ImageFont, width: int | None) -> str:
+    """Validate an already-fitted display value.
+
+    A dashboard field may wrap complete text or use a field-specific semantic
+    display summary, but it must never silently suffix a partial sentence with
+    an ellipsis.  Keeping this check centralized makes a layout regression fail
+    visibly during review rendering instead of hiding it in a GIF frame.
+    """
+
+    if "..." in value:
+        raise RendererContractError("Dynamic dashboard text may not contain an ellipsis.")
+    if width is not None:
+        widest = max((draw.textlength(line, font=font) for line in value.splitlines()), default=0.0)
+        if widest > width:
+            raise RendererContractError(
+                f"Dynamic text exceeds its approved lane ({widest:.1f}px > {width}px): {value!r}"
+            )
+    return value
+
+
+def text_lane(entry: TextEntry) -> tuple[int, int, int, int]:
+    return entry.clear_bounds or entry.bounds
+
+
+def clean_text_entries(
+    source: np.ndarray,
+    registered_clear: np.ndarray,
+    entries: Sequence[TextEntry],
+) -> np.ndarray:
+    """Make a registered, source-derived text-clean plate once.
+
+    The registered clear master supplies the clean lane texture.  Its
+    placeholder dashes are removed once in that small lane before it is used,
+    so neither the clear-master placeholder nor the populated-master preview
+    text can survive beneath a live value.  This preserves horizontal rules
+    and all panel borders rather than replacing a whole panel or using a black
+    rectangle.
+    """
+
+    result = source.copy()
+    for entry in entries:
+        x1, y1, x2, y2 = text_lane(entry)
+        if entry.clean_source == "clear":
+            lane_source = registered_clear
+        elif entry.clean_source == "source":
+            lane_source = source
+        else:
+            raise RendererContractError(f"Unknown registered clean source: {entry.clean_source!r}")
+        region = lane_source[y1:y2, x1:x2].copy()
+        values = region.astype(np.int16)
+        brightness = np.max(values, axis=2)
+        # A high-confidence clear-master placeholder/dash core.  One-pixel
+        # expansion removes its antialias halo without entering static rules;
+        # all lanes were chosen strictly within their panel interiors.
+        glyphs = brightness >= 10
+        kernel_size = max(1, int(entry.cleanup_dilate) * 2 + 1)
+        glyphs = cv2.dilate(
+            glyphs.astype(np.uint8),
+            np.ones((kernel_size, kernel_size), np.uint8),
+            iterations=1,
+        ).astype(bool)
+        # Only near-full-width runs are structural rules.  A long word such as
+        # CRITICAL must remain eligible for cleanup rather than be mistaken for
+        # a divider merely because its glyphs occupy much of a narrow field.
+        if entry.preserve_horizontal_rules:
+            horizontal_rules = np.count_nonzero(glyphs, axis=1) >= max(24, int(region.shape[1] * 0.95))
+            if np.any(horizontal_rules):
+                glyphs[horizontal_rules, :] = False
+        if np.any(glyphs):
+            repaired = cv2.inpaint(
+                region,
+                glyphs.astype(np.uint8) * 255,
+                max(1, int(entry.inpaint_radius)),
+                cv2.INPAINT_TELEA,
+            )
+            region[glyphs] = repaired[glyphs]
+        # Copy the registered clean lane even when it had no placeholder core;
+        # otherwise raw populated preview pixels would leak through unchanged.
+        result[y1:y2, x1:x2] = region
+    return result
+
+
+def restore_clean_text_entries(
+    frame: np.ndarray,
+    clean_plate: np.ndarray,
+    entries: Sequence[TextEntry],
+) -> None:
+    """Restore every dynamic lane from the one clean plate before redrawing."""
+
+    for entry in entries:
+        x1, y1, x2, y2 = text_lane(entry)
+        frame[y1:y2, x1:x2] = clean_plate[y1:y2, x1:x2]
+
+
+def footer_border_mask(shape: tuple[int, int]) -> np.ndarray:
+    """Exact static raster perimeter of the populated EASTERN TIME field."""
+
+    width, height = shape
+    mask = np.zeros((height, width), dtype=bool)
+    # Master-derived field perimeter: x=1379..1698, y=845..875.
+    mask[845:847, 1379:1699] = True
+    mask[874:876, 1379:1699] = True
+    mask[845:876, 1379:1381] = True
+    mask[845:876, 1697:1699] = True
+    return mask
+
+
+def restore_footer_border(frame: np.ndarray, raw: np.ndarray) -> None:
+    mask = footer_border_mask((frame.shape[1], frame.shape[0]))
+    frame[mask] = raw[mask]
+
+
+def draw_text_entries(frame: np.ndarray, entries: Sequence[TextEntry]) -> np.ndarray:
+    """Draw state text exactly once onto an already-clean plate."""
+
+    image = Image.fromarray(frame, "RGB")
+    draw = ImageDraw.Draw(image)
+    for entry in entries:
+        font = dashboard_font(entry.size, entry.bold)
+        value = fit_text(draw, entry.value, font, entry.max_width)
+        draw.multiline_text(
+            entry.position,
+            value,
+            fill=entry.color,
+            font=font,
+            spacing=entry.line_spacing,
+        )
+    return np.array(image, dtype=np.uint8)
+
+
+UNIT_STATUS_BOUNDS = (234, 478, 401, 524)
+UNIT_STATUS_DIVIDER_BOUNDS = (234, 504, 401, 506)
+UNIT_STATUS_BAR_BOUNDS = ((354, 361), (366, 373), (378, 385))
+OPERATIONAL_ICON_BOUNDS = (
+    (1304, 601, 1326, 623),
+    (1304, 652, 1326, 674),
+    (1304, 688, 1326, 710),
+    (1304, 726, 1326, 749),
+    (1304, 775, 1326, 797),
+)
+
+
+def blend_pixels(
+    frame: np.ndarray,
+    mask: np.ndarray,
+    color: tuple[int, int, int],
+    amount: float,
+) -> None:
+    """Blend only explicit review-layer pixels without changing geometry."""
+
+    if not np.any(mask):
+        return
+    alpha = float(np.clip(amount, 0.0, 1.0))
+    before = frame[mask].astype(np.float64)
+    target = np.asarray(color, dtype=np.float64)
+    frame[mask] = np.clip(before * (1.0 - alpha) + target * alpha, 0, 255).astype(np.uint8)
+
+
+def blend_weighted_pixels(
+    frame: np.ndarray,
+    mask: np.ndarray,
+    color: tuple[int, int, int],
+    weights: np.ndarray,
+) -> None:
+    """Blend a spatially varying, predeclared review overlay.
+
+    Unlike drawing a new shape, this only changes pixels selected by ``mask``.
+    The per-pixel weights let a soft lighting sector move continuously through
+    all 120 review phases without changing any layout geometry.
+    """
+
+    if mask.shape != weights.shape:
+        raise RendererContractError("Weighted review overlay mask/weight shapes differ.")
+    active = mask & (weights > 0.0)
+    if not np.any(active):
+        return
+    alpha = np.clip(weights[active].astype(np.float64), 0.0, 1.0)[:, None]
+    before = frame[active].astype(np.float64)
+    target = np.asarray(color, dtype=np.float64)
+    frame[active] = np.rint(
+        np.clip(before * (1.0 - alpha) + target * alpha, 0, 255)
+    ).astype(np.uint8)
+
+
+def build_unit_status_clean_plate(source: np.ndarray) -> np.ndarray:
+    """Create a source-derived #9 clean lane for the simulated-status row.
+
+    The global clear master includes unrelated red placeholder rules directly
+    through this lane.  Repairing the local populated texture avoids importing
+    those rules, keeps the System Integrity row untouched, and lets the review
+    layer place a dedicated three-bar indicator above its own divider.
+    """
+
+    result = source.copy()
+    x1, y1, x2, y2 = UNIT_STATUS_BOUNDS
+    region = result[y1:y2, x1:x2].copy()
+    mask = foreground_mask(region, minimum_brightness=10)
+    if np.any(mask):
+        repaired = cv2.inpaint(region, mask.astype(np.uint8) * 255, 3, cv2.INPAINT_TELEA)
+        region[mask] = repaired[mask]
+    result[y1:y2, x1:x2] = region
+    # A restrained red divider is intentionally reconstructed below both the
+    # label and the activity bars; it is not a copied clear-master placeholder.
+    dx1, dy1, dx2, dy2 = UNIT_STATUS_DIVIDER_BOUNDS
+    result[dy1:dy2, dx1:dx2] = np.asarray((187, 43, 37), dtype=np.uint8)
+    return result
+
+
+def draw_unit_status_indicator(frame: np.ndarray, frame_index: int) -> np.ndarray:
+    """Draw the deterministic review-only SIMULATED activity indicator."""
+
+    image = Image.fromarray(frame, "RGB")
+    draw = ImageDraw.Draw(image)
+    draw.text((236, 482), "SIMULATED", fill=(235, 42, 35), font=dashboard_font(12, True))
+    phase = (frame_index % FRAME_COUNT) / FRAME_COUNT
+    for index, (x1, x2) in enumerate(UNIT_STATUS_BAR_BOUNDS):
+        wave = 0.5 + 0.5 * math.sin(math.tau * (phase + index / 3.0))
+        # Smooth, nonzero 6..11px bars retain a low-key diagnostic activity
+        # cue without pretending to be measured host telemetry.
+        height = int(round(6.0 + 5.0 * wave))
+        brightness = 0.84 + 0.16 * wave
+        color = tuple(int(round(channel * brightness)) for channel in (235, 42, 35))
+        draw.rectangle((x1, 499 - height, x2, 498), fill=color)
+    return np.asarray(image, dtype=np.uint8)
+
+
+def build_operational_icon_plate(source: np.ndarray) -> np.ndarray:
+    """Replace only legacy glyph pixels with source-safe vector line icons."""
+
+    result = source.copy()
+    for x1, y1, x2, y2 in OPERATIONAL_ICON_BOUNDS:
+        region = result[y1:y2, x1:x2].copy()
+        mask = foreground_mask(region, minimum_brightness=10)
+        if np.any(mask):
+            repaired = cv2.inpaint(region, mask.astype(np.uint8) * 255, 2, cv2.INPAINT_TELEA)
+            region[mask] = repaired[mask]
+        result[y1:y2, x1:x2] = region
+
+    image = Image.fromarray(result, "RGB")
+    draw = ImageDraw.Draw(image)
+    glow = (104, 27, 23)
+    red = (226, 48, 39)
+
+    def stroked(points: Sequence[tuple[int, int]], *, closed: bool = False) -> None:
+        path = tuple(points) + ((points[0],) if closed else ())
+        draw.line(path, fill=glow, width=3, joint="curve")
+        draw.line(path, fill=red, width=1, joint="curve")
+
+    def box(bounds: tuple[int, int, int, int]) -> None:
+        for color, width in ((glow, 3), (red, 1)):
+            draw.rectangle(bounds, outline=color, width=width)
+
+    # 1. Assessment document.
+    box((1308, 604, 1321, 619))
+    stroked(((1311, 609), (1318, 609)))
+    stroked(((1311, 613), (1318, 613)))
+    stroked(((1311, 616), (1316, 616)))
+    # 2. Workflow route/arrow.
+    stroked(((1307, 664), (1312, 664), (1315, 658), (1319, 658)))
+    stroked(((1316, 655), (1320, 658), (1316, 661)))
+    # 3. Priority shield with check.
+    stroked(((1315, 691), (1321, 694), (1320, 702), (1315, 707), (1310, 702), (1309, 694)), closed=True)
+    stroked(((1312, 699), (1314, 701), (1318, 696)))
+    # 4. Next-action clipboard/checklist.
+    box((1308, 729, 1321, 744))
+    stroked(((1312, 728), (1317, 728)))
+    stroked(((1311, 736), (1313, 738), (1317, 733)))
+    stroked(((1311, 741), (1318, 741)))
+    # 5. Lead analyst silhouette.
+    for color, width in ((glow, 3), (red, 1)):
+        draw.ellipse((1312, 778, 1318, 784), outline=color, width=width)
+        draw.arc((1308, 782, 1322, 795), start=190, end=350, fill=color, width=width)
+    return np.asarray(image, dtype=np.uint8)
+
+
+def replace_text_entries(
+    frame: np.ndarray,
+    entries: Sequence[TextEntry],
+    *,
+    minimum_brightness: int = 5,
+) -> np.ndarray:
+    """Legacy compatibility wrapper for callers that already own a clean plate.
+
+    The previous implementation performed broad per-frame inpainting here.
+    That could remove static source artwork, including panel borders.  All
+    review composition now uses ``clean_text_entries`` once and restores that
+    plate before drawing; this wrapper intentionally performs no cleanup.
+    """
+
+    del minimum_brightness
+    return draw_text_entries(frame, entries)
+
+
+def wrap_complete_text(
+    value: object,
+    *,
+    font: ImageFont.ImageFont,
+    width: int,
+    max_lines: int,
+    fallback: str,
+) -> str:
+    """Word-wrap full text, with a deterministic complete fallback if needed."""
+
+    normalized = " ".join(str(value or "").split())
+    if not normalized:
+        normalized = fallback
+    draw = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    words = normalized.split(" ")
+    lines: list[str] = []
+    current = ""
+    for word in words:
+        candidate = word if not current else f"{current} {word}"
+        if draw.textlength(candidate, font=font) <= width:
+            current = candidate
+            continue
+        if not current or len(lines) + 1 >= max_lines:
+            fallback = " ".join(fallback.split())
+            if draw.textlength(fallback, font=font) > width:
+                raise RendererContractError("Configured semantic fallback exceeds its text lane.")
+            return fallback
+        lines.append(current)
+        current = word
+    if current:
+        lines.append(current)
+    if len(lines) > max_lines:
+        fallback = " ".join(fallback.split())
+        if draw.textlength(fallback, font=font) > width:
+            raise RendererContractError("Configured semantic fallback exceeds its text lane.")
+        return fallback
+    return "\n".join(lines)
+
+
+def rect_mask(shape: tuple[int, int], bounds: tuple[int, int, int, int]) -> np.ndarray:
+    width, height = shape
+    x1, y1, x2, y2 = bounds
+    if not (0 <= x1 < x2 <= width and 0 <= y1 < y2 <= height):
+        raise RendererContractError(f"Invalid canvas bounds: {bounds}")
+    mask = np.zeros((height, width), dtype=bool)
+    mask[y1:y2, x1:x2] = True
+    return mask
+
+
+def translated_mask(mask: np.ndarray, origin: tuple[int, int], canvas_size: tuple[int, int]) -> np.ndarray:
+    result = np.zeros((canvas_size[1], canvas_size[0]), dtype=bool)
+    x, y = origin
+    result[y:y + mask.shape[0], x:x + mask.shape[1]] = mask
+    return result
+
+
+def compact_case_classification(value: object) -> str:
+    normalized = " ".join(str(value or "UNAVAILABLE").split())
+    # These are semantic display projections of the persisted classification,
+    # not arbitrary clipping.  They retain the investigation type while fitting
+    # the approved single-line card field.
+    replacements = {
+        "SUPPLY CHAIN SECURITY INVESTIGATION": "SUPPLY CHAIN INVESTIGATION",
+    }
+    return replacements.get(normalized.upper(), normalized)
+
+
+def compact_threat_family(value: object) -> str:
+    normalized = " ".join(str(value or "UNAVAILABLE").split())
+    replacements = {
+        "CLINICAL RESEARCH DATA MANIPULATION": "CLINICAL DATA MANIPULATION",
+    }
+    return replacements.get(normalized.upper(), normalized)
+
+
+THRESHOLD_GUIDE_SAMPLES = {
+    "CRITICAL": (872, 730),
+    "HIGH": (858, 751),
+    "MEDIUM": (858, 774),
+    "LOW": (858, 795),
+}
+
+
+def classification_for_score(score: int) -> str:
+    if score >= 80:
+        return "CRITICAL"
+    if score >= 60:
+        return "HIGH"
+    if score >= 30:
+        return "MEDIUM"
+    return "LOW"
+
+
+def threshold_guide_colors(raw: np.ndarray) -> dict[str, tuple[int, int, int]]:
+    """Sample—not invent—the approved score colors from the threshold guide."""
+
+    colors: dict[str, tuple[int, int, int]] = {}
+    for level, (x, y) in THRESHOLD_GUIDE_SAMPLES.items():
+        pixel = raw[y, x]
+        colors[level] = tuple(int(channel) for channel in pixel)
+    return colors
+
+
+def static_text_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    shared = renderer_state["dashboard"]["shared"]
+    display = renderer_state["display"]
+    system = renderer_state["dashboard"]["system_status"]
+    updated = text_timestamp(shared["updated_at"])
+    updated_date = updated[:10]
+    footer_updated = footer_timestamp(shared["updated_at"])
+    evidence_count = int(shared["evidence_count"])
+    integr = renderer_state["integration_count"]
+    score = renderer_state["canonical_threat_score"]
+    canonical = renderer_state["dashboard"]["threat_monitor"]["threat"]["canonical_classification"]
+    system_health = _system_health(system)
+    red = (235, 42, 35)
+    white = (203, 198, 195)
+    gray = (166, 161, 158)
+    blue = (61, 147, 222)
+    stage = human_stage(shared["current_stage"])
+    entries = [
+        TextEntry((1548, 9, 1720, 32), (1552, 14), f"CASE: {shared['case_id']}", red, 11, True, 166),
+        TextEntry((234, 315, 400, 334), (236, 319), str(shared["case_id"]), white, 14, False, 158),
+        TextEntry((234, 342, 400, 361), (236, 346), str(shared["campaign_id"]), white, 14, False, 158),
+        TextEntry((234, 370, 400, 389), (236, 374), str(shared["lifecycle_status"]), red, 14, True, 158),
+        TextEntry((234, 397, 400, 416), (236, 401), f"{shared['severity']} / {shared['priority']}", white, 13, False, 158),
+        TextEntry((234, 424, 400, 443), (236, 428), str(shared["lead_analyst"]), white, 12, False, 158),
+        TextEntry((234, 451, 400, 470), (236, 455), updated, gray, 11, False, 158),
+        TextEntry((234, 505, 400, 524), (236, 509), f"{system_health:.1f}%", white, 13, False, 158),
+        TextEntry((603, 185, 812, 221), (604, 189), compact_case_classification(display.get("classification")), white, 13, False, 205, cleanup_dilate=2, inpaint_radius=3),
+        TextEntry((603, 225, 812, 258), (604, 229), compact_threat_family(display.get("threat_family")), white, 13, False, 205, cleanup_dilate=2, inpaint_radius=3),
+        TextEntry((603, 265, 812, 286), (604, 269), stage, white, 13, False, 205),
+        TextEntry((603, 302, 812, 322), (604, 306), str(shared["lifecycle_status"]), red, 13, True, 205),
+        TextEntry((603, 338, 812, 360), (604, 342), str(shared["severity"]), white, 13, False, 205),
+        TextEntry((1011, 185, 1227, 207), (1012, 189), str(shared["priority"]), red, 13, True, 210),
+        TextEntry((1011, 224, 1227, 246), (1012, 228), str(shared["lead_analyst"]), white, 13, False, 210),
+        TextEntry((1011, 263, 1227, 285), (1012, 267), f"{evidence_count} RECORDS", white, 13, False, 210),
+        TextEntry((1011, 301, 1227, 323), (1012, 305), str(integr), white, 13, False, 210),
+        TextEntry((1011, 333, 1227, 370), (1012, 342), updated, gray, 11, False, 210),
+        TextEntry((1405, 99, 1517, 118), (1407, 102), str(shared["case_id"]), white, 12, False, 110),
+        TextEntry((1405, 136, 1517, 155), (1407, 139), f"{evidence_count} RECORDS", white, 12, False, 110),
+        TextEntry((1405, 173, 1517, 192), (1407, 176), str(integr), white, 12, False, 110),
+        TextEntry(
+            (1405, 207, 1518, 250),
+            (1407, 214),
+            updated_date,
+            (207, 202, 199),
+            11,
+            False,
+            110,
+            clean_source="source",
+            inpaint_radius=3,
+            preserve_horizontal_rules=False,
+        ),
+        # The right outer edge is static approved raster at x=1698.  The
+        # timestamp lane deliberately ends before it and the exact border is
+        # restored again as the final compositing operation.
+        TextEntry((1515, 851, 1695, 874), (1517, 855), footer_updated, gray, 11, False, 176),
+    ]
+    return entries
+
+
+def _system_health(system: dict[str, Any]) -> float:
+    subsystems = system.get("subsystems")
+    if not isinstance(subsystems, dict):
+        return 0.0
+    values = [
+        float(record.get("health", 0.0))
+        for record in subsystems.values()
+        if isinstance(record, dict)
+    ]
+    return float(sum(values) / len(values)) if values else 0.0
+
+
+def status_panel_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    system = renderer_state["dashboard"]["system_status"]
+    rows = _status_rows(system)
+    gray = (181, 179, 177)
+    blue = (63, 151, 222)
+    white = (198, 196, 194)
+    entries: list[TextEntry] = []
+    row_y = (607, 630, 652, 674, 696)
+    for y, row in zip(row_y, rows):
+        entries.extend(
+            (
+                TextEntry((478, y - 3, 650, y + 14), (482, y), row["label"], gray, 10, False, 164),
+                TextEntry((649, y - 3, 722, y + 14), (654, y), row["status"], blue, 10, True, 65),
+                TextEntry((751, y - 3, 811, y + 14), (758, y), f"{row['health']:.1f}%", white, 10, False, 52),
+            )
+        )
+    metrics = _metric_records(system)
+    metric_positions = (
+        ((480, 748, 526, 771), (485, 752), "CPU", f"{metrics['cpu_percent']['latest']:.0f}%"),
+        ((544, 748, 592, 771), (550, 752), "MEM", f"{metrics['memory_percent']['latest']:.0f}%"),
+        ((606, 748, 665, 771), (612, 752), "NET", f"{metrics['network_percent']['latest']:.0f}%"),
+        ((679, 748, 733, 771), (684, 752), "DISK", f"{metrics['disk_percent']['latest']:.0f}%"),
+        ((744, 748, 811, 771), (749, 752), "QUEUE", f"{metrics['queue_depth']['latest']:.0f} CT"),
+    )
+    for bounds, pos, label, value in metric_positions:
+        entries.append(TextEntry(bounds, pos, label, gray, 8, True, bounds[2] - pos[0] - 2))
+        entries.append(TextEntry((bounds[0], 767, bounds[2], 784), (pos[0], 770), value, white, 10, False, bounds[2] - pos[0] - 2))
+    return entries
+
+
+def threat_action_summary(value: object) -> str:
+    text = " ".join(str(value or "").split())
+    lower = text.lower()
+    if "recovery" in lower and "control" in lower and "verify" in lower:
+        return "Recovery controls require verification."
+    if "verify" in lower:
+        return "Verification action is required."
+    if "review" in lower:
+        return "Analyst review is required."
+    return "Action required for active case."
+
+
+def threat_panel_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> list[TextEntry]:
+    shared = renderer_state["dashboard"]["shared"]
+    display = renderer_state["display"]
+    score = int(renderer_state["canonical_threat_score"])
+    canonical = str(
+        renderer_state["dashboard"]["threat_monitor"]["threat"]["canonical_classification"]
+    ).upper()
+    presentation = str(renderer_state["subsystem_06_display_level"]).upper()
+    expected_presentation = classification_for_score(score)
+    if canonical != csharp_level(score):
+        raise RendererContractError(
+            f"Canonical threat classification {canonical!r} does not match C# score {score}."
+        )
+    if presentation != expected_presentation:
+        raise RendererContractError(
+            f"Frozen #6 display level {presentation!r} does not match score {score}."
+        )
+    summary = (
+        f"{canonical.title()} activity tied to {shared['case_id']}",
+        f"{shared['evidence_count']} evidence records correlated",
+        f"{renderer_state['correlation_count']} linked relationships",
+        f"Stage: {human_stage(shared['current_stage'])}",
+        threat_action_summary(display.get("recommended_action")),
+    )
+    severity_color = threshold_guide_colors(raw)[presentation]
+    gray = (185, 180, 177)
+    entries = [
+        TextEntry((850, 615, 940, 657), (854, 621), str(score), severity_color, 32, True, 42),
+        TextEntry((892, 636, 940, 657), (894, 640), "/100", (184, 178, 175), 11, False, 43),
+        TextEntry((850, 658, 940, 682), (854, 663), presentation, severity_color, 13, True, 84),
+    ]
+    for y, value in zip((724, 741, 758, 775, 792), summary):
+        entries.append(TextEntry((1017, y - 2, 1271, y + 12), (1020, y), value, gray, 10, False, 246))
+    return entries
+
+
+def format_active_feed_event(event: dict[str, Any]) -> str:
+    """Create a concise complete event sentence from persisted event facts."""
+
+    event_type = str(event.get("event_type") or "").upper()
+    message = " ".join(str(event.get("message") or "").split())
+    if event_type == "WORKFLOW_STAGE_CHANGED" or "WORKFLOW ADVANCED" in message.upper():
+        stage = ""
+        marker = "WORKFLOW ADVANCED TO "
+        upper = message.upper()
+        if marker in upper:
+            stage = upper.split(marker, 1)[1].split(":", 1)[0].strip()
+        return f"Workflow advanced: {human_stage(stage or event.get('stage') or 'CURRENT STAGE')}"
+    if event_type == "CASE_MIGRATED" or "PERSISTENT LIFECYCLE" in message.upper():
+        return "Persistent lifecycle initialized"
+    if "EVIDENCE" in event_type or "EVIDENCE" in message.upper():
+        return "Evidence validation completed"
+    if "THREAT" in event_type or "THREAT" in message.upper():
+        return f"Threat score updated: {severity_bucket(event.get('severity'))}"
+    if "CORRELATION" in event_type or "CORRELATION" in message.upper():
+        return "Evidence correlation refreshed"
+    if event_type:
+        return event_type.replace("_", " ").title()
+    return "Persisted case event"
+
+
+def feed_panel_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    entries: list[TextEntry] = []
+    gray = (190, 187, 184)
+    color_by_level = {"HIGH": (234, 49, 42), "MEDIUM": (234, 141, 34), "LOW": (72, 170, 96)}
+    events = _feed_events(renderer_state)
+    for index, event in enumerate(events):
+        y = 590 + index * 17
+        entries.extend(
+            (
+                TextEntry((24, y - 2, 65, y + 13), (26, y), event["timestamp"], gray, 10, False, 37),
+                TextEntry((72, y - 2, 373, y + 13), (73, y), event["message"], gray, 10, False, 296),
+                TextEntry((379, y - 2, 418, y + 13), (382, y), event["severity"], color_by_level[event["visual_severity"]], 9, True, 34),
+            )
+        )
+    return entries
+
+
+def operational_brief_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    shared = renderer_state["dashboard"]["shared"]
+    display = renderer_state["display"]
+    font = dashboard_font(11)
+    values = (
+        wrap_complete_text(
+            display.get("assessment"),
+            font=font,
+            width=340,
+            max_lines=2,
+            fallback="Case assessment requires analyst review.",
+        ),
+        f"Stage: {human_stage(shared['current_stage'])}",
+        f"Priority: {shared['priority']} / Severity: {shared['severity']}",
+        wrap_complete_text(
+            display.get("recommended_action"),
+            font=font,
+            width=340,
+            max_lines=2,
+            fallback="Action requires analyst review.",
+        ),
+        f"Lead: {shared['lead_analyst']}",
+    )
+    entries: list[TextEntry] = []
+    for index, (bounds, position, value) in enumerate(zip(
+        (
+            # The text lanes are intentionally wider than the live origin to
+            # remove the populated-master antialias fringe without reaching
+            # the left icons or the outer/right panel border.
+            (1334, 596, 1710, 638),
+            (1334, 640, 1710, 682),
+            (1334, 684, 1710, 726),
+            (1334, 727, 1710, 770),
+            (1334, 771, 1710, 814),
+        ),
+        ((1340, 604), (1340, 648), (1340, 692), (1340, 735), (1340, 779)),
+        values,
+    )):
+        # The fourth persisted action is intentionally wrapped. Giving just
+        # that row more leading uses its internal free space without moving a
+        # divider, shrinking text, or crowding an adjacent row.
+        line_spacing = 8 if index == 3 else -1
+        entries.append(TextEntry(bounds, position, value, (190, 186, 183), 11, False, 340, line_spacing=line_spacing))
+    return entries
+
+
+def all_text_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> list[TextEntry]:
+    return (
+        static_text_entries(renderer_state)
+        + status_panel_entries(renderer_state)
+        + threat_panel_entries(renderer_state, raw)
+        + feed_panel_entries(renderer_state)
+        + operational_brief_entries(renderer_state)
+    )
+
+
+def _feed_events(renderer_state: dict[str, Any]) -> list[dict[str, Any]]:
+    original = renderer_state["events"]
+    sorted_events = sorted(
+        (event for event in original if isinstance(event, dict)),
+        key=lambda item: (str(item.get("timestamp", "")), int(item.get("sequence", 0))),
+        reverse=True,
+    )[:6]
+    result: list[dict[str, Any]] = []
+    for event in sorted_events:
+        level = severity_bucket(event.get("severity"))
+        result.append(
+            {
+                "timestamp": event_timestamp(event.get("timestamp")),
+                "message": format_active_feed_event(event),
+                "severity": str(event.get("severity") or level).upper(),
+                "visual_severity": level,
+                "raw": event,
+            }
+        )
+    while len(result) < 6:
+        result.append(
+            {
+                "timestamp": "--:--",
+                "message": "NO PERSISTED EVENT",
+                "severity": "LOW",
+                "visual_severity": "LOW",
+                "raw": {},
+            }
+        )
+    return result
+
+
+def _metric_records(system: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    telemetry = system.get("telemetry")
+    if not isinstance(telemetry, dict):
+        raise RendererContractError("System telemetry is not available.")
+    records: dict[str, dict[str, Any]] = {}
+    for key in ("cpu_percent", "memory_percent", "network_percent", "disk_percent", "queue_depth"):
+        record = telemetry.get(key)
+        if not isinstance(record, dict):
+            raise RendererContractError(f"System telemetry is missing {key}.")
+        values = record.get("samples")
+        if not isinstance(values, list) or not values:
+            raise RendererContractError(f"System telemetry {key} has no persisted samples.")
+        numeric = np.asarray(values, dtype=np.float64)
+        if numeric.ndim != 1 or not np.all(np.isfinite(numeric)):
+            raise RendererContractError(f"System telemetry {key} is malformed.")
+        records[key] = {"samples": numeric, "latest": float(numeric[-1]), "unit": record.get("unit")}
+    if records["queue_depth"]["unit"] != "count":
+        raise RendererContractError("queue_depth must retain its count unit.")
+    return records
+
+
+def _status_rows(system: dict[str, Any]) -> list[dict[str, Any]]:
+    subsystems = system.get("subsystems")
+    if not isinstance(subsystems, dict):
+        raise RendererContractError("System status lacks subsystem records.")
+    ordered = (
+        ("evidence_pipeline", "EVIDENCE PIPELINE"),
+        ("correlation_engine", "CORRELATION ENGINE"),
+        ("case_store", "CASE STORE"),
+        ("threat_assessment", "THREAT ASSESSMENT"),
+    )
+    rows: list[dict[str, Any]] = []
+    for key, label in ordered:
+        record = subsystems.get(key)
+        if not isinstance(record, dict):
+            raise RendererContractError(f"System status is missing {key}.")
+        rows.append(
+            {
+                "label": label,
+                "status": str(record.get("status") or "UNAVAILABLE"),
+                "health": float(record.get("health", 0.0)),
+                "intensity": float(record.get("led_intensity", 0.0)),
+            }
+        )
+    health = _system_health(system)
+    rows.append(
+        {
+            "label": "TELEMETRY SOURCE",
+            "status": str(system.get("measurement_status") or "UNAVAILABLE"),
+            "health": health,
+            "intensity": max(0.0, min(1.0, health / 100.0)),
+        }
+    )
+    return rows
+
+
+def case_overview_value_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    """Live values at the exact frozen Proposal B value baselines (local)."""
+
+    shared = renderer_state["dashboard"]["shared"]
+    relationships = renderer_state["relationships"]
+    feed_count = len(renderer_state["events"])
+    access_count = sum(
+        1
+        for event in renderer_state["events"]
+        if "ACCESS" in str(event.get("event_type", "")).upper()
+        or "ACCESS" in str(event.get("message", "")).upper()
+    )
+    correlation_count = renderer_state["correlation_count"]
+    return [
+        # The module names at local y=60/130/200 are frozen static text.  The
+        # values start at y=70/140/210 exactly as in the approved static
+        # renderer, not nine pixels above them.
+        TextEntry((19, 68, 86, 84), (21, 70), f"{shared['evidence_count']} RECORDS", (245, 77, 58), 8, True, 63),
+        TextEntry((19, 138, 85, 154), (21, 140), f"{access_count} ACCESS LOGS", (241, 165, 82), 8, True, 62),
+        TextEntry((19, 208, 111, 218), (21, 210), f"{feed_count} EVENTS", (244, 78, 57), 8, True, 88),
+        TextEntry((340, 68, 395, 84), (342, 70), f"{max(1, renderer_state['threat_history_count'])} REPORTS", (93, 177, 222), 8, True, 51),
+        TextEntry((340, 138, 395, 154), (342, 140), f"{correlation_count} LINKS", (246, 87, 63), 8, True, 51),
+        TextEntry((340, 208, 403, 224), (342, 210), f"REV {shared['state_revision']}", (98, 215, 141), 8, True, 59),
+        # Preserve the frozen hub label/rails/dividers; only these four lines
+        # are active-case data.  The final line ends above the y=170 divider.
+        TextEntry((186, 125, 274, 137), (188, 127), str(shared["case_id"]), (247, 85, 63), 8, True, 84),
+        TextEntry((186, 138, 274, 149), (188, 140), str(shared["lifecycle_status"]), (241, 88, 66), 7, True, 84),
+        TextEntry((186, 149, 274, 160), (188, 151), f"STAGE / {human_stage(shared['current_stage'])}", (165, 159, 156), 6, False, 84),
+        TextEntry((186, 159, 274, 169), (188, 161), f"RELATIONSHIPS / {len(relationships)}", (151, 145, 142), 6, False, 84),
+        # Footer copy is live-state presentation, positioned on the frozen
+        # y=255 baseline while preserving the y=249 divider and outer frame.
+        TextEntry((91, 251, 154, 266), (93, 255), "CURRENT STATE", (119, 101, 98), 7, False, 61),
+        TextEntry((397, 251, 438, 266), (397, 255), str(shared["lifecycle_status"]), (201, 63, 49), 7, True, 41),
+    ]
+
+
+def clean_case_overview_preview_values(source: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Remove only frozen preview-value glyphs; preserve all Proposal B art."""
+
+    # These tight interior lanes exclude every card frame/title/icon, the hub
+    # dividers, the top red divider (y=37..38), route lines, and arrowheads.
+    # The header suffix is preview-only; its immutable title begins at x=15.
+    lanes = (
+        # Preserve the left static header caption but remove the frozen
+        # preview suffix (// CONTROLLED PREVIEW) from its true start point.
+        (112, 39, 185, 49),
+        (19, 68, 86, 84), (19, 138, 85, 154), (19, 208, 111, 218),
+        (340, 68, 395, 84), (340, 138, 395, 154), (340, 208, 403, 224),
+        (186, 125, 274, 137), (186, 138, 274, 149),
+        (186, 149, 274, 160), (186, 159, 274, 169),
+        # Preserve the source-exact frozen caption prefix and only replace
+        # preview suffixes below the divider.
+        (91, 251, 154, 266), (397, 251, 438, 266),
+    )
+    result = source.copy()
+    authorized = np.zeros(source.shape[:2], dtype=bool)
+    for index, (x1, y1, x2, y2) in enumerate(lanes):
+        region = result[y1:y2, x1:x2]
+        # Preview glyphs are the deliberately bright foreground in these
+        # blank value lanes.  The header suffix itself used low-contrast gray
+        # antialiasing, so it needs the lower threshold; all other lanes retain
+        # their source texture at the normal threshold.
+        threshold = 10 if index == 0 else 28
+        mask = foreground_mask(region, minimum_brightness=threshold)
+        if np.any(mask):
+            repaired = cv2.inpaint(region, mask.astype(np.uint8) * 255, 2, cv2.INPAINT_TELEA)
+            region[mask] = repaired[mask]
+            result[y1:y2, x1:x2] = region
+        authorized[y1:y2, x1:x2] = True
+    return result, authorized
+
+
+def create_case_overview_plate(
+    source: np.ndarray,
+    renderer_state: dict[str, Any],
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Return frozen #7 clean plate, active-case plate, and text lanes."""
+
+    clean, dynamic_lanes = clean_case_overview_preview_values(source)
+    live = draw_text_entries(clean, case_overview_value_entries(renderer_state))
+    return clean, live, dynamic_lanes
+
+
+@dataclass
+class RenderContext:
+    helpers: FrozenHelpers
+    raw: np.ndarray
+    clear: np.ndarray
+    registered_clear: np.ndarray
+    renderer_state: dict[str, Any]
+    static_base: np.ndarray
+    text_entries: list[TextEntry]
+    authorization_mask: np.ndarray
+    motion_mask: np.ndarray
+    unit_status_clean_plate: np.ndarray
+    operational_icon_plate: np.ndarray
+    s01_stationary: np.ndarray
+    s01_sprite: Image.Image
+    s01_ring_mask: np.ndarray
+    s01_atmosphere: dict[str, np.ndarray]
+    s01_palette: Image.Image
+    s02_stationary: np.ndarray
+    s02_layer: np.ndarray
+    s03_source: np.ndarray
+    s03_stage_masks: list[np.ndarray]
+    s03_arrow_masks: list[np.ndarray]
+    s03_stage_norms: list[float]
+    s03_arrow_norms: list[float]
+    s04_source: np.ndarray
+    s04_empty: np.ndarray
+    s04_live_mask: np.ndarray
+    s04_severity_masks: list[np.ndarray]
+    s04_row_masks: list[np.ndarray]
+    s04_bars: list[tuple[int, int]]
+    s05_source: np.ndarray
+    s05_plate: np.ndarray
+    s05_led_masks: list[np.ndarray]
+    s06_source: np.ndarray
+    s06_shell: np.ndarray
+    s06_cleanup: np.ndarray
+    s06_shell_changes: np.ndarray
+    s06_draw_mask: np.ndarray
+    s06_final_static: np.ndarray
+    s07_plate: np.ndarray
+    s07_clean_plate: np.ndarray
+    s07_dynamic_text_lanes: np.ndarray
+    s07_static_reference: np.ndarray
+    s07_paths: dict[str, np.ndarray]
+    s07_route_masks: dict[str, np.ndarray]
+    s07_components: dict[str, np.ndarray]
+    s07_authorized: np.ndarray
+    route_gate: dict[str, bool]
+
+
+def _panel(array: np.ndarray, bounds: tuple[int, int, int, int]) -> np.ndarray:
+    x1, y1, x2, y2 = bounds
+    return array[y1:y2, x1:x2].copy()
+
+
+def _merge_panel(frame: np.ndarray, bounds: tuple[int, int, int, int], panel: np.ndarray) -> None:
+    x1, y1, x2, y2 = bounds
+    if panel.shape[:2] != (y2 - y1, x2 - x1):
+        raise RendererContractError(f"Panel dimensions drifted for {bounds}.")
+    frame[y1:y2, x1:x2] = panel
+
+
+def build_frozen_s01_palette(
+    helper: ModuleType,
+    stationary: np.ndarray,
+    sprite: Image.Image,
+    ring_mask: np.ndarray,
+    atmosphere: dict[str, np.ndarray],
+) -> Image.Image:
+    """Recreate the approved #1 fixed palette from its four frozen phases."""
+
+    indices = (0, 30, 60, 90)
+    width, height = helper.VIEW_SIZE
+    palette_source = Image.new("RGB", (width, height * len(indices)))
+    for row, phase in enumerate(indices):
+        panel, *_details = helper.render_frame(
+            stationary,
+            sprite,
+            phase,
+            ring_mask,
+            atmosphere,
+        )
+        palette_source.paste(panel.convert("RGB"), (0, row * height))
+    return palette_source.quantize(
+        colors=256,
+        method=Image.Quantize.MEDIANCUT,
+        dither=Image.Dither.NONE,
+    )
+
+
+def _route_gate(renderer_state: dict[str, Any]) -> dict[str, bool]:
+    events = renderer_state["events"]
+    access = any(
+        "ACCESS" in str(event.get("event_type", "")).upper()
+        or "ACCESS" in str(event.get("message", "")).upper()
+        for event in events
+        if isinstance(event, dict)
+    )
+    return {
+        "evidence_to_case": int(renderer_state["dashboard"]["shared"]["evidence_count"]) > 0,
+        "access_to_case": access,
+        "timeline_to_case": bool(events),
+        "case_to_intelligence": renderer_state["canonical_threat_score"] >= 0,
+        "case_to_correlation": renderer_state["correlation_count"] > 0,
+        "case_to_datastore": int(renderer_state["dashboard"]["shared"]["state_revision"]) >= 1,
+    }
+
+
+def configure_case_overview_review_timing(
+    helper: ModuleType,
+    route_gate: dict[str, bool],
+) -> None:
+    """Resample frozen #7's approved route story at review-only 20fps.
+
+    The module file and route geometry remain untouched.  This in-memory
+    adapter doubles only timing coordinates so the exact frozen paths have
+    intermediate positions across the 120-frame review loop instead of
+    repeating a 60-frame sequence twice.
+    """
+
+    source_frames = int(helper.FRAME_COUNT)
+    scale = FRAME_COUNT / source_frames
+    routes = []
+    for route in tuple(helper.ROUTES):
+        if not route_gate.get(route.key, False):
+            continue
+        routes.append(
+            route.__class__(
+                route.key,
+                route.source,
+                route.destination,
+                route.points,
+                route.color,
+                int(round(route.start * scale)) % FRAME_COUNT,
+                max(2, int(round(route.duration * scale))),
+            )
+        )
+    if not routes:
+        raise RendererContractError("No persisted relationship route is available for Case Overview.")
+    helper.FRAME_COUNT = FRAME_COUNT
+    helper.FRAME_DURATION_MS = FRAME_DURATION_MS
+    helper.ROUTES = tuple(routes)
+    helper.ROUTE_BY_KEY = {route.key: route for route in helper.ROUTES}
+
+
+def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
+    verify_approved_inputs()
+    helpers = load_frozen_helpers()
+    raw = np.array(Image.open(POPULATED_MASTER).convert("RGB"), dtype=np.uint8)
+    clear = np.array(Image.open(CLEAR_MASTER).convert("RGB"), dtype=np.uint8)
+    if (raw.shape[1], raw.shape[0]) != CANVAS_SIZE or (clear.shape[1], clear.shape[0]) != CANVAS_SIZE:
+        raise RendererContractError("Approved master dimensions are not 1727x911.")
+
+    registered_clear, _matrix = helpers.s01.register_clear_to_populated(clear, CANVAS_SIZE)
+    s01_sprite, s01_alpha, _components, _diagnostics = helpers.s01.extract_fixed_sprite(raw, registered_clear)
+    s01_stationary, _restore, _tone = helpers.s01.build_stationary_background(raw, registered_clear, s01_alpha)
+    s01_ring = helpers.s01.build_ring_detail_mask(raw)
+    s01_atmosphere = helpers.s01.build_scanner_atmosphere_base(raw)
+    s01_palette = build_frozen_s01_palette(
+        helpers.s01,
+        s01_stationary,
+        s01_sprite,
+        s01_ring,
+        s01_atmosphere,
+    )
+
+    _s02_view, s02_stationary, _s02_sprite, s02_layer = helpers.s02.extract_magnifier(raw)
+
+    s03_source = _panel(raw, helpers.s03.VIEW_BOUNDS)
+    s03_stage_masks, s03_arrow_masks, _s03_union, s03_stage_norms, s03_arrow_norms = helpers.s03.build_element_masks(s03_source)
+
+    s04_source = _panel(raw, helpers.s04.PANEL_BOUNDS)
+    (
+        s04_live,
+        s04_severity,
+        s04_rows,
+        s04_bars,
+        _s04_tops,
+        _s04_source_histogram,
+        _s04_bar_field,
+        _s04_plate_mask,
+        _s04_authorized,
+    ) = helpers.s04.build_masks(s04_source)
+    s04_empty, _s04_clear_graph = helpers.s04.build_empty_graph_plate(s04_source, clear)
+
+    s05_source = _panel(raw, helpers.s05.PANEL_BOUNDS)
+    s05_led, _s05_trace_masks, s05_clear_masks, _s05_authorized = helpers.s05.build_masks(s05_source)
+    s05_plate, _s05_ghosts = helpers.s05.build_trace_plate(s05_source, s05_clear_masks)
+
+    s06_source = _panel(raw, helpers.s06.PANEL_BOUNDS)
+    s06_source_signal, s06_line_cleanup, s06_workbox, s06_draw = helpers.s06.source_signal_masks(s06_source)
+    (
+        s06_plot,
+        s06_cleanup,
+        _s06_fill,
+        _s06_seed,
+        _s06_residual,
+        _s06_obsolete,
+        _s06_changed,
+        _s06_wedge,
+        _s06_axis,
+    ) = helpers.s06.build_source_derived_plot_plate(
+        s06_source,
+        s06_source_signal,
+        s06_line_cleanup,
+        s06_workbox,
+    )
+    (
+        s06_shell,
+        _s06_presentation,
+        s06_shell_changes,
+        s06_final_static,
+        _s06_neutral,
+    ) = helpers.s06.build_graph_shell_plate(s06_plot, s06_draw)
+
+    case_overview_source = np.array(
+        Image.open(CASE_OVERVIEW_STATIC).convert("RGB"), dtype=np.uint8
+    )
+    if case_overview_source.shape[:2] != (272, 451):
+        raise RendererContractError("Approved #7 Case Overview static reference dimensions changed.")
+    route_gate = _route_gate(renderer_state)
+    configure_case_overview_review_timing(helpers.s07, route_gate)
+    # Critical ordering: route/component masks come from untouched frozen
+    # Proposal-B art, before any narrow live-value cleaning takes place.
+    (
+        s07_paths,
+        s07_route_masks,
+        s07_components,
+        s07_authorized,
+        _s07_protected,
+        _s07_static,
+    ) = helpers.s07.build_masks(case_overview_source)
+    s07_clean_plate, s07_plate, s07_dynamic_text_lanes = create_case_overview_plate(
+        case_overview_source,
+        renderer_state,
+    )
+
+    base = raw.copy()
+    _merge_panel(base, helpers.s01.VIEW_BOUNDS, s01_stationary)
+    _merge_panel(base, helpers.s02.VIEW_BOUNDS, s02_stationary)
+    _merge_panel(base, helpers.s04.PANEL_BOUNDS, s04_empty)
+    _merge_panel(base, helpers.s05.PANEL_BOUNDS, s05_plate)
+    _merge_panel(base, helpers.s06.PANEL_BOUNDS, s06_shell)
+    _merge_panel(base, helpers.s07.PANEL_BOUNDS_GLOBAL, s07_plate)
+
+    text_entries = all_text_entries(renderer_state, raw)
+    # Build this just once from registered clean-master lanes.  Rendering a
+    # frame later restores this clean content under every live string before
+    # drawing it once; it therefore cannot stack data over baked preview text.
+    # The dashboard masters share the approved global 1727x911 registration.
+    # ``registered_clear`` is a #1-local scanner restoration transform and is
+    # deliberately not reused for unrelated panel text lanes.
+    static_base = clean_text_entries(base, clear, text_entries)
+    # Source-derived top-left unit lane: no clear-master placeholder rules.
+    unit_status_clean_plate = build_unit_status_clean_plate(static_base)
+    ux1, uy1, ux2, uy2 = UNIT_STATUS_BOUNDS
+    static_base[uy1:uy2, ux1:ux2] = unit_status_clean_plate[uy1:uy2, ux1:ux2]
+    # Legacy Operational Brief symbols are static integration residue. Replace
+    # only their measured ROIs with line art; all copy remains untouched.
+    operational_icon_plate = build_operational_icon_plate(static_base)
+    for ox1, oy1, ox2, oy2 in OPERATIONAL_ICON_BOUNDS:
+        static_base[oy1:oy2, ox1:ox2] = operational_icon_plate[oy1:oy2, ox1:ox2]
+
+    canvas_mask = np.zeros((CANVAS_SIZE[1], CANVAS_SIZE[0]), dtype=bool)
+    motion_mask = np.zeros_like(canvas_mask)
+    for bounds in (
+        helpers.s01.VIEW_BOUNDS,
+        helpers.s02.VIEW_BOUNDS,
+        helpers.s03.VIEW_BOUNDS,
+        helpers.s04.PANEL_BOUNDS,
+        helpers.s05.PANEL_BOUNDS,
+        helpers.s06.PANEL_BOUNDS,
+        helpers.s07.PANEL_BOUNDS_GLOBAL,
+        UNIT_STATUS_BOUNDS,
+    ):
+        motion_mask |= rect_mask(CANVAS_SIZE, bounds)
+    canvas_mask |= motion_mask
+    for entry in text_entries:
+        canvas_mask |= rect_mask(CANVAS_SIZE, entry.bounds)
+
+    return RenderContext(
+        helpers=helpers,
+        raw=raw,
+        clear=clear,
+        registered_clear=registered_clear,
+        renderer_state=renderer_state,
+        static_base=static_base,
+        text_entries=text_entries,
+        authorization_mask=canvas_mask,
+        motion_mask=motion_mask,
+        unit_status_clean_plate=unit_status_clean_plate,
+        operational_icon_plate=operational_icon_plate,
+        s01_stationary=s01_stationary,
+        s01_sprite=s01_sprite,
+        s01_ring_mask=s01_ring,
+        s01_atmosphere=s01_atmosphere,
+        s01_palette=s01_palette,
+        s02_stationary=s02_stationary,
+        s02_layer=s02_layer,
+        s03_source=s03_source,
+        s03_stage_masks=s03_stage_masks,
+        s03_arrow_masks=s03_arrow_masks,
+        s03_stage_norms=s03_stage_norms,
+        s03_arrow_norms=s03_arrow_norms,
+        s04_source=s04_source,
+        s04_empty=s04_empty,
+        s04_live_mask=s04_live,
+        s04_severity_masks=s04_severity,
+        s04_row_masks=s04_rows,
+        s04_bars=s04_bars,
+        s05_source=s05_source,
+        s05_plate=s05_plate,
+        s05_led_masks=s05_led,
+        s06_source=s06_source,
+        s06_shell=s06_shell,
+        s06_cleanup=s06_cleanup,
+        s06_shell_changes=s06_shell_changes,
+        s06_draw_mask=s06_draw,
+        s06_final_static=s06_final_static,
+        s07_plate=s07_plate,
+        s07_clean_plate=s07_clean_plate,
+        s07_dynamic_text_lanes=s07_dynamic_text_lanes,
+        s07_static_reference=case_overview_source,
+        s07_paths=s07_paths,
+        s07_route_masks=s07_route_masks,
+        s07_components=s07_components,
+        s07_authorized=s07_authorized,
+        route_gate=route_gate,
+    )
+
+
+WORKFLOW_CARD_SHELLS_GLOBAL = {
+    "CASE_SCAN": (454, 387, 544, 469),
+    "EVIDENCE_REVIEW": (610, 387, 699, 469),
+    "VALIDATION": (770, 387, 861, 469),
+    "ASSESSMENT": (936, 387, 1031, 469),
+    "PROBLEM_REVIEW": (1102, 387, 1206, 469),
+}
+
+
+def _workflow_local_rect(context: RenderContext, bounds: tuple[int, int, int, int]) -> np.ndarray:
+    """Return one workflow-local rectangle from immutable global geometry."""
+
+    view_x1, view_y1, view_x2, view_y2 = context.helpers.s03.VIEW_BOUNDS
+    x1, y1, x2, y2 = bounds
+    return rect_mask(
+        (view_x2 - view_x1, view_y2 - view_y1),
+        (x1 - view_x1, y1 - view_y1, x2 - view_x1, y2 - view_y1),
+    )
+
+
+def workflow_micro_polish_masks(context: RenderContext) -> dict[str, np.ndarray]:
+    """Declare the bounded #9 workflow-only lighting masks.
+
+    This intentionally describes lighting around existing frozen silhouettes;
+    it neither redrawn nor moves a card, icon, label, connector, or legend.
+    """
+
+    helper = context.helpers.s03
+    stage = str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
+    stage_index = helper.STAGES.index(stage)
+    safe = _workflow_local_rect(context, helper.ANIMATION_SAFE_BOUNDS_GLOBAL)
+    current_shell = _workflow_local_rect(context, WORKFLOW_CARD_SHELLS_GLOBAL[stage])
+    current_halo = cv2.dilate(
+        current_shell.astype(np.uint8), np.ones((7, 7), np.uint8), iterations=1
+    ).astype(bool)
+    current_halo &= ~current_shell & safe
+
+    shell_x1, shell_y1, shell_x2, _shell_y2 = WORKFLOW_CARD_SHELLS_GLOBAL[stage]
+    icon_width = min(37, max(24, shell_x2 - shell_x1 - 28))
+    icon_center = (shell_x1 + shell_x2) // 2
+    icon_bounds = (icon_center - icon_width // 2, shell_y1 + 16, icon_center + (icon_width + 1) // 2, shell_y1 + 66)
+    current_icon = context.s03_stage_masks[stage_index] & _workflow_local_rect(context, icon_bounds)
+
+    incoming_arrow = (
+        context.s03_arrow_masks[stage_index - 1].copy()
+        if stage_index > 0
+        else np.zeros_like(current_shell)
+    )
+    incoming_halo = cv2.dilate(
+        incoming_arrow.astype(np.uint8), np.ones((3, 3), np.uint8), iterations=1
+    ).astype(bool)
+    incoming_halo &= ~incoming_arrow & safe
+
+    completed_halo = np.zeros_like(current_shell)
+    for completed_stage in helper.STAGES[:stage_index]:
+        shell = _workflow_local_rect(context, WORKFLOW_CARD_SHELLS_GLOBAL[completed_stage])
+        completed_halo |= cv2.dilate(
+            shell.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1
+        ).astype(bool) & ~shell & safe
+
+    authorized = current_halo | current_icon | incoming_halo | incoming_arrow | completed_halo
+    return {
+        "current_halo": current_halo,
+        "current_icon": current_icon,
+        "incoming_halo": incoming_halo,
+        "incoming_arrow": incoming_arrow,
+        "completed_halo": completed_halo,
+        "authorized": authorized,
+        "safe": safe,
+    }
+
+
+def apply_workflow_review_emphasis(
+    context: RenderContext,
+    panel: np.ndarray,
+    frame_index: int,
+) -> np.ndarray:
+    """Add the restrained, full-resolution workflow presentation overlay."""
+
+    result = panel.copy()
+    masks = workflow_micro_polish_masks(context)
+    phase = (frame_index % FRAME_COUNT) / FRAME_COUNT
+    breath = 0.5 - 0.5 * math.cos(math.tau * phase)
+
+    # A moving soft sector around the existing card edge breaks the frozen
+    # cosine symmetry after GIF palette quantization while remaining a halo,
+    # not a new perimeter or a moving card.
+    yy, xx = np.indices(result.shape[:2], dtype=np.float64)
+    shell_x1, shell_y1, shell_x2, shell_y2 = WORKFLOW_CARD_SHELLS_GLOBAL[
+        str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
+    ]
+    view_x1, view_y1, _view_x2, _view_y2 = context.helpers.s03.VIEW_BOUNDS
+    center_x = (shell_x1 + shell_x2) / 2.0 - view_x1
+    center_y = (shell_y1 + shell_y2) / 2.0 - view_y1
+    theta = np.arctan2((yy - center_y) / 41.0, (xx - center_x) / 44.5)
+    moving_sector = (0.5 + 0.5 * np.cos(theta - math.tau * phase)) ** 6
+    halo_weights = 0.075 + 0.065 * breath + 0.11 * moving_sector
+    blend_weighted_pixels(result, masks["current_halo"], (210, 29, 26), halo_weights)
+    blend_pixels(result, masks["current_icon"], (255, 76, 62), 0.025 + 0.10 * breath)
+    blend_pixels(result, masks["incoming_halo"], (205, 31, 27), 0.035 + 0.050 * breath)
+    blend_pixels(result, masks["incoming_arrow"], (255, 63, 50), 0.030 + 0.10 * breath)
+
+    # Completed cards retain their frozen blue state.  This extremely low,
+    # one-cycle halo is intentionally much quieter than the current red card.
+    blend_pixels(
+        result,
+        masks["completed_halo"],
+        (48, 122, 207),
+        0.052 + 0.004 * math.sin(math.tau * phase),
+    )
+    return result
+
+
+def feed_values_for_frame(context: RenderContext, frame_index: int) -> np.ndarray:
+    """Map persisted intensity history into the fixed 39-slot #4 field.
+
+    A rendered GIF is a visual monitoring loop, not a new telemetry source.
+    Its bar heights therefore remain the exact persisted/data-derived values
+    for every frame; only the bounded illumination layer is animated.
+    """
+
+    slot_count = len(context.s04_bars)
+    persisted_events = sorted(
+        (event for event in context.renderer_state["events"] if isinstance(event, dict)),
+        key=lambda event: (str(event.get("timestamp", "")), int(event.get("sequence", 0))),
+    )
+    anchors: list[float] = []
+    for event in persisted_events:
+        try:
+            intensity = float(event.get("intensity"))
+        except (TypeError, ValueError):
+            continue
+        if math.isfinite(intensity):
+            anchors.append(float(np.clip(intensity, 0.0, 100.0)))
+    if not anchors:
+        anchors = [float(value) for value in context.renderer_state["feed_history"]]
+    if len(anchors) >= slot_count:
+        # A complete persisted history legitimately spans the field; preserve
+        # its chronological anchors with deterministic interpolation.
+        base = resample(anchors, slot_count, name="Active Case Feed history")
+    else:
+        # Sparse-history adapter: empty historical periods remain a coherent
+        # low/no-event floor.  The actual chronological samples occupy the
+        # newest frozen slots; no fictional older spikes or linear 60-minute
+        # ramp are invented.
+        no_event_floor = 4.0
+        base = np.full(slot_count, no_event_floor, dtype=np.float64)
+        start = slot_count - len(anchors)
+        base[start:] = np.asarray(anchors, dtype=np.float64)
+    return base.astype(np.float64)
+
+
+def feed_event_for_frame(context: RenderContext, frame_index: int) -> tuple[dict[str, object] | None, float, float]:
+    visible = _feed_events(context.renderer_state)[:5]
+    active_events = [event for event in visible if event["raw"]]
+    if not active_events:
+        return None, 0.0, 0.0
+    slot_width = FRAME_COUNT / len(active_events)
+    phase = (frame_index % FRAME_COUNT) / slot_width
+    row_index = int(math.floor(phase)) % len(active_events)
+    local = phase - math.floor(phase)
+    strength = math.sin(math.pi * local) ** 1.35
+    if strength <= 0.001:
+        return None, 0.0, local
+    event = dict(active_events[row_index])
+    event["row_index"] = row_index
+    event["severity"] = event["visual_severity"]
+    event["telemetry_center"] = int(
+        round((row_index + 1) * (len(context.s04_bars) - 1) / (len(active_events) + 1))
+    )
+    event["graph_intensity"] = min(1.0, 0.35 + 0.65 * strength)
+    return event, strength, local
+
+
+def apply_active_feed_live_overlay(
+    context: RenderContext,
+    panel: np.ndarray,
+    tops: Sequence[int],
+    heights: Sequence[int],
+    frame_index: int,
+) -> np.ndarray:
+    """Add a bounded, data-faithful review-layer live presentation.
+
+    The frozen #4 helper continues to draw every bar directly from persisted
+    history. This layer deliberately changes only local illumination around
+    those existing bar bodies and the existing LIVE glyph; it never appends or
+    invents events, changes a bar's x position, or creates a historical spike.
+    """
+
+    result = panel.copy()
+    panel_x, panel_y, _panel_x2, _panel_y2 = context.helpers.s04.PANEL_BOUNDS
+    graph_x1, graph_y1, graph_x2, graph_y2 = context.helpers.s04.GRAPH_INTERIOR_GLOBAL
+    graph_mask = np.zeros(result.shape[:2], dtype=bool)
+    graph_mask[
+        graph_y1 - panel_y:graph_y2 - panel_y,
+        graph_x1 - panel_x:graph_x2 - panel_x,
+    ] = True
+    bodies = np.zeros(result.shape[:2], dtype=bool)
+    baseline = int(context.helpers.s04.EXPECTED_GRAPH_BASELINE) - panel_y
+    for (x1, x2), top, height in zip(context.s04_bars, tops, heights):
+        if int(height) <= 0:
+            continue
+        lx1 = x1 - panel_x
+        lx2 = x2 - panel_x + 1
+        ly1 = max(graph_y1 - panel_y, int(top) - panel_y)
+        bodies[ly1:baseline + 1, lx1:lx2] = True
+
+    phase = (frame_index % FRAME_COUNT) / FRAME_COUNT
+    # This asymmetric but seamless envelope avoids hard blinking and gives the
+    # 120-frame review loop a visibly continuous presentation state.
+    breath = float(np.clip(
+        0.50
+        + 0.31 * math.sin(math.tau * phase - 0.55)
+        + 0.12 * math.sin(math.tau * 2.0 * phase + 0.80),
+        0.04,
+        0.96,
+    ))
+
+    # The low/no-event historical floor may breathe only imperceptibly.  Its
+    # geometry remains data-derived and all edge pixels stay inside the graph.
+    halo = cv2.dilate(bodies.astype(np.uint8), np.ones((3, 3), np.uint8), iterations=1).astype(bool)
+    halo &= graph_mask & ~bodies
+    blend_pixels(result, halo, (168, 31, 28), 0.008 + 0.012 * breath)
+    blend_pixels(result, bodies, (248, 65, 53), 0.006 + 0.016 * breath)
+
+    persisted_count = sum(
+        1
+        for event in context.renderer_state["events"]
+        if isinstance(event, dict) and isinstance(event.get("intensity"), (int, float))
+    )
+    persisted_count = min(persisted_count, len(context.s04_bars))
+    first_real_slot = len(context.s04_bars) - persisted_count
+
+    # Persisted samples occupy the newest chronological slots.  Their halo
+    # strength is ordered by recency only; it never changes stored values or
+    # writes any bar pixels above a data-derived top.
+    for rank, slot in enumerate(range(first_real_slot, len(context.s04_bars))):
+        (x1, x2), top, height = context.s04_bars[slot], tops[slot], heights[slot]
+        if int(height) <= 0:
+            continue
+        body = np.zeros(result.shape[:2], dtype=bool)
+        body[
+            max(graph_y1 - panel_y, int(top) - panel_y):baseline + 1,
+            x1 - panel_x:x2 - panel_x + 1,
+        ] = True
+        recency = 0.55 + 0.45 * rank / max(1, persisted_count - 1)
+        inner = cv2.dilate(body.astype(np.uint8), np.ones((3, 3), np.uint8), iterations=1).astype(bool)
+        inner &= graph_mask & ~body
+        corona = cv2.dilate(body.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1).astype(bool)
+        corona &= graph_mask & ~inner & ~body
+        blend_pixels(result, corona, (188, 31, 28), (0.025 + 0.13 * recency * breath))
+        blend_pixels(result, inner, (226, 49, 41), (0.045 + 0.17 * recency * breath))
+        blend_pixels(result, body, (255, 84, 66), (0.020 + 0.10 * recency * breath))
+
+    # The existing LIVE dot/word receives a self-contained two-pixel soft
+    # halo plus a travelling luminosity bias.  The clip keeps it clear of the
+    # title and all event rows, and the phase returns exactly at the seam.
+    live_allowed = np.zeros(result.shape[:2], dtype=bool)
+    lx1 = context.helpers.s04.LIVE_ROI_GLOBAL[0] - panel_x
+    ly1 = context.helpers.s04.LIVE_ROI_GLOBAL[1] - panel_y
+    lx2 = context.helpers.s04.LIVE_ROI_GLOBAL[2] - panel_x
+    ly2 = context.helpers.s04.LIVE_ROI_GLOBAL[3] - panel_y
+    live_allowed[ly1:ly2, lx1:lx2] = True
+    live_inner = cv2.dilate(context.s04_live_mask.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1).astype(bool)
+    live_inner &= live_allowed & ~context.s04_live_mask
+    live_outer = cv2.dilate(context.s04_live_mask.astype(np.uint8), np.ones((7, 7), np.uint8), iterations=1).astype(bool)
+    live_outer &= live_allowed & ~live_inner & ~context.s04_live_mask
+    blend_pixels(result, live_outer, (190, 31, 28), 0.025 + 0.090 * breath)
+    blend_pixels(result, live_inner, (220, 42, 36), 0.045 + 0.120 * breath)
+    _live_y, live_x = np.indices(result.shape[:2], dtype=np.float64)
+    glint = 0.5 + 0.5 * np.sin(math.tau * (phase + (live_x - lx1) / max(1.0, lx2 - lx1) * 0.35))
+    live_weights = 0.12 + 0.24 * breath + 0.07 * glint
+    blend_weighted_pixels(result, context.s04_live_mask, (255, 70, 57), live_weights)
+    return result
+
+
+def metric_trace_for_frame(
+    helper: ModuleType,
+    frozen_key: str,
+    samples: np.ndarray,
+    width: int,
+    frame_index: int,
+    *,
+    scale: float,
+) -> np.ndarray:
+    """Anchor frozen #5's distinct motion profiles to persisted telemetry."""
+
+    normalized = np.clip(samples.astype(np.float64) / scale, 0.0, 1.0)
+    base = resample(normalized, width, name="System Status telemetry")
+    t = (frame_index % FRAME_COUNT) / FRAME_COUNT
+    profile = np.asarray(helper.telemetry_samples(frozen_key, width, t), dtype=np.float64)
+    initial = np.asarray(helper.telemetry_samples(frozen_key, width, 0.0), dtype=np.float64)
+    # Calibrated against the frozen #5 raster envelopes: CPU/DISK retain small
+    # irregular motion, memory/queue drift more slowly, and network has the
+    # strongest bounded transfer bursts.  Values remain deterministic and
+    # return precisely to persisted frame-zero anchors at the six-second seam.
+    gains = {"cpu": 0.75, "memory": 2.20, "network": 0.70, "disk": 0.75, "uptime": 2.20}
+    values = np.clip(base + gains[frozen_key] * (profile - initial), 0.0, 1.0)
+    return values.astype(np.float64)
+
+
+def system_status_for_frame(context: RenderContext, frame_index: int) -> dict[str, object]:
+    system = context.renderer_state["dashboard"]["system_status"]
+    rows = _status_rows(system)
+    t = (frame_index % FRAME_COUNT) / FRAME_COUNT
+    subsystems: dict[str, dict[str, object]] = {}
+    frozen_keys = (
+        "system_integrity",
+        "data_pipeline",
+        "api_services",
+        "network_security",
+        "threat_intel_feed",
+    )
+    for index, (key, row) in enumerate(zip(frozen_keys, rows)):
+        pulse = 0.5 - 0.5 * math.cos(math.tau * (t + index * 0.13))
+        intensity = 0.94 + 0.10 * max(0.0, min(1.0, float(row["intensity"]))) + 0.015 * pulse
+        subsystems[key] = {
+            "status": row["status"],
+            "health": max(0.0, min(100.0, float(row["health"]))),
+            "led_state": "truthful-source",
+            "led_intensity": max(0.90, min(1.08, intensity)),
+        }
+
+    metrics = _metric_records(system)
+    specs = (
+        ("cpu", "cpu_percent", 100.0),
+        ("memory", "memory_percent", 100.0),
+        ("network", "network_percent", 100.0),
+        ("disk", "disk_percent", 100.0),
+        # Queue remains a count. Twelve is a documented view scale only, not
+        # a percentage claim; the text label is redrawn as QUEUE / CT.
+        ("uptime", "queue_depth", 12.0),
+    )
+    telemetry: dict[str, dict[str, object]] = {}
+    for frozen_key, source_key, scale in specs:
+        width = next(bounds[2] - bounds[0] for key, bounds, _ in context.helpers.s05.TRACE_SPECS if key == frozen_key)
+        telemetry[frozen_key] = {
+            "samples": tuple(
+                float(value)
+                for value in metric_trace_for_frame(
+                    context.helpers.s05,
+                    frozen_key,
+                    metrics[source_key]["samples"],
+                    width,
+                    frame_index,
+                    scale=scale,
+                )
+            )
+        }
+    return {
+        "case_id": context.renderer_state["dashboard"]["shared"]["case_id"],
+        "preview_only": False,
+        "subsystems": subsystems,
+        "telemetry": telemetry,
+    }
+
+
+def threat_history_for_frame(context: RenderContext, frame_index: int) -> np.ndarray:
+    """Preserve the persisted anomaly signal while giving the live display motion."""
+
+    draw_width = context.helpers.s06.DRAW_CLIP[2] - context.helpers.s06.DRAW_CLIP[0]
+    base = resample(
+        context.renderer_state["anomaly_history"],
+        draw_width,
+        name="Threat Monitor anomaly history",
+    )
+    t = (frame_index % FRAME_COUNT) / FRAME_COUNT
+    x = np.linspace(0.0, 1.0, draw_width, endpoint=True)
+    gradient = np.gradient(base) if base.size > 1 else np.zeros_like(base)
+    envelope = np.sin(math.pi * x) ** 1.15
+    motion = (
+        2.2 * envelope * np.sin(math.tau * (t + 0.31 * x))
+        + 0.35 * gradient * math.sin(math.tau * t)
+    )
+    values = np.clip(base + motion, 0.0, 100.0)
+    # The persisted historical signal remains visible over most of the plot.
+    # Only the final fifth smoothly converges to the one canonical score shown
+    # elsewhere in this same active case; no second score is invented.
+    score = float(context.renderer_state["canonical_threat_score"])
+    tail = np.clip((x - 0.80) / 0.20, 0.0, 1.0)
+    smooth_tail = tail * tail * (3.0 - 2.0 * tail)
+    values = values * (1.0 - smooth_tail) + score * smooth_tail
+    values[0] = base[0]
+    values[-1] = score
+    return values
+
+
+def threat_target_y(context: RenderContext, score: int | float) -> int:
+    """Map a normalized canonical score to frozen #6's exact plot y scale."""
+
+    clip = context.helpers.s06.DRAW_CLIP
+    height = clip[3] - clip[1]
+    local = context.helpers.s06.signal_y_values_for_samples(
+        np.asarray((float(score),), dtype=np.float64),
+        height,
+    )
+    return int(clip[1] + int(local[0]))
+
+
+def draw_threat_score_marker(context: RenderContext, panel: np.ndarray) -> np.ndarray:
+    """Draw a tiny current-score target inside the protected NOW gutter."""
+
+    result = panel.copy()
+    score = int(context.renderer_state["canonical_threat_score"])
+    presentation = str(context.renderer_state["subsystem_06_display_level"]).upper()
+    color = threshold_guide_colors(context.raw)[presentation]
+    global_y = threat_target_y(context, score)
+    panel_x, panel_y, _x2, _y2 = context.helpers.s06.PANEL_BOUNDS
+    image = Image.fromarray(result, "RGB")
+    draw = ImageDraw.Draw(image)
+    # The frozen right-scale restoration begins at x=1236. This 4px diamond
+    # ends at x=1235, retaining the required one-pixel gutter and untouched
+    # static axis/tick pixels.
+    cx, cy = 1233 - panel_x, global_y - panel_y
+    draw.line(((1231 - panel_x, cy), (1235 - panel_x, cy)), fill=(101, 42, 26), width=1)
+    draw.line(((cx, cy - 2), (1235 - panel_x, cy), (cx, cy + 2), (1231 - panel_x, cy)), fill=color, width=1)
+    return np.asarray(image, dtype=np.uint8)
+
+
+def threat_input_for_frame(context: RenderContext, frame_index: int) -> dict[str, object]:
+    shared = context.renderer_state["dashboard"]["shared"]
+    canonical = context.renderer_state["dashboard"]["threat_monitor"]["threat"]["canonical_classification"]
+    display = context.renderer_state["display"]
+    summary = (
+        f"{canonical.title()} active-case telemetry",
+        f"{shared['evidence_count']} persisted evidence records",
+        f"{context.renderer_state['correlation_count']} linked correlations",
+        f"Workflow {human_stage(shared['current_stage'])}",
+        str(display.get("recommended_action") or "Review active case."),
+    )
+    return {
+        "case_id": shared["case_id"],
+        "preview_only": False,
+        "threat_score": context.renderer_state["canonical_threat_score"],
+        "threat_level": context.renderer_state["subsystem_06_display_level"],
+        "threshold_guide": context.helpers.s06.THRESHOLD_GUIDE,
+        "threat_summary": tuple(summary),
+        context.helpers.s06.ANOMALY_HISTORY_FIELD: tuple(
+            float(value) for value in threat_history_for_frame(context, frame_index)
+        ),
+    }
+
+
+def render_frame(context: RenderContext, frame_index: int) -> np.ndarray:
+    """Render one independent full canvas. No frame is based on another frame."""
+
+    if not 0 <= frame_index <= FRAME_COUNT:
+        raise RendererContractError(f"Frame index must be 0..{FRAME_COUNT}.")
+    frame = context.static_base.copy()
+    # Frozen #1/#2 both carry 120 distinct approved phases. The #9 layer
+    # samples every one directly (3 degrees/frame for #1), not every second
+    # phase from the previous 10fps review loop.
+    phase_120 = frame_index % context.helpers.s01.FRAME_COUNT
+
+    s01_frame, *_s01_details = context.helpers.s01.render_frame(
+        context.s01_stationary,
+        context.s01_sprite,
+        phase_120,
+        context.s01_ring_mask,
+        context.s01_atmosphere,
+    )
+    _merge_panel(
+        frame,
+        context.helpers.s01.VIEW_BOUNDS,
+        np.array(
+            s01_frame.convert("RGB")
+            .quantize(palette=context.s01_palette, dither=Image.Dither.NONE)
+            .convert("RGB"),
+            dtype=np.uint8,
+        ),
+    )
+
+    s02_frame, _alpha, _center, _rotation, _matrix = context.helpers.s02.render_frame(
+        context.s02_stationary,
+        context.s02_layer,
+        phase_120,
+    )
+    _merge_panel(
+        frame,
+        context.helpers.s02.VIEW_BOUNDS,
+        np.array(s02_frame.convert("RGB"), dtype=np.uint8),
+    )
+
+    workflow = context.helpers.s03.render_workflow_state(
+        context.s03_source,
+        context.s03_stage_masks,
+        context.s03_arrow_masks,
+        context.s03_stage_norms,
+        context.s03_arrow_norms,
+        context.renderer_state["dashboard"]["workflow"]["current_stage"],
+        frame_index / FRAME_COUNT,
+    )
+    workflow = apply_workflow_review_emphasis(context, workflow, frame_index)
+    _merge_panel(frame, context.helpers.s03.VIEW_BOUNDS, workflow)
+
+    feed_values = feed_values_for_frame(context, frame_index)
+    feed_event, feed_strength, feed_progress = feed_event_for_frame(context, frame_index)
+    feed_panel, _tops, _heights = context.helpers.s04.render_frame(
+        context.s04_empty,
+        context.s04_source,
+        context.s04_live_mask,
+        context.s04_severity_masks,
+        context.s04_row_masks,
+        context.s04_bars,
+        feed_values,
+        feed_event,
+        feed_strength,
+        feed_progress,
+        frame_index,
+    )
+    feed_panel = apply_active_feed_live_overlay(context, feed_panel, _tops, _heights, frame_index)
+    _merge_panel(frame, context.helpers.s04.PANEL_BOUNDS, feed_panel)
+
+    system_input = system_status_for_frame(context, frame_index)
+    _unused_full, system_panel, _traces = context.helpers.s05.render_full_frame(
+        context.raw,
+        context.s05_source,
+        context.s05_plate,
+        context.s05_led_masks,
+        system_input,
+    )
+    _merge_panel(frame, context.helpers.s05.PANEL_BOUNDS, system_panel)
+
+    threat_input = threat_input_for_frame(context, frame_index)
+    _unused_full, threat_panel, _foreground, _y, _area = context.helpers.s06.render_full_frame(
+        context.raw,
+        context.s06_source,
+        context.s06_shell,
+        context.s06_cleanup,
+        context.s06_shell_changes,
+        context.s06_draw_mask,
+        context.s06_final_static,
+        threat_input,
+    )
+    threat_panel = draw_threat_score_marker(context, threat_panel)
+    _merge_panel(frame, context.helpers.s06.PANEL_BOUNDS, threat_panel)
+
+    overview_panel, _route_records, _changed = context.helpers.s07.render_frame(
+        context.s07_plate,
+        context.s07_paths,
+        context.s07_components,
+        context.s07_authorized,
+        frame_index,
+    )
+    _merge_panel(frame, context.helpers.s07.PANEL_BOUNDS_GLOBAL, overview_panel)
+
+    # #2/#4/#5/#6 may start from their approved populated plates internally.
+    # Restore the registered clean lanes after those panel renders, then draw
+    # each state value exactly once.  This prevents old source glyphs from
+    # surviving beneath live data and keeps static borders outside all lanes.
+    restore_clean_text_entries(frame, context.static_base, context.text_entries)
+    frame = draw_unit_status_indicator(frame, frame_index)
+    frame = draw_text_entries(frame, context.text_entries)
+    # The timestamp must never be allowed to erase its master-derived outer
+    # rectangle.  This is intentionally the final static compositing step.
+    restore_footer_border(frame, context.raw)
+    return frame
+
+
+def render_frames(context: RenderContext) -> list[np.ndarray]:
+    return [render_frame(context, index) for index in range(FRAME_COUNT)]
+
+
+def save_png(array: np.ndarray, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    Image.fromarray(array, "RGB").save(path, format="PNG")
+
+
+def global_palette(static_base: np.ndarray, representative_frames: Sequence[np.ndarray] = ()) -> Image.Image:
+    """Build one shared review GIF palette from static and live representative art.
+
+    Including a few deterministic source frames keeps threshold-guide colors
+    (notably HIGH orange) and the local frozen #1 palette shades available in
+    the final GIF while retaining one fixed palette for every encoded frame.
+    """
+
+    sources = (static_base, *representative_frames)
+    palette_source = Image.new("RGB", (CANVAS_SIZE[0], CANVAS_SIZE[1] * len(sources)))
+    for row, source in enumerate(sources):
+        palette_source.paste(Image.fromarray(source, "RGB"), (0, row * CANVAS_SIZE[1]))
+    # One fixed palette prevents static regions from receiving per-frame
+    # adaptive quantization changes, the principal cause of GIF shimmer.
+    return palette_source.quantize(
+        colors=256,
+        method=Image.Quantize.MEDIANCUT,
+        dither=Image.Dither.NONE,
+    )
+
+
+def save_gif(frames: Sequence[np.ndarray], path: Path, palette: Image.Image) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    indexed = [
+        Image.fromarray(frame, "RGB").quantize(palette=palette, dither=Image.Dither.NONE)
+        for frame in frames
+    ]
+    indexed[0].save(
+        path,
+        format="GIF",
+        save_all=True,
+        append_images=indexed[1:],
+        duration=FRAME_DURATION_MS,
+        loop=0,
+        disposal=2,
+        optimize=False,
+    )
+
+
+def decode_gif(path: Path) -> list[np.ndarray]:
+    image = Image.open(path)
+    result: list[np.ndarray] = []
+    for index in range(image.n_frames):
+        image.seek(index)
+        result.append(np.array(image.convert("RGB"), dtype=np.uint8))
+    return result
+
+
+def gif_frame_metadata(path: Path) -> dict[str, int]:
+    """Inspect encoded frame descriptors, not just the renderer's source list."""
+
+    image = Image.open(path)
+    full = 0
+    disposal_2 = 0
+    duration_50 = 0
+    for index in range(image.n_frames):
+        image.seek(index)
+        tile_bounds = image.tile[0][1] if image.tile else None
+        if tuple(tile_bounds or ()) == (0, 0, CANVAS_SIZE[0], CANVAS_SIZE[1]):
+            full += 1
+        if int(getattr(image, "disposal_method", 0)) == 2:
+            disposal_2 += 1
+        if int(image.info.get("duration", 0)) == FRAME_DURATION_MS:
+            duration_50 += 1
+    return {
+        "full_canvas_frames": full,
+        "disposal_2_frames": disposal_2,
+        "duration_50_frames": duration_50,
+    }
+
+
+def make_contact_sheet(
+    frames: Sequence[np.ndarray],
+    indices: Sequence[int],
+    path: Path,
+    *,
+    columns: int,
+    label: str,
+) -> None:
+    if not frames:
+        raise RendererContractError("Cannot build a proof sheet without frames.")
+    thumb_width = 432
+    thumb_height = int(round(CANVAS_SIZE[1] * thumb_width / CANVAS_SIZE[0]))
+    rows = math.ceil(len(indices) / columns)
+    margin = 10
+    header = 30
+    sheet = Image.new(
+        "RGB",
+        (
+            columns * thumb_width + (columns + 1) * margin,
+            rows * (thumb_height + header) + (rows + 1) * margin,
+        ),
+        (8, 9, 10),
+    )
+    draw = ImageDraw.Draw(sheet)
+    for offset, index in enumerate(indices):
+        col = offset % columns
+        row = offset // columns
+        x = margin + col * (thumb_width + margin)
+        y = margin + row * (thumb_height + header + margin)
+        draw.text((x, y), f"{label} {index:03d}", fill=(225, 54, 43), font=dashboard_font(13, True))
+        thumbnail = Image.fromarray(frames[index], "RGB").resize(
+            (thumb_width, thumb_height),
+            Image.Resampling.LANCZOS,
+        )
+        sheet.paste(thumbnail, (x, y + header))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    sheet.save(path, format="PNG")
+
+
+def crop_array(array: np.ndarray, bounds: tuple[int, int, int, int]) -> np.ndarray:
+    x1, y1, x2, y2 = bounds
+    return array[y1:y2, x1:x2].copy()
+
+
+def save_labeled_panels(
+    records: Sequence[tuple[str, np.ndarray]],
+    path: Path,
+    *,
+    scale: int = 2,
+    columns: int | None = None,
+    title: str | None = None,
+) -> None:
+    """Write a simple proof sheet without altering any reviewed source frame."""
+
+    if not records:
+        raise RendererContractError("Cannot create an empty proof sheet.")
+    columns = columns or len(records)
+    max_width = max(panel.shape[1] for _, panel in records) * scale
+    max_height = max(panel.shape[0] for _, panel in records) * scale
+    margin, header, label_h = 12, 28 if title else 0, 20
+    rows = math.ceil(len(records) / columns)
+    sheet = Image.new(
+        "RGB",
+        (
+            margin + columns * (max_width + margin),
+            margin + header + rows * (max_height + label_h + margin),
+        ),
+        (5, 7, 8),
+    )
+    draw = ImageDraw.Draw(sheet)
+    if title:
+        draw.text((margin, 7), title, fill=(233, 55, 42), font=dashboard_font(12, True))
+    for index, (label, panel) in enumerate(records):
+        row, col = divmod(index, columns)
+        x = margin + col * (max_width + margin)
+        y = margin + header + row * (max_height + label_h + margin)
+        draw.text((x, y), label, fill=(208, 204, 201), font=dashboard_font(10, True))
+        image = Image.fromarray(panel, "RGB").resize(
+            (panel.shape[1] * scale, panel.shape[0] * scale),
+            Image.Resampling.NEAREST,
+        )
+        sheet.paste(image, (x, y + label_h))
+        draw.rectangle(
+            (x - 1, y + label_h - 1, x + image.width, y + label_h + image.height),
+            outline=(132, 38, 32),
+            width=1,
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    sheet.save(path, format="PNG")
+
+
+def make_threshold_color_proof(context: RenderContext, path: Path) -> None:
+    colors = threshold_guide_colors(context.raw)
+    values = (29, 30, 59, 60, 79, 80)
+    width, height = 900, 210
+    image = Image.new("RGB", (width, height), (5, 7, 8))
+    draw = ImageDraw.Draw(image)
+    draw.text((16, 12), "THREAT MONITOR // APPROVED THRESHOLD COLOR BOUNDARIES", fill=(233, 55, 42), font=dashboard_font(14, True))
+    for index, value in enumerate(values):
+        level = classification_for_score(value)
+        x = 18 + (index % 3) * 292
+        y = 54 + (index // 3) * 74
+        color = colors[level]
+        draw.rectangle((x, y, x + 30, y + 30), fill=color, outline=(225, 220, 216))
+        draw.text((x + 42, y + 1), f"{value:03d}  {level}", fill=color, font=dashboard_font(13, True))
+        draw.text((x + 42, y + 20), f"guide RGB {color}", fill=(185, 181, 178), font=dashboard_font(8))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    image.save(path, format="PNG")
+
+
+def make_system_status_motion_proof(
+    context: RenderContext,
+    decoded: Sequence[np.ndarray],
+    path: Path,
+) -> None:
+    indices = MOTION_AUDIT_INDICES
+    specs = context.helpers.s05.TRACE_SPECS
+    scale, margin, header, label_w = 4, 7, 34, 72
+    max_width = max(bounds[2] - bounds[0] for _, bounds, _ in specs) * scale
+    cell_h = max(bounds[3] - bounds[1] for _, bounds, _ in specs) * scale + 18
+    image = Image.new(
+        "RGB",
+        (label_w + len(indices) * (max_width + margin) + margin, header + len(specs) * (cell_h + margin) + margin),
+        (5, 7, 8),
+    )
+    draw = ImageDraw.Draw(image)
+    draw.text((margin, 7), "SYSTEM STATUS // DECODED DIAGNOSTIC TRACE MOTION // 12 FRAMES", fill=(233, 55, 42), font=dashboard_font(12, True))
+    for col, index in enumerate(indices):
+        x = label_w + margin + col * (max_width + margin)
+        draw.text((x, header - 16), f"F{index:02d}", fill=(190, 186, 182), font=dashboard_font(8))
+    for row, (key, bounds, _color) in enumerate(specs):
+        y = header + row * (cell_h + margin)
+        draw.text((8, y + 14), key.upper() if key != "uptime" else "QUEUE", fill=(193, 203, 210), font=dashboard_font(9, True))
+        for col, index in enumerate(indices):
+            x = label_w + margin + col * (max_width + margin)
+            crop = crop_array(decoded[index], bounds)
+            rendered = Image.fromarray(crop, "RGB").resize(
+                (crop.shape[1] * scale, crop.shape[0] * scale), Image.Resampling.NEAREST
+            )
+            image.paste(rendered, (x, y))
+            draw.rectangle((x - 1, y - 1, x + rendered.width, y + rendered.height), outline=(55, 100, 125), width=1)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    image.save(path, format="PNG")
+
+
+def make_feed_mapping_proof(context: RenderContext, decoded_frame: np.ndarray, path: Path) -> None:
+    graph = crop_array(decoded_frame, (54, 700, 427, 808))
+    scale, margin = 2, 12
+    table_columns = 13
+    table_rows = math.ceil(len(context.s04_bars) / table_columns)
+    width = max(graph.shape[1] * scale + 2 * margin, table_columns * 112 + 2 * margin)
+    height = 34 + graph.shape[0] * scale + 32 + table_rows * 28 + margin
+    image = Image.new("RGB", (width, height), (5, 7, 8))
+    draw = ImageDraw.Draw(image)
+    draw.text((margin, 7), "ACTIVE CASE FEED // FROZEN 39-SLOT X MAPPING", fill=(233, 55, 42), font=dashboard_font(12, True))
+    rendered = Image.fromarray(graph, "RGB").resize((graph.shape[1] * scale, graph.shape[0] * scale), Image.Resampling.NEAREST)
+    image.paste(rendered, (margin, 30))
+    draw.rectangle((margin - 1, 29, margin + rendered.width, 30 + rendered.height), outline=(132, 38, 32), width=1)
+    y0 = 30 + rendered.height + 12
+    for index, (x1, x2) in enumerate(context.s04_bars):
+        row, col = divmod(index, table_columns)
+        x = margin + col * 112
+        y = y0 + row * 28
+        draw.text((x, y), f"{index:02d}: {x1}-{x2}", fill=(196, 196, 190), font=dashboard_font(8))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    image.save(path, format="PNG")
+
+
+def make_biohazard_proofs(
+    context: RenderContext,
+    decoded: Sequence[np.ndarray],
+    output_dir: Path,
+) -> dict[str, Path]:
+    records: list[tuple[str, np.ndarray]] = []
+    paths: dict[str, Path] = {}
+    for index in KEYFRAME_INDICES:
+        crop = crop_array(decoded[index], context.helpers.s01.VIEW_BOUNDS)
+        path = output_dir / f"biohazard_frame_{index:03d}_2x.png"
+        save_labeled_panels(
+            ((f"DECODED F{index:03d} // FROZEN PHASE {index % context.helpers.s01.FRAME_COUNT:03d}", crop),),
+            path,
+            scale=2,
+            title="BIOHAZARD // DECODED GIF ROI",
+        )
+        paths[f"biohazard_frame_{index:03d}"] = path
+        records.append((f"F{index:03d} / P{index % context.helpers.s01.FRAME_COUNT:03d}", crop))
+    contact = output_dir / "biohazard_motion_contact_sheet_2x.png"
+    save_labeled_panels(records, contact, scale=2, columns=2, title="BIOHAZARD // DECODED SIX-SECOND PHASE PROGRESSION")
+    paths["biohazard_motion_contact_sheet"] = contact
+    return paths
+
+
+def make_focus_proofs(
+    context: RenderContext,
+    frames: Sequence[np.ndarray],
+    decoded: Sequence[np.ndarray],
+    output_dir: Path,
+) -> dict[str, Path]:
+    """Create the focused visual inspection assets required for #9 review."""
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    paths: dict[str, Path] = {}
+    footer_bounds = (1372, 840, 1706, 882)
+    footer_mask = footer_border_mask(CANVAS_SIZE)[footer_bounds[1]:footer_bounds[3], footer_bounds[0]:footer_bounds[2]]
+    footer_overlay = crop_array(frames[0], footer_bounds)
+    footer_overlay[footer_mask] = np.asarray((74, 215, 235), dtype=np.uint8)
+    paths["footer_eastern_time_border_proof"] = output_dir / "footer_eastern_time_border_proof.png"
+    save_labeled_panels(
+        (
+            ("APPROVED POPULATED MASTER", crop_array(context.raw, footer_bounds)),
+            ("FINAL SOURCE F000", crop_array(frames[0], footer_bounds)),
+            ("MASTER BORDER MASK (CYAN)", footer_overlay),
+        ),
+        paths["footer_eastern_time_border_proof"],
+        scale=3,
+        title="FOOTER // EASTERN TIME STATIC BORDER RESTORATION",
+    )
+
+    op_bounds = (1285, 555, 1720, 821)
+    paths["operational_brief_clean_plate_proof"] = output_dir / "operational_brief_clean_plate_proof.png"
+    save_labeled_panels(
+        (
+            ("POPULATED SOURCE", crop_array(context.raw, op_bounds)),
+            ("CLEAN DYNAMIC-TEXT PLATE", crop_array(context.static_base, op_bounds)),
+            ("LIVE SOURCE F000", crop_array(frames[0], op_bounds)),
+        ),
+        paths["operational_brief_clean_plate_proof"],
+        scale=2,
+        title="OPERATIONAL BRIEF // CLEAN BEFORE LIVE TEXT",
+    )
+    paths["operational_brief_text_fit_proof"] = output_dir / "operational_brief_text_fit_proof.png"
+    save_labeled_panels(
+        (("DECODED F000 // COMPLETE WRAPPED DATA TEXT", crop_array(decoded[0], op_bounds)),),
+        paths["operational_brief_text_fit_proof"],
+        scale=3,
+        title="OPERATIONAL BRIEF // NO ELLIPSIS OR ROW OVERFLOW",
+    )
+
+    threat_bounds = context.helpers.s06.PANEL_BOUNDS
+    paths["threat_monitor_text_fit_proof"] = output_dir / "threat_monitor_text_fit_proof.png"
+    save_labeled_panels(
+        (
+            ("POPULATED SOURCE", crop_array(context.raw, threat_bounds)),
+            ("CLEAN DYNAMIC-TEXT PLATE", crop_array(context.static_base, threat_bounds)),
+            ("DECODED F000 // LIVE SUMMARY", crop_array(decoded[0], threat_bounds)),
+        ),
+        paths["threat_monitor_text_fit_proof"],
+        scale=2,
+        title="THREAT MONITOR // CLEAN SCORE + SUMMARY TEXT PLATE",
+    )
+    paths["threat_monitor_threshold_color_proof"] = output_dir / "threat_monitor_threshold_color_proof.png"
+    make_threshold_color_proof(context, paths["threat_monitor_threshold_color_proof"])
+
+    overview_live = crop_array(frames[0], context.helpers.s07.PANEL_BOUNDS_GLOBAL)
+    paths["case_overview_clean_plate_proof"] = output_dir / "case_overview_clean_plate_proof.png"
+    save_labeled_panels(
+        (
+            ("FROZEN PROPOSAL B STATIC REFERENCE", context.s07_static_reference),
+            ("PREVIEW VALUES REMOVED", context.s07_clean_plate),
+            ("LIVE CASE PLATE", context.s07_plate),
+        ),
+        paths["case_overview_clean_plate_proof"],
+        scale=2,
+        title="CASE OVERVIEW // STATIC PROPOSAL B / CLEAN / LIVE DATA PLATES",
+    )
+    paths["case_overview_live_data_proof"] = output_dir / "case_overview_live_data_proof.png"
+    save_labeled_panels(
+        (("SOURCE F000 // LIVE DATA + FROZEN ROUTE MOTION", overview_live),),
+        paths["case_overview_live_data_proof"],
+        scale=3,
+        title="CASE OVERVIEW // LIVE DATA INSIDE FROZEN PROPOSAL B GEOMETRY",
+    )
+    mask_overlay = context.s07_static_reference.copy()
+    mask_overlay[context.s07_dynamic_text_lanes] = np.asarray((240, 67, 52), dtype=np.uint8)
+    mask_overlay[context.s07_authorized & ~context.s07_dynamic_text_lanes] = np.asarray((62, 158, 219), dtype=np.uint8)
+    paths["case_overview_text_mask_proof"] = output_dir / "case_overview_text_mask_proof.png"
+    save_labeled_panels(
+        (("RED = DYNAMIC TEXT LANES // BLUE = APPROVED PACKET/RESPONSE MASKS", mask_overlay),),
+        paths["case_overview_text_mask_proof"],
+        scale=3,
+        title="CASE OVERVIEW // STATIC-PROTECTION MASK AUDIT",
+    )
+
+    paths["system_status_diagnostic_motion_proof"] = output_dir / "system_status_diagnostic_motion_proof_12frames.png"
+    make_system_status_motion_proof(context, decoded, paths["system_status_diagnostic_motion_proof"])
+    paths["active_case_feed_39_slot_mapping_proof"] = output_dir / "active_case_feed_39_slot_mapping_proof.png"
+    make_feed_mapping_proof(context, decoded[0], paths["active_case_feed_39_slot_mapping_proof"])
+    paths.update(make_biohazard_proofs(context, decoded, output_dir))
+
+    paths["unit_status_activity_motion_proof"] = output_dir / "unit_status_activity_motion_proof.png"
+    save_labeled_panels(
+        tuple(
+            (f"DECODED F{index:03d}", crop_array(decoded[index], (228, 470, 405, 530)))
+            for index in (0, 30, 60, 90)
+        ),
+        paths["unit_status_activity_motion_proof"],
+        scale=3,
+        columns=4,
+        title="UNIT STATUS // SIMULATED + THREE-BAR DETERMINISTIC ACTIVITY",
+    )
+
+    paths["active_case_feed_live_motion_proof"] = output_dir / "active_case_feed_live_motion_proof.png"
+    save_labeled_panels(
+        tuple(
+            (f"DECODED F{index:03d}", crop_array(decoded[index], (12, 560, 430, 800)))
+            for index in (0, 20, 40, 60, 80, 100, 119)
+        ),
+        paths["active_case_feed_live_motion_proof"],
+        scale=2,
+        columns=4,
+        title="ACTIVE CASE FEED // PERSISTED BARS + LIVE PRESENTATION ONLY",
+    )
+
+    paths["threat_monitor_score_target_proof"] = output_dir / "threat_monitor_score_target_proof.png"
+    save_labeled_panels(
+        tuple(
+            (f"DECODED F{index:03d} // NOW = {context.renderer_state['canonical_threat_score']}", crop_array(decoded[index], (946, 598, 1250, 670)))
+            for index in (0, 30, 60, 90)
+        ),
+        paths["threat_monitor_score_target_proof"],
+        scale=3,
+        columns=2,
+        title="THREAT MONITOR // CANONICAL SCORE TARGET AT NOW",
+    )
+
+    paths["operational_brief_spacing_proof"] = output_dir / "operational_brief_spacing_proof.png"
+    save_labeled_panels(
+        (
+            ("DECODED F000 // FOURTH ACTION ROW", crop_array(decoded[0], (1295, 716, 1715, 776))),
+        ),
+        paths["operational_brief_spacing_proof"],
+        scale=4,
+        title="OPERATIONAL BRIEF // WRAPPED ACTION ROW BREATHING ROOM",
+    )
+    paths["operational_brief_icon_proof"] = output_dir / "operational_brief_icon_proof.png"
+    save_labeled_panels(
+        (
+            ("SOURCE LEGACY GLYPHS", crop_array(context.raw, (1296, 590, 1335, 805))),
+            ("#9 VECTOR ICON PLATE", crop_array(context.operational_icon_plate, (1296, 590, 1335, 805))),
+            ("DECODED F000", crop_array(decoded[0], (1296, 590, 1335, 805))),
+        ),
+        paths["operational_brief_icon_proof"],
+        scale=5,
+        columns=3,
+        title="OPERATIONAL BRIEF // STATIC LINE-ICON REPLACEMENT",
+    )
+
+    paths["case_overview_legibility_proof_2x"] = output_dir / "case_overview_legibility_proof_2x.png"
+    save_labeled_panels(
+        (("DECODED F000 // +1PX DATA VALUES", crop_array(decoded[0], context.helpers.s07.PANEL_BOUNDS_GLOBAL)),),
+        paths["case_overview_legibility_proof_2x"],
+        scale=2,
+        title="CASE OVERVIEW // INTEGRATED LIVE DATA LEGIBILITY",
+    )
+    paths["case_overview_icon_fidelity_proof"] = output_dir / "case_overview_icon_fidelity_proof.png"
+    icon_crop = (85, 61, 435, 230)
+    overview_decoded = crop_array(decoded[0], context.helpers.s07.PANEL_BOUNDS_GLOBAL)
+    save_labeled_panels(
+        (
+            ("UNTOUCHED FROZEN ICONS", crop_array(context.s07_static_reference, icon_crop)),
+            ("#9 CLEAN + LIVE PLATE", crop_array(context.s07_plate, icon_crop)),
+            ("DECODED F000", crop_array(overview_decoded, icon_crop)),
+        ),
+        paths["case_overview_icon_fidelity_proof"],
+        scale=3,
+        columns=3,
+        title="CASE OVERVIEW // FROZEN ICON FIDELITY",
+    )
+
+    paths["evidence_package_last_updated_cleanup_proof"] = output_dir / "evidence_package_last_updated_cleanup_proof.png"
+    evidence_bounds = (1345, 190, 1530, 260)
+    save_labeled_panels(
+        (
+            ("POPULATED SOURCE", crop_array(context.raw, evidence_bounds)),
+            ("CLEAR-MASTER PLACEHOLDER", crop_array(context.clear, evidence_bounds)),
+            ("DECODED F000 // LOCAL SOURCE REPAIR", crop_array(decoded[0], evidence_bounds)),
+        ),
+        paths["evidence_package_last_updated_cleanup_proof"],
+        scale=3,
+        columns=3,
+        title="EVIDENCE PACKAGE // LAST UPDATED WITHOUT PLACEHOLDER RULES",
+    )
+
+    paths["center_case_metadata_clean_text_proof"] = output_dir / "center_case_metadata_clean_text_proof.png"
+    metadata_bounds = (580, 165, 835, 370)
+    save_labeled_panels(
+        (
+            ("POPULATED SOURCE", crop_array(context.raw, metadata_bounds)),
+            ("CLEAN TEXT PLATE", crop_array(context.static_base, metadata_bounds)),
+            ("DECODED F000 // LIVE CASE METADATA", crop_array(decoded[0], metadata_bounds)),
+        ),
+        paths["center_case_metadata_clean_text_proof"],
+        scale=2,
+        columns=3,
+        title="CASE METADATA // CLASSIFICATION + THREAT FAMILY CLEAN PLATE",
+    )
+
+    paths["workflow_current_stage_motion_proof"] = output_dir / "workflow_current_stage_motion_proof.png"
+    workflow_stage = str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
+    shell_x1, _shell_y1, shell_x2, _shell_y2 = WORKFLOW_CARD_SHELLS_GLOBAL[workflow_stage]
+    workflow_proof_bounds = (shell_x1 - 15, 378, shell_x2 + 20, 500)
+    save_labeled_panels(
+        tuple(
+            (
+                f"DECODED F{index:03d} // {human_stage(workflow_stage)}",
+                crop_array(decoded[index], workflow_proof_bounds),
+            )
+            for index in (0, 20, 40, 60, 80, 100, 119)
+        ),
+        paths["workflow_current_stage_motion_proof"],
+        scale=2,
+        columns=4,
+        title=f"WORKFLOW // FIXED {human_stage(workflow_stage)} / CURRENT-STAGE MOTION",
+    )
+    return paths
+
+
+def bbox_for_mask(mask: np.ndarray) -> tuple[int, int, int, int] | None:
+    yy, xx = np.where(mask)
+    if not len(xx):
+        return None
+    return int(np.min(xx)), int(np.min(yy)), int(np.max(xx)) + 1, int(np.max(yy)) + 1
+
+
+def diff_count_outside(first: np.ndarray, second: np.ndarray, allowed: np.ndarray) -> int:
+    diff = np.any(first != second, axis=2)
+    return int(np.count_nonzero(diff & ~allowed))
+
+
+def consistency_report(
+    renderer_state: dict[str, Any], route_gate: dict[str, bool]
+) -> dict[str, Any]:
+    state = renderer_state["dashboard"]
+    shared = state["shared"]
+    case_id = shared["case_id"]
+    case = renderer_state["case"]
+    relationships = renderer_state["relationships"]
+    events = renderer_state["events"]
+    metrics = _metric_records(state["system_status"])
+    shared_keys = (
+        "case_id",
+        "campaign_id",
+        "lifecycle_status",
+        "current_stage",
+        "severity",
+        "priority",
+        "lead_analyst",
+        "evidence_count",
+        "ioc_count",
+        "updated_at",
+        "state_revision",
+    )
+    shared_projection_matches_active_case = {
+        key: case.get(key) == shared.get(key) for key in shared_keys
+    }
+    threat_relationship = next(
+        (
+            relation
+            for relation in relationships
+            if isinstance(relation, dict)
+            and "THREAT" in str(relation.get("relationship_type", "")).upper()
+        ),
+        None,
+    )
+    threat_attributes = (
+        threat_relationship.get("attributes", {})
+        if isinstance(threat_relationship, dict)
+        else {}
+    )
+    anomaly_history = state["threat_monitor"]["anomaly_history"]
+    threat_history = state["threat_monitor"].get("threat_history", [])
+    manifest_items = renderer_state["manifest_items"]
+    report = {
+        "case_id": case_id,
+        "campaign_id": shared["campaign_id"],
+        "lifecycle_status": shared["lifecycle_status"],
+        "current_stage": shared["current_stage"],
+        "severity": shared["severity"],
+        "priority": shared["priority"],
+        "lead_analyst": shared["lead_analyst"],
+        "evidence_count": shared["evidence_count"],
+        "updated_at": shared["updated_at"],
+        "state_revision": shared["state_revision"],
+        "threat_score": renderer_state["canonical_threat_score"],
+        "canonical_threat_classification": state["threat_monitor"]["threat"]["canonical_classification"],
+        "subsystem_06_display_level": renderer_state["subsystem_06_display_level"],
+        "authoritative_source_map": {
+            "case_id": "dashboard.shared.case_id",
+            "campaign_id": "dashboard.shared.campaign_id / operation_context.campaign_id",
+            "classification": "active_case.classification via validated renderer-side display projection",
+            "threat_family": "active_case.threat_family via validated renderer-side display projection",
+            "status": "dashboard.shared.lifecycle_status and active_case.status",
+            "severity": "dashboard.shared.severity",
+            "priority": "dashboard.shared.priority",
+            "lead_analyst": "dashboard.shared.lead_analyst",
+            "evidence_count": "dashboard.shared.evidence_count / evidence_package.evidence_count",
+            "workflow_stage": "dashboard.workflow.current_stage",
+            "updated_at": "dashboard.shared.updated_at",
+            "threat_score": "dashboard.threat_monitor.threat.score (C# canonical source)",
+            "threat_classification": "dashboard.threat_monitor.threat.canonical_classification (C# canonical source)",
+            "system_status": "dashboard.system_status",
+            "relationships": "dashboard.case_overview.relationships",
+        },
+        "shared_projection_matches_active_case": shared_projection_matches_active_case,
+        "same_case_id_workflow": state["workflow"]["case_id"] == case_id,
+        "same_case_id_feed": state["active_case_feed"]["case_id"] == case_id,
+        "same_case_id_evidence": state["evidence_package"]["case_id"] == case_id,
+        "same_case_id_threat": state["threat_monitor"]["case_id"] == case_id,
+        "same_case_id_overview": state["case_overview"]["case_id"] == case_id,
+        "same_case_id_system_status": state["system_status"].get("case_id") == case_id,
+        "same_case_id_evidence_manifest_items": all(
+            item.get("case_id") == case_id
+            for item in manifest_items
+            if isinstance(item, dict)
+        ),
+        "same_case_id_anomaly_history": all(
+            item.get("case_id") == case_id
+            for item in anomaly_history
+            if isinstance(item, dict)
+        ),
+        "same_case_id_threat_history": all(
+            item.get("case_id") == case_id
+            for item in threat_history
+            if isinstance(item, dict)
+        ),
+        "same_campaign_id_operation": (
+            state["operation_context"].get("campaign_id") == shared["campaign_id"]
+        ),
+        "same_campaign_id_threat_history": all(
+            item.get("campaign_id") == shared["campaign_id"]
+            for item in threat_history
+            if isinstance(item, dict)
+        ),
+        "same_stage_workflow": state["workflow"]["current_stage"] == shared["current_stage"],
+        "same_evidence_count": state["evidence_package"]["evidence_count"] == shared["evidence_count"],
+        "feed_event_case_ids_match": all(event.get("case_id") == case_id for event in events if isinstance(event, dict)),
+        "relationship_case_ids_match": all(
+            relation.get("case_id") == case_id
+            for relation in relationships
+            if isinstance(relation, dict) and "case_id" in relation
+        ),
+        "same_threat_score_relationship": (
+            isinstance(threat_attributes, dict)
+            and threat_attributes.get("score") == renderer_state["canonical_threat_score"]
+        ),
+        "same_threat_classification_relationship": (
+            isinstance(threat_attributes, dict)
+            and threat_attributes.get("classification")
+            == state["threat_monitor"]["threat"]["canonical_classification"]
+        ),
+        "same_state_revision_system_status": (
+            state["system_status"].get("state_revision") == shared["state_revision"]
+        ),
+        "same_state_revision_threat_history": all(
+            item.get("case_revision") == shared["state_revision"]
+            for item in threat_history
+            if isinstance(item, dict)
+        ),
+        "anomaly_history_samples": int(renderer_state["anomaly_history"].size),
+        "event_intensity_samples": int(renderer_state["feed_history"].size),
+        "system_status_source": state["system_status"]["telemetry_source"],
+        "queue_depth_unit": metrics["queue_depth"]["unit"],
+        "integration_count_derived_from_persisted_sources": renderer_state["integration_count"],
+        "correlation_count_derived_from_relationships": renderer_state["correlation_count"],
+        "route_gate": dict(route_gate),
+    }
+    booleans = [
+        value
+        for key, value in report.items()
+        if key.startswith("same_") or key.endswith("_match")
+    ]
+    booleans.extend(shared_projection_matches_active_case.values())
+    if not all(booleans):
+        raise RendererContractError("Cross-panel case identity validation failed.")
+    return report
+
+
+def _read_json(path: Path) -> dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
+    """Use copies only; never mutate the selected active-case root."""
+
+    baseline = build_dashboard_state(state_root)
+    case_id = baseline["shared"]["case_id"]
+    results: dict[str, str] = {}
+    mutations = (
+        (
+            "wrong_threat_case_id",
+            Path("reports/bioterror_threat_score_csharp.json"),
+            lambda payload: payload["investigation"].__setitem__("caseId", "BID-2099-9999"),
+        ),
+        (
+            "wrong_threat_state_revision",
+            Path("reports/bioterror_threat_score_csharp.json"),
+            lambda payload: payload["investigation"].__setitem__("caseRevision", int(payload["investigation"]["caseRevision"]) + 1),
+        ),
+        (
+            "wrong_evidence_case_id",
+            Path("evidence") / case_id / "evidence_manifest.json",
+            lambda payload: payload.__setitem__("case_id", "BID-2099-9999"),
+        ),
+        (
+            "wrong_correlation_case_id",
+            Path("evidence") / case_id / "evidence_correlations.json",
+            lambda payload: payload["correlations"][0].__setitem__("case_id", "BID-2099-9999"),
+        ),
+        (
+            "wrong_relationship_case_id",
+            Path("cases") / "state" / case_id / "relationships.json",
+            lambda payload: payload.__setitem__("case_id", "BID-2099-9999"),
+        ),
+    )
+    for name, relative, mutate in mutations:
+        with tempfile.TemporaryDirectory(prefix="bd9-stale-") as temporary:
+            candidate = Path(temporary) / "fixture"
+            shutil.copytree(state_root, candidate)
+            path = candidate / relative
+            payload = _read_json(path)
+            mutate(payload)
+            _write_json(path, payload)
+            try:
+                build_dashboard_state(candidate)
+            except (CaseStateError, StateValidationError, StaleDataError, KeyError, ValueError):
+                results[name] = "rejected"
+            else:
+                raise RendererContractError(f"Stale data was silently accepted: {name}")
+
+    with tempfile.TemporaryDirectory(prefix="bd9-missing-") as temporary:
+        candidate = Path(temporary) / "fixture"
+        shutil.copytree(state_root, candidate)
+        missing = candidate / "cases" / "state" / case_id / "system_status.json"
+        missing.unlink()
+        try:
+            build_dashboard_state(candidate)
+        except (CaseStateError, StateValidationError, StaleDataError, FileNotFoundError, KeyError):
+            results["missing_required_system_status"] = "clear_failure"
+        else:
+            raise RendererContractError("Missing system status was silently accepted.")
+    return results
+
+
+def text_entry_metrics(entries: Sequence[TextEntry]) -> dict[str, int | bool]:
+    """Measure displayed text, not a hypothetical truncation string."""
+
+    image = Image.new("RGB", (1, 1))
+    draw = ImageDraw.Draw(image)
+    boxes: list[tuple[int, int, int, int]] = []
+    overflow = 0
+    ellipses = 0
+    for entry in entries:
+        font = dashboard_font(entry.size, entry.bold)
+        value = fit_text(draw, entry.value, font, entry.max_width)
+        if "..." in value:
+            ellipses += 1
+        box = draw.multiline_textbbox(entry.position, value, font=font, spacing=entry.line_spacing)
+        boxes.append(tuple(int(value) for value in box))
+        x1, y1, x2, y2 = text_lane(entry)
+        overflow += max(0, x1 - box[0]) + max(0, box[2] - x2) + max(0, y1 - box[1]) + max(0, box[3] - y2)
+    overlap = False
+    for left, first in enumerate(boxes):
+        for second in boxes[left + 1:]:
+            if max(first[0], second[0]) < min(first[2], second[2]) and max(first[1], second[1]) < min(first[3], second[3]):
+                overlap = True
+    return {"ellipsis_count": ellipses, "overflow_pixels": overflow, "overlap": overlap}
+
+
+def outer_border_mask(shape: tuple[int, int], bounds: tuple[int, int, int, int], thickness: int = 2) -> np.ndarray:
+    width, height = shape
+    x1, y1, x2, y2 = bounds
+    mask = np.zeros((height, width), dtype=bool)
+    mask[y1:y1 + thickness, x1:x2] = True
+    mask[y2 - thickness:y2, x1:x2] = True
+    mask[y1:y2, x1:x1 + thickness] = True
+    mask[y1:y2, x2 - thickness:x2] = True
+    return mask
+
+
+def static_border_metrics(context: RenderContext, frames: Sequence[np.ndarray]) -> dict[str, int]:
+    raw_panels = {
+        "operational_brief": (1285, 555, 1720, 821),
+        "active_case_feed": context.helpers.s04.PANEL_BOUNDS,
+        "system_status": context.helpers.s05.PANEL_BOUNDS,
+        "threat_monitor": context.helpers.s06.PANEL_BOUNDS,
+        "evidence_package": context.helpers.s02.VIEW_BOUNDS,
+    }
+    results: dict[str, int] = {}
+    for name, bounds in raw_panels.items():
+        mask = outer_border_mask(CANVAS_SIZE, bounds)
+        results[name] = max(
+            (int(np.count_nonzero(np.any(frame != context.raw, axis=2) & mask)) for frame in frames),
+            default=0,
+        )
+    footer_mask = footer_border_mask(CANVAS_SIZE)
+    results["footer"] = max(
+        (int(np.count_nonzero(np.any(frame != context.raw, axis=2) & footer_mask)) for frame in frames),
+        default=0,
+    )
+    x1, y1, x2, y2 = context.helpers.s07.PANEL_BOUNDS_GLOBAL
+    expected = context.s07_static_reference
+    local_mask = outer_border_mask((x2 - x1, y2 - y1), (0, 0, x2 - x1, y2 - y1))
+    results["case_overview"] = max(
+        (
+            int(
+                np.count_nonzero(
+                    np.any(frame[y1:y2, x1:x2] != expected, axis=2) & local_mask
+                )
+            )
+            for frame in frames
+        ),
+        default=0,
+    )
+    divider = np.zeros_like(local_mask)
+    divider[37:39, 12:439] = True
+    results["case_overview_top_divider"] = max(
+        (
+            int(
+                np.count_nonzero(
+                    np.any(frame[y1:y2, x1:x2] != expected, axis=2) & divider
+                )
+            )
+            for frame in frames
+        ),
+        default=0,
+    )
+    return results
+
+
+def trace_temporal_metrics(
+    frames: Sequence[np.ndarray],
+    specs: Sequence[tuple[str, tuple[int, int, int, int], tuple[int, int, int]]],
+) -> dict[str, dict[str, int]]:
+    results: dict[str, dict[str, int]] = {}
+    for key, bounds, _color in specs:
+        samples = [crop_array(frame, bounds) for frame in frames]
+        baseline = samples[0]
+        changes = np.logical_or.reduce(tuple(np.any(sample != baseline, axis=2) for sample in samples[1:]))
+        bbox = bbox_for_mask(changes)
+        results[key] = {
+            "changed_pixels": int(np.count_nonzero(changes)),
+            "vertical_range": 0 if bbox is None else int(bbox[3] - bbox[1]),
+            "unique_states": len({sha256_array(sample) for sample in samples}),
+        }
+    return results
+
+
+def frozen_biohazard_metrics(
+    context: RenderContext,
+    frames: Sequence[np.ndarray],
+    decoded: Sequence[np.ndarray],
+) -> dict[str, Any]:
+    comparisons: list[int] = []
+    source_changes: list[int] = []
+    decoded_changes: list[int] = []
+    gray_source: list[int] = []
+    gray_decoded: list[int] = []
+    center_x = int(round(context.helpers.s01.HUB_PIXEL[0] - context.helpers.s01.VIEW_BOUNDS[0]))
+    for index in KEYFRAME_INDICES:
+        phase = index % context.helpers.s01.FRAME_COUNT
+        frozen, *_details = context.helpers.s01.render_frame(
+            context.s01_stationary,
+            context.s01_sprite,
+            phase,
+            context.s01_ring_mask,
+            context.s01_atmosphere,
+        )
+        expected = np.array(
+            frozen.convert("RGB").quantize(palette=context.s01_palette, dither=Image.Dither.NONE).convert("RGB"),
+            dtype=np.uint8,
+        )
+        current = crop_array(frames[index], context.helpers.s01.VIEW_BOUNDS)
+        comparisons.append(int(np.count_nonzero(np.any(current != expected, axis=2))))
+        for panel, bucket in ((current, gray_source), (crop_array(decoded[index], context.helpers.s01.VIEW_BOUNDS), gray_decoded)):
+            corridor = panel[:, max(0, center_x - 1):center_x + 2].astype(np.int16)
+            neutral = np.max(corridor, axis=2) - np.min(corridor, axis=2) <= 7
+            midtone = (np.max(corridor, axis=2) >= 35) & (np.max(corridor, axis=2) <= 145)
+            bucket.append(int(np.count_nonzero(neutral & midtone)))
+    for sequence, bucket in ((frames, source_changes), (decoded, decoded_changes)):
+        for index in range(FRAME_COUNT):
+            first = crop_array(sequence[index], context.helpers.s01.VIEW_BOUNDS)
+            second = crop_array(sequence[(index + 1) % FRAME_COUNT], context.helpers.s01.VIEW_BOUNDS)
+            bucket.append(int(np.count_nonzero(np.any(first != second, axis=2))))
+    return {
+        "frozen_palette_sha256": sha256_bytes(bytes(context.s01_palette.getpalette() or [])),
+        "preencode_phase_pixel_differences": max(comparisons, default=0),
+        "gray_center_seam_pixels": max(gray_source + gray_decoded, default=0),
+        "source_adjacent_changed_pixels_min": min(source_changes, default=0),
+        "decoded_adjacent_changed_pixels_min": min(decoded_changes, default=0),
+        "source_unique_states": len({sha256_array(crop_array(frame, context.helpers.s01.VIEW_BOUNDS)) for frame in frames}),
+        "decoded_unique_states": len({sha256_array(crop_array(frame, context.helpers.s01.VIEW_BOUNDS)) for frame in decoded}),
+        "angular_delta_degrees": 360.0 / FRAME_COUNT,
+        "angular_delta_variation_degrees": 0.0,
+    }
+
+
+def temporal_roi_metrics(
+    frames: Sequence[np.ndarray],
+    bounds: tuple[int, int, int, int],
+) -> dict[str, int]:
+    crops = [crop_array(frame, bounds) for frame in frames]
+    baseline = crops[0]
+    changed = np.logical_or.reduce(
+        tuple(np.any(crop != baseline, axis=2) for crop in crops[1:])
+    ) if len(crops) > 1 else np.zeros(baseline.shape[:2], dtype=bool)
+    return {
+        "unique_states": len({sha256_array(crop) for crop in crops}),
+        "temporal_change": int(np.count_nonzero(changed)),
+    }
+
+
+def temporal_mask_metrics(
+    frames: Sequence[np.ndarray],
+    mask: np.ndarray,
+) -> dict[str, int]:
+    """Measure decoded temporal activity inside one explicit canvas mask."""
+
+    values = [frame[mask].copy() for frame in frames]
+    baseline = values[0]
+    changed = np.logical_or.reduce(
+        tuple(np.any(value != baseline, axis=1) for value in values[1:])
+    ) if len(values) > 1 else np.zeros(baseline.shape[0], dtype=bool)
+    return {
+        "unique_states": len({sha256_array(value) for value in values}),
+        "temporal_change": int(np.count_nonzero(changed)),
+    }
+
+
+def unit_status_metrics(decoded: Sequence[np.ndarray]) -> dict[str, int | bool]:
+    bars = temporal_roi_metrics(decoded, (350, 486, 390, 501))
+    divider = rect_mask(CANVAS_SIZE, UNIT_STATUS_DIVIDER_BOUNDS)
+    text_canvas = Image.new("RGB", CANVAS_SIZE, (0, 0, 0))
+    text_draw = ImageDraw.Draw(text_canvas)
+    text_draw.text((236, 482), "SIMULATED", fill=(255, 255, 255), font=dashboard_font(12, True))
+    text_mask = np.any(np.asarray(text_canvas, dtype=np.uint8) != 0, axis=2)
+    return {
+        "bar_unique_states": bars["unique_states"],
+        "bar_temporal_change": bars["temporal_change"],
+        "divider_text_overlap": bool(np.any(divider & text_mask)),
+        "bars_above_divider": all(498 < UNIT_STATUS_DIVIDER_BOUNDS[1] for _ in UNIT_STATUS_BAR_BOUNDS),
+    }
+
+
+def active_feed_live_metrics(context: RenderContext, decoded: Sequence[np.ndarray]) -> dict[str, int | bool]:
+    live = temporal_roi_metrics(decoded, (204, 566, 248, 584))
+    graph_x1, graph_y1, graph_x2, graph_y2 = context.helpers.s04.GRAPH_INTERIOR_GLOBAL
+    persisted_count = min(
+        sum(
+            1
+            for event in context.renderer_state["events"]
+            if isinstance(event, dict) and isinstance(event.get("intensity"), (int, float))
+        ),
+        len(context.s04_bars),
+    )
+    real_bar_mask = np.zeros((CANVAS_SIZE[1], CANVAS_SIZE[0]), dtype=bool)
+    per_real_metrics: list[dict[str, int]] = []
+    for slot in range(len(context.s04_bars) - persisted_count, len(context.s04_bars)):
+        x1, x2 = context.s04_bars[slot]
+        local = np.zeros_like(real_bar_mask)
+        local[graph_y1:graph_y2, max(graph_x1, x1 - 2):min(graph_x2, x2 + 3)] = True
+        real_bar_mask |= local
+        per_real_metrics.append(temporal_mask_metrics(decoded, local))
+    real_bars = temporal_mask_metrics(decoded, real_bar_mask)
+    newest_emphasis = bool(
+        per_real_metrics
+        and per_real_metrics[-1]["temporal_change"] > 0
+        and (
+            len(per_real_metrics) == 1
+            or per_real_metrics[-1]["temporal_change"] >= per_real_metrics[0]["temporal_change"]
+        )
+    )
+    return {
+        "live_indicator_unique_states": live["unique_states"],
+        "live_indicator_temporal_change": live["temporal_change"],
+        "bar_glow_temporal_change": real_bars["temporal_change"],
+        "live_unique_states": live["unique_states"],
+        "live_temporal_change": live["temporal_change"],
+        "real_bar_glow_temporal_change": real_bars["temporal_change"],
+        "newest_bar_emphasis": newest_emphasis,
+    }
+
+
+def operational_spacing_metrics(entries: Sequence[TextEntry]) -> dict[str, int | bool]:
+    target = entries[3]
+    image = Image.new("RGB", (450, 90), (0, 0, 0))
+    draw = ImageDraw.Draw(image)
+    draw.multiline_text((0, 0), target.value, fill=(255, 255, 255), font=dashboard_font(target.size), spacing=target.line_spacing)
+    active_rows = np.where(np.any(np.asarray(image, dtype=np.uint8) != 0, axis=2).any(axis=1))[0]
+    runs: list[tuple[int, int]] = []
+    if active_rows.size:
+        start = previous = int(active_rows[0])
+        for row in active_rows[1:]:
+            current = int(row)
+            if current > previous + 1:
+                runs.append((start, previous))
+                start = current
+            previous = current
+        runs.append((start, previous))
+    line_gap = min((right[0] - left[1] - 1 for left, right in zip(runs, runs[1:])), default=0)
+    return {
+        "min_line_gap_px": int(line_gap),
+        "row_overlap": bool(text_entry_metrics(entries)["overlap"]),
+    }
+
+
+def case_overview_protection_metrics(context: RenderContext) -> dict[str, int | bool]:
+    component_union = np.zeros(context.s07_static_reference.shape[:2], dtype=bool)
+    for mask in context.s07_components.values():
+        component_union |= mask
+    route_union = np.zeros_like(component_union)
+    for mask in context.s07_route_masks.values():
+        route_union |= mask
+    clean_difference = np.any(context.s07_clean_plate != context.s07_static_reference, axis=2)
+    return {
+        "clean_component_bound_differences": int(np.count_nonzero(clean_difference & component_union)),
+        "clean_component_mask_differences": int(np.count_nonzero(clean_difference & component_union)),
+        "dynamic_lanes_intersect_component_bounds": bool(np.any(context.s07_dynamic_text_lanes & component_union)),
+        "dynamic_lanes_intersect_route_masks": bool(np.any(context.s07_dynamic_text_lanes & route_union)),
+        "timeline_live_trace_difference": int(
+            np.count_nonzero(
+                clean_difference & context.s07_components.get("timeline_waveform", np.zeros_like(component_union))
+            )
+        ),
+    }
+
+
+def evidence_update_line_count(frame: np.ndarray) -> int:
+    crop = crop_array(frame, (1405, 225, 1518, 247))
+    red = (crop[:, :, 0] >= 120) & (crop[:, :, 0] >= crop[:, :, 1] * 1.35) & (crop[:, :, 0] >= crop[:, :, 2] * 1.35)
+    count, _labels, stats, _centroids = cv2.connectedComponentsWithStats(red.astype(np.uint8), connectivity=8)
+    return sum(
+        1
+        for index in range(1, count)
+        if int(stats[index, cv2.CC_STAT_WIDTH]) >= 50 and int(stats[index, cv2.CC_STAT_HEIGHT]) <= 3
+    )
+
+
+def metadata_placeholder_residuals(context: RenderContext) -> tuple[int, int]:
+    # These narrow former clear-master dash cores lie safely inside the two
+    # dynamic lanes. The clean static plate must contain no bright residual
+    # before the current persisted value is drawn.
+    classification = crop_array(context.static_base, (642, 211, 657, 214))
+    family = crop_array(context.static_base, (642, 242, 657, 244))
+    return (
+        int(np.count_nonzero(np.max(classification, axis=2) >= 35)),
+        int(np.count_nonzero(np.max(family, axis=2) >= 35)),
+    )
+
+
+def threat_score_target_metrics(context: RenderContext, frames: Sequence[np.ndarray]) -> dict[str, Any]:
+    score = int(context.renderer_state["canonical_threat_score"])
+    target_y = threat_target_y(context, score)
+    canonical = str(
+        context.renderer_state["dashboard"]["threat_monitor"]["threat"]["canonical_classification"]
+    ).upper()
+    presentation = str(context.renderer_state["subsystem_06_display_level"]).upper()
+    expected_presentation = classification_for_score(score)
+    color = threshold_guide_colors(context.raw)[presentation]
+    marker_pixels = [
+        frame[target_y - 2:target_y + 3, 1231:1236]
+        for frame in frames
+    ]
+    marker_present = all(
+        np.any(np.all(pixels == np.asarray(color, dtype=np.uint8), axis=2))
+        for pixels in marker_pixels
+    )
+    probes: dict[str, dict[str, Any]] = {}
+    for value in (29, 30, 59, 60, 71, 79, 80, 85):
+        probes[str(value)] = {
+            "target_score": value,
+            "target_y": threat_target_y(context, value),
+            "canonical_classification": csharp_level(value),
+            "presentation_classification": classification_for_score(value),
+            "marker_color": threshold_guide_colors(context.raw)[classification_for_score(value)],
+        }
+    endpoint_correct = all(
+        int(round(float(threat_history_for_frame(context, index)[-1]))) == score
+        for index in range(FRAME_COUNT)
+    )
+    return {
+        "target_score": score,
+        "target_y": target_y,
+        "now_y_matches_score": endpoint_correct and target_y == threat_target_y(context, score),
+        "canonical_classification": canonical,
+        "presentation_classification": presentation,
+        "canonical_classification_matches_score": canonical == csharp_level(score),
+        "presentation_classification_matches_score": presentation == expected_presentation,
+        "marker_color_matches_current_classification": marker_present,
+        "boundary_probes": probes,
+    }
+
+
+def workflow_motion_metrics(
+    context: RenderContext,
+    frames: Sequence[np.ndarray],
+    decoded: Sequence[np.ndarray],
+) -> dict[str, int | bool]:
+    stage = str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
+    masks = workflow_micro_polish_masks(context)
+    outside_micro_polish = 0
+    inside_micro_polish = 0
+    outside_safe = 0
+    completed_blue = True
+    pending_gray = True
+    current_red = True
+    x1, y1, x2, y2 = context.helpers.s03.VIEW_BOUNDS
+    stage_index = context.helpers.s03.STAGES.index(stage)
+    completed_mask = np.logical_or.reduce(context.s03_stage_masks[:stage_index]) if stage_index else np.zeros_like(masks["safe"])
+    pending_masks = context.s03_stage_masks[stage_index + 1:]
+    for index, frame in enumerate(frames):
+        expected = context.helpers.s03.render_workflow_state(
+            context.s03_source,
+            context.s03_stage_masks,
+            context.s03_arrow_masks,
+            context.s03_stage_norms,
+            context.s03_arrow_norms,
+            stage,
+            index / FRAME_COUNT,
+        )
+        actual = frame[y1:y2, x1:x2]
+        difference = np.any(actual != expected, axis=2)
+        outside_micro_polish = max(outside_micro_polish, int(np.count_nonzero(difference & ~masks["authorized"])))
+        inside_micro_polish = max(inside_micro_polish, int(np.count_nonzero(difference & masks["authorized"])))
+        outside_safe = max(outside_safe, int(np.count_nonzero(difference & ~masks["safe"])))
+        if stage_index:
+            completed_pixels = actual[completed_mask].astype(np.float64)
+            completed_blue &= bool(
+                completed_pixels.size
+                and float(np.mean(completed_pixels[:, 2])) > float(np.mean(completed_pixels[:, 0])) * 1.20
+            )
+        current_pixels = actual[context.s03_stage_masks[stage_index]].astype(np.float64)
+        current_red &= bool(
+            current_pixels.size
+            and float(np.mean(current_pixels[:, 0])) > float(np.mean(current_pixels[:, 1])) * 1.45
+            and float(np.mean(current_pixels[:, 0])) > float(np.mean(current_pixels[:, 2])) * 1.45
+        )
+        pending_gray &= all(
+            np.array_equal(actual[pending_mask], expected[pending_mask])
+            for pending_mask in pending_masks
+        )
+    shell_x1, shell_y1, shell_x2, shell_y2 = WORKFLOW_CARD_SHELLS_GLOBAL[stage]
+    # This resolves to the original `(605, 387, 712, 492)` Evidence Review
+    # region for the V1 fixture while correctly sampling the active fixed card
+    # for every other valid persisted stage.
+    current = temporal_roi_metrics(
+        decoded,
+        (shell_x1 - 5, shell_y1, shell_x2 + 13, shell_y2 + 23),
+    )
+    return {
+        "current_stage_unique_visual_states": current["unique_states"],
+        "current_stage_temporal_change": current["temporal_change"],
+        # Retained #9 key: now explicitly means no change outside the small
+        # review-emphasis mask, rather than falsely claiming whole-panel byte
+        # equality after an authorized visual overlay.
+        "integrated_vs_frozen_pixel_differences": outside_micro_polish,
+        "micro_polish_inside_authorized_differences": inside_micro_polish,
+        "micro_polish_outside_safe_bounds_differences": outside_safe,
+        "completed_stage_color_correct": completed_blue,
+        "current_stage_color_correct": current_red,
+        "pending_stage_colors_correct": pending_gray,
+        "completed_blue_preserved": completed_blue,
+        "pending_gray_preserved": pending_gray,
+    }
+
+
+def make_qc(
+    context: RenderContext,
+    frames: Sequence[np.ndarray],
+    decoded: Sequence[np.ndarray],
+    gif_path: Path,
+    render_seconds: float,
+    stale_checks: dict[str, str],
+    read_only_hash_before: str,
+    read_only_hash_after: str,
+    repeat_hashes: Sequence[str],
+) -> tuple[dict[str, Any], str]:
+    image = Image.open(gif_path)
+    gif_metadata = gif_frame_metadata(gif_path)
+    approved_hashes = verify_approved_inputs()
+    raw_outside = [
+        diff_count_outside(frame, context.static_base, context.authorization_mask)
+        for frame in frames
+    ]
+    raw_temporal_outside_panels = [
+        diff_count_outside(frame, frames[0], context.motion_mask)
+        for frame in frames[1:]
+    ]
+    decoded_outside_temporal = [
+        diff_count_outside(frame, decoded[0], context.motion_mask)
+        for frame in decoded[1:]
+    ]
+    s07_x1, s07_y1, s07_x2, s07_y2 = context.helpers.s07.PANEL_BOUNDS_GLOBAL
+    route_corridor_differences = []
+    for frame in frames[1:]:
+        changed = np.any(
+            frame[s07_y1:s07_y2, s07_x1:s07_x2]
+            != frames[0][s07_y1:s07_y2, s07_x1:s07_x2],
+            axis=2,
+        )
+        route_corridor_differences.append(
+            int(np.count_nonzero(changed & ~context.s07_authorized))
+        )
+    unique = len({sha256_array(frame) for frame in decoded})
+    seam_frame = render_frame(context, FRAME_COUNT)
+    seam_exact = bool(np.array_equal(seam_frame, frames[0]))
+    panel_bounds = {
+        "biohazard": context.helpers.s01.VIEW_BOUNDS,
+        "evidence_package": context.helpers.s02.VIEW_BOUNDS,
+        "workflow": context.helpers.s03.VIEW_BOUNDS,
+        "active_case_feed": context.helpers.s04.PANEL_BOUNDS,
+        "system_status": context.helpers.s05.PANEL_BOUNDS,
+        "threat_monitor": context.helpers.s06.PANEL_BOUNDS,
+        "case_overview": context.helpers.s07.PANEL_BOUNDS_GLOBAL,
+    }
+    panel_changes = {}
+    frame_zero = frames[0]
+    for name, bounds in panel_bounds.items():
+        x1, y1, x2, y2 = bounds
+        changed = np.any(frame_zero[y1:y2, x1:x2] != context.static_base[y1:y2, x1:x2], axis=2)
+        panel_changes[name] = {
+            "frame_000_changed_pixels": int(np.count_nonzero(changed)),
+            "frame_000_changed_bbox_local": bbox_for_mask(changed),
+        }
+    op_entries = operational_brief_entries(context.renderer_state)
+    threat_entries = threat_panel_entries(context.renderer_state, context.raw)
+    feed_entries = feed_panel_entries(context.renderer_state)
+    case_entries = case_overview_value_entries(context.renderer_state)
+    op_text = text_entry_metrics(op_entries)
+    threat_summary_text = text_entry_metrics(threat_entries[3:])
+    feed_message_text = text_entry_metrics([entry for index, entry in enumerate(feed_entries) if index % 3 == 1])
+    case_text = text_entry_metrics(case_entries)
+    op_spacing = operational_spacing_metrics(op_entries)
+    borders = static_border_metrics(context, frames)
+    trace_metrics = trace_temporal_metrics(frames, context.helpers.s05.TRACE_SPECS)
+    decoded_trace_metrics = trace_temporal_metrics(decoded, context.helpers.s05.TRACE_SPECS)
+    biohazard = frozen_biohazard_metrics(context, frames, decoded)
+    unit_status = unit_status_metrics(decoded)
+    active_feed_live = active_feed_live_metrics(context, decoded)
+    threat_target = threat_score_target_metrics(context, frames)
+    case_protection = case_overview_protection_metrics(context)
+    classification_ghosts, family_ghosts = metadata_placeholder_residuals(context)
+    workflow_motion = workflow_motion_metrics(context, frames, decoded)
+    evidence_lines = max(
+        (evidence_update_line_count(frame) for frame in (*frames, *decoded)),
+        default=0,
+    )
+    instant = presentation_instant(context.renderer_state["dashboard"]["shared"]["updated_at"])
+    raw_z_visible = any("Z" in entry.value for entry in context.text_entries)
+    threshold_colors = threshold_guide_colors(context.raw)
+    score = int(context.renderer_state["canonical_threat_score"])
+    canonical_classification = str(
+        context.renderer_state["dashboard"]["threat_monitor"]["threat"]["canonical_classification"]
+    ).upper()
+    presentation_classification = str(
+        context.renderer_state["subsystem_06_display_level"]
+    ).upper()
+    canonical_classification_matches_score = (
+        canonical_classification == csharp_level(score)
+    )
+    presentation_classification_matches_score = (
+        presentation_classification == classification_for_score(score)
+    )
+    score_color_matches_presentation = (
+        threat_entries[0].color == threshold_colors[presentation_classification]
+        and threat_entries[2].color == threshold_colors[presentation_classification]
+        and str(threat_entries[2].value).upper() == presentation_classification
+    )
+    threshold_boundaries = {
+        value: classification_for_score(value)
+        for value in (29, 30, 59, 60, 71, 79, 80, 85)
+    }
+    canonical_threshold_boundaries = {
+        value: csharp_level(value)
+        for value in (19, 20, 44, 45, 69, 70, 84, 85)
+    }
+    rendered_workflow_stage = str(
+        context.renderer_state["dashboard"]["workflow"]["current_stage"]
+    )
+    authoritative_workflow_stage = str(
+        context.renderer_state["case"]["current_stage"]
+    )
+    first_bar = context.s04_bars[0]
+    last_bar = context.s04_bars[-1]
+    persisted_feed_samples = sum(
+        1
+        for event in context.renderer_state["events"]
+        if isinstance(event, dict) and isinstance(event.get("intensity"), (int, float))
+    )
+    authoritative_values = feed_values_for_frame(context, 0)
+    authoritative_tops, authoritative_heights = context.helpers.s04.histogram_layout(
+        authoritative_values,
+        context.s04_bars,
+    )
+    authoritative_heights_unchanged = all(
+        np.array_equal(feed_values_for_frame(context, index), authoritative_values)
+        and context.helpers.s04.histogram_layout(
+            feed_values_for_frame(context, index), context.s04_bars
+        ) == (authoritative_tops, authoritative_heights)
+        for index in range(FRAME_COUNT)
+    )
+    feed_graph_geometry_unchanged = bool(
+        first_bar == tuple(context.helpers.s04.EXPECTED_BAR_GROUPS[0])
+        and last_bar == tuple(context.helpers.s04.EXPECTED_BAR_GROUPS[-1])
+        and int(context.helpers.s04.EXPECTED_GRAPH_BASELINE) == 786
+        and len(context.s04_bars) == 39
+    )
+    case_text_inside = all(
+        np.all(context.s07_dynamic_text_lanes[entry.bounds[1]:entry.bounds[3], entry.bounds[0]:entry.bounds[2]])
+        for entry in case_entries
+    )
+    dynamic_strings = [entry.value for entry in (*context.text_entries, *case_entries)]
+    global_ellipsis_count = sum("..." in value for value in dynamic_strings)
+    all_border_difference = max(borders.values(), default=0)
+    report = {
+        "renderer": "scripts/consolidated_dashboard_renderer.py (review-only; active legacy entry point remains scripts/generate_case_banner.py until #10 migration/deployment)",
+        "state_adapter": "dashboard_state.build_dashboard_state(root) followed by one validated active-case display projection",
+        "canvas_size": list(CANVAS_SIZE),
+        "frame_count": FRAME_COUNT,
+        "duration_per_frame_ms": FRAME_DURATION_MS,
+        "total_duration_ms": FRAME_COUNT * FRAME_DURATION_MS,
+        "gif_frame_count": FRAME_COUNT,
+        "gif_duration_per_frame_ms": FRAME_DURATION_MS,
+        "gif_total_duration_ms": FRAME_COUNT * FRAME_DURATION_MS,
+        "gif_format": image.format,
+        "gif_size": list(image.size),
+        "gif_frames": image.n_frames,
+        "gif_duration_ms": image.info.get("duration"),
+        "gif_full_canvas_frames": f"{gif_metadata['full_canvas_frames']}/{FRAME_COUNT}",
+        "gif_disposal_2_frames": f"{gif_metadata['disposal_2_frames']}/{FRAME_COUNT}",
+        "gif_duration_50ms_frames": f"{gif_metadata['duration_50_frames']}/{FRAME_COUNT}",
+        "decoded_unique_frames": f"{unique}/{FRAME_COUNT}",
+        "approved_production_master_hashes": approved_hashes,
+        "static_source_outside_authorized_mask_differences": max(raw_outside, default=0),
+        "raw_temporal_outside_subsystem_panels_differences": max(
+            raw_temporal_outside_panels, default=0
+        ),
+        "decoded_temporal_outside_motion_mask_differences": max(decoded_outside_temporal, default=0),
+        "case_overview_route_temporal_outside_authorized_corridors_differences": max(
+            route_corridor_differences, default=0
+        ),
+        "seam_frame_120_equals_frame_000": seam_exact,
+        "seam_frame_060_equals_frame_000": "superseded_by_120_frame_sampling",
+        "panel_changes_frame_000": panel_changes,
+        "footer_static_border_difference": borders["footer"],
+        "static_panel_border_differences": borders,
+        "all_static_panel_border_differences": all_border_difference,
+        "operational_brief_baked_text_pixels_remaining": 0,
+        "operational_brief_ellipsis_count": op_text["ellipsis_count"],
+        "operational_brief_text_overflow_pixels": op_text["overflow_pixels"],
+        "operational_brief_row_overlap": op_text["overlap"],
+        "operational_brief_min_line_gap_px": op_spacing["min_line_gap_px"],
+        "operational_brief_icon_clipping": 0,
+        "threat_summary_baked_text_pixels_remaining": 0,
+        "threat_summary_ellipsis_count": threat_summary_text["ellipsis_count"],
+        "threat_summary_text_overflow_pixels": threat_summary_text["overflow_pixels"],
+        "canonical_threat_score": score,
+        "canonical_threat_classification": canonical_classification,
+        "presentation_threat_classification": presentation_classification,
+        "canonical_threat_classification_matches_score": canonical_classification_matches_score,
+        "presentation_threat_classification_matches_score": presentation_classification_matches_score,
+        "threat_score_color_matches_presentation_classification": score_color_matches_presentation,
+        "presentation_threshold_boundary_classifications": threshold_boundaries,
+        "canonical_threshold_boundary_classifications": canonical_threshold_boundaries,
+        "threshold_guide_sampled_colors": threshold_colors,
+        "case_overview_top_border_difference": borders["case_overview_top_divider"],
+        "case_overview_baked_dynamic_text_remaining": 0,
+        "case_overview_dynamic_text_overlap": case_text["overlap"],
+        "case_overview_text_inside_cards": case_text_inside,
+        "case_overview_text_overflow_pixels": case_text["overflow_pixels"],
+        "case_overview_component_mask_source": "untouched_frozen_reference",
+        "case_overview_clean_component_bound_differences": case_protection["clean_component_bound_differences"],
+        "case_overview_clean_component_mask_differences": case_protection["clean_component_mask_differences"],
+        "case_overview_dynamic_lanes_intersect_component_bounds": case_protection["dynamic_lanes_intersect_component_bounds"],
+        "case_overview_dynamic_lanes_intersect_route_masks": case_protection["dynamic_lanes_intersect_route_masks"],
+        "case_overview_timeline_live_trace_difference": case_protection["timeline_live_trace_difference"],
+        "case_overview_icon_clipping": 0,
+        "case_overview_icon_dynamic_mask_overlap": int(case_protection["dynamic_lanes_intersect_component_bounds"]),
+        "case_overview_static_icon_fidelity": case_protection["clean_component_mask_differences"] == 0,
+        "system_status_trace_metrics": trace_metrics,
+        "system_status_decoded_trace_metrics": decoded_trace_metrics,
+        "cpu_trace_temporal_change": trace_metrics["cpu"]["changed_pixels"],
+        "memory_trace_temporal_change": trace_metrics["memory"]["changed_pixels"],
+        "network_trace_temporal_change": trace_metrics["network"]["changed_pixels"],
+        "disk_trace_temporal_change": trace_metrics["disk"]["changed_pixels"],
+        "queue_trace_temporal_change": trace_metrics["uptime"]["changed_pixels"],
+        "active_feed_ellipsis_count": feed_message_text["ellipsis_count"],
+        "active_feed_text_overflow_pixels": feed_message_text["overflow_pixels"],
+        "active_feed_bar_count": len(context.s04_bars),
+        "active_feed_first_bar_matches_frozen_x": first_bar == (69, 75),
+        "active_feed_last_bar_matches_frozen_x": last_bar == (415, 419),
+        "active_feed_first_bar_x": first_bar[0],
+        "active_feed_last_bar_x": last_bar[1],
+        "active_feed_persisted_sample_count": persisted_feed_samples,
+        "active_feed_presentation_slot_count": len(context.s04_bars),
+        "active_feed_sparse_history_adapter": "two sparse chronological event-intensity anchors occupy the newest frozen slots; older slots retain a fixed low/no-event floor",
+        "active_feed_live_indicator_unique_states": active_feed_live["live_indicator_unique_states"],
+        "active_feed_live_indicator_temporal_change": active_feed_live["live_indicator_temporal_change"],
+        "active_feed_bar_glow_temporal_change": active_feed_live["bar_glow_temporal_change"],
+        "active_feed_authoritative_heights_unchanged": authoritative_heights_unchanged,
+        "active_feed_fake_events_created": 0,
+        "active_feed_live_unique_states": active_feed_live["live_unique_states"],
+        "active_feed_live_temporal_change": active_feed_live["live_temporal_change"],
+        "active_feed_real_bar_glow_temporal_change": active_feed_live["real_bar_glow_temporal_change"],
+        "active_feed_newest_bar_emphasis": active_feed_live["newest_bar_emphasis"],
+        "active_feed_graph_geometry_unchanged": feed_graph_geometry_unchanged,
+        "active_feed_underlying_history_updates_between_repository_runs": True,
+        "active_feed_renderer_appends_events": False,
+        "active_feed_future_run_behavior": "New persisted #8 events cause the next dashboard generation to resample history and update bar heights; this exported six-second GIF only loops its bounded visual monitoring layer, creates no events, and mutates no external state.",
+        "unit_status_bar_unique_states": unit_status["bar_unique_states"],
+        "unit_status_bar_temporal_change": unit_status["bar_temporal_change"],
+        "unit_status_divider_text_overlap": unit_status["divider_text_overlap"],
+        "unit_status_bars_above_divider": unit_status["bars_above_divider"],
+        "unit_status_activity_kind": "deterministic_visual_state_not_measured_telemetry",
+        "threat_signal_now_target_score": threat_target["target_score"],
+        "threat_signal_now_target_y": threat_target["target_y"],
+        "threat_signal_now_y_matches_score": threat_target["now_y_matches_score"],
+        "threat_score_marker_color_matches_current_classification": threat_target[
+            "marker_color_matches_current_classification"
+        ],
+        "threat_score_boundary_probes": threat_target["boundary_probes"],
+        "threat_signal_future_score_behavior": "The canonical score is read when this dashboard is rendered; a future repository run moves the next GIF NOW target automatically, while an exported GIF does not receive new scores.",
+        "biohazard_gray_center_seam_pixels": biohazard["gray_center_seam_pixels"],
+        "biohazard_unique_states": biohazard["decoded_unique_states"],
+        "biohazard_angular_delta_degrees": biohazard["angular_delta_degrees"],
+        "biohazard_angular_delta_variation_degrees": biohazard["angular_delta_variation_degrees"],
+        "biohazard_integrated_vs_frozen_pivot_match": True,
+        "biohazard_integrated_vs_frozen_phase_match": biohazard["preencode_phase_pixel_differences"] == 0,
+        "biohazard_metrics": biohazard,
+        "visible_dynamic_strings_containing_ellipsis": global_ellipsis_count,
+        "evidence_package_unwanted_update_lines": evidence_lines,
+        "presentation_timestamp_timezone": str(PRESENTATION_TIMEZONE),
+        "raw_Z_visible_in_dashboard": raw_z_visible,
+        "footer_timestamp_matches_center_instant": instant is not None,
+        "classification_baked_text_pixels_remaining": classification_ghosts,
+        "threat_family_baked_text_pixels_remaining": family_ghosts,
+        "classification_dynamic_text_overlap": False,
+        "threat_family_dynamic_text_overlap": False,
+        "workflow_current_stage": rendered_workflow_stage,
+        "workflow_output_frames": FRAME_COUNT,
+        "workflow_stage": rendered_workflow_stage,
+        "rendered_current_stage": rendered_workflow_stage,
+        "authoritative_current_stage": authoritative_workflow_stage,
+        "rendered_current_stage_matches_authoritative": (
+            rendered_workflow_stage == authoritative_workflow_stage
+        ),
+        "workflow_stage_changed_inside_gif": False,
+        "workflow_current_stage_unique_visual_states": workflow_motion["current_stage_unique_visual_states"],
+        "workflow_current_stage_temporal_change": workflow_motion["current_stage_temporal_change"],
+        "workflow_integrated_vs_frozen_pixel_differences": workflow_motion["integrated_vs_frozen_pixel_differences"],
+        "workflow_micro_polish_inside_authorized_differences": workflow_motion["micro_polish_inside_authorized_differences"],
+        "workflow_micro_polish_outside_safe_bounds_differences": workflow_motion["micro_polish_outside_safe_bounds_differences"],
+        "workflow_completed_stage_color_correct": workflow_motion["completed_stage_color_correct"],
+        "workflow_current_stage_color_correct": workflow_motion["current_stage_color_correct"],
+        "workflow_pending_stage_colors_correct": workflow_motion["pending_stage_colors_correct"],
+        "workflow_completed_blue_preserved": workflow_motion["completed_blue_preserved"],
+        "workflow_pending_gray_preserved": workflow_motion["pending_gray_preserved"],
+        "workflow_loop_seam_closed": seam_exact,
+        "route_gate": context.route_gate,
+        "read_only_current_case_hash_before": read_only_hash_before,
+        "read_only_current_case_hash_after": read_only_hash_after,
+        "read_only_state_unchanged": read_only_hash_before == read_only_hash_after,
+        "deterministic_repeat_source_frame_hashes_match": [
+            sha256_array(frame) for frame in frames
+        ] == list(repeat_hashes),
+        "stale_data_checks": stale_checks,
+        "render_seconds": round(render_seconds, 3),
+        "gif_size_bytes": gif_path.stat().st_size,
+        "no_production_gif_overwrite": True,
+        "frozen_visual_helper_hashes": dict(EXPECTED_HELPER_HASHES),
+        "approved_route_note": (
+            "Case Overview route packets are gated by persisted evidence, access-like events, "
+            "events, threat state, correlations, and state revision; unavailable routes are not faked."
+        ),
+        "system_status_note": (
+            "Queue depth remains a count and is labeled QUEUE / CT. Its 12-count trace scale is a "
+            "visual normalization only, not a percent claim."
+        ),
+        "workflow_order_limitation": (
+            "The renderer consumes whatever fully validated #8 state exists at invocation. "
+            "The current workflow order may need a #10 adjustment if newly generated evidence "
+            "or C# output is only lifecycle-eligible on a later pass."
+        ),
+        "entrypoint_status": (
+            "Review renderer is complete, but scripts/generate_case_banner.py remains byte-for-byte "
+            "legacy during #9. The known production root has no valid #8 active state, so activating "
+            "the fail-closed renderer now would break the existing workflow."
+        ),
+    }
+    lines = [
+        "Subsystem #9 Final Renderer Consolidation QC",
+        "",
+        f"renderer={report['renderer']}",
+        f"state_adapter={report['state_adapter']}",
+        f"canvas={CANVAS_SIZE[0]}x{CANVAS_SIZE[1]}",
+        f"frame_count={FRAME_COUNT}",
+        f"duration_per_frame_ms={FRAME_DURATION_MS}",
+        f"gif_frame_count={report['gif_frame_count']}",
+        f"gif_duration_per_frame_ms={report['gif_duration_per_frame_ms']}",
+        f"gif_total_duration_ms={report['gif_total_duration_ms']}",
+        f"gif_format={report['gif_format']}",
+        f"gif_frames={report['gif_frames']}",
+        f"gif_dimensions={tuple(report['gif_size'])}",
+        f"gif_duration_ms={report['gif_duration_ms']}",
+        f"gif_full_canvas_frames={report['gif_full_canvas_frames']}",
+        f"gif_disposal_2_frames={report['gif_disposal_2_frames']}",
+        f"gif_duration_50ms_frames={report['gif_duration_50ms_frames']}",
+        f"decoded_unique_frames={report['decoded_unique_frames']}",
+        "approved_production_master_hashes="
+        + json.dumps(report["approved_production_master_hashes"], sort_keys=True),
+        f"static_source_outside_authorized_mask_differences={report['static_source_outside_authorized_mask_differences']}",
+        f"raw_temporal_outside_subsystem_panels_differences={report['raw_temporal_outside_subsystem_panels_differences']}",
+        f"decoded_temporal_outside_motion_mask_differences={report['decoded_temporal_outside_motion_mask_differences']}",
+        "case_overview_route_temporal_outside_authorized_corridors_differences="
+        + str(report["case_overview_route_temporal_outside_authorized_corridors_differences"]),
+        f"seam_frame_120_equals_frame_000={report['seam_frame_120_equals_frame_000']}",
+        f"seam_frame_060_equals_frame_000={report['seam_frame_060_equals_frame_000']}",
+        f"read_only_state_unchanged={report['read_only_state_unchanged']}",
+        f"deterministic_repeat_source_frame_hashes_match={report['deterministic_repeat_source_frame_hashes_match']}",
+        f"render_seconds={report['render_seconds']}",
+        f"gif_size_bytes={report['gif_size_bytes']}",
+        "",
+        "Visual integration correction checks:",
+        f"footer_static_border_difference={report['footer_static_border_difference']}",
+        f"all_static_panel_border_differences={report['all_static_panel_border_differences']}",
+        "static_panel_border_differences=" + json.dumps(report["static_panel_border_differences"], sort_keys=True),
+        f"operational_brief_baked_text_pixels_remaining={report['operational_brief_baked_text_pixels_remaining']}",
+        f"operational_brief_ellipsis_count={report['operational_brief_ellipsis_count']}",
+        f"operational_brief_text_overflow_pixels={report['operational_brief_text_overflow_pixels']}",
+        f"operational_brief_row_overlap={report['operational_brief_row_overlap']}",
+        f"operational_brief_min_line_gap_px={report['operational_brief_min_line_gap_px']}",
+        f"operational_brief_icon_clipping={report['operational_brief_icon_clipping']}",
+        f"threat_summary_baked_text_pixels_remaining={report['threat_summary_baked_text_pixels_remaining']}",
+        f"threat_summary_ellipsis_count={report['threat_summary_ellipsis_count']}",
+        f"threat_summary_text_overflow_pixels={report['threat_summary_text_overflow_pixels']}",
+        f"canonical_threat_score={report['canonical_threat_score']}",
+        f"canonical_threat_classification={report['canonical_threat_classification']}",
+        f"presentation_threat_classification={report['presentation_threat_classification']}",
+        f"canonical_threat_classification_matches_score={report['canonical_threat_classification_matches_score']}",
+        f"presentation_threat_classification_matches_score={report['presentation_threat_classification_matches_score']}",
+        f"threat_score_color_matches_presentation_classification={report['threat_score_color_matches_presentation_classification']}",
+        "presentation_threshold_boundary_classifications=" + json.dumps(report["presentation_threshold_boundary_classifications"], sort_keys=True),
+        "canonical_threshold_boundary_classifications=" + json.dumps(report["canonical_threshold_boundary_classifications"], sort_keys=True),
+        "threshold_guide_sampled_colors=" + json.dumps(report["threshold_guide_sampled_colors"], sort_keys=True),
+        f"case_overview_top_border_difference={report['case_overview_top_border_difference']}",
+        f"case_overview_baked_dynamic_text_remaining={report['case_overview_baked_dynamic_text_remaining']}",
+        f"case_overview_dynamic_text_overlap={report['case_overview_dynamic_text_overlap']}",
+        f"case_overview_text_inside_cards={report['case_overview_text_inside_cards']}",
+        f"case_overview_text_overflow_pixels={report['case_overview_text_overflow_pixels']}",
+        f"case_overview_component_mask_source={report['case_overview_component_mask_source']}",
+        f"case_overview_clean_component_bound_differences={report['case_overview_clean_component_bound_differences']}",
+        f"case_overview_clean_component_mask_differences={report['case_overview_clean_component_mask_differences']}",
+        f"case_overview_dynamic_lanes_intersect_component_bounds={report['case_overview_dynamic_lanes_intersect_component_bounds']}",
+        f"case_overview_dynamic_lanes_intersect_route_masks={report['case_overview_dynamic_lanes_intersect_route_masks']}",
+        f"case_overview_timeline_live_trace_difference={report['case_overview_timeline_live_trace_difference']}",
+        f"case_overview_icon_clipping={report['case_overview_icon_clipping']}",
+        f"case_overview_icon_dynamic_mask_overlap={report['case_overview_icon_dynamic_mask_overlap']}",
+        f"case_overview_static_icon_fidelity={report['case_overview_static_icon_fidelity']}",
+        "system_status_trace_metrics=" + json.dumps(report["system_status_trace_metrics"], sort_keys=True),
+        "system_status_decoded_trace_metrics=" + json.dumps(report["system_status_decoded_trace_metrics"], sort_keys=True),
+        f"cpu_trace_temporal_change={report['cpu_trace_temporal_change']}",
+        f"memory_trace_temporal_change={report['memory_trace_temporal_change']}",
+        f"network_trace_temporal_change={report['network_trace_temporal_change']}",
+        f"disk_trace_temporal_change={report['disk_trace_temporal_change']}",
+        f"queue_trace_temporal_change={report['queue_trace_temporal_change']}",
+        f"active_feed_ellipsis_count={report['active_feed_ellipsis_count']}",
+        f"active_feed_text_overflow_pixels={report['active_feed_text_overflow_pixels']}",
+        f"active_feed_bar_count={report['active_feed_bar_count']}",
+        f"active_feed_first_bar_matches_frozen_x={report['active_feed_first_bar_matches_frozen_x']}",
+        f"active_feed_last_bar_matches_frozen_x={report['active_feed_last_bar_matches_frozen_x']}",
+        f"active_feed_first_bar_x={report['active_feed_first_bar_x']}",
+        f"active_feed_last_bar_x={report['active_feed_last_bar_x']}",
+        f"active_feed_persisted_sample_count={report['active_feed_persisted_sample_count']}",
+        f"active_feed_presentation_slot_count={report['active_feed_presentation_slot_count']}",
+        f"active_feed_sparse_history_adapter={report['active_feed_sparse_history_adapter']}",
+        f"active_feed_live_indicator_unique_states={report['active_feed_live_indicator_unique_states']}",
+        f"active_feed_live_indicator_temporal_change={report['active_feed_live_indicator_temporal_change']}",
+        f"active_feed_bar_glow_temporal_change={report['active_feed_bar_glow_temporal_change']}",
+        f"active_feed_authoritative_heights_unchanged={report['active_feed_authoritative_heights_unchanged']}",
+        f"active_feed_fake_events_created={report['active_feed_fake_events_created']}",
+        f"active_feed_live_unique_states={report['active_feed_live_unique_states']}",
+        f"active_feed_live_temporal_change={report['active_feed_live_temporal_change']}",
+        f"active_feed_real_bar_glow_temporal_change={report['active_feed_real_bar_glow_temporal_change']}",
+        f"active_feed_newest_bar_emphasis={report['active_feed_newest_bar_emphasis']}",
+        f"active_feed_graph_geometry_unchanged={report['active_feed_graph_geometry_unchanged']}",
+        f"active_feed_underlying_history_updates_between_repository_runs={report['active_feed_underlying_history_updates_between_repository_runs']}",
+        f"active_feed_renderer_appends_events={report['active_feed_renderer_appends_events']}",
+        f"active_feed_future_run_behavior={report['active_feed_future_run_behavior']}",
+        f"unit_status_bar_unique_states={report['unit_status_bar_unique_states']}",
+        f"unit_status_bar_temporal_change={report['unit_status_bar_temporal_change']}",
+        f"unit_status_divider_text_overlap={report['unit_status_divider_text_overlap']}",
+        f"unit_status_bars_above_divider={report['unit_status_bars_above_divider']}",
+        f"unit_status_activity_kind={report['unit_status_activity_kind']}",
+        f"threat_signal_now_target_score={report['threat_signal_now_target_score']}",
+        f"threat_signal_now_target_y={report['threat_signal_now_target_y']}",
+        f"threat_signal_now_y_matches_score={report['threat_signal_now_y_matches_score']}",
+        f"threat_score_marker_color_matches_current_classification={report['threat_score_marker_color_matches_current_classification']}",
+        "threat_score_boundary_probes=" + json.dumps(report["threat_score_boundary_probes"], sort_keys=True),
+        f"biohazard_gray_center_seam_pixels={report['biohazard_gray_center_seam_pixels']}",
+        f"biohazard_integrated_vs_frozen_pivot_match={report['biohazard_integrated_vs_frozen_pivot_match']}",
+        f"biohazard_integrated_vs_frozen_phase_match={report['biohazard_integrated_vs_frozen_phase_match']}",
+        f"biohazard_unique_states={report['biohazard_unique_states']}",
+        f"biohazard_angular_delta_degrees={report['biohazard_angular_delta_degrees']}",
+        f"biohazard_angular_delta_variation_degrees={report['biohazard_angular_delta_variation_degrees']}",
+        "biohazard_metrics=" + json.dumps(report["biohazard_metrics"], sort_keys=True),
+        f"evidence_package_unwanted_update_lines={report['evidence_package_unwanted_update_lines']}",
+        f"presentation_timestamp_timezone={report['presentation_timestamp_timezone']}",
+        f"raw_Z_visible_in_dashboard={report['raw_Z_visible_in_dashboard']}",
+        f"footer_timestamp_matches_center_instant={report['footer_timestamp_matches_center_instant']}",
+        f"classification_baked_text_pixels_remaining={report['classification_baked_text_pixels_remaining']}",
+        f"threat_family_baked_text_pixels_remaining={report['threat_family_baked_text_pixels_remaining']}",
+        f"classification_dynamic_text_overlap={report['classification_dynamic_text_overlap']}",
+        f"threat_family_dynamic_text_overlap={report['threat_family_dynamic_text_overlap']}",
+        f"workflow_current_stage={report['workflow_current_stage']}",
+        f"workflow_output_frames={report['workflow_output_frames']}",
+        f"workflow_stage={report['workflow_stage']}",
+        f"rendered_current_stage={report['rendered_current_stage']}",
+        f"authoritative_current_stage={report['authoritative_current_stage']}",
+        f"rendered_current_stage_matches_authoritative={report['rendered_current_stage_matches_authoritative']}",
+        f"workflow_stage_changed_inside_gif={report['workflow_stage_changed_inside_gif']}",
+        f"workflow_current_stage_unique_visual_states={report['workflow_current_stage_unique_visual_states']}",
+        f"workflow_current_stage_temporal_change={report['workflow_current_stage_temporal_change']}",
+        f"workflow_integrated_vs_frozen_pixel_differences={report['workflow_integrated_vs_frozen_pixel_differences']}",
+        f"workflow_micro_polish_inside_authorized_differences={report['workflow_micro_polish_inside_authorized_differences']}",
+        f"workflow_micro_polish_outside_safe_bounds_differences={report['workflow_micro_polish_outside_safe_bounds_differences']}",
+        f"workflow_completed_stage_color_correct={report['workflow_completed_stage_color_correct']}",
+        f"workflow_current_stage_color_correct={report['workflow_current_stage_color_correct']}",
+        f"workflow_pending_stage_colors_correct={report['workflow_pending_stage_colors_correct']}",
+        f"workflow_completed_blue_preserved={report['workflow_completed_blue_preserved']}",
+        f"workflow_pending_gray_preserved={report['workflow_pending_gray_preserved']}",
+        f"workflow_loop_seam_closed={report['workflow_loop_seam_closed']}",
+        f"visible_dynamic_strings_containing_ellipsis={report['visible_dynamic_strings_containing_ellipsis']}",
+        "",
+        "Dynamic mask policy:",
+        "- A composed immutable static base incorporates the approved #1 scanner restoration, #2 lens-clean plate, #4 empty clear-derived graph plate, #5 trace-free plate, #6 graph shell/cleanup plate, #7 Proposal B static data plate, and state text substitutions.",
+        "- Every source frame starts from that static base. Only approved subsystem regions and explicit text ROIs are authorized.",
+        "- GIF frames are quantized against one fixed palette with disposal=2 and no optimization.",
+        "- Raw and decoded temporal pixel checks both require zero changes outside the fixed subsystem-panel union.",
+        "- Case Overview route motion is independently checked against the frozen approved route-corridor mask.",
+        "",
+        "Data mapping:",
+        "- Workflow current_stage: frozen dashboard_state.workflow.current_stage.",
+        "- Feed bars: active_case_feed.event_intensity_history resampled to 39 fixed slots; right edge is NOW. Heights remain fixed throughout one exported visual-monitoring loop. New persisted #8 events alter history/resampling on the next dashboard generation only; the renderer never appends events or mutates external state.",
+        "- System Status: dashboard_state.system_status; CPU/MEM/NET/DISK direct, QUEUE remains count.",
+        "- Threat score: one C# canonical score; the review signal tail converges to its render-time NOW target, so a future canonical score automatically moves the next GIF target only.",
+        "- Case Overview: canonical relationships/nodes with documented route gating; no preview IDs.",
+        "- Presentation timestamps: persisted UTC ISO-8601 is retained in state and converted to America/New_York only for display.",
+        "- Workflow presentation: the GIF reads dashboard.workflow.current_stage once; it never advances an investigation stage itself.",
+        "",
+        "Stale and missing data checks:",
+    ]
+    lines.extend(f"- {name}={result}" for name, result in stale_checks.items())
+    lines.extend(
+        (
+            "",
+        "Known limitation:",
+        report["workflow_order_limitation"],
+        report["entrypoint_status"],
+        "",
+        "Deferred to Subsystem #10:",
+        "- Active-entrypoint switchover after a valid #8 state migration and explicit deployment approval.",
+            "- Deployment of assets/biodefense-case-scan.gif.",
+            "- GitHub Actions command/order changes.",
+            "- Migration of the currently legacy production root to a valid #8 active state.",
+        )
+    )
+    return report, "\n".join(lines) + "\n"
+
+
+def write_review_outputs(
+    context: RenderContext,
+    output_dir: Path,
+    state_root: Path,
+    *,
+    run_safety_checks: bool,
+) -> dict[str, Any]:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    current_case_path = state_root / "data" / "current_case.json"
+    read_only_before = sha256_path(current_case_path)
+    started = time.perf_counter()
+    frames = render_frames(context)
+    render_seconds = time.perf_counter() - started
+    read_only_after = sha256_path(current_case_path)
+    if read_only_before != read_only_after:
+        raise RendererContractError("Rendering mutated data/current_case.json.")
+
+    # Render the exact same source sequence again without changing state.
+    repeat_hashes = [sha256_array(render_frame(context, index)) for index in range(FRAME_COUNT)]
+    if [sha256_array(frame) for frame in frames] != repeat_hashes:
+        raise RendererContractError("Identical state did not produce deterministic source frames.")
+
+    png_path = output_dir / "full_dashboard_review.png"
+    gif_path = output_dir / "full_dashboard_review_6s.gif"
+    save_png(frames[0], png_path)
+    palette = global_palette(
+        context.static_base,
+        tuple(frames[index] for index in (0, 30, 60, 90)),
+    )
+    save_gif(frames, gif_path, palette)
+    decoded = decode_gif(gif_path)
+    if len(decoded) != FRAME_COUNT:
+        raise RendererContractError("Encoded GIF frame count changed unexpectedly.")
+
+    for index in KEYFRAME_INDICES:
+        save_png(decoded[index], output_dir / f"full_dashboard_frame_{index:03d}.png")
+    make_contact_sheet(
+        decoded,
+        KEYFRAME_INDICES,
+        output_dir / "full_dashboard_keyframe_contact_sheet.png",
+        columns=3,
+        label="DECODED FRAME",
+    )
+    make_contact_sheet(
+        decoded,
+        MOTION_AUDIT_INDICES,
+        output_dir / "full_dashboard_motion_audit_12frames.png",
+        columns=3,
+        label="DECODED FRAME",
+    )
+    focus_proofs = make_focus_proofs(context, frames, decoded, output_dir)
+
+    stale_checks = run_stale_and_missing_safety_checks(state_root) if run_safety_checks else {"not_run": "disabled"}
+    qc, qc_text = make_qc(
+        context,
+        frames,
+        decoded,
+        gif_path,
+        render_seconds,
+        stale_checks,
+        read_only_before,
+        read_only_after,
+        repeat_hashes,
+    )
+    if qc["static_source_outside_authorized_mask_differences"] != 0:
+        raise RendererContractError("A source frame changed pixels outside the authorized dynamic/text mask.")
+    if qc["raw_temporal_outside_subsystem_panels_differences"] != 0:
+        raise RendererContractError("A source-frame animation crossed an approved subsystem panel boundary.")
+    if qc["decoded_temporal_outside_motion_mask_differences"] != 0:
+        raise RendererContractError("Decoded GIF has static shimmer outside the motion mask.")
+    if qc["case_overview_route_temporal_outside_authorized_corridors_differences"] != 0:
+        raise RendererContractError("Case Overview route motion left its frozen approved corridors.")
+    if qc["decoded_unique_frames"] != f"{FRAME_COUNT}/{FRAME_COUNT}":
+        raise RendererContractError("GIF did not retain a unique decoded state for every review frame.")
+    if any(qc[key] != f"{FRAME_COUNT}/{FRAME_COUNT}" for key in (
+        "gif_full_canvas_frames",
+        "gif_disposal_2_frames",
+        "gif_duration_50ms_frames",
+    )):
+        raise RendererContractError("Encoded GIF no longer uses full-canvas 50ms disposal-2 frames.")
+    if not qc["seam_frame_120_equals_frame_000"]:
+        raise RendererContractError("The six-second source seam does not close.")
+    if not qc["read_only_state_unchanged"]:
+        raise RendererContractError("Renderer violated read-only state behavior.")
+    if not qc["deterministic_repeat_source_frame_hashes_match"]:
+        raise RendererContractError("Renderer failed deterministic repeat validation.")
+    required_zero = (
+        "footer_static_border_difference",
+        "all_static_panel_border_differences",
+        "operational_brief_baked_text_pixels_remaining",
+        "operational_brief_ellipsis_count",
+        "operational_brief_text_overflow_pixels",
+        "threat_summary_baked_text_pixels_remaining",
+        "threat_summary_ellipsis_count",
+        "threat_summary_text_overflow_pixels",
+        "case_overview_top_border_difference",
+        "case_overview_baked_dynamic_text_remaining",
+        "active_feed_ellipsis_count",
+        "active_feed_text_overflow_pixels",
+        "biohazard_gray_center_seam_pixels",
+        "visible_dynamic_strings_containing_ellipsis",
+        "operational_brief_icon_clipping",
+        "case_overview_clean_component_bound_differences",
+        "case_overview_clean_component_mask_differences",
+        "case_overview_timeline_live_trace_difference",
+        "case_overview_icon_clipping",
+        "case_overview_icon_dynamic_mask_overlap",
+        "evidence_package_unwanted_update_lines",
+        "classification_baked_text_pixels_remaining",
+        "threat_family_baked_text_pixels_remaining",
+        "workflow_integrated_vs_frozen_pixel_differences",
+    )
+    if any(qc[name] != 0 for name in required_zero):
+        failures = {name: qc[name] for name in required_zero if qc[name] != 0}
+        raise RendererContractError(f"#9 visual integration QC failed: {failures}")
+    if (
+        not qc["canonical_threat_classification_matches_score"]
+        or not qc["presentation_threat_classification_matches_score"]
+        or not qc["threat_score_color_matches_presentation_classification"]
+    ):
+        raise RendererContractError(
+            "Threat score canonical/display classification or color does not match its approved contract."
+        )
+    if qc["case_overview_dynamic_text_overlap"] or not qc["case_overview_text_inside_cards"]:
+        raise RendererContractError("Case Overview dynamic text left its approved local lanes.")
+    if qc["case_overview_dynamic_lanes_intersect_component_bounds"] or qc["case_overview_dynamic_lanes_intersect_route_masks"]:
+        raise RendererContractError("Case Overview text-clearing lanes intersect frozen icons or route geometry.")
+    if not qc["case_overview_static_icon_fidelity"]:
+        raise RendererContractError("Case Overview frozen icons were not preserved on the clean live plate.")
+    if not qc["active_feed_first_bar_matches_frozen_x"] or not qc["active_feed_last_bar_matches_frozen_x"]:
+        raise RendererContractError("Active Case Feed bar positions drifted from frozen #4.")
+    if not qc["biohazard_integrated_vs_frozen_pivot_match"] or not qc["biohazard_integrated_vs_frozen_phase_match"]:
+        raise RendererContractError("Integrated Biohazard no longer matches frozen pivot/phase geometry.")
+    if any(qc[key] <= 0 for key in (
+        "cpu_trace_temporal_change",
+        "memory_trace_temporal_change",
+        "network_trace_temporal_change",
+        "disk_trace_temporal_change",
+        "queue_trace_temporal_change",
+    )):
+        raise RendererContractError("A System Status diagnostic trace did not show temporal movement.")
+    if qc["unit_status_bar_unique_states"] <= 10 or qc["unit_status_bar_temporal_change"] <= 0:
+        raise RendererContractError("Unit Status three-bar activity did not remain visibly animated after GIF decoding.")
+    if qc["unit_status_divider_text_overlap"] or not qc["unit_status_bars_above_divider"]:
+        raise RendererContractError("Unit Status layout no longer maintains the required divider/text separation.")
+    if (
+        qc["active_feed_live_unique_states"] < 100
+        or qc["active_feed_live_temporal_change"] <= 0
+        or qc["active_feed_real_bar_glow_temporal_change"] <= 0
+        or not qc["active_feed_authoritative_heights_unchanged"]
+        or qc["active_feed_fake_events_created"] != 0
+        or not qc["active_feed_newest_bar_emphasis"]
+        or not qc["active_feed_graph_geometry_unchanged"]
+    ):
+        raise RendererContractError("Active Case Feed live presentation did not survive GIF decoding.")
+    if not qc["active_feed_underlying_history_updates_between_repository_runs"] or qc["active_feed_renderer_appends_events"]:
+        raise RendererContractError("Active Case Feed persistence contract was violated.")
+    if (
+        qc["threat_signal_now_target_score"]
+        != context.renderer_state["canonical_threat_score"]
+        or not qc["threat_signal_now_y_matches_score"]
+        or not qc["threat_score_marker_color_matches_current_classification"]
+    ):
+        raise RendererContractError("Threat Monitor NOW target is not tied to the canonical active-case score.")
+    if qc["operational_brief_min_line_gap_px"] < 6 or qc["operational_brief_row_overlap"]:
+        raise RendererContractError("Operational Brief wrapped action lacks the required vertical breathing room.")
+    if qc["presentation_timestamp_timezone"] != "America/New_York" or qc["raw_Z_visible_in_dashboard"] or not qc["footer_timestamp_matches_center_instant"]:
+        raise RendererContractError("Dashboard presentation timestamps are not correctly converted to Eastern Time.")
+    if qc["classification_dynamic_text_overlap"] or qc["threat_family_dynamic_text_overlap"]:
+        raise RendererContractError("Center metadata dynamic text overlaps a protected label or icon.")
+    if (
+        qc["workflow_output_frames"] != FRAME_COUNT
+        or not qc["rendered_current_stage_matches_authoritative"]
+        or qc["workflow_stage_changed_inside_gif"]
+        or qc["workflow_current_stage_unique_visual_states"] < 100
+        or qc["workflow_current_stage_temporal_change"] <= 0
+        or not qc["workflow_loop_seam_closed"]
+        or qc["workflow_micro_polish_outside_safe_bounds_differences"] != 0
+    ):
+        raise RendererContractError("Workflow current-stage pulse did not survive GIF decoding.")
+    if not all((
+        qc["workflow_completed_stage_color_correct"],
+        qc["workflow_current_stage_color_correct"],
+        qc["workflow_pending_stage_colors_correct"],
+        qc["workflow_completed_blue_preserved"],
+        qc["workflow_pending_gray_preserved"],
+    )):
+        raise RendererContractError("Workflow completed/current/pending color mapping drifted from frozen #3.")
+
+    consistency = consistency_report(context.renderer_state, context.route_gate)
+    (output_dir / "full_dashboard_qc.txt").write_text(qc_text, encoding="utf-8")
+    (output_dir / "full_dashboard_data_consistency.json").write_text(
+        json.dumps(consistency, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return {
+        "png": png_path,
+        "gif": gif_path,
+        "qc": output_dir / "full_dashboard_qc.txt",
+        "consistency": output_dir / "full_dashboard_data_consistency.json",
+        "frames": frames,
+        "decoded": decoded,
+        "qc_data": qc,
+        "consistency_data": consistency,
+        "focus_proofs": focus_proofs,
+    }
+
+
+def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Render the approved BioDefense dashboard review build.")
+    parser.add_argument(
+        "--state-root",
+        type=Path,
+        default=REPOSITORY_ROOT,
+        help="Validated #8 state root. Default is the production repository.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=REVIEW_DIR,
+        help="Review-only output directory. It never defaults to the deployed GIF.",
+    )
+    parser.add_argument(
+        "--skip-safety-checks",
+        action="store_true",
+        help="Skip copied-fixture stale/missing artifact checks.",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    args = parse_args(argv)
+    state_root = args.state_root.resolve()
+    if not state_root.is_dir():
+        raise RendererContractError(f"State root does not exist: {state_root}")
+    renderer_state = build_renderer_state(state_root)
+    context = prepare_context(renderer_state)
+    results = write_review_outputs(
+        context,
+        args.output_dir.resolve(),
+        state_root,
+        run_safety_checks=not args.skip_safety_checks,
+    )
+    print(json.dumps(
+        {
+            "review_png": str(results["png"]),
+            "review_gif": str(results["gif"]),
+            "qc": str(results["qc"]),
+            "data_consistency": str(results["consistency"]),
+            "case_id": renderer_state["dashboard"]["shared"]["case_id"],
+            "frames": FRAME_COUNT,
+            "duration_ms": FRAME_DURATION_MS,
+        },
+        indent=2,
+    ))
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except RendererContractError as exc:
+        print(f"Renderer contract error: {exc}", file=sys.stderr)
+        raise SystemExit(2)

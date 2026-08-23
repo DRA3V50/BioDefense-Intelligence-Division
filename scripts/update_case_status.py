@@ -1,28 +1,20 @@
-import json
-import random
+#!/usr/bin/env python3
+"""Compatibility entry point for deterministic persistent lifecycle updates.
 
-with open("data/current_case.json", "r", encoding="utf-8") as f:
-    case = json.load(f)
+This replaces the former independent probabilistic status writer. The legacy status
+field is retained, while current_stage is evaluated only by case_lifecycle.
+"""
 
-workflow = [
-    "Open",
-    "Evidence Collection",
-    "Active Investigation",
-    "Containment",
-    "Monitoring",
-    "Closed"
-]
+from case_lifecycle import update_active_case
 
-current = case["status"]
 
-if current in workflow:
-    position = workflow.index(current)
+def main() -> None:
+    result = update_active_case()
+    if result.transition:
+        print(f"Case lifecycle advanced to {result.transition}.")
+    else:
+        print(f"Case lifecycle unchanged: {result.reason}")
 
-    if position < len(workflow) - 1:
-        if random.randint(1, 100) <= 20:
-            case["status"] = workflow[position + 1]
 
-with open("data/current_case.json", "w", encoding="utf-8") as f:
-    json.dump(case, f, indent=2)
-
-print("Case status updated.")
+if __name__ == "__main__":
+    main()

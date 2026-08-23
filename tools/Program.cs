@@ -141,12 +141,18 @@ internal static class Program
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
 
-            File.WriteAllText(
+            WriteAtomically(
                 jsonOutputPath,
-                JsonSerializer.Serialize(jsonOutput, options)
+                temporaryPath => File.WriteAllText(
+                    temporaryPath,
+                    JsonSerializer.Serialize(jsonOutput, options)
+                )
             );
 
-            xmlOutput.Save(xmlOutputPath);
+            WriteAtomically(
+                xmlOutputPath,
+                temporaryPath => xmlOutput.Save(temporaryPath)
+            );
 
             Console.WriteLine(
                 "C# bioterror threat assessment generated successfully."
@@ -234,6 +240,42 @@ internal static class Program
         string json = File.ReadAllText(path);
 
         return JsonDocument.Parse(json);
+    }
+
+    private static void WriteAtomically(
+        string destinationPath,
+        Action<string> writeTemporary
+    )
+    {
+        string? directory = Path.GetDirectoryName(destinationPath);
+
+        if (string.IsNullOrWhiteSpace(directory))
+        {
+            throw new DirectoryNotFoundException(
+                "A report destination directory is required."
+            );
+        }
+
+        Directory.CreateDirectory(directory);
+
+        string temporaryPath = Path.Combine(
+            directory,
+            $".{Path.GetFileName(destinationPath)}." +
+            $"{Guid.NewGuid():N}.tmp"
+        );
+
+        try
+        {
+            writeTemporary(temporaryPath);
+            File.Move(temporaryPath, destinationPath, true);
+        }
+        finally
+        {
+            if (File.Exists(temporaryPath))
+            {
+                File.Delete(temporaryPath);
+            }
+        }
     }
 
     private static List<JsonElement> GetArrayItems(
@@ -927,6 +969,10 @@ internal static class Program
             investigation = new
             {
                 caseId,
+                caseRevision = GetInt(
+                    caseRoot,
+                    "state_revision"
+                ),
                 campaignId = GetString(
                     caseRoot,
                     "campaign_id"
@@ -1110,6 +1156,13 @@ internal static class Program
                     new XElement(
                         "CaseId",
                         caseId
+                    ),
+                    new XElement(
+                        "CaseRevision",
+                        GetInt(
+                            caseRoot,
+                            "state_revision"
+                        )
                     ),
                     new XElement(
                         "CampaignId",

@@ -50,20 +50,20 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install openpyxl Pillow
+          python -m pip install openpyxl Pillow numpy opencv-python-headless
 
       ###############################################################
       # Phase I — Investigation Generation
       ###############################################################
 
-      - name: Generate Investigation
+      - name: Repair Legacy Correlation Linkage (Idempotent)
+        run: python scripts/migrate_legacy_correlation_linkage.py
+
+      - name: Generate or Reuse Persistent Investigation
         run: python scripts/generate_case.py
 
       - name: Update Active Operation
         run: python scripts/update_operation.py
-
-      - name: Advance Investigation Lifecycle
-        run: python scripts/update_case_progress.py
 
       - name: Generate Digital Evidence Repository
         run: python scripts/generate_evidence_repository.py
@@ -71,8 +71,26 @@ jobs:
       - name: Correlate Evidence and Indicators
         run: python scripts/correlate_evidence.py
 
-      - name: Archive Investigation
+      - name: Run Initial C# Bioterror Threat Scoring Engine
+        run: dotnet run --project tools/BioterrorThreatScoringEngine.csproj --configuration Release
+
+      - name: Evaluate Persistent Lifecycle Once
+        run: python scripts/update_case_progress.py
+
+      - name: Refresh C# Score After Lifecycle Evaluation
+        run: dotnet run --project tools/BioterrorThreatScoringEngine.csproj --configuration Release
+
+      - name: Synchronize Final Case Support State
+        run: python scripts/synchronize_case_support_state.py
+
+      - name: Archive Terminal Investigation Only
         run: python scripts/archive_case.py
+
+      - name: Refresh C# Score After Possible Archive
+        run: dotnet run --project tools/BioterrorThreatScoringEngine.csproj --configuration Release
+
+      - name: Synchronize Post-Archive Case Support State
+        run: python scripts/synchronize_case_support_state.py
 
       - name: Update Investigation History
         run: python scripts/update_history.py
@@ -167,11 +185,11 @@ jobs:
       - name: Generate Bioterror Threat Assessment
         run: python scripts/generate_bioterror_threat_assessment.py
 
-      - name: Run C# Bioterror Threat Scoring Engine
-        run: dotnet run --project tools/BioterrorThreatScoringEngine.csproj --configuration Release
-
       - name: Generate Dynamic Case Banner
         run: python scripts/generate_case_banner.py
+
+      - name: Generate Production Dashboard Proof
+        run: python scripts/generate_subsystem10_production_proof.py
 
       - name: Generate Cyber-Biothreat Investigation Report
         run: python scripts/generate_investigation_report.py

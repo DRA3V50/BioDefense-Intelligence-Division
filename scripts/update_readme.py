@@ -344,22 +344,14 @@ def build_overview_section(
         ).upper()
     )
 
-    # GitHub can cache repository images. This short deterministic
-    # version token changes whenever the current case or campaign data
-    # changes, forcing the README to request the newest generated GIF.
-    banner_state = json.dumps(
-        {
-            "case": case,
-            "operation": operation,
-        },
-        sort_keys=True,
-        default=str,
-        separators=(",", ":"),
-    )
-
-    banner_version = hashlib.sha256(
-        banner_state.encode("utf-8")
-    ).hexdigest()[:12]
+    # GitHub can cache repository images.  Version the README image with the
+    # exact deployed GIF bytes so the visible dashboard and its cache token
+    # always move together after the verified #10 deployment.
+    banner_version = "missing-banner"
+    if SCANNER_BANNER_PATH.exists():
+        banner_version = hashlib.sha256(
+            SCANNER_BANNER_PATH.read_bytes()
+        ).hexdigest()[:12]
 
     banner = ""
 

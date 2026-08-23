@@ -17,9 +17,12 @@ import random
 from datetime import date
 from pathlib import Path
 
+from case_lifecycle import ensure_active_case
+
 CURRENT_CASE_FILE = Path("data/current_case.json")
 HISTORY_FILE = Path("data/investigation_history.csv")
 OPERATION_FILE = Path("operations/active_operation.json")
+ARCHIVE_JSON_DIR = Path("cases/archive/json")
 
 TODAY = date.today().isoformat()
 
@@ -240,6 +243,16 @@ def existing_case_ids() -> set[str]:
         except OSError:
             pass
 
+    if ARCHIVE_JSON_DIR.exists():
+        for archive in ARCHIVE_JSON_DIR.glob("*.json"):
+            try:
+                with archive.open("r", encoding="utf-8") as file:
+                    archived_case = json.load(file)
+                if isinstance(archived_case, dict) and archived_case.get("case_id"):
+                    identifiers.add(str(archived_case["case_id"]))
+            except (json.JSONDecodeError, OSError):
+                continue
+
     return identifiers
 
 
@@ -262,9 +275,7 @@ def create_case_id() -> str:
     )
 
 
-def main() -> None:
-    operation = load_json(OPERATION_FILE)
-
+def build_new_case(operation: dict) -> dict:
     severity = random.choices(
         ["LOW", "MODERATE", "HIGH", "CRITICAL"],
         weights=[20, 35, 30, 15],
@@ -284,7 +295,7 @@ def main() -> None:
         ]
     )
 
-    case = {
+    return {
         "case_id": create_case_id(),
         "campaign_id": operation.get(
             "campaign_id",
@@ -337,26 +348,27 @@ def main() -> None:
         "assessment": random.choice(ASSESSMENTS),
     }
 
-    CURRENT_CASE_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
 
-    with CURRENT_CASE_FILE.open(
-        "w",
-        encoding="utf-8",
-    ) as file:
-        json.dump(case, file, indent=4)
+def main() -> None:
+    operation = load_json(OPERATION_FILE)
+    result = ensure_active_case(lambda: build_new_case(operation))
+    case = result.case
 
-    print(
-        f"Generated investigation {case['case_id']}: "
-        f"{severity}, "
-        f"{case['evidence_count']} evidence items, "
-        f"{case['ioc_count']} indicators."
-    )
-    print(
-        f"Campaign: {CAMPAIGN_TITLE}"
-    )
+    if result.created:
+        print(
+            f"Created persistent investigation {case['case_id']}: "
+            f"{case['severity']}, "
+            f"{case['evidence_count']} evidence items, "
+            f"{case['ioc_count']} indicators."
+        )
+    else:
+        print(
+            f"Reused persistent investigation {case['case_id']}: "
+            f"stage={case['current_stage']}, "
+            f"lifecycle={case['lifecycle_status']}."
+        )
+    print(f"Lifecycle decision: {result.reason}")
+    print(f"Campaign: {CAMPAIGN_TITLE}")
 
 
 if __name__ == "__main__":

@@ -1,48 +1,29 @@
-import json
-import os
+#!/usr/bin/env python3
+"""Evaluate the persistent active-case state machine once.
 
-case_path = "data/current_case.json"
-state_path = "data/investigation_state.json"
+The old file advanced a separate phase index on every run. The authoritative
+workflow state now lives on data/current_case.json as current_stage and only
+changes when validated case artifacts satisfy a documented transition.
+"""
 
-with open(case_path, "r", encoding="utf-8") as f:
-    case = json.load(f)
+from case_lifecycle import update_active_case
 
-phases = [
-    "Detection",
-    "Evidence Collection",
-    "Firmware Analysis",
-    "IOC Correlation",
-    "Threat Assessment",
-    "Containment",
-    "Recovery",
-    "Case Closed"
-]
 
-# Load previous state if it exists
-if os.path.exists(state_path):
-    with open(state_path, "r", encoding="utf-8") as f:
-        state = json.load(f)
-else:
-    state = {
-        "case_id": case["case_id"],
-        "phase_index": 0
-    }
+def main() -> None:
+    result = update_active_case()
+    message = (
+        f"Active case {result.case['case_id']} "
+        f"stage={result.case['current_stage']} "
+        f"lifecycle={result.case['lifecycle_status']}."
+    )
+    if result.transition:
+        message += f" Transitioned to {result.transition}."
+    else:
+        message += f" No transition: {result.reason}"
+    if result.stale_threat_report_rejected:
+        message += " A stale C# threat report was rejected."
+    print(message)
 
-# If new case, reset lifecycle
-if state.get("case_id") != case["case_id"]:
-    state["case_id"] = case["case_id"]
-    state["phase_index"] = 0
-else:
-    # Progress phase slightly each run (simulate investigation evolution)
-    if state["phase_index"] < len(phases) - 1:
-        state["phase_index"] += 1
 
-current_phase = phases[state["phase_index"]]
-
-state["current_phase"] = current_phase
-
-# Save state
-with open(state_path, "w", encoding="utf-8") as f:
-    json.dump(state, f, indent=2)
-
-print(f"Investigation phase updated: {current_phase}")
+if __name__ == "__main__":
+    main()

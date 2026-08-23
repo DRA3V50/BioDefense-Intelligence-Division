@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9736 |
+| Case ID | BID-2026-2218 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Security Breach Investigation |
+| Classification | Supply Chain Security Investigation |
 | Threat Family | Clinical Research Data Manipulation |
-| Severity | LOW |
-| Status | Evidence Collection |
+| Severity | HIGH |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Evidence Repository |
-| Vendor | Palo Alto Networks |
-| Security Zone | Evidence Network |
+| Platform | Evidence Processing Network |
+| Device | Specimen Tracking Terminal |
+| Vendor | Red Hat |
+| Security Zone | Federal Operations |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 22 |
-| Confidence | 86% |
-| Evidence Collected | 22 |
-| Indicators Identified | 4 |
-| Affected Assets | 7 |
+| Risk Score | 80 |
+| Confidence | 90% |
+| Evidence Collected | 166 |
+| Indicators Identified | 37 |
+| Affected Assets | 37 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**Containment**
 
 Priority:
 
-**ROUTINE**
+**HIGH**
 
 Recommended Action:
 

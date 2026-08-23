@@ -15,7 +15,6 @@ operation codename.
 """
 
 import json
-import random
 from datetime import date
 from pathlib import Path
 
@@ -217,12 +216,9 @@ def main() -> None:
     if current_phase not in phases:
         current_phase = phases[0]
 
-    current_index = phases.index(current_phase)
-
-    # The campaign may move forward, but it can never move backward.
-    if current_index < len(phases) - 1:
-        if random.randint(1, 100) <= 25:
-            current_phase = phases[current_index + 1]
+    # Campaign phase is persistent context, not a proxy for the active case's
+    # workflow stage. Keep it unchanged until a future deterministic campaign
+    # rule explicitly updates it; scheduled runs must never advance it randomly.
 
     # Force a stable, professional campaign title on every run.
     operation["operation"] = CAMPAIGN_TITLE
