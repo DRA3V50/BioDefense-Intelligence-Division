@@ -1,0 +1,206 @@
+EvidenceID,Date,CaseID,ArtifactType,Description
+EV-0001,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0002,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0003,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0004,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0005,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0006,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0007,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0008,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0009,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0010,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0011,2026-06-16,FSE-2026-4571,Boot Artifact,Indicators warrant continued monitoring and forensic review.
+EV-0012,2026-06-23,FSE-2026-7255,Firmware Binary,Embedded device telemetry revealed irregular execution patterns.
+EV-0013,2026-06-23,FSE-2026-8857,Firmware Image,Observed firmware hash deviations requiring validation.
+EV-0014,2026-06-24,FSE-2026-1183,Firmware Signature,Embedded device telemetry revealed irregular execution patterns.
+EV-0015,2026-06-24,FSE-2026-4731,Memory Dump,Embedded device telemetry revealed irregular execution patterns.
+EV-0016,2026-06-24,FSE-2026-2292,Supply Chain Record,Indicators warrant continued monitoring and forensic review.
+EV-0017,2026-06-25,FSE-2026-7081,Firmware Signature,Analyst review identified anomalous embedded system behavior.
+EV-0018,2026-06-25,FSE-2026-2534,Firmware Signature,Analyst review identified anomalous embedded system behavior.
+EV-0019,2026-06-26,FSE-2026-8702,Supply Chain Record,Observed firmware hash deviations requiring validation.
+EV-0020,2026-06-27,FSE-2026-1126,Firmware Signature,Evidence remains inconclusive and requires additional collection.
+EV-0021,2026-06-28,FSE-2026-8204,Boot Artifact,Artifact correlation suggests potential unauthorized modification.
+EV-0022,2026-06-29,FSE-2026-5429,Supply Chain Record,Artifact correlation suggests potential unauthorized modification.
+EV-0023,2026-06-30,BID-2026-8035,Firmware Binary,Embedded telemetry indicates persistent unauthorized execution.
+EV-0024,2026-06-30,BID-2026-4019,Configuration Artifact,Observed firmware integrity deviations requiring immediate validation.
+EV-0025,2026-06-30,BID-2026-9515,Firmware Signature,Observed firmware integrity deviations requiring immediate validation.
+EV-0026,2026-06-30,BID-2026-3524,Firmware Image,Embedded telemetry indicates persistent unauthorized execution.
+EV-0027,2026-06-30,BID-2026-5688,Firmware Signature,Indicators warrant continued monitoring and forensic collection.
+EV-0028,2026-07-01,BID-2026-5026,Boot Artifact,Indicators warrant continued monitoring and forensic collection.
+EV-0029,2026-07-01,BID-2026-9130,Embedded Log,Embedded telemetry indicates persistent unauthorized execution.
+EV-0030,2026-07-01,BID-2026-6897,Embedded Log,Indicators warrant continued monitoring and forensic collection.
+EV-0031,2026-07-01,BID-2026-3482,Supply Chain Record,Embedded telemetry indicates persistent unauthorized execution.
+EV-0032,2026-07-01,BID-2026-1353,Memory Dump,Evidence supports possible firmware manipulation.
+EV-0033,2026-07-02,BID-2026-6465,Supply Chain Record,Embedded telemetry indicates persistent unauthorized execution.
+EV-0034,2026-07-02,BID-2026-5152,Firmware Signature,Indicators warrant continued monitoring and forensic collection.
+EV-0035,2026-07-03,BID-2026-5969,Firmware Image,Evidence supports possible firmware manipulation.
+EV-0036,2026-07-03,BID-2026-7113,Supply Chain Record,Evidence supports possible firmware manipulation.
+EV-0037,2026-07-03,BID-2026-9063,Firmware Binary,Embedded telemetry indicates persistent unauthorized execution.
+EV-0038,2026-07-03,BID-2026-1652,Firmware Signature,Behavior consistent with advanced persistence techniques.
+EV-0039,2026-07-03,BID-2026-6859,Memory Dump,Behavior consistent with advanced persistence techniques.
+EV-0040,2026-07-03,BID-2026-7583,Embedded Log,Indicators warrant continued monitoring and forensic collection.
+EV-0041,2026-07-04,BID-2026-3469,Firmware Image,Evidence supports possible firmware manipulation.
+EV-0042,2026-07-04,BID-2026-6034,Firmware Image,Observed firmware integrity deviations requiring immediate validation.
+EV-0043,2026-07-05,BID-2026-1736,Supply Chain Record,Evidence supports possible firmware manipulation.
+EV-0044,2026-07-05,BID-2026-3145,Boot Artifact,Embedded telemetry demonstrates abnormal execution behavior consistent with persistent firmware compromise.
+EV-0045,2026-07-05,BID-2026-3702,Supply Chain Record,Device artifacts require additional reconstruction to determine operational impact.
+EV-0046,2026-07-06,BID-2026-6201,Memory Dump,Collected evidence indicates unauthorized modification requiring additional forensic acquisition.
+EV-0047,2026-07-07,BID-2026-7522,Memory Dump,Device artifacts require additional reconstruction to determine operational impact.
+EV-0048,2026-07-08,BID-2026-1455,Digital Artifact,Evidence suggests coordinated reconnaissance against protected biomedical infrastructure.
+EV-0049,2026-07-08,BID-2026-2028,Digital Artifact,Analysts identified suspicious activity affecting protected research resources.
+EV-0050,2026-07-09,BID-2026-1982,Digital Artifact,Indicators remain consistent with a sophisticated cyber-enabled biosecurity investigation.
+EV-00051,BID-2026-6598,2026-07-09,Operation Lazarus,Digital Pathogen Intelligence Review,Digital Evidence,Digital Evidence Repository,Access Control System,Special Response Unit,Collected
+EV-00052,BID-2026-6042,2026-07-10,Operation Dead Signal,Medical Device Security Assessment,Digital Evidence,Clinical Trial Environment,Forensic Imaging Station,Analyst Team Alpha,Collected
+EV-00053,BID-2026-5446,2026-07-11,Operation Lazarus,Biosecurity Infrastructure Investigation,Digital Evidence,Clinical Trial Environment,Access Control System,Analyst Team Delta,Collected
+EV-00054,BID-2026-8339,2026-07-11,Operation Cold Harbor,Research Facility Intrusion,Digital Evidence,Federal Investigation Network,Laboratory Controller,Analyst Team Bravo,Collected
+EV-00055,BID-2026-5848,2026-07-11,Operation Nightfall,Biomedical Network Exposure,Digital Evidence,Federal Investigation Network,Forensic Imaging Station,Special Response Unit,Collected
+EV-00056,BID-2026-8029,2026-07-12,Operation Nightfall,Biocontainment Network Investigation,Digital Evidence,Medical Research Laboratory,Research Cluster,Analyst Team Bravo,Collected
+EV-00057,BID-2026-4594,2026-07-12,Operation Outbreak,Medical Device Security Assessment,Digital Evidence,Digital Evidence Repository,Access Control System,BioDefense Task Force,Collected
+EV-00058,BID-2026-7771,2026-07-13,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Laboratory Control Network,Specimen Tracking Server,Analyst Team Bravo,Collected
+EV-00059,BID-2026-3923,2026-07-13,Operation Black Eclipse,Biological Intelligence Collection,Digital Evidence,Laboratory Control Network,Biomedical Workstation,Analyst Team Alpha,Collected
+EV-00060,BID-2026-5173,2026-07-13,Operation Black Eclipse,Unauthorized Research System Access,Authentication Logs,Evidence Processing Network,Biomedical Workstation,Analyst Team Bravo,Collected
+EV-00061,BID-2026-7533,2026-07-13,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Federal Investigation Network,Biomedical Workstation,Analyst Team Bravo,Collected
+EV-00062,BID-2026-2187,2026-07-13,Operation Black Eclipse,Unauthorized Research System Access,Authentication Logs,Biomedical Analysis Cluster,Access Control System,Analyst Team Bravo,Collected
+EV-00063,BID-2026-3673,2026-07-14,Operation Black Eclipse,Digital Pathogen Intelligence Review,Digital Evidence,Biomedical Analysis Cluster,Access Control System,BioDefense Task Force,Collected
+EV-00064,BID-2026-4042,2026-07-14,Operation Black Eclipse,Biosecurity Infrastructure Investigation,Digital Evidence,Clinical Research Environment,Access Control System,National Response Cell,Collected
+EV-00065,BID-2026-8491,2026-07-14,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Federal Investigation Network,Specimen Tracking Server,National Response Cell,Collected
+EV-00066,BID-2026-6092,2026-07-15,Operation Black Eclipse,Biological Intelligence Collection,Digital Evidence,Clinical Research Environment,Digital Evidence Appliance,Analyst Team Alpha,Collected
+EV-00067,BID-2026-4519,2026-07-15,Operation Black Eclipse,Digital Pathogen Intelligence Review,Digital Evidence,Clinical Research Environment,Access Control System,Analyst Team Bravo,Collected
+EV-00068,BID-2026-7923,2026-07-16,Operation Black Eclipse,Evidence Reconstruction Investigation,Digital Evidence,Biomedical Analysis Cluster,Research Database,Analyst Team Bravo,Collected
+EV-00069,BID-2026-9568,2026-07-16,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Laboratory Control Network,Digital Evidence Appliance,Analyst Team Bravo,Collected
+EV-00070,BID-2026-1951,2026-07-16,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Clinical Research Environment,Specimen Tracking Server,Joint Cyber Investigation Unit,Collected
+EV-00071,BID-2026-7151,2026-07-16,Operation Black Eclipse,Biosecurity Infrastructure Investigation,Digital Evidence,Clinical Research Environment,Laboratory Controller,Joint Cyber Investigation Unit,Collected
+EV-00072,BID-2026-1588,2026-07-17,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Evidence Processing Network,Genome Sequencing Server,Analyst Team Bravo,Collected
+EV-00073,BID-2026-1443,2026-07-17,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Evidence Processing Network,Access Control System,National Response Cell,Collected
+EV-00074,BID-2026-1767,2026-07-19,Operation Black Eclipse,Medical Device Security Assessment,Digital Evidence,Laboratory Control Network,Evidence Repository,Analyst Team Alpha,Collected
+EV-00075,BID-2026-7964,2026-07-19,Operation Black Eclipse,Medical Device Security Assessment,Digital Evidence,Biomedical Analysis Cluster,Access Control System,Analyst Team Delta,Collected
+EV-00076,BID-2026-9255,2026-07-19,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Laboratory Control Network,Access Control System,National Response Cell,Collected
+EV-00077,BID-2026-5303,2026-07-19,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Clinical Research Environment,Access Control System,Analyst Team Alpha,Collected
+EV-00078,BID-2026-2269,2026-07-19,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Research Network,Specimen Tracking Server,Analyst Team Delta,Collected
+EV-00079,BID-2026-8160,2026-07-20,Operation Black Eclipse,Medical Device Security Assessment,Digital Evidence,Biosecurity Operations Center,Digital Evidence Appliance,Analyst Team Delta,Collected
+EV-00080,BID-2026-9164,2026-07-20,Operation Black Eclipse,Medical Device Security Assessment,Digital Evidence,Genome Sequencing Environment,Specimen Tracking Server,Analyst Team Delta,Collected
+EV-00081,BID-2026-5263,2026-07-21,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Evidence Processing Network,Biomedical Workstation,Analyst Team Delta,Collected
+EV-00082,BID-2026-4741,2026-07-21,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Research Network,Genome Sequencing Server,Joint Cyber Investigation Unit,Collected
+EV-00083,BID-2026-6233,2026-07-21,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Biomedical Analysis Cluster,Access Control System,Analyst Team Delta,Collected
+EV-00084,BID-2026-4333,2026-07-22,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Evidence Processing Network,Research Database,Analyst Team Delta,Collected
+EV-00085,BID-2026-8048,2026-07-22,Operation Black Eclipse,Unauthorized Research System Access,Authentication Logs,Evidence Processing Network,Digital Evidence Appliance,Analyst Team Delta,Collected
+EV-00086,BID-2026-9826,2026-07-23,Operation Black Eclipse,Cyber-Biothreat Intelligence Review,Digital Evidence,Clinical Research Environment,Digital Evidence Appliance,National Response Cell,Collected
+EV-00087,BID-2026-2763,2026-07-23,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Federal Investigation Network,Specimen Tracking Server,National Response Cell,Collected
+EV-00088,BID-2026-3767,2026-07-23,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Evidence Processing Network,Biomedical Workstation,National Response Cell,Collected
+EV-00089,BID-2026-9421,2026-07-23,Operation Black Eclipse,Evidence Reconstruction Investigation,Digital Evidence,Laboratory Control Network,Specimen Tracking Server,Analyst Team Delta,Collected
+EV-00090,BID-2026-4404,2026-07-24,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Laboratory Control Network,Genome Sequencing Server,Analyst Team Alpha,Collected
+EV-00091,BID-2026-7645,2026-07-24,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Evidence Processing Network,Digital Evidence Appliance,BioDefense Task Force,Collected
+EV-00092,BID-2026-4432,2026-07-24,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Laboratory Control Network,Laboratory Controller,Analyst Team Alpha,Collected
+EV-00093,BID-2026-3610,2026-07-24,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Federal Investigation Network,Access Control System,Analyst Team Bravo,Collected
+EV-00094,BID-2026-8498,2026-07-24,Operation Black Eclipse,Cyber-Biothreat Intelligence Review,Digital Evidence,Evidence Processing Network,Evidence Repository,Analyst Team Delta,Collected
+EV-00095,BID-2026-7222,2026-07-24,Operation Black Eclipse,Cyber-Biothreat Intelligence Review,Digital Evidence,Clinical Research Environment,Access Control System,Joint Cyber Investigation Unit,Collected
+EV-00096,BID-2026-5964,2026-07-25,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Federal Investigation Network,Digital Evidence Appliance,Analyst Team Delta,Collected
+EV-00097,BID-2026-6782,2026-07-25,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Biomedical Analysis Cluster,Laboratory Controller,Analyst Team Bravo,Collected
+EV-00098,BID-2026-3972,2026-07-26,Operation Black Eclipse,Medical Device Security Assessment,Digital Evidence,Laboratory Control Network,Access Control System,Analyst Team Alpha,Collected
+EV-00099,BID-2026-8783,2026-07-26,Operation Black Eclipse,Evidence Reconstruction Investigation,Digital Evidence,Evidence Processing Network,Biomedical Workstation,BioDefense Task Force,Collected
+EV-00100,BID-2026-7389,2026-07-26,Operation Black Eclipse,Unauthorized Research System Access,Authentication Logs,Genome Sequencing Environment,Laboratory Controller,Analyst Team Delta,Collected
+EV-00101,BID-2026-5440,2026-07-26,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Laboratory Control Network,Access Control System,Analyst Team Bravo,Collected
+EV-00102,BID-2026-1824,2026-07-26,Operation Black Eclipse,Biosecurity Infrastructure Investigation,Digital Evidence,Genome Sequencing Environment,Biomedical Workstation,National Response Cell,Collected
+EV-00103,BID-2026-4874,2026-07-26,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Genome Sequencing Environment,Access Control System,Analyst Team Alpha,Collected
+EV-00104,BID-2026-8128,2026-07-26,Operation Black Eclipse,Medical Device Security Assessment,Digital Evidence,Laboratory Control Network,Biomedical Workstation,Analyst Team Bravo,Collected
+EV-00105,BID-2026-1198,2026-07-26,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Laboratory Control Network,Biomedical Workstation,Analyst Team Delta,Collected
+EV-00106,BID-2026-9301,2026-07-26,Operation Black Eclipse,Cyber-Biothreat Intelligence Review,Digital Evidence,Biosecurity Operations Center,Genome Sequencing Server,Joint Cyber Investigation Unit,Collected
+EV-00107,BID-2026-9419,2026-07-26,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Evidence Processing Network,Digital Evidence Appliance,National Response Cell,Collected
+EV-00108,BID-2026-9404,2026-07-26,Operation Black Eclipse,Cyber-Biothreat Intelligence Review,Digital Evidence,Evidence Processing Network,Biomedical Workstation,National Response Cell,Collected
+EV-00109,BID-2026-9444,2026-07-26,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Evidence Processing Network,Research Database,Analyst Team Alpha,Collected
+EV-00110,BID-2026-1850,2026-07-27,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Biosecurity Operations Center,Laboratory Controller,National Response Cell,Collected
+EV-00111,BID-2026-4464,2026-07-27,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Biosecurity Operations Center,Digital Evidence Appliance,Analyst Team Bravo,Collected
+EV-00112,BID-2026-8255,2026-07-28,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Biomedical Analysis Cluster,Specimen Tracking Server,Analyst Team Alpha,Collected
+EV-00113,BID-2026-5296,2026-07-28,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Evidence Processing Network,Biomedical Workstation,Joint Cyber Investigation Unit,Collected
+EV-00114,BID-2026-2459,2026-07-28,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Biosecurity Operations Center,Specimen Tracking Server,National Response Cell,Collected
+EV-00115,BID-2026-3308,2026-07-29,Operation Black Eclipse,Evidence Reconstruction Investigation,Digital Evidence,Federal Investigation Network,Biomedical Workstation,Analyst Team Delta,Collected
+EV-00116,BID-2026-9499,2026-07-29,Operation Black Eclipse,Unauthorized Research System Access,Authentication Logs,Biosecurity Operations Center,Genome Sequencing Server,Analyst Team Alpha,Collected
+EV-00117,BID-2026-2215,2026-07-29,Operation Black Eclipse,Unauthorized Research System Access,Authentication Logs,Laboratory Control Network,Laboratory Controller,Analyst Team Bravo,Collected
+EV-00118,BID-2026-4439,2026-07-29,Operation Black Eclipse,Evidence Reconstruction Investigation,Digital Evidence,Biosecurity Operations Center,Research Database,Analyst Team Delta,Collected
+EV-00119,BID-2026-2293,2026-07-30,Operation Black Eclipse,Medical Device Security Assessment,Digital Evidence,Biosecurity Operations Center,Digital Evidence Appliance,BioDefense Task Force,Collected
+EV-00120,BID-2026-3690,2026-07-30,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Clinical Research Environment,Laboratory Controller,Analyst Team Delta,Collected
+EV-00121,BID-2026-1003,2026-07-30,Operation Black Eclipse,Biomedical Network Exposure,Digital Evidence,Genome Sequencing Environment,Specimen Tracking Server,Analyst Team Delta,Collected
+EV-00122,BID-2026-1532,2026-07-30,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Biosecurity Operations Center,Laboratory Controller,Analyst Team Delta,Collected
+EV-00123,BID-2026-5457,2026-07-30,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Research Network,Access Control System,Analyst Team Alpha,Collected
+EV-00124,BID-2026-8488,2026-07-30,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Clinical Research Environment,Digital Evidence Appliance,Analyst Team Alpha,Collected
+EV-00125,BID-2026-1479,2026-07-30,Operation Black Eclipse,Cyber-Biothreat Intelligence Review,Digital Evidence,Biosecurity Operations Center,Biomedical Workstation,Analyst Team Bravo,Collected
+EV-00126,BID-2026-7077,2026-07-31,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Federal Investigation Network,Genome Sequencing Server,National Response Cell,Collected
+EV-00127,BID-2026-5363,2026-07-31,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Genome Sequencing Environment,Evidence Repository,Joint Cyber Investigation Unit,Collected
+EV-00128,BID-2026-9408,2026-08-01,Operation Black Eclipse,Counter-Bioterror Intelligence Case,Digital Evidence,Federal Investigation Network,Research Database,Analyst Team Bravo,Collected
+EV-00129,BID-2026-8561,2026-08-01,Operation Black Eclipse,Unauthorized Research System Access,Authentication Logs,Laboratory Control Network,Biomedical Workstation,Analyst Team Bravo,Collected
+EV-00130,BID-2026-6443,2026-08-01,Operation Black Eclipse,Biological Research Intelligence Collection,Digital Evidence,Evidence Processing Network,Biomedical Workstation,Analyst Team Bravo,Collected
+EV-00131,BID-2026-4819,2026-08-01,Operation Black Eclipse,Laboratory Security Breach,Digital Evidence,Clinical Research Environment,Laboratory Controller,National Response Cell,Collected
+EV-00132,BID-2026-1115,2026-08-01,Operation Black Eclipse,Biosecurity Infrastructure Investigation,Digital Evidence,Federal Investigation Network,Genome Sequencing Server,Analyst Team Delta,Collected
+EV-00133,BID-2026-5702,2026-08-02,Operation Black Eclipse,Evidence Reconstruction Investigation,Digital Evidence,Genome Sequencing Environment,Evidence Repository,BioDefense Task Force,Collected
+EV-00134,BID-2026-9061,2026-08-02,Operation Black Eclipse,Research Facility Intrusion,Digital Evidence,Laboratory Control Network,Genome Sequencing Server,Analyst Team Bravo,Collected
+EV-00135,BID-2026-9879,2026-08-02,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,Digital Evidence,Laboratory Control Network,Biomedical Workstation,Joint Cyber Investigation Unit,Collected
+EV-00136,BID-2026-6104,2026-08-02,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,Digital Evidence,Clinical Research Environment,Evidence Repository,Analyst Team Bravo,Collected
+EV-00137,BID-2026-6321,2026-08-02,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,Digital Evidence,Protected Research Network,Network Security Appliance,BioDefense Task Force,Collected
+EV-00138,BID-2026-3342,2026-08-02,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,Digital Evidence,Evidence Processing Network,Access Control Server,Analyst Team Alpha,Collected
+EV-00139,BID-2026-1278,2026-08-03,Coordinated Biomedical Systems Intrusion,Protected Research Systems Investigation,Digital Evidence,Medical Research Laboratory,Access Control Server,Analyst Team Delta,Collected
+EV-00140,BID-2026-3870,2026-08-03,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,Digital Evidence,Clinical Research Environment,Clinical Data Server,Analyst Team Alpha,Collected
+EV-00141,BID-2026-2718,2026-08-03,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Clinical Research Environment,Network Security Appliance,Analyst Team Delta,Collected
+EV-00142,BID-2026-5077,2026-08-03,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,Digital Evidence,Research Data Repository,Biomedical Workstation,Analyst Team Alpha,Collected
+EV-00143,BID-2026-8334,2026-08-03,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,Authentication Logs,Clinical Research Environment,Biomedical Workstation,Analyst Team Delta,Collected
+EV-00144,BID-2026-4246,2026-08-03,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Protected Research Network,Laboratory Information Server,Joint Cyber Investigation Unit,Collected
+EV-00145,BID-2026-6850,2026-08-03,Coordinated Biomedical Systems Intrusion,Cyber-Biothreat Intelligence Review,Digital Evidence,Biomedical Analysis Cluster,Evidence Repository,BioDefense Task Force,Collected
+EV-00146,BID-2026-3408,2026-08-03,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Biomedical Analysis Cluster,Evidence Repository,Joint Cyber Investigation Unit,Collected
+EV-00147,BID-2026-7106,2026-08-03,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Protected Research Network,Research Database Server,National Response Cell,Collected
+EV-00148,BID-2026-7175,2026-08-03,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,Digital Evidence,Laboratory Control Network,Genome Analysis Workstation,National Response Cell,Collected
+EV-00149,BID-2026-6091,2026-08-03,Coordinated Biomedical Systems Intrusion,Protected Research Systems Investigation,Digital Evidence,Genome Sequencing Environment,Access Control Server,National Response Cell,Collected
+EV-00150,BID-2026-9937,2026-08-03,Coordinated Biomedical Systems Intrusion,Protected Research Systems Investigation,Digital Evidence,Evidence Processing Network,Network Security Appliance,Analyst Team Bravo,Collected
+EV-00151,BID-2026-3583,2026-08-03,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,Digital Evidence,Research Data Repository,Clinical Data Server,National Response Cell,Collected
+EV-00152,BID-2026-5190,2026-08-03,Coordinated Biomedical Systems Intrusion,Cyber-Biothreat Intelligence Review,Digital Evidence,Research Data Repository,Genome Analysis Workstation,Analyst Team Bravo,Collected
+EV-00153,BID-2026-7918,2026-08-04,Coordinated Biomedical Systems Intrusion,Protected Research Systems Investigation,Digital Evidence,Medical Research Laboratory,Network Security Appliance,Analyst Team Delta,Collected
+EV-00154,BID-2026-9934,2026-08-04,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,Digital Evidence,Laboratory Control Network,Clinical Data Server,BioDefense Task Force,Collected
+EV-00155,BID-2026-5598,2026-08-04,Coordinated Biomedical Systems Intrusion,Specimen Management Security Review,Digital Evidence,Biosecurity Operations Center,Biomedical Workstation,Analyst Team Bravo,Collected
+EV-00156,BID-2026-6149,2026-08-04,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,Digital Evidence,Laboratory Control Network,Access Control Server,BioDefense Task Force,Collected
+EV-00157,BID-2026-5008,2026-08-04,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,Authentication Logs,Biosecurity Operations Center,Evidence Repository,Analyst Team Delta,Collected
+EV-00158,BID-2026-6459,2026-08-04,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,Digital Evidence,Genome Sequencing Environment,Genome Analysis Workstation,Analyst Team Alpha,Collected
+EV-00159,BID-2026-8932,2026-08-04,Coordinated Biomedical Systems Intrusion,Specimen Management Security Review,Digital Evidence,Evidence Processing Network,Genome Analysis Workstation,Analyst Team Alpha,Collected
+EV-00160,BID-2026-1514,2026-08-05,Coordinated Biomedical Systems Intrusion,Digital Evidence Reconstruction Investigation,Digital Evidence,Clinical Research Environment,Medical Device Gateway,National Response Cell,Collected
+EV-00161,BID-2026-1207,2026-08-05,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,Digital Evidence,Research Data Repository,Clinical Data Server,Joint Cyber Investigation Unit,Collected
+EV-00162,BID-2026-5780,2026-08-05,Coordinated Biomedical Systems Intrusion,Specimen Management Security Review,Digital Evidence,Evidence Processing Network,Clinical Data Server,National Response Cell,Collected
+EV-00163,BID-2026-8917,2026-08-06,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,Authentication Logs,Genome Sequencing Environment,Laboratory Information Server,Joint Cyber Investigation Unit,Collected
+EV-00164,BID-2026-3923,2026-08-06,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,Digital Evidence,Clinical Research Environment,Access Control Server,National Response Cell,Collected
+EV-00165,BID-2026-2460,2026-08-06,Coordinated Biomedical Systems Intrusion,Research Facility Intrusion Investigation,Digital Evidence,Biosecurity Operations Center,Access Control Server,Joint Cyber Investigation Unit,Collected
+EV-00166,BID-2026-6446,2026-08-06,Coordinated Biomedical Systems Intrusion,Laboratory Security Breach Investigation,Digital Evidence,Biosecurity Operations Center,Network Security Appliance,Joint Cyber Investigation Unit,Collected
+EV-00167,BID-2026-1035,2026-08-06,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Clinical Research Environment,Laboratory Information Server,National Response Cell,Collected
+EV-00168,BID-2026-4601,2026-08-07,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Clinical Research Environment,Evidence Repository,Analyst Team Bravo,Collected
+EV-00169,BID-2026-1158,2026-08-07,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Medical Research Laboratory,Specimen Tracking Terminal,BioDefense Task Force,Collected
+EV-00170,BID-2026-6053,2026-08-07,Coordinated Biomedical Systems Intrusion,Digital Evidence Reconstruction Investigation,Digital Evidence,Research Data Repository,Biomedical Workstation,Analyst Team Alpha,Collected
+EV-00171,BID-2026-7379,2026-08-07,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,Digital Evidence,Laboratory Control Network,Clinical Data Server,BioDefense Task Force,Collected
+EV-00172,BID-2026-2643,2026-08-07,Coordinated Biomedical Systems Intrusion,Research Facility Intrusion Investigation,Digital Evidence,Medical Research Laboratory,Laboratory Information Server,BioDefense Task Force,Collected
+EV-00173,BID-2026-6500,2026-08-07,Coordinated Biomedical Systems Intrusion,Digital Evidence Reconstruction Investigation,Digital Evidence,Clinical Research Environment,Laboratory Information Server,BioDefense Task Force,Collected
+EV-00174,BID-2026-2784,2026-08-08,Coordinated Biomedical Systems Intrusion,Biocontainment Network Investigation,Digital Evidence,Biomedical Analysis Cluster,Clinical Data Server,National Response Cell,Collected
+EV-00175,BID-2026-3237,2026-08-08,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,Digital Evidence,Laboratory Control Network,Medical Device Gateway,BioDefense Task Force,Collected
+EV-00176,BID-2026-1692,2026-08-09,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,Authentication Logs,Protected Research Network,Specimen Tracking Terminal,Joint Cyber Investigation Unit,Collected
+EV-00177,BID-2026-8790,2026-08-09,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Biomedical Analysis Cluster,Laboratory Information Server,Analyst Team Alpha,Collected
+EV-00178,BID-2026-1107,2026-08-10,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,Digital Evidence,Medical Research Laboratory,Genome Analysis Workstation,Analyst Team Bravo,Collected
+EV-00179,BID-2026-3273,2026-08-10,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Laboratory Control Network,Evidence Repository,Analyst Team Delta,Collected
+EV-00180,BID-2026-6424,2026-08-11,Coordinated Biomedical Systems Intrusion,Laboratory Security Breach Investigation,Digital Evidence,Federal Investigation Network,Genome Analysis Workstation,BioDefense Task Force,Collected
+EV-00181,BID-2026-7336,2026-08-11,Coordinated Biomedical Systems Intrusion,Cyber-Biothreat Intelligence Review,Digital Evidence,Federal Investigation Network,Network Security Appliance,National Response Cell,Collected
+EV-00182,BID-2026-6172,2026-08-12,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,Digital Evidence,Medical Research Laboratory,Laboratory Information Server,Analyst Team Bravo,Collected
+EV-00183,BID-2026-8062,2026-08-12,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Research Data Repository,Specimen Tracking Terminal,Analyst Team Delta,Collected
+EV-00184,BID-2026-2880,2026-08-13,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,Digital Evidence,Genome Sequencing Environment,Laboratory Information Server,Analyst Team Alpha,Collected
+EV-00185,BID-2026-5282,2026-08-13,Coordinated Biomedical Systems Intrusion,Specimen Management Security Review,Digital Evidence,Clinical Research Environment,Clinical Data Server,Analyst Team Bravo,Collected
+EV-00186,BID-2026-4791,2026-08-14,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,Authentication Logs,Genome Sequencing Environment,Medical Device Gateway,Analyst Team Delta,Collected
+EV-00187,BID-2026-6513,2026-08-14,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Evidence Processing Network,Medical Device Gateway,National Response Cell,Collected
+EV-00188,BID-2026-2801,2026-08-15,Coordinated Biomedical Systems Intrusion,Laboratory Access Control Investigation,Digital Evidence,Biosecurity Operations Center,Network Security Appliance,Analyst Team Delta,Collected
+EV-00189,BID-2026-6717,2026-08-15,Coordinated Biomedical Systems Intrusion,Research Facility Intrusion Investigation,Digital Evidence,Clinical Research Environment,Laboratory Information Server,BioDefense Task Force,Collected
+EV-00190,BID-2026-4760,2026-08-16,Coordinated Biomedical Systems Intrusion,Unauthorized Research System Access,Authentication Logs,Protected Research Network,Clinical Data Server,Analyst Team Delta,Collected
+EV-00191,BID-2026-9730,2026-08-16,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Research Data Repository,Research Database Server,BioDefense Task Force,Collected
+EV-00192,BID-2026-7240,2026-08-17,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Genome Sequencing Environment,Laboratory Information Server,Analyst Team Bravo,Collected
+EV-00193,BID-2026-1008,2026-08-17,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Research Data Repository,Clinical Data Server,Analyst Team Delta,Collected
+EV-00194,BID-2026-9800,2026-08-18,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,Digital Evidence,Laboratory Control Network,Clinical Data Server,Analyst Team Bravo,Collected
+EV-00195,BID-2026-8887,2026-08-18,Coordinated Biomedical Systems Intrusion,Digital Evidence Reconstruction Investigation,Digital Evidence,Medical Research Laboratory,Specimen Tracking Terminal,BioDefense Task Force,Collected
+EV-00196,BID-2026-5842,2026-08-19,Coordinated Biomedical Systems Intrusion,Biomedical Infrastructure Investigation,Digital Evidence,Biomedical Analysis Cluster,Biomedical Workstation,Analyst Team Delta,Collected
+EV-00197,BID-2026-8627,2026-08-19,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,Digital Evidence,Genome Sequencing Environment,Network Security Appliance,Analyst Team Alpha,Collected
+EV-00198,BID-2026-7168,2026-08-20,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Genome Sequencing Environment,Clinical Data Server,Analyst Team Delta,Collected
+EV-00199,BID-2026-2218,2026-08-20,Coordinated Biomedical Systems Intrusion,Supply Chain Security Investigation,Digital Evidence,Evidence Processing Network,Specimen Tracking Terminal,Analyst Team Delta,Collected
+EV-00200,BID-2026-5945,2026-08-21,Coordinated Biomedical Systems Intrusion,Laboratory Security Breach Investigation,Digital Evidence,Laboratory Control Network,Medical Device Gateway,Analyst Team Delta,Collected
+EV-00201,BID-2026-1480,2026-08-21,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,Digital Evidence,Research Data Repository,Clinical Data Server,BioDefense Task Force,Collected
+EV-00202,BID-2026-3128,2026-08-22,Coordinated Biomedical Systems Intrusion,Medical Device Security Assessment,Digital Evidence,Laboratory Control Network,Medical Device Gateway,Joint Cyber Investigation Unit,Collected
+EV-00203,BID-2026-1797,2026-08-22,Coordinated Biomedical Systems Intrusion,Biocontainment Network Investigation,Digital Evidence,Biomedical Analysis Cluster,Access Control Server,Analyst Team Alpha,Collected
+EV-00204,BID-2026-4817,2026-08-23,Coordinated Biomedical Systems Intrusion,Research Data Integrity Investigation,Digital Evidence,Medical Research Laboratory,Genome Analysis Workstation,Joint Cyber Investigation Unit,Collected
+EV-00205,BID-2026-9736,2026-08-23,Coordinated Biomedical Systems Intrusion,Laboratory Security Breach Investigation,Digital Evidence,Genome Sequencing Environment,Evidence Repository,National Response Cell,Collected

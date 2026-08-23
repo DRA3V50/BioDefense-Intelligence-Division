@@ -1,0 +1,174 @@
+Subsystem #9 Final Renderer Consolidation QC
+
+renderer=scripts/consolidated_dashboard_renderer.py (review-only; active legacy entry point remains scripts/generate_case_banner.py until #10 migration/deployment)
+state_adapter=dashboard_state.build_dashboard_state(root) followed by one validated active-case display projection
+canvas=1727x911
+frame_count=120
+duration_per_frame_ms=50
+gif_frame_count=120
+gif_duration_per_frame_ms=50
+gif_total_duration_ms=6000
+gif_format=GIF
+gif_frames=120
+gif_dimensions=(1727, 911)
+gif_duration_ms=50
+gif_full_canvas_frames=120/120
+gif_disposal_2_frames=120/120
+gif_duration_50ms_frames=120/120
+decoded_unique_frames=120/120
+approved_production_master_hashes={"APPROVED_CLEAR_BASE_LAYOUT.png": "168d5b6ba745de5431f8fbaa9c5d5e4a95464b9e150f6aa23b862e4800d68f38", "APPROVED_POPULATED_LAYOUT.png": "90a223d08555853fd58c7bc7c0c30eadecfa7df3b5320db23e373462735312c4", "BIOHAZARD_REFERENCE.png": "ec0eb4cd38db13d34c0259f8ba920e4d9a1d2783feeb2f0d25e4ea2b0bf52ba5", "case_overview_proposal_b_central_hub_static_reference.png": "6fb176d5777ba79dfcf0d3984188757d9961db413cda1bb6e47a018f73486aab"}
+static_source_outside_authorized_mask_differences=0
+raw_temporal_outside_subsystem_panels_differences=0
+decoded_temporal_outside_motion_mask_differences=0
+case_overview_route_temporal_outside_authorized_corridors_differences=0
+seam_frame_120_equals_frame_000=True
+seam_frame_060_equals_frame_000=superseded_by_120_frame_sampling
+read_only_state_unchanged=True
+deterministic_repeat_source_frame_hashes_match=True
+render_seconds=22.88
+gif_size_bytes=55836656
+
+Visual integration correction checks:
+footer_static_border_difference=0
+all_static_panel_border_differences=0
+static_panel_border_differences={"active_case_feed": 0, "case_overview": 0, "case_overview_top_divider": 0, "evidence_package": 0, "footer": 0, "operational_brief": 0, "system_status": 0, "threat_monitor": 0}
+operational_brief_baked_text_pixels_remaining=0
+operational_brief_ellipsis_count=0
+operational_brief_text_overflow_pixels=0
+operational_brief_row_overlap=False
+operational_brief_min_line_gap_px=9
+operational_brief_icon_clipping=0
+threat_summary_baked_text_pixels_remaining=0
+threat_summary_ellipsis_count=0
+threat_summary_text_overflow_pixels=0
+canonical_threat_score=21
+canonical_threat_classification=GUARDED
+presentation_threat_classification=LOW
+canonical_threat_classification_matches_score=True
+presentation_threat_classification_matches_score=True
+threat_score_color_matches_presentation_classification=True
+presentation_threshold_boundary_classifications={"29": "LOW", "30": "MEDIUM", "59": "MEDIUM", "60": "HIGH", "71": "HIGH", "79": "HIGH", "80": "CRITICAL", "85": "CRITICAL"}
+canonical_threshold_boundary_classifications={"19": "LOW", "20": "GUARDED", "44": "GUARDED", "45": "ELEVATED", "69": "ELEVATED", "70": "HIGH", "84": "HIGH", "85": "CRITICAL"}
+threshold_guide_sampled_colors={"CRITICAL": [186, 38, 25], "HIGH": [205, 98, 41], "LOW": [68, 153, 66], "MEDIUM": [208, 157, 58]}
+case_overview_top_border_difference=0
+case_overview_baked_dynamic_text_remaining=0
+case_overview_dynamic_text_overlap=False
+case_overview_text_inside_cards=True
+case_overview_text_overflow_pixels=0
+case_overview_component_mask_source=untouched_frozen_reference
+case_overview_clean_component_bound_differences=0
+case_overview_clean_component_mask_differences=0
+case_overview_dynamic_lanes_intersect_component_bounds=False
+case_overview_dynamic_lanes_intersect_route_masks=False
+case_overview_timeline_live_trace_difference=0
+case_overview_icon_clipping=0
+case_overview_icon_dynamic_mask_overlap=0
+case_overview_static_icon_fidelity=True
+system_status_trace_metrics={"cpu": {"changed_pixels": 158, "unique_states": 115, "vertical_range": 6}, "disk": {"changed_pixels": 174, "unique_states": 118, "vertical_range": 6}, "memory": {"changed_pixels": 113, "unique_states": 65, "vertical_range": 3}, "network": {"changed_pixels": 246, "unique_states": 118, "vertical_range": 8}, "uptime": {"changed_pixels": 174, "unique_states": 106, "vertical_range": 6}}
+system_status_decoded_trace_metrics={"cpu": {"changed_pixels": 158, "unique_states": 115, "vertical_range": 6}, "disk": {"changed_pixels": 174, "unique_states": 118, "vertical_range": 6}, "memory": {"changed_pixels": 113, "unique_states": 65, "vertical_range": 3}, "network": {"changed_pixels": 246, "unique_states": 118, "vertical_range": 8}, "uptime": {"changed_pixels": 174, "unique_states": 106, "vertical_range": 6}}
+cpu_trace_temporal_change=158
+memory_trace_temporal_change=113
+network_trace_temporal_change=246
+disk_trace_temporal_change=174
+queue_trace_temporal_change=174
+active_feed_ellipsis_count=0
+active_feed_text_overflow_pixels=0
+active_feed_bar_count=39
+active_feed_first_bar_matches_frozen_x=True
+active_feed_last_bar_matches_frozen_x=True
+active_feed_first_bar_x=69
+active_feed_last_bar_x=419
+active_feed_persisted_sample_count=2
+active_feed_presentation_slot_count=39
+active_feed_sparse_history_adapter=two sparse chronological event-intensity anchors occupy the newest frozen slots; older slots retain a fixed low/no-event floor
+active_feed_live_indicator_unique_states=119
+active_feed_live_indicator_temporal_change=578
+active_feed_bar_glow_temporal_change=194
+active_feed_authoritative_heights_unchanged=True
+active_feed_fake_events_created=0
+active_feed_live_unique_states=119
+active_feed_live_temporal_change=578
+active_feed_real_bar_glow_temporal_change=194
+active_feed_newest_bar_emphasis=True
+active_feed_graph_geometry_unchanged=True
+active_feed_underlying_history_updates_between_repository_runs=True
+active_feed_renderer_appends_events=False
+active_feed_future_run_behavior=New persisted #8 events cause the next dashboard generation to resample history and update bar heights; this exported six-second GIF only loops its bounded visual monitoring layer, creates no events, and mutates no external state.
+unit_status_bar_unique_states=36
+unit_status_bar_temporal_change=264
+unit_status_divider_text_overlap=False
+unit_status_bars_above_divider=True
+unit_status_activity_kind=deterministic_visual_state_not_measured_telemetry
+threat_signal_now_target_score=21
+threat_signal_now_target_y=647
+threat_signal_now_y_matches_score=True
+threat_score_marker_color_matches_current_classification=True
+threat_score_boundary_probes={"29": {"canonical_classification": "GUARDED", "marker_color": [68, 153, 66], "presentation_classification": "LOW", "target_score": 29, "target_y": 643}, "30": {"canonical_classification": "GUARDED", "marker_color": [208, 157, 58], "presentation_classification": "MEDIUM", "target_score": 30, "target_y": 643}, "59": {"canonical_classification": "ELEVATED", "marker_color": [208, 157, 58], "presentation_classification": "MEDIUM", "target_score": 59, "target_y": 631}, "60": {"canonical_classification": "ELEVATED", "marker_color": [205, 98, 41], "presentation_classification": "HIGH", "target_score": 60, "target_y": 631}, "71": {"canonical_classification": "HIGH", "marker_color": [205, 98, 41], "presentation_classification": "HIGH", "target_score": 71, "target_y": 627}, "79": {"canonical_classification": "HIGH", "marker_color": [205, 98, 41], "presentation_classification": "HIGH", "target_score": 79, "target_y": 623}, "80": {"canonical_classification": "HIGH", "marker_color": [186, 38, 25], "presentation_classification": "CRITICAL", "target_score": 80, "target_y": 623}, "85": {"canonical_classification": "CRITICAL", "marker_color": [186, 38, 25], "presentation_classification": "CRITICAL", "target_score": 85, "target_y": 621}}
+biohazard_gray_center_seam_pixels=0
+biohazard_integrated_vs_frozen_pivot_match=True
+biohazard_integrated_vs_frozen_phase_match=True
+biohazard_unique_states=120
+biohazard_angular_delta_degrees=3.0
+biohazard_angular_delta_variation_degrees=0.0
+biohazard_metrics={"angular_delta_degrees": 3.0, "angular_delta_variation_degrees": 0.0, "decoded_adjacent_changed_pixels_min": 10844, "decoded_unique_states": 120, "frozen_palette_sha256": "fc09894b622e735c92f7944f1958e394c6263e433f4fa686b2b99c7f99ed3fa5", "gray_center_seam_pixels": 0, "preencode_phase_pixel_differences": 0, "source_adjacent_changed_pixels_min": 11444, "source_unique_states": 120}
+evidence_package_unwanted_update_lines=0
+presentation_timestamp_timezone=America/New_York
+raw_Z_visible_in_dashboard=False
+footer_timestamp_matches_center_instant=True
+classification_baked_text_pixels_remaining=0
+threat_family_baked_text_pixels_remaining=0
+classification_dynamic_text_overlap=False
+threat_family_dynamic_text_overlap=False
+workflow_current_stage=EVIDENCE_REVIEW
+workflow_output_frames=120
+workflow_stage=EVIDENCE_REVIEW
+rendered_current_stage=EVIDENCE_REVIEW
+authoritative_current_stage=EVIDENCE_REVIEW
+rendered_current_stage_matches_authoritative=True
+workflow_stage_changed_inside_gif=False
+workflow_current_stage_unique_visual_states=120
+workflow_current_stage_temporal_change=2738
+workflow_integrated_vs_frozen_pixel_differences=0
+workflow_micro_polish_inside_authorized_differences=3158
+workflow_micro_polish_outside_safe_bounds_differences=0
+workflow_completed_stage_color_correct=True
+workflow_current_stage_color_correct=True
+workflow_pending_stage_colors_correct=True
+workflow_completed_blue_preserved=True
+workflow_pending_gray_preserved=True
+workflow_loop_seam_closed=True
+visible_dynamic_strings_containing_ellipsis=0
+
+Dynamic mask policy:
+- A composed immutable static base incorporates the approved #1 scanner restoration, #2 lens-clean plate, #4 empty clear-derived graph plate, #5 trace-free plate, #6 graph shell/cleanup plate, #7 Proposal B static data plate, and state text substitutions.
+- Every source frame starts from that static base. Only approved subsystem regions and explicit text ROIs are authorized.
+- GIF frames are quantized against one fixed palette with disposal=2 and no optimization.
+- Raw and decoded temporal pixel checks both require zero changes outside the fixed subsystem-panel union.
+- Case Overview route motion is independently checked against the frozen approved route-corridor mask.
+
+Data mapping:
+- Workflow current_stage: frozen dashboard_state.workflow.current_stage.
+- Feed bars: active_case_feed.event_intensity_history resampled to 39 fixed slots; right edge is NOW. Heights remain fixed throughout one exported visual-monitoring loop. New persisted #8 events alter history/resampling on the next dashboard generation only; the renderer never appends events or mutates external state.
+- System Status: dashboard_state.system_status; CPU/MEM/NET/DISK direct, QUEUE remains count.
+- Threat score: one C# canonical score; the review signal tail converges to its render-time NOW target, so a future canonical score automatically moves the next GIF target only.
+- Case Overview: canonical relationships/nodes with documented route gating; no preview IDs.
+- Presentation timestamps: persisted UTC ISO-8601 is retained in state and converted to America/New_York only for display.
+- Workflow presentation: the GIF reads dashboard.workflow.current_stage once; it never advances an investigation stage itself.
+
+Stale and missing data checks:
+- wrong_threat_case_id=rejected
+- wrong_threat_state_revision=rejected
+- wrong_evidence_case_id=rejected
+- wrong_correlation_case_id=rejected
+- wrong_relationship_case_id=rejected
+- missing_required_system_status=clear_failure
+
+Known limitation:
+The renderer consumes whatever fully validated #8 state exists at invocation. The current workflow order may need a #10 adjustment if newly generated evidence or C# output is only lifecycle-eligible on a later pass.
+Review renderer is complete, but scripts/generate_case_banner.py remains byte-for-byte legacy during #9. The known production root has no valid #8 active state, so activating the fail-closed renderer now would break the existing workflow.
+
+Deferred to Subsystem #10:
+- Active-entrypoint switchover after a valid #8 state migration and explicit deployment approval.
+- Deployment of assets/biodefense-case-scan.gif.
+- GitHub Actions command/order changes.
+- Migration of the currently legacy production root to a valid #8 active state.

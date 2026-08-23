@@ -1,0 +1,74 @@
+{
+  "authoritative_classification": "Laboratory Security Breach Investigation",
+  "authoritative_threat_family": "Clinical Research Data Manipulation",
+  "candidate_gif": "assets/deployment_candidate/biodefense-case-scan.gif",
+  "candidate_png": "assets/deployment_candidate/biodefense-dashboard-current.png",
+  "case_id": "BID-2026-9736",
+  "classification_projection_applied": true,
+  "display_classification": "LAB SECURITY BREACH",
+  "display_threat_family": "CLINICAL DATA MANIPULATION",
+  "frozen_v2_renderer_sha256": "b6dcf76f1767f7e11d900237936f518026225c1bc3e53dbe64824025b508fffb",
+  "state_hashes_after": {
+    "cases/state/BID-2026-9736/anomaly_history.json": "96ada4296755196fd29bf87bc62aaca0cbb67c71d95710e552efcdc660879670",
+    "cases/state/BID-2026-9736/events.json": "e2f5d03d05c47010a8563de041a3797779333260dba69ddbbde1878677da2865",
+    "cases/state/BID-2026-9736/relationships.json": "dde209d926bfaf5d5a63a8e5c673eb8eea3a8426f028351ff365989a6933df64",
+    "cases/state/BID-2026-9736/system_status.json": "183d1eb6f89866f744b08e3fc8572a7b2241f40f942fccf6d5f8e2a4eb0535e4",
+    "cases/state/BID-2026-9736/threat_history.json": "b8b6a7ce78768becdb1e6ee748fbaa57b61e4357495401b3910f302607b54e99",
+    "data/current_case.json": "ac39eff45c9fe6847282c2cedf7a4992f8db4e0dc1b7b5a4b7ae4b519db40017",
+    "evidence/BID-2026-9736/evidence_correlations.json": "2a0e4f302da0955717e92a23fe1c7642af1d5328044a20e762fa709dde5ab8d9",
+    "evidence/BID-2026-9736/evidence_manifest.json": "77e74e27fae2e05f1daed93477798d63badcc40cae516960916089e15855dea7",
+    "operations/active_operation.json": "e2dfc1794b4eaebc5fe8a753f5ef9122dbf429275afc5b6f2b4d8ba7b5bede78",
+    "reports/bioterror_threat_score_csharp.json": "b643af9d418095ce44c40bc16b3239a8fd517cc7806284dd72c5f5b9c8c7a635"
+  },
+  "state_hashes_before": {
+    "cases/state/BID-2026-9736/anomaly_history.json": "96ada4296755196fd29bf87bc62aaca0cbb67c71d95710e552efcdc660879670",
+    "cases/state/BID-2026-9736/events.json": "e2f5d03d05c47010a8563de041a3797779333260dba69ddbbde1878677da2865",
+    "cases/state/BID-2026-9736/relationships.json": "dde209d926bfaf5d5a63a8e5c673eb8eea3a8426f028351ff365989a6933df64",
+    "cases/state/BID-2026-9736/system_status.json": "183d1eb6f89866f744b08e3fc8572a7b2241f40f942fccf6d5f8e2a4eb0535e4",
+    "cases/state/BID-2026-9736/threat_history.json": "b8b6a7ce78768becdb1e6ee748fbaa57b61e4357495401b3910f302607b54e99",
+    "data/current_case.json": "ac39eff45c9fe6847282c2cedf7a4992f8db4e0dc1b7b5a4b7ae4b519db40017",
+    "evidence/BID-2026-9736/evidence_correlations.json": "2a0e4f302da0955717e92a23fe1c7642af1d5328044a20e762fa709dde5ab8d9",
+    "evidence/BID-2026-9736/evidence_manifest.json": "77e74e27fae2e05f1daed93477798d63badcc40cae516960916089e15855dea7",
+    "operations/active_operation.json": "e2dfc1794b4eaebc5fe8a753f5ef9122dbf429275afc5b6f2b4d8ba7b5bede78",
+    "reports/bioterror_threat_score_csharp.json": "b643af9d418095ce44c40bc16b3239a8fd517cc7806284dd72c5f5b9c8c7a635"
+  },
+  "state_read_only": true,
+  "threat_family_projection_applied": true,
+  "threat_history_projection": {
+    "authoritative_sample_count": 1,
+    "current_state_revision": 2,
+    "mode": "current_revision_display_projection",
+    "projected_current_revision_sample_count": 1
+  },
+  "verification": {
+    "gif": {
+      "disposal_2_frames": 120,
+      "duration_50ms_frames": 120,
+      "duration_ms": 50,
+      "format": "GIF",
+      "frame_count": 120,
+      "full_canvas_frames": 120,
+      "loop": 0,
+      "size": [
+        1727,
+        911
+      ],
+      "unique_decoded_frames": 120
+    },
+    "gif_sha256": "8de0ed4c23b567ba9adca678bf1e9d6b6f01e16406dfaf7038f9648d65b50769",
+    "png_sha256": "20ea65e33fb4e6c49bbec40d8654786e59ec7d484a39207415130ab381eac56d",
+    "qc_zero_metrics": {
+      "active_feed_fake_events_created": 0,
+      "all_static_panel_border_differences": 0,
+      "biohazard_gray_center_seam_pixels": 0,
+      "case_overview_route_temporal_outside_authorized_corridors_differences": 0,
+      "decoded_temporal_outside_motion_mask_differences": 0,
+      "raw_temporal_outside_subsystem_panels_differences": 0,
+      "static_source_outside_authorized_mask_differences": 0,
+      "visible_dynamic_strings_containing_ellipsis": 0
+    },
+    "renderer_mutates_case_state": false,
+    "workflow_stage_changed_inside_gif": false
+  },
+  "wrapper": "scripts/production_dashboard_wrapper.py"
+}

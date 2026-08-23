@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-08-23T23:40:23Z",
+  "source_sha256": "e53ff3d88cba349505aea13f8d3a175a2b0581208d3315a5a843b106ee10fcaf",
+  "backup_path": "evidence/evidence_log.csv.pre-v2-20260823T234023Z-e53ff3d88cba.bak",
+  "legacy_rows": 50,
+  "previous_ten_column_rows": 155,
+  "target_rows": 205,
+  "target_sha256": "95fe1977348019e3609e3f8a3e420d8474471ce4d3b045e61f058ed9d8397cda"
+}

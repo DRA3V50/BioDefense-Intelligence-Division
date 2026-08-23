@@ -3,13 +3,13 @@
 ## Investigation
 
 Case ID:
-BID-2026-2218
+BID-2026-9736
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
 Clinical Research Data Manipulation
@@ -22,19 +22,19 @@ Facility:
 Advanced Genome Security Laboratory
 
 Platform:
-Evidence Processing Network
+Genome Sequencing Environment
 
 Device:
-Specimen Tracking Terminal
+Evidence Repository
 
 Vendor:
-Red Hat
+Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
-Federal Operations
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
-HIGH
+ROUTINE
 
 Confidence:
-90%
+86%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
