@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=2bb4917952f6" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=610f5ae4d76e" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 BioDefense-Intelligence-Division
@@ -20,32 +20,24 @@ Case File Access
   </thead>
   <tbody>
     <tr>
-      <td valign="top">
-        ◆ <a href="reports/investigation_report.md">Investigation Report</a><br>
-        ◆ <a href="reports/bioterror_threat_assessment.md">Bioterror Assessment</a><br>
-        ◆ <a href="reports/bioterror_threat_score_csharp.json">C# Canonical Threat Score (JSON)</a><br>
-        ◆ <a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score (XML)</a><br>
-        ◆ <a href="reports/investigative_leads.md">Investigative Leads</a>
-      </td>
-      <td valign="top">
-        ◆ <a href="evidence/evidence_chain.md">Evidence Chain</a><br>
-        ◆ <a href="evidence/BID-2026-9736/evidence_manifest.json">Evidence Manifest</a><br>
-        ◆ <a href="evidence/BID-2026-9736/evidence_correlations.json">Evidence Correlations</a><br>
-        ◆ <a href="evidence/BID-2026-9736/chain_of_custody.md">Chain of Custody</a><br>
-        ◆ <a href="evidence/BID-2026-9736/forensic_summary.md">Forensic Summary</a><br>
-        ◆ <a href="evidence/BID-2026-9736/acquisition_summary.md">Acquisition Summary</a>
-      </td>
-      <td valign="top">
-        ◆ <a href="operations/command_brief.md">Command Brief</a><br>
-        ◆ <a href="operations/investigation_timeline.md">Investigation Timeline</a><br>
-        ◆ <a href="workbooks/Exposure-Tracking-Matrix.csv">Exposure Matrix (CSV Preview)</a><br>
-        ◆ <a href="workbooks/Exposure-Tracking-Matrix.xlsx">Exposure Matrix (Excel)</a>
-      </td>
+      <td valign="top" align="left">◆ <a href="reports/investigation_report.md">Investigation Report</a><br>
+◆ <a href="reports/bioterror_threat_assessment.md">Bioterror Assessment</a><br>
+◆ <a href="reports/bioterror_threat_score_csharp.json">C# Canonical Threat Score (JSON)</a><br>
+◆ <a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score (XML)</a><br>
+◆ <a href="reports/investigative_leads.md">Investigative Leads</a></td>
+      <td valign="top" align="left">◆ <a href="evidence/evidence_chain.md">Evidence Chain</a><br>
+◆ <a href="evidence/BID-2026-9736/evidence_manifest.json">Evidence Manifest</a><br>
+◆ <a href="evidence/BID-2026-9736/evidence_correlations.json">Evidence Correlations</a><br>
+◆ <a href="evidence/BID-2026-9736/chain_of_custody.md">Chain of Custody</a><br>
+◆ <a href="evidence/BID-2026-9736/forensic_summary.md">Forensic Summary</a><br>
+◆ <a href="evidence/BID-2026-9736/acquisition_summary.md">Acquisition Summary</a></td>
+      <td valign="top" align="left">◆ <a href="operations/command_brief.md">Command Brief</a><br>
+◆ <a href="operations/investigation_timeline.md">Investigation Timeline</a><br>
+◆ <a href="workbooks/Exposure-Tracking-Matrix.csv">Exposure Matrix (CSV Preview)</a><br>
+◆ <a href="workbooks/Exposure-Tracking-Matrix.xlsx">Exposure Matrix (Excel)</a></td>
     </tr>
   </tbody>
 </table>
-
-<br>
 
 <table>
   <thead>
@@ -57,19 +49,13 @@ Case File Access
   </thead>
   <tbody>
     <tr>
-      <td valign="top">
-        <strong>Case:</strong> <code>BID-2026-9736</code><br>
-        <strong>Campaign:</strong> <code>BDC-2026-001</code>
-      </td>
-      <td valign="top">
-        <strong>Record:</strong> <code>EVIDENCE COLLECTION</code><br>
-        <strong>Stage:</strong> ■ <code>EVIDENCE REVIEW</code><br>
-        <strong>Lifecycle:</strong> ■ <code>ACTIVE</code>
-      </td>
-      <td valign="top">
-        <code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
-        <code>CSV</code> · <code>XLSX</code>
-      </td>
+      <td valign="top" align="left"><strong>Case:</strong> <code>BID-2026-9736</code><br>
+<strong>Campaign:</strong> <code>BDC-2026-001</code></td>
+      <td valign="top" align="left"><strong>Record:</strong> <code>EVIDENCE COLLECTION</code><br>
+<strong>Stage:</strong> ■ <code>EVIDENCE REVIEW</code><br>
+<strong>Lifecycle:</strong> ■ <code>ACTIVE</code></td>
+      <td valign="top" align="left"><code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
+<code>CSV</code> · <code>XLSX</code></td>
     </tr>
   </tbody>
 </table>
@@ -90,22 +76,16 @@ Executive Case File
   </thead>
   <tbody>
     <tr>
-      <td valign="top">
-        <strong>ID:</strong> BDC-2026-001<br>
-        <strong>Campaign:</strong> Coordinated Biomedical Systems Intrusion<br>
-        <strong>Designation:</strong> BMSI-01
-      </td>
-      <td valign="top">
-        <strong>Phase:</strong> ■ Operational Recovery<br>
-        <strong>Containment:</strong> ■ HIGH<br>
-        <strong>Intrusions:</strong> 17
-      </td>
-      <td valign="top">
-        <strong>Active Cases:</strong> 136<br>
-        <strong>Evidence:</strong> 98,342<br>
-        <strong>Indicators:</strong> 64,038<br>
-        <strong>Facilities / States:</strong> 11 / 3
-      </td>
+      <td valign="top" align="left"><strong>ID:</strong> BDC-2026-001<br>
+<strong>Campaign:</strong> Coordinated Biomedical Systems Intrusion<br>
+<strong>Designation:</strong> BMSI-01</td>
+      <td valign="top" align="left"><strong>Phase:</strong> ■ Operational Recovery<br>
+<strong>Containment:</strong> ■ HIGH<br>
+<strong>Intrusions:</strong> 17</td>
+      <td valign="top" align="left"><strong>Active Cases:</strong> 136<br>
+<strong>Evidence:</strong> 98,342<br>
+<strong>Indicators:</strong> 64,038<br>
+<strong>Facilities / States:</strong> 11 / 3</td>
     </tr>
   </tbody>
 </table>
@@ -133,24 +113,18 @@ Active Investigation
   </thead>
   <tbody>
     <tr>
-      <td valign="top">
-        <strong>Case:</strong> BID-2026-9736<br>
-        <strong>Classification:</strong> Laboratory Security Breach Investigation<br>
-        <strong>Threat Family:</strong> Clinical Research Data Manipulation<br>
-        <strong>Severity / Priority:</strong> ■ LOW / ROUTINE
-      </td>
-      <td valign="top">
-        <strong>Platform:</strong> Genome Sequencing Environment<br>
-        <strong>Vendor / Device:</strong> Palo Alto Networks / Evidence Repository<br>
-        <strong>Zone:</strong> Evidence Network<br>
-        <strong>Assets:</strong> 7
-      </td>
-      <td valign="top">
-        <strong>Confidence:</strong> 86%<br>
-        <strong>Evidence / IOCs:</strong> 22 / 4<br>
-        <strong>Lead:</strong> National Response Cell<br>
-        <strong>Initial Access:</strong> Third-Party Access
-      </td>
+      <td valign="top" align="left"><strong>Case:</strong> BID-2026-9736<br>
+<strong>Classification:</strong> Laboratory Security Breach Investigation<br>
+<strong>Threat Family:</strong> Clinical Research Data Manipulation<br>
+<strong>Severity / Priority:</strong> ■ LOW / ROUTINE</td>
+      <td valign="top" align="left"><strong>Platform:</strong> Genome Sequencing Environment<br>
+<strong>Vendor / Device:</strong> Palo Alto Networks / Evidence Repository<br>
+<strong>Zone:</strong> Evidence Network<br>
+<strong>Assets:</strong> 7</td>
+      <td valign="top" align="left"><strong>Confidence:</strong> 86%<br>
+<strong>Evidence / IOCs:</strong> 22 / 4<br>
+<strong>Lead:</strong> National Response Cell<br>
+<strong>Initial Access:</strong> Third-Party Access</td>
     </tr>
   </tbody>
 </table>
@@ -186,24 +160,24 @@ CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW �
   </thead>
   <tbody>
     <tr>
-      <td><strong>Case Continuity</strong></td>
-      <td>Active case identity and authoritative state persist across workflow executions.</td>
+      <td valign="top" align="left"><strong>Case Continuity</strong></td>
+      <td valign="top" align="left">Active case identity and authoritative state persist across workflow executions.</td>
     </tr>
     <tr>
-      <td><strong>Evidence Integrity</strong></td>
-      <td>Evidence manifests, correlations, chain-of-custody records, and forensic products remain linked to the active Case ID.</td>
+      <td valign="top" align="left"><strong>Evidence Integrity</strong></td>
+      <td valign="top" align="left">Evidence manifests, correlations, chain-of-custody records, and forensic products remain linked to the active Case ID.</td>
     </tr>
     <tr>
-      <td><strong>Threat Assessment</strong></td>
-      <td>The C#/.NET scoring engine evaluates current evidence and correlation records and produces canonical machine-readable assessment output.</td>
+      <td valign="top" align="left"><strong>Threat Assessment</strong></td>
+      <td valign="top" align="left">The C#/.NET scoring engine evaluates current evidence and correlation records and produces canonical machine-readable assessment output.</td>
     </tr>
     <tr>
-      <td><strong>Automation</strong></td>
-      <td>GitHub Actions coordinates evidence processing, scoring, lifecycle evaluation, reporting, validation, rendering, and verified repository updates.</td>
+      <td valign="top" align="left"><strong>Automation</strong></td>
+      <td valign="top" align="left">GitHub Actions coordinates evidence processing, scoring, lifecycle evaluation, reporting, validation, rendering, and verified repository updates.</td>
     </tr>
     <tr>
-      <td><strong>Visualization Control</strong></td>
-      <td>The dashboard consumes synchronized investigation state and remains read-only with respect to authoritative case data.</td>
+      <td valign="top" align="left"><strong>Visualization Control</strong></td>
+      <td valign="top" align="left">The dashboard consumes synchronized investigation state and remains read-only with respect to authoritative case data.</td>
     </tr>
   </tbody>
 </table>
@@ -227,10 +201,10 @@ Active Case: BID-2026-9736
   </thead>
   <tbody>
     <tr>
-      <td align="right">22</td>
-      <td align="right">22</td>
-      <td align="right">22</td>
-      <td align="right">22</td>
+      <td valign="top" align="right">22</td>
+      <td valign="top" align="right">22</td>
+      <td valign="top" align="right">22</td>
+      <td valign="top" align="right">22</td>
     </tr>
   </tbody>
 </table>
@@ -248,16 +222,46 @@ Active Case: BID-2026-9736
     </tr>
   </thead>
   <tbody>
-    <tr><td>Laboratory System Configuration</td><td align="right">5</td></tr>
-    <tr><td>Network Connection Record</td><td align="right">3</td></tr>
-    <tr><td>Research Data Integrity Record</td><td align="right">2</td></tr>
-    <tr><td>Biosecurity Audit Record</td><td align="right">2</td></tr>
-    <tr><td>Research Workstation Event Log</td><td align="right">2</td></tr>
-    <tr><td>Containment Validation Record</td><td align="right">2</td></tr>
-    <tr><td>Threat Intelligence Record</td><td align="right">2</td></tr>
-    <tr><td>Firewall Log</td><td align="right">2</td></tr>
-    <tr><td>Access Control Log</td><td align="right">1</td></tr>
-    <tr><td>Analyst Observation</td><td align="right">1</td></tr>
+    <tr>
+      <td valign="top" align="left">Laboratory System Configuration</td>
+      <td valign="top" align="right">5</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Network Connection Record</td>
+      <td valign="top" align="right">3</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Research Data Integrity Record</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Biosecurity Audit Record</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Research Workstation Event Log</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Containment Validation Record</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Threat Intelligence Record</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Firewall Log</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Access Control Log</td>
+      <td valign="top" align="right">1</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Analyst Observation</td>
+      <td valign="top" align="right">1</td>
+    </tr>
   </tbody>
 </table>
 
@@ -276,16 +280,46 @@ Active Case: BID-2026-9736
     </tr>
   </thead>
   <tbody>
-    <tr><td>Laboratory System Modification</td><td align="right">5</td></tr>
-    <tr><td>Command-and-Control Communication</td><td align="right">3</td></tr>
-    <tr><td>Research Data Integrity Anomaly</td><td align="right">2</td></tr>
-    <tr><td>Biosecurity Policy Violation</td><td align="right">2</td></tr>
-    <tr><td>Research Workstation Compromise</td><td align="right">2</td></tr>
-    <tr><td>Containment Verification</td><td align="right">2</td></tr>
-    <tr><td>Known Threat Actor Indicator</td><td align="right">2</td></tr>
-    <tr><td>Suspicious Network Activity</td><td align="right">2</td></tr>
-    <tr><td>Unauthorized Facility Access</td><td align="right">1</td></tr>
-    <tr><td>Analyst Intelligence Assessment</td><td align="right">1</td></tr>
+    <tr>
+      <td valign="top" align="left">Laboratory System Modification</td>
+      <td valign="top" align="right">5</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Command-and-Control Communication</td>
+      <td valign="top" align="right">3</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Research Data Integrity Anomaly</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Biosecurity Policy Violation</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Research Workstation Compromise</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Containment Verification</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Known Threat Actor Indicator</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Suspicious Network Activity</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Unauthorized Facility Access</td>
+      <td valign="top" align="right">1</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Analyst Intelligence Assessment</td>
+      <td valign="top" align="right">1</td>
+    </tr>
   </tbody>
 </table>
 
@@ -299,7 +333,7 @@ Active Case: BID-2026-9736
 ▸ <a href="workbooks/Exposure-Tracking-Matrix.csv">Open the complete GitHub CSV preview</a><br>
 ▸ <a href="workbooks/Exposure-Tracking-Matrix.xlsx">Download the formatted Excel workbook</a>
 
-<br><br>
+<br>
 
 <table>
   <thead>
@@ -313,11 +347,46 @@ Active Case: BID-2026-9736
     </tr>
   </thead>
   <tbody>
-    <tr><td>2026-08-23</td><td>BID-2026-9736</td><td>LOW</td><td align="right">22</td><td align="right">86</td><td>Evidence Collection</td></tr>
-    <tr><td>2026-08-23</td><td>BID-2026-4817</td><td>MODERATE</td><td align="right">43</td><td align="right">86</td><td>Evidence Collection</td></tr>
-    <tr><td>2026-08-22</td><td>BID-2026-1797</td><td>MODERATE</td><td align="right">56</td><td align="right">95</td><td>Evidence Collection</td></tr>
-    <tr><td>2026-08-22</td><td>BID-2026-3128</td><td>MODERATE</td><td align="right">56</td><td align="right">95</td><td>Field Coordination</td></tr>
-    <tr><td>2026-08-21</td><td>BID-2026-1480</td><td>LOW</td><td align="right">30</td><td align="right">82</td><td>Field Coordination</td></tr>
+    <tr>
+      <td valign="top" align="left">2026-08-23</td>
+      <td valign="top" align="left">BID-2026-9736</td>
+      <td valign="top" align="left">LOW</td>
+      <td valign="top" align="right">22</td>
+      <td valign="top" align="right">86</td>
+      <td valign="top" align="left">Evidence Collection</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">2026-08-23</td>
+      <td valign="top" align="left">BID-2026-4817</td>
+      <td valign="top" align="left">MODERATE</td>
+      <td valign="top" align="right">43</td>
+      <td valign="top" align="right">86</td>
+      <td valign="top" align="left">Evidence Collection</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">2026-08-22</td>
+      <td valign="top" align="left">BID-2026-1797</td>
+      <td valign="top" align="left">MODERATE</td>
+      <td valign="top" align="right">56</td>
+      <td valign="top" align="right">95</td>
+      <td valign="top" align="left">Evidence Collection</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">2026-08-22</td>
+      <td valign="top" align="left">BID-2026-3128</td>
+      <td valign="top" align="left">MODERATE</td>
+      <td valign="top" align="right">56</td>
+      <td valign="top" align="right">95</td>
+      <td valign="top" align="left">Field Coordination</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">2026-08-21</td>
+      <td valign="top" align="left">BID-2026-1480</td>
+      <td valign="top" align="left">LOW</td>
+      <td valign="top" align="right">30</td>
+      <td valign="top" align="right">82</td>
+      <td valign="top" align="left">Field Coordination</td>
+    </tr>
   </tbody>
 </table>
 
@@ -342,13 +411,34 @@ Supporting Case Records
     </tr>
   </thead>
   <tbody>
-    <tr><td>Total Investigations</td><td align="right">136</td></tr>
-    <tr><td>Low / Moderate</td><td align="right">31 / 49</td></tr>
-    <tr><td>High / Critical</td><td align="right">39 / 17</td></tr>
-    <tr><td>Closed Cases</td><td align="right">0</td></tr>
-    <tr><td>Average Confidence</td><td align="right">89.5%</td></tr>
-    <tr><td>Total Evidence</td><td align="right">98,342</td></tr>
-    <tr><td>Total Indicators</td><td align="right">64,038</td></tr>
+    <tr>
+      <td valign="top" align="left">Total Investigations</td>
+      <td valign="top" align="right">5</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Low / Moderate</td>
+      <td valign="top" align="right">2 / 3</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">High / Critical</td>
+      <td valign="top" align="right">0 / 0</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Closed Cases</td>
+      <td valign="top" align="right">0</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Average Confidence</td>
+      <td valign="top" align="right">88.8%</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Total Evidence</td>
+      <td valign="top" align="right">98,342</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Total Indicators</td>
+      <td valign="top" align="right">64,038</td>
+    </tr>
   </tbody>
 </table>
 
@@ -363,11 +453,31 @@ Recent Investigations
     </tr>
   </thead>
   <tbody>
-    <tr><td>BID-2026-9736</td><td>Laboratory Security Breach Investigation</td><td>LOW</td></tr>
-    <tr><td>BID-2026-4817</td><td>Research Data Integrity Investigation</td><td>MODERATE</td></tr>
-    <tr><td>BID-2026-1797</td><td>Biocontainment Network Investigation</td><td>MODERATE</td></tr>
-    <tr><td>BID-2026-3128</td><td>Medical Device Security Assessment</td><td>MODERATE</td></tr>
-    <tr><td>BID-2026-1480</td><td>Research Data Integrity Investigation</td><td>LOW</td></tr>
+    <tr>
+      <td valign="top" align="left">BID-2026-9736</td>
+      <td valign="top" align="left">Laboratory Security Breach Investigation</td>
+      <td valign="top" align="left">LOW</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">BID-2026-4817</td>
+      <td valign="top" align="left">Research Data Integrity Investigation</td>
+      <td valign="top" align="left">MODERATE</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">BID-2026-1797</td>
+      <td valign="top" align="left">Biocontainment Network Investigation</td>
+      <td valign="top" align="left">MODERATE</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">BID-2026-3128</td>
+      <td valign="top" align="left">Medical Device Security Assessment</td>
+      <td valign="top" align="left">MODERATE</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">BID-2026-1480</td>
+      <td valign="top" align="left">Research Data Integrity Investigation</td>
+      <td valign="top" align="left">LOW</td>
+    </tr>
   </tbody>
 </table>
 
@@ -378,13 +488,12 @@ Recent Investigations
 
 <br>
 
-Federal Biomedical Laboratory
-
-National Pathogen Research Center
-
-Advanced Genome Institute
-
-Regional Biosecurity Laboratory
+<ul>
+  <li>Federal Biomedical Laboratory</li>
+  <li>National Pathogen Research Center</li>
+  <li>Advanced Genome Institute</li>
+  <li>Regional Biosecurity Laboratory</li>
+</ul>
 
 </details>
 
@@ -403,12 +512,30 @@ The repository includes a functioning C#/.NET threat-assessment component that e
     </tr>
   </thead>
   <tbody>
-    <tr><td>Evidence Evaluation</td><td>Processes evidence records associated with the active Case ID.</td></tr>
-    <tr><td>Correlation Review</td><td>Incorporates linked investigative findings into the threat assessment.</td></tr>
-    <tr><td>Threat Scoring</td><td>Produces the canonical machine-readable threat score and classification.</td></tr>
-    <tr><td>JSON Intelligence Output</td><td>Generates structured threat-assessment data for downstream automation and reporting.</td></tr>
-    <tr><td>XML Intelligence Output</td><td>Produces a formal exchange record for validation and archival use.</td></tr>
-    <tr><td>Pipeline Integration</td><td>Executes within the automated investigation workflow before downstream synchronization and rendering.</td></tr>
+    <tr>
+      <td valign="top" align="left">Evidence Evaluation</td>
+      <td valign="top" align="left">Processes evidence records associated with the active Case ID.</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Correlation Review</td>
+      <td valign="top" align="left">Incorporates linked investigative findings into the threat assessment.</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Threat Scoring</td>
+      <td valign="top" align="left">Produces the canonical machine-readable threat score and classification.</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">JSON Intelligence Output</td>
+      <td valign="top" align="left">Generates structured threat-assessment data for downstream automation and reporting.</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">XML Intelligence Output</td>
+      <td valign="top" align="left">Produces a formal exchange record for validation and archival use.</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Pipeline Integration</td>
+      <td valign="top" align="left">Executes within the automated investigation workflow before downstream synchronization and rendering.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -426,29 +553,20 @@ Generated records
 
 <br>
 
-Cyber-biothreat case files
-
-Laboratory intrusion assessments
-
-Protected facility exposure reports
-
-Evidence reconstruction logs
-
-Chain-of-custody documentation
-
-Threat actor campaign summaries
-
-Biological research impact assessments
-
-Cyber-biosecurity intelligence reports
-
-Bioterror threat assessments
-
-Investigative leads and intelligence gaps
-
-Exposure-tracking workbooks and CSV previews
-
-Executive operational briefings
+<ul>
+  <li>Cyber-biothreat case files</li>
+  <li>Laboratory intrusion assessments</li>
+  <li>Protected facility exposure reports</li>
+  <li>Evidence reconstruction logs</li>
+  <li>Chain-of-custody documentation</li>
+  <li>Threat actor campaign summaries</li>
+  <li>Biological research impact assessments</li>
+  <li>Cyber-biosecurity intelligence reports</li>
+  <li>Bioterror threat assessments</li>
+  <li>Investigative leads and intelligence gaps</li>
+  <li>Exposure-tracking workbooks and CSV previews</li>
+  <li>Executive operational briefings</li>
+</ul>
 
 </details>
 
