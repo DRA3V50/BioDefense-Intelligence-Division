@@ -63,8 +63,8 @@ Case File Access
       </td>
       <td valign="top">
         <strong>Record:</strong> <code>EVIDENCE COLLECTION</code><br>
-        <strong>Stage:</strong> <code>EVIDENCE REVIEW</code><br>
-        <strong>Lifecycle:</strong> <code>ACTIVE</code>
+        <strong>Stage:</strong> ■ <code>EVIDENCE REVIEW</code><br>
+        <strong>Lifecycle:</strong> ■ <code>ACTIVE</code>
       </td>
       <td valign="top">
         <code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
@@ -96,8 +96,8 @@ Executive Case File
         <strong>Designation:</strong> BMSI-01
       </td>
       <td valign="top">
-        <strong>Phase:</strong> Operational Recovery<br>
-        <strong>Containment:</strong> HIGH<br>
+        <strong>Phase:</strong> ■ Operational Recovery<br>
+        <strong>Containment:</strong> ■ HIGH<br>
         <strong>Intrusions:</strong> 17
       </td>
       <td valign="top">
@@ -137,7 +137,7 @@ Active Investigation
         <strong>Case:</strong> BID-2026-9736<br>
         <strong>Classification:</strong> Laboratory Security Breach Investigation<br>
         <strong>Threat Family:</strong> Clinical Research Data Manipulation<br>
-        <strong>Severity / Priority:</strong> LOW / ROUTINE
+        <strong>Severity / Priority:</strong> ■ LOW / ROUTINE
       </td>
       <td valign="top">
         <strong>Platform:</strong> Genome Sequencing Environment<br>
@@ -296,8 +296,8 @@ Active Case: BID-2026-9736
 
 <br>
 
-<a href="workbooks/Exposure-Tracking-Matrix.csv">Open the complete GitHub CSV preview</a> ·
-<a href="workbooks/Exposure-Tracking-Matrix.xlsx">Download the formatted Excel workbook</a>
+▸ <a href="workbooks/Exposure-Tracking-Matrix.csv">Open the complete GitHub CSV preview</a><br>
+▸ <a href="workbooks/Exposure-Tracking-Matrix.xlsx">Download the formatted Excel workbook</a>
 
 <br><br>
 
@@ -416,9 +416,8 @@ Current canonical assessment: 21 / 100 · GUARDED
 
 Generated records
 
-<a href="reports/bioterror_threat_score_csharp.json">C# Canonical Threat Score — JSON</a>
-
-<a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score — XML</a>
+▸ <a href="reports/bioterror_threat_score_csharp.json">C# Canonical Threat Score — JSON</a><br>
+▸ <a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score — XML</a>
 
 </details>
 
