@@ -2,9 +2,10 @@ name: Daily Investigation
 
 on:
   schedule:
-    # Runs at approximately 9:00 AM and 9:00 PM EST.
-    # GitHub Actions cron schedules use UTC.
-    - cron: "0 2,14 * * *"
+    # Runs at 12:00 AM, 8:00 AM, and 4:00 PM Eastern Time.
+    # America/New_York keeps the schedule aligned through EST/EDT changes.
+    - cron: "0 0,8,16 * * *"
+      timezone: "America/New_York"
 
   workflow_dispatch:
 
@@ -34,7 +35,7 @@ jobs:
       - name: Set Up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.14.7"
 
       - name: Set Up .NET
         uses: actions/setup-dotnet@v4
@@ -50,7 +51,11 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install openpyxl Pillow numpy opencv-python-headless
+          python -m pip install \
+            "openpyxl==3.1.5" \
+            "Pillow==12.3.0" \
+            "numpy==2.5.2" \
+            "opencv-python-headless==5.0.0.93"
 
       ###############################################################
       # Phase I — Investigation Generation
@@ -196,6 +201,86 @@ jobs:
 
       - name: Update README
         run: python scripts/update_readme.py
+
+      - name: Validate README Structure
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          readme_path = Path("README.md")
+          case_path = Path("data/current_case.json")
+
+          if not readme_path.exists():
+              raise SystemExit("README validation failed: README.md is missing.")
+
+          text = readme_path.read_text(encoding="utf-8")
+
+          with case_path.open("r", encoding="utf-8") as file:
+              case = json.load(file)
+
+          required_markers = (
+              "<!-- FSE-REPORT-START -->",
+              "<!-- FSE-REPORT-END -->",
+              "## Case File Access",
+          )
+
+          for marker in required_markers:
+              if marker not in text:
+                  raise SystemExit(
+                      f"README validation failed: missing required marker {marker!r}."
+                  )
+
+          paired_tags = (
+              ("<table>", "</table>", "HTML table"),
+              ("<details>", "</details>", "details block"),
+              ("<summary>", "</summary>", "summary block"),
+          )
+
+          for opening, closing, label in paired_tags:
+              opening_count = text.count(opening)
+              closing_count = text.count(closing)
+
+              if opening_count != closing_count:
+                  raise SystemExit(
+                      "README validation failed: "
+                      f"{label} count mismatch "
+                      f"({opening_count} open / {closing_count} close)."
+                  )
+
+          case_id = str(case.get("case_id", "")).strip()
+          current_stage = str(case.get("current_stage", "")).strip()
+          lifecycle_status = str(
+              case.get("lifecycle_status", "")
+          ).strip()
+
+          if not case_id or case_id not in text:
+              raise SystemExit(
+                  "README validation failed: active Case ID is not present."
+              )
+
+          stage_display = current_stage.replace("_", " ").upper()
+          lifecycle_display = lifecycle_status.replace("_", " ").upper()
+
+          if current_stage and stage_display not in text:
+              raise SystemExit(
+                  "README validation failed: current lifecycle stage is missing."
+              )
+
+          if lifecycle_status and lifecycle_display not in text:
+              raise SystemExit(
+                  "README validation failed: lifecycle status is missing."
+              )
+
+          print(
+              "README structure validation passed: "
+              f"{text.count('<table>')} tables, "
+              f"{text.count('<details>')} expandable sections, "
+              f"case={case_id}, "
+              f"stage={stage_display or 'UNKNOWN'}, "
+              f"lifecycle={lifecycle_display or 'UNKNOWN'}."
+          )
+          PY
 
       ###############################################################
       # Validation
