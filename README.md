@@ -1,25 +1,33 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=37e34ca3aef3" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=2bb4917952f6" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
 
 > **CONTROLLED TRAINING RECORD** // Fictional cyber-biothreat investigation data
 
+## Case File Access
+
+| Reports & Assessments | Evidence & Forensics | Operations & Data |
+|-----------------------|----------------------|-------------------|
+| ◆ [Investigation Report](reports/investigation_report.md)<br>◆ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>◆ [C# Canonical Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>◆ [C# Canonical Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>◆ [Investigative Leads](reports/investigative_leads.md) | ◆ [Evidence Chain](evidence/evidence_chain.md)<br>◆ [Evidence Manifest](evidence/BID-2026-9736/evidence_manifest.json)<br>◆ [Evidence Correlations](evidence/BID-2026-9736/evidence_correlations.json)<br>◆ [Chain of Custody](evidence/BID-2026-9736/chain_of_custody.md)<br>◆ [Forensic Summary](evidence/BID-2026-9736/forensic_summary.md)<br>◆ [Acquisition Summary](evidence/BID-2026-9736/acquisition_summary.md) | ◆ [Command Brief](operations/command_brief.md)<br>◆ [Investigation Timeline](operations/investigation_timeline.md)<br>◆ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>◆ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
+
 | Record Control | Investigative State | Exchange Package |
 |----------------|---------------------|------------------|
-| **Case:** `BID-2026-9736`<br>**Campaign:** `BDC-2026-001` | **Record:** `EVIDENCE COLLECTION`<br>**Evidence:** `MANIFEST-TRACKED` | `XML` · `JSON` · `CSV` · `XLSX` |
+| **Case:** `BID-2026-9736`<br>**Campaign:** `BDC-2026-001` | **Record:** `EVIDENCE COLLECTION`<br>**Stage:** `EVIDENCE REVIEW`<br>**Lifecycle:** `ACTIVE` | `JSON` · `XML` · `Markdown` · `CSV` · `XLSX` |
 
-BioDefense Intelligence Division is a cyber-biosecurity investigation and digital forensics platform built with Python and C#. It supports persistent case management, evidence acquisition and reconstruction, evidence correlation, chain-of-custody control, threat assessment, intelligence reporting, and controlled operational recovery across biomedical research and protected laboratory environments.
+BioDefense Intelligence Division is a cyber-biosecurity investigation and digital forensics platform built with Python and C#. It integrates persistent case management, evidence acquisition and reconstruction, evidence correlation, chain-of-custody control, threat assessment, intelligence reporting, and controlled operational recovery across biomedical research and protected laboratory environments.
+
+Investigations retain case identity and evidentiary state across scheduled GitHub Actions executions. The platform synchronizes case records, evidence repositories, correlations, forensic products, threat assessments, investigative timelines, and operational reporting while maintaining separation between authoritative case state and the state-driven visualization layer.
 
 ---
 
 # Executive Case File
 
 | Campaign Record | Operational Status | Investigative Scope |
-|----------|--------------------|-------|
+|-----------------|--------------------|---------------------|
 | **ID:** BDC-2026-001<br>**Campaign:** Coordinated Biomedical Systems Intrusion<br>**Designation:** BMSI-01 | **Phase:** Operational Recovery<br>**Containment:** HIGH<br>**Intrusions:** 17 | **Active Cases:** 136<br>**Evidence:** 98,342<br>**Indicators:** 64,038<br>**Facilities / States:** 11 / 3 |
 
 <details>
@@ -48,6 +56,38 @@ BioDefense Intelligence Division is a cyber-biosecurity investigation and digita
 
 </details>
 
+<details>
+<summary><strong>Investigation lifecycle and automation</strong></summary>
+
+The active investigation persists across scheduled workflow executions rather than being replaced by an unrelated case on every run.
+
+**Lifecycle**
+
+`CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW → DISPOSITION / ARCHIVE`
+
+**Case continuity**
+- Active case identity is preserved between workflow executions.
+- Case advancement occurs only when lifecycle conditions are satisfied.
+- Terminal cases are archived before a subsequent investigation is created.
+
+**Evidence continuity**
+- Evidence records remain associated with the active Case ID.
+- Evidence manifests, correlations, chain-of-custody records, and forensic products remain synchronized with the investigation.
+
+**Threat assessment**
+- The C#/.NET threat-scoring engine evaluates current evidence and correlation records.
+- Canonical machine-readable threat assessments are produced in JSON and XML.
+
+**Automation**
+- GitHub Actions coordinates evidence processing, scoring, lifecycle evaluation, reporting, validation, dashboard generation, and verified repository updates.
+
+**Visualization**
+- The dashboard consumes synchronized investigation state.
+- Rendering is read-only with respect to authoritative case state.
+- Workflow stage, threat status, evidence counts, relationships, and operational data are derived from the active investigation.
+
+</details>
+
 ---
 
 <!-- EVIDENCE_DASHBOARD_START -->
@@ -59,12 +99,6 @@ BioDefense Intelligence Division is a cyber-biosecurity investigation and digita
 | Evidence Records | Correlations | Integrity Verified | Pending Review |
 |-----------------:|-------------:|-------------------:|---------------:|
 | 22 | 22 | 22 | 22 |
-
-## Active Case Intelligence Products
-
-| Reports & Assessments | Evidence & Forensics | Operations & Data |
-|-----------------------|----------------------|-------------------|
-| ◆ [Investigation Report](reports/investigation_report.md)<br>◆ [Bioterror Assessment](reports/bioterror_threat_assessment.md)<br>◆ [C# Threat Score (JSON)](reports/bioterror_threat_score_csharp.json)<br>◆ [C# Threat Score (XML)](reports/bioterror_threat_score_csharp.xml)<br>◆ [Investigative Leads](reports/investigative_leads.md) | ◆ [Evidence Chain](evidence/evidence_chain.md)<br>◆ [Evidence Manifest](evidence/BID-2026-9736/evidence_manifest.json)<br>◆ [Evidence Correlations](evidence/BID-2026-9736/evidence_correlations.json)<br>◆ [Chain of Custody](evidence/BID-2026-9736/chain_of_custody.md)<br>◆ [Forensic Summary](evidence/BID-2026-9736/forensic_summary.md)<br>◆ [Acquisition Summary](evidence/BID-2026-9736/acquisition_summary.md) | ◆ [Command Brief](operations/command_brief.md)<br>◆ [Investigation Timeline](operations/investigation_timeline.md)<br>◆ [Exposure Matrix (GitHub CSV Preview)](workbooks/Exposure-Tracking-Matrix.csv)<br>◆ [Exposure Matrix (Excel Download)](workbooks/Exposure-Tracking-Matrix.xlsx) |
 
 <details>
 <summary><strong>Evidence breakdown</strong></summary>
@@ -161,16 +195,24 @@ BioDefense Intelligence Division is a cyber-biosecurity investigation and digita
 </details>
 
 <details>
-<summary><strong>BioDefense Intelligence Toolkit (C#)</strong></summary>
+<summary><strong>C# / .NET threat-scoring engine</strong></summary>
 
-Lightweight utilities representing internal investigative applications.
+The repository includes a functioning C#/.NET threat-assessment component that evaluates the active investigation against current evidence and correlation records.
 
-| Utility | Purpose |
-|---------|---------|
-| BioThreatIntelligence | Correlates laboratory intrusion activity with active investigations. |
-| GenomeEvidenceAnalyzer | Reviews genomic evidence and chain-of-custody metadata. |
-| OutbreakCorrelationEngine | Links related incidents into a coordinated campaign. |
-| IncidentBriefGenerator | Produces command-level intelligence briefings. |
+| Capability | Purpose |
+|------------|---------|
+| Evidence Evaluation | Processes evidence records associated with the active Case ID. |
+| Correlation Review | Incorporates linked investigative findings into the threat assessment. |
+| Threat Scoring | Produces the canonical machine-readable threat score and classification. |
+| JSON Intelligence Output | Generates structured threat-assessment data for downstream automation and reporting. |
+| XML Intelligence Output | Produces a formal exchange record for validation and archival use. |
+| Pipeline Integration | Executes within the automated investigation workflow before downstream synchronization and rendering. |
+
+**Current canonical assessment:** `21 / 100` · `GUARDED`
+
+**Generated records**
+- [C# Canonical Threat Score — JSON](reports/bioterror_threat_score_csharp.json)
+- [C# Canonical Threat Score — XML](reports/bioterror_threat_score_csharp.xml)
 
 </details>
 
@@ -196,6 +238,15 @@ Lightweight utilities representing internal investigative applications.
 
 # Investigative Mission
 
-Defensive cybersecurity research focused on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, and coordinated incident response.
+Defensive cybersecurity research centered on cyber-enabled biosecurity investigations, protected research infrastructure, digital evidence management, forensic reconstruction, threat assessment, investigative intelligence production, and coordinated incident response across laboratory, biomedical, operational technology, and connected medical environments.
+
+<details>
+<summary><strong>Project scope and research context</strong></summary>
+
+BioDefense Intelligence Division is an independent cybersecurity research and training project developed to study the intersection of digital forensics, cyber-biosecurity, laboratory infrastructure, operational technology, evidence management, investigative automation, and persistent case analysis.
+
+The repository uses synthetic investigative records and does not represent an operational system, government information system, laboratory network, healthcare environment, or commercial platform. No affiliation with or endorsement by any government agency, laboratory, research institution, healthcare organization, pharmaceutical company, or commercial entity is implied.
+
+</details>
 
 <!-- FSE-REPORT-END -->
