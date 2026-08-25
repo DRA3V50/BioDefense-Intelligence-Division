@@ -138,15 +138,15 @@ ROUTINE
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Multiple investigative artifacts require additional correlation before attributi
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Current findings support maintaining the existing investigation priority.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Identity | Credential reuse detected across isolated research segments |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| System Log | Unexpected privilege escalation recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Device | Protected workstation entered evidence preservation mode |
 | PowerShell | Encoded administrative command execution detected |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Infrastructure | Firewall policy deviation identified |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Central Evidence Processing Center
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Awaiting Laboratory Review
 
 Priority:
 ROUTINE
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+No destructive activity observed following initial containment.
 
 
 ---

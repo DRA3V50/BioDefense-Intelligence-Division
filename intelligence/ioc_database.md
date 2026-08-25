@@ -15,12 +15,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Identity | Credential reuse detected across isolated research segments |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| System Log | Unexpected privilege escalation recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Device | Protected workstation entered evidence preservation mode |
 | PowerShell | Encoded administrative command execution detected |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Infrastructure | Firewall policy deviation identified |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---

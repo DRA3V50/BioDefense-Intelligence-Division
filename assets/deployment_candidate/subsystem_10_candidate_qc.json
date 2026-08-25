@@ -7,7 +7,7 @@
   "classification_projection_applied": true,
   "display_classification": "LAB SECURITY BREACH",
   "display_threat_family": "CLINICAL DATA MANIPULATION",
-  "frozen_v2_renderer_sha256": "ab63a00ad5a2a7ecd2567c21749484fe585f69f2f3745ff513ace576ce034513",
+  "frozen_v2_renderer_sha256": "d61e7f07ae2c7d7d1f0d6dc4b2c2c2e04ecc711288d16805fa30f5177bbeec3a",
   "state_hashes_after": {
     "cases/state/BID-2026-9736/anomaly_history.json": "96ada4296755196fd29bf87bc62aaca0cbb67c71d95710e552efcdc660879670",
     "cases/state/BID-2026-9736/events.json": "e2f5d03d05c47010a8563de041a3797779333260dba69ddbbde1878677da2865",
@@ -18,7 +18,7 @@
     "evidence/BID-2026-9736/evidence_correlations.json": "2a0e4f302da0955717e92a23fe1c7642af1d5328044a20e762fa709dde5ab8d9",
     "evidence/BID-2026-9736/evidence_manifest.json": "77e74e27fae2e05f1daed93477798d63badcc40cae516960916089e15855dea7",
     "operations/active_operation.json": "88490b96f3138b4586d6e47fbaaf32371d2554d14f601e5a94beee4f547a7cf5",
-    "reports/bioterror_threat_score_csharp.json": "dbac4b5aa9fd78cb798d07b8eeab869293e674052b713a419702029324633918"
+    "reports/bioterror_threat_score_csharp.json": "8918559c047ecf4168067323dc8bd72e08270288f71146e280f94fe09091ee7e"
   },
   "state_hashes_before": {
     "cases/state/BID-2026-9736/anomaly_history.json": "96ada4296755196fd29bf87bc62aaca0cbb67c71d95710e552efcdc660879670",
@@ -30,7 +30,7 @@
     "evidence/BID-2026-9736/evidence_correlations.json": "2a0e4f302da0955717e92a23fe1c7642af1d5328044a20e762fa709dde5ab8d9",
     "evidence/BID-2026-9736/evidence_manifest.json": "77e74e27fae2e05f1daed93477798d63badcc40cae516960916089e15855dea7",
     "operations/active_operation.json": "88490b96f3138b4586d6e47fbaaf32371d2554d14f601e5a94beee4f547a7cf5",
-    "reports/bioterror_threat_score_csharp.json": "dbac4b5aa9fd78cb798d07b8eeab869293e674052b713a419702029324633918"
+    "reports/bioterror_threat_score_csharp.json": "8918559c047ecf4168067323dc8bd72e08270288f71146e280f94fe09091ee7e"
   },
   "state_read_only": true,
   "threat_family_projection_applied": true,
@@ -55,8 +55,8 @@
       ],
       "unique_decoded_frames": 120
     },
-    "gif_sha256": "2bb4917952f6f395ed2acb0b7c81ed9089064ce8bd1b1bb0339a76af92c49436",
-    "png_sha256": "9b571e81221a40f2fa9311c5cdb9770b0875aabfd244ce687fbff2a2a9c26485",
+    "gif_sha256": "105ce5b194339f14d54593c014f70fc1306bc299da0a9e30011d4df811df56bf",
+    "png_sha256": "8dfc2d4c1874fdd75b86c1365dec591352b97fb8ea85c660014f417f09d551c9",
     "qc_zero_metrics": {
       "active_feed_fake_events_created": 0,
       "all_static_panel_border_differences": 0,

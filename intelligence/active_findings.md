@@ -26,15 +26,15 @@ ROUTINE
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Multiple investigative artifacts require additional correlation before attributi
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
