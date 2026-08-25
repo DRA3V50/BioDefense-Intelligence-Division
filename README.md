@@ -6,7 +6,7 @@
 
 BioDefense-Intelligence-Division
 
-CONTROLLED TRAINING RECORD // Synthetic cyber-biothreat investigation data
+CONTROLLED TRAINING RECORD // Fictional cyber-biothreat investigation data
 
 Record Control
 
@@ -18,45 +18,15 @@ Case: BID-2026-9736
 Campaign: BDC-2026-001
 
 Record: EVIDENCE COLLECTION
-Stage: EVIDENCE REVIEW
-Lifecycle: ACTIVE
-
 Evidence: MANIFEST-TRACKED
-JSON · XML · MARKDOWN · CSV · XLSX
 
-BioDefense Intelligence Division is an automated cyber-biosecurity investigation and digital forensics platform built with Python and C#. It maintains persistent case state across scheduled GitHub Actions executions and coordinates evidence acquisition, reconstruction, correlation, chain-of-custody control, threat assessment, investigative reporting, and state-driven visualization for biomedical research, protected laboratory, operational technology, and connected medical environments.
+XML · JSON · CSV · XLSX
 
-The platform is structured around formal case and campaign identifiers, case-specific evidence repositories, deterministic lifecycle controls, and machine-readable intelligence products. A C#/.NET threat-scoring engine provides the canonical threat score and classification, while Python orchestration synchronizes investigation state, generates case products, and renders the current dashboard without mutating authoritative case data.
+BioDefense Intelligence Division is an automated cyber-biosecurity investigation and digital forensics platform built with Python and C#. It integrates persistent case management, evidence acquisition and reconstruction, evidence correlation, chain-of-custody control, threat assessment, investigative reporting, and controlled operational recovery across biomedical research and protected laboratory environments.
 
-Investigation Architecture
+The repository maintains active investigation state across scheduled GitHub Actions executions, preserves case and evidence continuity, uses a C#/.NET threat-scoring engine for canonical threat assessment, and generates synchronized intelligence products and a state-driven investigative dashboard without allowing the renderer to modify authoritative case state.
 
-The repository operates as a persistent case system rather than creating an unrelated investigation on each execution. The active case is retained until defined lifecycle criteria permit stage advancement or terminal disposition.
-
-CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW → TERMINAL DISPOSITION → ARCHIVE
-
-Control
-
-Implementation
-
-Case continuity
-
-Active case identity and evidentiary state persist across scheduled workflow executions.
-
-Evidence integrity
-
-Case-specific manifests, correlations, chain-of-custody records, acquisition summaries, and forensic products preserve investigative context.
-
-Threat assessment
-
-The .NET/C# scoring engine produces the canonical machine-readable threat score and classification.
-
-Automation
-
-GitHub Actions coordinates evidence processing, scoring, lifecycle evaluation, reporting, validation, and verified dashboard deployment.
-
-Visualization
-
-The dashboard consumes synchronized case state and remains read-only with respect to authoritative investigation data.
+Investigation lifecycle: CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW → DISPOSITION / ARCHIVE
 
 Executive Case File
 
@@ -94,7 +64,7 @@ Case Profile
 
 Target Environment
 
-Investigative Control
+Response
 
 Case: BID-2026-9736
 Classification: Laboratory Security Breach Investigation
@@ -106,8 +76,6 @@ Vendor / Device: Palo Alto Networks / Evidence Repository
 Zone: Evidence Network
 Assets: 7
 
-Stage: EVIDENCE REVIEW
-Lifecycle: ACTIVE
 Confidence: 86%
 Evidence / IOCs: 22 / 4
 Lead: National Response Cell
@@ -444,27 +412,27 @@ Regional Biosecurity Laboratory
 <details>
 <summary><strong>C# / .NET Threat-Scoring Engine</strong></summary>
 
-The scoring engine is the canonical source for threat-score and classification values synchronized into the active investigation state and consumed by downstream products.
+Canonical threat-assessment component used by the automated investigation pipeline.
 
 Component
 
-Role
+Purpose
 
 BioterrorThreatScoringEngine.csproj
 
-.NET/C# threat-scoring engine for the active investigation.
+Executes the C#/.NET threat-scoring engine for the active investigation.
 
-Canonical assessment
+Canonical Threat Assessment
 
-Produces the authoritative threat score and classification used by synchronized case support state.
+Produces the machine-readable threat score and classification used by synchronized case state.
 
-Evidence basis
+Evidence / Correlation Review
 
-Evaluates current evidence and correlation records associated with the active case.
+Evaluates active-case evidence and correlation records as scoring inputs.
 
-Machine-readable output
+JSON / XML Output
 
-Generates JSON and XML threat assessment products for downstream reporting and visualization.
+Publishes structured threat-assessment products for reporting and downstream analysis.
 
 </details>
 
