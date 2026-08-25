@@ -153,6 +153,21 @@ def markdown_cell(value: object) -> str:
     )
 
 
+def state_label(
+    value: object,
+    default: str = "UNKNOWN",
+) -> str:
+    """Format machine-state values for README display."""
+
+    text = str(
+        value if value not in (None, "") else default
+    )
+
+    return markdown_cell(
+        text.replace("_", " " ).strip().upper()
+    )
+
+
 def file_status(path: Path) -> str:
     """Return a compact generated-file status."""
 
@@ -312,7 +327,7 @@ def build_overview_section(
     case: dict,
     operation: dict,
 ) -> str:
-    """Build the archival case-record header."""
+    """Build the current case-record header and platform summary."""
 
     case_id = markdown_cell(
         field(
@@ -334,19 +349,33 @@ def build_overview_section(
         )
     )
 
-    record_status = markdown_cell(
-        str(
-            field(
-                case,
-                "status",
-                "ACTIVE",
-            )
-        ).upper()
+    record_status = state_label(
+        field(
+            case,
+            "status",
+            "ACTIVE",
+        )
     )
 
-    # GitHub can cache repository images.  Version the README image with the
-    # exact deployed GIF bytes so the visible dashboard and its cache token
-    # always move together after the verified #10 deployment.
+    current_stage = state_label(
+        field(
+            case,
+            "current_stage",
+            record_status,
+        )
+    )
+
+    lifecycle_status = state_label(
+        field(
+            case,
+            "lifecycle_status",
+            "ACTIVE",
+        )
+    )
+
+    # GitHub can cache repository images. Version the README image with the
+    # exact deployed GIF bytes so the visible dashboard and cache token move
+    # together after each verified production deployment.
     banner_version = "missing-banner"
     if SCANNER_BANNER_PATH.exists():
         banner_version = hashlib.sha256(
@@ -370,21 +399,62 @@ def build_overview_section(
         f"{banner}"
         "# BioDefense-Intelligence-Division\n\n"
         "> **CONTROLLED TRAINING RECORD** // "
-        "Fictional cyber-biothreat investigation data\n\n"
+        "Synthetic cyber-biothreat investigation data\n\n"
         "| Record Control | Investigative State | Exchange Package |\n"
         "|----------------|---------------------|------------------|\n"
         f"| **Case:** `{case_id}`"
         f"<br>**Campaign:** `{campaign_id}` "
         f"| **Record:** `{record_status}`"
-        f"<br>**Evidence:** `MANIFEST-TRACKED` "
-        "| `XML` · `JSON` · `CSV` · `XLSX` |\n\n"
-        "Automated cyber-biothreat investigation and digital forensics "
-        "simulation using Python and C#. The project models federal-style "
-        "case management, evidence reconstruction, threat assessment, "
-        "chain of custody, intelligence reporting, and controlled "
-        "operational recovery for fictional threats affecting biomedical "
-        "research and protected laboratory environments."
+        f"<br>**Stage:** `{current_stage}`"
+        f"<br>**Lifecycle:** `{lifecycle_status}` "
+        "| **Evidence:** `MANIFEST-TRACKED`"
+        "<br>`JSON` · `XML` · `MARKDOWN` · `CSV` · `XLSX` |\n\n"
+        "BioDefense Intelligence Division is an automated cyber-biosecurity "
+        "investigation and digital forensics platform built with Python and "
+        "C#. It maintains persistent case state across scheduled GitHub "
+        "Actions executions and coordinates evidence acquisition, "
+        "reconstruction, correlation, chain-of-custody control, threat "
+        "assessment, investigative reporting, and state-driven visualization "
+        "for biomedical research, protected laboratory, operational "
+        "technology, and connected medical environments.\n\n"
+        "The platform is structured around formal case and campaign "
+        "identifiers, case-specific evidence repositories, deterministic "
+        "lifecycle controls, and machine-readable intelligence products. "
+        "A C#/.NET threat-scoring engine provides the canonical threat score "
+        "and classification, while Python orchestration synchronizes "
+        "investigation state, generates case products, and renders the "
+        "current dashboard without mutating authoritative case data."
     )
+
+
+def build_investigation_architecture() -> str:
+    """Describe the persistent investigative control model."""
+
+    return (
+        "# Investigation Architecture\n\n"
+        "The repository operates as a persistent case system rather than "
+        "creating an unrelated investigation on each execution. The active "
+        "case is retained until defined lifecycle criteria permit stage "
+        "advancement or terminal disposition.\n\n"
+        "`CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → "
+        "PROBLEM REVIEW → TERMINAL DISPOSITION → ARCHIVE`\n\n"
+        "| Control | Implementation |\n"
+        "|---------|----------------|\n"
+        "| **Case continuity** | Active case identity and evidentiary state "
+        "persist across scheduled workflow executions. |\n"
+        "| **Evidence integrity** | Case-specific manifests, correlations, "
+        "chain-of-custody records, acquisition summaries, and forensic "
+        "products preserve investigative context. |\n"
+        "| **Threat assessment** | The .NET/C# scoring engine produces the "
+        "canonical machine-readable threat score and classification. |\n"
+        "| **Automation** | GitHub Actions coordinates evidence processing, "
+        "scoring, lifecycle evaluation, reporting, validation, and verified "
+        "dashboard deployment. |\n"
+        "| **Visualization** | The dashboard consumes synchronized case state "
+        "and remains read-only with respect to authoritative investigation "
+        "data. |"
+    )
+
 
 def build_campaign_dashboard(
     operation: dict,
@@ -432,10 +502,26 @@ def build_active_investigation(
 ) -> str:
     """Build a compact three-column active-case dashboard."""
 
+    current_stage = state_label(
+        field(
+            case,
+            "current_stage",
+            field(case, "status", "ACTIVE"),
+        )
+    )
+
+    lifecycle_status = state_label(
+        field(
+            case,
+            "lifecycle_status",
+            "ACTIVE",
+        )
+    )
+
     return (
         "# Active Investigation\n\n"
-        "| Case Profile | Target Environment | Response |\n"
-        "|--------------|--------------------|----------|\n"
+        "| Case Profile | Target Environment | Investigative Control |\n"
+        "|--------------|--------------------|-----------------------|\n"
         f"| **Case:** {markdown_cell(field(case, 'case_id'))}"
         f"<br>**Classification:** "
         f"{markdown_cell(field(case, 'classification'))}"
@@ -453,7 +539,9 @@ def build_active_investigation(
         f"{markdown_cell(field(case, 'network_zone'))}"
         f"<br>**Assets:** "
         f"{format_number(case.get('affected_assets'))} "
-        f"| **Confidence:** "
+        f"| **Stage:** {current_stage}"
+        f"<br>**Lifecycle:** {lifecycle_status}"
+        f"<br>**Confidence:** "
         f"{markdown_cell(field(case, 'confidence'))}%"
         f"<br>**Evidence / IOCs:** "
         f"{format_number(case.get('evidence_count'))} / "
@@ -676,12 +764,12 @@ def build_evidence_dashboard_section(
             bioterror_assessment_path,
         ),
         product_link(
-            "C# Threat Score (JSON)",
+            "C# Canonical Threat Score (JSON)",
             "reports/bioterror_threat_score_csharp.json",
             csharp_json_path,
         ),
         product_link(
-            "C# Threat Score (XML)",
+            "C# Canonical Threat Score (XML)",
             "reports/bioterror_threat_score_csharp.xml",
             csharp_xml_path,
         ),
@@ -843,17 +931,18 @@ def build_supporting_details(
         [],
     )
 
-    toolkit_table = (
-        "| Utility | Purpose |\n"
-        "|---------|---------|\n"
-        "| BioThreatIntelligence | Correlates laboratory intrusion "
-        "activity with active investigations. |\n"
-        "| GenomeEvidenceAnalyzer | Reviews genomic evidence and "
-        "chain-of-custody metadata. |\n"
-        "| OutbreakCorrelationEngine | Links related incidents into "
-        "a coordinated campaign. |\n"
-        "| IncidentBriefGenerator | Produces command-level "
-        "intelligence briefings. |\n"
+    scoring_engine_table = (
+        "| Component | Role |\n"
+        "|-----------|------|\n"
+        "| [`BioterrorThreatScoringEngine.csproj`]"
+        "(tools/BioterrorThreatScoringEngine.csproj) | "
+        ".NET/C# threat-scoring engine for the active investigation. |\n"
+        "| **Canonical assessment** | Produces the authoritative threat "
+        "score and classification used by synchronized case support state. |\n"
+        "| **Evidence basis** | Evaluates current evidence and correlation "
+        "records associated with the active case. |\n"
+        "| **Machine-readable output** | Generates JSON and XML threat "
+        "assessment products for downstream reporting and visualization. |\n"
     )
 
     products = [
@@ -886,11 +975,12 @@ def build_supporting_details(
         f"{format_list(laboratories, 'No laboratories currently under review')}"
         "\n\n</details>\n\n"
         "<details>\n"
-        "<summary><strong>BioDefense Intelligence Toolkit "
-        "(C#)</strong></summary>\n\n"
-        "Lightweight utilities representing internal investigative "
-        "applications.\n\n"
-        f"{toolkit_table}\n"
+        "<summary><strong>C# / .NET Threat-Scoring "
+        "Engine</strong></summary>\n\n"
+        "The scoring engine is the canonical source for threat-score and "
+        "classification values synchronized into the active investigation "
+        "state and consumed by downstream products.\n\n"
+        f"{scoring_engine_table}\n"
         "</details>\n\n"
         "<details>\n"
         "<summary><strong>Automated intelligence product "
@@ -903,10 +993,19 @@ def build_supporting_details(
 def build_mission_section() -> str:
     return (
         "# Investigative Mission\n\n"
-        "Defensive cybersecurity research focused on cyber-enabled "
-        "biosecurity investigations, protected research infrastructure, "
-        "digital evidence management, forensic reconstruction, and "
-        "coordinated incident response."
+        "Defensive cybersecurity engineering and digital forensics research "
+        "focused on cyber-enabled biosecurity investigations, protected "
+        "research infrastructure, operational technology, connected medical "
+        "systems, evidence integrity, forensic reconstruction, persistent "
+        "case management, and automated investigative reporting.\n\n"
+        "<details>\n"
+        "<summary><strong>Research and training notice</strong></summary>\n\n"
+        "Independent cybersecurity research and training project. Case "
+        "records, organizations, facilities, and operational data are "
+        "synthetic. No affiliation with or representation of any government "
+        "agency, laboratory, healthcare organization, pharmaceutical company, "
+        "or commercial entity is implied.\n\n"
+        "</details>"
     )
 
 
@@ -924,6 +1023,7 @@ def build_report(
             case,
             operation,
         ),
+        build_investigation_architecture(),
         build_campaign_dashboard(operation),
         build_active_investigation(case),
         build_evidence_dashboard_section(case),
