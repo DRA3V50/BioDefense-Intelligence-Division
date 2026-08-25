@@ -1,479 +1,1017 @@
-<!-- FSE-REPORT-START -->
+#!/usr/bin/env python3
+
+"""
+Regenerate the compact automated section of README.md.
+
+Reads:
+    data/current_case.json
+    operations/active_operation.json
+    data/investigation_history.csv
+    workbooks/Exposure-Tracking-Matrix.csv
+    active-case evidence and report products
+
+Writes:
+    README.md
+
+Only content between the FSE report markers is replaced.
+"""
+
+import csv
+import hashlib
+import json
+from collections import Counter
+from pathlib import Path
+from statistics import mean
 
-<p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=2bb4917952f6" alt="Current BioDefense intelligence case interface" width="100%">
-</p>
+CURRENT_CASE_PATH = Path("data/current_case.json")
+ACTIVE_OPERATION_PATH = Path(
+    "operations/active_operation.json"
+)
+HISTORY_PATH = Path(
+    "data/investigation_history.csv"
+)
+WORKBOOK_CSV_PATH = Path(
+    "workbooks/Exposure-Tracking-Matrix.csv"
+)
+README_PATH = Path("README.md")
+SCANNER_BANNER_PATH = Path(
+    "assets/biodefense-case-scan.gif"
+)
 
-BioDefense-Intelligence-Division
+REPORT_START = "<!-- FSE-REPORT-START -->"
+REPORT_END = "<!-- FSE-REPORT-END -->"
 
-CONTROLLED TRAINING RECORD // Fictional cyber-biothreat investigation data
+CLOSED_STATUSES = {
+    "closed",
+    "resolved",
+    "archived",
+    "complete",
+    "completed",
+}
 
-Record Control
 
-Investigative State
+# -------------------------------------------------
+# Data loading
+# -------------------------------------------------
 
-Exchange Package
+def load_json(path: Path) -> dict:
+    """Load JSON data, returning an empty dictionary on failure."""
 
-Case: BID-2026-9736
-Campaign: BDC-2026-001
+    if not path.exists():
+        return {}
 
-Record: EVIDENCE COLLECTION
-Evidence: MANIFEST-TRACKED
+    try:
+        with path.open(
+            "r",
+            encoding="utf-8",
+        ) as file:
+            data = json.load(file)
 
-XML · JSON · CSV · XLSX
+        return data if isinstance(data, dict) else {}
 
-BioDefense Intelligence Division is an automated cyber-biosecurity investigation and digital forensics platform built with Python and C#. It integrates persistent case management, evidence acquisition and reconstruction, evidence correlation, chain-of-custody control, threat assessment, investigative reporting, and controlled operational recovery across biomedical research and protected laboratory environments.
+    except (json.JSONDecodeError, OSError):
+        return {}
 
-The repository maintains active investigation state across scheduled GitHub Actions executions, preserves case and evidence continuity, uses a C#/.NET threat-scoring engine for canonical threat assessment, and generates synchronized intelligence products and a state-driven investigative dashboard without allowing the renderer to modify authoritative case state.
 
-Investigation lifecycle: CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW → DISPOSITION / ARCHIVE
+def load_csv_rows(path: Path) -> list[dict]:
+    """Load CSV rows, returning an empty list on failure."""
 
-Executive Case File
+    if not path.exists():
+        return []
 
-Campaign Record
+    try:
+        with path.open(
+            "r",
+            newline="",
+            encoding="utf-8-sig",
+        ) as file:
+            return list(csv.DictReader(file))
 
-Operational Status
+    except OSError:
+        return []
 
-Investigative Scope
 
-ID: BDC-2026-001
-Campaign: Coordinated Biomedical Systems Intrusion
-Designation: BMSI-01
+# -------------------------------------------------
+# Formatting helpers
+# -------------------------------------------------
 
-Phase: Operational Recovery
-Containment: HIGH
-Intrusions: 17
+def field(
+    data: dict,
+    key: str,
+    default: str = "Unknown",
+):
+    """Return a dictionary value with a readable fallback."""
 
-Active Cases: 136
-Evidence: 98,342
-Indicators: 64,038
-Facilities / States: 11 / 3
+    value = data.get(key, default)
 
-<details>
-<summary><strong>Campaign objective and next action</strong></summary>
+    if value in (None, ""):
+        return default
 
-Objective: Investigate coordinated cyber-enabled bioterror activity targeting protected biomedical research facilities and federal laboratory infrastructure.
+    return value
 
-Next action: Verify recovery controls and prepare the final operational assessment.
 
-</details>
+def safe_int(
+    value: object,
+    default: int = 0,
+) -> int:
+    """Convert a value to an integer safely."""
 
-Active Investigation
+    try:
+        return int(float(str(value).strip()))
 
-Case Profile
+    except (TypeError, ValueError):
+        return default
 
-Target Environment
 
-Response
+def safe_float(
+    value: object,
+    default: float = 0.0,
+) -> float:
+    """Convert a value to a float safely."""
 
-Case: BID-2026-9736
-Classification: Laboratory Security Breach Investigation
-Threat Family: Clinical Research Data Manipulation
-Severity / Priority: LOW / ROUTINE
+    try:
+        return float(str(value).strip())
 
-Platform: Genome Sequencing Environment
-Vendor / Device: Palo Alto Networks / Evidence Repository
-Zone: Evidence Network
-Assets: 7
+    except (TypeError, ValueError):
+        return default
 
-Confidence: 86%
-Evidence / IOCs: 22 / 4
-Lead: National Response Cell
-Initial Access: Third-Party Access
 
-<details>
-<summary><strong>Analyst assessment and recommended response</strong></summary>
+def format_number(value: object) -> str:
+    """Format numeric values with separators."""
 
-Assessment: Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+    return f"{safe_int(value):,}"
 
-Recommended action: Verify recovery controls and prepare the final operational assessment.
 
-</details>
+def markdown_cell(value: object) -> str:
+    """Prepare text for a Markdown table cell."""
 
-<!-- EVIDENCE_DASHBOARD_START -->
+    return (
+        str(value if value not in (None, "") else "Unknown")
+        .replace("|", r"\|")
+        .replace("\n", " ")
+        .strip()
+    )
 
-Digital Evidence Record
 
-Active Case: BID-2026-9736
+def file_status(path: Path) -> str:
+    """Return a compact generated-file status."""
 
-Evidence Records
+    return "◆" if path.exists() else "◇"
 
-Correlations
 
-Integrity Verified
+def product_link(
+    name: str,
+    link: str,
+    path: Path,
+) -> str:
+    """Build a compact product link with availability status."""
 
-Pending Review
+    return (
+        f"{file_status(path)} "
+        f"[{name}]({link})"
+    )
 
-22
 
-22
+def format_list(
+    items: object,
+    empty_message: str = "No data available",
+) -> str:
+    """Render a list as Markdown bullets."""
 
-22
+    if not isinstance(items, list) or not items:
+        return f"- {empty_message}"
 
-22
+    return "\n".join(
+        f"- {markdown_cell(item)}"
+        for item in items
+    )
 
-Active Case Intelligence Products
 
-Reports & Assessments
+# -------------------------------------------------
+# Metrics and previews
+# -------------------------------------------------
 
-Evidence & Forensics
+def calculate_history_metrics(
+    history: list[dict],
+) -> dict:
+    """Calculate case-history metrics."""
+
+    severity_counts = Counter(
+        str(row.get("severity", "")).strip().upper()
+        for row in history
+    )
+
+    confidences = [
+        safe_float(row.get("confidence"))
+        for row in history
+        if str(row.get("confidence", "")).strip()
+    ]
 
-Operations & Data
-
-◆ Investigation Report
-◆ Bioterror Assessment
-◆ C# Canonical Threat Score (JSON)
-◆ C# Canonical Threat Score (XML)
-◆ Investigative Leads
-
-◆ Evidence Chain
-◆ Evidence Manifest
-◆ Evidence Correlations
-◆ Chain of Custody
-◆ Forensic Summary
-◆ Acquisition Summary
-
-◆ Command Brief
-◆ Investigation Timeline
-◆ Exposure Matrix (GitHub CSV Preview)
-◆ Exposure Matrix (Excel Download)
-
-<details>
-<summary><strong>Evidence breakdown</strong></summary>
-
-Evidence Type
-
-Records
-
-Laboratory System Configuration
-
-5
-
-Network Connection Record
-
-3
-
-Research Data Integrity Record
-
-2
-
-Biosecurity Audit Record
-
-2
-
-Research Workstation Event Log
-
-2
-
-Containment Validation Record
-
-2
-
-Threat Intelligence Record
-
-2
-
-Firewall Log
-
-2
-
-Access Control Log
-
-1
-
-Analyst Observation
-
-1
-
-</details>
-
-<details>
-<summary><strong>Priority investigative findings</strong></summary>
-
-Investigative Finding
-
-Correlations
-
-Laboratory System Modification
-
-5
-
-Command-and-Control Communication
-
-3
-
-Research Data Integrity Anomaly
-
-2
-
-Biosecurity Policy Violation
-
-2
-
-Research Workstation Compromise
-
-2
-
-Containment Verification
-
-2
-
-Known Threat Actor Indicator
-
-2
-
-Suspicious Network Activity
-
-2
-
-Unauthorized Facility Access
-
-1
-
-Analyst Intelligence Assessment
-
-1
-
-</details>
-
-<details>
-<summary><strong>Exposure Tracking Matrix preview</strong></summary>
-
-Open the complete GitHub CSV preview · Download the formatted Excel workbook
-
-Date
-
-Case ID
-
-Severity
-
-Risk
-
-Confidence
-
-Status
-
-2026-08-23
-
-BID-2026-9736
-
-LOW
-
-22
-
-86
-
-Evidence Collection
-
-2026-08-23
-
-BID-2026-4817
-
-MODERATE
-
-43
-
-86
-
-Evidence Collection
-
-2026-08-22
-
-BID-2026-1797
-
-MODERATE
-
-56
-
-95
-
-Evidence Collection
-
-2026-08-22
-
-BID-2026-3128
-
-MODERATE
-
-56
-
-95
-
-Field Coordination
-
-2026-08-21
-
-BID-2026-1480
-
-LOW
-
-30
-
-82
-
-Field Coordination
-
-</details>
-
-Threat Family: Clinical Research Data Manipulation · Repository Updated: 2026-08-23T14:19:39Z
-
-<!-- EVIDENCE_DASHBOARD_END -->
-
-Supporting Case Records
-
-<details>
-<summary><strong>Operational metrics and recent investigations</strong></summary>
-
-Metric
-
-Value
-
-Total Investigations
-
-136
-
-Low / Moderate
-
-31 / 49
-
-High / Critical
-
-39 / 17
-
-Closed Cases
-
-0
-
-Average Confidence
-
-89.5%
-
-Total Evidence
-
-98,342
-
-Total Indicators
-
-64,038
-
-Recent Investigations
-
-Case
-
-Classification
-
-Severity
-
-BID-2026-9736
-
-Laboratory Security Breach Investigation
-
-LOW
-
-BID-2026-4817
-
-Research Data Integrity Investigation
-
-MODERATE
-
-BID-2026-1797
-
-Biocontainment Network Investigation
-
-MODERATE
-
-BID-2026-3128
-
-Medical Device Security Assessment
-
-MODERATE
-
-BID-2026-1480
-
-Research Data Integrity Investigation
-
-LOW
-
-</details>
-
-<details>
-<summary><strong>Laboratories under review</strong></summary>
-
-Federal Biomedical Laboratory
-
-National Pathogen Research Center
-
-Advanced Genome Institute
-
-Regional Biosecurity Laboratory
-
-</details>
-
-<details>
-<summary><strong>C# / .NET Threat-Scoring Engine</strong></summary>
-
-Canonical threat-assessment component used by the automated investigation pipeline.
-
-Component
-
-Purpose
-
-BioterrorThreatScoringEngine.csproj
-
-Executes the C#/.NET threat-scoring engine for the active investigation.
-
-Canonical Threat Assessment
-
-Produces the machine-readable threat score and classification used by synchronized case state.
-
-Evidence / Correlation Review
-
-Evaluates active-case evidence and correlation records as scoring inputs.
-
-JSON / XML Output
-
-Publishes structured threat-assessment products for reporting and downstream analysis.
-
-</details>
-
-<details>
-<summary><strong>Automated intelligence product catalog</strong></summary>
-
-Cyber-biothreat case files
-
-Laboratory intrusion assessments
-
-Protected facility exposure reports
-
-Evidence reconstruction logs
-
-Chain-of-custody documentation
-
-Threat actor campaign summaries
-
-Biological research impact assessments
-
-Cyber-biosecurity intelligence reports
-
-Bioterror threat assessments
-
-Investigative leads and intelligence gaps
-
-Exposure-tracking workbooks and CSV previews
-
-Executive operational briefings
-
-</details>
-
-Investigative Mission
-
-Defensive cybersecurity engineering and digital forensics research focused on cyber-enabled biosecurity investigations, protected research infrastructure, operational technology, connected medical systems, evidence integrity, forensic reconstruction, persistent case management, and automated investigative reporting.
-
-<details>
-<summary><strong>Research and training notice</strong></summary>
-
-Independent cybersecurity research and training project. Case records, organizations, facilities, and operational data are synthetic. No affiliation with or representation of any government agency, laboratory, healthcare organization, pharmaceutical company, or commercial entity is implied.
-
-</details>
-
-<!-- FSE-REPORT-END -->
+    average_confidence = (
+        round(mean(confidences), 1)
+        if confidences
+        else 0.0
+    )
+
+    closed_cases = sum(
+        1
+        for row in history
+        if str(
+            row.get("status", "")
+        ).strip().lower()
+        in CLOSED_STATUSES
+    )
+
+    return {
+        "total": len(history),
+        "low": severity_counts["LOW"],
+        "moderate": severity_counts["MODERATE"],
+        "high": severity_counts["HIGH"],
+        "critical": severity_counts["CRITICAL"],
+        "closed_cases": closed_cases,
+        "average_confidence": average_confidence,
+    }
+
+
+def recent_investigations_table(
+    history: list[dict],
+    count: int = 5,
+) -> str:
+    """Create the recent-investigations table."""
+
+    rows_with_cases = [
+        row
+        for row in history
+        if row.get("case_id")
+    ]
+
+    recent = rows_with_cases[-count:]
+
+    header = (
+        "| Case | Classification | Severity |\n"
+        "|------|----------------|----------|\n"
+    )
+
+    if not recent:
+        return (
+            header
+            + "| No archived investigations | — | — |\n"
+        )
+
+    rows = "".join(
+        f"| {markdown_cell(row.get('case_id'))} "
+        f"| {markdown_cell(row.get('classification'))} "
+        f"| {markdown_cell(row.get('severity'))} |\n"
+        for row in reversed(recent)
+    )
+
+    return header + rows
+
+
+def workbook_preview_table(
+    rows: list[dict],
+    count: int = 5,
+) -> str:
+    """Show the latest workbook records directly in the README."""
+
+    recent = [
+        row
+        for row in rows
+        if row.get("Case ID")
+    ][-count:]
+
+    header = (
+        "| Date | Case ID | Severity | Risk | Confidence | Status |\n"
+        "|------|---------|----------|-----:|-----------:|--------|\n"
+    )
+
+    if not recent:
+        return (
+            header
+            + "| No workbook records available | — | — | 0 | 0 | — |\n"
+        )
+
+    table_rows = "".join(
+        f"| {markdown_cell(row.get('Date'))} "
+        f"| {markdown_cell(row.get('Case ID'))} "
+        f"| {markdown_cell(row.get('Severity'))} "
+        f"| {markdown_cell(row.get('Risk Score'))} "
+        f"| {markdown_cell(row.get('Confidence'))} "
+        f"| {markdown_cell(row.get('Status'))} |\n"
+        for row in reversed(recent)
+    )
+
+    return header + table_rows
+
+
+# -------------------------------------------------
+# README sections
+# -------------------------------------------------
+
+def build_overview_section(
+    case: dict,
+    operation: dict,
+) -> str:
+    """Build the archival case-record header."""
+
+    case_id = markdown_cell(
+        field(
+            case,
+            "case_id",
+            "UNKNOWN-CASE",
+        )
+    )
+
+    campaign_id = markdown_cell(
+        field(
+            operation,
+            "campaign_id",
+            field(
+                case,
+                "campaign_id",
+                "UNKNOWN-CAMPAIGN",
+            ),
+        )
+    )
+
+    record_status = markdown_cell(
+        str(
+            field(
+                case,
+                "status",
+                "ACTIVE",
+            )
+        ).upper()
+    )
+
+    # GitHub can cache repository images.  Version the README image with the
+    # exact deployed GIF bytes so the visible dashboard and its cache token
+    # always move together after the verified #10 deployment.
+    banner_version = "missing-banner"
+    if SCANNER_BANNER_PATH.exists():
+        banner_version = hashlib.sha256(
+            SCANNER_BANNER_PATH.read_bytes()
+        ).hexdigest()[:12]
+
+    banner = ""
+
+    if SCANNER_BANNER_PATH.exists():
+        banner = (
+            '<p align="center">\n'
+            '  <img '
+            'src="assets/biodefense-case-scan.gif'
+            f'?v={banner_version}" '
+            'alt="Current BioDefense intelligence case interface" '
+            'width="100%">\n'
+            '</p>\n\n'
+        )
+
+    return (
+        f"{banner}"
+        "# BioDefense-Intelligence-Division\n\n"
+        "> **CONTROLLED TRAINING RECORD** // "
+        "Fictional cyber-biothreat investigation data\n\n"
+        "| Record Control | Investigative State | Exchange Package |\n"
+        "|----------------|---------------------|------------------|\n"
+        f"| **Case:** `{case_id}`"
+        f"<br>**Campaign:** `{campaign_id}` "
+        f"| **Record:** `{record_status}`"
+        f"<br>**Evidence:** `MANIFEST-TRACKED` "
+        "| `XML` · `JSON` · `CSV` · `XLSX` |\n\n"
+        "BioDefense Intelligence Division is a cyber-biosecurity investigation "
+        "and digital forensics platform built with Python and C#. It supports "
+        "persistent case management, evidence acquisition and reconstruction, "
+        "evidence correlation, chain-of-custody control, threat assessment, "
+        "intelligence reporting, and controlled operational recovery across "
+        "biomedical research and protected laboratory environments."
+    )
+
+def build_campaign_dashboard(
+    operation: dict,
+) -> str:
+    """Build a compact three-column campaign dashboard."""
+
+    return (
+        "# Executive Case File\n\n"
+        "| Campaign Record | Operational Status | Investigative Scope |\n"
+        "|----------|--------------------|-------|\n"
+        f"| **ID:** {markdown_cell(field(operation, 'campaign_id'))}"
+        f"<br>**Campaign:** "
+        f"{markdown_cell(field(operation, 'operation'))}"
+        f"<br>**Designation:** "
+        f"{markdown_cell(field(operation, 'threat_designation'))} "
+        f"| **Phase:** "
+        f"{markdown_cell(field(operation, 'campaign_phase'))}"
+        f"<br>**Containment:** "
+        f"{markdown_cell(field(operation, 'containment_level'))}"
+        f"<br>**Intrusions:** "
+        f"{format_number(operation.get('confirmed_intrusions'))} "
+        f"| **Active Cases:** "
+        f"{format_number(operation.get('active_cases'))}"
+        f"<br>**Evidence:** "
+        f"{format_number(operation.get('evidence_collected'))}"
+        f"<br>**Indicators:** "
+        f"{format_number(operation.get('ioc_count'))}"
+        f"<br>**Facilities / States:** "
+        f"{markdown_cell(field(operation, 'affected_facilities', 0))}"
+        f" / "
+        f"{markdown_cell(field(operation, 'affected_states', 0))} |\n\n"
+        "<details>\n"
+        "<summary><strong>Campaign objective and next action</strong>"
+        "</summary>\n\n"
+        f"**Objective:** "
+        f"{markdown_cell(field(operation, 'campaign_objective'))}\n\n"
+        f"**Next action:** "
+        f"{markdown_cell(field(operation, 'next_objective'))}\n\n"
+        "</details>"
+    )
+
+
+def build_active_investigation(
+    case: dict,
+) -> str:
+    """Build a compact three-column active-case dashboard."""
+
+    return (
+        "# Active Investigation\n\n"
+        "| Case Profile | Target Environment | Response |\n"
+        "|--------------|--------------------|----------|\n"
+        f"| **Case:** {markdown_cell(field(case, 'case_id'))}"
+        f"<br>**Classification:** "
+        f"{markdown_cell(field(case, 'classification'))}"
+        f"<br>**Threat Family:** "
+        f"{markdown_cell(field(case, 'threat_family'))}"
+        f"<br>**Severity / Priority:** "
+        f"{markdown_cell(field(case, 'severity'))} / "
+        f"{markdown_cell(field(case, 'priority'))} "
+        f"| **Platform:** "
+        f"{markdown_cell(field(case, 'affected_platform'))}"
+        f"<br>**Vendor / Device:** "
+        f"{markdown_cell(field(case, 'vendor'))} / "
+        f"{markdown_cell(field(case, 'device_family'))}"
+        f"<br>**Zone:** "
+        f"{markdown_cell(field(case, 'network_zone'))}"
+        f"<br>**Assets:** "
+        f"{format_number(case.get('affected_assets'))} "
+        f"| **Confidence:** "
+        f"{markdown_cell(field(case, 'confidence'))}%"
+        f"<br>**Evidence / IOCs:** "
+        f"{format_number(case.get('evidence_count'))} / "
+        f"{format_number(case.get('ioc_count'))}"
+        f"<br>**Lead:** "
+        f"{markdown_cell(field(case, 'lead_analyst'))}"
+        f"<br>**Initial Access:** "
+        f"{markdown_cell(field(case, 'initial_access'))} |\n\n"
+        "<details>\n"
+        "<summary><strong>Analyst assessment and recommended "
+        "response</strong></summary>\n\n"
+        f"**Assessment:** "
+        f"{markdown_cell(field(case, 'assessment', 'No assessment available.'))}"
+        "\n\n"
+        f"**Recommended action:** "
+        f"{markdown_cell(field(case, 'recommended_action'))}\n\n"
+        "</details>"
+    )
+
+
+def build_evidence_dashboard_section(
+    case: dict,
+) -> str:
+    """Build the compact evidence dashboard and product grid."""
+
+    case_id = str(
+        field(
+            case,
+            "case_id",
+            "UNKNOWN-CASE",
+        )
+    )
+
+    case_directory = Path("evidence") / case_id
+
+    manifest_path = (
+        case_directory
+        / "evidence_manifest.json"
+    )
+
+    correlations_path = (
+        case_directory
+        / "evidence_correlations.json"
+    )
+
+    chain_of_custody_path = (
+        case_directory
+        / "chain_of_custody.md"
+    )
+
+    forensic_summary_path = (
+        case_directory
+        / "forensic_summary.md"
+    )
+
+    acquisition_summary_path = (
+        case_directory
+        / "acquisition_summary.md"
+    )
+
+    investigation_report_path = Path(
+        "reports/investigation_report.md"
+    )
+
+    bioterror_assessment_path = Path(
+        "reports/bioterror_threat_assessment.md"
+    )
+
+    csharp_json_path = Path(
+        "reports/bioterror_threat_score_csharp.json"
+    )
+
+    csharp_xml_path = Path(
+        "reports/bioterror_threat_score_csharp.xml"
+    )
+
+    investigative_leads_path = Path(
+        "reports/investigative_leads.md"
+    )
+
+    command_brief_path = Path(
+        "operations/command_brief.md"
+    )
+
+    timeline_path = Path(
+        "operations/investigation_timeline.md"
+    )
+
+    evidence_chain_path = Path(
+        "evidence/evidence_chain.md"
+    )
+
+    workbook_xlsx_path = Path(
+        "workbooks/Exposure-Tracking-Matrix.xlsx"
+    )
+
+    workbook_csv_path = WORKBOOK_CSV_PATH
+
+    manifest = load_json(manifest_path)
+    correlation_data = load_json(
+        correlations_path
+    )
+
+    evidence_items = manifest.get(
+        "evidence_items",
+        [],
+    )
+
+    if not isinstance(evidence_items, list):
+        evidence_items = []
+
+    correlations = correlation_data.get(
+        "correlations",
+        [],
+    )
+
+    if not isinstance(correlations, list):
+        correlations = []
+
+    evidence_count = len(evidence_items)
+
+    if evidence_count == 0:
+        evidence_count = safe_int(
+            manifest.get(
+                "evidence_count",
+                case.get("evidence_count"),
+            )
+        )
+
+    correlation_count = len(correlations)
+
+    verified_statuses = {
+        "verified",
+        "validated",
+        "confirmed",
+        "intact",
+    }
+
+    verified_count = sum(
+        1
+        for item in evidence_items
+        if str(
+            item.get(
+                "integrity_status",
+                "",
+            )
+        ).strip().lower()
+        in verified_statuses
+    )
+
+    pending_review_count = sum(
+        1
+        for item in evidence_items
+        if any(
+            term in str(
+                item.get(
+                    "review_status",
+                    "",
+                )
+            ).strip().lower()
+            for term in (
+                "pending",
+                "awaiting",
+                "unreviewed",
+            )
+        )
+    )
+
+    artifact_counts = Counter(
+        str(
+            item.get(
+                "artifact_type",
+                "Unspecified Evidence",
+            )
+        ).strip()
+        or "Unspecified Evidence"
+        for item in evidence_items
+    )
+
+    finding_counts = Counter(
+        str(
+            correlation.get(
+                "finding",
+                "Unspecified Finding",
+            )
+        ).strip()
+        or "Unspecified Finding"
+        for correlation in correlations
+    )
+
+    evidence_rows = "".join(
+        f"| {markdown_cell(name)} | {count} |\n"
+        for name, count in artifact_counts.most_common()
+    )
+
+    if not evidence_rows:
+        evidence_rows = (
+            "| No evidence breakdown available | 0 |\n"
+        )
+
+    finding_rows = "".join(
+        f"| {markdown_cell(name)} | {count} |\n"
+        for name, count in finding_counts.most_common()
+    )
+
+    if not finding_rows:
+        finding_rows = (
+            "| No correlated findings available | 0 |\n"
+        )
+
+    reports = [
+        product_link(
+            "Investigation Report",
+            "reports/investigation_report.md",
+            investigation_report_path,
+        ),
+        product_link(
+            "Bioterror Assessment",
+            "reports/bioterror_threat_assessment.md",
+            bioterror_assessment_path,
+        ),
+        product_link(
+            "C# Threat Score (JSON)",
+            "reports/bioterror_threat_score_csharp.json",
+            csharp_json_path,
+        ),
+        product_link(
+            "C# Threat Score (XML)",
+            "reports/bioterror_threat_score_csharp.xml",
+            csharp_xml_path,
+        ),
+        product_link(
+            "Investigative Leads",
+            "reports/investigative_leads.md",
+            investigative_leads_path,
+        ),
+    ]
+
+    evidence_products = [
+        product_link(
+            "Evidence Chain",
+            "evidence/evidence_chain.md",
+            evidence_chain_path,
+        ),
+        product_link(
+            "Evidence Manifest",
+            f"evidence/{case_id}/evidence_manifest.json",
+            manifest_path,
+        ),
+        product_link(
+            "Evidence Correlations",
+            f"evidence/{case_id}/evidence_correlations.json",
+            correlations_path,
+        ),
+        product_link(
+            "Chain of Custody",
+            f"evidence/{case_id}/chain_of_custody.md",
+            chain_of_custody_path,
+        ),
+        product_link(
+            "Forensic Summary",
+            f"evidence/{case_id}/forensic_summary.md",
+            forensic_summary_path,
+        ),
+        product_link(
+            "Acquisition Summary",
+            f"evidence/{case_id}/acquisition_summary.md",
+            acquisition_summary_path,
+        ),
+    ]
+
+    operations_products = [
+        product_link(
+            "Command Brief",
+            "operations/command_brief.md",
+            command_brief_path,
+        ),
+        product_link(
+            "Investigation Timeline",
+            "operations/investigation_timeline.md",
+            timeline_path,
+        ),
+        product_link(
+            "Exposure Matrix (GitHub CSV Preview)",
+            "workbooks/Exposure-Tracking-Matrix.csv",
+            workbook_csv_path,
+        ),
+        product_link(
+            "Exposure Matrix (Excel Download)",
+            "workbooks/Exposure-Tracking-Matrix.xlsx",
+            workbook_xlsx_path,
+        ),
+    ]
+
+    workbook_rows = load_csv_rows(
+        workbook_csv_path
+    )
+
+    repository_updated = field(
+        manifest,
+        "generated_at",
+        field(
+            case,
+            "date",
+            "Not specified",
+        ),
+    )
+
+    return (
+        "<!-- EVIDENCE_DASHBOARD_START -->\n\n"
+        "# Digital Evidence Record\n\n"
+        f"**Active Case:** {markdown_cell(case_id)}\n\n"
+        "| Evidence Records | Correlations | Integrity Verified "
+        "| Pending Review |\n"
+        "|-----------------:|-------------:|-------------------:"
+        "|---------------:|\n"
+        f"| {format_number(evidence_count)} "
+        f"| {format_number(correlation_count)} "
+        f"| {format_number(verified_count)} "
+        f"| {format_number(pending_review_count)} |\n\n"
+        "## Active Case Intelligence Products\n\n"
+        "| Reports & Assessments | Evidence & Forensics "
+        "| Operations & Data |\n"
+        "|-----------------------|----------------------"
+        "|-------------------|\n"
+        f"| {'<br>'.join(reports)} "
+        f"| {'<br>'.join(evidence_products)} "
+        f"| {'<br>'.join(operations_products)} |\n\n"
+        "<details>\n"
+        "<summary><strong>Evidence breakdown</strong></summary>\n\n"
+        "| Evidence Type | Records |\n"
+        "|---------------|--------:|\n"
+        f"{evidence_rows}\n"
+        "</details>\n\n"
+        "<details>\n"
+        "<summary><strong>Priority investigative findings</strong>"
+        "</summary>\n\n"
+        "| Investigative Finding | Correlations |\n"
+        "|-----------------------|-------------:|\n"
+        f"{finding_rows}\n"
+        "</details>\n\n"
+        "<details>\n"
+        "<summary><strong>Exposure Tracking Matrix preview</strong>"
+        "</summary>\n\n"
+        "[Open the complete GitHub CSV preview]"
+        "(workbooks/Exposure-Tracking-Matrix.csv)"
+        " · "
+        "[Download the formatted Excel workbook]"
+        "(workbooks/Exposure-Tracking-Matrix.xlsx)\n\n"
+        f"{workbook_preview_table(workbook_rows)}\n"
+        "</details>\n\n"
+        f"**Threat Family:** "
+        f"{markdown_cell(field(case, 'threat_family'))}"
+        f" · **Repository Updated:** "
+        f"{markdown_cell(repository_updated)}\n\n"
+        "<!-- EVIDENCE_DASHBOARD_END -->"
+    )
+
+
+def build_supporting_details(
+    history: list[dict],
+    operation: dict,
+) -> str:
+    """Build collapsed supporting sections."""
+
+    metrics = calculate_history_metrics(history)
+
+    operational_table = (
+        "| Metric | Value |\n"
+        "|--------|------:|\n"
+        f"| Total Investigations | {metrics['total']} |\n"
+        f"| Low / Moderate | "
+        f"{metrics['low']} / {metrics['moderate']} |\n"
+        f"| High / Critical | "
+        f"{metrics['high']} / {metrics['critical']} |\n"
+        f"| Closed Cases | {metrics['closed_cases']} |\n"
+        f"| Average Confidence | "
+        f"{metrics['average_confidence']}% |\n"
+        f"| Total Evidence | "
+        f"{format_number(operation.get('evidence_collected'))} |\n"
+        f"| Total Indicators | "
+        f"{format_number(operation.get('ioc_count'))} |\n"
+    )
+
+    laboratories = operation.get(
+        "laboratories_under_review",
+        [],
+    )
+
+    toolkit_table = (
+        "| Utility | Purpose |\n"
+        "|---------|---------|\n"
+        "| BioThreatIntelligence | Correlates laboratory intrusion "
+        "activity with active investigations. |\n"
+        "| GenomeEvidenceAnalyzer | Reviews genomic evidence and "
+        "chain-of-custody metadata. |\n"
+        "| OutbreakCorrelationEngine | Links related incidents into "
+        "a coordinated campaign. |\n"
+        "| IncidentBriefGenerator | Produces command-level "
+        "intelligence briefings. |\n"
+    )
+
+    products = [
+        "Cyber-biothreat case files",
+        "Laboratory intrusion assessments",
+        "Protected facility exposure reports",
+        "Evidence reconstruction logs",
+        "Chain-of-custody documentation",
+        "Threat actor campaign summaries",
+        "Biological research impact assessments",
+        "Cyber-biosecurity intelligence reports",
+        "Bioterror threat assessments",
+        "Investigative leads and intelligence gaps",
+        "Exposure-tracking workbooks and CSV previews",
+        "Executive operational briefings",
+    ]
+
+    return (
+        "# Supporting Case Records\n\n"
+        "<details>\n"
+        "<summary><strong>Operational metrics and recent "
+        "investigations</strong></summary>\n\n"
+        f"{operational_table}\n"
+        "### Recent Investigations\n\n"
+        f"{recent_investigations_table(history)}\n"
+        "</details>\n\n"
+        "<details>\n"
+        "<summary><strong>Laboratories under review</strong>"
+        "</summary>\n\n"
+        f"{format_list(laboratories, 'No laboratories currently under review')}"
+        "\n\n</details>\n\n"
+        "<details>\n"
+        "<summary><strong>BioDefense Intelligence Toolkit "
+        "(C#)</strong></summary>\n\n"
+        "Lightweight utilities representing internal investigative "
+        "applications.\n\n"
+        f"{toolkit_table}\n"
+        "</details>\n\n"
+        "<details>\n"
+        "<summary><strong>Automated intelligence product "
+        "catalog</strong></summary>\n\n"
+        f"{format_list(products)}\n\n"
+        "</details>"
+    )
+
+
+def build_mission_section() -> str:
+    return (
+        "# Investigative Mission\n\n"
+        "Defensive cybersecurity research focused on cyber-enabled "
+        "biosecurity investigations, protected research infrastructure, "
+        "digital evidence management, forensic reconstruction, and "
+        "coordinated incident response."
+    )
+
+
+# -------------------------------------------------
+# Report generation
+# -------------------------------------------------
+
+def build_report(
+    case: dict,
+    operation: dict,
+    history: list[dict],
+) -> str:
+    sections = [
+        build_overview_section(
+            case,
+            operation,
+        ),
+        build_campaign_dashboard(operation),
+        build_active_investigation(case),
+        build_evidence_dashboard_section(case),
+        build_supporting_details(
+            history,
+            operation,
+        ),
+        build_mission_section(),
+    ]
+
+    body = "\n\n---\n\n".join(sections)
+
+    return (
+        f"{REPORT_START}\n\n"
+        f"{body}\n\n"
+        f"{REPORT_END}"
+    )
+
+
+def update_readme(report: str) -> None:
+    """Replace only the generated README block."""
+
+    if README_PATH.exists():
+        existing = README_PATH.read_text(
+            encoding="utf-8",
+        )
+    else:
+        existing = ""
+
+    if (
+        REPORT_START in existing
+        and REPORT_END in existing
+    ):
+        before = existing.split(
+            REPORT_START,
+            1,
+        )[0]
+
+        after = existing.split(
+            REPORT_END,
+            1,
+        )[1]
+
+        new_content = before + report + after
+
+    else:
+        separator = (
+            "\n\n"
+            if existing
+            and not existing.endswith("\n\n")
+            else ""
+        )
+
+        new_content = (
+            existing
+            + separator
+            + report
+            + "\n"
+        )
+
+    README_PATH.write_text(
+        new_content,
+        encoding="utf-8",
+    )
+
+
+def main() -> None:
+    case = load_json(CURRENT_CASE_PATH)
+    operation = load_json(
+        ACTIVE_OPERATION_PATH
+    )
+    history = load_csv_rows(HISTORY_PATH)
+
+    report = build_report(
+        case,
+        operation,
+        history,
+    )
+
+    update_readme(report)
+
+    print(
+        "Compact README updated: "
+        f"{len(history)} investigations, "
+        f"{safe_int(operation.get('confirmed_intrusions'))} "
+        "confirmed intrusions."
+    )
+
+
+if __name__ == "__main__":
+    main()
