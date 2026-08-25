@@ -2110,7 +2110,15 @@ def create_threat_guide_v6_plate(
         y = global_y - panel_y
         color = guide_colors[level]
         draw.text((884 - panel_x, y), level, fill=color, font=dashboard_font(10, True))
-        draw.text((932 - panel_x, y), "=", fill=color, font=dashboard_font(10, True))
+        # V12: fixed raster strokes avoid platform-dependent font rounding at
+        # this tiny size.  The two five-pixel bars retain the established
+        # vertical center while making the threshold separator more legible.
+        for stroke_offset in (3, 5):
+            draw.line(
+                ((932 - panel_x, y + stroke_offset), (936 - panel_x, y + stroke_offset)),
+                fill=color,
+                width=1,
+            )
         draw.text((950 - panel_x, y), value, fill=range_color, font=dashboard_font(11))
     return np.asarray(image, dtype=np.uint8)
 
@@ -3326,6 +3334,75 @@ def _palette_image(data: Sequence[int]) -> Image.Image:
     return image
 
 
+# V11: These are existing V10 source-frame semantic cores and their existing
+# frozen output-palette slots. Pillow's RGB-to-fixed-palette lookup is allowed
+# for ordinary pixels, but must not choose a platform-specific neighboring slot
+# for these contract colors. This runs only after quantization and never
+# changes the RGB source frame or the frozen palette entries.
+FROZEN_SEMANTIC_PALETTE_LOCKS = (
+    ("threshold_critical", (186, 38, 25), 49, (186, 38, 25), (850, 721, 950, 740)),
+    ("threshold_high", (205, 98, 41), 113, (205, 98, 41), (850, 742, 950, 762)),
+    ("threshold_medium", (208, 157, 58), 131, (208, 157, 58), (850, 764, 950, 784)),
+    ("threshold_low", (68, 153, 66), 144, (68, 153, 66), (850, 786, 950, 806)),
+    ("live_low_score", (68, 153, 66), 144, (68, 153, 66), (850, 615, 940, 682)),
+    ("workflow_completed", (45, 116, 196), 167, (48, 122, 207), (423, 372, 1259, 546)),
+    ("workflow_current", (221, 30, 26), 17, (221, 34, 27), (423, 372, 1259, 546)),
+    ("workflow_pending", (70, 70, 70), 15, (64, 71, 74), (423, 372, 1259, 546)),
+    ("workflow_current_arrow", (230, 39, 33), 168, (226, 31, 27), (423, 372, 1259, 546)),
+)
+
+# V12: the guide's equals glyph is a fixed two-stroke raster mark.  Lock only
+# its exact semantic cores after quantization; the narrow mask leaves the
+# one-pixel middle gap and neighboring background untouched on every platform.
+FROZEN_THRESHOLD_EQUALS_PALETTE_LOCKS = (
+    ("threshold_critical_equals", 49, (186, 38, 25), (932, 727, 937, 730), "critical"),
+    ("threshold_high_equals", 113, (205, 98, 41), (932, 749, 937, 752), "high"),
+    ("threshold_medium_equals", 131, (208, 157, 58), (932, 771, 937, 774), "medium"),
+    ("threshold_low_equals", 144, (68, 153, 66), (932, 793, 937, 796), "low"),
+)
+
+
+def lock_frozen_semantic_palette_indices(
+    frame: np.ndarray,
+    indices: np.ndarray,
+    output_palette: Image.Image,
+) -> None:
+    """Restore exact approved semantic indices after Pillow quantization."""
+
+    palette_data = _palette_data(output_palette)
+    for name, source_rgb, palette_slot, expected_rgb, bounds in FROZEN_SEMANTIC_PALETTE_LOCKS:
+        palette_rgb = tuple(palette_data[palette_slot * 3:palette_slot * 3 + 3])
+        if palette_rgb != expected_rgb:
+            raise RendererContractError(
+                f"Frozen V11 palette slot drifted for {name}: "
+                f"expected {expected_rgb}, found {palette_rgb}."
+            )
+        x1, y1, x2, y2 = bounds
+        source_cores = np.all(
+            frame[y1:y2, x1:x2] == np.asarray(source_rgb, dtype=np.uint8),
+            axis=2,
+        )
+        if np.any(source_cores):
+            region_indices = indices[y1:y2, x1:x2]
+            region_indices[source_cores] = palette_slot
+            indices[y1:y2, x1:x2] = region_indices
+
+    for name, palette_slot, expected_rgb, bounds, level in FROZEN_THRESHOLD_EQUALS_PALETTE_LOCKS:
+        palette_rgb = tuple(palette_data[palette_slot * 3:palette_slot * 3 + 3])
+        if palette_rgb != expected_rgb:
+            raise RendererContractError(
+                f"Frozen V11 palette slot drifted for {name}: "
+                f"expected {expected_rgb}, found {palette_rgb}."
+            )
+        x1, y1, x2, y2 = bounds
+        source = frame[y1:y2, x1:x2].astype(np.int16)
+        glyph = np.all(source == np.asarray(expected_rgb, dtype=np.int16), axis=2)
+        if np.any(glyph):
+            region_indices = indices[y1:y2, x1:x2]
+            region_indices[glyph] = palette_slot
+            indices[y1:y2, x1:x2] = region_indices
+
+
 def _unused_palette_slots(frames: Sequence[np.ndarray], palette: Image.Image) -> list[int]:
     """Find slots absent from the unmodified V2 source-frame encoding."""
 
@@ -3964,6 +4041,7 @@ def encode_gif_frame(
             current = indices[y1:y2, x1:x2]
             current[region.mask] = remapped[region.mask]
             indices[y1:y2, x1:x2] = current
+    lock_frozen_semantic_palette_indices(frame, indices, plan.output_palette)
     encoded = Image.fromarray(indices, "P")
     encoded.putpalette(_palette_data(plan.output_palette))
     return encoded
@@ -4003,7 +4081,7 @@ def save_gif(
         # explicit argument Pillow may write per-frame local tables despite
         # each indexed image already carrying the same palette, which can make
         # full-canvas later frames decode with black/missing static regions.
-        palette=plan.output_palette,
+        palette=bytes(_palette_data(plan.output_palette)),
         duration=FRAME_DURATION_MS,
         loop=0,
         disposal=2,
