@@ -1676,9 +1676,12 @@ CASE_OVERVIEW_V6_LOCAL_BOUNDS = (
     (19, 60, 86, 68), (19, 68, 86, 84), (19, 84, 86, 94),
     (19, 130, 86, 138), (19, 138, 86, 154), (19, 154, 86, 164),
     (19, 200, 86, 208), (19, 208, 86, 220),
-    (340, 60, 395, 68), (340, 68, 395, 84), (340, 84, 395, 94),
-    (340, 130, 395, 138), (340, 138, 395, 154), (340, 154, 395, 164),
-    (340, 200, 403, 208), (340, 208, 403, 222), (340, 222, 403, 235),
+    # V10 corrects only the true, source-local title lanes needed by Pillow's
+    # Ubuntu Aileron fallback.  Their added pixels remain clear of frozen
+    # components/routes and preserve the existing full title wording.
+    (340, 60, 397, 68), (340, 68, 395, 84), (340, 84, 395, 94),
+    (340, 130, 397, 138), (340, 138, 395, 154), (340, 154, 395, 164),
+    (340, 200, 407, 208), (340, 208, 403, 222), (340, 222, 403, 235),
     (186, 108, 266, 119),
     (186, 125, 274, 137), (186, 138, 274, 149),
     (186, 149, 274, 160), (186, 159, 274, 169),
@@ -1708,8 +1711,35 @@ CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS = (
     (64, 211, 111, 225),
     (340, 84, 395, 94),
     (340, 154, 395, 164),
-    (340, 222, 403, 235),
+    # One additional left-side pixel supplies a genuine 2px Aileron margin
+    # while retaining the fixed 2px clearance before the datastore cylinder.
+    (339, 222, 403, 235),
 )
+
+# V10 keeps the legacy cleanup support for the original Access Logs descriptor
+# in place, but renders CREDENTIAL CHAIN below the fixed key icon.  This makes
+# its real 92px lower-card lane available without moving the card, key, route,
+# or border; the bottom row remains clear of the frozen card frame.
+CASE_OVERVIEW_V10_CREDENTIAL_RENDER_BOUNDS = (19, 158, 111, 166)
+
+
+def case_overview_v8_subtitle_render_bounds(
+    index: int,
+    cleanup_bounds: tuple[int, int, int, int],
+) -> tuple[int, int, int, int]:
+    """Return the visual V8 subtitle lane without widening unrelated text."""
+
+    if index == 1:
+        return CASE_OVERVIEW_V10_CREDENTIAL_RENDER_BOUNDS
+    return cleanup_bounds
+
+
+def case_overview_v8_subtitle_overlay_bounds() -> tuple[tuple[int, int, int, int], ...]:
+    """Return only the source-derived V8 regions restored after route motion."""
+
+    bounds = list(CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS)
+    bounds.append(CASE_OVERVIEW_V10_CREDENTIAL_RENDER_BOUNDS)
+    return tuple(bounds)
 
 # These are the exact static Proposal-B descriptor strings/positions drawn
 # into the approved #7 raster.  V8 removes their measured glyph support from
@@ -1762,7 +1792,11 @@ def case_overview_v8_subtitle_entries() -> list[TextEntry]:
             CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[0], "SEALED / CHAIN", muted
         ),
         _largest_fitting_case_overview_subtitle(
-            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[1], "CREDENTIAL CHAIN", muted
+            case_overview_v8_subtitle_render_bounds(
+                1, CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[1]
+            ),
+            "CREDENTIAL CHAIN",
+            muted,
         ),
         _largest_fitting_case_overview_subtitle(
             CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[2], "LIVE TRACE", muted
@@ -1886,7 +1920,7 @@ def apply_case_overview_v8_subtitle_overlay(
     """Apply the V8 subtitle-only plate after all frozen #7 route rendering."""
 
     result = panel.copy()
-    for x1, y1, x2, y2 in CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS:
+    for x1, y1, x2, y2 in case_overview_v8_subtitle_overlay_bounds():
         result[y1:y2, x1:x2] = context.s07_v8_text_plate[y1:y2, x1:x2]
     return result
 
@@ -1915,11 +1949,11 @@ def case_overview_v7_text_entries(renderer_state: dict[str, Any]) -> list[TextEn
         TextEntry((19, 200, 86, 208), (20, 200), "TIMELINE", title, 7, True, 64),
         TextEntry((19, 208, 86, 220), (20, 210), f"{feed_count} EVENTS", (244, 78, 57), 9, True, 64),
         # Outbound modules retain the approved semantic accent colors.
-        TextEntry((340, 60, 395, 68), (341, 60), "INTELLIGENCE", title, 7, True, 52),
+        TextEntry((340, 60, 397, 68), (341, 60), "INTELLIGENCE", title, 7, True, 56),
         TextEntry((340, 68, 395, 84), (341, 70), f"{max(1, renderer_state['threat_history_count'])} REPORT", (93, 177, 222), 9, True, 52),
-        TextEntry((340, 130, 395, 138), (341, 130), "CORRELATION", title, 7, True, 52),
+        TextEntry((340, 130, 397, 138), (341, 130), "CORRELATION", title, 7, True, 56),
         TextEntry((340, 138, 395, 154), (341, 140), f"{correlation_count} LINKS", (246, 87, 63), 9, True, 52),
-        TextEntry((340, 200, 403, 208), (341, 200), "CASE DATA STORE", title, 7, True, 61),
+        TextEntry((340, 200, 407, 208), (341, 200), "CASE DATA STORE", title, 7, True, 66),
         TextEntry((340, 208, 403, 222), (341, 210), f"REV {shared['state_revision']}", (108, 227, 151), 9, True, 61),
         # Central hub: larger live-case text, while its red box, rails, and
         # verification flag remain frozen source geometry.
@@ -2473,19 +2507,21 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
     v8_cleanup_masks = case_overview_v8_subtitle_cleanup_masks(
         case_overview_source.shape[:2]
     )
-    for (name, _value, _position), local_bounds, entry in zip(
+    for index, ((name, _value, _position), cleanup_bounds, entry) in enumerate(zip(
         CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
         CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
         case_overview_v8_subtitle_entries(),
-    ):
-        x1, y1, x2, y2 = local_bounds
-        s07_dynamic_text_lanes[y1:y2, x1:x2] = True
-        if np.any(s07_authorized[y1:y2, x1:x2]):
-            raise RendererContractError(
-                "V8 Case Overview subtitle lane intersects frozen #7 motion geometry."
-            )
+    )):
+        render_bounds = case_overview_v8_subtitle_render_bounds(index, cleanup_bounds)
+        for local_bounds in (cleanup_bounds, render_bounds):
+            x1, y1, x2, y2 = local_bounds
+            s07_dynamic_text_lanes[y1:y2, x1:x2] = True
+            if np.any(s07_authorized[y1:y2, x1:x2]):
+                raise RendererContractError(
+                    "V8 Case Overview subtitle lane intersects frozen #7 motion geometry."
+                )
         fresh_support = _case_overview_text_support_mask(
-            case_overview_source.shape[:2], entry, local_bounds
+            case_overview_source.shape[:2], entry, render_bounds
         )
         if np.any((v8_cleanup_masks[name] | fresh_support) & s07_frozen_geometry):
             raise RendererContractError(
@@ -3826,17 +3862,17 @@ def build_gif_palette_plan(context: RenderContext, frames: Sequence[np.ndarray])
         PaletteProtectionRegion(name, bounds, (), (), direct_output_quantization=True)
         for name, bounds in v7_bounds
     )
-    # V8 appends six direct regions only.  The fixed V5 palette, all V7
-    # regions, and full-canvas GIF assembly remain byte-for-byte unchanged.
+    # V8/V10 append only the measured Case Overview subtitle regions.  The
+    # fixed V5 palette and full-canvas GIF assembly remain unchanged.
     regions.extend(
         PaletteProtectionRegion(
-            f"v8_case_overview_subtitle_{index}",
+            f"v10_case_overview_subtitle_{index}",
             (s07_x1 + x1, s07_y1 + y1, s07_x1 + x2, s07_y1 + y2),
             (),
             (),
             direct_output_quantization=True,
         )
-        for index, (x1, y1, x2, y2) in enumerate(CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS)
+        for index, (x1, y1, x2, y2) in enumerate(case_overview_v8_subtitle_overlay_bounds())
     )
     # V9 is deliberately narrower than the full Evidence Package viewport:
     # only the source-derived connected-component mask for the front-folder
