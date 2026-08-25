@@ -6,7 +6,7 @@
 
 # BioDefense-Intelligence-Division
 
-> **CONTROLLED TRAINING RECORD** // Fictional cyber-biothreat investigation data
+> **CONTROLLED TRAINING RECORD** // Cyber-biothreat investigation data
 
 ## Case File Access
 
