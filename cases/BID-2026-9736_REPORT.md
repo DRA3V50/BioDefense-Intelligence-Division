@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| PowerShell | Encoded administrative command execution detected |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-VMware ESXi 9
+Hardened Research Appliance OS
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 ROUTINE
