@@ -16,6 +16,7 @@ are intentionally separate from the production GIF until Subsystem #10.
 from __future__ import annotations
 
 import argparse
+import base64
 import copy
 import hashlib
 import importlib.util
@@ -25,7 +26,7 @@ import shutil
 import sys
 import tempfile
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
@@ -67,6 +68,37 @@ FRAME_COUNT = 120
 FRAME_DURATION_MS = 50
 KEYFRAME_INDICES = (0, 20, 40, 60, 80, 100, 119)
 MOTION_AUDIT_INDICES = tuple(range(0, FRAME_COUNT, 10))
+
+# V7 review-only display lanes.  These are deliberately narrower than their
+# containing panels and do not alter frozen geometry, state, or subsystem code.
+TOP_HEADER_V7_GROUP_BOUNDS = (1368, 8, 1720, 34)
+TOP_HEADER_V7_RIGHT_EDGE = 1718
+TOP_HEADER_V7_BASELINE_Y = 14
+TOP_HEADER_V7_PROBE_SCORES = (10, 21, 50, 71, 88)
+SYSTEM_STATUS_V7_LIST_BOUNDS = (470, 604, 815, 710)
+SYSTEM_STATUS_V7_DIVIDER_BANDS = (
+    (471, 625, 813, 626),
+    (471, 646, 813, 648),
+    (471, 668, 813, 669),
+    (471, 689, 813, 691),
+)
+SYSTEM_STATUS_V7_DIAGNOSTICS_BOUNDS = (475, 714, 812, 716)
+THREAT_SCORE_SUFFIX_V7_CLEAN_BOUNDS = (850, 615, 940, 657)
+THREAT_SCORE_SUFFIX_V7_COMPARE_BOUNDS = (890, 628, 942, 660)
+SEVERITY_V7_VALUE_BOUNDS = (
+    (234, 397, 400, 416),
+    (603, 338, 812, 360),
+    (1334, 684, 1710, 726),
+)
+
+# V9 is limited to the static front-folder tab inside the approved Evidence
+# Package artwork.  The envelope is deliberately larger than the detected
+# component only so the source-derived connected-component mask can preserve
+# the exact textured tab shape instead of repainting a rectangle.
+V9_EVIDENCE_FRONT_ACCENT_BOUNDS_GLOBAL = (1655, 92, 1680, 119)
+V9_EVIDENCE_FRONT_ACCENT_BOUNDS_LOCAL = (387, 52, 412, 79)
+V9_EVIDENCE_FRONT_ACCENT_EXPECTED_PIXELS = 256
+V9_EVIDENCE_FRONT_ACCENT_SCALE = (0.64, 0.45, 0.43)
 
 EXPECTED_APPROVED_HASHES = {
     POPULATED_MASTER: "90a223d08555853fd58c7bc7c0c30eadecfa7df3b5320db23e373462735312c4",
@@ -189,12 +221,12 @@ def text_timestamp(value: object) -> str:
     return "UNAVAILABLE" if instant is None else instant.strftime("%Y-%m-%d %H:%M:%S %Z")
 
 
-def footer_timestamp(value: object) -> str:
+def footer_timestamp(value: object, *, separator: str = ":") -> str:
     instant = presentation_instant(value)
     if instant is None:
         return "UNAVAILABLE"
     hour = instant.strftime("%I").lstrip("0") or "0"
-    return f"{instant:%Y-%m-%d} {hour}{instant:%M %p %Z}"
+    return f"{instant:%Y-%m-%d} {hour}{separator}{instant:%M %p %Z}"
 
 
 def event_timestamp(value: object) -> str:
@@ -414,6 +446,161 @@ class TextEntry:
     preserve_horizontal_rules: bool = True
 
 
+def measured_text_bbox(value: str, size: int, bold: bool = False) -> tuple[int, int, int, int]:
+    """Return Pillow's actual glyph bounds for one dashboard string."""
+
+    image = Image.new("RGB", (1, 1))
+    return ImageDraw.Draw(image).textbbox((0, 0), value, font=dashboard_font(size, bold))
+
+
+def measured_text_advance(value: str, size: int, bold: bool = False) -> int:
+    image = Image.new("RGB", (1, 1))
+    width = ImageDraw.Draw(image).textlength(value, font=dashboard_font(size, bold))
+    return int(math.ceil(width))
+
+
+def case_level_from_score(score: int) -> int:
+    """Display-only level fallback derived from the canonical C# score."""
+
+    return max(1, min(10, int(math.ceil(int(score) / 10))))
+
+
+def top_header_layout(case_id: str, score: int) -> list[dict[str, Any]]:
+    """Measure and right-align the complete V7 header group on one baseline."""
+
+    red = (235, 42, 35)
+    components = (
+        (f"LEVEL {case_level_from_score(score)}", red, 11, True),
+        ("•", red, 11, True),
+        ("CASE ACCESS", red, 11, True),
+        (f"CASE: {case_id}", red, 11, True),
+    )
+    gaps = (12, 12, 12)
+    widths = [measured_text_advance(value, size, bold) for value, _color, size, bold in components]
+    total = sum(widths) + sum(gaps)
+    x = TOP_HEADER_V7_RIGHT_EDGE - total
+    if x < TOP_HEADER_V7_GROUP_BOUNDS[0]:
+        raise RendererContractError("Measured V7 top header exceeds its approved right-side lane.")
+    layout: list[dict[str, Any]] = []
+    for index, ((value, color, size, bold), width) in enumerate(zip(components, widths)):
+        layout.append(
+            {
+                "value": value,
+                "color": color,
+                "size": size,
+                "bold": bold,
+                "position": (x, TOP_HEADER_V7_BASELINE_Y),
+                "width": width,
+                "bbox": ImageDraw.Draw(Image.new("RGB", (1, 1))).textbbox(
+                    (x, TOP_HEADER_V7_BASELINE_Y), value, font=dashboard_font(size, bold)
+                ),
+            }
+        )
+        x += width + (gaps[index] if index < len(gaps) else 0)
+    return layout
+
+
+def top_header_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    shared = renderer_state["dashboard"]["shared"]
+    layout = top_header_layout(str(shared["case_id"]), int(renderer_state["canonical_threat_score"]))
+    return [
+        TextEntry(
+            TOP_HEADER_V7_GROUP_BOUNDS,
+            item["position"],
+            item["value"],
+            item["color"],
+            item["size"],
+            item["bold"],
+            item["width"] + 1,
+            clear_bounds=TOP_HEADER_V7_GROUP_BOUNDS,
+            clean_source="source",
+            cleanup_dilate=2,
+            inpaint_radius=2,
+            preserve_horizontal_rules=False,
+        )
+        for item in layout
+    ]
+
+
+def severity_presentation_level(value: object) -> str:
+    """Map existing severity vocabulary to the approved four display colors."""
+
+    normalized = str(value or "").strip().upper()
+    if normalized == "CRITICAL":
+        return "CRITICAL"
+    if normalized == "HIGH":
+        return "HIGH"
+    if normalized in {"MEDIUM", "MODERATE", "ELEVATED", "GUARDED"}:
+        return "MEDIUM"
+    return "LOW"
+
+
+def semantic_severity_color(raw: np.ndarray, value: object) -> tuple[int, int, int]:
+    return threshold_guide_colors(raw)[severity_presentation_level(value)]
+
+
+def inline_colored_text_entries(
+    bounds: tuple[int, int, int, int],
+    position: tuple[int, int],
+    parts: Sequence[tuple[str, tuple[int, int, int]]],
+    *,
+    size: int,
+    bold: bool,
+    max_width: int,
+    clean_source: str = "clear",
+    cleanup_dilate: int = 1,
+    inpaint_radius: int = 2,
+    preserve_horizontal_rules: bool = True,
+    line_spacing: int = 0,
+) -> list[TextEntry]:
+    """Build one measured, semantically colored value line within a shared lane."""
+
+    x, y = position
+    entries: list[TextEntry] = []
+    for value, color in parts:
+        entries.append(
+            TextEntry(
+                bounds,
+                (x, y),
+                value,
+                color,
+                size,
+                bold,
+                max_width,
+                clear_bounds=bounds,
+                clean_source=clean_source,
+                cleanup_dilate=cleanup_dilate,
+                inpaint_radius=inpaint_radius,
+                preserve_horizontal_rules=preserve_horizontal_rules,
+                line_spacing=line_spacing,
+            )
+        )
+        x += measured_text_advance(value, size, bold)
+    return entries
+
+
+def centered_text_entry(
+    bounds: tuple[int, int, int, int],
+    value: str,
+    color: tuple[int, int, int],
+    size: int,
+    bold: bool = False,
+) -> TextEntry:
+    """Center a short descriptor using actual Pillow glyph measurements."""
+
+    x1, y1, x2, y2 = bounds
+    left, top, right, bottom = measured_text_bbox(value, size, bold)
+    width, height = right - left, bottom - top
+    x = x1 + ((x2 - x1 - width) // 2) - left
+    y = y1 + ((y2 - y1 - height) // 2) - top
+    actual = ImageDraw.Draw(Image.new("RGB", (1, 1))).textbbox(
+        (x, y), value, font=dashboard_font(size, bold)
+    )
+    if actual[0] < x1 or actual[1] < y1 or actual[2] > x2 or actual[3] > y2:
+        raise RendererContractError(f"Measured centered text does not fit its V7 lane: {value!r}")
+    return TextEntry(bounds, (x, y), value, color, size, bold, x2 - x1)
+
+
 def foreground_mask(region: np.ndarray, minimum_brightness: int = 5) -> np.ndarray:
     values = region.astype(np.int16)
     maximum = np.max(values, axis=2)
@@ -447,6 +634,93 @@ def fit_text(draw: ImageDraw.ImageDraw, value: str, font: ImageFont.ImageFont, w
 
 def text_lane(entry: TextEntry) -> tuple[int, int, int, int]:
     return entry.clear_bounds or entry.bounds
+
+
+def legacy_v2_palette_entries(entries: Sequence[TextEntry]) -> list[TextEntry]:
+    """Reconstruct only the prior V2 cleanup lanes for palette compatibility.
+
+    V3 uses larger source-cleanup lanes in four measured review ROIs.  The
+    original fixed global GIF palette must still be built from the former plate
+    so a tiny clean-plate correction cannot perturb decoded pixels elsewhere.
+    This helper is palette-only; live V3 frames always use the corrected lanes.
+    """
+
+    legacy: list[TextEntry] = []
+    for entry in entries:
+        if entry.bounds in CENTER_METADATA_ENTRY_BOUNDS:
+            legacy.append(replace(entry, clear_bounds=None))
+        elif entry.bounds in THREAT_SUMMARY_ENTRY_BOUNDS:
+            legacy.append(
+                replace(
+                    entry,
+                    clear_bounds=None,
+                    cleanup_dilate=1,
+                    inpaint_radius=2,
+                )
+            )
+        elif entry.bounds == LEFT_LEAD_ANALYST_ENTRY_BOUNDS:
+            legacy.append(
+                replace(
+                    entry,
+                    clear_bounds=None,
+                    cleanup_dilate=1,
+                    inpaint_radius=2,
+                    preserve_horizontal_rules=True,
+                )
+            )
+        elif entry.bounds == (890, 631, 924, 654):
+            # Palette sampling must retain the exact V5 suffix lane.  The
+            # visible V6 suffix is deliberately larger and higher, but it
+            # must not perturb the fixed global palette used everywhere else.
+            legacy.append(
+                replace(
+                    entry,
+                    bounds=(892, 636, 940, 657),
+                    position=(894, 640),
+                    size=11,
+                    bold=False,
+                    max_width=43,
+                    clear_bounds=(892, 636, 940, 657),
+                    clean_source="clear",
+                    cleanup_dilate=1,
+                    inpaint_radius=2,
+                    preserve_horizontal_rules=True,
+                )
+            )
+        elif entry.bounds in FEED_ALL_ENTRY_BOUNDS:
+            # V6 cleans every feed row from a source-derived lane so the
+            # obsolete list dividers cannot survive beneath live values.  The
+            # fixed GIF palette, however, is sampled from the unchanged V5
+            # entry geometry to avoid shifting unrelated decoded pixels.
+            legacy.append(
+                replace(
+                    entry,
+                    clear_bounds=None,
+                    clean_source="clear",
+                    cleanup_dilate=1,
+                    inpaint_radius=2,
+                    # The V5 palette sample retained every feed divider,
+                    # including the severity-column rule.  V6 still removes
+                    # those rules in its emitted source frames; this applies
+                    # only to the palette-compatible reconstruction.
+                    preserve_horizontal_rules=True,
+                )
+            )
+        else:
+            legacy.append(entry)
+    return legacy
+
+
+def palette_compatibility_entries(entries: Sequence[TextEntry]) -> list[TextEntry]:
+    """Return only V3/V4 entries needing palette-only baseline restoration."""
+
+    changed_bounds = (
+        set(CENTER_METADATA_ENTRY_BOUNDS)
+        | set(THREAT_SUMMARY_ENTRY_BOUNDS)
+        | {LEFT_LEAD_ANALYST_ENTRY_BOUNDS, FOOTER_TIMESTAMP_ENTRY_BOUNDS}
+        | set(FEED_ALL_ENTRY_BOUNDS)
+    )
+    return [entry for entry in entries if entry.bounds in changed_bounds]
 
 
 def clean_text_entries(
@@ -780,6 +1054,7 @@ def compact_case_classification(value: object) -> str:
     # not arbitrary clipping.  They retain the investigation type while fitting
     # the approved single-line card field.
     replacements = {
+        "LABORATORY SECURITY BREACH INVESTIGATION": "LAB SECURITY BREACH",
         "SUPPLY CHAIN SECURITY INVESTIGATION": "SUPPLY CHAIN INVESTIGATION",
     }
     return replacements.get(normalized.upper(), normalized)
@@ -799,6 +1074,41 @@ THRESHOLD_GUIDE_SAMPLES = {
     "MEDIUM": (858, 774),
     "LOW": (858, 795),
 }
+
+# Tight, source-derived review regions.  They deliberately exclude labels,
+# borders, the Threat Summary bullet strip, and every neighboring panel.
+CENTER_METADATA_ARTIFACT_BOUNDS = (
+    (603, 219, 812, 225),
+    (603, 256, 812, 265),
+)
+THREAT_SUMMARY_ARTIFACT_BOUNDS = (1017, 722, 1271, 804)
+THRESHOLD_GUIDE_PALETTE_BOUNDS = (850, 720, 1002, 807)
+CENTER_METADATA_ENTRY_BOUNDS = (
+    (603, 185, 812, 221),
+    (603, 225, 812, 258),
+)
+LEFT_LEAD_ANALYST_ENTRY_BOUNDS = (234, 424, 400, 443)
+LEFT_LEAD_ANALYST_CLEAN_BOUNDS = (234, 424, 400, 451)
+FEED_ROW_Y_VALUES = (590, 607, 624, 641, 658, 675)
+FEED_TIMESTAMP_ENTRY_BOUNDS = tuple((24, y - 2, 65, y + 13) for y in FEED_ROW_Y_VALUES)
+FEED_MESSAGE_ENTRY_BOUNDS = tuple((72, y - 2, 373, y + 13) for y in FEED_ROW_Y_VALUES)
+FEED_SEVERITY_ENTRY_BOUNDS = tuple((379, y - 2, 418, y + 13) for y in FEED_ROW_Y_VALUES)
+FEED_ALL_ENTRY_BOUNDS = (
+    FEED_TIMESTAMP_ENTRY_BOUNDS + FEED_MESSAGE_ENTRY_BOUNDS + FEED_SEVERITY_ENTRY_BOUNDS
+)
+FEED_V6_CLEAN_LANES = tuple((22, y - 3, 430, y + 15) for y in FEED_ROW_Y_VALUES)
+THREAT_GUIDE_V6_ROWS = (
+    ("CRITICAL", 724, "80+"),
+    ("HIGH", 746, "60-79"),
+    ("MEDIUM", 768, "30-59"),
+    ("LOW", 790, "0-29"),
+)
+THREAT_GUIDE_V6_CLEAR_BOUNDS = tuple((882, y - 2, 1002, y + 15) for _level, y, _range in THREAT_GUIDE_V6_ROWS)
+FOOTER_TIMESTAMP_ENTRY_BOUNDS = (1515, 851, 1695, 874)
+THREAT_SUMMARY_ENTRY_BOUNDS = tuple(
+    (1017, y - 2, 1271, y + 12)
+    for y in (724, 741, 758, 775, 792)
+)
 
 
 def classification_for_score(score: int) -> str:
@@ -821,7 +1131,7 @@ def threshold_guide_colors(raw: np.ndarray) -> dict[str, tuple[int, int, int]]:
     return colors
 
 
-def static_text_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+def static_text_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> list[TextEntry]:
     shared = renderer_state["dashboard"]["shared"]
     display = renderer_state["display"]
     system = renderer_state["dashboard"]["system_status"]
@@ -830,28 +1140,38 @@ def static_text_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
     footer_updated = footer_timestamp(shared["updated_at"])
     evidence_count = int(shared["evidence_count"])
     integr = renderer_state["integration_count"]
-    score = renderer_state["canonical_threat_score"]
-    canonical = renderer_state["dashboard"]["threat_monitor"]["threat"]["canonical_classification"]
     system_health = _system_health(system)
     red = (235, 42, 35)
     white = (203, 198, 195)
     gray = (166, 161, 158)
-    blue = (61, 147, 222)
     stage = human_stage(shared["current_stage"])
-    entries = [
-        TextEntry((1548, 9, 1720, 32), (1552, 14), f"CASE: {shared['case_id']}", red, 11, True, 166),
+    severity = str(shared["severity"])
+    severity_color = semantic_severity_color(raw, severity)
+    entries = top_header_entries(renderer_state) + [
         TextEntry((234, 315, 400, 334), (236, 319), str(shared["case_id"]), white, 14, False, 158),
         TextEntry((234, 342, 400, 361), (236, 346), str(shared["campaign_id"]), white, 14, False, 158),
         TextEntry((234, 370, 400, 389), (236, 374), str(shared["lifecycle_status"]), red, 14, True, 158),
-        TextEntry((234, 397, 400, 416), (236, 401), f"{shared['severity']} / {shared['priority']}", white, 13, False, 158),
-        TextEntry((234, 424, 400, 443), (236, 428), str(shared["lead_analyst"]), white, 12, False, 158),
+        TextEntry(
+            LEFT_LEAD_ANALYST_ENTRY_BOUNDS,
+            (236, 428),
+            str(shared["lead_analyst"]),
+            white,
+            12,
+            False,
+            158,
+            clear_bounds=LEFT_LEAD_ANALYST_CLEAN_BOUNDS,
+            cleanup_dilate=2,
+            inpaint_radius=3,
+        ),
         TextEntry((234, 451, 400, 470), (236, 455), updated, gray, 11, False, 158),
         TextEntry((234, 505, 400, 524), (236, 509), f"{system_health:.1f}%", white, 13, False, 158),
-        TextEntry((603, 185, 812, 221), (604, 189), compact_case_classification(display.get("classification")), white, 13, False, 205, cleanup_dilate=2, inpaint_radius=3),
-        TextEntry((603, 225, 812, 258), (604, 229), compact_threat_family(display.get("threat_family")), white, 13, False, 205, cleanup_dilate=2, inpaint_radius=3),
+        # The visible field bounds remain frozen; the two clean lanes extend
+        # only through the measured antialias tails of the source preview
+        # glyphs so stale pixels cannot survive below live metadata.
+        TextEntry((603, 185, 812, 221), (604, 189), compact_case_classification(display.get("classification")), white, 13, False, 205, clear_bounds=(603, 185, 812, 225), cleanup_dilate=2, inpaint_radius=3),
+        TextEntry((603, 225, 812, 258), (604, 229), compact_threat_family(display.get("threat_family")), white, 13, False, 205, clear_bounds=(603, 225, 812, 265), cleanup_dilate=2, inpaint_radius=3),
         TextEntry((603, 265, 812, 286), (604, 269), stage, white, 13, False, 205),
         TextEntry((603, 302, 812, 322), (604, 306), str(shared["lifecycle_status"]), red, 13, True, 205),
-        TextEntry((603, 338, 812, 360), (604, 342), str(shared["severity"]), white, 13, False, 205),
         TextEntry((1011, 185, 1227, 207), (1012, 189), str(shared["priority"]), red, 13, True, 210),
         TextEntry((1011, 224, 1227, 246), (1012, 228), str(shared["lead_analyst"]), white, 13, False, 210),
         TextEntry((1011, 263, 1227, 285), (1012, 267), f"{evidence_count} RECORDS", white, 13, False, 210),
@@ -875,8 +1195,28 @@ def static_text_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
         # The right outer edge is static approved raster at x=1698.  The
         # timestamp lane deliberately ends before it and the exact border is
         # restored again as the final compositing operation.
-        TextEntry((1515, 851, 1695, 874), (1517, 855), footer_updated, gray, 11, False, 176),
+        TextEntry(FOOTER_TIMESTAMP_ENTRY_BOUNDS, (1517, 855), footer_updated, gray, 11, False, 176),
     ]
+    entries.extend(
+        inline_colored_text_entries(
+            (234, 397, 400, 416),
+            (236, 401),
+            ((severity, severity_color), (f" / {shared['priority']}", white)),
+            size=13,
+            bold=False,
+            max_width=158,
+        )
+    )
+    entries.extend(
+        inline_colored_text_entries(
+            (603, 338, 812, 360),
+            (604, 342),
+            ((severity, severity_color),),
+            size=13,
+            bold=False,
+            max_width=205,
+        )
+    )
     return entries
 
 
@@ -901,11 +1241,20 @@ def status_panel_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
     entries: list[TextEntry] = []
     row_y = (607, 630, 652, 674, 696)
     for y, row in zip(row_y, rows):
+        # V7 uses a locally repaired source-derived status plate.  Cleaning from
+        # that same plate prevents the obsolete populated/clear-master rules
+        # from being restored behind the live row values.
+        clean_options = {
+            "clean_source": "source",
+            "cleanup_dilate": 2,
+            "inpaint_radius": 2,
+            "preserve_horizontal_rules": False,
+        }
         entries.extend(
             (
-                TextEntry((478, y - 3, 650, y + 14), (482, y), row["label"], gray, 10, False, 164),
-                TextEntry((649, y - 3, 722, y + 14), (654, y), row["status"], blue, 10, True, 65),
-                TextEntry((751, y - 3, 811, y + 14), (758, y), f"{row['health']:.1f}%", white, 10, False, 52),
+                TextEntry((478, y - 3, 650, y + 14), (482, y), row["label"], gray, 10, False, 164, **clean_options),
+                TextEntry((649, y - 3, 722, y + 14), (654, y), row["status"], blue, 10, True, 65, **clean_options),
+                TextEntry((751, y - 3, 811, y + 14), (758, y), f"{row['health']:.1f}%", white, 10, False, 52, **clean_options),
             )
         )
     metrics = _metric_records(system)
@@ -962,11 +1311,41 @@ def threat_panel_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> lis
     gray = (185, 180, 177)
     entries = [
         TextEntry((850, 615, 940, 657), (854, 621), str(score), severity_color, 32, True, 42),
-        TextEntry((892, 636, 940, 657), (894, 640), "/100", (184, 178, 175), 11, False, 43),
+        # Keep the score suffix in its existing score field, but make the slash
+        # and denominator legible at dashboard scale.  This is presentation
+        # only; the canonical score and threshold color remain data-derived.
+        TextEntry(
+            (890, 631, 924, 654),
+            (892, 634),
+            "/100",
+            (184, 178, 175),
+            13,
+            True,
+            30,
+            clear_bounds=THREAT_SCORE_SUFFIX_V7_CLEAN_BOUNDS,
+        ),
         TextEntry((850, 658, 940, 682), (854, 663), presentation, severity_color, 13, True, 84),
     ]
-    for y, value in zip((724, 741, 758, 775, 792), summary):
-        entries.append(TextEntry((1017, y - 2, 1271, y + 12), (1020, y), value, gray, 10, False, 246))
+    summary_rows = (724, 741, 758, 775, 792)
+    summary_clean_ends = (739, 756, 773, 790, 804)
+    for y, clear_end, value in zip(summary_rows, summary_clean_ends, summary):
+        # Join the measured vertical cleanup lanes so antialias remnants from
+        # the populated preview cannot remain in the 3px gaps.  The red bullet
+        # strip at x<1017, header, rules, and field geometry remain untouched.
+        entries.append(
+            TextEntry(
+                (1017, y - 2, 1271, y + 12),
+                (1020, y),
+                value,
+                gray,
+                10,
+                False,
+                246,
+                clear_bounds=(1017, y - 2, 1271, clear_end),
+                cleanup_dilate=2,
+                inpaint_radius=2,
+            )
+        )
     return entries
 
 
@@ -1002,17 +1381,39 @@ def feed_panel_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
     events = _feed_events(renderer_state)
     for index, event in enumerate(events):
         y = 590 + index * 17
+        # The approved clear master carries obsolete full-width row rules in
+        # this list area.  Each row is repaired from its local approved source
+        # texture before the three intended live fields are redrawn.  The lane
+        # is strictly inside the list body: it cannot affect the panel frame,
+        # LIVE badge, event-intensity graph, or 39 frozen bar positions.
+        clean_lane = (22, y - 3, 430, y + 15)
+        clean_options = {
+            "clear_bounds": clean_lane,
+            "clean_source": "source",
+            "cleanup_dilate": 2,
+            "inpaint_radius": 2,
+            "preserve_horizontal_rules": False,
+        }
         entries.extend(
             (
-                TextEntry((24, y - 2, 65, y + 13), (26, y), event["timestamp"], gray, 10, False, 37),
-                TextEntry((72, y - 2, 373, y + 13), (73, y), event["message"], gray, 10, False, 296),
-                TextEntry((379, y - 2, 418, y + 13), (382, y), event["severity"], color_by_level[event["visual_severity"]], 9, True, 34),
+                TextEntry((24, y - 2, 65, y + 13), (26, y), event["timestamp"], gray, 10, False, 37, **clean_options),
+                TextEntry((72, y - 2, 373, y + 13), (73, y), event["message"], gray, 10, False, 296, **clean_options),
+                TextEntry(
+                    (379, y - 2, 418, y + 13),
+                    (382, y),
+                    event["severity"],
+                    color_by_level[event["visual_severity"]],
+                    9,
+                    True,
+                    34,
+                    **clean_options,
+                ),
             )
         )
     return entries
 
 
-def operational_brief_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+def operational_brief_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> list[TextEntry]:
     shared = renderer_state["dashboard"]["shared"]
     display = renderer_state["display"]
     font = dashboard_font(11)
@@ -1054,17 +1455,34 @@ def operational_brief_entries(renderer_state: dict[str, Any]) -> list[TextEntry]
         # that row more leading uses its internal free space without moving a
         # divider, shrinking text, or crowding an adjacent row.
         line_spacing = 8 if index == 3 else -1
-        entries.append(TextEntry(bounds, position, value, (190, 186, 183), 11, False, 340, line_spacing=line_spacing))
+        if index == 2:
+            prefix = f"Priority: {shared['priority']} / Severity: "
+            entries.extend(
+                inline_colored_text_entries(
+                    bounds,
+                    position,
+                    (
+                        (prefix, (190, 186, 183)),
+                        (str(shared["severity"]), semantic_severity_color(raw, shared["severity"])),
+                    ),
+                    size=11,
+                    bold=False,
+                    max_width=340,
+                    line_spacing=line_spacing,
+                )
+            )
+        else:
+            entries.append(TextEntry(bounds, position, value, (190, 186, 183), 11, False, 340, line_spacing=line_spacing))
     return entries
 
 
 def all_text_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> list[TextEntry]:
     return (
-        static_text_entries(renderer_state)
+        static_text_entries(renderer_state, raw)
         + status_panel_entries(renderer_state)
         + threat_panel_entries(renderer_state, raw)
         + feed_panel_entries(renderer_state)
-        + operational_brief_entries(renderer_state)
+        + operational_brief_entries(renderer_state, raw)
     )
 
 
@@ -1239,6 +1657,465 @@ def create_case_overview_plate(
     return clean, live, dynamic_lanes
 
 
+# V5 uses only these two source-exact interior text lanes.  They deliberately
+# exclude the frozen hub rail/signature, all routes, card frames, and the Case
+# Data Store cylinder.  The approved Proposal-B geometry therefore remains
+# untouched while its live copy becomes readable at dashboard scale.
+CASE_OVERVIEW_V5_HUB_LOCAL_BOUNDS = (186, 125, 274, 169)
+CASE_OVERVIEW_V5_DATASTORE_LOCAL_BOUNDS = (340, 208, 403, 235)
+CASE_OVERVIEW_V5_LOCAL_BOUNDS = (
+    CASE_OVERVIEW_V5_HUB_LOCAL_BOUNDS,
+    CASE_OVERVIEW_V5_DATASTORE_LOCAL_BOUNDS,
+)
+
+# V6 changes no Proposal-B geometry.  These are only the quiet interior text
+# lanes that were already available inside the six fixed modules and central
+# hub.  They exclude every card frame, route, arrowhead, icon, waveform, hub
+# rail, panel header, and outer border.
+CASE_OVERVIEW_V6_LOCAL_BOUNDS = (
+    (19, 60, 86, 68), (19, 68, 86, 84), (19, 84, 86, 94),
+    (19, 130, 86, 138), (19, 138, 86, 154), (19, 154, 86, 164),
+    (19, 200, 86, 208), (19, 208, 86, 220),
+    (340, 60, 395, 68), (340, 68, 395, 84), (340, 84, 395, 94),
+    (340, 130, 395, 138), (340, 138, 395, 154), (340, 154, 395, 164),
+    (340, 200, 403, 208), (340, 208, 403, 222), (340, 222, 403, 235),
+    (186, 108, 266, 119),
+    (186, 125, 274, 137), (186, 138, 274, 149),
+    (186, 149, 274, 160), (186, 159, 274, 169),
+)
+
+# V7 adds only the six measured descriptor lanes.  The Timeline descriptor
+# occupies its previously unused right-side interior lane and never enters the
+# frozen waveform below it.
+CASE_OVERVIEW_V7_SUBTITLE_LOCAL_BOUNDS = (
+    (19, 84, 86, 94),
+    (19, 154, 86, 164),
+    (64, 211, 111, 222),
+    (340, 84, 395, 94),
+    (340, 154, 395, 164),
+    (340, 222, 403, 235),
+)
+CASE_OVERVIEW_V7_LOCAL_BOUNDS = CASE_OVERVIEW_V6_LOCAL_BOUNDS + (
+    CASE_OVERVIEW_V7_SUBTITLE_LOCAL_BOUNDS[2],
+)
+
+# V8 is deliberately a post-route, subtitle-only repair.  Five existing
+# V7 lanes remain exact; the Timeline lane reaches through the frozen
+# descriptor's last antialias row but stops immediately before its waveform.
+CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS = (
+    (19, 84, 86, 94),
+    (19, 154, 86, 164),
+    (64, 211, 111, 225),
+    (340, 84, 395, 94),
+    (340, 154, 395, 164),
+    (340, 222, 403, 235),
+)
+
+# These are the exact static Proposal-B descriptor strings/positions drawn
+# into the approved #7 raster.  V8 removes their measured glyph support from
+# a source-derived clean plate before drawing each current subtitle once.
+CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS = (
+    ("evidence", "SEALED / CHAIN", (21, 86)),
+    ("access_logs", "CREDENTIAL WATCH", (21, 156)),
+    ("timeline", "LIVE TRACE", (70, 218)),
+    ("intelligence", "ANALYST READ", (342, 86)),
+    ("correlation", "LINK DENSITY", (342, 156)),
+    ("case_data_store", "PERSIST / RETAIN", (342, 226)),
+)
+
+
+def case_overview_v7_subtitle_entries() -> list[TextEntry]:
+    """V7 measured +1px descriptors inside the existing frozen module lanes."""
+
+    subtitle = (151, 145, 142)
+    return [
+        centered_text_entry((19, 84, 86, 94), "SEALED / CHAIN", subtitle, 6, True),
+        centered_text_entry((19, 154, 86, 164), "CREDENTIAL CHAIN", subtitle, 6, True),
+        centered_text_entry((64, 211, 111, 222), "LIVE TRACE", subtitle, 6, True),
+        centered_text_entry((340, 84, 395, 94), "ANALYST READ", subtitle, 6, True),
+        centered_text_entry((340, 154, 395, 164), "CASE JOIN", subtitle, 6, True),
+        centered_text_entry((340, 222, 403, 235), "PERSIST / RETAIN", (138, 171, 151), 6, True),
+    ]
+
+
+def _largest_fitting_case_overview_subtitle(
+    bounds: tuple[int, int, int, int],
+    value: str,
+    color: tuple[int, int, int],
+) -> TextEntry:
+    """Use 8px first, with 7px only when Pillow proves 8px will not fit."""
+
+    x1, y1, x2, y2 = bounds
+    for size in (8, 7):
+        left, top, right, bottom = measured_text_bbox(value, size, True)
+        if right - left <= x2 - x1 and bottom - top <= y2 - y1:
+            return centered_text_entry(bounds, value, color, size, True)
+    raise RendererContractError(f"V8 Case Overview subtitle does not fit: {value!r}")
+
+
+def case_overview_v8_subtitle_entries() -> list[TextEntry]:
+    """Measured, legible V8 descriptors within the six approved lower lanes."""
+
+    muted = (151, 145, 142)
+    entries = [
+        _largest_fitting_case_overview_subtitle(
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[0], "SEALED / CHAIN", muted
+        ),
+        _largest_fitting_case_overview_subtitle(
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[1], "CREDENTIAL CHAIN", muted
+        ),
+        _largest_fitting_case_overview_subtitle(
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[2], "LIVE TRACE", muted
+        ),
+        _largest_fitting_case_overview_subtitle(
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[3], "ANALYST READ", muted
+        ),
+        _largest_fitting_case_overview_subtitle(
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[4], "CASE JOIN", muted
+        ),
+        _largest_fitting_case_overview_subtitle(
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[5],
+            "PERSIST / RETAIN",
+            (138, 171, 151),
+        ),
+    ]
+    if sum(entry.value == "LIVE TRACE" for entry in entries) != 1:
+        raise RendererContractError("V8 Timeline subtitle must be rendered exactly once.")
+    return entries
+
+
+def _case_overview_text_support_mask(
+    shape: tuple[int, int],
+    entry: TextEntry,
+    bounds: tuple[int, int, int, int],
+) -> np.ndarray:
+    """Measured text support plus a one-pixel antialias halo, locally clipped."""
+
+    image = Image.new("L", (shape[1], shape[0]), 0)
+    ImageDraw.Draw(image).text(
+        entry.position,
+        entry.value,
+        fill=255,
+        font=dashboard_font(entry.size, entry.bold),
+    )
+    support = cv2.dilate(
+        (np.asarray(image, dtype=np.uint8) > 0).astype(np.uint8),
+        np.ones((3, 3), np.uint8),
+        iterations=1,
+    ).astype(bool)
+    x1, y1, x2, y2 = bounds
+    lane = np.zeros(shape, dtype=bool)
+    lane[y1:y2, x1:x2] = True
+    return support & lane
+
+
+def case_overview_v8_baked_subtitle_entries() -> list[TextEntry]:
+    """Canonical old static descriptors used solely for source-local cleanup."""
+
+    return [
+        TextEntry(bounds, position, value, (151, 145, 142), 6, False, bounds[2] - bounds[0])
+        for (_name, value, position), bounds in zip(
+            CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
+        )
+    ]
+
+
+def case_overview_v8_subtitle_cleanup_masks(shape: tuple[int, int]) -> dict[str, np.ndarray]:
+    """Mask both baked and V7 replacement glyphs before the V8 redraw."""
+
+    masks: dict[str, np.ndarray] = {}
+    for (name, _value, _position), bounds, baked, v7 in zip(
+        CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
+        CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
+        case_overview_v8_baked_subtitle_entries(),
+        case_overview_v7_subtitle_entries(),
+    ):
+        masks[name] = (
+            _case_overview_text_support_mask(shape, baked, bounds)
+            | _case_overview_text_support_mask(shape, v7, bounds)
+        )
+    return masks
+
+
+def _inpaint_case_overview_support(
+    plate: np.ndarray,
+    support: np.ndarray,
+    bounds: tuple[int, int, int, int],
+) -> None:
+    """Inpaint only measured stale glyph support; never cover a whole lane."""
+
+    x1, y1, x2, y2 = bounds
+    local_support = support[y1:y2, x1:x2]
+    if not np.any(local_support):
+        return
+    region = plate[y1:y2, x1:x2].copy()
+    repaired = cv2.inpaint(
+        region,
+        local_support.astype(np.uint8) * 255,
+        2,
+        cv2.INPAINT_TELEA,
+    )
+    region[local_support] = repaired[local_support]
+    plate[y1:y2, x1:x2] = region
+
+
+def create_case_overview_v8_subtitle_plate(
+    source: np.ndarray,
+    v7_plate: np.ndarray,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Clean all six V8 subtitle lanes from the evolving source-derived plate."""
+
+    if source.shape != v7_plate.shape:
+        raise RendererContractError("V8 Case Overview subtitle plate dimensions changed.")
+    clean = v7_plate.copy()
+    cleanup_masks = case_overview_v8_subtitle_cleanup_masks(clean.shape[:2])
+    for (name, _value, _position), bounds in zip(
+        CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
+        CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
+    ):
+        _inpaint_case_overview_support(clean, cleanup_masks[name], bounds)
+    entries = case_overview_v8_subtitle_entries()
+    return clean, draw_text_entries(clean, entries)
+
+
+def apply_case_overview_v8_subtitle_overlay(
+    context: "RenderContext",
+    panel: np.ndarray,
+) -> np.ndarray:
+    """Apply the V8 subtitle-only plate after all frozen #7 route rendering."""
+
+    result = panel.copy()
+    for x1, y1, x2, y2 in CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS:
+        result[y1:y2, x1:x2] = context.s07_v8_text_plate[y1:y2, x1:x2]
+    return result
+
+
+def case_overview_v7_text_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    """V7 readability-only text treatment within frozen Proposal-B lanes."""
+
+    shared = renderer_state["dashboard"]["shared"]
+    relationships = renderer_state["relationships"]
+    events = renderer_state["events"]
+    access_count = sum(
+        1
+        for event in events
+        if "ACCESS" in str(event.get("event_type", "")).upper()
+        or "ACCESS" in str(event.get("message", "")).upper()
+    )
+    feed_count = len(events)
+    correlation_count = int(renderer_state["correlation_count"])
+    title = (212, 204, 199)
+    entries = [
+        # Inbound modules: title, data value, then restrained descriptor.
+        TextEntry((19, 60, 86, 68), (20, 60), "EVIDENCE", title, 7, True, 64),
+        TextEntry((19, 68, 86, 84), (20, 70), f"{shared['evidence_count']} RECORDS", (245, 77, 58), 9, True, 64),
+        TextEntry((19, 130, 86, 138), (20, 130), "ACCESS LOGS", title, 7, True, 64),
+        TextEntry((19, 138, 86, 154), (20, 140), f"{access_count} ACCESS LOGS", (241, 165, 82), 8, True, 64),
+        TextEntry((19, 200, 86, 208), (20, 200), "TIMELINE", title, 7, True, 64),
+        TextEntry((19, 208, 86, 220), (20, 210), f"{feed_count} EVENTS", (244, 78, 57), 9, True, 64),
+        # Outbound modules retain the approved semantic accent colors.
+        TextEntry((340, 60, 395, 68), (341, 60), "INTELLIGENCE", title, 7, True, 52),
+        TextEntry((340, 68, 395, 84), (341, 70), f"{max(1, renderer_state['threat_history_count'])} REPORT", (93, 177, 222), 9, True, 52),
+        TextEntry((340, 130, 395, 138), (341, 130), "CORRELATION", title, 7, True, 52),
+        TextEntry((340, 138, 395, 154), (341, 140), f"{correlation_count} LINKS", (246, 87, 63), 9, True, 52),
+        TextEntry((340, 200, 403, 208), (341, 200), "CASE DATA STORE", title, 7, True, 61),
+        TextEntry((340, 208, 403, 222), (341, 210), f"REV {shared['state_revision']}", (108, 227, 151), 9, True, 61),
+        # Central hub: larger live-case text, while its red box, rails, and
+        # verification flag remain frozen source geometry.
+        TextEntry((186, 108, 266, 119), (188, 109), "ACTIVE CASE FILE", (255, 202, 185), 7, True, 76),
+        TextEntry((186, 125, 274, 137), (188, 127), str(shared["case_id"]), (255, 116, 88), 10, True, 84),
+        TextEntry((186, 138, 274, 149), (188, 140), str(shared["lifecycle_status"]), (255, 95, 72), 9, True, 84),
+        TextEntry((186, 149, 274, 160), (188, 151), human_stage(shared["current_stage"]), (205, 191, 184), 7, True, 84),
+        TextEntry((186, 159, 274, 169), (188, 161), f"{len(relationships)} RELATIONSHIPS", (178, 169, 164), 7, True, 84),
+    ]
+    entries.extend(case_overview_v7_subtitle_entries())
+    return entries
+
+
+def case_overview_v5_text_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
+    """Readable V5 live-value overlay inside the already-approved #7 lanes."""
+
+    shared = renderer_state["dashboard"]["shared"]
+    relationships = renderer_state["relationships"]
+    return [
+        # The centered case hub keeps its frozen rails, dividers, red box, and
+        # route clearances.  Only its live values are made legible at dashboard
+        # scale; the shorter semantic labels avoid any geometry change.
+        TextEntry((186, 125, 274, 137), (188, 127), str(shared["case_id"]), (255, 116, 88), 10, True, 84),
+        TextEntry((186, 138, 274, 149), (188, 140), str(shared["lifecycle_status"]), (255, 95, 72), 9, True, 84),
+        TextEntry((186, 149, 274, 160), (188, 151), human_stage(shared["current_stage"]), (205, 191, 184), 7, True, 84),
+        TextEntry((186, 159, 274, 169), (188, 161), f"{len(relationships)} RELATIONSHIPS", (178, 169, 164), 7, True, 84),
+        # The former COMMIT READY preview value is fully source-inpainted
+        # before this persisted revision is drawn.  The lower descriptor is
+        # intentional Proposal-B copy, retained with a clearer muted green.
+        TextEntry((340, 208, 403, 224), (342, 209), f"REV {shared['state_revision']}", (108, 227, 151), 9, True, 59),
+        TextEntry((340, 222, 403, 235), (342, 226), "PERSIST / RETAIN", (138, 171, 151), 6, True, 59),
+    ]
+
+
+def _inpaint_case_overview_lane(
+    source: np.ndarray,
+    bounds: tuple[int, int, int, int],
+    *,
+    minimum_brightness: int,
+    dilate: int,
+) -> np.ndarray:
+    """Rebuild one safe #7 text lane from nearby approved source texture."""
+
+    x1, y1, x2, y2 = bounds
+    region = source[y1:y2, x1:x2].copy()
+    glyphs = foreground_mask(region, minimum_brightness=minimum_brightness)
+    if dilate:
+        glyphs = cv2.dilate(
+            glyphs.astype(np.uint8),
+            np.ones((dilate * 2 + 1, dilate * 2 + 1), np.uint8),
+            iterations=1,
+        ).astype(bool)
+    if np.any(glyphs):
+        repaired = cv2.inpaint(region, glyphs.astype(np.uint8) * 255, 2, cv2.INPAINT_TELEA)
+        region[glyphs] = repaired[glyphs]
+    return region
+
+
+def create_case_overview_v5_text_plate(
+    source: np.ndarray,
+    clean_plate: np.ndarray,
+    renderer_state: dict[str, Any],
+) -> np.ndarray:
+    """Create the V5 local text plate without altering the frozen #7 plate."""
+
+    result = clean_plate.copy()
+    # Threshold 16 is one level above the surrounding card texture (max 15).
+    # A single-pixel dilation removes every antialias fragment of COMMIT READY
+    # and the intentionally restyled descriptor without repainting the card.
+    for bounds in (
+        (340, 208, 403, 224),
+        (340, 222, 403, 235),
+    ):
+        x1, y1, x2, y2 = bounds
+        result[y1:y2, x1:x2] = _inpaint_case_overview_lane(
+            source,
+            bounds,
+            minimum_brightness=16,
+            dilate=1,
+        )
+    return draw_text_entries(result, case_overview_v5_text_entries(renderer_state))
+
+
+def apply_case_overview_v5_text_overlay(context: "RenderContext", panel: np.ndarray) -> np.ndarray:
+    """Replace only V5's static-safe text lanes after frozen route rendering."""
+
+    result = panel.copy()
+    for x1, y1, x2, y2 in CASE_OVERVIEW_V5_LOCAL_BOUNDS:
+        result[y1:y2, x1:x2] = context.s07_v5_text_plate[y1:y2, x1:x2]
+    return result
+
+
+def create_case_overview_v7_text_plate(
+    source: np.ndarray,
+    clean_plate: np.ndarray,
+    renderer_state: dict[str, Any],
+) -> np.ndarray:
+    """Create a text-only readability plate over the approved Proposal-B art."""
+
+    result = clean_plate.copy()
+    for bounds in CASE_OVERVIEW_V7_LOCAL_BOUNDS:
+        x1, y1, x2, y2 = bounds
+        result[y1:y2, x1:x2] = _inpaint_case_overview_lane(
+            source,
+            bounds,
+            minimum_brightness=16,
+            dilate=1,
+        )
+    return draw_text_entries(result, case_overview_v7_text_entries(renderer_state))
+
+
+def apply_case_overview_v7_text_overlay(context: "RenderContext", panel: np.ndarray) -> np.ndarray:
+    """Restore V7 typography after frozen #7 route rendering, never geometry."""
+
+    result = panel.copy()
+    for x1, y1, x2, y2 in CASE_OVERVIEW_V7_LOCAL_BOUNDS:
+        result[y1:y2, x1:x2] = context.s07_v7_text_plate[y1:y2, x1:x2]
+    return result
+
+
+def create_threat_guide_v6_plate(
+    panel: np.ndarray,
+    panel_bounds: tuple[int, int, int, int],
+    raw: np.ndarray,
+) -> np.ndarray:
+    """Repair and redraw only the static Threshold Guide text columns.
+
+    The frozen #6 plate remains untouched.  The old source-derived glyphs are
+    removed inside four tight label/value lanes and rebuilt on the existing
+    textured guide background; leader bars, summary bullets, panel geometry,
+    and the animated graph are deliberately outside this overlay.
+    """
+
+    panel_x, panel_y, _panel_x2, _panel_y2 = panel_bounds
+    result = panel.copy()
+    for global_bounds in THREAT_GUIDE_V6_CLEAR_BOUNDS:
+        gx1, gy1, gx2, gy2 = global_bounds
+        x1, y1, x2, y2 = gx1 - panel_x, gy1 - panel_y, gx2 - panel_x, gy2 - panel_y
+        region = result[y1:y2, x1:x2].copy()
+        glyphs = foreground_mask(region, minimum_brightness=10)
+        glyphs = cv2.dilate(
+            glyphs.astype(np.uint8), np.ones((3, 3), np.uint8), iterations=1
+        ).astype(bool)
+        if np.any(glyphs):
+            repaired = cv2.inpaint(region, glyphs.astype(np.uint8) * 255, 2, cv2.INPAINT_TELEA)
+            region[glyphs] = repaired[glyphs]
+        result[y1:y2, x1:x2] = region
+
+    image = Image.fromarray(result, "RGB")
+    draw = ImageDraw.Draw(image)
+    guide_colors = threshold_guide_colors(raw)
+    range_color = (185, 180, 177)
+    for level, global_y, value in THREAT_GUIDE_V6_ROWS:
+        y = global_y - panel_y
+        color = guide_colors[level]
+        draw.text((884 - panel_x, y), level, fill=color, font=dashboard_font(10, True))
+        draw.text((932 - panel_x, y), "=", fill=color, font=dashboard_font(10, True))
+        draw.text((950 - panel_x, y), value, fill=range_color, font=dashboard_font(11))
+    return np.asarray(image, dtype=np.uint8)
+
+
+def apply_threat_guide_v6_overlay(context: "RenderContext", panel: np.ndarray) -> np.ndarray:
+    """Composite the V6 guide text lanes after frozen #6 signal rendering."""
+
+    result = panel.copy()
+    panel_x, panel_y, _panel_x2, _panel_y2 = context.helpers.s06.PANEL_BOUNDS
+    for gx1, gy1, gx2, gy2 in THREAT_GUIDE_V6_CLEAR_BOUNDS:
+        x1, y1, x2, y2 = gx1 - panel_x, gy1 - panel_y, gx2 - panel_x, gy2 - panel_y
+        result[y1:y2, x1:x2] = context.s06_v6_guide_plate[y1:y2, x1:x2]
+    return result
+
+
+def create_system_status_v7_plate(
+    plate: np.ndarray,
+    panel_bounds: tuple[int, int, int, int],
+) -> np.ndarray:
+    """Remove only obsolete upper-list dividers from the source-derived #5 plate."""
+
+    panel_x, panel_y, _panel_x2, _panel_y2 = panel_bounds
+    result = plate.copy()
+    for gx1, gy1, gx2, gy2 in SYSTEM_STATUS_V7_DIVIDER_BANDS:
+        x1, y1, x2, y2 = gx1 - panel_x, gy1 - panel_y, gx2 - panel_x, gy2 - panel_y
+        # A divider itself is only one or two pixels high.  Give Telea nearby
+        # source-derived texture above and below it; inpainting the divider
+        # strip in isolation leaves it no unmasked neighborhood to sample.
+        padding = 4
+        rx1, rx2 = max(0, x1 - 2), min(result.shape[1], x2 + 2)
+        ry1, ry2 = max(0, y1 - padding), min(result.shape[0], y2 + padding)
+        region = result[ry1:ry2, rx1:rx2].copy()
+        erase = np.zeros(region.shape[:2], dtype=np.uint8)
+        erase[y1 - ry1:y2 - ry1, x1 - rx1:x2 - rx1] = 255
+        repaired = cv2.inpaint(region, erase, 3, cv2.INPAINT_TELEA)
+        result[y1:y2, x1:x2] = repaired[y1 - ry1:y2 - ry1, x1 - rx1:x2 - rx1]
+    return result
+
+
 @dataclass
 class RenderContext:
     helpers: FrozenHelpers
@@ -1247,6 +2124,7 @@ class RenderContext:
     registered_clear: np.ndarray
     renderer_state: dict[str, Any]
     static_base: np.ndarray
+    palette_static_base: np.ndarray
     text_entries: list[TextEntry]
     authorization_mask: np.ndarray
     motion_mask: np.ndarray
@@ -1259,7 +2137,9 @@ class RenderContext:
     s01_palette: Image.Image
     s02_stationary: np.ndarray
     s02_layer: np.ndarray
+    s02_v9_accent_mask: np.ndarray
     s03_source: np.ndarray
+    s03_static_workflow_plate: np.ndarray
     s03_stage_masks: list[np.ndarray]
     s03_arrow_masks: list[np.ndarray]
     s03_stage_norms: list[float]
@@ -1271,6 +2151,7 @@ class RenderContext:
     s04_row_masks: list[np.ndarray]
     s04_bars: list[tuple[int, int]]
     s05_source: np.ndarray
+    s05_v6_plate: np.ndarray
     s05_plate: np.ndarray
     s05_led_masks: list[np.ndarray]
     s06_source: np.ndarray
@@ -1279,8 +2160,13 @@ class RenderContext:
     s06_shell_changes: np.ndarray
     s06_draw_mask: np.ndarray
     s06_final_static: np.ndarray
+    s06_v6_guide_plate: np.ndarray
     s07_plate: np.ndarray
     s07_clean_plate: np.ndarray
+    s07_v5_text_plate: np.ndarray
+    s07_v7_text_plate: np.ndarray
+    s07_v8_subtitle_clean_plate: np.ndarray
+    s07_v8_text_plate: np.ndarray
     s07_dynamic_text_lanes: np.ndarray
     s07_static_reference: np.ndarray
     s07_paths: dict[str, np.ndarray]
@@ -1300,6 +2186,43 @@ def _merge_panel(frame: np.ndarray, bounds: tuple[int, int, int, int], panel: np
     if panel.shape[:2] != (y2 - y1, x2 - x1):
         raise RendererContractError(f"Panel dimensions drifted for {bounds}.")
     frame[y1:y2, x1:x2] = panel
+
+
+def create_evidence_package_v9_tone_plate(
+    stationary_plate: np.ndarray,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Subdue only the baked front-folder red tab; preserve its source texture."""
+
+    x1, y1, x2, y2 = V9_EVIDENCE_FRONT_ACCENT_BOUNDS_LOCAL
+    if stationary_plate.shape[:2] != (227, 452):
+        raise RendererContractError("Evidence Package viewport dimensions changed before V9 tone repair.")
+    result = stationary_plate.copy()
+    region = result[y1:y2, x1:x2]
+    values = region.astype(np.int16)
+    red_dominant = (
+        (values[:, :, 0] >= 55)
+        & (values[:, :, 0] - values[:, :, 1] >= 18)
+        & (values[:, :, 0] - values[:, :, 2] >= 18)
+    )
+    component_count, labels, stats, _centroids = cv2.connectedComponentsWithStats(
+        red_dominant.astype(np.uint8),
+        connectivity=8,
+    )
+    if component_count <= 1:
+        raise RendererContractError("V9 Evidence Package front-folder accent was not found.")
+    component_index = 1 + int(np.argmax(stats[1:, cv2.CC_STAT_AREA]))
+    component = labels == component_index
+    if int(np.count_nonzero(component)) != V9_EVIDENCE_FRONT_ACCENT_EXPECTED_PIXELS:
+        raise RendererContractError("V9 Evidence Package front-folder accent geometry changed.")
+    toned = np.rint(
+        region[component].astype(np.float64)
+        * np.asarray(V9_EVIDENCE_FRONT_ACCENT_SCALE, dtype=np.float64)
+    )
+    region[component] = np.clip(toned, 0, 255).astype(np.uint8)
+    result[y1:y2, x1:x2] = region
+    mask = np.zeros(result.shape[:2], dtype=bool)
+    mask[y1:y2, x1:x2] = component
+    return result, mask
 
 
 def build_frozen_s01_palette(
@@ -1407,9 +2330,35 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
     )
 
     _s02_view, s02_stationary, _s02_sprite, s02_layer = helpers.s02.extract_magnifier(raw)
+    s02_stationary, s02_v9_accent_mask = create_evidence_package_v9_tone_plate(s02_stationary)
 
     s03_source = _panel(raw, helpers.s03.VIEW_BOUNDS)
     s03_stage_masks, s03_arrow_masks, _s03_union, s03_stage_norms, s03_arrow_norms = helpers.s03.build_element_masks(s03_source)
+    # The frozen helper's current-stage breathing includes its text label.  V6
+    # fixes the display locally by taking one fixed, state-correct phase as the
+    # static workflow plate; only the incoming transition arrow is animated in
+    # render_frame below.  The frozen #3 helper itself is not modified.
+    s03_static_workflow_plate = helpers.s03.render_workflow_state(
+        s03_source,
+        s03_stage_masks,
+        s03_arrow_masks,
+        s03_stage_norms,
+        s03_arrow_norms,
+        renderer_state["dashboard"]["workflow"]["current_stage"],
+        0.0,
+    )
+    workflow_stage = str(renderer_state["dashboard"]["workflow"]["current_stage"])
+    workflow_stage_index = helpers.s03.STAGES.index(workflow_stage)
+    # Preserve the same completed/current/pending logic while giving the
+    # completed blue state enough restrained contrast to remain unambiguous
+    # after the fixed GIF palette is applied.
+    for completed_index in range(workflow_stage_index):
+        blend_pixels(
+            s03_static_workflow_plate,
+            s03_stage_masks[completed_index],
+            helpers.s03.STATUS_COLORS["completed"],
+            0.16,
+        )
 
     s04_source = _panel(raw, helpers.s04.PANEL_BOUNDS)
     (
@@ -1428,6 +2377,8 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
     s05_source = _panel(raw, helpers.s05.PANEL_BOUNDS)
     s05_led, _s05_trace_masks, s05_clear_masks, _s05_authorized = helpers.s05.build_masks(s05_source)
     s05_plate, _s05_ghosts = helpers.s05.build_trace_plate(s05_source, s05_clear_masks)
+    s05_v6_plate = s05_plate.copy()
+    s05_plate = create_system_status_v7_plate(s05_plate, helpers.s05.PANEL_BOUNDS)
 
     s06_source = _panel(raw, helpers.s06.PANEL_BOUNDS)
     s06_source_signal, s06_line_cleanup, s06_workbox, s06_draw = helpers.s06.source_signal_masks(s06_source)
@@ -1454,6 +2405,11 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         s06_final_static,
         _s06_neutral,
     ) = helpers.s06.build_graph_shell_plate(s06_plot, s06_draw)
+    s06_v6_guide_plate = create_threat_guide_v6_plate(
+        s06_shell,
+        helpers.s06.PANEL_BOUNDS,
+        raw,
+    )
 
     case_overview_source = np.array(
         Image.open(CASE_OVERVIEW_STATIC).convert("RGB"), dtype=np.uint8
@@ -1476,6 +2432,65 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         case_overview_source,
         renderer_state,
     )
+    s07_v5_text_plate = create_case_overview_v5_text_plate(
+        case_overview_source,
+        s07_clean_plate,
+        renderer_state,
+    )
+    s07_v7_text_plate = create_case_overview_v7_text_plate(
+        case_overview_source,
+        s07_clean_plate,
+        renderer_state,
+    )
+    (
+        s07_v8_subtitle_clean_plate,
+        s07_v8_text_plate,
+    ) = create_case_overview_v8_subtitle_plate(
+        case_overview_source,
+        s07_v7_text_plate,
+    )
+    # This union is an audit mask only.  The frozen route/component masks were
+    # captured before all text cleanup, so an intersection here fails closed.
+    for local_bounds in CASE_OVERVIEW_V7_LOCAL_BOUNDS:
+        x1, y1, x2, y2 = local_bounds
+        s07_dynamic_text_lanes[y1:y2, x1:x2] = True
+        if np.any(s07_authorized[y1:y2, x1:x2]):
+            raise RendererContractError(
+                "V7 Case Overview readability lane intersects frozen #7 motion geometry."
+            )
+    for local_bounds in CASE_OVERVIEW_V5_LOCAL_BOUNDS:
+        x1, y1, x2, y2 = local_bounds
+        if np.any(s07_authorized[y1:y2, x1:x2]):
+            raise RendererContractError(
+                "V5 Case Overview readability lane intersects frozen #7 motion geometry."
+            )
+    # V8 is a post-route subtitle repair only.  Its Timeline extension ends
+    # immediately before the frozen waveform; all six lanes must be clear of
+    # both the fixed component art and every approved packet corridor.
+    s07_frozen_geometry = np.zeros_like(s07_authorized)
+    for mask in (*s07_components.values(), *s07_route_masks.values()):
+        s07_frozen_geometry |= mask
+    v8_cleanup_masks = case_overview_v8_subtitle_cleanup_masks(
+        case_overview_source.shape[:2]
+    )
+    for (name, _value, _position), local_bounds, entry in zip(
+        CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
+        CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
+        case_overview_v8_subtitle_entries(),
+    ):
+        x1, y1, x2, y2 = local_bounds
+        s07_dynamic_text_lanes[y1:y2, x1:x2] = True
+        if np.any(s07_authorized[y1:y2, x1:x2]):
+            raise RendererContractError(
+                "V8 Case Overview subtitle lane intersects frozen #7 motion geometry."
+            )
+        fresh_support = _case_overview_text_support_mask(
+            case_overview_source.shape[:2], entry, local_bounds
+        )
+        if np.any((v8_cleanup_masks[name] | fresh_support) & s07_frozen_geometry):
+            raise RendererContractError(
+                "V8 Case Overview subtitle cleanup intersects frozen #7 geometry."
+            )
 
     base = raw.copy()
     _merge_panel(base, helpers.s01.VIEW_BOUNDS, s01_stationary)
@@ -1493,15 +2508,24 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
     # ``registered_clear`` is a #1-local scanner restoration transform and is
     # deliberately not reused for unrelated panel text lanes.
     static_base = clean_text_entries(base, clear, text_entries)
+    # Retain a palette-only reconstruction of the frozen V2 text plate.  It
+    # prevents the V3 cleanup of a few stale glyph tails from changing the
+    # adaptive global palette for unrelated dashboard pixels.
+    palette_static_base = clean_text_entries(base, clear, legacy_v2_palette_entries(text_entries))
     # Source-derived top-left unit lane: no clear-master placeholder rules.
     unit_status_clean_plate = build_unit_status_clean_plate(static_base)
     ux1, uy1, ux2, uy2 = UNIT_STATUS_BOUNDS
     static_base[uy1:uy2, ux1:ux2] = unit_status_clean_plate[uy1:uy2, ux1:ux2]
+    palette_unit_status_clean_plate = build_unit_status_clean_plate(palette_static_base)
+    palette_static_base[uy1:uy2, ux1:ux2] = palette_unit_status_clean_plate[uy1:uy2, ux1:ux2]
     # Legacy Operational Brief symbols are static integration residue. Replace
     # only their measured ROIs with line art; all copy remains untouched.
     operational_icon_plate = build_operational_icon_plate(static_base)
     for ox1, oy1, ox2, oy2 in OPERATIONAL_ICON_BOUNDS:
         static_base[oy1:oy2, ox1:ox2] = operational_icon_plate[oy1:oy2, ox1:ox2]
+    palette_operational_icon_plate = build_operational_icon_plate(palette_static_base)
+    for ox1, oy1, ox2, oy2 in OPERATIONAL_ICON_BOUNDS:
+        palette_static_base[oy1:oy2, ox1:ox2] = palette_operational_icon_plate[oy1:oy2, ox1:ox2]
 
     canvas_mask = np.zeros((CANVAS_SIZE[1], CANVAS_SIZE[0]), dtype=bool)
     motion_mask = np.zeros_like(canvas_mask)
@@ -1518,7 +2542,9 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         motion_mask |= rect_mask(CANVAS_SIZE, bounds)
     canvas_mask |= motion_mask
     for entry in text_entries:
-        canvas_mask |= rect_mask(CANVAS_SIZE, entry.bounds)
+        # Include the registered source-cleanup lane, not just the rendered
+        # glyph field, in the source-difference authorization mask.
+        canvas_mask |= rect_mask(CANVAS_SIZE, text_lane(entry))
 
     return RenderContext(
         helpers=helpers,
@@ -1527,6 +2553,7 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         registered_clear=registered_clear,
         renderer_state=renderer_state,
         static_base=static_base,
+        palette_static_base=palette_static_base,
         text_entries=text_entries,
         authorization_mask=canvas_mask,
         motion_mask=motion_mask,
@@ -1539,7 +2566,9 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         s01_palette=s01_palette,
         s02_stationary=s02_stationary,
         s02_layer=s02_layer,
+        s02_v9_accent_mask=s02_v9_accent_mask,
         s03_source=s03_source,
+        s03_static_workflow_plate=s03_static_workflow_plate,
         s03_stage_masks=s03_stage_masks,
         s03_arrow_masks=s03_arrow_masks,
         s03_stage_norms=s03_stage_norms,
@@ -1551,6 +2580,7 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         s04_row_masks=s04_rows,
         s04_bars=s04_bars,
         s05_source=s05_source,
+        s05_v6_plate=s05_v6_plate,
         s05_plate=s05_plate,
         s05_led_masks=s05_led,
         s06_source=s06_source,
@@ -1559,8 +2589,13 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         s06_shell_changes=s06_shell_changes,
         s06_draw_mask=s06_draw,
         s06_final_static=s06_final_static,
+        s06_v6_guide_plate=s06_v6_guide_plate,
         s07_plate=s07_plate,
         s07_clean_plate=s07_clean_plate,
+        s07_v5_text_plate=s07_v5_text_plate,
+        s07_v7_text_plate=s07_v7_text_plate,
+        s07_v8_subtitle_clean_plate=s07_v8_subtitle_clean_plate,
+        s07_v8_text_plate=s07_v8_text_plate,
         s07_dynamic_text_lanes=s07_dynamic_text_lanes,
         s07_static_reference=case_overview_source,
         s07_paths=s07_paths,
@@ -1571,13 +2606,31 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
     )
 
 
-WORKFLOW_CARD_SHELLS_GLOBAL = {
+WORKFLOW_CARD_SHELLS_GLOBAL_V3 = {
     "CASE_SCAN": (454, 387, 544, 469),
     "EVIDENCE_REVIEW": (610, 387, 699, 469),
     "VALIDATION": (770, 387, 861, 469),
     "ASSESSMENT": (936, 387, 1031, 469),
     "PROBLEM_REVIEW": (1102, 387, 1206, 469),
 }
+
+# The frozen Evidence Review artwork is wider/taller than the compact V3
+# lighting shell.  This is an overlay-only envelope around the existing card;
+# it does not move or redraw any frozen geometry.
+WORKFLOW_CARD_SHELLS_GLOBAL = {
+    **WORKFLOW_CARD_SHELLS_GLOBAL_V3,
+    "EVIDENCE_REVIEW": (605, 387, 712, 492),
+}
+
+# Explicit text bands allow V6 QC to distinguish clean static stage labels
+# from the deliberately animated incoming transition arrow.
+WORKFLOW_LABEL_BOUNDS_GLOBAL = (
+    (454, 478, 545, 492),
+    (605, 478, 712, 492),
+    (770, 478, 861, 492),
+    (936, 478, 1031, 492),
+    (1102, 478, 1206, 492),
+)
 
 
 def _workflow_local_rect(context: RenderContext, bounds: tuple[int, int, int, int]) -> np.ndarray:
@@ -1591,7 +2644,11 @@ def _workflow_local_rect(context: RenderContext, bounds: tuple[int, int, int, in
     )
 
 
-def workflow_micro_polish_masks(context: RenderContext) -> dict[str, np.ndarray]:
+def workflow_micro_polish_masks(
+    context: RenderContext,
+    *,
+    legacy_v3: bool = False,
+) -> dict[str, np.ndarray]:
     """Declare the bounded #9 workflow-only lighting masks.
 
     This intentionally describes lighting around existing frozen silhouettes;
@@ -1601,18 +2658,26 @@ def workflow_micro_polish_masks(context: RenderContext) -> dict[str, np.ndarray]
     helper = context.helpers.s03
     stage = str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
     stage_index = helper.STAGES.index(stage)
+    shells = WORKFLOW_CARD_SHELLS_GLOBAL_V3 if legacy_v3 else WORKFLOW_CARD_SHELLS_GLOBAL
     safe = _workflow_local_rect(context, helper.ANIMATION_SAFE_BOUNDS_GLOBAL)
-    current_shell = _workflow_local_rect(context, WORKFLOW_CARD_SHELLS_GLOBAL[stage])
-    current_halo = cv2.dilate(
-        current_shell.astype(np.uint8), np.ones((7, 7), np.uint8), iterations=1
-    ).astype(bool)
-    current_halo &= ~current_shell & safe
+    current_shell = _workflow_local_rect(context, shells[stage])
 
-    shell_x1, shell_y1, shell_x2, _shell_y2 = WORKFLOW_CARD_SHELLS_GLOBAL[stage]
+    shell_x1, shell_y1, shell_x2, _shell_y2 = shells[stage]
     icon_width = min(37, max(24, shell_x2 - shell_x1 - 28))
     icon_center = (shell_x1 + shell_x2) // 2
     icon_bounds = (icon_center - icon_width // 2, shell_y1 + 16, icon_center + (icon_width + 1) // 2, shell_y1 + 66)
-    current_icon = context.s03_stage_masks[stage_index] & _workflow_local_rect(context, icon_bounds)
+    if legacy_v3:
+        current_icon = context.s03_stage_masks[stage_index] & _workflow_local_rect(context, icon_bounds)
+        # Palette-only V3 reconstruction must remain byte-for-byte identical.
+        current_halo = cv2.dilate(
+            current_shell.astype(np.uint8), np.ones((7, 7), np.uint8), iterations=1
+        ).astype(bool)
+        current_halo &= ~current_shell & safe
+    else:
+        # V6 keeps all current-stage art, including its label, static for
+        # readability. The actual incoming arrow is the only animated cue.
+        current_icon = np.zeros_like(current_shell)
+        current_halo = np.zeros_like(current_shell)
 
     incoming_arrow = (
         context.s03_arrow_masks[stage_index - 1].copy()
@@ -1625,11 +2690,12 @@ def workflow_micro_polish_masks(context: RenderContext) -> dict[str, np.ndarray]
     incoming_halo &= ~incoming_arrow & safe
 
     completed_halo = np.zeros_like(current_shell)
-    for completed_stage in helper.STAGES[:stage_index]:
-        shell = _workflow_local_rect(context, WORKFLOW_CARD_SHELLS_GLOBAL[completed_stage])
-        completed_halo |= cv2.dilate(
-            shell.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1
-        ).astype(bool) & ~shell & safe
+    if legacy_v3:
+        for completed_stage in helper.STAGES[:stage_index]:
+            shell = _workflow_local_rect(context, shells[completed_stage])
+            completed_halo |= cv2.dilate(
+                shell.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1
+            ).astype(bool) & ~shell & safe
 
     authorized = current_halo | current_icon | incoming_halo | incoming_arrow | completed_halo
     return {
@@ -1647,31 +2713,47 @@ def apply_workflow_review_emphasis(
     context: RenderContext,
     panel: np.ndarray,
     frame_index: int,
+    *,
+    legacy_v3: bool = False,
 ) -> np.ndarray:
     """Add the restrained, full-resolution workflow presentation overlay."""
 
     result = panel.copy()
-    masks = workflow_micro_polish_masks(context)
+    masks = workflow_micro_polish_masks(context, legacy_v3=legacy_v3)
     phase = (frame_index % FRAME_COUNT) / FRAME_COUNT
     breath = 0.5 - 0.5 * math.cos(math.tau * phase)
 
-    # A moving soft sector around the existing card edge breaks the frozen
-    # cosine symmetry after GIF palette quantization while remaining a halo,
-    # not a new perimeter or a moving card.
-    yy, xx = np.indices(result.shape[:2], dtype=np.float64)
-    shell_x1, shell_y1, shell_x2, shell_y2 = WORKFLOW_CARD_SHELLS_GLOBAL[
-        str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
-    ]
-    view_x1, view_y1, _view_x2, _view_y2 = context.helpers.s03.VIEW_BOUNDS
-    center_x = (shell_x1 + shell_x2) / 2.0 - view_x1
-    center_y = (shell_y1 + shell_y2) / 2.0 - view_y1
-    theta = np.arctan2((yy - center_y) / 41.0, (xx - center_x) / 44.5)
-    moving_sector = (0.5 + 0.5 * np.cos(theta - math.tau * phase)) ** 6
-    halo_weights = 0.075 + 0.065 * breath + 0.11 * moving_sector
-    blend_weighted_pixels(result, masks["current_halo"], (210, 29, 26), halo_weights)
-    blend_pixels(result, masks["current_icon"], (255, 76, 62), 0.025 + 0.10 * breath)
-    blend_pixels(result, masks["incoming_halo"], (205, 31, 27), 0.035 + 0.050 * breath)
-    blend_pixels(result, masks["incoming_arrow"], (255, 63, 50), 0.030 + 0.10 * breath)
+    if legacy_v3:
+        # A moving soft sector around the existing card edge breaks the frozen
+        # cosine symmetry after GIF palette quantization.  It is retained only
+        # for the V3 palette reconstruction used outside V5 review regions.
+        yy, xx = np.indices(result.shape[:2], dtype=np.float64)
+        shells = WORKFLOW_CARD_SHELLS_GLOBAL_V3
+        shell_x1, shell_y1, shell_x2, shell_y2 = shells[
+            str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
+        ]
+        view_x1, view_y1, _view_x2, _view_y2 = context.helpers.s03.VIEW_BOUNDS
+        center_x = (shell_x1 + shell_x2) / 2.0 - view_x1
+        center_y = (shell_y1 + shell_y2) / 2.0 - view_y1
+        theta = np.arctan2((yy - center_y) / 41.0, (xx - center_x) / 44.5)
+        moving_sector = (0.5 + 0.5 * np.cos(theta - math.tau * phase)) ** 6
+        halo_weights = 0.075 + 0.065 * breath + 0.11 * moving_sector
+        blend_weighted_pixels(result, masks["current_halo"], (210, 29, 26), halo_weights)
+        blend_pixels(result, masks["current_icon"], (255, 76, 62), 0.025 + 0.10 * breath)
+        blend_pixels(result, masks["incoming_halo"], (205, 31, 27), 0.035 + 0.050 * breath)
+        blend_pixels(result, masks["incoming_arrow"], (255, 63, 50), 0.030 + 0.10 * breath)
+    else:
+        # V5 restores the approved workflow relationship: the frozen current
+        # stage remains red, but visual emphasis lives on its actual icon and
+        # the incoming current arrow—not an independent card-shaped outline.
+        # The 60-frame period gives two seamless, readable three-second pulses
+        # over the six-second loop and keeps both elements in sync.
+        pulse_phase = (frame_index % (FRAME_COUNT // 2)) / (FRAME_COUNT // 2)
+        pulse = 0.5 - 0.5 * math.cos(math.tau * pulse_phase)
+        # V6 deliberately avoids any label, card, or icon glow. The actual
+        # incoming arrow is the sole clean transition cue.
+        blend_pixels(result, masks["incoming_halo"], (205, 31, 27), 0.025 + 0.105 * pulse)
+        blend_pixels(result, masks["incoming_arrow"], (255, 86, 68), 0.160 + 0.440 * pulse)
 
     # Completed cards retain their frozen blue state.  This extremely low,
     # one-cycle halo is intentionally much quieter than the current red card.
@@ -1751,6 +2833,8 @@ def apply_active_feed_live_overlay(
     tops: Sequence[int],
     heights: Sequence[int],
     frame_index: int,
+    *,
+    legacy_v3: bool = False,
 ) -> np.ndarray:
     """Add a bounded, data-faithful review-layer live presentation.
 
@@ -1825,25 +2909,35 @@ def apply_active_feed_live_overlay(
         blend_pixels(result, inner, (226, 49, 41), (0.045 + 0.17 * recency * breath))
         blend_pixels(result, body, (255, 84, 66), (0.020 + 0.10 * recency * breath))
 
-    # The existing LIVE dot/word receives a self-contained two-pixel soft
-    # halo plus a travelling luminosity bias.  The clip keeps it clear of the
-    # title and all event rows, and the phase returns exactly at the seam.
+    # The existing LIVE dot/word is isolated from the title and event rows.
+    # V3's wider halo is retained only for palette reconstruction; V5 uses a
+    # single crisp edge ring so the word never reads as a blurred red smudge.
     live_allowed = np.zeros(result.shape[:2], dtype=bool)
     lx1 = context.helpers.s04.LIVE_ROI_GLOBAL[0] - panel_x
     ly1 = context.helpers.s04.LIVE_ROI_GLOBAL[1] - panel_y
     lx2 = context.helpers.s04.LIVE_ROI_GLOBAL[2] - panel_x
     ly2 = context.helpers.s04.LIVE_ROI_GLOBAL[3] - panel_y
     live_allowed[ly1:ly2, lx1:lx2] = True
-    live_inner = cv2.dilate(context.s04_live_mask.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1).astype(bool)
-    live_inner &= live_allowed & ~context.s04_live_mask
-    live_outer = cv2.dilate(context.s04_live_mask.astype(np.uint8), np.ones((7, 7), np.uint8), iterations=1).astype(bool)
-    live_outer &= live_allowed & ~live_inner & ~context.s04_live_mask
-    blend_pixels(result, live_outer, (190, 31, 28), 0.025 + 0.090 * breath)
-    blend_pixels(result, live_inner, (220, 42, 36), 0.045 + 0.120 * breath)
-    _live_y, live_x = np.indices(result.shape[:2], dtype=np.float64)
-    glint = 0.5 + 0.5 * np.sin(math.tau * (phase + (live_x - lx1) / max(1.0, lx2 - lx1) * 0.35))
-    live_weights = 0.12 + 0.24 * breath + 0.07 * glint
-    blend_weighted_pixels(result, context.s04_live_mask, (255, 70, 57), live_weights)
+    if legacy_v3:
+        live_inner = cv2.dilate(context.s04_live_mask.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1).astype(bool)
+        live_inner &= live_allowed & ~context.s04_live_mask
+        live_outer = cv2.dilate(context.s04_live_mask.astype(np.uint8), np.ones((7, 7), np.uint8), iterations=1).astype(bool)
+        live_outer &= live_allowed & ~live_inner & ~context.s04_live_mask
+        blend_pixels(result, live_outer, (190, 31, 28), 0.025 + 0.090 * breath)
+        blend_pixels(result, live_inner, (220, 42, 36), 0.045 + 0.120 * breath)
+        _live_y, live_x = np.indices(result.shape[:2], dtype=np.float64)
+        glint = 0.5 + 0.5 * np.sin(math.tau * (phase + (live_x - lx1) / max(1.0, lx2 - lx1) * 0.35))
+        live_weights = 0.12 + 0.24 * breath + 0.07 * glint
+        blend_weighted_pixels(result, context.s04_live_mask, (255, 70, 57), live_weights)
+    else:
+        live_edge = cv2.dilate(
+            context.s04_live_mask.astype(np.uint8), np.ones((3, 3), np.uint8), iterations=1
+        ).astype(bool)
+        live_edge &= live_allowed & ~context.s04_live_mask
+        pulse_phase = (frame_index % (FRAME_COUNT // 2)) / (FRAME_COUNT // 2)
+        pulse = 0.5 - 0.5 * math.cos(math.tau * pulse_phase)
+        blend_pixels(result, live_edge, (231, 48, 42), 0.020 + 0.140 * pulse)
+        blend_pixels(result, context.s04_live_mask, (255, 86, 68), 0.100 + 0.430 * pulse)
     return result
 
 
@@ -2054,15 +3148,9 @@ def render_frame(context: RenderContext, frame_index: int) -> np.ndarray:
         np.array(s02_frame.convert("RGB"), dtype=np.uint8),
     )
 
-    workflow = context.helpers.s03.render_workflow_state(
-        context.s03_source,
-        context.s03_stage_masks,
-        context.s03_arrow_masks,
-        context.s03_stage_norms,
-        context.s03_arrow_norms,
-        context.renderer_state["dashboard"]["workflow"]["current_stage"],
-        frame_index / FRAME_COUNT,
-    )
+    # The state-correct V6 workflow plate is fixed; only its incoming arrow
+    # gets the bounded emphasis below. This prevents animated label slicing.
+    workflow = context.s03_static_workflow_plate.copy()
     workflow = apply_workflow_review_emphasis(context, workflow, frame_index)
     _merge_panel(frame, context.helpers.s03.VIEW_BOUNDS, workflow)
 
@@ -2106,6 +3194,7 @@ def render_frame(context: RenderContext, frame_index: int) -> np.ndarray:
         threat_input,
     )
     threat_panel = draw_threat_score_marker(context, threat_panel)
+    threat_panel = apply_threat_guide_v6_overlay(context, threat_panel)
     _merge_panel(frame, context.helpers.s06.PANEL_BOUNDS, threat_panel)
 
     overview_panel, _route_records, _changed = context.helpers.s07.render_frame(
@@ -2115,6 +3204,8 @@ def render_frame(context: RenderContext, frame_index: int) -> np.ndarray:
         context.s07_authorized,
         frame_index,
     )
+    overview_panel = apply_case_overview_v7_text_overlay(context, overview_panel)
+    overview_panel = apply_case_overview_v8_subtitle_overlay(context, overview_panel)
     _merge_panel(frame, context.helpers.s07.PANEL_BOUNDS_GLOBAL, overview_panel)
 
     # #2/#4/#5/#6 may start from their approved populated plates internally.
@@ -2160,17 +3251,723 @@ def global_palette(static_base: np.ndarray, representative_frames: Sequence[np.n
     )
 
 
-def save_gif(frames: Sequence[np.ndarray], path: Path, palette: Image.Image) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    indexed = [
-        Image.fromarray(frame, "RGB").quantize(palette=palette, dither=Image.Dither.NONE)
-        for frame in frames
+@dataclass(frozen=True)
+class PaletteProtectionRegion:
+    """A source-frame ROI whose approved accents need exact GIF palette slots."""
+
+    name: str
+    bounds: tuple[int, int, int, int]
+    colors: tuple[tuple[int, int, int], ...]
+    palette_slots: tuple[int, ...]
+    # Most regions remap their full rectangle. V6 Case Overview typography
+    # uses a glyph-only mask so a local text palette can never turn an empty
+    # card lane into a gray/white rectangle after GIF decoding.
+    mask: np.ndarray | None = None
+    # A V5-indexed base frame can be patched with an authorized V6 source ROI
+    # directly against the unchanged V5 output palette.  This preserves every
+    # non-authorized GIF index and palette color byte-for-byte.
+    direct_output_quantization: bool = False
+
+
+@dataclass(frozen=True)
+class GifPalettePlan:
+    """One fixed GIF palette plus narrowly scoped source-frame remapping."""
+
+    baseline_palette: Image.Image
+    output_palette: Image.Image
+    regions: tuple[PaletteProtectionRegion, ...]
+    v5_compatibility_regions: tuple[PaletteProtectionRegion, ...] = ()
+
+
+def _palette_data(palette: Image.Image) -> list[int]:
+    data = list(palette.getpalette() or [])
+    return (data + [0] * 768)[:768]
+
+
+def _palette_image(data: Sequence[int]) -> Image.Image:
+    image = Image.new("P", (1, 1))
+    image.putpalette(list(data)[:768])
+    return image
+
+
+def _unused_palette_slots(frames: Sequence[np.ndarray], palette: Image.Image) -> list[int]:
+    """Find slots absent from the unmodified V2 source-frame encoding."""
+
+    used = np.zeros(256, dtype=bool)
+    for frame in frames:
+        indexed = Image.fromarray(frame, "RGB").quantize(
+            palette=palette,
+            dither=Image.Dither.NONE,
+        )
+        used[np.unique(np.asarray(indexed, dtype=np.uint8))] = True
+    return [int(index) for index, present in enumerate(used) if not present]
+
+
+def _unique_rgb(colors: Iterable[Sequence[int]]) -> tuple[tuple[int, int, int], ...]:
+    result: list[tuple[int, int, int]] = []
+    for color in colors:
+        rgb = tuple(int(channel) for channel in color[:3])
+        if rgb not in result:
+            result.append(rgb)
+    return tuple(result)
+
+
+def _region_palette_colors(
+    frames: Sequence[np.ndarray],
+    bounds: tuple[int, int, int, int],
+    *,
+    local_color_count: int,
+    anchors: Iterable[Sequence[int]],
+) -> tuple[tuple[int, int, int], ...]:
+    """Build a stable local accent palette from source pixels, not GIF edits."""
+
+    x1, y1, x2, y2 = bounds
+    sample_indices = list(range(0, len(frames), max(1, len(frames) // 12)))
+    if sample_indices[-1] != len(frames) - 1:
+        sample_indices.append(len(frames) - 1)
+    atlas = np.concatenate(
+        [frames[index][y1:y2, x1:x2] for index in sample_indices],
+        axis=0,
+    )
+    local = Image.fromarray(atlas, "RGB").quantize(
+        colors=local_color_count,
+        method=Image.Quantize.MEDIANCUT,
+        dither=Image.Dither.NONE,
+    )
+    local_palette = _palette_data(local)
+    sampled = (
+        tuple(local_palette[index * 3:index * 3 + 3])
+        for index in np.unique(np.asarray(local, dtype=np.uint8))
+    )
+    return _unique_rgb((*anchors, *sampled))
+
+
+def legacy_v2_palette_frame(
+    context: RenderContext,
+    frame: np.ndarray,
+    frame_index: int,
+) -> np.ndarray:
+    """Reconstruct the frozen V3 palette sample without changing emitted V4 art."""
+
+    result = frame.copy()
+
+    # V4 strengthens only the pre-existing workflow and LIVE overlay masks.
+    # Recompose their V3 presentation strictly for the fixed global-palette
+    # sample, so unrelated decoded pixels retain their V3 index mapping.
+    workflow = context.helpers.s03.render_workflow_state(
+        context.s03_source,
+        context.s03_stage_masks,
+        context.s03_arrow_masks,
+        context.s03_stage_norms,
+        context.s03_arrow_norms,
+        context.renderer_state["dashboard"]["workflow"]["current_stage"],
+        frame_index / FRAME_COUNT,
+    )
+    workflow = apply_workflow_review_emphasis(context, workflow, frame_index, legacy_v3=True)
+    _merge_panel(result, context.helpers.s03.VIEW_BOUNDS, workflow)
+
+    feed_values = feed_values_for_frame(context, frame_index)
+    feed_event, feed_strength, feed_progress = feed_event_for_frame(context, frame_index)
+    feed_panel, tops, heights = context.helpers.s04.render_frame(
+        context.s04_empty,
+        context.s04_source,
+        context.s04_live_mask,
+        context.s04_severity_masks,
+        context.s04_row_masks,
+        context.s04_bars,
+        feed_values,
+        feed_event,
+        feed_strength,
+        feed_progress,
+        frame_index,
+    )
+    feed_panel = apply_active_feed_live_overlay(
+        context,
+        feed_panel,
+        tops,
+        heights,
+        frame_index,
+        legacy_v3=True,
+    )
+    # Only V4's header LIVE illumination differs from V3.  Copying this tiny
+    # region avoids replacing the independently restored live event text.
+    live_x1, live_y1, live_x2, live_y2 = context.helpers.s04.LIVE_ROI_GLOBAL
+    panel_x1, panel_y1, _panel_x2, _panel_y2 = context.helpers.s04.PANEL_BOUNDS
+    result[live_y1:live_y2, live_x1:live_x2] = feed_panel[
+        live_y1 - panel_y1:live_y2 - panel_y1,
+        live_x1 - panel_x1:live_x2 - panel_x1,
     ]
+
+    # V6 redraws only the guide text columns and score suffix.  Reconstruct the
+    # prior sampled plate so these local typography improvements do not change
+    # the global palette used by unrelated decoded pixels.
+    threat_x1, threat_y1, _threat_x2, _threat_y2 = context.helpers.s06.PANEL_BOUNDS
+    for gx1, gy1, gx2, gy2 in THREAT_GUIDE_V6_CLEAR_BOUNDS:
+        x1, y1, x2, y2 = gx1 - threat_x1, gy1 - threat_y1, gx2 - threat_x1, gy2 - threat_y1
+        result[gy1:gy2, gx1:gx2] = context.s06_shell[y1:y2, x1:x2]
+    result[615:682, 850:940] = context.palette_static_base[615:682, 850:940]
+    legacy_score_entries = (
+        TextEntry((850, 615, 940, 657), (854, 621), str(context.renderer_state["canonical_threat_score"]), threshold_guide_colors(context.raw)[str(context.renderer_state["subsystem_06_display_level"]).upper()], 32, True, 42),
+        TextEntry((892, 636, 940, 657), (894, 640), "/100", (184, 178, 175), 11, False, 43),
+        TextEntry((850, 658, 940, 682), (854, 663), str(context.renderer_state["subsystem_06_display_level"]).upper(), threshold_guide_colors(context.raw)[str(context.renderer_state["subsystem_06_display_level"]).upper()], 13, True, 84),
+    )
+    result = draw_text_entries(result, legacy_score_entries)
+
+    # V6's #7 readability overlay is post-route and strictly local. Restore
+    # the former local source pixels only for palette sampling so the adaptive
+    # global palette remains unchanged outside the V6 review lanes.
+    s07_x1, s07_y1, _s07_x2, _s07_y2 = context.helpers.s07.PANEL_BOUNDS_GLOBAL
+    for x1, y1, x2, y2 in CASE_OVERVIEW_V6_LOCAL_BOUNDS:
+        result[s07_y1 + y1:s07_y1 + y2, s07_x1 + x1:s07_x1 + x2] = context.s07_plate[y1:y2, x1:x2]
+
+    # Restore every V2-compatible lane once after rebuilding the two panels.
+    # This includes the V4 cleanup-only fields and the legacy footer string
+    # without a colon solely for median-cut sampling; live V4 frames retain the
+    # corrected visible timestamp and clean plate.
+    changed_entries = palette_compatibility_entries(context.text_entries)
+    for entry in changed_entries:
+        # V6 feed entries share a wide source-cleanup lane in emitted frames.
+        # The palette reconstruction must instead restore only each former V5
+        # text lane, otherwise it overwrites phase-specific V5 row pixels.
+        x1, y1, x2, y2 = (
+            entry.bounds if entry.bounds in FEED_ALL_ENTRY_BOUNDS else text_lane(entry)
+        )
+        result[y1:y2, x1:x2] = context.palette_static_base[y1:y2, x1:x2]
+    legacy_entries = legacy_v2_palette_entries(changed_entries)
+    legacy_entries = [
+        replace(
+            entry,
+            value=footer_timestamp(
+                context.renderer_state["dashboard"]["shared"]["updated_at"],
+                separator="",
+            ),
+        ) if entry.bounds == FOOTER_TIMESTAMP_ENTRY_BOUNDS else entry
+        for entry in legacy_entries
+    ]
+    result = draw_text_entries(result, legacy_entries)
+    restore_footer_border(result, context.raw)
+    return result
+
+
+def text_entry_palette_mask(entry: TextEntry) -> np.ndarray:
+    """Return the exact glyph pixels within one declared text lane."""
+
+    x1, y1, x2, y2 = entry.bounds
+    image = Image.new("RGB", (x2 - x1, y2 - y1), (0, 0, 0))
+    draw = ImageDraw.Draw(image)
+    draw.multiline_text(
+        (entry.position[0] - x1, entry.position[1] - y1),
+        entry.value,
+        fill=(255, 255, 255),
+        font=dashboard_font(entry.size, entry.bold),
+        spacing=entry.line_spacing,
+    )
+    return np.any(np.asarray(image, dtype=np.uint8) != 0, axis=2)
+
+
+def _reconstructed_v5_compatibility_palette_plan(
+    context: RenderContext,
+    frames: Sequence[np.ndarray],
+) -> GifPalettePlan:
+    """Recreate the fixed V5 GIF palette and protected index mapping exactly."""
+
+    representative_indices = tuple(index for index in (0, 30, 60, 90) if index < len(frames))
+    legacy_frames = tuple(
+        legacy_v2_palette_frame(context, frame, index)
+        for index, frame in enumerate(frames)
+    )
+    baseline = global_palette(
+        context.palette_static_base,
+        tuple(legacy_frames[index] for index in representative_indices),
+    )
+    unused_slots = _unused_palette_slots(legacy_frames, baseline)
+    guide_colors = threshold_guide_colors(context.raw)
+    status_colors = context.helpers.s03.STATUS_COLORS
+    presentation = str(context.renderer_state["subsystem_06_display_level"]).upper()
+    s07_x1, s07_y1, _s07_x2, _s07_y2 = context.helpers.s07.PANEL_BOUNDS_GLOBAL
+    hub_x1, hub_y1, hub_x2, hub_y2 = CASE_OVERVIEW_V5_HUB_LOCAL_BOUNDS
+    store_x1, store_y1, store_x2, store_y2 = CASE_OVERVIEW_V5_DATASTORE_LOCAL_BOUNDS
+    definitions = (
+        ("threat_threshold_critical", (850, 721, 950, 740), 12, (guide_colors["CRITICAL"],)),
+        ("threat_threshold_high", (850, 742, 950, 762), 12, (guide_colors["HIGH"],)),
+        ("threat_threshold_medium", (850, 764, 950, 784), 12, (guide_colors["MEDIUM"],)),
+        ("threat_threshold_low", (850, 786, 950, 806), 12, (guide_colors["LOW"],)),
+        (
+            "workflow_strip",
+            context.helpers.s03.VIEW_BOUNDS,
+            34,
+            (
+                status_colors["completed"],
+                status_colors["current"],
+                status_colors["pending"],
+                (218, 33, 30),
+                (255, 84, 68),
+                (205, 31, 27),
+                (255, 76, 62),
+            ),
+        ),
+        ("threat_score_display", (850, 615, 940, 682), 4, (guide_colors[presentation],)),
+        ("active_feed_live", context.helpers.s04.LIVE_ROI_GLOBAL, 4, ((255, 86, 68), (231, 48, 42))),
+        (
+            "case_overview_hub_readability",
+            (s07_x1 + hub_x1, s07_y1 + hub_y1, s07_x1 + hub_x2, s07_y1 + hub_y2),
+            4,
+            ((255, 116, 88), (255, 95, 72), (205, 191, 184), (178, 169, 164)),
+        ),
+        (
+            "case_overview_datastore_readability",
+            (s07_x1 + store_x1, s07_y1 + store_y1, s07_x1 + store_x2, s07_y1 + store_y2),
+            3,
+            ((108, 227, 151), (138, 171, 151)),
+        ),
+    )
+    requested = [
+        (
+            name,
+            bounds,
+            _region_palette_colors(
+                legacy_frames,
+                bounds,
+                local_color_count=color_count,
+                anchors=anchors,
+            ),
+        )
+        for name, bounds, color_count, anchors in definitions
+    ]
+    required_slots = sum(len(colors) for _name, _bounds, colors in requested)
+    if required_slots > len(unused_slots):
+        raise RendererContractError(
+            f"V5 GIF palette reservation needs {required_slots} unused slots; only {len(unused_slots)} available."
+        )
+    output_data = _palette_data(baseline)
+    regions: list[PaletteProtectionRegion] = []
+    cursor = 0
+    for name, bounds, colors in requested:
+        slots = tuple(unused_slots[cursor:cursor + len(colors)])
+        cursor += len(colors)
+        for slot, color in zip(slots, colors):
+            output_data[slot * 3:slot * 3 + 3] = list(color)
+        regions.append(PaletteProtectionRegion(name, bounds, colors, slots))
+    return GifPalettePlan(baseline, _palette_image(output_data), tuple(regions))
+
+
+# The V5 export plan is frozen with the approved V5 GIF, not derived from the
+# V6 source frame. Reusing its exact palettes and region-slot allocation keeps
+# every non-V6 GIF index byte-for-byte stable while direct V6 overlays are
+# applied only inside the review-authorized regions below.
+FROZEN_V5_PALETTE_PLAN_B64 = (
+    "ew0KICAiYmFzZWxpbmVfcGFsZXR0ZV9oZXgiOiAiY2ZjZGNjYmFiNmIyOWZhY2ExOTY5ZDk0OTY5MzhmOGE4YThhODE4MjgxNjI4MThiODc2ZjY4NmU2ZTZl"
+    "NjU2NjY2NWU1ZDVjNDU2Mjc0NTA1MzUzNGM0YjRiNDA0NzRhZGQyYzI0ZGQyMjFiOGEyOTIyNDQzZTNjM2MzZDNkMzQzODM4MzQzNDM0MzEyZjJlMjgzMzM3"
+    "MmEyYjJiMjgyNzI3MWYyNjI3MjMyMjIyMWYyMDIwMWIyMDIwZWIxNzE1ZDUxNzEzYzgxNDExYjkxNTExYTUxNDExOGUxMzEwNzMxNDEwNTExNjE0MmExNjE1"
+    "MWIxYjFiMTkxYTFhMTgxNzE3MTYxODE4MTUxNjE2MTUxNDE0MTExNTE3MTExMzEyMTAxMjEyMGYxMTExMGYxMDEwMGIxMDEwMGUwZjBmMGEwZjEwMGEwZjBm"
+    "MGEwZjBlMDcwZjBlZGIwYjBmYmIwYjBjYWIwYjBiOWMwYzBiOTAwYjBhODYwYjBhNzcwYTBhNjUwYTA5NTgwYTA4NGQwYTA4NDEwOTA4MmMwYTA5MTkwYjBh"
+    "MGMwZTBlMGMwZDBkMGIwYzBiMDgwZTEwMDkwZTBlMDcwZTBlMDgwYzBmMDgwYzBjMGIwYTBhMDkwOTBhMGEwOTA4MDgwOTA5MDcwOTA5MDUwZDBkMDYwYzBi"
+    "MDQwYTBjMDUwYTBhMDUwOTA5MDQwODBhMDYwODA4MDUwODA4MDMwODA4MDQwODA3YTkwNjA5NzkwNjA2NjQwNTA2NTUwNTA2NDgwNTA1M2UwNTA1MzQwNTA1"
+    "MmIwNTA1MjAwNTA0MTQwNTA1MGMwNTA1MDkwNTA1MGIwNDAzMDgwNjA2MDYwNzA4MDYwNzA3MDYwNzA2MDYwNjA2MDYwNTA2MDYwNTA0MDUwNzA4MDUwNzA3"
+    "MDQwNzA3MDUwNzA2MDQwNjA3MDUwNjA2MDQwNTA2MDUwNjA1MDUwNTA1MDQwNTA1MDQwNTA0MDQwNDA1MDUwNDA0MDQwNDA0MDQwNDAzMDIwNjA5MDIwNjA3"
+    "MDIwNTA3MDIwNjA2MDMwNTA2MDIwNTA2MDIwNDA2MDIwNjA1MDMwNTA1MDIwNTA1MDMwNDA1MDIwNDA1MDIwNTA0MDMwNDA0MDIwNDA0MDMwNDAzMDIwNDAz"
+    "MDEwNjA5MDAwNjA3MDEwNTA2MDEwNDA2MDEwNjA1MDEwNTA1MDAwNTA1MDEwNDA1MDAwNDA1MDEwNTA0MDEwNDA0MDAwNDA0MDEwNTAzMDEwNDAzMDAwNDAz"
+    "MDEwNDAyNmUwMzA1M2YwMzA0MjkwMzAzMTYwMzAzMDgwMzAzMDUwMzAzMDQwMzAzMDMwMzA0MDMwMzAzMDMwMzAyMDIwMzA1MDIwMzA0MDIwMzAzMDIwMzAy"
+    "MDIwMzAxMDEwMzA1MDEwMzA0MDEwMzAzMDEwMzAyMDEwMzAxMDAwMzA1MDAwMzA0MDAwMzAzMDAwMzAyMDAwMzAxNDMwMjAzMTMwMjAyMDgwMjAyMDUwMjAz"
+    "MDMwMjAzMDQwMjAyMDMwMjAyMDMwMjAxMDIwMjA0MDIwMjAzMDIwMjAyMDIwMjAxMDEwMjA1MDEwMjA0MDEwMjAzMDEwMjAyMDEwMjAxMDEwMjAwMDAwMjA1"
+    "MDAwMjA0MDAwMjAzMDAwMjAyMDAwMjAxMDAwMjAwNGIwMTAyMjgwMTAxMWYwMDAxMTgwMTAxMTQwMTAxMTAwMDAxMGQwMDAxMGUwMDAwMGEwMTAxMGEwMDAw"
+    "MDgwMDAxMDgwMDAwMDYwMTAxMDYwMTAwMDYwMDAwMDQwMTAyMDMwMTAyMDQwMTAxMDQwMDAxMDMwMTAxMDMwMDAxMDQwMTAwMDUwMDAwMDQwMDAwMDMwMTAw"
+    "MDMwMDAwMDEwMTAzMDIwMTAyMDEwMTAyMDEwMDAyMDIwMTAxMDEwMTAxMDIwMDAxMDEwMDAxMDEwMTAwMDIwMDAwMDEwMDAwMDAwMTA0MDAwMTAzMDAwMDAz"
+    "MDAwMTAyMDAwMDAyMDAwMTAxMDAwMDAxMDAwMTAwMDAwMDAwIiwNCiAgIm91dHB1dF9wYWxldHRlX2hleCI6ICJjZmNkY2NiYWI2YjI5ZmFjYTE5NjlkOTQ5"
+    "NjkzOGY4YThhOGE4MTgyODE2MjgxOGI4NzZmNjg2ZTZlNmU2NTY2NjY1ZTVkNWM0NTYyNzQ1MDUzNTM0YzRiNGI0MDQ3NGFkZDJjMjRkZDIyMWI4YTI5MjI0"
+    "NDNlM2MzYzNkM2QzNDM4MzgzNDM0MzQzMTJmMmUyODMzMzcyYTJiMmIyODI3MjcxZjI2MjcyMzIyMjIxZjIwMjAxYjIwMjBlYjE3MTVkNTE3MTNjODE0MTFi"
+    "OTE1MTFhNTE0MTE4ZTEzMTA3MzE0MTA1MTE2MTQyYTE2MTUxYjFiMWIxOTFhMWExODE3MTcxNjE4MTgxNTE2MTYxNTE0MTQxMTE1MTcxMTEzMTIxMDEyMTJi"
+    "YTI2MTkwZjEwMTAwYjEwMTAwZTBmMGYwYTBmMTA4MjE3MTQwYTBmMGUwNzBmMGVkYjBiMGZiYjBiMGNhYjBiMGI5YzBjMGI5MDBiMGE4NjBiMGE3NzBhMGE2"
+    "NTBhMDk1ODBhMDg0ZDBhMDg0MTA5MDgyYzBhMDkxOTBiMGEwYzBlMGUwYzBkMGQxYzA1MDUwODBlMTAwMzA3MDgwMzA1MDUwODBjMGYwODBjMGMwYjBhMGEw"
+    "OTA5MGEwYTA5MDgwODA5MDkwMzAyMDMwNTBkMGQwNjBjMGIwNDBhMGMwNTBhMGEwMTA2MDYwMTA0MDQwMTAzMDMwNTA4MDgwMzA4MDgwNDA4MDdhOTA2MDk3"
+    "OTA2MDY2NDA1MDY1NTA1MDY0ODA1MDUzZTA1MDUzNDA1MDUyYjA1MDUyMDA1MDQxNDA1MDUwYzA1MDUwMTAyMDIwYjA0MDMwODA2MDYwNjA3MDgwMDA0MDQw"
+    "MDAyMDIwMDAxMDEwNjA1MDYwNjA1MDRjZDYyMjk4MTRiMjUxNTBkMDkwNTA3MDYwNDA2MDcwNDA1MDUwMDA1MDUwMjA0MDQwMDA0MDQwMjAzMDMwNDA1MDQw"
+    "MDAzMDQwMjAyMDEwNDA0MDQwMDAyMDMwMjA2MDkwMDAxMDEwMDAwMDBkMDlkM2E5Mzc0MzIzMTI0MTIwNTA3MDcwMTA3MDcwMzA1MDQwMTA0MDUwMDA0MDUw"
+    "NDAyMDIwMTAyMDIwMDAyMDMwMDAxMDEwMDAwMDA0NDk5NDIwMTA2MDkwMDA2MDcyYTYyMzAwNDBjMDgwMTA2MDUwMjA1MDYwMTA0MDUwMTA0MDQwMTAzMDQw"
+    "MDAzMDMwMDAzMDEwMDA0MDQwMTA1MDMwMTAyMDMwMDAyMDIwMDAxMDE2ZTAzMDUzZjAzMDQyOTAzMDMxNjAzMDMwODAzMDMwMDAwMDAzMDdhY2ZlMjFmMWI1"
+    "YzVjNWMwMzAzMDIwMjAzMDVkYTIxMWVmZjU0NDRjZDFmMWJmZjRjM2U0MzUwNjA0YzJiMmY0MTE3MTYwZjEyMTQyYTA5MDgwNjA3MDgwMzA4MDkwMzA2MDcw"
+    "ZDA1MDUwMDAzMDE0MzAyMDMxMzAyMDIwODAyMDIwMjA0MDUwMTA0MDUwMTA1MDQwMTA0MDQwMTA0MDMwMDA0MDQwOTAzMDMwMTAzMDUwMTAzMDQwMTAzMDMw"
+    "MTAzMDIwMDAzMDQwMDAzMDMwMDAzMDIwNzAxMDEwMDAyMDUwMTAyMDMwMTAyMDIwMTAxMDEwMDAyMDQwMDAyMDM0YjAxMDIyODAxMDExZjAwMDExODAxMDEx"
+    "NDAxMDExMDAwMDEwZDAwMDEwMDAyMDIwMDAxMDIwMDAxMDEwMDAwMDEwODAwMDAwMDAwMDA0NDk5NDIxMjIxMTMwNDAxMDIwMTAyMDIwMjAxMDEwMDAxMDFm"
+    "ZjU2NDRlNzMwMmFhYjFmMWExNDA0MDQwNDAwMDAwMjA0MDQwMTAxMDFmZjc0NThmZjVmNDhjZGJmYjhiMmE5YTQ0ZTM4MzMwOTBlMGUwNjBlMGUwNTBhMGI2"
+    "Y2UzOTc4YWFiOTcyNjNhMzAwMDAxMDQwYjExMTEwYTBmMGYwMDAxMDIwMDAwMDIwMDAxMDEwMDAwMDEwMDAxMDAwMDAwMDAiLA0KICAiYmFzZWxpbmVfcGFs"
+    "ZXR0ZV9zaGEyNTYiOiAiOGQ1YzUxYzFjY2ZhYmY0NGU4YzAwM2QxNDJlMjQzY2JlMDY5OTU2ZDU0NGY3ODI2YTE1Y2VkYzA0OTA4NzEwOCIsDQogICJvdXRw"
+    "dXRfcGFsZXR0ZV9zaGEyNTYiOiAiZjhmNTExNTQ0NDQzNmU1NmE4ODZkM2E3MGMxNDg3MGRkY2MxMmU2NTFhMzEwNjAxZDA0YWQwZWEyZThjMGVhYyIsDQog"
+    "ICJyZWdpb25zIjogWw0KICAgIHsNCiAgICAgICJuYW1lIjogInRocmVhdF90aHJlc2hvbGRfY3JpdGljYWwiLA0KICAgICAgImJvdW5kcyI6IFsNCiAgICAg"
+    "ICAgODUwLA0KICAgICAgICA3MjEsDQogICAgICAgIDk1MCwNCiAgICAgICAgNzQwDQogICAgICBdLA0KICAgICAgImNvbG9ycyI6IFsNCiAgICAgICAgWw0K"
+    "ICAgICAgICAgIDE4NiwNCiAgICAgICAgICAzOCwNCiAgICAgICAgICAyNQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMTMwLA0KICAgICAg"
+    "ICAgIDIzLA0KICAgICAgICAgIDIwDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAyOCwNCiAgICAgICAgICA1LA0KICAgICAgICAgIDUNCiAg"
+    "ICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDMsDQogICAgICAgICAgNywNCiAgICAgICAgICA4DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAg"
+    "ICAgICAzLA0KICAgICAgICAgIDUsDQogICAgICAgICAgNQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMywNCiAgICAgICAgICAyLA0KICAg"
+    "ICAgICAgIDMNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDEsDQogICAgICAgICAgNiwNCiAgICAgICAgICA2DQogICAgICAgIF0sDQogICAg"
+    "ICAgIFsNCiAgICAgICAgICAxLA0KICAgICAgICAgIDQsDQogICAgICAgICAgNA0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMSwNCiAgICAg"
+    "ICAgICAzLA0KICAgICAgICAgIDMNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDEsDQogICAgICAgICAgMiwNCiAgICAgICAgICAyDQogICAg"
+    "ICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAgICAgICAgIDQsDQogICAgICAgICAgNA0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAg"
+    "ICAgMCwNCiAgICAgICAgICAyLA0KICAgICAgICAgIDINCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMSwNCiAgICAg"
+    "ICAgICAxDQogICAgICAgIF0NCiAgICAgIF0sDQogICAgICAicGFsZXR0ZV9zbG90cyI6IFsNCiAgICAgICAgNDksDQogICAgICAgIDU0LA0KICAgICAgICA3"
+    "MiwNCiAgICAgICAgNzQsDQogICAgICAgIDc1LA0KICAgICAgICA4MiwNCiAgICAgICAgODcsDQogICAgICAgIDg4LA0KICAgICAgICA4OSwNCiAgICAgICAg"
+    "MTA0LA0KICAgICAgICAxMDgsDQogICAgICAgIDEwOSwNCiAgICAgICAgMTEwDQogICAgICBdDQogICAgfSwNCiAgICB7DQogICAgICAibmFtZSI6ICJ0aHJl"
+    "YXRfdGhyZXNob2xkX2hpZ2giLA0KICAgICAgImJvdW5kcyI6IFsNCiAgICAgICAgODUwLA0KICAgICAgICA3NDIsDQogICAgICAgIDk1MCwNCiAgICAgICAg"
+    "NzYyDQogICAgICBdLA0KICAgICAgImNvbG9ycyI6IFsNCiAgICAgICAgWw0KICAgICAgICAgIDIwNSwNCiAgICAgICAgICA5OCwNCiAgICAgICAgICA0MQ0K"
+    "ICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMTI5LA0KICAgICAgICAgIDc1LA0KICAgICAgICAgIDM3DQogICAgICAgIF0sDQogICAgICAgIFsN"
+    "CiAgICAgICAgICAyMSwNCiAgICAgICAgICAxMywNCiAgICAgICAgICA5DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICA0LA0KICAgICAgICAg"
+    "IDUsDQogICAgICAgICAgNQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICA1LA0KICAgICAgICAgIDUNCiAgICAgICAg"
+    "XSwNCiAgICAgICAgWw0KICAgICAgICAgIDIsDQogICAgICAgICAgNCwNCiAgICAgICAgICA0DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAw"
+    "LA0KICAgICAgICAgIDQsDQogICAgICAgICAgNA0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMiwNCiAgICAgICAgICAzLA0KICAgICAgICAg"
+    "IDMNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMywNCiAgICAgICAgICA0DQogICAgICAgIF0sDQogICAgICAgIFsN"
+    "CiAgICAgICAgICAyLA0KICAgICAgICAgIDIsDQogICAgICAgICAgMQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICAy"
+    "LA0KICAgICAgICAgIDMNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMSwNCiAgICAgICAgICAxDQogICAgICAgIF0s"
+    "DQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAgICAgICAgIDAsDQogICAgICAgICAgMA0KICAgICAgICBdDQogICAgICBdLA0KICAgICAgInBhbGV0dGVf"
+    "c2xvdHMiOiBbDQogICAgICAgIDExMywNCiAgICAgICAgMTE0LA0KICAgICAgICAxMTUsDQogICAgICAgIDExOCwNCiAgICAgICAgMTE5LA0KICAgICAgICAx"
+    "MjAsDQogICAgICAgIDEyMSwNCiAgICAgICAgMTIyLA0KICAgICAgICAxMjQsDQogICAgICAgIDEyNSwNCiAgICAgICAgMTI3LA0KICAgICAgICAxMjksDQog"
+    "ICAgICAgIDEzMA0KICAgICAgXQ0KICAgIH0sDQogICAgew0KICAgICAgIm5hbWUiOiAidGhyZWF0X3RocmVzaG9sZF9tZWRpdW0iLA0KICAgICAgImJvdW5k"
+    "cyI6IFsNCiAgICAgICAgODUwLA0KICAgICAgICA3NjQsDQogICAgICAgIDk1MCwNCiAgICAgICAgNzg0DQogICAgICBdLA0KICAgICAgImNvbG9ycyI6IFsN"
+    "CiAgICAgICAgWw0KICAgICAgICAgIDIwOCwNCiAgICAgICAgICAxNTcsDQogICAgICAgICAgNTgNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAg"
+    "IDE0NywNCiAgICAgICAgICAxMTYsDQogICAgICAgICAgNTANCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDQ5LA0KICAgICAgICAgIDM2LA0K"
+    "ICAgICAgICAgIDE4DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICA1LA0KICAgICAgICAgIDcsDQogICAgICAgICAgNw0KICAgICAgICBdLA0K"
+    "ICAgICAgICBbDQogICAgICAgICAgMSwNCiAgICAgICAgICA3LA0KICAgICAgICAgIDcNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDMsDQog"
+    "ICAgICAgICAgNSwNCiAgICAgICAgICA0DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxLA0KICAgICAgICAgIDQsDQogICAgICAgICAgNQ0K"
+    "ICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICA0LA0KICAgICAgICAgIDUNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAg"
+    "ICAgICAgIDQsDQogICAgICAgICAgMiwNCiAgICAgICAgICAyDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxLA0KICAgICAgICAgIDIsDQog"
+    "ICAgICAgICAgMg0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICAyLA0KICAgICAgICAgIDMNCiAgICAgICAgXSwNCiAg"
+    "ICAgICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMSwNCiAgICAgICAgICAxDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAg"
+    "ICAgICAgIDAsDQogICAgICAgICAgMA0KICAgICAgICBdDQogICAgICBdLA0KICAgICAgInBhbGV0dGVfc2xvdHMiOiBbDQogICAgICAgIDEzMSwNCiAgICAg"
+    "ICAgMTMyLA0KICAgICAgICAxMzMsDQogICAgICAgIDEzNCwNCiAgICAgICAgMTM1LA0KICAgICAgICAxMzYsDQogICAgICAgIDEzNywNCiAgICAgICAgMTM4"
+    "LA0KICAgICAgICAxMzksDQogICAgICAgIDE0MCwNCiAgICAgICAgMTQxLA0KICAgICAgICAxNDIsDQogICAgICAgIDE0Mw0KICAgICAgXQ0KICAgIH0sDQog"
+    "ICAgew0KICAgICAgIm5hbWUiOiAidGhyZWF0X3RocmVzaG9sZF9sb3ciLA0KICAgICAgImJvdW5kcyI6IFsNCiAgICAgICAgODUwLA0KICAgICAgICA3ODYs"
+    "DQogICAgICAgIDk1MCwNCiAgICAgICAgODA2DQogICAgICBdLA0KICAgICAgImNvbG9ycyI6IFsNCiAgICAgICAgWw0KICAgICAgICAgIDY4LA0KICAgICAg"
+    "ICAgIDE1MywNCiAgICAgICAgICA2Ng0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgNDIsDQogICAgICAgICAgOTgsDQogICAgICAgICAgNDgN"
+    "CiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDQsDQogICAgICAgICAgMTIsDQogICAgICAgICAgOA0KICAgICAgICBdLA0KICAgICAgICBbDQog"
+    "ICAgICAgICAgMiwNCiAgICAgICAgICA1LA0KICAgICAgICAgIDYNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDEsDQogICAgICAgICAgNCwN"
+    "CiAgICAgICAgICA1DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxLA0KICAgICAgICAgIDQsDQogICAgICAgICAgNA0KICAgICAgICBdLA0K"
+    "ICAgICAgICBbDQogICAgICAgICAgMSwNCiAgICAgICAgICAzLA0KICAgICAgICAgIDQNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDAsDQog"
+    "ICAgICAgICAgMywNCiAgICAgICAgICAzDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAgICAgICAgIDMsDQogICAgICAgICAgMQ0K"
+    "ICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMSwNCiAgICAgICAgICAyLA0KICAgICAgICAgIDMNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAg"
+    "ICAgICAgIDAsDQogICAgICAgICAgMiwNCiAgICAgICAgICAyDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAgICAgICAgIDEsDQog"
+    "ICAgICAgICAgMQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICAwLA0KICAgICAgICAgIDANCiAgICAgICAgXQ0KICAg"
+    "ICAgXSwNCiAgICAgICJwYWxldHRlX3Nsb3RzIjogWw0KICAgICAgICAxNDQsDQogICAgICAgIDE0NywNCiAgICAgICAgMTQ4LA0KICAgICAgICAxNTAsDQog"
+    "ICAgICAgIDE1MSwNCiAgICAgICAgMTUyLA0KICAgICAgICAxNTMsDQogICAgICAgIDE1NCwNCiAgICAgICAgMTU1LA0KICAgICAgICAxNTgsDQogICAgICAg"
+    "IDE1OSwNCiAgICAgICAgMTYwLA0KICAgICAgICAxNjYNCiAgICAgIF0NCiAgICB9LA0KICAgIHsNCiAgICAgICJuYW1lIjogIndvcmtmbG93X3N0cmlwIiwN"
+    "CiAgICAgICJib3VuZHMiOiBbDQogICAgICAgIDQyMywNCiAgICAgICAgMzcyLA0KICAgICAgICAxMjU5LA0KICAgICAgICA1NDYNCiAgICAgIF0sDQogICAg"
+    "ICAiY29sb3JzIjogWw0KICAgICAgICBbDQogICAgICAgICAgNDgsDQogICAgICAgICAgMTIyLA0KICAgICAgICAgIDIwNw0KICAgICAgICBdLA0KICAgICAg"
+    "ICBbDQogICAgICAgICAgMjI2LA0KICAgICAgICAgIDMxLA0KICAgICAgICAgIDI3DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICA5MiwNCiAg"
+    "ICAgICAgICA5MiwNCiAgICAgICAgICA5Mg0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMjE4LA0KICAgICAgICAgIDMzLA0KICAgICAgICAg"
+    "IDMwDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAyNTUsDQogICAgICAgICAgODQsDQogICAgICAgICAgNjgNCiAgICAgICAgXSwNCiAgICAg"
+    "ICAgWw0KICAgICAgICAgIDIwNSwNCiAgICAgICAgICAzMSwNCiAgICAgICAgICAyNw0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMjU1LA0K"
+    "ICAgICAgICAgIDc2LA0KICAgICAgICAgIDYyDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICA2NywNCiAgICAgICAgICA4MCwNCiAgICAgICAg"
+    "ICA5Ng0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgNzYsDQogICAgICAgICAgNDMsDQogICAgICAgICAgNDcNCiAgICAgICAgXSwNCiAgICAg"
+    "ICAgWw0KICAgICAgICAgIDY1LA0KICAgICAgICAgIDIzLA0KICAgICAgICAgIDIyDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxNSwNCiAg"
+    "ICAgICAgICAxOCwNCiAgICAgICAgICAyMA0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgNDIsDQogICAgICAgICAgOSwNCiAgICAgICAgICA4"
+    "DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICA2LA0KICAgICAgICAgIDcsDQogICAgICAgICAgOA0KICAgICAgICBdLA0KICAgICAgICBbDQog"
+    "ICAgICAgICAgMywNCiAgICAgICAgICA4LA0KICAgICAgICAgIDkNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDMsDQogICAgICAgICAgNiwN"
+    "CiAgICAgICAgICA3DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxMywNCiAgICAgICAgICA1LA0KICAgICAgICAgIDUNCiAgICAgICAgXSwN"
+    "CiAgICAgICAgWw0KICAgICAgICAgIDIsDQogICAgICAgICAgNCwNCiAgICAgICAgICA1DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxLA0K"
+    "ICAgICAgICAgIDQsDQogICAgICAgICAgNQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMSwNCiAgICAgICAgICA1LA0KICAgICAgICAgIDQN"
+    "CiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDEsDQogICAgICAgICAgNCwNCiAgICAgICAgICA0DQogICAgICAgIF0sDQogICAgICAgIFsNCiAg"
+    "ICAgICAgICAxLA0KICAgICAgICAgIDQsDQogICAgICAgICAgMw0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICA0LA0K"
+    "ICAgICAgICAgIDQNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDksDQogICAgICAgICAgMywNCiAgICAgICAgICAzDQogICAgICAgIF0sDQog"
+    "ICAgICAgIFsNCiAgICAgICAgICAxLA0KICAgICAgICAgIDMsDQogICAgICAgICAgNQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMSwNCiAg"
+    "ICAgICAgICAzLA0KICAgICAgICAgIDQNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDEsDQogICAgICAgICAgMywNCiAgICAgICAgICAzDQog"
+    "ICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxLA0KICAgICAgICAgIDMsDQogICAgICAgICAgMg0KICAgICAgICBdLA0KICAgICAgICBbDQogICAg"
+    "ICAgICAgMCwNCiAgICAgICAgICAzLA0KICAgICAgICAgIDQNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMywNCiAg"
+    "ICAgICAgICAzDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAgICAgICAgIDMsDQogICAgICAgICAgMg0KICAgICAgICBdLA0KICAg"
+    "ICAgICBbDQogICAgICAgICAgNywNCiAgICAgICAgICAxLA0KICAgICAgICAgIDENCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDEsDQogICAg"
+    "ICAgICAgMiwNCiAgICAgICAgICAzDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxLA0KICAgICAgICAgIDIsDQogICAgICAgICAgMg0KICAg"
+    "ICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMSwNCiAgICAgICAgICAxLA0KICAgICAgICAgIDENCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAg"
+    "ICAgIDAsDQogICAgICAgICAgMiwNCiAgICAgICAgICA0DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAgICAgICAgIDIsDQogICAg"
+    "ICAgICAgMw0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICAyLA0KICAgICAgICAgIDINCiAgICAgICAgXSwNCiAgICAg"
+    "ICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMSwNCiAgICAgICAgICAyDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAwLA0KICAgICAg"
+    "ICAgIDEsDQogICAgICAgICAgMQ0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMCwNCiAgICAgICAgICAwLA0KICAgICAgICAgIDENCiAgICAg"
+    "ICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMCwNCiAgICAgICAgICAwDQogICAgICAgIF0NCiAgICAgIF0sDQogICAgICAicGFs"
+    "ZXR0ZV9zbG90cyI6IFsNCiAgICAgICAgMTY3LA0KICAgICAgICAxNjgsDQogICAgICAgIDE2OSwNCiAgICAgICAgMTcyLA0KICAgICAgICAxNzMsDQogICAg"
+    "ICAgIDE3NCwNCiAgICAgICAgMTc1LA0KICAgICAgICAxNzYsDQogICAgICAgIDE3NywNCiAgICAgICAgMTc4LA0KICAgICAgICAxNzksDQogICAgICAgIDE4"
+    "MCwNCiAgICAgICAgMTgxLA0KICAgICAgICAxODIsDQogICAgICAgIDE4MywNCiAgICAgICAgMTg0LA0KICAgICAgICAxODksDQogICAgICAgIDE5MCwNCiAg"
+    "ICAgICAgMTkxLA0KICAgICAgICAxOTIsDQogICAgICAgIDE5MywNCiAgICAgICAgMTk0LA0KICAgICAgICAxOTUsDQogICAgICAgIDE5NiwNCiAgICAgICAg"
+    "MTk3LA0KICAgICAgICAxOTgsDQogICAgICAgIDE5OSwNCiAgICAgICAgMjAwLA0KICAgICAgICAyMDEsDQogICAgICAgIDIwMiwNCiAgICAgICAgMjAzLA0K"
+    "ICAgICAgICAyMDUsDQogICAgICAgIDIwNiwNCiAgICAgICAgMjA3LA0KICAgICAgICAyMDgsDQogICAgICAgIDIwOSwNCiAgICAgICAgMjE3LA0KICAgICAg"
+    "ICAyMTgsDQogICAgICAgIDIxOSwNCiAgICAgICAgMjIwLA0KICAgICAgICAyMjINCiAgICAgIF0NCiAgICB9LA0KICAgIHsNCiAgICAgICJuYW1lIjogInRo"
+    "cmVhdF9zY29yZV9kaXNwbGF5IiwNCiAgICAgICJib3VuZHMiOiBbDQogICAgICAgIDg1MCwNCiAgICAgICAgNjE1LA0KICAgICAgICA5NDAsDQogICAgICAg"
+    "IDY4Mg0KICAgICAgXSwNCiAgICAgICJjb2xvcnMiOiBbDQogICAgICAgIFsNCiAgICAgICAgICA2OCwNCiAgICAgICAgICAxNTMsDQogICAgICAgICAgNjYN"
+    "CiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDE4LA0KICAgICAgICAgIDMzLA0KICAgICAgICAgIDE5DQogICAgICAgIF0sDQogICAgICAgIFsN"
+    "CiAgICAgICAgICAxLA0KICAgICAgICAgIDIsDQogICAgICAgICAgMg0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMiwNCiAgICAgICAgICAx"
+    "LA0KICAgICAgICAgIDENCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDAsDQogICAgICAgICAgMSwNCiAgICAgICAgICAxDQogICAgICAgIF0N"
+    "CiAgICAgIF0sDQogICAgICAicGFsZXR0ZV9zbG90cyI6IFsNCiAgICAgICAgMjIzLA0KICAgICAgICAyMjQsDQogICAgICAgIDIyNiwNCiAgICAgICAgMjI3"
+    "LA0KICAgICAgICAyMjgNCiAgICAgIF0NCiAgICB9LA0KICAgIHsNCiAgICAgICJuYW1lIjogImFjdGl2ZV9mZWVkX2xpdmUiLA0KICAgICAgImJvdW5kcyI6"
+    "IFsNCiAgICAgICAgMjA0LA0KICAgICAgICA1NjYsDQogICAgICAgIDI0OCwNCiAgICAgICAgNTg0DQogICAgICBdLA0KICAgICAgImNvbG9ycyI6IFsNCiAg"
+    "ICAgICAgWw0KICAgICAgICAgIDI1NSwNCiAgICAgICAgICA4NiwNCiAgICAgICAgICA2OA0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMjMx"
+    "LA0KICAgICAgICAgIDQ4LA0KICAgICAgICAgIDQyDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxNzEsDQogICAgICAgICAgMzEsDQogICAg"
+    "ICAgICAgMjYNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDIwLA0KICAgICAgICAgIDQsDQogICAgICAgICAgNA0KICAgICAgICBdLA0KICAg"
+    "ICAgICBbDQogICAgICAgICAgMiwNCiAgICAgICAgICA0LA0KICAgICAgICAgIDQNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDEsDQogICAg"
+    "ICAgICAgMSwNCiAgICAgICAgICAxDQogICAgICAgIF0NCiAgICAgIF0sDQogICAgICAicGFsZXR0ZV9zbG90cyI6IFsNCiAgICAgICAgMjI5LA0KICAgICAg"
+    "ICAyMzAsDQogICAgICAgIDIzMSwNCiAgICAgICAgMjMyLA0KICAgICAgICAyMzQsDQogICAgICAgIDIzNQ0KICAgICAgXQ0KICAgIH0sDQogICAgew0KICAg"
+    "ICAgIm5hbWUiOiAiY2FzZV9vdmVydmlld19odWJfcmVhZGFiaWxpdHkiLA0KICAgICAgImJvdW5kcyI6IFsNCiAgICAgICAgMTQ1NSwNCiAgICAgICAgMzk4"
+    "LA0KICAgICAgICAxNTQzLA0KICAgICAgICA0NDINCiAgICAgIF0sDQogICAgICAiY29sb3JzIjogWw0KICAgICAgICBbDQogICAgICAgICAgMjU1LA0KICAg"
+    "ICAgICAgIDExNiwNCiAgICAgICAgICA4OA0KICAgICAgICBdLA0KICAgICAgICBbDQogICAgICAgICAgMjU1LA0KICAgICAgICAgIDk1LA0KICAgICAgICAg"
+    "IDcyDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAyMDUsDQogICAgICAgICAgMTkxLA0KICAgICAgICAgIDE4NA0KICAgICAgICBdLA0KICAg"
+    "ICAgICBbDQogICAgICAgICAgMTc4LA0KICAgICAgICAgIDE2OSwNCiAgICAgICAgICAxNjQNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDc4"
+    "LA0KICAgICAgICAgIDU2LA0KICAgICAgICAgIDUxDQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICA5LA0KICAgICAgICAgIDE0LA0KICAgICAg"
+    "ICAgIDE0DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICA2LA0KICAgICAgICAgIDE0LA0KICAgICAgICAgIDE0DQogICAgICAgIF0sDQogICAg"
+    "ICAgIFsNCiAgICAgICAgICA1LA0KICAgICAgICAgIDEwLA0KICAgICAgICAgIDExDQogICAgICAgIF0NCiAgICAgIF0sDQogICAgICAicGFsZXR0ZV9zbG90"
+    "cyI6IFsNCiAgICAgICAgMjM2LA0KICAgICAgICAyMzcsDQogICAgICAgIDIzOCwNCiAgICAgICAgMjM5LA0KICAgICAgICAyNDAsDQogICAgICAgIDI0MSwN"
+    "CiAgICAgICAgMjQyLA0KICAgICAgICAyNDMNCiAgICAgIF0NCiAgICB9LA0KICAgIHsNCiAgICAgICJuYW1lIjogImNhc2Vfb3ZlcnZpZXdfZGF0YXN0b3Jl"
+    "X3JlYWRhYmlsaXR5IiwNCiAgICAgICJib3VuZHMiOiBbDQogICAgICAgIDE2MDksDQogICAgICAgIDQ4MSwNCiAgICAgICAgMTY3MiwNCiAgICAgICAgNTA4"
+    "DQogICAgICBdLA0KICAgICAgImNvbG9ycyI6IFsNCiAgICAgICAgWw0KICAgICAgICAgIDEwOCwNCiAgICAgICAgICAyMjcsDQogICAgICAgICAgMTUxDQog"
+    "ICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxMzgsDQogICAgICAgICAgMTcxLA0KICAgICAgICAgIDE1MQ0KICAgICAgICBdLA0KICAgICAgICBb"
+    "DQogICAgICAgICAgMzgsDQogICAgICAgICAgNTgsDQogICAgICAgICAgNDgNCiAgICAgICAgXSwNCiAgICAgICAgWw0KICAgICAgICAgIDExLA0KICAgICAg"
+    "ICAgIDE3LA0KICAgICAgICAgIDE3DQogICAgICAgIF0sDQogICAgICAgIFsNCiAgICAgICAgICAxMCwNCiAgICAgICAgICAxNSwNCiAgICAgICAgICAxNQ0K"
+    "ICAgICAgICBdDQogICAgICBdLA0KICAgICAgInBhbGV0dGVfc2xvdHMiOiBbDQogICAgICAgIDI0NCwNCiAgICAgICAgMjQ1LA0KICAgICAgICAyNDYsDQog"
+    "ICAgICAgIDI0OCwNCiAgICAgICAgMjQ5DQogICAgICBdDQogICAgfQ0KICBdDQp9DQo="
+)
+FROZEN_V5_BASELINE_PALETTE_SHA256 = "8d5c51c1ccfabf44e8c003d142e243cbe069956d544f7826a15cedc049087108"
+FROZEN_V5_OUTPUT_PALETTE_SHA256 = "f8f5115444436e56a886d3a70c14870ddcc12e651a310601d04ad0ea2e8c0eac"
+
+
+@lru_cache(maxsize=1)
+def frozen_v5_compatibility_palette_plan() -> GifPalettePlan:
+    """Return the byte-for-byte frozen V5 palette and protection slots."""
+
+    payload = json.loads(base64.b64decode(FROZEN_V5_PALETTE_PLAN_B64).decode("utf-8"))
+    baseline_bytes = bytes.fromhex(str(payload["baseline_palette_hex"]))
+    output_bytes = bytes.fromhex(str(payload["output_palette_hex"]))
+    if len(baseline_bytes) != 768 or len(output_bytes) != 768:
+        raise RendererContractError("Frozen V5 GIF palette size drifted.")
+    if hashlib.sha256(baseline_bytes).hexdigest() != FROZEN_V5_BASELINE_PALETTE_SHA256:
+        raise RendererContractError("Frozen V5 baseline GIF palette hash drifted.")
+    if hashlib.sha256(output_bytes).hexdigest() != FROZEN_V5_OUTPUT_PALETTE_SHA256:
+        raise RendererContractError("Frozen V5 output GIF palette hash drifted.")
+    regions = tuple(
+        PaletteProtectionRegion(
+            str(region["name"]),
+            tuple(int(value) for value in region["bounds"]),
+            tuple(tuple(int(component) for component in color) for color in region["colors"]),
+            tuple(int(slot) for slot in region["palette_slots"]),
+        )
+        for region in payload["regions"]
+    )
+    if len(regions) != 9:
+        raise RendererContractError("Frozen V5 GIF protection-region count drifted.")
+    return GifPalettePlan(
+        _palette_image(baseline_bytes),
+        _palette_image(output_bytes),
+        regions,
+    )
+
+
+def build_v5_compatibility_palette_plan(
+    context: RenderContext,
+    frames: Sequence[np.ndarray],
+) -> GifPalettePlan:
+    """Return the exact approved V5 GIF palette plan."""
+
+    del context, frames
+    return frozen_v5_compatibility_palette_plan()
+
+
+def build_gif_palette_plan(context: RenderContext, frames: Sequence[np.ndarray]) -> GifPalettePlan:
+    """Patch only V6/V7-authorized pixels over the exact V5 indexed GIF base."""
+
+    v5_plan = build_v5_compatibility_palette_plan(context, frames)
+    regions: list[PaletteProtectionRegion] = [
+        PaletteProtectionRegion("v6_feed_cleanup", bounds, (), (), direct_output_quantization=True)
+        for bounds in FEED_V6_CLEAN_LANES
+    ]
+    # These are the four review-authorized V6 regions.  Direct quantization
+    # against V5's output palette leaves every other encoded index untouched.
+    regions.extend(
+        (
+            PaletteProtectionRegion(
+                "v6_threat_typography",
+                (850, 610, 1005, 810),
+                (),
+                (),
+                direct_output_quantization=True,
+            ),
+            PaletteProtectionRegion(
+                "v6_workflow_strip",
+                context.helpers.s03.VIEW_BOUNDS,
+                (),
+                (),
+                direct_output_quantization=True,
+            ),
+        )
+    )
+    s07_x1, s07_y1, _s07_x2, _s07_y2 = context.helpers.s07.PANEL_BOUNDS_GLOBAL
+    for index, (x1, y1, x2, y2) in enumerate(CASE_OVERVIEW_V6_LOCAL_BOUNDS):
+        regions.append(
+            PaletteProtectionRegion(
+                f"v6_case_overview_text_{index:02d}",
+                (s07_x1 + x1, s07_y1 + y1, s07_x1 + x2, s07_y1 + y2),
+                (),
+                (),
+                direct_output_quantization=True,
+            )
+        )
+    # V7 adds only the explicitly approved review lanes.  All use direct
+    # quantization against the frozen V5 output palette; no global palette,
+    # compatibility region, or unrelated encoded index is rebuilt.
+    v7_bounds = [
+        ("v7_header", TOP_HEADER_V7_GROUP_BOUNDS),
+        ("v7_threat_score_suffix", THREAT_SCORE_SUFFIX_V7_CLEAN_BOUNDS),
+        *[(f"v7_severity_{index}", bounds) for index, bounds in enumerate(SEVERITY_V7_VALUE_BOUNDS)],
+    ]
+    v7_bounds.extend(
+        (f"v7_system_status_divider_{index}", bounds)
+        for index, bounds in enumerate(SYSTEM_STATUS_V7_DIVIDER_BANDS)
+    )
+    s07_x1, s07_y1, _s07_x2, _s07_y2 = context.helpers.s07.PANEL_BOUNDS_GLOBAL
+    v7_bounds.extend(
+        (
+            f"v7_case_overview_subtitle_{index}",
+            (s07_x1 + x1, s07_y1 + y1, s07_x1 + x2, s07_y1 + y2),
+        )
+        for index, (x1, y1, x2, y2) in enumerate(CASE_OVERVIEW_V7_SUBTITLE_LOCAL_BOUNDS)
+    )
+    regions.extend(
+        PaletteProtectionRegion(name, bounds, (), (), direct_output_quantization=True)
+        for name, bounds in v7_bounds
+    )
+    # V8 appends six direct regions only.  The fixed V5 palette, all V7
+    # regions, and full-canvas GIF assembly remain byte-for-byte unchanged.
+    regions.extend(
+        PaletteProtectionRegion(
+            f"v8_case_overview_subtitle_{index}",
+            (s07_x1 + x1, s07_y1 + y1, s07_x1 + x2, s07_y1 + y2),
+            (),
+            (),
+            direct_output_quantization=True,
+        )
+        for index, (x1, y1, x2, y2) in enumerate(CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS)
+    )
+    # V9 is deliberately narrower than the full Evidence Package viewport:
+    # only the source-derived connected-component mask for the front-folder
+    # accent is quantized from the toned RGB frame.  This preserves every
+    # magnifier pixel, panel pixel, and pre-existing GIF index outside it.
+    s02_x1, s02_y1, _s02_x2, _s02_y2 = context.helpers.s02.VIEW_BOUNDS
+    v9_x1, v9_y1, v9_x2, v9_y2 = V9_EVIDENCE_FRONT_ACCENT_BOUNDS_GLOBAL
+    local_x1, local_y1 = v9_x1 - s02_x1, v9_y1 - s02_y1
+    local_x2, local_y2 = v9_x2 - s02_x1, v9_y2 - s02_y1
+    v9_mask = context.s02_v9_accent_mask[local_y1:local_y2, local_x1:local_x2]
+    if v9_mask.shape != (v9_y2 - v9_y1, v9_x2 - v9_x1):
+        raise RendererContractError("V9 Evidence Package palette mask dimensions drifted.")
+    if int(np.count_nonzero(v9_mask)) != V9_EVIDENCE_FRONT_ACCENT_EXPECTED_PIXELS:
+        raise RendererContractError("V9 Evidence Package palette mask no longer matches the front-folder accent.")
+    regions.append(
+        PaletteProtectionRegion(
+            "v9_evidence_front_folder_accent",
+            V9_EVIDENCE_FRONT_ACCENT_BOUNDS_GLOBAL,
+            (),
+            (),
+            mask=v9_mask,
+            direct_output_quantization=True,
+        )
+    )
+    return GifPalettePlan(
+        v5_plan.baseline_palette,
+        v5_plan.output_palette,
+        tuple(regions),
+        v5_plan.regions,
+    )
+
+
+def _region_quantizer_palette(colors: Sequence[tuple[int, int, int]]) -> Image.Image:
+    if not colors:
+        raise RendererContractError("A protected GIF palette region has no source colors.")
+    data: list[int] = []
+    for color in colors:
+        data.extend(color)
+    data.extend(colors[0] * (256 - len(colors)))
+    return _palette_image(data)
+
+
+def encode_gif_frame(
+    frame: np.ndarray,
+    plan: GifPalettePlan,
+    *,
+    base_indices: np.ndarray | None = None,
+) -> Image.Image:
+    """Encode one full frame, optionally over a frozen V5 indexed base."""
+
+    if base_indices is None:
+        baseline = Image.fromarray(frame, "RGB").quantize(
+            palette=plan.baseline_palette,
+            dither=Image.Dither.NONE,
+        )
+        indices = np.asarray(baseline, dtype=np.uint8).copy()
+    else:
+        if base_indices.shape != (CANVAS_SIZE[1], CANVAS_SIZE[0]):
+            raise RendererContractError("V5 GIF index base no longer matches the full canvas.")
+        indices = np.asarray(base_indices, dtype=np.uint8).copy()
+    for region in plan.regions:
+        x1, y1, x2, y2 = region.bounds
+        if region.direct_output_quantization:
+            remapped = np.asarray(
+                Image.fromarray(frame[y1:y2, x1:x2], "RGB").quantize(
+                    palette=plan.output_palette,
+                    dither=Image.Dither.NONE,
+                ),
+                dtype=np.uint8,
+            )
+        else:
+            local = Image.fromarray(frame[y1:y2, x1:x2], "RGB").quantize(
+                palette=_region_quantizer_palette(region.colors),
+                dither=Image.Dither.NONE,
+            )
+            local_indices = np.asarray(local, dtype=np.uint8)
+            local_palette = _palette_data(local)
+            color_positions = {color: index for index, color in enumerate(region.colors)}
+            remap = np.zeros(256, dtype=np.uint8)
+            for index in range(256):
+                color = tuple(local_palette[index * 3:index * 3 + 3])
+                remap[index] = region.palette_slots[color_positions[color]]
+            remapped = remap[local_indices]
+        if region.mask is None:
+            indices[y1:y2, x1:x2] = remapped
+        else:
+            if region.mask.shape != remapped.shape:
+                raise RendererContractError(f"Palette mask dimensions drifted for {region.name}.")
+            current = indices[y1:y2, x1:x2]
+            current[region.mask] = remapped[region.mask]
+            indices[y1:y2, x1:x2] = current
+    encoded = Image.fromarray(indices, "P")
+    encoded.putpalette(_palette_data(plan.output_palette))
+    return encoded
+
+
+def save_gif(
+    context: RenderContext,
+    frames: Sequence[np.ndarray],
+    path: Path,
+    plan: GifPalettePlan,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    v5_plan = GifPalettePlan(
+        plan.baseline_palette,
+        plan.output_palette,
+        plan.v5_compatibility_regions,
+    )
+    indexed = []
+    for frame in frames:
+        # Quantize the current RGB source through the frozen V5 plan first.
+        # V6-only RGB differences are then written only inside the authorized
+        # direct-output regions; all other palette indices remain V5-stable.
+        v5_indexed = encode_gif_frame(frame, v5_plan)
+        indexed.append(
+            encode_gif_frame(
+                frame,
+                plan,
+                base_indices=np.asarray(v5_indexed, dtype=np.uint8),
+            )
+        )
     indexed[0].save(
         path,
         format="GIF",
         save_all=True,
         append_images=indexed[1:],
+        # Force the one approved fixed palette into the stream.  Without this
+        # explicit argument Pillow may write per-frame local tables despite
+        # each indexed image already carrying the same palette, which can make
+        # full-canvas later frames decode with black/missing static regions.
+        palette=plan.output_palette,
         duration=FRAME_DURATION_MS,
         loop=0,
         disposal=2,
@@ -2624,6 +4421,67 @@ def make_focus_proofs(
         columns=4,
         title=f"WORKFLOW // FIXED {human_stage(workflow_stage)} / CURRENT-STAGE MOTION",
     )
+
+    # Final V3 visual-hotfix proofs use the same full source frames and decoded
+    # GIF frames as the review output; they are not post-hoc frame edits.
+    metadata_artifact_bounds = (590, 178, 825, 270)
+    paths["center_metadata_artifact_cleanup_proof"] = output_dir / "center_metadata_artifact_cleanup_proof.png"
+    save_labeled_panels(
+        (
+            ("BEFORE // POPULATED SOURCE", crop_array(context.raw, metadata_artifact_bounds)),
+            ("CLEAN PLATE // BEFORE LIVE TEXT", crop_array(context.static_base, metadata_artifact_bounds)),
+            ("AFTER // DECODED GIF F000", crop_array(decoded[0], metadata_artifact_bounds)),
+        ),
+        paths["center_metadata_artifact_cleanup_proof"],
+        scale=4,
+        columns=3,
+        title="V3 // CENTER METADATA SOURCE-TAIL CLEANUP",
+    )
+    threat_summary_bounds = (1004, 714, 1277, 809)
+    paths["threat_summary_artifact_cleanup_proof"] = output_dir / "threat_summary_artifact_cleanup_proof.png"
+    save_labeled_panels(
+        (
+            ("BEFORE // POPULATED SOURCE", crop_array(context.raw, threat_summary_bounds)),
+            ("CLEAN PLATE // BEFORE LIVE TEXT", crop_array(context.static_base, threat_summary_bounds)),
+            ("AFTER // DECODED GIF F000", crop_array(decoded[0], threat_summary_bounds)),
+        ),
+        paths["threat_summary_artifact_cleanup_proof"],
+        scale=4,
+        columns=3,
+        title="V3 // THREAT SUMMARY SOURCE-TAIL CLEANUP",
+    )
+    paths["threat_threshold_color_cleanup_proof"] = output_dir / "threat_threshold_color_cleanup_proof.png"
+    save_labeled_panels(
+        (
+            ("APPROVED SOURCE PALETTE", crop_array(context.raw, (846, 716, 950, 807))),
+            ("SOURCE F000", crop_array(frames[0], (846, 716, 950, 807))),
+            ("DECODED GIF F000", crop_array(decoded[0], (846, 716, 950, 807))),
+        ),
+        paths["threat_threshold_color_cleanup_proof"],
+        scale=5,
+        columns=3,
+        title="V3 // THREAT GUIDE RED / ORANGE / AMBER / GREEN PALETTE LOCK",
+    )
+    paths["workflow_production_parity_proof"] = output_dir / "workflow_production_parity_proof.png"
+    workflow_bounds = context.helpers.s03.VIEW_BOUNDS
+    save_labeled_panels(
+        tuple(
+            (f"DECODED F{index:03d} // FIXED {human_stage(workflow_stage)}", crop_array(decoded[index], workflow_bounds))
+            for index in (0, 20, 40, 60, 80, 100, 119)
+        ),
+        paths["workflow_production_parity_proof"],
+        scale=2,
+        columns=2,
+        title="V3 // FROZEN WORKFLOW PARITY: BLUE COMPLETED / RED CURRENT / GRAY PENDING",
+    )
+    paths["final_visual_hotfix_contact_sheet"] = output_dir / "final_visual_hotfix_contact_sheet.png"
+    make_contact_sheet(
+        decoded,
+        (0, 20, 40, 60, 80, 100, 119),
+        paths["final_visual_hotfix_contact_sheet"],
+        columns=3,
+        label="DECODED V3 HOTFIX FRAME",
+    )
     return paths
 
 
@@ -3059,6 +4917,17 @@ def unit_status_metrics(decoded: Sequence[np.ndarray]) -> dict[str, int | bool]:
 
 def active_feed_live_metrics(context: RenderContext, decoded: Sequence[np.ndarray]) -> dict[str, int | bool]:
     live = temporal_roi_metrics(decoded, (204, 566, 248, 584))
+    live_x1, live_y1, live_x2, live_y2 = context.helpers.s04.LIVE_ROI_GLOBAL
+    live_frames = [frame[live_y1:live_y2, live_x1:live_x2] for frame in decoded]
+    half = FRAME_COUNT // 2
+    # V5 intentionally uses a clean three-second glyph pulse, so the two
+    # 60-frame halves match while the 1.5-second peak remains visibly distinct.
+    live_three_second_cycle = bool(
+        len(live_frames) == FRAME_COUNT
+        and np.array_equal(live_frames[0], live_frames[half])
+        and np.array_equal(live_frames[FRAME_COUNT // 4], live_frames[half + FRAME_COUNT // 4])
+        and not np.array_equal(live_frames[0], live_frames[FRAME_COUNT // 4])
+    )
     graph_x1, graph_y1, graph_x2, graph_y2 = context.helpers.s04.GRAPH_INTERIOR_GLOBAL
     persisted_count = min(
         sum(
@@ -3088,6 +4957,7 @@ def active_feed_live_metrics(context: RenderContext, decoded: Sequence[np.ndarra
     return {
         "live_indicator_unique_states": live["unique_states"],
         "live_indicator_temporal_change": live["temporal_change"],
+        "live_indicator_three_second_cycle": live_three_second_cycle,
         "bar_glow_temporal_change": real_bars["temporal_change"],
         "live_unique_states": live["unique_states"],
         "live_temporal_change": live["temporal_change"],
@@ -3097,7 +4967,9 @@ def active_feed_live_metrics(context: RenderContext, decoded: Sequence[np.ndarra
 
 
 def operational_spacing_metrics(entries: Sequence[TextEntry]) -> dict[str, int | bool]:
-    target = entries[3]
+    # V7 splits the semantic severity token into its own measured entry; locate
+    # the wrapped action by its frozen row origin rather than ordinal position.
+    target = next(entry for entry in entries if entry.position == (1340, 735))
     image = Image.new("RGB", (450, 90), (0, 0, 0))
     draw = ImageDraw.Draw(image)
     draw.multiline_text((0, 0), target.value, fill=(255, 255, 255), font=dashboard_font(target.size), spacing=target.line_spacing)
@@ -3151,16 +5023,143 @@ def evidence_update_line_count(frame: np.ndarray) -> int:
     )
 
 
+def clean_plate_artifact_pixels(plate: np.ndarray, bounds: tuple[int, int, int, int]) -> int:
+    """Count only bright stale-glyph candidates in a deliberately empty lane."""
+
+    region = crop_array(plate, bounds)
+    return int(np.count_nonzero(np.max(region, axis=2) >= 10))
+
+
 def metadata_placeholder_residuals(context: RenderContext) -> tuple[int, int]:
-    # These narrow former clear-master dash cores lie safely inside the two
-    # dynamic lanes. The clean static plate must contain no bright residual
-    # before the current persisted value is drawn.
-    classification = crop_array(context.static_base, (642, 211, 657, 214))
-    family = crop_array(context.static_base, (642, 242, 657, 244))
-    return (
-        int(np.count_nonzero(np.max(classification, axis=2) >= 35)),
-        int(np.count_nonzero(np.max(family, axis=2) >= 35)),
+    # Audit the former source-glyph tail bands, not merely their old dash cores.
+    return tuple(
+        clean_plate_artifact_pixels(context.static_base, bounds)
+        for bounds in CENTER_METADATA_ARTIFACT_BOUNDS
     )
+
+
+def threat_summary_placeholder_residuals(context: RenderContext) -> int:
+    # The header/rule and the red bullet column are intentionally outside this
+    # source-cleanup ROI, so any bright pixel here is obsolete preview residue.
+    return clean_plate_artifact_pixels(context.static_base, THREAT_SUMMARY_ARTIFACT_BOUNDS)
+
+
+def _threshold_leader_has_expected_hue(frame: np.ndarray, level: str, x: int, y: int) -> bool:
+    """Check the colored guide leader without treating dark background as ink."""
+
+    sample = frame[y - 1:y + 2, 857:874].astype(np.int16)
+    maximum = np.max(sample, axis=2)
+    minimum = np.min(sample, axis=2)
+    # Ignore the intentionally near-black textured floor and inspect the
+    # visible leader/body ink only; this catches a real neutral/white ghost
+    # without misclassifying a dark background antialias pixel as a color band.
+    ink = sample[(maximum >= 100) & ((maximum - minimum) >= 12)]
+    if not len(ink):
+        return False
+    red, green, blue = ink[:, 0], ink[:, 1], ink[:, 2]
+    if level == "CRITICAL":
+        return bool(np.all((red > green) & (red > blue)))
+    if level == "HIGH":
+        return bool(np.all((red > green) & (green > blue)))
+    if level == "MEDIUM":
+        return bool(np.all((red >= green) & (green > blue) & (green * 100 >= red * 55)))
+    if level == "LOW":
+        return bool(np.all((green > red) & (green > blue)))
+    raise RendererContractError(f"Unknown threshold-guide level: {level}")
+
+
+def decoded_threshold_guide_metrics(
+    context: RenderContext,
+    decoded: Sequence[np.ndarray],
+) -> dict[str, bool | int | dict[str, tuple[int, int, int]]]:
+    """Verify palette survival in decoded GIF frames, rather than raw sources."""
+
+    expected = threshold_guide_colors(context.raw)
+    clean_by_level: dict[str, bool] = {}
+    for level, (x, y) in THRESHOLD_GUIDE_SAMPLES.items():
+        clean_by_level[level] = all(
+            tuple(int(channel) for channel in frame[y, x]) == expected[level]
+            and _threshold_leader_has_expected_hue(frame, level, x, y)
+            for frame in decoded
+        )
+    medium_neutral = 0
+    for frame in decoded:
+        medium = crop_array(frame, (856, 767, 941, 782)).astype(np.int16)
+        brightness = np.max(medium, axis=2)
+        chroma = np.max(medium, axis=2) - np.min(medium, axis=2)
+        medium_neutral += int(np.count_nonzero((brightness >= 120) & (chroma <= 16)))
+    equals_visible_pixels: dict[str, int] = {}
+    equals_visible_every_frame: dict[str, bool] = {}
+    for level, y, _range in THREAT_GUIDE_V6_ROWS:
+        target = np.asarray(expected[level], dtype=np.uint8)
+        counts = [
+            int(np.count_nonzero(np.all(frame[y:y + 13, 932:940] == target, axis=2)))
+            for frame in decoded
+        ]
+        equals_visible_pixels[level] = min(counts, default=0)
+        equals_visible_every_frame[level] = bool(counts and min(counts) > 0)
+    return {
+        "critical_color_clean": clean_by_level["CRITICAL"],
+        "high_color_clean": clean_by_level["HIGH"],
+        "medium_color_clean": clean_by_level["MEDIUM"],
+        "low_color_clean": clean_by_level["LOW"],
+        "medium_contains_white_ghost_pixels": medium_neutral > 0,
+        "medium_neutral_ghost_pixel_count": medium_neutral,
+        "decoded_threshold_guide_anchor_colors": expected,
+        "guide_equals_visible_pixels": equals_visible_pixels,
+        "guide_equals_visible_every_frame": equals_visible_every_frame,
+        "guide_rows": {
+            level: f"{level} = {value}"
+            for level, _y, value in THREAT_GUIDE_V6_ROWS
+        },
+    }
+
+
+def active_feed_row_cleanup_metrics(
+    context: RenderContext,
+    decoded: Sequence[np.ndarray],
+) -> dict[str, int | bool]:
+    """Audit the V6 list background after actual GIF decoding."""
+
+    if not decoded:
+        return {"long_neutral_runs": 0, "blank_pale_residual_pixels": 0, "divider_rows_clear": False}
+    frame = decoded[0]
+    glyph_image = Image.new("RGB", CANVAS_SIZE, (0, 0, 0))
+    glyph_draw = ImageDraw.Draw(glyph_image)
+    for entry in feed_panel_entries(context.renderer_state):
+        glyph_draw.multiline_text(
+            entry.position,
+            entry.value,
+            fill=(255, 255, 255),
+            font=dashboard_font(entry.size, entry.bold),
+            spacing=entry.line_spacing,
+        )
+    glyph_mask = np.any(np.asarray(glyph_image, dtype=np.uint8) != 0, axis=2)
+    glyph_mask = cv2.dilate(
+        glyph_mask.astype(np.uint8), np.ones((5, 5), np.uint8), iterations=1
+    ).astype(bool)
+    list_mask = np.zeros((CANVAS_SIZE[1], CANVAS_SIZE[0]), dtype=bool)
+    for bounds in FEED_V6_CLEAN_LANES:
+        x1, y1, x2, y2 = bounds
+        list_mask[y1:y2, x1:x2] = True
+    values = frame.astype(np.int16)
+    brightness = np.max(values, axis=2)
+    chroma = np.max(values, axis=2) - np.min(values, axis=2)
+    pale_background = list_mask & ~glyph_mask & (brightness >= 20)
+    neutral = pale_background & (chroma <= 22)
+    divider_windows = ((592, 594), (614, 616), (636, 638), (661, 663))
+    longest_run = 0
+    for top, bottom in divider_windows:
+        for row in neutral[top:bottom, 72:373]:
+            run = 0
+            for value in row:
+                run = run + 1 if value else 0
+                longest_run = max(longest_run, run)
+    return {
+        "long_neutral_runs": int(longest_run),
+        "blank_pale_residual_pixels": int(np.count_nonzero(pale_background)),
+        "divider_rows_clear": longest_run == 0,
+    }
 
 
 def threat_score_target_metrics(context: RenderContext, frames: Sequence[np.ndarray]) -> dict[str, Any]:
@@ -3213,31 +5212,46 @@ def workflow_motion_metrics(
 ) -> dict[str, int | bool]:
     stage = str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
     masks = workflow_micro_polish_masks(context)
+    x1, y1, x2, y2 = context.helpers.s03.VIEW_BOUNDS
+    stage_index = context.helpers.s03.STAGES.index(stage)
+    static = context.s03_static_workflow_plate
     outside_micro_polish = 0
     inside_micro_polish = 0
     outside_safe = 0
+    current_card_outline_overlay = 0
     completed_blue = True
     pending_gray = True
     current_red = True
-    x1, y1, x2, y2 = context.helpers.s03.VIEW_BOUNDS
-    stage_index = context.helpers.s03.STAGES.index(stage)
-    completed_mask = np.logical_or.reduce(context.s03_stage_masks[:stage_index]) if stage_index else np.zeros_like(masks["safe"])
+    current_shell = _workflow_local_rect(context, WORKFLOW_CARD_SHELLS_GLOBAL[stage])
+    rejected_broad_outline = cv2.dilate(
+        current_shell.astype(np.uint8), np.ones((7, 7), np.uint8), iterations=1
+    ).astype(bool)
+    rejected_broad_outline &= ~current_shell & masks["safe"]
+    rejected_broad_outline &= ~(masks["incoming_arrow"] | masks["incoming_halo"])
+    completed_mask = (
+        np.logical_or.reduce(context.s03_stage_masks[:stage_index])
+        if stage_index else np.zeros_like(masks["safe"])
+    )
     pending_masks = context.s03_stage_masks[stage_index + 1:]
-    for index, frame in enumerate(frames):
-        expected = context.helpers.s03.render_workflow_state(
-            context.s03_source,
-            context.s03_stage_masks,
-            context.s03_arrow_masks,
-            context.s03_stage_norms,
-            context.s03_arrow_norms,
-            stage,
-            index / FRAME_COUNT,
-        )
+    label_mask = np.zeros_like(masks["safe"])
+    for bounds in WORKFLOW_LABEL_BOUNDS_GLOBAL:
+        label_mask |= _workflow_local_rect(context, bounds)
+    current_body_mask = context.s03_stage_masks[stage_index] & ~label_mask
+
+    for frame in frames:
         actual = frame[y1:y2, x1:x2]
-        difference = np.any(actual != expected, axis=2)
-        outside_micro_polish = max(outside_micro_polish, int(np.count_nonzero(difference & ~masks["authorized"])))
-        inside_micro_polish = max(inside_micro_polish, int(np.count_nonzero(difference & masks["authorized"])))
+        difference = np.any(actual != static, axis=2)
+        outside_micro_polish = max(
+            outside_micro_polish, int(np.count_nonzero(difference & ~masks["authorized"]))
+        )
+        inside_micro_polish = max(
+            inside_micro_polish, int(np.count_nonzero(difference & masks["authorized"]))
+        )
         outside_safe = max(outside_safe, int(np.count_nonzero(difference & ~masks["safe"])))
+        current_card_outline_overlay = max(
+            current_card_outline_overlay,
+            int(np.count_nonzero(difference & rejected_broad_outline)),
+        )
         if stage_index:
             completed_pixels = actual[completed_mask].astype(np.float64)
             completed_blue &= bool(
@@ -3251,31 +5265,83 @@ def workflow_motion_metrics(
             and float(np.mean(current_pixels[:, 0])) > float(np.mean(current_pixels[:, 2])) * 1.45
         )
         pending_gray &= all(
-            np.array_equal(actual[pending_mask], expected[pending_mask])
+            np.array_equal(actual[pending_mask], static[pending_mask])
             for pending_mask in pending_masks
         )
-    shell_x1, shell_y1, shell_x2, shell_y2 = WORKFLOW_CARD_SHELLS_GLOBAL[stage]
-    # This resolves to the original `(605, 387, 712, 492)` Evidence Review
-    # region for the V1 fixture while correctly sampling the active fixed card
-    # for every other valid persisted stage.
-    current = temporal_roi_metrics(
-        decoded,
-        (shell_x1 - 5, shell_y1, shell_x2 + 13, shell_y2 + 23),
-    )
+
+    decoded_completed_blue = True
+    decoded_current_red = True
+    decoded_pending_gray = True
+    decoded_current_arrow_red = True
+    for frame in decoded:
+        actual = frame[y1:y2, x1:x2].astype(np.float64)
+        if stage_index:
+            completed_pixels = actual[completed_mask]
+            decoded_completed_blue &= bool(
+                completed_pixels.size
+                # The approved fixed GIF palette renders this as a restrained
+                # steel-blue completed state rather than saturated neon blue.
+                and float(np.mean(completed_pixels[:, 2]) - np.mean(completed_pixels[:, 0])) >= 20.0
+            )
+        current_pixels = actual[context.s03_stage_masks[stage_index]]
+        decoded_current_red &= bool(
+            current_pixels.size
+            and float(np.mean(current_pixels[:, 0]) - np.mean(current_pixels[:, 1])) >= 60.0
+            and float(np.mean(current_pixels[:, 0]) - np.mean(current_pixels[:, 2])) >= 60.0
+        )
+        decoded_pending_gray &= all(
+            bool(np.max(np.mean(actual[pending_mask], axis=0)) - np.min(np.mean(actual[pending_mask], axis=0)) <= 12.0)
+            for pending_mask in pending_masks
+        )
+        if stage_index:
+            arrow_pixels = actual[context.s03_arrow_masks[stage_index - 1]]
+            decoded_current_arrow_red &= bool(
+                arrow_pixels.size
+                and float(np.mean(arrow_pixels[:, 0]) - np.mean(arrow_pixels[:, 1])) >= 100.0
+                and float(np.mean(arrow_pixels[:, 0]) - np.mean(arrow_pixels[:, 2])) >= 100.0
+            )
+
+    def temporal_mask_metrics_local(mask: np.ndarray) -> tuple[int, int]:
+        values = [frame[y1:y2, x1:x2][mask].copy() for frame in decoded]
+        if not values:
+            return 0, 0
+        changed = np.logical_or.reduce(
+            tuple(np.any(value != values[0], axis=1) for value in values[1:])
+        ) if len(values) > 1 else np.zeros(values[0].shape[0], dtype=bool)
+        return len({sha256_array(value) for value in values}), int(np.count_nonzero(changed))
+
+    label_unique, label_change = temporal_mask_metrics_local(label_mask)
+    body_unique, body_change = temporal_mask_metrics_local(current_body_mask)
+    arrow_unique, arrow_change = temporal_mask_metrics_local(masks["incoming_arrow"])
     return {
-        "current_stage_unique_visual_states": current["unique_states"],
-        "current_stage_temporal_change": current["temporal_change"],
-        # Retained #9 key: now explicitly means no change outside the small
-        # review-emphasis mask, rather than falsely claiming whole-panel byte
-        # equality after an authorized visual overlay.
+        # Retained report fields now describe the arrow-only V6 emphasis.
+        "current_stage_unique_visual_states": arrow_unique,
+        "current_stage_temporal_change": arrow_change,
         "integrated_vs_frozen_pixel_differences": outside_micro_polish,
         "micro_polish_inside_authorized_differences": inside_micro_polish,
         "micro_polish_outside_safe_bounds_differences": outside_safe,
+        "current_card_outline_overlay_differences": current_card_outline_overlay,
         "completed_stage_color_correct": completed_blue,
         "current_stage_color_correct": current_red,
         "pending_stage_colors_correct": pending_gray,
         "completed_blue_preserved": completed_blue,
         "pending_gray_preserved": pending_gray,
+        "completed_stage_reads_as_blue": decoded_completed_blue,
+        "current_stage_reads_as_red": decoded_current_red,
+        "pending_stages_read_as_gray": decoded_pending_gray,
+        "current_arrow_reads_as_red": decoded_current_arrow_red,
+        "current_stage_glow_temporal_change": body_change,
+        "current_arrow_temporal_change": arrow_change,
+        "workflow_label_unique_visual_states": label_unique,
+        "workflow_label_temporal_change": label_change,
+        "workflow_current_stage_body_unique_visual_states": body_unique,
+        "workflow_current_stage_body_temporal_change": body_change,
+        "workflow_arrow_only_emphasis": bool(
+            not np.any(masks["current_halo"])
+            and not np.any(masks["current_icon"])
+            and not np.any(masks["completed_halo"])
+        ),
+        "workflow_stage_changed_inside_gif": False,
     }
 
 
@@ -3337,12 +5403,13 @@ def make_qc(
             "frame_000_changed_pixels": int(np.count_nonzero(changed)),
             "frame_000_changed_bbox_local": bbox_for_mask(changed),
         }
-    op_entries = operational_brief_entries(context.renderer_state)
+    op_entries = operational_brief_entries(context.renderer_state, context.raw)
     threat_entries = threat_panel_entries(context.renderer_state, context.raw)
     feed_entries = feed_panel_entries(context.renderer_state)
-    case_entries = case_overview_value_entries(context.renderer_state)
+    case_entries = case_overview_v7_text_entries(context.renderer_state)
     op_text = text_entry_metrics(op_entries)
     threat_summary_text = text_entry_metrics(threat_entries[3:])
+    threat_score_suffix_text = text_entry_metrics([threat_entries[1]])
     feed_message_text = text_entry_metrics([entry for index, entry in enumerate(feed_entries) if index % 3 == 1])
     case_text = text_entry_metrics(case_entries)
     op_spacing = operational_spacing_metrics(op_entries)
@@ -3352,9 +5419,12 @@ def make_qc(
     biohazard = frozen_biohazard_metrics(context, frames, decoded)
     unit_status = unit_status_metrics(decoded)
     active_feed_live = active_feed_live_metrics(context, decoded)
+    active_feed_cleanup = active_feed_row_cleanup_metrics(context, decoded)
     threat_target = threat_score_target_metrics(context, frames)
     case_protection = case_overview_protection_metrics(context)
     classification_ghosts, family_ghosts = metadata_placeholder_residuals(context)
+    threat_summary_ghosts = threat_summary_placeholder_residuals(context)
+    decoded_threshold = decoded_threshold_guide_metrics(context, decoded)
     workflow_motion = workflow_motion_metrics(context, frames, decoded)
     evidence_lines = max(
         (evidence_update_line_count(frame) for frame in (*frames, *decoded)),
@@ -3466,7 +5536,9 @@ def make_qc(
         "operational_brief_row_overlap": op_text["overlap"],
         "operational_brief_min_line_gap_px": op_spacing["min_line_gap_px"],
         "operational_brief_icon_clipping": 0,
-        "threat_summary_baked_text_pixels_remaining": 0,
+        "threat_summary_baked_text_pixels_remaining": threat_summary_ghosts,
+        "center_metadata_residual_artifact_pixels": classification_ghosts + family_ghosts,
+        "threat_summary_residual_artifact_pixels": threat_summary_ghosts,
         "threat_summary_ellipsis_count": threat_summary_text["ellipsis_count"],
         "threat_summary_text_overflow_pixels": threat_summary_text["overflow_pixels"],
         "canonical_threat_score": score,
@@ -3478,6 +5550,19 @@ def make_qc(
         "presentation_threshold_boundary_classifications": threshold_boundaries,
         "canonical_threshold_boundary_classifications": canonical_threshold_boundaries,
         "threshold_guide_sampled_colors": threshold_colors,
+        "critical_color_clean": decoded_threshold["critical_color_clean"],
+        "high_color_clean": decoded_threshold["high_color_clean"],
+        "medium_color_clean": decoded_threshold["medium_color_clean"],
+        "low_color_clean": decoded_threshold["low_color_clean"],
+        "medium_contains_white_ghost_pixels": decoded_threshold["medium_contains_white_ghost_pixels"],
+        "medium_neutral_ghost_pixel_count": decoded_threshold["medium_neutral_ghost_pixel_count"],
+        "decoded_threshold_guide_anchor_colors": decoded_threshold["decoded_threshold_guide_anchor_colors"],
+        "threshold_guide_rows": decoded_threshold["guide_rows"],
+        "threshold_guide_equals_visible_pixels": decoded_threshold["guide_equals_visible_pixels"],
+        "threshold_guide_equals_visible_every_frame": decoded_threshold["guide_equals_visible_every_frame"],
+        "threat_score_suffix_font_px": threat_entries[1].size,
+        "threat_score_suffix_bold": threat_entries[1].bold,
+        "threat_score_suffix_text_overflow_pixels": threat_score_suffix_text["overflow_pixels"],
         "case_overview_top_border_difference": borders["case_overview_top_divider"],
         "case_overview_baked_dynamic_text_remaining": 0,
         "case_overview_dynamic_text_overlap": case_text["overlap"],
@@ -3511,6 +5596,7 @@ def make_qc(
         "active_feed_sparse_history_adapter": "two sparse chronological event-intensity anchors occupy the newest frozen slots; older slots retain a fixed low/no-event floor",
         "active_feed_live_indicator_unique_states": active_feed_live["live_indicator_unique_states"],
         "active_feed_live_indicator_temporal_change": active_feed_live["live_indicator_temporal_change"],
+        "active_feed_live_indicator_three_second_cycle": active_feed_live["live_indicator_three_second_cycle"],
         "active_feed_bar_glow_temporal_change": active_feed_live["bar_glow_temporal_change"],
         "active_feed_authoritative_heights_unchanged": authoritative_heights_unchanged,
         "active_feed_fake_events_created": 0,
@@ -3519,6 +5605,9 @@ def make_qc(
         "active_feed_real_bar_glow_temporal_change": active_feed_live["real_bar_glow_temporal_change"],
         "active_feed_newest_bar_emphasis": active_feed_live["newest_bar_emphasis"],
         "active_feed_graph_geometry_unchanged": feed_graph_geometry_unchanged,
+        "active_feed_row_divider_long_neutral_runs": active_feed_cleanup["long_neutral_runs"],
+        "active_feed_list_blank_pale_residual_pixels": active_feed_cleanup["blank_pale_residual_pixels"],
+        "active_feed_row_dividers_removed": active_feed_cleanup["divider_rows_clear"],
         "active_feed_underlying_history_updates_between_repository_runs": True,
         "active_feed_renderer_appends_events": False,
         "active_feed_future_run_behavior": "New persisted #8 events cause the next dashboard generation to resample history and update bar heights; this exported six-second GIF only loops its bounded visual monitoring layer, creates no events, and mutates no external state.",
@@ -3559,17 +5648,29 @@ def make_qc(
         "rendered_current_stage_matches_authoritative": (
             rendered_workflow_stage == authoritative_workflow_stage
         ),
-        "workflow_stage_changed_inside_gif": False,
+        "workflow_stage_changed_inside_gif": workflow_motion["workflow_stage_changed_inside_gif"],
         "workflow_current_stage_unique_visual_states": workflow_motion["current_stage_unique_visual_states"],
         "workflow_current_stage_temporal_change": workflow_motion["current_stage_temporal_change"],
         "workflow_integrated_vs_frozen_pixel_differences": workflow_motion["integrated_vs_frozen_pixel_differences"],
         "workflow_micro_polish_inside_authorized_differences": workflow_motion["micro_polish_inside_authorized_differences"],
         "workflow_micro_polish_outside_safe_bounds_differences": workflow_motion["micro_polish_outside_safe_bounds_differences"],
+        "workflow_current_card_outline_overlay_differences": workflow_motion["current_card_outline_overlay_differences"],
         "workflow_completed_stage_color_correct": workflow_motion["completed_stage_color_correct"],
         "workflow_current_stage_color_correct": workflow_motion["current_stage_color_correct"],
         "workflow_pending_stage_colors_correct": workflow_motion["pending_stage_colors_correct"],
         "workflow_completed_blue_preserved": workflow_motion["completed_blue_preserved"],
         "workflow_pending_gray_preserved": workflow_motion["pending_gray_preserved"],
+        "completed_stage_reads_as_blue": workflow_motion["completed_stage_reads_as_blue"],
+        "current_stage_reads_as_red": workflow_motion["current_stage_reads_as_red"],
+        "pending_stages_read_as_gray": workflow_motion["pending_stages_read_as_gray"],
+        "current_arrow_reads_as_red": workflow_motion["current_arrow_reads_as_red"],
+        "current_stage_glow_temporal_change": workflow_motion["current_stage_glow_temporal_change"],
+        "current_arrow_temporal_change": workflow_motion["current_arrow_temporal_change"],
+        "workflow_label_unique_visual_states": workflow_motion["workflow_label_unique_visual_states"],
+        "workflow_label_temporal_change": workflow_motion["workflow_label_temporal_change"],
+        "workflow_current_stage_body_unique_visual_states": workflow_motion["workflow_current_stage_body_unique_visual_states"],
+        "workflow_current_stage_body_temporal_change": workflow_motion["workflow_current_stage_body_temporal_change"],
+        "workflow_arrow_only_emphasis": workflow_motion["workflow_arrow_only_emphasis"],
         "workflow_loop_seam_closed": seam_exact,
         "route_gate": context.route_gate,
         "read_only_current_case_hash_before": read_only_hash_before,
@@ -3646,6 +5747,8 @@ def make_qc(
         f"operational_brief_min_line_gap_px={report['operational_brief_min_line_gap_px']}",
         f"operational_brief_icon_clipping={report['operational_brief_icon_clipping']}",
         f"threat_summary_baked_text_pixels_remaining={report['threat_summary_baked_text_pixels_remaining']}",
+        f"center_metadata_residual_artifact_pixels={report['center_metadata_residual_artifact_pixels']}",
+        f"threat_summary_residual_artifact_pixels={report['threat_summary_residual_artifact_pixels']}",
         f"threat_summary_ellipsis_count={report['threat_summary_ellipsis_count']}",
         f"threat_summary_text_overflow_pixels={report['threat_summary_text_overflow_pixels']}",
         f"canonical_threat_score={report['canonical_threat_score']}",
@@ -3657,6 +5760,19 @@ def make_qc(
         "presentation_threshold_boundary_classifications=" + json.dumps(report["presentation_threshold_boundary_classifications"], sort_keys=True),
         "canonical_threshold_boundary_classifications=" + json.dumps(report["canonical_threshold_boundary_classifications"], sort_keys=True),
         "threshold_guide_sampled_colors=" + json.dumps(report["threshold_guide_sampled_colors"], sort_keys=True),
+        f"critical_color_clean={report['critical_color_clean']}",
+        f"high_color_clean={report['high_color_clean']}",
+        f"medium_color_clean={report['medium_color_clean']}",
+        f"low_color_clean={report['low_color_clean']}",
+        f"medium_contains_white_ghost_pixels={report['medium_contains_white_ghost_pixels']}",
+        f"medium_neutral_ghost_pixel_count={report['medium_neutral_ghost_pixel_count']}",
+        "decoded_threshold_guide_anchor_colors=" + json.dumps(report["decoded_threshold_guide_anchor_colors"], sort_keys=True),
+        "threshold_guide_rows=" + json.dumps(report["threshold_guide_rows"], sort_keys=True),
+        "threshold_guide_equals_visible_pixels=" + json.dumps(report["threshold_guide_equals_visible_pixels"], sort_keys=True),
+        "threshold_guide_equals_visible_every_frame=" + json.dumps(report["threshold_guide_equals_visible_every_frame"], sort_keys=True),
+        f"threat_score_suffix_font_px={report['threat_score_suffix_font_px']}",
+        f"threat_score_suffix_bold={report['threat_score_suffix_bold']}",
+        f"threat_score_suffix_text_overflow_pixels={report['threat_score_suffix_text_overflow_pixels']}",
         f"case_overview_top_border_difference={report['case_overview_top_border_difference']}",
         f"case_overview_baked_dynamic_text_remaining={report['case_overview_baked_dynamic_text_remaining']}",
         f"case_overview_dynamic_text_overlap={report['case_overview_dynamic_text_overlap']}",
@@ -3690,6 +5806,7 @@ def make_qc(
         f"active_feed_sparse_history_adapter={report['active_feed_sparse_history_adapter']}",
         f"active_feed_live_indicator_unique_states={report['active_feed_live_indicator_unique_states']}",
         f"active_feed_live_indicator_temporal_change={report['active_feed_live_indicator_temporal_change']}",
+        f"active_feed_live_indicator_three_second_cycle={report['active_feed_live_indicator_three_second_cycle']}",
         f"active_feed_bar_glow_temporal_change={report['active_feed_bar_glow_temporal_change']}",
         f"active_feed_authoritative_heights_unchanged={report['active_feed_authoritative_heights_unchanged']}",
         f"active_feed_fake_events_created={report['active_feed_fake_events_created']}",
@@ -3698,6 +5815,9 @@ def make_qc(
         f"active_feed_real_bar_glow_temporal_change={report['active_feed_real_bar_glow_temporal_change']}",
         f"active_feed_newest_bar_emphasis={report['active_feed_newest_bar_emphasis']}",
         f"active_feed_graph_geometry_unchanged={report['active_feed_graph_geometry_unchanged']}",
+        f"active_feed_row_divider_long_neutral_runs={report['active_feed_row_divider_long_neutral_runs']}",
+        f"active_feed_list_blank_pale_residual_pixels={report['active_feed_list_blank_pale_residual_pixels']}",
+        f"active_feed_row_dividers_removed={report['active_feed_row_dividers_removed']}",
         f"active_feed_underlying_history_updates_between_repository_runs={report['active_feed_underlying_history_updates_between_repository_runs']}",
         f"active_feed_renderer_appends_events={report['active_feed_renderer_appends_events']}",
         f"active_feed_future_run_behavior={report['active_feed_future_run_behavior']}",
@@ -3738,11 +5858,23 @@ def make_qc(
         f"workflow_integrated_vs_frozen_pixel_differences={report['workflow_integrated_vs_frozen_pixel_differences']}",
         f"workflow_micro_polish_inside_authorized_differences={report['workflow_micro_polish_inside_authorized_differences']}",
         f"workflow_micro_polish_outside_safe_bounds_differences={report['workflow_micro_polish_outside_safe_bounds_differences']}",
+        f"workflow_current_card_outline_overlay_differences={report['workflow_current_card_outline_overlay_differences']}",
         f"workflow_completed_stage_color_correct={report['workflow_completed_stage_color_correct']}",
         f"workflow_current_stage_color_correct={report['workflow_current_stage_color_correct']}",
         f"workflow_pending_stage_colors_correct={report['workflow_pending_stage_colors_correct']}",
         f"workflow_completed_blue_preserved={report['workflow_completed_blue_preserved']}",
         f"workflow_pending_gray_preserved={report['workflow_pending_gray_preserved']}",
+        f"completed_stage_reads_as_blue={report['completed_stage_reads_as_blue']}",
+        f"current_stage_reads_as_red={report['current_stage_reads_as_red']}",
+        f"pending_stages_read_as_gray={report['pending_stages_read_as_gray']}",
+        f"current_arrow_reads_as_red={report['current_arrow_reads_as_red']}",
+        f"current_stage_glow_temporal_change={report['current_stage_glow_temporal_change']}",
+        f"current_arrow_temporal_change={report['current_arrow_temporal_change']}",
+        f"workflow_label_unique_visual_states={report['workflow_label_unique_visual_states']}",
+        f"workflow_label_temporal_change={report['workflow_label_temporal_change']}",
+        f"workflow_current_stage_body_unique_visual_states={report['workflow_current_stage_body_unique_visual_states']}",
+        f"workflow_current_stage_body_temporal_change={report['workflow_current_stage_body_temporal_change']}",
+        f"workflow_arrow_only_emphasis={report['workflow_arrow_only_emphasis']}",
         f"workflow_loop_seam_closed={report['workflow_loop_seam_closed']}",
         f"visible_dynamic_strings_containing_ellipsis={report['visible_dynamic_strings_containing_ellipsis']}",
         "",
@@ -3807,11 +5939,8 @@ def write_review_outputs(
     png_path = output_dir / "full_dashboard_review.png"
     gif_path = output_dir / "full_dashboard_review_6s.gif"
     save_png(frames[0], png_path)
-    palette = global_palette(
-        context.static_base,
-        tuple(frames[index] for index in (0, 30, 60, 90)),
-    )
-    save_gif(frames, gif_path, palette)
+    palette_plan = build_gif_palette_plan(context, frames)
+    save_gif(context, frames, gif_path, palette_plan)
     decoded = decode_gif(gif_path)
     if len(decoded) != FRAME_COUNT:
         raise RendererContractError("Encoded GIF frame count changed unexpectedly.")
@@ -3875,12 +6004,17 @@ def write_review_outputs(
         "operational_brief_ellipsis_count",
         "operational_brief_text_overflow_pixels",
         "threat_summary_baked_text_pixels_remaining",
+        "center_metadata_residual_artifact_pixels",
+        "threat_summary_residual_artifact_pixels",
         "threat_summary_ellipsis_count",
         "threat_summary_text_overflow_pixels",
         "case_overview_top_border_difference",
         "case_overview_baked_dynamic_text_remaining",
         "active_feed_ellipsis_count",
         "active_feed_text_overflow_pixels",
+        "active_feed_row_divider_long_neutral_runs",
+        "active_feed_list_blank_pale_residual_pixels",
+        "threat_score_suffix_text_overflow_pixels",
         "biohazard_gray_center_seam_pixels",
         "visible_dynamic_strings_containing_ellipsis",
         "operational_brief_icon_clipping",
@@ -3905,6 +6039,15 @@ def write_review_outputs(
         raise RendererContractError(
             "Threat score canonical/display classification or color does not match its approved contract."
         )
+    if not all((
+        qc["critical_color_clean"],
+        qc["high_color_clean"],
+        qc["medium_color_clean"],
+        qc["low_color_clean"],
+    )) or qc["medium_contains_white_ghost_pixels"] or not all(
+        qc["threshold_guide_equals_visible_every_frame"].values()
+    ):
+        raise RendererContractError("Decoded Threat Monitor threshold-guide colors lost their approved semantics.")
     if qc["case_overview_dynamic_text_overlap"] or not qc["case_overview_text_inside_cards"]:
         raise RendererContractError("Case Overview dynamic text left its approved local lanes.")
     if qc["case_overview_dynamic_lanes_intersect_component_bounds"] or qc["case_overview_dynamic_lanes_intersect_route_masks"]:
@@ -3928,13 +6071,15 @@ def write_review_outputs(
     if qc["unit_status_divider_text_overlap"] or not qc["unit_status_bars_above_divider"]:
         raise RendererContractError("Unit Status layout no longer maintains the required divider/text separation.")
     if (
-        qc["active_feed_live_unique_states"] < 100
+        qc["active_feed_live_unique_states"] < 30
         or qc["active_feed_live_temporal_change"] <= 0
+        or not qc["active_feed_live_indicator_three_second_cycle"]
         or qc["active_feed_real_bar_glow_temporal_change"] <= 0
         or not qc["active_feed_authoritative_heights_unchanged"]
         or qc["active_feed_fake_events_created"] != 0
         or not qc["active_feed_newest_bar_emphasis"]
         or not qc["active_feed_graph_geometry_unchanged"]
+        or not qc["active_feed_row_dividers_removed"]
     ):
         raise RendererContractError("Active Case Feed live presentation did not survive GIF decoding.")
     if not qc["active_feed_underlying_history_updates_between_repository_runs"] or qc["active_feed_renderer_appends_events"]:
@@ -3956,10 +6101,23 @@ def write_review_outputs(
         qc["workflow_output_frames"] != FRAME_COUNT
         or not qc["rendered_current_stage_matches_authoritative"]
         or qc["workflow_stage_changed_inside_gif"]
-        or qc["workflow_current_stage_unique_visual_states"] < 100
-        or qc["workflow_current_stage_temporal_change"] <= 0
+        # V6 deliberately leaves stage labels and cards static; only the
+        # current incoming arrow pulses when such an arrow exists.
+        or qc["workflow_label_temporal_change"] != 0
+        or qc["workflow_current_stage_body_temporal_change"] != 0
+        or not qc["workflow_arrow_only_emphasis"]
+        or (
+            context.helpers.s03.STAGES.index(
+                str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
+            ) > 0
+            and (
+                qc["workflow_current_stage_unique_visual_states"] < 2
+                or qc["workflow_current_stage_temporal_change"] <= 0
+            )
+        )
         or not qc["workflow_loop_seam_closed"]
         or qc["workflow_micro_polish_outside_safe_bounds_differences"] != 0
+        or qc["workflow_current_card_outline_overlay_differences"] != 0
     ):
         raise RendererContractError("Workflow current-stage pulse did not survive GIF decoding.")
     if not all((
@@ -3970,6 +6128,17 @@ def write_review_outputs(
         qc["workflow_pending_gray_preserved"],
     )):
         raise RendererContractError("Workflow completed/current/pending color mapping drifted from frozen #3.")
+    if not all((
+        qc["completed_stage_reads_as_blue"],
+        qc["current_stage_reads_as_red"],
+        qc["pending_stages_read_as_gray"],
+        qc["current_arrow_reads_as_red"],
+    )) or qc["current_stage_glow_temporal_change"] != 0 or qc["workflow_label_temporal_change"] != 0 or (
+        context.helpers.s03.STAGES.index(
+            str(context.renderer_state["dashboard"]["workflow"]["current_stage"])
+        ) > 0 and qc["current_arrow_temporal_change"] <= 0
+    ):
+        raise RendererContractError("Decoded Workflow strip no longer meets frozen #3 color or pulse parity.")
 
     consistency = consistency_report(context.renderer_state, context.route_gate)
     (output_dir / "full_dashboard_qc.txt").write_text(qc_text, encoding="utf-8")
