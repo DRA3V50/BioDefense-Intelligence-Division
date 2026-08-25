@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Current evidence supports continued investigative activity.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 

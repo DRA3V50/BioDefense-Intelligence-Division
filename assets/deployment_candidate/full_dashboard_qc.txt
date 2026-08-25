@@ -25,7 +25,7 @@ seam_frame_120_equals_frame_000=True
 seam_frame_060_equals_frame_000=superseded_by_120_frame_sampling
 read_only_state_unchanged=True
 deterministic_repeat_source_frame_hashes_match=True
-render_seconds=22.155
+render_seconds=15.346
 gif_size_bytes=58071833
 
 Visual integration correction checks:

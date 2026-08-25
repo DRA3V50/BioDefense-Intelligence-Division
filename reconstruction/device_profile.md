@@ -19,7 +19,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
 Genome Sequencing Environment
@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 ROUTINE
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Digital evidence preserved for laboratory forensic examination.

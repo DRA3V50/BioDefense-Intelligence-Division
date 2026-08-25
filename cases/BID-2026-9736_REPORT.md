@@ -138,19 +138,19 @@ ROUTINE
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Current evidence supports continued investigative activity.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Identity | Credential reuse detected across isolated research segments |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| PowerShell | Encoded administrative command execution detected |
+| System Log | Unexpected privilege escalation recorded |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 ROUTINE
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---

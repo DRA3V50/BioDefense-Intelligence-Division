@@ -26,19 +26,19 @@ ROUTINE
 
 ### Finding 1
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 

@@ -1,14 +1,14 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=610f5ae4d76e" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=2bb4917952f6" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
-BioDefense-Intelligence-Division
+# BioDefense-Intelligence-Division
 
-CONTROLLED TRAINING RECORD // Cyber-biothreat investigation data
+> **CONTROLLED TRAINING RECORD** // Cyber-biothreat investigation data
 
-Case File Access
+## Case File Access
 
 <table>
   <thead>
@@ -64,7 +64,9 @@ BioDefense Intelligence Division is a cyber-biosecurity intelligence and investi
 
 Investigations retain case identity and evidentiary state across scheduled GitHub Actions executions. Case records, evidence repositories, correlations, forensic products, threat assessments, timelines, and operational intelligence remain synchronized throughout the investigative lifecycle, while the dashboard functions as a read-only visualization of authoritative case state.
 
-Executive Case File
+---
+
+# Executive Case File
 
 <table>
   <thead>
@@ -95,13 +97,15 @@ Executive Case File
 
 <br>
 
-Objective: Investigate coordinated cyber-enabled bioterror activity targeting protected biomedical research facilities and federal laboratory infrastructure.
+**Objective:** Investigate coordinated cyber-enabled bioterror activity targeting protected biomedical research facilities and federal laboratory infrastructure.
 
-Next action: Verify recovery controls and prepare the final operational assessment.
+**Next action:** Verify recovery controls and prepare the final operational assessment.
 
 </details>
 
-Active Investigation
+---
+
+# Active Investigation
 
 <table>
   <thead>
@@ -134,9 +138,9 @@ Active Investigation
 
 <br>
 
-Assessment: Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+**Assessment:** Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
-Recommended action: Verify recovery controls and prepare the final operational assessment.
+**Recommended action:** Verify recovery controls and prepare the final operational assessment.
 
 </details>
 
@@ -147,9 +151,9 @@ Recommended action: Verify recovery controls and prepare the final operational a
 
 The active investigation persists across scheduled workflow executions and advances only when defined lifecycle conditions are satisfied.
 
-Lifecycle
+**Lifecycle**
 
-CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW → DISPOSITION / ARCHIVE
+`CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW → DISPOSITION / ARCHIVE`
 
 <table>
   <thead>
@@ -184,11 +188,13 @@ CASE SCAN → EVIDENCE REVIEW → VALIDATION → ASSESSMENT → PROBLEM REVIEW �
 
 </details>
 
+---
+
 <!-- EVIDENCE_DASHBOARD_START -->
 
-Digital Evidence Record
+# Digital Evidence Record
 
-Active Case: BID-2026-9736
+**Active Case:** BID-2026-9736
 
 <table>
   <thead>
@@ -392,11 +398,13 @@ Active Case: BID-2026-9736
 
 </details>
 
-Threat Family: Clinical Research Data Manipulation · Repository Updated: 2026-08-23T14:19:39Z
+**Threat Family:** Clinical Research Data Manipulation · **Repository Updated:** 2026-08-23T14:19:39Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
-Supporting Case Records
+---
+
+# Supporting Case Records
 
 <details>
 <summary><strong>Operational metrics and recent investigations</strong></summary>
@@ -413,15 +421,15 @@ Supporting Case Records
   <tbody>
     <tr>
       <td valign="top" align="left">Total Investigations</td>
-      <td valign="top" align="right">5</td>
+      <td valign="top" align="right">136</td>
     </tr>
     <tr>
       <td valign="top" align="left">Low / Moderate</td>
-      <td valign="top" align="right">2 / 3</td>
+      <td valign="top" align="right">31 / 49</td>
     </tr>
     <tr>
       <td valign="top" align="left">High / Critical</td>
-      <td valign="top" align="right">0 / 0</td>
+      <td valign="top" align="right">39 / 17</td>
     </tr>
     <tr>
       <td valign="top" align="left">Closed Cases</td>
@@ -429,7 +437,7 @@ Supporting Case Records
     </tr>
     <tr>
       <td valign="top" align="left">Average Confidence</td>
-      <td valign="top" align="right">88.8%</td>
+      <td valign="top" align="right">89.5%</td>
     </tr>
     <tr>
       <td valign="top" align="left">Total Evidence</td>
@@ -442,7 +450,7 @@ Supporting Case Records
   </tbody>
 </table>
 
-Recent Investigations
+### Recent Investigations
 
 <table>
   <thead>
@@ -539,9 +547,9 @@ The repository includes a functioning C#/.NET threat-assessment component that e
   </tbody>
 </table>
 
-Current canonical assessment: 21 / 100 · GUARDED
+**Current canonical assessment:** `18 / 100` · `LABORATORY SECURITY BREACH INVESTIGATION`
 
-Generated records
+**Generated records**
 
 ▸ <a href="reports/bioterror_threat_score_csharp.json">C# Canonical Threat Score — JSON</a><br>
 ▸ <a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score — XML</a>
@@ -570,7 +578,9 @@ Generated records
 
 </details>
 
-Investigative Mission
+---
+
+# Investigative Mission
 
 Defensive cybersecurity research centered on cyber-enabled biosecurity investigations, laboratory and pharmaceutical security, protected research infrastructure, digital evidence management, forensic reconstruction, bioterror threat assessment, investigative intelligence production, operational technology, connected medical systems, and critical infrastructure.
 
