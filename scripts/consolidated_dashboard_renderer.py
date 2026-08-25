@@ -221,12 +221,27 @@ def text_timestamp(value: object) -> str:
     return "UNAVAILABLE" if instant is None else instant.strftime("%Y-%m-%d %H:%M:%S %Z")
 
 
-def footer_timestamp(value: object, *, separator: str = ":") -> str:
-    instant = presentation_instant(value)
-    if instant is None:
-        return "UNAVAILABLE"
+def footer_timestamp_for_render_instant(
+    render_started_at: datetime,
+    *,
+    separator: str = ":",
+) -> str:
+    """Format the one Eastern instant captured for this dashboard render."""
+
+    if render_started_at.tzinfo is None:
+        raise RendererContractError("Dashboard render timestamp must be timezone-aware.")
+    instant = render_started_at.astimezone(PRESENTATION_TIMEZONE)
     hour = instant.strftime("%I").lstrip("0") or "0"
     return f"{instant:%Y-%m-%d} {hour}{separator}{instant:%M %p %Z}"
+
+
+def capture_render_started_at(value: datetime | None = None) -> datetime:
+    """Capture or normalize the one timezone-aware timestamp for one render."""
+
+    instant = datetime.now(PRESENTATION_TIMEZONE) if value is None else value
+    if instant.tzinfo is None:
+        raise RendererContractError("Dashboard render timestamp must be timezone-aware.")
+    return instant.astimezone(PRESENTATION_TIMEZONE)
 
 
 def event_timestamp(value: object) -> str:
@@ -1131,13 +1146,20 @@ def threshold_guide_colors(raw: np.ndarray) -> dict[str, tuple[int, int, int]]:
     return colors
 
 
-def static_text_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> list[TextEntry]:
+def static_text_entries(
+    renderer_state: dict[str, Any],
+    raw: np.ndarray,
+    *,
+    render_started_at: datetime,
+) -> list[TextEntry]:
     shared = renderer_state["dashboard"]["shared"]
     display = renderer_state["display"]
     system = renderer_state["dashboard"]["system_status"]
     updated = text_timestamp(shared["updated_at"])
     updated_date = updated[:10]
-    footer_updated = footer_timestamp(shared["updated_at"])
+    # This footer is a render/build clock, deliberately separate from the
+    # authoritative active-case timestamp used by UPDATED/LAST UPDATED.
+    footer_updated = footer_timestamp_for_render_instant(render_started_at)
     evidence_count = int(shared["evidence_count"])
     integr = renderer_state["integration_count"]
     system_health = _system_health(system)
@@ -1476,9 +1498,14 @@ def operational_brief_entries(renderer_state: dict[str, Any], raw: np.ndarray) -
     return entries
 
 
-def all_text_entries(renderer_state: dict[str, Any], raw: np.ndarray) -> list[TextEntry]:
+def all_text_entries(
+    renderer_state: dict[str, Any],
+    raw: np.ndarray,
+    *,
+    render_started_at: datetime,
+) -> list[TextEntry]:
     return (
-        static_text_entries(renderer_state, raw)
+        static_text_entries(renderer_state, raw, render_started_at=render_started_at)
         + status_panel_entries(renderer_state)
         + threat_panel_entries(renderer_state, raw)
         + feed_panel_entries(renderer_state)
@@ -2165,6 +2192,7 @@ class RenderContext:
     clear: np.ndarray
     registered_clear: np.ndarray
     renderer_state: dict[str, Any]
+    render_started_at: datetime
     static_base: np.ndarray
     palette_static_base: np.ndarray
     text_entries: list[TextEntry]
@@ -2350,7 +2378,14 @@ def configure_case_overview_review_timing(
     helper.ROUTE_BY_KEY = {route.key: route for route in helper.ROUTES}
 
 
-def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
+def prepare_context(
+    renderer_state: dict[str, Any],
+    *,
+    render_started_at: datetime | None = None,
+) -> RenderContext:
+    # Capture this once before frame assembly. The same instant flows through
+    # the static text plate used by the PNG and every GIF frame.
+    captured_render_started_at = capture_render_started_at(render_started_at)
     verify_approved_inputs()
     helpers = load_frozen_helpers()
     raw = np.array(Image.open(POPULATED_MASTER).convert("RGB"), dtype=np.uint8)
@@ -2544,7 +2579,11 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
     _merge_panel(base, helpers.s06.PANEL_BOUNDS, s06_shell)
     _merge_panel(base, helpers.s07.PANEL_BOUNDS_GLOBAL, s07_plate)
 
-    text_entries = all_text_entries(renderer_state, raw)
+    text_entries = all_text_entries(
+        renderer_state,
+        raw,
+        render_started_at=captured_render_started_at,
+    )
     # Build this just once from registered clean-master lanes.  Rendering a
     # frame later restores this clean content under every live string before
     # drawing it once; it therefore cannot stack data over baked preview text.
@@ -2596,6 +2635,7 @@ def prepare_context(renderer_state: dict[str, Any]) -> RenderContext:
         clear=clear,
         registered_clear=registered_clear,
         renderer_state=renderer_state,
+        render_started_at=captured_render_started_at,
         static_base=static_base,
         palette_static_base=palette_static_base,
         text_entries=text_entries,
@@ -3550,8 +3590,8 @@ def legacy_v2_palette_frame(
     legacy_entries = [
         replace(
             entry,
-            value=footer_timestamp(
-                context.renderer_state["dashboard"]["shared"]["updated_at"],
+            value=footer_timestamp_for_render_instant(
+                context.render_started_at,
                 separator="",
             ),
         ) if entry.bounds == FOOTER_TIMESTAMP_ENTRY_BOUNDS else entry
@@ -5544,7 +5584,25 @@ def make_qc(
         (evidence_update_line_count(frame) for frame in (*frames, *decoded)),
         default=0,
     )
-    instant = presentation_instant(context.renderer_state["dashboard"]["shared"]["updated_at"])
+    shared = context.renderer_state["dashboard"]["shared"]
+    authoritative_updated = text_timestamp(shared["updated_at"])
+    authoritative_updated_date = authoritative_updated[:10]
+    rendered_footer_timestamp = footer_timestamp_for_render_instant(
+        context.render_started_at,
+    )
+    entry_values = {entry.bounds: entry.value for entry in context.text_entries}
+    left_updated_matches_authoritative = (
+        entry_values.get((234, 451, 400, 470)) == authoritative_updated
+    )
+    center_last_updated_matches_authoritative = (
+        entry_values.get((1011, 333, 1227, 370)) == authoritative_updated
+    )
+    evidence_package_last_updated_matches_authoritative = (
+        entry_values.get((1405, 207, 1518, 250)) == authoritative_updated_date
+    )
+    footer_matches_render_instant = (
+        entry_values.get(FOOTER_TIMESTAMP_ENTRY_BOUNDS) == rendered_footer_timestamp
+    )
     raw_z_visible = any("Z" in entry.value for entry in context.text_entries)
     threshold_colors = threshold_guide_colors(context.raw)
     score = int(context.renderer_state["canonical_threat_score"])
@@ -5748,8 +5806,13 @@ def make_qc(
         "visible_dynamic_strings_containing_ellipsis": global_ellipsis_count,
         "evidence_package_unwanted_update_lines": evidence_lines,
         "presentation_timestamp_timezone": str(PRESENTATION_TIMEZONE),
+        "render_timestamp_timezone": str(context.render_started_at.tzinfo),
+        "footer_render_timestamp": rendered_footer_timestamp,
         "raw_Z_visible_in_dashboard": raw_z_visible,
-        "footer_timestamp_matches_center_instant": instant is not None,
+        "left_updated_timestamp_matches_authoritative": left_updated_matches_authoritative,
+        "center_last_updated_timestamp_matches_authoritative": center_last_updated_matches_authoritative,
+        "evidence_package_last_updated_matches_authoritative": evidence_package_last_updated_matches_authoritative,
+        "footer_timestamp_matches_render_instant": footer_matches_render_instant,
         "classification_baked_text_pixels_remaining": classification_ghosts,
         "threat_family_baked_text_pixels_remaining": family_ghosts,
         "classification_dynamic_text_overlap": False,
@@ -5954,8 +6017,13 @@ def make_qc(
         "biohazard_metrics=" + json.dumps(report["biohazard_metrics"], sort_keys=True),
         f"evidence_package_unwanted_update_lines={report['evidence_package_unwanted_update_lines']}",
         f"presentation_timestamp_timezone={report['presentation_timestamp_timezone']}",
+        f"render_timestamp_timezone={report['render_timestamp_timezone']}",
+        f"footer_render_timestamp={report['footer_render_timestamp']}",
         f"raw_Z_visible_in_dashboard={report['raw_Z_visible_in_dashboard']}",
-        f"footer_timestamp_matches_center_instant={report['footer_timestamp_matches_center_instant']}",
+        f"left_updated_timestamp_matches_authoritative={report['left_updated_timestamp_matches_authoritative']}",
+        f"center_last_updated_timestamp_matches_authoritative={report['center_last_updated_timestamp_matches_authoritative']}",
+        f"evidence_package_last_updated_matches_authoritative={report['evidence_package_last_updated_matches_authoritative']}",
+        f"footer_timestamp_matches_render_instant={report['footer_timestamp_matches_render_instant']}",
         f"classification_baked_text_pixels_remaining={report['classification_baked_text_pixels_remaining']}",
         f"threat_family_baked_text_pixels_remaining={report['threat_family_baked_text_pixels_remaining']}",
         f"classification_dynamic_text_overlap={report['classification_dynamic_text_overlap']}",
@@ -6207,8 +6275,16 @@ def write_review_outputs(
         raise RendererContractError("Threat Monitor NOW target is not tied to the canonical active-case score.")
     if qc["operational_brief_min_line_gap_px"] < 6 or qc["operational_brief_row_overlap"]:
         raise RendererContractError("Operational Brief wrapped action lacks the required vertical breathing room.")
-    if qc["presentation_timestamp_timezone"] != "America/New_York" or qc["raw_Z_visible_in_dashboard"] or not qc["footer_timestamp_matches_center_instant"]:
-        raise RendererContractError("Dashboard presentation timestamps are not correctly converted to Eastern Time.")
+    if (
+        qc["presentation_timestamp_timezone"] != "America/New_York"
+        or qc["render_timestamp_timezone"] != "America/New_York"
+        or qc["raw_Z_visible_in_dashboard"]
+        or not qc["left_updated_timestamp_matches_authoritative"]
+        or not qc["center_last_updated_timestamp_matches_authoritative"]
+        or not qc["evidence_package_last_updated_matches_authoritative"]
+        or not qc["footer_timestamp_matches_render_instant"]
+    ):
+        raise RendererContractError("Dashboard presentation timestamps do not meet their authoritative/render-time contract.")
     if qc["classification_dynamic_text_overlap"] or qc["threat_family_dynamic_text_overlap"]:
         raise RendererContractError("Center metadata dynamic text overlaps a protected label or icon.")
     if (
