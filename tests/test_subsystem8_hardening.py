@@ -62,6 +62,22 @@ CASE_B = "BID-2026-2222"
 CAMPAIGN = "BDC-2026-001"
 
 
+def dotnet_net8_sdk_available() -> bool:
+    """Avoid a network restore when this local machine lacks the net8 SDK."""
+
+    if not shutil.which("dotnet"):
+        return False
+    result = subprocess.run(
+        ["dotnet", "--list-sdks"],
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    return result.returncode == 0 and any(
+        line.lstrip().startswith("8.") for line in result.stdout.splitlines()
+    )
+
+
 def case_payload(case_id: str = CASE_A) -> dict:
     return {
         "case_id": case_id,
@@ -616,6 +632,7 @@ class Subsystem8HardeningTests(unittest.TestCase):
             "case_lifecycle.py",
             "generate_case.py",
             "update_operation.py",
+            "process_active_case_stage.py",
             "update_case_progress.py",
             "update_case_status.py",
             "generate_evidence_repository.py",
@@ -690,7 +707,10 @@ class Subsystem8HardeningTests(unittest.TestCase):
         self.assertEqual(replacement.returncode, 0, replacement.stderr)
         self.assertNotEqual(load_active_case(terminal_root)["case_id"], CASE_A)
 
-    @unittest.skipUnless(shutil.which("dotnet"), "dotnet SDK is required for the C# chain test")
+    @unittest.skipUnless(
+        dotnet_net8_sdk_available(),
+        "dotnet 8 SDK is required for the isolated C# chain test",
+    )
     def test_real_production_script_chain_dry_run_accepts_valid_and_rejects_stale_data(self) -> None:
         fixture_root = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, fixture_root, ignore_errors=True)

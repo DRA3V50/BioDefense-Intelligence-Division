@@ -142,7 +142,9 @@ def set_manifest_review_status(root: Path, case_id: str, review_status: str) -> 
     atomic_write_json(path, manifest)
 
 
-def write_correlations(root: Path, case: dict) -> None:
+def write_correlations(
+    root: Path, case: dict, analysis_status: str = "Correlated"
+) -> None:
     manifest = load_json_document(
         root / "evidence" / case["case_id"] / "evidence_manifest.json"
     )
@@ -155,7 +157,7 @@ def write_correlations(root: Path, case: dict) -> None:
             "related_indicator": f"IOC-{index}",
             "finding": "Laboratory System Modification",
             "confidence": 88,
-            "analysis_status": "Correlated",
+            "analysis_status": analysis_status,
         }
         for index, item in enumerate(manifest["evidence_items"], start=1)
     ]
@@ -284,7 +286,9 @@ class Subsystem8PersistenceTests(unittest.TestCase):
         )
         self.assertEqual(review_transition.transition, "VALIDATION")
 
-        write_correlations(self.root, review_transition.case)
+        write_correlations(
+            self.root, review_transition.case, analysis_status="Validated"
+        )
         validation_transition = update_active_case(
             self.root, now=BASE_TIME + timedelta(minutes=6)
         )
@@ -390,7 +394,9 @@ class Subsystem8PersistenceTests(unittest.TestCase):
         update_active_case(self.root, now=BASE_TIME + timedelta(minutes=1))
         set_manifest_review_status(self.root, CASE_A, "REVIEWED")
         update_active_case(self.root, now=BASE_TIME + timedelta(minutes=2))
-        write_correlations(self.root, load_active_case(self.root))
+        write_correlations(
+            self.root, load_active_case(self.root), analysis_status="Validated"
+        )
         update_active_case(self.root, now=BASE_TIME + timedelta(minutes=3))
         current = load_active_case(self.root)
 

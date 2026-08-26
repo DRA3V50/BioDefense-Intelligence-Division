@@ -45,7 +45,9 @@ ARCHIVE_JSON_ROOT = Path("cases/archive/json")
 ARCHIVE_REPORT_ROOT = Path("cases/archive/reports")
 TERMINAL_REVIEW_OUTCOMES = {"CLOSED", "RESOLVED", "ESCALATED"}
 COMPLETED_REVIEW_STATUSES = {"REVIEWED", "VALIDATED"}
-COMPLETED_CORRELATION_STATUSES = {"CORRELATED", "VALIDATED"}
+# VALIDATION is a real lifecycle stage.  A correlation is not complete for
+# progression until the deterministic stage worker has explicitly validated it.
+COMPLETED_CORRELATION_STATUSES = {"VALIDATED"}
 
 
 @dataclass(frozen=True)
@@ -537,7 +539,17 @@ def record_problem_review_outcome(
     root: Path | str | None = None,
     *,
     now: datetime | None = None,
+    event_message: str | None = None,
+    event_idempotency_key: str | None = None,
 ) -> dict[str, Any]:
+    """Persist one explicit, idempotent terminal-review outcome.
+
+    Callers normally use the default audit event.  The deterministic
+    PROBLEM_REVIEW worker supplies the policy decision details through the
+    optional event values while this lifecycle helper remains the sole owner of
+    the outcome mutation.
+    """
+
     now = now or utc_now()
     normalized_outcome = outcome.upper()
     if normalized_outcome not in TERMINAL_REVIEW_OUTCOMES:
@@ -564,9 +576,14 @@ def record_problem_review_outcome(
     append_case_event(
         case,
         event_type="PROBLEM_REVIEW_OUTCOME_RECORDED",
-        message=f"Problem-review outcome recorded: {normalized_outcome}.",
+        message=(
+            event_message
+            or f"Problem-review outcome recorded: {normalized_outcome}."
+        ),
         intensity=_stage_intensity(normalized_outcome),
-        idempotency_key=f"problem-review-{normalized_outcome}",
+        idempotency_key=(
+            event_idempotency_key or f"problem-review-{normalized_outcome}"
+        ),
         timestamp=now,
         root=root,
     )
