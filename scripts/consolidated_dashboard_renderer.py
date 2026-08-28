@@ -3019,9 +3019,36 @@ def apply_active_feed_live_overlay(
         ).astype(bool)
         live_edge &= live_allowed & ~context.s04_live_mask
         pulse_phase = (frame_index % (FRAME_COUNT // 2)) / (FRAME_COUNT // 2)
-        pulse = 0.5 - 0.5 * math.cos(math.tau * pulse_phase)
+        pulse_angle = math.tau * pulse_phase
+        # A very small second-harmonic skew keeps this renderer-owned
+        # heartbeat smooth and exactly 60-frame periodic while avoiding the
+        # 31-state cosine symmetry that collapses below the decoded-GIF
+        # activity contract after helper event activity is intentionally
+        # removed from this ROI.
+        pulse = float(np.clip(
+            0.5 - 0.5 * math.cos(pulse_angle) + 0.055 * math.sin(2.0 * pulse_angle),
+            0.0,
+            1.0,
+        ))
         blend_pixels(result, live_edge, (231, 48, 42), 0.020 + 0.140 * pulse)
         blend_pixels(result, context.s04_live_mask, (255, 86, 68), 0.100 + 0.430 * pulse)
+    return result
+
+
+def restore_active_feed_live_source_roi(context: RenderContext, panel: np.ndarray) -> np.ndarray:
+    """Leave helper telemetry intact while resetting only the LIVE source plate."""
+
+    global_x1, global_y1, global_x2, global_y2 = context.helpers.s04.LIVE_ROI_GLOBAL
+    panel_x1, panel_y1, _panel_x2, _panel_y2 = context.helpers.s04.PANEL_BOUNDS
+    local_x1 = global_x1 - panel_x1
+    local_y1 = global_y1 - panel_y1
+    local_x2 = global_x2 - panel_x1
+    local_y2 = global_y2 - panel_y1
+    result = panel.copy()
+    result[local_y1:local_y2, local_x1:local_x2] = context.s04_source[
+        local_y1:local_y2,
+        local_x1:local_x2,
+    ]
     return result
 
 
@@ -3253,6 +3280,11 @@ def render_frame(context: RenderContext, frame_index: int) -> np.ndarray:
         feed_progress,
         frame_index,
     )
+    # Persisted-event scan activity remains helper-owned. The LIVE glyph/dot
+    # is renderer-owned and must retain its fixed 60-frame heartbeat for every
+    # valid visible-event count, so reset only its approved source rectangle
+    # before the existing fixed overlay is applied.
+    feed_panel = restore_active_feed_live_source_roi(context, feed_panel)
     feed_panel = apply_active_feed_live_overlay(context, feed_panel, _tops, _heights, frame_index)
     _merge_panel(frame, context.helpers.s04.PANEL_BOUNDS, feed_panel)
 
@@ -5765,7 +5797,7 @@ def make_qc(
         "active_feed_last_bar_x": last_bar[1],
         "active_feed_persisted_sample_count": persisted_feed_samples,
         "active_feed_presentation_slot_count": len(context.s04_bars),
-        "active_feed_sparse_history_adapter": "two sparse chronological event-intensity anchors occupy the newest frozen slots; older slots retain a fixed low/no-event floor",
+        "active_feed_sparse_history_adapter": "persisted sparse chronological event-intensity anchors occupy the newest frozen slots; older slots retain a fixed low/no-event floor",
         "active_feed_live_indicator_unique_states": active_feed_live["live_indicator_unique_states"],
         "active_feed_live_indicator_temporal_change": active_feed_live["live_indicator_temporal_change"],
         "active_feed_live_indicator_three_second_cycle": active_feed_live["live_indicator_three_second_cycle"],
