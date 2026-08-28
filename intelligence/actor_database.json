@@ -139,8 +139,8 @@
         {
             "name": "Clinical Research Data Manipulation",
             "first_seen": "2026-08-03",
-            "last_seen": "2026-08-26",
-            "cases": 10,
+            "last_seen": "2026-08-28",
+            "cases": 11,
             "severity": "LOW",
             "confidence": 86
         },

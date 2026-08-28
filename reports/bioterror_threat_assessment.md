@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-08-26 12:41 UTC
+**Generated:** 2026-08-28 16:37 UTC
 
 ---
 
@@ -76,7 +76,7 @@ The active Laboratory Security Breach Investigation concerns suspected Clinical 
 
 **Integrity-Verified Records:** 22
 
-**Pending Analyst Review:** 22
+**Pending Analyst Review:** 18
 
 ### Priority Findings
 
