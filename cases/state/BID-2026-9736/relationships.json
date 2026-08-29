@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "case_id": "BID-2026-9736",
-  "state_revision": 5,
+  "state_revision": 6,
   "nodes": [
     {
       "node_id": "case:BID-2026-9736",
@@ -96,6 +96,6 @@
       }
     }
   ],
-  "source_fingerprint": "686bc37fdcf168140d3f4ae8362428a1ad366dc391a09ff23295ec4cdc6a402a",
-  "updated_at": "2026-08-29T11:05:14Z"
+  "source_fingerprint": "89fd1345b1b335bc1c33990c2710c384b179006aa767f10c7a32924e2517e6d2",
+  "updated_at": "2026-08-29T16:43:18Z"
 }
