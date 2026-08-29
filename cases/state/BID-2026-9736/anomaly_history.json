@@ -49,7 +49,15 @@
       "source_event_id": "BID-2026-9736-EVT-0006",
       "event_type": "EVIDENCE_REVIEW_PROGRESS",
       "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-9736",
+      "timestamp": "2026-08-29T22:40:06Z",
+      "value": 45,
+      "source_event_id": "BID-2026-9736-EVT-0007",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "source": "derived_case_event"
     }
   ],
-  "updated_at": "2026-08-29T16:43:17Z"
+  "updated_at": "2026-08-29T22:40:06Z"
 }

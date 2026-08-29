@@ -272,7 +272,8 @@
       "integrity_status": "Verified",
       "sha256": "990204ae1aca7e16c38ac400b83db45c904f29c86cf12842cdf5a7a5a586726b",
       "classification": "Laboratory Security Breach Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-08-29T22:40:06Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0018",
@@ -287,7 +288,8 @@
       "integrity_status": "Verified",
       "sha256": "109ba19c4b8ebe64198ce1bcfa1388be4c6a3b737309d15c9d584abcbc44a396",
       "classification": "Laboratory Security Breach Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-08-29T22:40:06Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0019",
@@ -302,7 +304,8 @@
       "integrity_status": "Verified",
       "sha256": "84b545c86f0d9c9b47dfb944f7154e12a418c9b1bb79851dabb6c5c20b3e2a78",
       "classification": "Laboratory Security Breach Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-08-29T22:40:06Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0020",
@@ -317,7 +320,8 @@
       "integrity_status": "Verified",
       "sha256": "9ddd084f459b82143e5ed90ffa8f46e687b441d2b45af94b8eb608ba1e53ec8c",
       "classification": "Laboratory Security Breach Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-08-29T22:40:06Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0021",
@@ -351,11 +355,11 @@
     }
   ],
   "lifecycle_processing": {
-    "reviewed_count": 16,
+    "reviewed_count": 20,
     "total_evidence_count": 22,
     "last_review_batch_size": 4,
-    "last_reviewed_at": "2026-08-29T16:43:17Z",
+    "last_reviewed_at": "2026-08-29T22:40:06Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-08-29T16:43:17Z"
+  "updated_at": "2026-08-29T22:40:06Z"
 }
