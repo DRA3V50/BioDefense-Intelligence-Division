@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-VMware ESXi 9
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---

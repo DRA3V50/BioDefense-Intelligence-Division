@@ -26,23 +26,23 @@ ROUTINE
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 

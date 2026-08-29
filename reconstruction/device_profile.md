@@ -19,7 +19,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
 Genome Sequencing Environment
@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-VMware ESXi 9
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.

@@ -15,12 +15,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
