@@ -26,11 +26,11 @@ ROUTINE
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
@@ -38,11 +38,11 @@ Analysts recovered digital artifacts consistent with unauthorized research intel
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 

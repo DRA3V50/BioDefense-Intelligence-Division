@@ -4,19 +4,19 @@
 
 **Case ID:** BID-2026-9736
 
-**Generated:** 2026-08-29 22:40 UTC
+**Generated:** 2026-08-30 09:56 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-08-29 16:40 UTC | Initial Detection | Potential activity associated with Clinical Research Data Manipulation was detected. |
-| 2026-08-29 17:40 UTC | Case Opened | Investigation BID-2026-9736 was opened and assigned to National Response Cell. |
-| 2026-08-29 18:40 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
-| 2026-08-29 19:40 UTC | Evidence Collection | 22 evidence items and 4 indicators were associated with the active investigation. |
-| 2026-08-29 20:40 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-08-29 21:40 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
-| 2026-08-29 22:40 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-08-30 03:56 UTC | Initial Detection | Potential activity associated with Clinical Research Data Manipulation was detected. |
+| 2026-08-30 04:56 UTC | Case Opened | Investigation BID-2026-9736 was opened and assigned to National Response Cell. |
+| 2026-08-30 05:56 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
+| 2026-08-30 06:56 UTC | Evidence Collection | 22 evidence items and 4 indicators were associated with the active investigation. |
+| 2026-08-30 07:56 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-08-30 08:56 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-08-30 09:56 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
