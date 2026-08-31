@@ -16,11 +16,11 @@ Laboratory Security Breach Investigation
 | Category | Observation |
 |----------|-------------|
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Device | Protected workstation entered evidence preservation mode |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| PowerShell | Encoded administrative command execution detected |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---

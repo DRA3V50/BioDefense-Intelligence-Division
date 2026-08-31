@@ -26,19 +26,19 @@ ROUTINE
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 

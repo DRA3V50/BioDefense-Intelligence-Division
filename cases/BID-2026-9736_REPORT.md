@@ -138,19 +138,19 @@ ROUTINE
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+No confirmed attribution has been established during the current investigation.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -288,11 +288,11 @@ Laboratory Security Breach Investigation
 | Category | Observation |
 |----------|-------------|
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Device | Protected workstation entered evidence preservation mode |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| PowerShell | Encoded administrative command execution detected |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 ROUTINE
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---
