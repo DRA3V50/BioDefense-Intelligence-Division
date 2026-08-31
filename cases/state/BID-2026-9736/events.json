@@ -144,7 +144,33 @@
       "zone": "Evidence Network",
       "intensity": 58,
       "idempotency_key": "correlation-validation-16-of-22"
+    },
+    {
+      "event_id": "BID-2026-9736-EVT-0012",
+      "case_id": "BID-2026-9736",
+      "sequence": 12,
+      "timestamp": "2026-08-31T10:51:02Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 22/22 validated",
+      "severity": "LOW",
+      "source": "process_active_case_stage",
+      "zone": "Evidence Network",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-22-of-22"
+    },
+    {
+      "event_id": "BID-2026-9736-EVT-0013",
+      "case_id": "BID-2026-9736",
+      "sequence": 13,
+      "timestamp": "2026-08-31T10:51:02Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to ASSESSMENT: all correlations are validated against evidence.",
+      "severity": "LOW",
+      "source": "case_lifecycle",
+      "zone": "Evidence Network",
+      "intensity": 70,
+      "idempotency_key": "revision-13-WORKFLOW_STAGE_CHANGED"
     }
   ],
-  "updated_at": "2026-08-30T22:44:16Z"
+  "updated_at": "2026-08-31T10:51:02Z"
 }

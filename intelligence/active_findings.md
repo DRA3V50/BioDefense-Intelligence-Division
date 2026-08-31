@@ -26,23 +26,23 @@ ROUTINE
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 

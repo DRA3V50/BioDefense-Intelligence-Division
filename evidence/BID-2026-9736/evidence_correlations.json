@@ -186,8 +186,9 @@
       "related_indicator": "IOC-2026-6716",
       "finding": "Laboratory System Modification",
       "confidence": 94,
-      "analysis_status": "Correlated",
-      "case_id": "BID-2026-9736"
+      "analysis_status": "Validated",
+      "case_id": "BID-2026-9736",
+      "validated_at": "2026-08-31T10:51:02Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0018",
@@ -196,8 +197,9 @@
       "related_indicator": "IOC-2026-3338",
       "finding": "Laboratory System Modification",
       "confidence": 81,
-      "analysis_status": "Correlated",
-      "case_id": "BID-2026-9736"
+      "analysis_status": "Validated",
+      "case_id": "BID-2026-9736",
+      "validated_at": "2026-08-31T10:51:02Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0019",
@@ -206,8 +208,9 @@
       "related_indicator": "IOC-2026-9565",
       "finding": "Research Data Integrity Anomaly",
       "confidence": 89,
-      "analysis_status": "Correlated",
-      "case_id": "BID-2026-9736"
+      "analysis_status": "Validated",
+      "case_id": "BID-2026-9736",
+      "validated_at": "2026-08-31T10:51:02Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0020",
@@ -216,8 +219,9 @@
       "related_indicator": "IOC-2026-7289",
       "finding": "Containment Verification",
       "confidence": 84,
-      "analysis_status": "Correlated",
-      "case_id": "BID-2026-9736"
+      "analysis_status": "Validated",
+      "case_id": "BID-2026-9736",
+      "validated_at": "2026-08-31T10:51:02Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0021",
@@ -226,8 +230,9 @@
       "related_indicator": "IOC-2026-2957",
       "finding": "Command-and-Control Communication",
       "confidence": 99,
-      "analysis_status": "Correlated",
-      "case_id": "BID-2026-9736"
+      "analysis_status": "Validated",
+      "case_id": "BID-2026-9736",
+      "validated_at": "2026-08-31T10:51:02Z"
     },
     {
       "evidence_id": "BID-2026-9736-EV-0022",
@@ -236,16 +241,17 @@
       "related_indicator": "IOC-2026-3984",
       "finding": "Command-and-Control Communication",
       "confidence": 97,
-      "analysis_status": "Correlated",
-      "case_id": "BID-2026-9736"
+      "analysis_status": "Validated",
+      "case_id": "BID-2026-9736",
+      "validated_at": "2026-08-31T10:51:02Z"
     }
   ],
   "lifecycle_processing": {
-    "validated_count": 16,
+    "validated_count": 22,
     "total_correlation_count": 22,
-    "last_validation_batch_size": 8,
-    "last_validated_at": "2026-08-30T22:44:16Z",
+    "last_validation_batch_size": 6,
+    "last_validated_at": "2026-08-31T10:51:02Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-08-30T22:44:16Z"
+  "updated_at": "2026-08-31T10:51:02Z"
 }

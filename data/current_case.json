@@ -25,9 +25,9 @@
   "assessment": "Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.",
   "schema_version": 1,
   "created_at": "2026-08-23T23:40:07Z",
-  "updated_at": "2026-08-30T22:44:16Z",
-  "current_stage": "VALIDATION",
-  "stage_updated_at": "2026-08-30T09:56:49Z",
+  "updated_at": "2026-08-31T10:51:02Z",
+  "current_stage": "ASSESSMENT",
+  "stage_updated_at": "2026-08-31T10:51:02Z",
   "lifecycle_status": "ACTIVE",
   "terminal_state": null,
   "terminal_at": null,
@@ -36,15 +36,15 @@
   "assessment_completed_at": null,
   "problem_review_outcome": null,
   "problem_reviewed_at": null,
-  "state_revision": 11,
+  "state_revision": 13,
   "state_migrated_at": "2026-08-23T23:40:07Z",
   "stage_work": {
     "stage": "VALIDATION",
-    "recorded_at": "2026-08-30T22:44:16Z",
+    "recorded_at": "2026-08-31T10:51:02Z",
     "action": "CORRELATION_VALIDATION_BATCH",
-    "completed_count": 16,
+    "completed_count": 22,
     "total_count": 22,
-    "processed_count": 8,
-    "processed_through_id": "BID-2026-9736-EV-0016"
+    "processed_count": 6,
+    "processed_through_id": "BID-2026-9736-EV-0022"
   }
 }

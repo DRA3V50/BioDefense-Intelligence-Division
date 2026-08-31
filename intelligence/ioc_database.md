@@ -15,12 +15,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Evidence | Acquired forensic image verified using SHA-256 |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
+| Device | Protected workstation entered evidence preservation mode |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---

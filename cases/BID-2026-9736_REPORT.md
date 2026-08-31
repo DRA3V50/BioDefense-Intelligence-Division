@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Evidence | Acquired forensic image verified using SHA-256 |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
+| Device | Protected workstation entered evidence preservation mode |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Awaiting Laboratory Review
 
 Priority:
 ROUTINE
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.
 
 
 ---

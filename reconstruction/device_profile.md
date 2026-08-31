@@ -19,7 +19,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
 Genome Sequencing Environment
@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Awaiting Laboratory Review
 
 Priority:
 ROUTINE
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.
