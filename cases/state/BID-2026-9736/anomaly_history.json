@@ -121,7 +121,31 @@
       "source_event_id": "BID-2026-9736-EVT-0015",
       "event_type": "WORKFLOW_STAGE_CHANGED",
       "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-9736",
+      "timestamp": "2026-09-02T00:36:43Z",
+      "value": 18,
+      "source_event_id": "BID-2026-9736-EVT-0016",
+      "event_type": "PROBLEM_REVIEW_OUTCOME_RECORDED",
+      "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-9736",
+      "timestamp": "2026-09-02T00:36:43Z",
+      "value": 18,
+      "source_event_id": "BID-2026-9736-EVT-0017",
+      "event_type": "CASE_TERMINAL",
+      "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-9736",
+      "timestamp": "2026-09-02T00:36:45Z",
+      "value": 18,
+      "source_event_id": "BID-2026-9736-EVT-0018",
+      "event_type": "CASE_ARCHIVED",
+      "source": "derived_case_event"
     }
   ],
-  "updated_at": "2026-08-31T23:50:45Z"
+  "updated_at": "2026-09-02T00:36:45Z"
 }

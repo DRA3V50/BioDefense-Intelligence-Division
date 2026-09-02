@@ -9,7 +9,7 @@
 | Classification | Laboratory Security Breach Investigation |
 | Threat Family | Clinical Research Data Manipulation |
 | Severity | LOW |
-| Status | Evidence Collection |
+| Status | RESOLVED |
 | Phase | Operational Recovery |
 
 ---

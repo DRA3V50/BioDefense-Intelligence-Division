@@ -15,12 +15,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Infrastructure | Firewall policy deviation identified |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Identity | Credential reuse detected across isolated research segments |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -47,4 +47,4 @@ National Response Cell
 
 Current Status:
 
-Evidence Collection
+RESOLVED
