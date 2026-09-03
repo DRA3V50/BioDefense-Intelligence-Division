@@ -1169,6 +1169,8 @@ def static_text_entries(
     stage = human_stage(shared["current_stage"])
     severity = str(shared["severity"])
     severity_color = semantic_severity_color(raw, severity)
+    priority = str(shared["priority"])
+    priority_color = semantic_severity_color(raw, priority)
     entries = top_header_entries(renderer_state) + [
         TextEntry((234, 315, 400, 334), (236, 319), str(shared["case_id"]), white, 14, False, 158),
         TextEntry((234, 342, 400, 361), (236, 346), str(shared["campaign_id"]), white, 14, False, 158),
@@ -1223,7 +1225,7 @@ def static_text_entries(
         inline_colored_text_entries(
             (234, 397, 400, 416),
             (236, 401),
-            ((severity, severity_color), (f" / {shared['priority']}", white)),
+            ((severity, severity_color), (f" / {shared['priority']}", priority_color)),
             size=13,
             bold=False,
             max_width=158,
