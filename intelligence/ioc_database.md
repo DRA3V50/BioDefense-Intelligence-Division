@@ -15,12 +15,12 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| System Log | Unexpected privilege escalation recorded |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Security | Multi-factor authentication bypass attempt recorded |
+| PowerShell | Encoded administrative command execution detected |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Device | Protected workstation entered evidence preservation mode |
-| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
