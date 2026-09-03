@@ -199,6 +199,15 @@ jobs:
       - name: Generate Bioterror Threat Assessment
         run: python scripts/generate_bioterror_threat_assessment.py
 
+      - name: Verify Renderer Hash
+        run: |
+         echo "=== RENDERER SHA ==="
+         sha256sum scripts/consolidated_dashboard_renderer.py
+         echo "=== SEVERITY LINE ==="
+         grep -n '"severity":' scripts/consolidated_dashboard_renderer.py | tail -5
+         echo "=== LEAD ANALYST BLOCK ==="
+         sed -n '1177,1185p' scripts/consolidated_dashboard_renderer.py
+
       - name: Generate Dynamic Case Banner
         run: python scripts/generate_case_banner.py
 
