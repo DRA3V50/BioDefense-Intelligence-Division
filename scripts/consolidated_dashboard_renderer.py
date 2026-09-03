@@ -6316,15 +6316,6 @@ def write_review_outputs(
        or not qc["evidence_package_last_updated_matches_authoritative"]
        or not qc["footer_timestamp_matches_render_instant"]
     ):
-       print("=== TIMESTAMP CONTRACT DEBUG ===")
-       print("presentation_timestamp_timezone =", qc["presentation_timestamp_timezone"])
-       print("render_timestamp_timezone =", qc["render_timestamp_timezone"])
-       print("footer_render_timestamp =", qc["footer_render_timestamp"])
-       print("left_updated_timestamp_matches_authoritative =", qc["left_updated_timestamp_matches_authoritative"])
-       print("center_last_updated_timestamp_matches_authoritative =", qc["center_last_updated_timestamp_matches_authoritative"])
-       print("evidence_package_last_updated_matches_authoritative =", qc["evidence_package_last_updated_matches_authoritative"])
-       print("footer_timestamp_matches_render_instant =", qc["footer_timestamp_matches_render_instant"])
-       print("=== END TIMESTAMP CONTRACT DEBUG ===")
        raise RendererContractError("Dashboard presentation timestamps do not meet their authoritative/render-time contract.")
     if qc["classification_dynamic_text_overlap"] or qc["threat_family_dynamic_text_overlap"]:
         raise RendererContractError("Center metadata dynamic text overlaps a protected label or icon.")
