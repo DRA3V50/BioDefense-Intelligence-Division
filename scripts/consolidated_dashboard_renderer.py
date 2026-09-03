@@ -1180,7 +1180,7 @@ def static_text_entries(
             white,
             12,
             False,
-            158,
+            164,
             clear_bounds=LEFT_LEAD_ANALYST_CLEAN_BOUNDS,
             cleanup_dilate=2,
             inpaint_radius=3,
@@ -1527,7 +1527,7 @@ def _feed_events(renderer_state: dict[str, Any]) -> list[dict[str, Any]]:
             {
                 "timestamp": event_timestamp(event.get("timestamp")),
                 "message": format_active_feed_event(event),
-                "severity": str(event.get("severity") or level).upper(),
+                "severity": level,
                 "visual_severity": level,
                 "raw": event,
             }
