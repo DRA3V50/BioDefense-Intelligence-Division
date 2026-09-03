@@ -169,6 +169,12 @@ jobs:
       - name: Generate Biothreat Report
         run: python scripts/generate_biothreat_report.py
 
+      - name: Verify renderer hash
+        run: |
+         sha256sum scripts/consolidated_dashboard_renderer.py
+         grep -n '"severity":' scripts/consolidated_dashboard_renderer.py | tail -5
+         sed -n '1177,1185p' scripts/consolidated_dashboard_renderer.py
+
       - name: Generate Investigation Dashboard
         run: python scripts/generate_case_dashboard.py
 
