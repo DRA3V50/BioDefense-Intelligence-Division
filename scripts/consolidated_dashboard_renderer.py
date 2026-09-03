@@ -5635,7 +5635,13 @@ def make_qc(
     footer_matches_render_instant = (
         entry_values.get(FOOTER_TIMESTAMP_ENTRY_BOUNDS) == rendered_footer_timestamp
     )
-    raw_z_visible = any("Z" in entry.value for entry in context.text_entries)
+    timestamp_entry_values = (
+        entry_values.get((234, 451, 400, 470), ""),
+        entry_values.get((1011, 333, 1227, 370), ""),
+        entry_values.get((1405, 207, 1518, 250), ""),
+        entry_values.get(FOOTER_TIMESTAMP_ENTRY_BOUNDS, ""),
+    )
+    raw_z_visible = any("Z" in value for value in timestamp_entry_values)
     threshold_colors = threshold_guide_colors(context.raw)
     score = int(context.renderer_state["canonical_threat_score"])
     canonical_classification = str(
