@@ -1170,7 +1170,7 @@ def static_text_entries(
     severity = str(shared["severity"])
     severity_color = semantic_severity_color(raw, severity)
     priority = str(shared["priority"])
-    priority_color = semantic_severity_color(raw, priority)
+    priority_color = severity_color
     entries = top_header_entries(renderer_state) + [
         TextEntry((234, 315, 400, 334), (236, 319), str(shared["case_id"]), white, 14, False, 158),
         TextEntry((234, 342, 400, 361), (236, 346), str(shared["campaign_id"]), white, 14, False, 158),
