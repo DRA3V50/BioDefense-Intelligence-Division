@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-9736
+BID-2026-3759
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Clinical Research Data Manipulation
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
 
 Status:
-RESOLVED
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Federal Investigation Network
 
 Device:
-Evidence Repository
+Genome Analysis Workstation
 
 Vendor:
-Palo Alto Networks
+HPE
 
 Security Zone:
-Evidence Network
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-136
+137
 
 Evidence Collected:
-22
+194
 
 Indicators Identified:
-4
+47
 
 Affected Assets:
-7
+33
 
 Confidence:
-86%
+98%
 
 Risk Score:
-22
+65
 
 ---
 

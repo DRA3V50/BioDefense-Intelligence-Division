@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-9736
+BID-2026-3759
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Clinical Research Data Manipulation
+Medical Device Communications Interference
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Central Evidence Processing Center
 
 Platform:
-Genome Sequencing Environment
+Federal Investigation Network
 
 Device:
-Evidence Repository
+Genome Analysis Workstation
 
 Vendor:
-Palo Alto Networks
+HPE
 
 Operating System:
 Red Hat Enterprise Linux 10
 
 Security Zone:
-Evidence Network
+Containment Network
 
 ---
 
@@ -47,17 +47,17 @@ Status:
 Awaiting Laboratory Review
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-86%
+98%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Joint Cyber Investigation Unit
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+System isolated pending malware reverse engineering.

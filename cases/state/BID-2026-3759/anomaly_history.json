@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "case_id": "BID-2026-3759",
+  "samples": [
+    {
+      "case_id": "BID-2026-3759",
+      "timestamp": "2026-09-03T02:41:16Z",
+      "value": 30,
+      "source_event_id": "BID-2026-3759-EVT-0001",
+      "event_type": "CASE_CREATED",
+      "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-3759",
+      "timestamp": "2026-09-03T02:41:37Z",
+      "value": 45,
+      "source_event_id": "BID-2026-3759-EVT-0002",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "source": "derived_case_event"
+    }
+  ],
+  "updated_at": "2026-09-03T02:41:37Z"
+}

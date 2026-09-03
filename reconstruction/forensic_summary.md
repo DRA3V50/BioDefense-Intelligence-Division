@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-9736 |
+| Case ID | BID-2026-3759 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Security Breach Investigation |
-| Threat Family | Clinical Research Data Manipulation |
-| Severity | LOW |
-| Status | RESOLVED |
+| Classification | Medical Device Security Assessment |
+| Threat Family | Medical Device Communications Interference |
+| Severity | HIGH |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Evidence Repository |
-| Vendor | Palo Alto Networks |
-| Security Zone | Evidence Network |
+| Platform | Federal Investigation Network |
+| Device | Genome Analysis Workstation |
+| Vendor | HPE |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 22 |
-| Confidence | 86% |
-| Evidence Collected | 22 |
-| Indicators Identified | 4 |
-| Affected Assets | 7 |
+| Risk Score | 65 |
+| Confidence | 98% |
+| Evidence Collected | 194 |
+| Indicators Identified | 47 |
+| Affected Assets | 33 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Joint Cyber Investigation Unit**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**RESOLVED**
+**Evidence Collection**
 
 Priority:
 
-**ROUTINE**
+**HIGH**
 
 Recommended Action:
 

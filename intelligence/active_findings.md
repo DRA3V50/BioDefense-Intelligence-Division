@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-9736
+BID-2026-3759
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Medical Device Security Assessment
 
 Threat Family:
-Clinical Research Data Manipulation
+Medical Device Communications Interference
 
 Severity:
-LOW
+HIGH
 
 Priority:
-ROUTINE
+HIGH
 
 ---
 
@@ -26,11 +26,11 @@ ROUTINE
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
@@ -38,27 +38,27 @@ Privilege escalation activity was observed within a protected research environme
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-7
+33
 
 Evidence Collected:
-22
+194
 
 Indicators Identified:
-4
+47
 
 Analyst Confidence:
-86%
+98%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 # Operational Status
 
 Current Status:
-RESOLVED
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Joint Cyber Investigation Unit

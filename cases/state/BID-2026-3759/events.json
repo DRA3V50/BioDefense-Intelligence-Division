@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "case_id": "BID-2026-3759",
+  "events": [
+    {
+      "event_id": "BID-2026-3759-EVT-0001",
+      "case_id": "BID-2026-3759",
+      "sequence": 1,
+      "timestamp": "2026-09-03T02:41:16Z",
+      "event_type": "CASE_CREATED",
+      "message": "Persistent active case created after prior terminal archive.",
+      "severity": "HIGH",
+      "source": "case_lifecycle",
+      "zone": "Containment Network",
+      "intensity": 30,
+      "idempotency_key": "case-created"
+    },
+    {
+      "event_id": "BID-2026-3759-EVT-0002",
+      "case_id": "BID-2026-3759",
+      "sequence": 2,
+      "timestamp": "2026-09-03T02:41:37Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to EVIDENCE_REVIEW: matching evidence manifest is available.",
+      "severity": "HIGH",
+      "source": "case_lifecycle",
+      "zone": "Containment Network",
+      "intensity": 45,
+      "idempotency_key": "revision-2-WORKFLOW_STAGE_CHANGED"
+    }
+  ],
+  "updated_at": "2026-09-03T02:41:37Z"
+}

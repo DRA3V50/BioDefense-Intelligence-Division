@@ -1,0 +1,25 @@
+{
+  "case_id": "BID-2026-3759",
+  "artifact_type": "Firewall Log",
+  "generated_at": "2026-09-03T02:41:16Z",
+  "source_device": "Genome Analysis Workstation",
+  "security_zone": "Containment Network",
+  "events": [
+    {
+      "event_id": "FW-001",
+      "action": "Blocked",
+      "protocol": "HTTPS",
+      "source": "Simulated External Host",
+      "destination": "Genome Analysis Workstation",
+      "description": "Simulated unauthorized outbound connection attempt."
+    },
+    {
+      "event_id": "FW-002",
+      "action": "Allowed",
+      "protocol": "DNS",
+      "source": "Genome Analysis Workstation",
+      "destination": "Authorized DNS Service",
+      "description": "Routine name-resolution activity retained for analysis."
+    }
+  ]
+}

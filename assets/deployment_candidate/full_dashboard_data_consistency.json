@@ -1,5 +1,5 @@
 {
-  "anomaly_history_samples": 18,
+  "anomaly_history_samples": 2,
   "authoritative_source_map": {
     "campaign_id": "dashboard.shared.campaign_id / operation_context.campaign_id",
     "case_id": "dashboard.shared.case_id",
@@ -18,17 +18,17 @@
     "workflow_stage": "dashboard.workflow.current_stage"
   },
   "campaign_id": "BDC-2026-001",
-  "canonical_threat_classification": "GUARDED",
-  "case_id": "BID-2026-9736",
-  "correlation_count_derived_from_relationships": 22,
-  "current_stage": "PROBLEM_REVIEW",
-  "event_intensity_samples": 18,
-  "evidence_count": 22,
+  "canonical_threat_classification": "ELEVATED",
+  "case_id": "BID-2026-3759",
+  "correlation_count_derived_from_relationships": 194,
+  "current_stage": "EVIDENCE_REVIEW",
+  "event_intensity_samples": 2,
+  "evidence_count": 194,
   "feed_event_case_ids_match": true,
-  "integration_count_derived_from_persisted_sources": 3,
-  "lead_analyst": "National Response Cell",
-  "lifecycle_status": "RESOLVED",
-  "priority": "ROUTINE",
+  "integration_count_derived_from_persisted_sources": 2,
+  "lead_analyst": "Joint Cyber Investigation Unit",
+  "lifecycle_status": "ACTIVE",
+  "priority": "HIGH",
   "queue_depth_unit": "count",
   "relationship_case_ids_match": true,
   "route_gate": {
@@ -56,7 +56,7 @@
   "same_state_revision_threat_history": true,
   "same_threat_classification_relationship": true,
   "same_threat_score_relationship": true,
-  "severity": "LOW",
+  "severity": "HIGH",
   "shared_projection_matches_active_case": {
     "campaign_id": true,
     "case_id": true,
@@ -70,9 +70,9 @@
     "state_revision": true,
     "updated_at": true
   },
-  "state_revision": 18,
-  "subsystem_06_display_level": "LOW",
+  "state_revision": 2,
+  "subsystem_06_display_level": "HIGH",
   "system_status_source": "SIMULATED",
-  "threat_score": 21,
-  "updated_at": "2026-09-02T00:36:45Z"
+  "threat_score": 63,
+  "updated_at": "2026-09-03T02:41:37Z"
 }

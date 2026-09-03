@@ -1,22 +1,22 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Clinical Research Data Manipulation
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Black Helix
+Umbra Bio
 
 ---
 
 ## Attribution
-Multiple Regions
+Unattributed
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Medical Infrastructure Disruption
 
 ---
 
@@ -26,24 +26,24 @@ High
 ---
 
 ## Confidence
-86%
+98%
 
 ---
 
 ## Observed Techniques
-- Third-Party Access
-- Long-Term Network Foothold
-- Laboratory Network Reconnaissance
-- Credential Abuse
-- Covert Remote Access Tooling
-- Encrypted Data Staging
+- Phishing
+- Biosecurity System Tampering
+- Laboratory Data Manipulation
+- Lateral Movement
+- Supply Chain Compromise
+- Laboratory Control System Manipulation
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Joint Cyber Investigation Unit
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Security Breach Investigation
+Medical Device Security Assessment
 
 ---
 
 ## Last Updated
-2026-09-02
+2026-09-03

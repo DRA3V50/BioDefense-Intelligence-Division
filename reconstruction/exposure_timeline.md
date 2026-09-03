@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-08-23
+## 2026-09-03
 
 ### Case Opened
-Case ID: BID-2026-9736
+Case ID: BID-2026-3759
 
 ### Classification
-Laboratory Security Breach Investigation
+Medical Device Security Assessment
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-RESOLVED
+Evidence Collection
 
 ### Severity
-LOW
+HIGH
 
 ---
