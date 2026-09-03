@@ -19,7 +19,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Advanced Genome Security Laboratory
 
 Platform:
 Federal Investigation Network
@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Evidence indicates unauthorized access to restricted research resources.

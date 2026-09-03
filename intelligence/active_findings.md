@@ -26,7 +26,7 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
@@ -34,15 +34,15 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Privilege escalation activity was observed within a protected research environment.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 

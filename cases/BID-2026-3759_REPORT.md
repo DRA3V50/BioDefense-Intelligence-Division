@@ -138,7 +138,7 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
@@ -146,15 +146,15 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Privilege escalation activity was observed within a protected research environment.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Observed indicators remain consistent with the current operational assessment.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,11 +287,11 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| System Log | Unexpected privilege escalation recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| System Log | Unexpected privilege escalation recorded |
 | Device | Protected workstation entered evidence preservation mode |
 
 
@@ -449,7 +449,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Advanced Genome Security Laboratory
 
 Platform:
 Federal Investigation Network
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---

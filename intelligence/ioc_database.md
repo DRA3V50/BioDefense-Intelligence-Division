@@ -15,11 +15,11 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| System Log | Unexpected privilege escalation recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| System Log | Unexpected privilege escalation recorded |
 | Device | Protected workstation entered evidence preservation mode |
 
 
