@@ -19,7 +19,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
 Federal Investigation Network
@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
 Containment Network
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.

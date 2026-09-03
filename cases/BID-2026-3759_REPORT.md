@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+No confirmed attribution has been established during the current investigation.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | System Log | Unexpected privilege escalation recorded |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -449,7 +449,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
 Federal Investigation Network
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
 Containment Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.
 
 
 ---

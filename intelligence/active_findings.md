@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 

@@ -15,12 +15,12 @@ Medical Device Security Assessment
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | System Log | Unexpected privilege escalation recorded |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
