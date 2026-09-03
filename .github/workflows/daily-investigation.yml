@@ -193,6 +193,17 @@ jobs:
       - name: Generate Bioterror Threat Assessment
         run: python scripts/generate_bioterror_threat_assessment.py
 
+      - name: Verify Renderer Hash Before Banner
+        run: |
+          echo "===== CHECKED OUT COMMIT ====="
+          git rev-parse HEAD
+
+          echo "===== RENDERER SHA256 ====="
+          sha256sum scripts/consolidated_dashboard_renderer.py
+
+          echo "===== WRAPPER EXPECTED SHA ====="
+          grep 'FROZEN_V2_SHA256' scripts/production_dashboard_wrapper.py
+
       - name: Generate Dynamic Case Banner
         run: python scripts/generate_case_banner.py
 
