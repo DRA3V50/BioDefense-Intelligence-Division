@@ -16,11 +16,11 @@ Medical Device Security Assessment
 | Category | Observation |
 |----------|-------------|
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| PowerShell | Encoded administrative command execution detected |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---

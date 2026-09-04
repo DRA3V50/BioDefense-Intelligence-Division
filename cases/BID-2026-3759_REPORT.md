@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+No confirmed attribution has been established during the current investigation.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -288,11 +288,11 @@ Medical Device Security Assessment
 | Category | Observation |
 |----------|-------------|
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| PowerShell | Encoded administrative command execution detected |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Raccoon Research Annex
 
 Platform:
 Federal Investigation Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---

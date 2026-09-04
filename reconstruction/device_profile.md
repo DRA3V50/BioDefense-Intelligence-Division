@@ -19,7 +19,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Raccoon Research Annex
 
 Platform:
 Federal Investigation Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
