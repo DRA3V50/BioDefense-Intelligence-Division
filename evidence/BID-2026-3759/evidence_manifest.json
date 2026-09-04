@@ -2262,7 +2262,8 @@
       "integrity_status": "Verified",
       "sha256": "0a499fb8da579e04d5c92b3b19e029a363a31873a1f4f77b652861d5d6c6c105",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0134",
@@ -2278,7 +2279,8 @@
       "integrity_status": "Verified",
       "sha256": "87e44659ae0aa68ceda035ecab4597a6bd5075642c374efa1c2602a6c469c22d",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0135",
@@ -2294,7 +2296,8 @@
       "integrity_status": "Verified",
       "sha256": "bd4704dc1823f194334067a13a6dd9cf5bb4ebf92489582ff191e4d5f38e8597",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0136",
@@ -2310,7 +2313,8 @@
       "integrity_status": "Verified",
       "sha256": "69f2e1449afc1f63f91a09a4c1cd20711010597803372d8d96e1a3653a1537e2",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0137",
@@ -2326,7 +2330,8 @@
       "integrity_status": "Verified",
       "sha256": "1288dee1fc7587cee1c1a11e127075029bd23d4cba3b975654ecabfa32b817f2",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0138",
@@ -2342,7 +2347,8 @@
       "integrity_status": "Verified",
       "sha256": "69d41e58d16a732693a5c80fa38625ffb2ac1bd07f3487029da698a28a8da37f",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0139",
@@ -2358,7 +2364,8 @@
       "integrity_status": "Verified",
       "sha256": "f905126954dcc1297bd0bba3a0a254cf950bc2016fceb1effacab197f543d477",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0140",
@@ -2374,7 +2381,8 @@
       "integrity_status": "Verified",
       "sha256": "3b4e6cec2d065e26b152c467829cea4177473830036a577434785f07f0f9c26f",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0141",
@@ -2390,7 +2398,8 @@
       "integrity_status": "Verified",
       "sha256": "462717e7fff99c5ddd40f0ee6fd426dd19eb076703e13797a722c6c1f0cbe047",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0142",
@@ -2406,7 +2415,8 @@
       "integrity_status": "Verified",
       "sha256": "ebad067edf57c702c97c211bd7370fae602211a03085876278314f042a8700b3",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0143",
@@ -2422,7 +2432,8 @@
       "integrity_status": "Verified",
       "sha256": "4efbf06313ff5ac079cf0ee082a96491fe364374485685231909268025eb28cd",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0144",
@@ -2438,7 +2449,8 @@
       "integrity_status": "Verified",
       "sha256": "f9ae10d140a90513e68d1b9a84e98bd5aa3007078c3e340e598df7092868142a",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0145",
@@ -2454,7 +2466,8 @@
       "integrity_status": "Verified",
       "sha256": "2275620210b0cb3506c9e348f00dcd564ff07be47b17baaad907c52cb5b41b3c",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0146",
@@ -2470,7 +2483,8 @@
       "integrity_status": "Verified",
       "sha256": "7d602eabf433369ac0698fe8cd89ef920a11184d804d2f2cdc918994da81e873",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0147",
@@ -2486,7 +2500,8 @@
       "integrity_status": "Verified",
       "sha256": "7dfa7be06e661150fb87743c7fa91723b7bdaf5df5ba680167197d6db150ee6b",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0148",
@@ -2502,7 +2517,8 @@
       "integrity_status": "Verified",
       "sha256": "c853580e938b89d4685fd3bb79722eeb11525a85c91df51215664594cb1474ca",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0149",
@@ -2518,7 +2534,8 @@
       "integrity_status": "Verified",
       "sha256": "40b660d8aa57c3ceec38edd5428246c620cbb9e4ff9a38ac5c23022a54d9b9bf",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0150",
@@ -2534,7 +2551,8 @@
       "integrity_status": "Verified",
       "sha256": "33e5f626264033e73f6b08bf865e8e2b03aebb9eb3d408d1798b1f4afde53fd0",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0151",
@@ -2550,7 +2568,8 @@
       "integrity_status": "Verified",
       "sha256": "85cd1895e78f31e5dbd7f27734ab489d23ccd27019a41f9102d88edc24f338d1",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0152",
@@ -2566,7 +2585,8 @@
       "integrity_status": "Verified",
       "sha256": "8a1f652d1bef6fe0a699afbd0a2aef543f76b2c0e47204fdbed054babae00792",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0153",
@@ -2582,7 +2602,8 @@
       "integrity_status": "Verified",
       "sha256": "211306e7a6eca8f58a843ab37496fbe48ce1011d83dae0afd2a1c0c519aaa216",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0154",
@@ -2598,7 +2619,8 @@
       "integrity_status": "Verified",
       "sha256": "28046cb088ae7224159861855ddea7c24b13f51c514af12732b228cdb50c1a63",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0155",
@@ -2614,7 +2636,8 @@
       "integrity_status": "Verified",
       "sha256": "dbaa94f55d46909f2f63a9fe8ac4447b0c4b18dd8f58f7978bf089fd3383f197",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0156",
@@ -2630,7 +2653,8 @@
       "integrity_status": "Verified",
       "sha256": "14d0002991f032d6970bb3731da2c84bbf5b612a8e918f8fa37a456d6baabb56",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0157",
@@ -2646,7 +2670,8 @@
       "integrity_status": "Verified",
       "sha256": "8a3a8661fdab21796cfdf1cb1033d1681f38c1e4d170a5fad33929b444976e60",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0158",
@@ -2662,7 +2687,8 @@
       "integrity_status": "Verified",
       "sha256": "7a720e6e51e121bbaec96cc8c1fe4686be64c80ea354346be7660eae78d959c2",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0159",
@@ -2678,7 +2704,8 @@
       "integrity_status": "Verified",
       "sha256": "f530fd71c2c4ba04347d2dba52ff9711006bb79e6d2e73472ce6b9a4e29269ea",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0160",
@@ -2694,7 +2721,8 @@
       "integrity_status": "Verified",
       "sha256": "6ad76f2cd6b5bb84c573a5d042d426238329aa4e66e79313f13ce1414d44ff1a",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0161",
@@ -2710,7 +2738,8 @@
       "integrity_status": "Verified",
       "sha256": "264f6dd9ca0b71bc8e1aaaa8d20e900eb11da67a571a495cd8ff4cefff4edeaa",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0162",
@@ -2726,7 +2755,8 @@
       "integrity_status": "Verified",
       "sha256": "02d3f0d92e31faab54502a5779c5dd94d0314fbe3acfd133e5b4bf84e914e8bb",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0163",
@@ -2742,7 +2772,8 @@
       "integrity_status": "Verified",
       "sha256": "a8eed650a9e75b83027f7243888e377d0a4d8673b2421c55f2c3ee709d378716",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0164",
@@ -2758,7 +2789,8 @@
       "integrity_status": "Verified",
       "sha256": "08f1a0a1cfcbf7723ac89ff6fdddb58201b127d9f5868e85420f7768494858c1",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0165",
@@ -2774,7 +2806,8 @@
       "integrity_status": "Verified",
       "sha256": "7fb253a6fb2de1ffadff043eff6a751713e7f65533b60fbe87c7faa16a9a0dbf",
       "classification": "Medical Device Security Assessment",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-04T08:51:37Z"
     },
     {
       "evidence_id": "BID-2026-3759-EV-0166",
@@ -3242,11 +3275,11 @@
     }
   ],
   "lifecycle_processing": {
-    "reviewed_count": 132,
+    "reviewed_count": 165,
     "total_evidence_count": 194,
     "last_review_batch_size": 33,
-    "last_reviewed_at": "2026-09-03T22:34:56Z",
+    "last_reviewed_at": "2026-09-04T08:51:37Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-09-03T22:34:56Z"
+  "updated_at": "2026-09-04T08:51:37Z"
 }

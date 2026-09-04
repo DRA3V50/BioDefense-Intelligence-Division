@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-09-03 22:35 UTC
+**Generated:** 2026-09-04 08:51 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Medical Device Security Assessment concerns suspected Medical Device 
 
 **Integrity-Verified Records:** 194
 
-**Pending Analyst Review:** 62
+**Pending Analyst Review:** 29
 
 ### Priority Findings
 
