@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 

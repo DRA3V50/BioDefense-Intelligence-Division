@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=da1aa0d13748" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=7dec834c0b34" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -52,7 +52,7 @@
       <td valign="top" align="left"><strong>Case:</strong> <code>BID-2026-3759</code><br>
 <strong>Campaign:</strong> <code>BDC-2026-001</code></td>
       <td valign="top" align="left"><strong>Record:</strong> <code>EVIDENCE COLLECTION</code><br>
-<strong>Stage:</strong> ■ <code>EVIDENCE REVIEW</code><br>
+<strong>Stage:</strong> ■ <code>VALIDATION</code><br>
 <strong>Lifecycle:</strong> ■ <code>ACTIVE</code></td>
       <td valign="top" align="left"><code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
 <code>CSV</code> · <code>XLSX</code></td>
@@ -210,7 +210,7 @@ The active investigation persists across scheduled workflow executions and advan
       <td valign="top" align="right">194</td>
       <td valign="top" align="right">194</td>
       <td valign="top" align="right">194</td>
-      <td valign="top" align="right">29</td>
+      <td valign="top" align="right">0</td>
     </tr>
   </tbody>
 </table>
