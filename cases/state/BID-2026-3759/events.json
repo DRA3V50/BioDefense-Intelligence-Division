@@ -131,7 +131,20 @@
       "zone": "Containment Network",
       "intensity": 58,
       "idempotency_key": "correlation-validation-65-of-194"
+    },
+    {
+      "event_id": "BID-2026-3759-EVT-0011",
+      "case_id": "BID-2026-3759",
+      "sequence": 11,
+      "timestamp": "2026-09-05T08:21:36Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 130/194 validated",
+      "severity": "HIGH",
+      "source": "process_active_case_stage",
+      "zone": "Containment Network",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-130-of-194"
     }
   ],
-  "updated_at": "2026-09-04T22:21:47Z"
+  "updated_at": "2026-09-05T08:21:36Z"
 }
