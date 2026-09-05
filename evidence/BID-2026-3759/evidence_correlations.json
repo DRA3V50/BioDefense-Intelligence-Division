@@ -1442,7 +1442,8 @@
       "related_indicator": "IOC-2026-1851",
       "finding": "Biosecurity Policy Violation",
       "confidence": 83,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1452,7 +1453,8 @@
       "related_indicator": "IOC-2026-2595",
       "finding": "Laboratory System Modification",
       "confidence": 82,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1462,7 +1464,8 @@
       "related_indicator": "IOC-2026-6379",
       "finding": "Containment Verification",
       "confidence": 97,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1472,7 +1475,8 @@
       "related_indicator": "IOC-2026-8151",
       "finding": "Known Threat Actor Indicator",
       "confidence": 99,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1482,7 +1486,8 @@
       "related_indicator": "IOC-2026-1607",
       "finding": "Credential Misuse",
       "confidence": 98,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1492,7 +1497,8 @@
       "related_indicator": "IOC-2026-4824",
       "finding": "Biosecurity Policy Violation",
       "confidence": 93,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1502,7 +1508,8 @@
       "related_indicator": "IOC-2026-2155",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 87,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1512,7 +1519,8 @@
       "related_indicator": "IOC-2026-5459",
       "finding": "Unauthorized Facility Access",
       "confidence": 96,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1522,7 +1530,8 @@
       "related_indicator": "IOC-2026-9679",
       "finding": "Research Workstation Compromise",
       "confidence": 97,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1532,7 +1541,8 @@
       "related_indicator": "IOC-2026-2751",
       "finding": "Biosecurity Policy Violation",
       "confidence": 84,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1542,7 +1552,8 @@
       "related_indicator": "IOC-2026-1331",
       "finding": "Known Threat Actor Indicator",
       "confidence": 88,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1552,7 +1563,8 @@
       "related_indicator": "IOC-2026-2591",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 99,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1562,7 +1574,8 @@
       "related_indicator": "IOC-2026-7668",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 93,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1572,7 +1585,8 @@
       "related_indicator": "IOC-2026-8736",
       "finding": "Known Threat Actor Indicator",
       "confidence": 83,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1582,7 +1596,8 @@
       "related_indicator": "IOC-2026-9573",
       "finding": "Command-and-Control Communication",
       "confidence": 94,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1592,7 +1607,8 @@
       "related_indicator": "IOC-2026-5404",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 93,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1602,7 +1618,8 @@
       "related_indicator": "IOC-2026-7823",
       "finding": "Suspicious Network Activity",
       "confidence": 88,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1612,7 +1629,8 @@
       "related_indicator": "IOC-2026-7250",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 82,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1622,7 +1640,8 @@
       "related_indicator": "IOC-2026-1962",
       "finding": "Research Workstation Compromise",
       "confidence": 90,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1632,7 +1651,8 @@
       "related_indicator": "IOC-2026-8176",
       "finding": "Unauthorized Facility Access",
       "confidence": 90,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1642,7 +1662,8 @@
       "related_indicator": "IOC-2026-3133",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 82,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1652,7 +1673,8 @@
       "related_indicator": "IOC-2026-7838",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 85,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1662,7 +1684,8 @@
       "related_indicator": "IOC-2026-5549",
       "finding": "Command-and-Control Communication",
       "confidence": 88,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1672,7 +1695,8 @@
       "related_indicator": "IOC-2026-2171",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 89,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1682,7 +1706,8 @@
       "related_indicator": "IOC-2026-9066",
       "finding": "Known Threat Actor Indicator",
       "confidence": 83,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1692,7 +1717,8 @@
       "related_indicator": "IOC-2026-7545",
       "finding": "Containment Verification",
       "confidence": 88,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1702,7 +1728,8 @@
       "related_indicator": "IOC-2026-7565",
       "finding": "Command-and-Control Communication",
       "confidence": 99,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1712,7 +1739,8 @@
       "related_indicator": "IOC-2026-7690",
       "finding": "Containment Verification",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1722,7 +1750,8 @@
       "related_indicator": "IOC-2026-9894",
       "finding": "Biosecurity Policy Violation",
       "confidence": 97,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1732,7 +1761,8 @@
       "related_indicator": "IOC-2026-5588",
       "finding": "Unauthorized Facility Access",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1742,7 +1772,8 @@
       "related_indicator": "IOC-2026-5509",
       "finding": "Laboratory System Modification",
       "confidence": 80,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1752,7 +1783,8 @@
       "related_indicator": "IOC-2026-5185",
       "finding": "Command-and-Control Communication",
       "confidence": 87,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1762,7 +1794,8 @@
       "related_indicator": "IOC-2026-6661",
       "finding": "Containment Verification",
       "confidence": 82,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1772,7 +1805,8 @@
       "related_indicator": "IOC-2026-3920",
       "finding": "Research Data Integrity Anomaly",
       "confidence": 86,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1782,7 +1816,8 @@
       "related_indicator": "IOC-2026-7491",
       "finding": "Research Workstation Compromise",
       "confidence": 97,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1792,7 +1827,8 @@
       "related_indicator": "IOC-2026-8248",
       "finding": "Unauthorized Facility Access",
       "confidence": 87,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1802,7 +1838,8 @@
       "related_indicator": "IOC-2026-5190",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 92,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1812,7 +1849,8 @@
       "related_indicator": "IOC-2026-8268",
       "finding": "Containment Verification",
       "confidence": 95,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1822,7 +1860,8 @@
       "related_indicator": "IOC-2026-7357",
       "finding": "Research Workstation Compromise",
       "confidence": 87,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1832,7 +1871,8 @@
       "related_indicator": "IOC-2026-9317",
       "finding": "Known Threat Actor Indicator",
       "confidence": 92,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1842,7 +1882,8 @@
       "related_indicator": "IOC-2026-5441",
       "finding": "Known Threat Actor Indicator",
       "confidence": 81,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1852,7 +1893,8 @@
       "related_indicator": "IOC-2026-7288",
       "finding": "Research Data Integrity Anomaly",
       "confidence": 84,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1862,7 +1904,8 @@
       "related_indicator": "IOC-2026-9611",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1872,7 +1915,8 @@
       "related_indicator": "IOC-2026-6146",
       "finding": "Containment Verification",
       "confidence": 98,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1882,7 +1926,8 @@
       "related_indicator": "IOC-2026-6832",
       "finding": "Suspicious Network Activity",
       "confidence": 99,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1892,7 +1937,8 @@
       "related_indicator": "IOC-2026-4169",
       "finding": "Credential Misuse",
       "confidence": 85,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1902,7 +1948,8 @@
       "related_indicator": "IOC-2026-5560",
       "finding": "Biosecurity Policy Violation",
       "confidence": 99,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1912,7 +1959,8 @@
       "related_indicator": "IOC-2026-5562",
       "finding": "Research Data Integrity Anomaly",
       "confidence": 84,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1922,7 +1970,8 @@
       "related_indicator": "IOC-2026-6590",
       "finding": "Known Threat Actor Indicator",
       "confidence": 94,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1932,7 +1981,8 @@
       "related_indicator": "IOC-2026-2103",
       "finding": "Research Workstation Compromise",
       "confidence": 98,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1942,7 +1992,8 @@
       "related_indicator": "IOC-2026-9125",
       "finding": "Credential Misuse",
       "confidence": 96,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1952,7 +2003,8 @@
       "related_indicator": "IOC-2026-2540",
       "finding": "Research Data Integrity Anomaly",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1962,7 +2014,8 @@
       "related_indicator": "IOC-2026-3229",
       "finding": "Command-and-Control Communication",
       "confidence": 90,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1972,7 +2025,8 @@
       "related_indicator": "IOC-2026-9786",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 92,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1982,7 +2036,8 @@
       "related_indicator": "IOC-2026-5786",
       "finding": "Research Workstation Compromise",
       "confidence": 96,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -1992,7 +2047,8 @@
       "related_indicator": "IOC-2026-7830",
       "finding": "Biosecurity Policy Violation",
       "confidence": 96,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2002,7 +2058,8 @@
       "related_indicator": "IOC-2026-8043",
       "finding": "Research Workstation Compromise",
       "confidence": 86,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2012,7 +2069,8 @@
       "related_indicator": "IOC-2026-2299",
       "finding": "Biosecurity Policy Violation",
       "confidence": 94,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2022,7 +2080,8 @@
       "related_indicator": "IOC-2026-9788",
       "finding": "Known Threat Actor Indicator",
       "confidence": 97,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2032,7 +2091,8 @@
       "related_indicator": "IOC-2026-1134",
       "finding": "Biosecurity Policy Violation",
       "confidence": 98,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2042,7 +2102,8 @@
       "related_indicator": "IOC-2026-8963",
       "finding": "Known Threat Actor Indicator",
       "confidence": 81,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2052,7 +2113,8 @@
       "related_indicator": "IOC-2026-7859",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 84,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2062,7 +2124,8 @@
       "related_indicator": "IOC-2026-3410",
       "finding": "Biosecurity Policy Violation",
       "confidence": 90,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     },
     {
       "case_id": "BID-2026-3759",
@@ -2072,15 +2135,16 @@
       "related_indicator": "IOC-2026-8493",
       "finding": "Containment Verification",
       "confidence": 92,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-09-05T15:13:17Z"
     }
   ],
   "lifecycle_processing": {
-    "validated_count": 130,
+    "validated_count": 194,
     "total_correlation_count": 194,
-    "last_validation_batch_size": 65,
-    "last_validated_at": "2026-09-05T08:21:36Z",
+    "last_validation_batch_size": 64,
+    "last_validated_at": "2026-09-05T15:13:17Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-09-05T08:21:36Z"
+  "updated_at": "2026-09-05T15:13:17Z"
 }

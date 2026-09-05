@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Evidence correlation remains in progress across collected artifacts.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
