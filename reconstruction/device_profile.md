@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-3759
+BID-2026-5712
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Access Control Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Specimen Tracking Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Central Evidence Processing Center
 
 Platform:
-Federal Investigation Network
+Genome Sequencing Environment
 
 Device:
-Genome Analysis Workstation
+Clinical Data Server
 
 Vendor:
-HPE
+Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
 Containment Network
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
 HIGH
 
 Confidence:
-98%
+89%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Joint Cyber Investigation Unit
+BioDefense Task Force
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

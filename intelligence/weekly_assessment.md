@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3759
+Case ID: BID-2026-5712
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Medical Device Security Assessment
+Classification: Laboratory Access Control Investigation
 
-Threat Family: Medical Device Communications Interference
+Threat Family: Specimen Tracking Manipulation
 
-Current Status: ESCALATED
+Current Status: Containment
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Observed indicators remain consistent with the current operational assessment.
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 HIGH
 
 Risk Score:
-65
+81
 
 Confidence:
-98%
+89%
 
 Affected Assets:
-33
+10
 
 Evidence Collected:
-194
+129
 
 Indicators Recorded:
-47
+56
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Joint Cyber Investigation Unit
+BioDefense Task Force
 
 Date:
 
-2026-09-03
+2026-09-07

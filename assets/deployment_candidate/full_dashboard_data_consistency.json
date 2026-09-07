@@ -1,5 +1,5 @@
 {
-  "anomaly_history_samples": 18,
+  "anomaly_history_samples": 2,
   "authoritative_source_map": {
     "campaign_id": "dashboard.shared.campaign_id / operation_context.campaign_id",
     "case_id": "dashboard.shared.case_id",
@@ -18,16 +18,16 @@
     "workflow_stage": "dashboard.workflow.current_stage"
   },
   "campaign_id": "BDC-2026-001",
-  "canonical_threat_classification": "ELEVATED",
-  "case_id": "BID-2026-3759",
-  "correlation_count_derived_from_relationships": 194,
-  "current_stage": "PROBLEM_REVIEW",
-  "event_intensity_samples": 18,
-  "evidence_count": 194,
+  "canonical_threat_classification": "HIGH",
+  "case_id": "BID-2026-5712",
+  "correlation_count_derived_from_relationships": 129,
+  "current_stage": "EVIDENCE_REVIEW",
+  "event_intensity_samples": 2,
+  "evidence_count": 129,
   "feed_event_case_ids_match": true,
-  "integration_count_derived_from_persisted_sources": 3,
-  "lead_analyst": "Joint Cyber Investigation Unit",
-  "lifecycle_status": "ESCALATED",
+  "integration_count_derived_from_persisted_sources": 2,
+  "lead_analyst": "BioDefense Task Force",
+  "lifecycle_status": "ACTIVE",
   "priority": "HIGH",
   "queue_depth_unit": "count",
   "relationship_case_ids_match": true,
@@ -70,9 +70,9 @@
     "state_revision": true,
     "updated_at": true
   },
-  "state_revision": 18,
+  "state_revision": 2,
   "subsystem_06_display_level": "HIGH",
   "system_status_source": "SIMULATED",
-  "threat_score": 63,
-  "updated_at": "2026-09-07T01:47:11Z"
+  "threat_score": 70,
+  "updated_at": "2026-09-07T09:20:38Z"
 }

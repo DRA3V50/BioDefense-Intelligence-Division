@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-09-03
+## 2026-09-07
 
 ### Case Opened
-Case ID: BID-2026-3759
+Case ID: BID-2026-5712
 
 ### Classification
-Medical Device Security Assessment
+Laboratory Access Control Investigation
 
 ### Initial Assessment
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-ESCALATED
+Containment
 
 ### Severity
 HIGH

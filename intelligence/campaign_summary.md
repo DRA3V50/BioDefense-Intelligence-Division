@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3759
+BID-2026-5712
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Access Control Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Specimen Tracking Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Federal Investigation Network
+Genome Sequencing Environment
 
 Device:
-Genome Analysis Workstation
+Clinical Data Server
 
 Vendor:
-HPE
+Palo Alto Networks
 
 Security Zone:
 Containment Network
@@ -41,22 +41,22 @@ Containment Network
 ## Investigation Metrics
 
 Investigations Recorded:
-137
+138
 
 Evidence Collected:
-194
+129
 
 Indicators Identified:
-47
+56
 
 Affected Assets:
-33
+10
 
 Confidence:
-98%
+89%
 
 Risk Score:
-65
+81
 
 ---
 

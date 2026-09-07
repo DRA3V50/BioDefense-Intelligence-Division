@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3759
+BID-2026-5712
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Medical Device Security Assessment
+Laboratory Access Control Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Infrastructure | Firewall policy deviation identified |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Device | Protected workstation entered evidence preservation mode |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -28,23 +28,23 @@ Medical Device Security Assessment
 ## Investigation Statistics
 
 Evidence Collected:
-194
+129
 
 Indicators Reviewed:
-47
+56
 
 Risk Score:
-65
+81
 
 Confidence:
-98%
+89%
 
 ---
 
 Lead Analyst:
 
-Joint Cyber Investigation Unit
+BioDefense Task Force
 
 Current Status:
 
-ESCALATED
+Containment

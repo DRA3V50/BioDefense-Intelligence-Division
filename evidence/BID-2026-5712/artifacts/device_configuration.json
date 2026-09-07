@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-5712",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-09-07T09:20:15Z",
+  "platform": "Genome Sequencing Environment",
+  "vendor": "Palo Alto Networks",
+  "device": "Clinical Data Server",
+  "baseline_version": "3.8.0",
+  "zone": "Containment Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

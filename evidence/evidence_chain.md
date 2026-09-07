@@ -1,18 +1,18 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-09-07 01:47 UTC
+**Generated:** 2026-09-07 09:20 UTC
 
-**Case ID:** BID-2026-3759
+**Case ID:** BID-2026-5712
 
-**Classification:** Medical Device Security Assessment
+**Classification:** Laboratory Access Control Investigation
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Specimen Tracking Manipulation
 
 **Severity:** HIGH
 
 **Priority:** HIGH
 
-**Case Confidence:** 98%
+**Case Confidence:** 89%
 
 ---
 
@@ -26,213 +26,46 @@ evidence correlations, and the active case assessment.
 
 ## Evidence Chain Summary
 
-- **Evidence records reviewed:** 194
-- **Correlation records reviewed:** 194
+- **Evidence records reviewed:** 129
+- **Correlation records reviewed:** 129
 - **Investigative findings:** 12
 
 ---
 
-## Finding 1: Biosecurity Policy Violation
-
-**Confidence:** 81
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0001** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0016** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0026** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0034** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0048** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0081** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0098** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0131** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0136** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0140** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0159** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0177** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0186** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0188** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0190** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0193** — Biosecurity Audit Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Biosecurity Policy Violation** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 2: Laboratory Information System Anomaly
-
-**Confidence:** 80
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0002** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0015** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0017** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0043** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0069** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0077** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0090** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0094** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0097** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0105** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0106** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0152** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0167** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0184** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0192** — Laboratory Information System Audit Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Laboratory Information System Anomaly** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 3: Analyst Intelligence Assessment
-
-**Confidence:** 91
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0003** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0014** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0031** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0039** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0117** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0123** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0137** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0142** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0143** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0146** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0148** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0151** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0154** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0173** — Analyst Observation  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Analyst Intelligence Assessment** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 4: Containment Verification
+## Finding 1: Containment Verification
 
 **Confidence:** 98
 
 ### Supporting Evidence
 
-- **BID-2026-3759-EV-0004** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0008** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0010** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0030** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0032** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0038** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0040** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0045** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0050** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0063** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0064** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0078** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0100** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0111** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0112** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0120** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0126** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0133** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0156** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0158** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0163** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0168** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0174** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0194** — Containment Validation Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
+- **BID-2026-5712-EV-0001** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0009** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0010** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0014** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0018** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0022** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0023** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0060** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0064** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0078** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0083** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0084** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0119** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0128** — Containment Validation Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -241,65 +74,57 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Containment Verification** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 5: Known Threat Actor Indicator
+## Finding 2: Laboratory Information System Anomaly
 
 **Confidence:** 97
 
 ### Supporting Evidence
 
-- **BID-2026-3759-EV-0005** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0011** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0018** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0025** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0033** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0047** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0051** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0055** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0067** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0072** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0080** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0103** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0109** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0121** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0122** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0134** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0141** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0144** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0155** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0170** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0171** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0179** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0189** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0191** — Threat Intelligence Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
+- **BID-2026-5712-EV-0002** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0004** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0006** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0015** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0016** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0021** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0024** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0025** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0028** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0034** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0072** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0075** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0076** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0081** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0082** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0089** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0094** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0107** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0116** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0123** — Laboratory Information System Audit Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -307,334 +132,46 @@ The finding was generated from available evidence correlation records. Additiona
 
 ### Analyst Assessment
 
-The listed evidence supports further review of **Known Threat Actor Indicator** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
+The listed evidence supports further review of **Laboratory Information System Anomaly** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 6: Unauthorized Facility Access
+## Finding 3: Research Workstation Compromise
 
-**Confidence:** 86
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0006** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0019** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0022** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0053** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0059** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0061** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0070** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0082** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0096** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0113** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0128** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0138** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0150** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0160** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0166** — Access Control Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Unauthorized Facility Access** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 7: Suspicious Network Activity
-
-**Confidence:** 97
+**Confidence:** 91
 
 ### Supporting Evidence
 
-- **BID-2026-3759-EV-0007** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0044** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0054** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0057** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0060** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0065** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0089** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0092** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0114** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0115** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0147** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0175** — Firewall Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Suspicious Network Activity** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 8: Command-and-Control Communication
-
-**Confidence:** 96
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0009** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0027** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0029** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0037** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0042** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0046** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0049** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0062** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0099** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0107** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0124** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0145** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0153** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0157** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0162** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0183** — Network Connection Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Command-and-Control Communication** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 9: Laboratory System Modification
-
-**Confidence:** 87
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0012** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0020** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0023** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0035** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0036** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0041** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0056** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0079** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0083** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0084** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0087** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0104** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0132** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0161** — Laboratory System Configuration  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Laboratory System Modification** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 10: Credential Misuse
-
-**Confidence:** 99
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0013** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0052** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0071** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0073** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0076** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0088** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0091** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0095** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0116** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0127** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0129** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0135** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0176** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0181** — Authentication Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Credential Misuse** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 11: Research Data Integrity Anomaly
-
-**Confidence:** 97
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0021** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0024** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0028** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0066** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0068** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0074** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0086** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0093** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0102** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0110** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0125** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0130** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0164** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0172** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0178** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0182** — Research Data Integrity Record  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Research Data Integrity Anomaly** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 12: Research Workstation Compromise
-
-**Confidence:** 83
-
-### Supporting Evidence
-
-- **BID-2026-3759-EV-0058** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0075** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0085** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0101** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0108** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0118** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0119** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0139** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0149** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0165** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0169** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0180** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0185** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-3759-EV-0187** — Research Workstation Event Log  
-  Source: **Genome Analysis Workstation** | Vendor: **HPE** | Integrity: **Verified** | Review: **Reviewed**
+- **BID-2026-5712-EV-0003** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0020** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0043** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0048** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0051** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0055** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0062** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0071** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0091** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0096** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0098** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0115** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0121** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0126** — Research Workstation Event Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -643,7 +180,340 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Research Workstation Compromise** within
-investigation **BID-2026-3759**. Evidence integrity, source reliability, and
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 4: Laboratory System Modification
+
+**Confidence:** 91
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0005** — Laboratory System Configuration  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0007** — Laboratory System Configuration  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0056** — Laboratory System Configuration  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0067** — Laboratory System Configuration  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0073** — Laboratory System Configuration  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0104** — Laboratory System Configuration  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Laboratory System Modification** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 5: Suspicious Network Activity
+
+**Confidence:** 85
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0008** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0017** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0029** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0045** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0049** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0077** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0122** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0125** — Firewall Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Suspicious Network Activity** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 6: Unauthorized Facility Access
+
+**Confidence:** 85
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0011** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0027** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0038** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0039** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0041** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0047** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0069** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0079** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0085** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0086** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0090** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0105** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0124** — Access Control Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Unauthorized Facility Access** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 7: Research Data Integrity Anomaly
+
+**Confidence:** 86
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0012** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0030** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0035** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0054** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0065** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0070** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0093** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0100** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0114** — Research Data Integrity Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Research Data Integrity Anomaly** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 8: Command-and-Control Communication
+
+**Confidence:** 97
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0013** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0026** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0046** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0052** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0058** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0066** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0112** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0113** — Network Connection Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Command-and-Control Communication** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 9: Analyst Intelligence Assessment
+
+**Confidence:** 90
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0019** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0033** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0037** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0042** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0044** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0061** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0099** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0102** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0111** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0117** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0127** — Analyst Observation  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Analyst Intelligence Assessment** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 10: Credential Misuse
+
+**Confidence:** 96
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0031** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0036** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0050** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0074** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0087** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0088** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0095** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0101** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0106** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0108** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0110** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0120** — Authentication Log  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Credential Misuse** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 11: Biosecurity Policy Violation
+
+**Confidence:** 90
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0032** — Biosecurity Audit Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0040** — Biosecurity Audit Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0053** — Biosecurity Audit Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0057** — Biosecurity Audit Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0068** — Biosecurity Audit Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0092** — Biosecurity Audit Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Biosecurity Policy Violation** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 12: Known Threat Actor Indicator
+
+**Confidence:** 86
+
+### Supporting Evidence
+
+- **BID-2026-5712-EV-0059** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0063** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0080** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0097** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0103** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0109** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0118** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-5712-EV-0129** — Threat Intelligence Record  
+  Source: **Clinical Data Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Known Threat Actor Indicator** within
+investigation **BID-2026-5712**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---

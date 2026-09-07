@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "case_id": "BID-2026-5712",
+  "state_revision": 2,
+  "nodes": [
+    {
+      "node_id": "case:BID-2026-5712",
+      "node_type": "case",
+      "label": "BID-2026-5712"
+    },
+    {
+      "node_id": "campaign:BDC-2026-001",
+      "node_type": "campaign",
+      "label": "BDC-2026-001"
+    },
+    {
+      "node_id": "platform:Genome Sequencing Environment",
+      "node_type": "platform",
+      "label": "Genome Sequencing Environment"
+    },
+    {
+      "node_id": "zone:Containment Network",
+      "node_type": "network_zone",
+      "label": "Containment Network"
+    },
+    {
+      "node_id": "evidence:BID-2026-5712",
+      "node_type": "evidence_collection",
+      "label": "Evidence Collection"
+    },
+    {
+      "node_id": "correlations:BID-2026-5712",
+      "node_type": "correlation_set",
+      "label": "Evidence Correlations"
+    },
+    {
+      "node_id": "threat:BID-2026-5712",
+      "node_type": "threat_assessment",
+      "label": "C# Threat Assessment"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "BID-2026-5712-REL-5d22c3d4fdf57019",
+      "case_id": "BID-2026-5712",
+      "source": "case:BID-2026-5712",
+      "target": "campaign:BDC-2026-001",
+      "relationship_type": "BELONGS_TO",
+      "attributes": {}
+    },
+    {
+      "relationship_id": "BID-2026-5712-REL-5c73fc87af68e527",
+      "case_id": "BID-2026-5712",
+      "source": "case:BID-2026-5712",
+      "target": "platform:Genome Sequencing Environment",
+      "relationship_type": "AFFECTS_PLATFORM",
+      "attributes": {}
+    },
+    {
+      "relationship_id": "BID-2026-5712-REL-43427984737500ba",
+      "case_id": "BID-2026-5712",
+      "source": "case:BID-2026-5712",
+      "target": "zone:Containment Network",
+      "relationship_type": "OBSERVED_IN_ZONE",
+      "attributes": {}
+    },
+    {
+      "relationship_id": "BID-2026-5712-REL-35b1060053d0d9d0",
+      "case_id": "BID-2026-5712",
+      "source": "case:BID-2026-5712",
+      "target": "evidence:BID-2026-5712",
+      "relationship_type": "HAS_EVIDENCE",
+      "attributes": {
+        "count": 129
+      }
+    },
+    {
+      "relationship_id": "BID-2026-5712-REL-f6f1758bdd036c17",
+      "case_id": "BID-2026-5712",
+      "source": "case:BID-2026-5712",
+      "target": "correlations:BID-2026-5712",
+      "relationship_type": "HAS_CORRELATIONS",
+      "attributes": {
+        "count": 129
+      }
+    },
+    {
+      "relationship_id": "BID-2026-5712-REL-5e0f1138d1569e80",
+      "case_id": "BID-2026-5712",
+      "source": "case:BID-2026-5712",
+      "target": "threat:BID-2026-5712",
+      "relationship_type": "HAS_THREAT_ASSESSMENT",
+      "attributes": {
+        "score": 70,
+        "classification": "HIGH"
+      }
+    }
+  ],
+  "source_fingerprint": "354c5815829089c6893f8e1ee90ac00931373121a78bdb4f96fb3b51b3ca78d2",
+  "updated_at": "2026-09-07T09:20:40Z"
+}

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3759 |
+| Case ID | BID-2026-5712 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Medical Device Security Assessment |
-| Threat Family | Medical Device Communications Interference |
+| Classification | Laboratory Access Control Investigation |
+| Threat Family | Specimen Tracking Manipulation |
 | Severity | HIGH |
-| Status | ESCALATED |
+| Status | Containment |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Federal Investigation Network |
-| Device | Genome Analysis Workstation |
-| Vendor | HPE |
+| Platform | Genome Sequencing Environment |
+| Device | Clinical Data Server |
+| Vendor | Palo Alto Networks |
 | Security Zone | Containment Network |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 65 |
-| Confidence | 98% |
-| Evidence Collected | 194 |
-| Indicators Identified | 47 |
-| Affected Assets | 33 |
+| Risk Score | 81 |
+| Confidence | 89% |
+| Evidence Collected | 129 |
+| Indicators Identified | 56 |
+| Affected Assets | 10 |
 
 ---
 
 # Lead Investigator
 
-**Joint Cyber Investigation Unit**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Containment**
 
 Priority:
 
