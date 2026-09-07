@@ -27,7 +27,20 @@
       "zone": "Containment Network",
       "intensity": 45,
       "idempotency_key": "revision-2-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-5712-EVT-0003",
+      "case_id": "BID-2026-5712",
+      "sequence": 3,
+      "timestamp": "2026-09-07T17:45:16Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 22/129 reviewed",
+      "severity": "HIGH",
+      "source": "process_active_case_stage",
+      "zone": "Containment Network",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-22-of-129"
     }
   ],
-  "updated_at": "2026-09-07T09:20:38Z"
+  "updated_at": "2026-09-07T17:45:16Z"
 }
