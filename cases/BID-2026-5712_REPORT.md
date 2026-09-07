@@ -138,19 +138,19 @@ HIGH
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Evidence correlation remains in progress across collected artifacts.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Laboratory Access Control Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| PowerShell | Encoded administrative command execution detected |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Research Storage | Unauthorized access to protected genomic repository |
-| System Log | Unexpected privilege escalation recorded |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -449,7 +449,7 @@ Specimen Tracking Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---

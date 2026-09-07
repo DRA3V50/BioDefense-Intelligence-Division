@@ -26,19 +26,19 @@ HIGH
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
