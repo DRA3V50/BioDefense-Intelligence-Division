@@ -1514,7 +1514,8 @@
       "integrity_status": "Verified",
       "sha256": "8454fc35191b09355e7e89fb11496c026e09caf328a05a1d310f438cd33e8258",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0090",
@@ -1530,7 +1531,8 @@
       "integrity_status": "Verified",
       "sha256": "1c156945279c7bdd6778b004d448ee8e1bb0ce416b32c22dadc8f7a20a208e0e",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0091",
@@ -1546,7 +1548,8 @@
       "integrity_status": "Verified",
       "sha256": "918991f6c05b59a4e23c7f65ee2157075fb9acce72691da5ca2262b984da3afd",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0092",
@@ -1562,7 +1565,8 @@
       "integrity_status": "Verified",
       "sha256": "06b6a8b9bb1d57c958f92539f3cb1fb563155cd548607e90d10aba0c9cea4e05",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0093",
@@ -1578,7 +1582,8 @@
       "integrity_status": "Verified",
       "sha256": "0f25414ade16e4f0c560b528ef2195bb77c9cc06cc1e0e04c66a40e3439e56b1",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0094",
@@ -1594,7 +1599,8 @@
       "integrity_status": "Verified",
       "sha256": "1ae5b638a8a984bf57fb02b75493cd95539e07eaf1ce9fbe3391c94b101ef5ba",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0095",
@@ -1610,7 +1616,8 @@
       "integrity_status": "Verified",
       "sha256": "b9d579f2e507b0cec094420a85e0d0358dcb41675e5e3bfe4e86ad0f3c1a8c8d",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0096",
@@ -1626,7 +1633,8 @@
       "integrity_status": "Verified",
       "sha256": "78e34164d08e4fabfd58625a4a2d1055850cbf05a709fb4cbaffd46da2f2ac4a",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0097",
@@ -1642,7 +1650,8 @@
       "integrity_status": "Verified",
       "sha256": "9b7647973494e637da43f5f35453d35d3053956823e39d4957cd95dfbd387aa1",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0098",
@@ -1658,7 +1667,8 @@
       "integrity_status": "Verified",
       "sha256": "1ecde5dc9ae8a811ee958afaf82537f8b1e8737f3d4dc8b48b522f7eb43fc7cb",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0099",
@@ -1674,7 +1684,8 @@
       "integrity_status": "Verified",
       "sha256": "895421e7e87429d0b83605ca4ccf5ba918444e21fab2fd50062fddfd5fe78d84",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0100",
@@ -1690,7 +1701,8 @@
       "integrity_status": "Verified",
       "sha256": "31fd834afb90478bc0d81c13c03036b4384278f048e1d29ca027f4c07c6d8a36",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0101",
@@ -1706,7 +1718,8 @@
       "integrity_status": "Verified",
       "sha256": "1913477b2d2f563a699ccc00ca97fc9e68bf5a3d3b25b57148afc5e6de608ab5",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0102",
@@ -1722,7 +1735,8 @@
       "integrity_status": "Verified",
       "sha256": "3f0a31e533639e255bf284945dcc2ac8b04828373f3d1b5121b913b189ee000c",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0103",
@@ -1738,7 +1752,8 @@
       "integrity_status": "Verified",
       "sha256": "5d46133e3413eebe6fab2e48b33e3f94f87232a3f88112c7f4f57deadadc5b27",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0104",
@@ -1754,7 +1769,8 @@
       "integrity_status": "Verified",
       "sha256": "be20450d52723d77e4f44249ff795d1a38117ddc66a1f974f9a52ef7872602b4",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0105",
@@ -1770,7 +1786,8 @@
       "integrity_status": "Verified",
       "sha256": "6f4456c6e21ba94379f2b27e62e9020bba25af7685df43face535e286232cc70",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0106",
@@ -1786,7 +1803,8 @@
       "integrity_status": "Verified",
       "sha256": "fc467195676fd6f51e61869e4d3aad13d7a43915f1ce685152b2832c95422a6b",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0107",
@@ -1802,7 +1820,8 @@
       "integrity_status": "Verified",
       "sha256": "285c621b02dfc8d4c62ced16a1793cd2c58230d03d968d627b8e370a5c7f91e2",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0108",
@@ -1818,7 +1837,8 @@
       "integrity_status": "Verified",
       "sha256": "6338e304ef9c2ba466cb073da47d736899932c84f41356af91ff800e3a2c7b7e",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0109",
@@ -1834,7 +1854,8 @@
       "integrity_status": "Verified",
       "sha256": "112dc3d61dd2278e5610b43d8de2fd60a8d535af293f343239e0bbe68c679d75",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0110",
@@ -1850,7 +1871,8 @@
       "integrity_status": "Verified",
       "sha256": "9215ab78ea6959edaf357e4dc342916cf2cefbb1b3db79d5b8a69c718d319c8f",
       "classification": "Laboratory Access Control Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-08T22:39:48Z"
     },
     {
       "evidence_id": "BID-2026-5712-EV-0111",
@@ -2158,11 +2180,11 @@
     }
   ],
   "lifecycle_processing": {
-    "reviewed_count": 88,
+    "reviewed_count": 110,
     "total_evidence_count": 129,
     "last_review_batch_size": 22,
-    "last_reviewed_at": "2026-09-08T16:38:05Z",
+    "last_reviewed_at": "2026-09-08T22:39:48Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-09-08T16:38:05Z"
+  "updated_at": "2026-09-08T22:39:48Z"
 }

@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-09-08 16:38 UTC
+**Generated:** 2026-09-08 22:39 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Laboratory Access Control Investigation concerns suspected Specimen T
 
 **Integrity-Verified Records:** 129
 
-**Pending Analyst Review:** 41
+**Pending Analyst Review:** 19
 
 ### Priority Findings
 
