@@ -138,15 +138,15 @@ HIGH
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Evidence correlation remains in progress across collected artifacts.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Laboratory Access Control Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
-| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Infrastructure | Firewall policy deviation identified |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Identity | Credential reuse detected across isolated research segments |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -449,7 +449,7 @@ Specimen Tracking Manipulation
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Central Evidence Processing Center
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.
 
 
 ---

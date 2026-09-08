@@ -26,15 +26,15 @@ HIGH
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
