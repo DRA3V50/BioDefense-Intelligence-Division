@@ -25,7 +25,7 @@
   "assessment": "Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.",
   "schema_version": 1,
   "created_at": "2026-09-07T09:20:15Z",
-  "updated_at": "2026-09-09T08:59:02Z",
+  "updated_at": "2026-09-09T16:37:58Z",
   "current_stage": "VALIDATION",
   "stage_updated_at": "2026-09-09T08:59:02Z",
   "lifecycle_status": "ACTIVE",
@@ -36,15 +36,15 @@
   "assessment_completed_at": null,
   "problem_review_outcome": null,
   "problem_reviewed_at": null,
-  "state_revision": 9,
+  "state_revision": 10,
   "state_migrated_at": "2026-09-07T09:20:15Z",
   "stage_work": {
-    "stage": "EVIDENCE_REVIEW",
-    "recorded_at": "2026-09-09T08:59:02Z",
-    "action": "EVIDENCE_REVIEW_BATCH",
-    "completed_count": 129,
+    "stage": "VALIDATION",
+    "recorded_at": "2026-09-09T16:37:58Z",
+    "action": "CORRELATION_VALIDATION_BATCH",
+    "completed_count": 43,
     "total_count": 129,
-    "processed_count": 19,
-    "processed_through_id": "BID-2026-5712-EV-0129"
+    "processed_count": 43,
+    "processed_through_id": "BID-2026-5712-EV-0043"
   }
 }
