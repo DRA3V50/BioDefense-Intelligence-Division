@@ -1842,7 +1842,7 @@ def case_overview_v8_subtitle_entries() -> list[TextEntry]:
             (138, 171, 151),
         ),
     ]
-    if sum(entry.value == "LIVE TRACE" for entry in entries) != 1:
+    if sum(entry.value == "LIVE" for entry in entries) != 1:
         raise RendererContractError("V8 Timeline subtitle must be rendered exactly once.")
     return entries
 
