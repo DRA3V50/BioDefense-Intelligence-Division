@@ -1776,7 +1776,7 @@ def case_overview_v8_subtitle_overlay_bounds() -> tuple[tuple[int, int, int, int
 CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS = (
     ("evidence", "SEALED / CHAIN", (21, 86)),
     ("access_logs", "CREDENTIAL WATCH", (21, 156)),
-    ("timeline", "LIVE TRACE", (70, 218)),
+    ("timeline", "LIVE", (94, 218)),
     ("intelligence", "ANALYST READ", (342, 86)),
     ("correlation", "LINK DENSITY", (342, 156)),
     ("case_data_store", "PERSIST / RETAIN", (342, 226)),
