@@ -1871,16 +1871,37 @@ def _case_overview_text_support_mask(
     return support & lane
 
 
-def case_overview_v8_baked_subtitle_entries() -> list[TextEntry]:
-    """Canonical old static descriptors used solely for source-local cleanup."""
+def case_overview_v8_subtitle_cleanup_masks(shape: tuple[int, int]) -> dict[str, np.ndarray]:
+    """Mask baked V8 subtitle glyphs and the active V7 replacement glyphs."""
 
-    return [
-        TextEntry(bounds, position, value, (151, 145, 142), 6, False, bounds[2] - bounds[0])
-        for (_name, value, position), bounds in zip(
-            CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
-            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
+    masks: dict[str, np.ndarray] = {}
+
+    v7_entries = case_overview_v7_subtitle_entries()
+    v7_by_value = {entry.value: entry for entry in v7_entries}
+
+    for (name, value, _position), bounds in zip(
+        CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
+        CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
+    ):
+        baked = TextEntry(
+            bounds,
+            _position,
+            value,
+            (151, 145, 142),
+            6,
+            False,
+            bounds[2] - bounds[0],
         )
-    ]
+
+        support = _case_overview_text_support_mask(shape, baked, bounds)
+
+        replacement = v7_by_value.get(value)
+        if replacement is not None:
+            support |= _case_overview_text_support_mask(shape, replacement, bounds)
+
+        masks[name] = support
+
+    return masks
 
 
 def case_overview_v8_subtitle_cleanup_masks(shape: tuple[int, int]) -> dict[str, np.ndarray]:
