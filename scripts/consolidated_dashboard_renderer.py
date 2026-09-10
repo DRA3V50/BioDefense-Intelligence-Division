@@ -1790,7 +1790,7 @@ def case_overview_v7_subtitle_entries() -> list[TextEntry]:
     return [
         centered_text_entry((19, 84, 86, 94), "SEALED / CHAIN", subtitle, 6, True),
         centered_text_entry((19, 154, 86, 164), "CREDENTIAL CHAIN", subtitle, 6, True),
-        centered_text_entry((64, 211, 111, 222), "LIVE TRACE", subtitle, 6, True),
+        centered_text_entry((88, 211, 111, 222), "LIVE", (235, 42, 35), 6, True),
         centered_text_entry((340, 84, 395, 94), "ANALYST READ", subtitle, 6, True),
         centered_text_entry((340, 154, 395, 164), "CASE JOIN", subtitle, 6, True),
         centered_text_entry((340, 222, 403, 235), "PERSIST / RETAIN", (138, 171, 151), 6, True),
