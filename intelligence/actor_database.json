@@ -75,8 +75,8 @@
         {
             "name": "Specimen Tracking Manipulation",
             "first_seen": "2026-07-23",
-            "last_seen": "2026-09-09",
-            "cases": 20,
+            "last_seen": "2026-09-10",
+            "cases": 21,
             "severity": "HIGH",
             "confidence": 89
         },

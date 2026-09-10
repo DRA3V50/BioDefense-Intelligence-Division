@@ -89,7 +89,23 @@
       "source_event_id": "BID-2026-5712-EVT-0011",
       "event_type": "CORRELATION_VALIDATION_PROGRESS",
       "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-5712",
+      "timestamp": "2026-09-10T02:56:37Z",
+      "value": 58,
+      "source_event_id": "BID-2026-5712-EVT-0012",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-5712",
+      "timestamp": "2026-09-10T02:56:37Z",
+      "value": 70,
+      "source_event_id": "BID-2026-5712-EVT-0013",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "source": "derived_case_event"
     }
   ],
-  "updated_at": "2026-09-09T22:33:39Z"
+  "updated_at": "2026-09-10T02:56:37Z"
 }
