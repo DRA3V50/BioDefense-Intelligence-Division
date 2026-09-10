@@ -1828,7 +1828,7 @@ def case_overview_v8_subtitle_entries() -> list[TextEntry]:
             muted,
         ),
         _largest_fitting_case_overview_subtitle(
-            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[2], "LIVE TRACE", muted
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[2], "LIVE", (235, 42, 35)
         ),
         _largest_fitting_case_overview_subtitle(
             CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS[3], "ANALYST READ", muted
