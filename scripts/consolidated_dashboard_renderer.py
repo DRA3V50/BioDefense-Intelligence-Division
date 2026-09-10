@@ -1976,7 +1976,7 @@ def case_overview_v7_text_entries(renderer_state: dict[str, Any]) -> list[TextEn
         TextEntry((19, 130, 86, 138), (20, 130), "ACCESS LOGS", title, 7, True, 64),
         TextEntry((19, 138, 86, 154), (20, 140), f"{access_count} ACCESS LOGS", (241, 165, 82), 8, True, 64),
         TextEntry((19, 200, 86, 208), (20, 200), "TIMELINE", title, 7, True, 64),
-        TextEntry((19, 208, 86, 220), (20, 210), f"{feed_count} EVENTS", (244, 78, 57), 9, True, 64),
+        TextEntry((19, 208, 86, 218), (20, 210), f"{feed_count} EVENTS", (244, 78, 57), 8, True, 64),
         # Outbound modules retain the approved semantic accent colors.
         TextEntry((340, 60, 397, 68), (341, 60), "INTELLIGENCE", title, 7, True, 56),
         TextEntry((340, 68, 395, 84), (341, 70), f"{max(1, renderer_state['threat_history_count'])} REPORT", (93, 177, 222), 9, True, 52),
