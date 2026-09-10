@@ -1904,20 +1904,36 @@ def case_overview_v8_subtitle_cleanup_masks(shape: tuple[int, int]) -> dict[str,
     return masks
 
 
-def case_overview_v8_subtitle_cleanup_masks(shape: tuple[int, int]) -> dict[str, np.ndarray]:
-    """Mask both baked and V7 replacement glyphs before the V8 redraw."""
+def case_overview_v8_subtitle_cleanup_masks(
+    shape: tuple[int, int]
+) -> dict[str, np.ndarray]:
+    """Mask baked V8 subtitle glyphs and any active V7 replacement glyphs."""
 
     masks: dict[str, np.ndarray] = {}
-    for (name, _value, _position), bounds, baked, v7 in zip(
+
+    baked_entries = case_overview_v8_baked_subtitle_entries()
+    v7_entries = case_overview_v7_subtitle_entries()
+
+    for (name, _value, _position), bounds, baked in zip(
         CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
         CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
-        case_overview_v8_baked_subtitle_entries(),
-        case_overview_v7_subtitle_entries(),
+        baked_entries,
     ):
-        masks[name] = (
-            _case_overview_text_support_mask(shape, baked, bounds)
-            | _case_overview_text_support_mask(shape, v7, bounds)
+        support = _case_overview_text_support_mask(
+            shape, baked, bounds
         )
+
+        # V7 no longer renders a Timeline subtitle, so only mask
+        # matching replacement entries that still exist.
+        for v7 in v7_entries:
+            if v7.bounds == bounds:
+                support |= _case_overview_text_support_mask(
+                    shape, v7, bounds
+                )
+                break
+
+        masks[name] = support
+
     return masks
 
 
