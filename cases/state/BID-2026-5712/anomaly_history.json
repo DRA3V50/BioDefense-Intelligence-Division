@@ -113,7 +113,15 @@
       "source_event_id": "BID-2026-5712-EVT-0014",
       "event_type": "ASSESSMENT_COMPLETED",
       "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-5712",
+      "timestamp": "2026-09-11T08:55:57Z",
+      "value": 82,
+      "source_event_id": "BID-2026-5712-EVT-0015",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "source": "derived_case_event"
     }
   ],
-  "updated_at": "2026-09-11T01:51:12Z"
+  "updated_at": "2026-09-11T08:55:57Z"
 }
