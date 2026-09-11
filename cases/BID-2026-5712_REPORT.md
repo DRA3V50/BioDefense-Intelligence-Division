@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Additional forensic examination is required to determine the full operational scope.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Laboratory Access Control Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| PowerShell | Encoded administrative command execution detected |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Infrastructure | Firewall policy deviation identified |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Device | Protected workstation entered evidence preservation mode |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
@@ -449,7 +449,7 @@ Specimen Tracking Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
 Genome Sequencing Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---

@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Additional forensic examination is required to determine the full operational scope.
 
 ---
 
