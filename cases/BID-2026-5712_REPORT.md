@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Containment
+ESCALATED
 
 ---
 
@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
@@ -186,7 +186,7 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 # Operational Status
 
 Current Status:
-Containment
+ESCALATED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Laboratory Access Control Investigation
 
 Threat Family: Specimen Tracking Manipulation
 
-Current Status: Containment
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Observed indicators remain consistent with the current operational assessment.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Laboratory Access Control Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Infrastructure | Firewall policy deviation identified |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| System Log | Unexpected privilege escalation recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -319,7 +319,7 @@ BioDefense Task Force
 
 Current Status:
 
-Containment
+ESCALATED
 
 
 ---
@@ -337,7 +337,7 @@ Containment
 | Classification | Laboratory Access Control Investigation |
 | Threat Family | Specimen Tracking Manipulation |
 | Severity | HIGH |
-| Status | Containment |
+| Status | ESCALATED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**ESCALATED**
 
 Priority:
 
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-VMware ESXi 9
+Windows Server 2025
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 HIGH
@@ -518,7 +518,7 @@ Laboratory Access Control Investigation
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Containment
+ESCALATED
 
 ### Severity
 HIGH

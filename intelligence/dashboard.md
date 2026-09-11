@@ -9,7 +9,7 @@
 | Classification | Laboratory Access Control Investigation |
 | Threat Family | Specimen Tracking Manipulation |
 | Severity | HIGH |
-| Status | Containment |
+| Status | ESCALATED |
 | Phase | Operational Recovery |
 
 ---

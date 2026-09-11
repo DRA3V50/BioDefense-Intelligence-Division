@@ -13,7 +13,7 @@ Laboratory Access Control Investigation
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-Containment
+ESCALATED
 
 ### Severity
 HIGH

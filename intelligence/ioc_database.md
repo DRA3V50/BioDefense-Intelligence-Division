@@ -15,12 +15,12 @@ Laboratory Access Control Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Infrastructure | Firewall policy deviation identified |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| System Log | Unexpected privilege escalation recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -47,4 +47,4 @@ BioDefense Task Force
 
 Current Status:
 
-Containment
+ESCALATED
