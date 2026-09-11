@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-5712
+BID-2026-2254
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Infrastructure | Firewall policy deviation identified |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Device | Protected workstation entered evidence preservation mode |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Infrastructure | Firewall policy deviation identified |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -28,23 +28,23 @@ Laboratory Access Control Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-129
+395
 
 Indicators Reviewed:
-56
+60
 
 Risk Score:
-81
+88
 
 Confidence:
-89%
+92%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+National Response Cell
 
 Current Status:
 
-ESCALATED
+Field Coordination

@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5712
+BID-2026-2254
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Laboratory Information System Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
-Clinical Data Server
+Specimen Tracking Terminal
 
 Vendor:
-Palo Alto Networks
+Dell
 
 Security Zone:
 Containment Network
@@ -41,22 +41,22 @@ Containment Network
 ## Investigation Metrics
 
 Investigations Recorded:
-138
+139
 
 Evidence Collected:
-129
+395
 
 Indicators Identified:
-56
+60
 
 Affected Assets:
-10
+53
 
 Confidence:
-89%
+92%
 
 Risk Score:
-81
+88
 
 ---
 

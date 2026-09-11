@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-5712
+BID-2026-2254
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Specimen Tracking Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
-Genome Sequencing Environment
+Evidence Processing Network
 
 Device:
-Clinical Data Server
+Specimen Tracking Terminal
 
 Vendor:
-Palo Alto Networks
+Dell
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Containment Network
@@ -47,17 +47,17 @@ Status:
 Isolated From Production
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-89%
+92%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-BioDefense Task Force
+National Response Cell
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

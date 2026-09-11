@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-5712
+Case ID: BID-2026-2254
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Access Control Investigation
+Classification: Research Facility Intrusion Investigation
 
-Threat Family: Specimen Tracking Manipulation
+Threat Family: Laboratory Information System Compromise
 
-Current Status: ESCALATED
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+No confirmed attribution has been established during the current investigation.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -27,22 +27,22 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 ## Operational Metrics
 
 Priority:
-HIGH
+CRITICAL
 
 Risk Score:
-81
+88
 
 Confidence:
-89%
+92%
 
 Affected Assets:
-10
+53
 
 Evidence Collected:
-129
+395
 
 Indicators Recorded:
-56
+60
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-BioDefense Task Force
+National Response Cell
 
 Date:
 
-2026-09-07
+2026-09-11

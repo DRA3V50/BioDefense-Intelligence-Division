@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-09-07
+## 2026-09-11
 
 ### Case Opened
-Case ID: BID-2026-5712
+Case ID: BID-2026-2254
 
 ### Classification
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 ### Initial Assessment
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-ESCALATED
+Field Coordination
 
 ### Severity
-HIGH
+CRITICAL
 
 ---

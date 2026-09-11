@@ -1,0 +1,25 @@
+{
+  "case_id": "BID-2026-2254",
+  "artifact_type": "Firewall Log",
+  "generated_at": "2026-09-11T22:35:18Z",
+  "source_device": "Specimen Tracking Terminal",
+  "security_zone": "Containment Network",
+  "events": [
+    {
+      "event_id": "FW-001",
+      "action": "Blocked",
+      "protocol": "HTTPS",
+      "source": "Simulated External Host",
+      "destination": "Specimen Tracking Terminal",
+      "description": "Simulated unauthorized outbound connection attempt."
+    },
+    {
+      "event_id": "FW-002",
+      "action": "Allowed",
+      "protocol": "DNS",
+      "source": "Specimen Tracking Terminal",
+      "destination": "Authorized DNS Service",
+      "description": "Routine name-resolution activity retained for analysis."
+    }
+  ]
+}

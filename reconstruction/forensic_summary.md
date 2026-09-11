@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5712 |
+| Case ID | BID-2026-2254 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Access Control Investigation |
-| Threat Family | Specimen Tracking Manipulation |
-| Severity | HIGH |
-| Status | ESCALATED |
+| Classification | Research Facility Intrusion Investigation |
+| Threat Family | Laboratory Information System Compromise |
+| Severity | CRITICAL |
+| Status | Field Coordination |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Genome Sequencing Environment |
-| Device | Clinical Data Server |
-| Vendor | Palo Alto Networks |
+| Platform | Evidence Processing Network |
+| Device | Specimen Tracking Terminal |
+| Vendor | Dell |
 | Security Zone | Containment Network |
 
 ---
@@ -28,17 +28,17 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 81 |
-| Confidence | 89% |
-| Evidence Collected | 129 |
-| Indicators Identified | 56 |
-| Affected Assets | 10 |
+| Risk Score | 88 |
+| Confidence | 92% |
+| Evidence Collected | 395 |
+| Indicators Identified | 60 |
+| Affected Assets | 53 |
 
 ---
 
 # Lead Investigator
 
-**BioDefense Task Force**
+**National Response Cell**
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Field Coordination**
 
 Priority:
 
-**HIGH**
+**CRITICAL**
 
 Recommended Action:
 

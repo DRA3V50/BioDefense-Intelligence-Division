@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-2254",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-09-11T22:35:18Z",
+  "platform": "Evidence Processing Network",
+  "vendor": "Dell",
+  "device": "Specimen Tracking Terminal",
+  "baseline_version": "5.9.6",
+  "zone": "Containment Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

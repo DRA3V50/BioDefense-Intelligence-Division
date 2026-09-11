@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Specimen Tracking Manipulation
+Laboratory Information System Compromise
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Genome Phantom
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unknown
 
 ---
 
@@ -21,29 +21,29 @@ Medical Infrastructure Disruption
 ---
 
 ## Operational Sophistication
-Nation-State Level
+Advanced
 
 ---
 
 ## Confidence
-89%
+92%
 
 ---
 
 ## Observed Techniques
-- Insider Misuse
-- Laboratory Network Reconnaissance
-- Privilege Escalation
-- Supply Chain Compromise
-- Insider Access Abuse
-- Laboratory Data Manipulation
+- Compromised Credentials
+- Credential Abuse
+- Long-Term Network Foothold
+- Lateral Movement
+- Research Data Exfiltration
+- Encrypted Data Staging
 
 ---
 
 ## Reviewing Analyst
-BioDefense Task Force
+National Response Cell
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Access Control Investigation
+Research Facility Intrusion Investigation
 
 ---
 
