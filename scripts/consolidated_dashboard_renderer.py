@@ -1728,10 +1728,11 @@ CASE_OVERVIEW_V7_SUBTITLE_LOCAL_BOUNDS = (
     (340, 222, 403, 235),
 )
 CASE_OVERVIEW_V7_LOCAL_BOUNDS = CASE_OVERVIEW_V6_LOCAL_BOUNDS + (
+    (19, 198, 111, 226),
     CASE_OVERVIEW_V7_SUBTITLE_LOCAL_BOUNDS[2],
 )
 
-# V8 is deliberately a post-route, subtitle-only repair.  Five existing
+# V8 is deliberately a post-route, subtitle-only repair. Five existing
 # V7 lanes remain exact; the Timeline lane reaches through the frozen
 # descriptor's last antialias row but stops immediately before its waveform.
 CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS = (
@@ -1746,7 +1747,7 @@ CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS = (
 )
 
 # V10 keeps the legacy cleanup support for the original Access Logs descriptor
-# in place, but renders CREDENTIAL CHAIN below the fixed key icon.  This makes
+# in place, but renders CREDENTIAL CHAIN below the fixed key icon. This makes
 # its real 92px lower-card lane available without moving the card, key, route,
 # or border; the bottom row remains clear of the frozen card frame.
 CASE_OVERVIEW_V10_CREDENTIAL_RENDER_BOUNDS = (19, 158, 111, 166)
