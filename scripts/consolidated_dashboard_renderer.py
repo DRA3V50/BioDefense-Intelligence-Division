@@ -1870,7 +1870,24 @@ def _case_overview_text_support_mask(
     lane[y1:y2, x1:x2] = True
     return support & lane
 
+def case_overview_v8_baked_subtitle_entries() -> list[TextEntry]:
+    """Canonical old static descriptors used solely for source-local cleanup."""
 
+    return [
+        TextEntry(
+            bounds,
+            position,
+            value,
+            (151, 145, 142),
+            6,
+            False,
+            bounds[2] - bounds[0],
+        )
+        for (_name, value, position), bounds in zip(
+            CASE_OVERVIEW_V8_BAKED_SUBTITLE_SPECS,
+            CASE_OVERVIEW_V8_SUBTITLE_LOCAL_BOUNDS,
+        )
+    ]
 def case_overview_v8_subtitle_cleanup_masks(shape: tuple[int, int]) -> dict[str, np.ndarray]:
     """Mask baked V8 subtitle glyphs and the active V7 replacement glyphs."""
 
