@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -288,11 +288,11 @@ Research Facility Intrusion Investigation
 | Category | Observation |
 |----------|-------------|
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
-| Infrastructure | Firewall policy deviation identified |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
+| Security | Multi-factor authentication bypass attempt recorded |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---

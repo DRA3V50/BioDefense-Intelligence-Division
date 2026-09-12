@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 

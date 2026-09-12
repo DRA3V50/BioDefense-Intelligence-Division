@@ -16,11 +16,11 @@ Research Facility Intrusion Investigation
 | Category | Observation |
 |----------|-------------|
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
-| Infrastructure | Firewall policy deviation identified |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
+| Security | Multi-factor authentication bypass attempt recorded |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---

@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.
