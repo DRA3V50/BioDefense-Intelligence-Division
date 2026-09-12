@@ -276,24 +276,26 @@ def canonical_threat_assessment(case: dict) -> tuple[str, str]:
     score_data = load_json(CSHARP_SCORE_PATH)
 
     score = find_nested_value(
-        score_data,
-        (
-            "overall_threat_score",
-            "threat_score",
-            "overall_score",
-            "score",
-        ),
-    )
+    score_data,
+    (
+        "overall_threat_score",
+        "overallScore",
+        "threat_score",
+        "overall_score",
+        "score",
+    ),
+)
     level = find_nested_value(
-        score_data,
-        (
-            "overall_threat_level",
-            "threat_level",
-            "canonical_classification",
-            "classification",
-            "level",
-        ),
-    )
+    score_data,
+    (
+        "overall_threat_level",
+        "overallLevel",
+        "threat_level",
+        "canonical_classification",
+        "classification",
+        "level",
+    ),
+)
 
     if score in (None, ""):
         score = field(case, "threat_score", "Unavailable")
