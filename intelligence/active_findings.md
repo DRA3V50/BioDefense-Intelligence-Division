@@ -26,7 +26,7 @@ CRITICAL
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
@@ -34,15 +34,15 @@ No destructive malware activity has been identified at this stage of the investi
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
