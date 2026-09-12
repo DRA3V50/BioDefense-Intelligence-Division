@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+No confirmed attribution has been established during the current investigation.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 

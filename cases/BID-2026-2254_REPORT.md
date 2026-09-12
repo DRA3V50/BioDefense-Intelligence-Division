@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+No confirmed attribution has been established during the current investigation.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Device | Protected workstation entered evidence preservation mode |
 | PowerShell | Encoded administrative command execution detected |
-| Security | Multi-factor authentication bypass attempt recorded |
-| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -449,7 +449,7 @@ Laboratory Information System Compromise
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Federal Biosecurity Laboratory
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 Dell
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.
 
 
 ---

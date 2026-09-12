@@ -19,7 +19,7 @@ Laboratory Information System Compromise
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Federal Biosecurity Laboratory
 
 Platform:
 Evidence Processing Network
@@ -31,7 +31,7 @@ Vendor:
 Dell
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.

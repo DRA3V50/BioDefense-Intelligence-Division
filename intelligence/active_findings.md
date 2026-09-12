@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 

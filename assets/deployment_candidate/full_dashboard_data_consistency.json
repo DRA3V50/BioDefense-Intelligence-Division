@@ -1,5 +1,5 @@
 {
-  "anomaly_history_samples": 3,
+  "anomaly_history_samples": 4,
   "authoritative_source_map": {
     "campaign_id": "dashboard.shared.campaign_id / operation_context.campaign_id",
     "case_id": "dashboard.shared.case_id",
@@ -22,7 +22,7 @@
   "case_id": "BID-2026-2254",
   "correlation_count_derived_from_relationships": 395,
   "current_stage": "EVIDENCE_REVIEW",
-  "event_intensity_samples": 3,
+  "event_intensity_samples": 4,
   "evidence_count": 395,
   "feed_event_case_ids_match": true,
   "integration_count_derived_from_persisted_sources": 3,
@@ -70,9 +70,9 @@
     "state_revision": true,
     "updated_at": true
   },
-  "state_revision": 3,
+  "state_revision": 4,
   "subsystem_06_display_level": "CRITICAL",
   "system_status_source": "SIMULATED",
   "threat_score": 83,
-  "updated_at": "2026-09-12T08:39:10Z"
+  "updated_at": "2026-09-12T15:32:17Z"
 }
