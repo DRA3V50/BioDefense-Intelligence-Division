@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 

@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---

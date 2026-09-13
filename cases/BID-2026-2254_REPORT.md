@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Current evidence supports continued investigative activity.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -449,7 +449,7 @@ Laboratory Information System Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 Dell
 
 Operating System:
-Hardened Research Appliance OS
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---
