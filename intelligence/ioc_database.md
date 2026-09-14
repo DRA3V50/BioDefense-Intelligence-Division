@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| System Log | Unexpected privilege escalation recorded |
-| PowerShell | Encoded administrative command execution detected |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Identity | Credential reuse detected across isolated research segments |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---

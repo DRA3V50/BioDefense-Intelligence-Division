@@ -19,7 +19,7 @@ Laboratory Information System Compromise
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
 Evidence Processing Network
@@ -31,7 +31,7 @@ Vendor:
 Dell
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
 CRITICAL
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Evidence indicates unauthorized access to restricted research resources.

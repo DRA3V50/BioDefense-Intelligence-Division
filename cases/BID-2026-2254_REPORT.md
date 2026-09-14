@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| System Log | Unexpected privilege escalation recorded |
-| PowerShell | Encoded administrative command execution detected |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Identity | Credential reuse detected across isolated research segments |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -449,7 +449,7 @@ Laboratory Information System Compromise
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 Dell
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
 CRITICAL
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---
