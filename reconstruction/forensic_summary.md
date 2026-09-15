@@ -9,7 +9,7 @@
 | Classification | Research Facility Intrusion Investigation |
 | Threat Family | Laboratory Information System Compromise |
 | Severity | CRITICAL |
-| Status | Field Coordination |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**ESCALATED**
 
 Priority:
 

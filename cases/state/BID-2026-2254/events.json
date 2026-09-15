@@ -196,7 +196,46 @@
       "zone": "Containment Network",
       "intensity": 82,
       "idempotency_key": "revision-15-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-2254-EVT-0016",
+      "case_id": "BID-2026-2254",
+      "sequence": 16,
+      "timestamp": "2026-09-15T22:54:09Z",
+      "event_type": "PROBLEM_REVIEW_OUTCOME_RECORDED",
+      "message": "Problem review disposition: ESCALATED; canonical_score=83; severity=CRITICAL; policy=terminal-disposition-v1",
+      "severity": "CRITICAL",
+      "source": "case_lifecycle",
+      "zone": "Containment Network",
+      "intensity": 90,
+      "idempotency_key": "terminal-disposition-v1-ESCALATED-83-CRITICAL"
+    },
+    {
+      "event_id": "BID-2026-2254-EVT-0017",
+      "case_id": "BID-2026-2254",
+      "sequence": 17,
+      "timestamp": "2026-09-15T22:54:09Z",
+      "event_type": "CASE_TERMINAL",
+      "message": "Problem review recorded terminal outcome ESCALATED: explicit problem-review outcome is terminal.",
+      "severity": "CRITICAL",
+      "source": "case_lifecycle",
+      "zone": "Containment Network",
+      "intensity": 90,
+      "idempotency_key": "revision-17-CASE_TERMINAL"
+    },
+    {
+      "event_id": "BID-2026-2254-EVT-0018",
+      "case_id": "BID-2026-2254",
+      "sequence": 18,
+      "timestamp": "2026-09-15T22:54:11Z",
+      "event_type": "CASE_ARCHIVED",
+      "message": "Terminal case archive completed and active slot is eligible.",
+      "severity": "CRITICAL",
+      "source": "case_lifecycle",
+      "zone": "Containment Network",
+      "intensity": 90,
+      "idempotency_key": "case-archived"
     }
   ],
-  "updated_at": "2026-09-15T16:59:08Z"
+  "updated_at": "2026-09-15T22:54:11Z"
 }
