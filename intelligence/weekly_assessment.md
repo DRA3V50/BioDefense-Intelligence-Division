@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-2254
+Case ID: BID-2026-3108
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Research Facility Intrusion Investigation
+Classification: Biocontainment Network Investigation
 
-Threat Family: Laboratory Information System Compromise
+Threat Family: Research Workstation Compromise
 
-Current Status: ESCALATED
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -20,7 +20,7 @@ Containment Phase: Operational Recovery
 
 No confirmed attribution has been established during the current investigation.
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 CRITICAL
 
 Risk Score:
-88
+85
 
 Confidence:
-92%
+97%
 
 Affected Assets:
-53
+58
 
 Evidence Collected:
-395
+413
 
 Indicators Recorded:
-60
+66
 
 ---
 
@@ -60,4 +60,4 @@ National Response Cell
 
 Date:
 
-2026-09-11
+2026-09-16

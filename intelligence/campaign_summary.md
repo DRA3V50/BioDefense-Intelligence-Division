@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2254
+BID-2026-3108
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Research Workstation Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Laboratory Control Network
 
 Device:
-Specimen Tracking Terminal
+Access Control Server
 
 Vendor:
-Dell
+VMware
 
 Security Zone:
-Containment Network
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-139
+140
 
 Evidence Collected:
-395
+413
 
 Indicators Identified:
-60
+66
 
 Affected Assets:
-53
+58
 
 Confidence:
-92%
+97%
 
 Risk Score:
-88
+85
 
 ---
 

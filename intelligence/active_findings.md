@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-2254
+BID-2026-3108
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Research Workstation Compromise
 
 Severity:
 CRITICAL
@@ -26,15 +26,15 @@ CRITICAL
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
@@ -42,23 +42,23 @@ Evidence indicates possible insider-assisted access to protected laboratory reso
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-53
+58
 
 Evidence Collected:
-395
+413
 
 Indicators Identified:
-60
+66
 
 Analyst Confidence:
-92%
+97%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 # Operational Status
 
 Current Status:
-ESCALATED
+Open
 
 Recommended Action:
 

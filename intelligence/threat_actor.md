@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Laboratory Information System Compromise
+Research Workstation Compromise
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Cerberus Group
 
 ---
 
@@ -16,34 +16,34 @@ Unknown
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Advanced
+High
 
 ---
 
 ## Confidence
-92%
+97%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Credential Abuse
+- Third-Party Access
 - Long-Term Network Foothold
-- Lateral Movement
-- Research Data Exfiltration
-- Encrypted Data Staging
+- Laboratory Control System Manipulation
+- Laboratory Data Manipulation
+- Supply Chain Compromise
+- Concealed Internal Movement
 
 ---
 
 ## Reviewing Analyst
 National Response Cell
 
-**Analyst Note:** Awaiting corroborating evidence before escalating attribution confidence.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 ---
 
 ## Last Updated
-2026-09-15
+2026-09-16

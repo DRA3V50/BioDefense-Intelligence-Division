@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-09-15 22:54 UTC
+**Generated:** 2026-09-16 09:18 UTC
 
 ---
 
@@ -18,29 +18,29 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-2254
+**Case ID:** BID-2026-3108
 
-**Classification:** Research Facility Intrusion Investigation
+**Classification:** Biocontainment Network Investigation
 
 **Severity:** CRITICAL
 
-**Threat Family:** Laboratory Information System Compromise
+**Threat Family:** Research Workstation Compromise
 
-**Confidence:** 92%
+**Confidence:** 97%
 
 ---
 
 ## Investigation Summary
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **395**
+Evidence Collected: **413**
 
-Indicators: **60**
+Indicators: **66**
 
 Priority: **CRITICAL**
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **National Response Cell**
 
 Initial Access:
-**Compromised Credentials**
+**Third-Party Access**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**138**
+**139**
 
 Confirmed Intrusions:
-**18**
+**19**
 
 Total Evidence:
-**99060**
+**99473**
 
 Total Indicators:
-**64201**
+**64267**
 
 ---
 
 ## Operational Highlights
 
-- 395 evidence items are associated with the active investigation.
-- 60 indicators are currently linked to the case.
+- 413 evidence items are associated with the active investigation.
+- 66 indicators are currently linked to the case.
 - Containment remains at **CRITICAL**.
-- Analyst confidence is **92%**.
+- Analyst confidence is **97%**.
 - Current investigation priority is **CRITICAL**.
 
 ---

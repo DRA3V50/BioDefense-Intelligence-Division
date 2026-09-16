@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-3108",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-09-16T09:18:29Z",
+  "platform": "Laboratory Control Network",
+  "vendor": "VMware",
+  "device": "Access Control Server",
+  "baseline_version": "4.2.2",
+  "zone": "Biosecurity Segment",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

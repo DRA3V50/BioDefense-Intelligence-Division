@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-09-11
+## 2026-09-16
 
 ### Case Opened
-Case ID: BID-2026-2254
+Case ID: BID-2026-3108
 
 ### Classification
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 ### Initial Assessment
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-ESCALATED
+Open
 
 ### Severity
 CRITICAL

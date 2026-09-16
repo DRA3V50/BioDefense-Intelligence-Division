@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2254 |
+| Case ID | BID-2026-3108 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Facility Intrusion Investigation |
-| Threat Family | Laboratory Information System Compromise |
+| Classification | Biocontainment Network Investigation |
+| Threat Family | Research Workstation Compromise |
 | Severity | CRITICAL |
-| Status | ESCALATED |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Specimen Tracking Terminal |
-| Vendor | Dell |
-| Security Zone | Containment Network |
+| Platform | Laboratory Control Network |
+| Device | Access Control Server |
+| Vendor | VMware |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 88 |
-| Confidence | 92% |
-| Evidence Collected | 395 |
-| Indicators Identified | 60 |
-| Affected Assets | 53 |
+| Risk Score | 85 |
+| Confidence | 97% |
+| Evidence Collected | 413 |
+| Indicators Identified | 66 |
+| Affected Assets | 58 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Open**
 
 Priority:
 

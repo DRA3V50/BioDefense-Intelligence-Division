@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-2254 |
+| Case ID | BID-2026-3108 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Facility Intrusion Investigation |
-| Threat Family | Laboratory Information System Compromise |
+| Classification | Biocontainment Network Investigation |
+| Threat Family | Research Workstation Compromise |
 | Severity | CRITICAL |
-| Status | ESCALATED |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Evidence Processing Network |
-| Device | Specimen Tracking Terminal |
-| Vendor | Dell |
-| Network Zone | Containment Network |
+| Platform | Laboratory Control Network |
+| Device | Access Control Server |
+| Vendor | VMware |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 88 |
-| Confidence | 92% |
-| Evidence | 395 |
-| Indicators | 60 |
-| Affected Assets | 53 |
+| Risk Score | 85 |
+| Confidence | 97% |
+| Evidence | 413 |
+| Indicators | 66 |
+| Affected Assets | 58 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.

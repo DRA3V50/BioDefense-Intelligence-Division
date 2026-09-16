@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-2254
+BID-2026-3108
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 Threat Family:
-Laboratory Information System Compromise
+Research Workstation Compromise
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
-Evidence Processing Network
+Laboratory Control Network
 
 Device:
-Specimen Tracking Terminal
+Access Control Server
 
 Vendor:
-Dell
+VMware
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
-Containment Network
+Biosecurity Segment
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
 CRITICAL
 
 Confidence:
-92%
+97%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.
