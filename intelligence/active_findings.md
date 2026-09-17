@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 

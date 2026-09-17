@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+No confirmed attribution has been established during the current investigation.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Infrastructure | Firewall policy deviation identified |
+| Device | Protected workstation entered evidence preservation mode |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| PowerShell | Encoded administrative command execution detected |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Identity | Credential reuse detected across isolated research segments |
-| System Log | Unexpected privilege escalation recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Central Evidence Processing Center
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Under Forensic Preservation
 
 Priority:
 CRITICAL
