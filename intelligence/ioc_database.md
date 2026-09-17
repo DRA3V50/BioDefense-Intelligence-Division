@@ -15,12 +15,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Device | Protected workstation entered evidence preservation mode |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
