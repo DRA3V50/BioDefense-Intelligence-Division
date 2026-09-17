@@ -451,13 +451,14 @@
     ],
     "format": "PNG"
   },
-  "event_count": 5,
+  "event_count": 6,
   "event_ids": [
     "BID-2026-3108-EVT-0001",
     "BID-2026-3108-EVT-0002",
     "BID-2026-3108-EVT-0003",
     "BID-2026-3108-EVT-0004",
-    "BID-2026-3108-EVT-0005"
+    "BID-2026-3108-EVT-0005",
+    "BID-2026-3108-EVT-0006"
   ],
   "evidence_count": 413,
   "evidence_ids": [
@@ -893,7 +894,7 @@
   "lifecycle_status": "ACTIVE",
   "priority": "CRITICAL",
   "renderer_consistency": {
-    "anomaly_history_samples": 5,
+    "anomaly_history_samples": 6,
     "authoritative_source_map": {
       "campaign_id": "dashboard.shared.campaign_id / operation_context.campaign_id",
       "case_id": "dashboard.shared.case_id",
@@ -916,7 +917,7 @@
     "case_id": "BID-2026-3108",
     "correlation_count_derived_from_relationships": 413,
     "current_stage": "EVIDENCE_REVIEW",
-    "event_intensity_samples": 5,
+    "event_intensity_samples": 6,
     "evidence_count": 413,
     "feed_event_case_ids_match": true,
     "integration_count_derived_from_persisted_sources": 3,
@@ -964,31 +965,31 @@
       "state_revision": true,
       "updated_at": true
     },
-    "state_revision": 5,
+    "state_revision": 6,
     "subsystem_06_display_level": "CRITICAL",
     "system_status_source": "SIMULATED",
     "threat_score": 81,
-    "updated_at": "2026-09-17T09:27:00Z"
+    "updated_at": "2026-09-17T17:00:11Z"
   },
   "schema_version": 1,
   "severity": "CRITICAL",
   "source_hashes": {
-    "active_case": "72829b9ee426c9046b43be868c79f7c0ba7a2ae2da8dd1b44fb192d37c6b760a",
+    "active_case": "582b4eb8528a52706f9e3de06f76e53cd1dbf990b501292fdcf82101a3f53d5a",
     "active_operation": "c72bdde392beabcb7946fb991a065fafa8aea491afd5432eb43070605950bca5",
-    "anomaly_history": "17730cbb9d757668d6b0ccc32da77279a56d6f7e047ed473627618760f93b567",
-    "candidate_gif": "ba68c858ad01ea429abe9d8646c70be3beb85787a1995a7f208e2a93ae9d7454",
-    "candidate_png": "b0a496f16900f556e0b0f78919662aaa6b6f83e483fde58f3ec3aa0bd8b37c94",
-    "candidate_qc": "81bd07119f8358f69781d0f98c5a6cff369495aea3e8c1b620c5f9d9b6d8dde5",
-    "csharp_report": "23520718c126ec94a5fb8ad64a3bbdc4a70012df065182ced2db7674611e7896",
-    "events": "c687737346c6ef1e094dc4ab2ffbbd0f69808e98ed1b0ba2141c8752ecc65bcc",
+    "anomaly_history": "6306117b6faa0f10a9fd7ecd3c9b8675a070a2172f687d9f6a7ef02020e1cca0",
+    "candidate_gif": "8feff8d76caa16eda1c7b07b34c5e579fe2911f97a0a26935f1c223e35e311e3",
+    "candidate_png": "0b09eecbb793068864d90f7ee29d621ba27f1094ff62d1ea7596bbf5d3a7b3bd",
+    "candidate_qc": "b808ba360c43096dc3c2d88896ec1b0270391d988a75f6a9cf444e7eeb0b37fb",
+    "csharp_report": "3ad1cebece2d43d76f25d7672cbb39b3e3cc4918762df1c9abb472ca515f0754",
+    "events": "b9a483b3cca68ae619c211b5ee8a29ec78a5c174dd41e76774d7b6f13563e974",
     "evidence_correlations": "54ac1d0f126e5fe2eb28cef654829855f1fbe9c842435f2ee5e46c7fa7e2afff",
-    "evidence_manifest": "c3a72e428167e527bafa9a4f41e8117928aee32ddb31e372745308667853909c",
-    "production_gif": "ba68c858ad01ea429abe9d8646c70be3beb85787a1995a7f208e2a93ae9d7454",
-    "production_png": "b0a496f16900f556e0b0f78919662aaa6b6f83e483fde58f3ec3aa0bd8b37c94",
-    "relationships": "a49f29b7d18c64b0fafecc2d1949a963bb5a1e094ee56496b4d4fa0cd3cf2127",
-    "system_status": "4e864a9e4b99386f4befd1cad38c3e4eca3e28139af49991012ba4c1db96dce5",
-    "threat_history": "304b9693ec98e180158d0e60a8c1886ae3cf8b76241ff8b12545ea78eb54318c"
+    "evidence_manifest": "a111e8a4e2417066165b8d637c12695394aeb57a0d80fa4deb8f005f9e98ca2a",
+    "production_gif": "8feff8d76caa16eda1c7b07b34c5e579fe2911f97a0a26935f1c223e35e311e3",
+    "production_png": "0b09eecbb793068864d90f7ee29d621ba27f1094ff62d1ea7596bbf5d3a7b3bd",
+    "relationships": "a4f1727f6dbc0c2b4e7724b3493ca19b8d826cbd5acd202fb7417d24d097a150",
+    "system_status": "2d40d62f271e8dd196f90f152c7e797cee294e614c838e2e4c8d81421edf4873",
+    "threat_history": "c30a73e846f3b7143b8d31dfcd576f62f757dae27078eb1eabfadc12469350eb"
   },
-  "state_revision": 5,
+  "state_revision": 6,
   "threat_score": 81
 }

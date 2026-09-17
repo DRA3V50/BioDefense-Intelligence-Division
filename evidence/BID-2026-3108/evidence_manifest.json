@@ -3537,7 +3537,8 @@
       "integrity_status": "Verified",
       "sha256": "1738c57f5fa8619e44500f2e5f3e7fec1a1d05188e3ba596a22f7b6ced46aeae",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0209",
@@ -3553,7 +3554,8 @@
       "integrity_status": "Verified",
       "sha256": "d5d8c0f3b692a68dd365e643af685011cf05bdca15f5384c8cf0a3a7dbe5699c",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0210",
@@ -3569,7 +3571,8 @@
       "integrity_status": "Verified",
       "sha256": "757e8bf20fd977c20ef19824b2ae02a59e99be1a9b0e47815b1c311a68d9f16e",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0211",
@@ -3585,7 +3588,8 @@
       "integrity_status": "Verified",
       "sha256": "e5fed6c0d671a734dfe3a8979756ea4a767e6c9a33b16dd7e3baf31a077b11c7",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0212",
@@ -3601,7 +3605,8 @@
       "integrity_status": "Verified",
       "sha256": "80ff78513273a63cec40a315aa3d7d0b304aad39a04b38620e6e34cb32d0b748",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0213",
@@ -3617,7 +3622,8 @@
       "integrity_status": "Verified",
       "sha256": "93c8c870a06bc2c5cda3d35cc2691f4970127e50586702857f62c1bb776f6a92",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0214",
@@ -3633,7 +3639,8 @@
       "integrity_status": "Verified",
       "sha256": "135513e9d0961b591a2bb63ea35151336ed52835d4894226fff758743b889fc5",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0215",
@@ -3649,7 +3656,8 @@
       "integrity_status": "Verified",
       "sha256": "b15488990344fb03ddfa7a260c544fecf831d1a58a79135973f715ee66943714",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0216",
@@ -3665,7 +3673,8 @@
       "integrity_status": "Verified",
       "sha256": "0c9c44db4dfd733bbecae1d9faadcfcaa879801f835f4a425ee7987d762aa670",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0217",
@@ -3681,7 +3690,8 @@
       "integrity_status": "Verified",
       "sha256": "0a15b3c798d173e78aa9a49dec1f6a73af6bbce20690597334475353f77face5",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0218",
@@ -3697,7 +3707,8 @@
       "integrity_status": "Verified",
       "sha256": "5c2d854350bcad0edb22862754a2cb6fb1e57698fb1a481f0f8536b160c4aa48",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0219",
@@ -3713,7 +3724,8 @@
       "integrity_status": "Verified",
       "sha256": "0131ece08b2e645cce06426026422debf61b319386d155c4de1da1b2d6402c19",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0220",
@@ -3729,7 +3741,8 @@
       "integrity_status": "Verified",
       "sha256": "1f360d7fe584d93a1eb09daa9058d744704018bdbb3af1ed45106a4b83c1cdc6",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0221",
@@ -3745,7 +3758,8 @@
       "integrity_status": "Verified",
       "sha256": "425e6271bf2e34bfae6a6479dd9530117b6d027d3ee6b60687beec445faaa0e4",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0222",
@@ -3761,7 +3775,8 @@
       "integrity_status": "Verified",
       "sha256": "cd1a1e5ea292fc4d5a0758ab99ddd013ba35380195b9a4e1b50c03fd12d99c17",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0223",
@@ -3777,7 +3792,8 @@
       "integrity_status": "Verified",
       "sha256": "40ce7d095832c2985acd8b100406996ac8d3b6da136765f35a2fa6428e1498d4",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0224",
@@ -3793,7 +3809,8 @@
       "integrity_status": "Verified",
       "sha256": "4e58876d474dc011b29c7bc84bd56f96214917e732bf327d44a0ae870e9530d5",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0225",
@@ -3809,7 +3826,8 @@
       "integrity_status": "Verified",
       "sha256": "406db33808d424a260dbee6a8aee47ddc335a43af9b28e46c97ddf45486787c5",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0226",
@@ -3825,7 +3843,8 @@
       "integrity_status": "Verified",
       "sha256": "9b5ad48655c4e489fe79e1d390eeab7cf960650919b2dc79460084f3c0f436c1",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0227",
@@ -3841,7 +3860,8 @@
       "integrity_status": "Verified",
       "sha256": "4885b4dbba9f1b901ecd51fa4edd980f0b79ec0fce170430f5b9a45bc7d1e86b",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0228",
@@ -3857,7 +3877,8 @@
       "integrity_status": "Verified",
       "sha256": "be57a930310d4adeb57bb6a88b0563b55b3c29b18ea97941f1209c7cf5751cd2",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0229",
@@ -3873,7 +3894,8 @@
       "integrity_status": "Verified",
       "sha256": "c3a78bc1b941f16f7c23d20db383a290158c8e45b0ad9c43f64ba6868864c0b5",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0230",
@@ -3889,7 +3911,8 @@
       "integrity_status": "Verified",
       "sha256": "7b1a6f0d6d71ffdb1739879bcda803bba18309ecb33fa33034680400984e7cc5",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0231",
@@ -3905,7 +3928,8 @@
       "integrity_status": "Verified",
       "sha256": "968339b23fa5d56dc94c66b38643bb5bef7a33c2a1fd8e02645a0b06f8366e6c",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0232",
@@ -3921,7 +3945,8 @@
       "integrity_status": "Verified",
       "sha256": "8d5ceebf63668dfadbc6c4eaaa405164e6a06db1894ea332e337fe41d343d902",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0233",
@@ -3937,7 +3962,8 @@
       "integrity_status": "Verified",
       "sha256": "c27dfa36f658ef772004bac94b70e554d370179d8793775aa0e627aab39d352e",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0234",
@@ -3953,7 +3979,8 @@
       "integrity_status": "Verified",
       "sha256": "0d933fe8e1cbf8a178b58b574e64aff72b8dc82a2bf775fc16180fbb9e06a9d4",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0235",
@@ -3969,7 +3996,8 @@
       "integrity_status": "Verified",
       "sha256": "4a5ab3a6fc6325a3b9944d608e7d3163c465c6efabe9355141adf002a9b1a206",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0236",
@@ -3985,7 +4013,8 @@
       "integrity_status": "Verified",
       "sha256": "c454945a9f13940f45482725406981b368ac109ad29a1fef8211ea8173dc5f18",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0237",
@@ -4001,7 +4030,8 @@
       "integrity_status": "Verified",
       "sha256": "339598a01ae377eb1b7fe31dc587136c2751321e2e6894b4926ed08a429be68b",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0238",
@@ -4017,7 +4047,8 @@
       "integrity_status": "Verified",
       "sha256": "6b2998b5c3e34905c73e39ddbfadeb7a547b83bf8a565cbdc89b5a4b4449bec1",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0239",
@@ -4033,7 +4064,8 @@
       "integrity_status": "Verified",
       "sha256": "63e8823942d7cbf5f6b9cc56989773f21666c0dc546317c86a75ccc315c8a917",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0240",
@@ -4049,7 +4081,8 @@
       "integrity_status": "Verified",
       "sha256": "5fc261c4b00b40ee40c76af54811ba1f2800275f9244f7c10b3740b5f37ae361",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0241",
@@ -4065,7 +4098,8 @@
       "integrity_status": "Verified",
       "sha256": "f694df4a2300f37790e948fb85bf7f009b180b05689fb12bd8cef393b6a79d8e",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0242",
@@ -4081,7 +4115,8 @@
       "integrity_status": "Verified",
       "sha256": "3a5acae7f4e6e41924c34ff88a73833157cc298c34a105932d2aa645cb1852e8",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0243",
@@ -4097,7 +4132,8 @@
       "integrity_status": "Verified",
       "sha256": "25f1a730252f62aa22f025c78d3dc42cc307b16e4fc6239ef5c65cf693d3c5c7",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0244",
@@ -4113,7 +4149,8 @@
       "integrity_status": "Verified",
       "sha256": "47b91c9f41895570edeeaf5df2a8d06aa2921845de5cf7f4dd6854ccd716e87d",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0245",
@@ -4129,7 +4166,8 @@
       "integrity_status": "Verified",
       "sha256": "2c02a56a620eb276663f6a154607b5dc53eb66b36d17632cd9bcbd516bfbf79c",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0246",
@@ -4145,7 +4183,8 @@
       "integrity_status": "Verified",
       "sha256": "c2d3cbdabf6db973ac311db8dcc02adbec4922f258885df89576ce9ea6f24c1c",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0247",
@@ -4161,7 +4200,8 @@
       "integrity_status": "Verified",
       "sha256": "bfa5c57883d6d8e757ca7c2eac6f391e20196c264de7170c8e4e7083a0ace96c",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0248",
@@ -4177,7 +4217,8 @@
       "integrity_status": "Verified",
       "sha256": "026c0594adcf0e55f58c9e818c225936242a2652177a3f0ed2e089c934742634",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0249",
@@ -4193,7 +4234,8 @@
       "integrity_status": "Verified",
       "sha256": "9bcc9cf82e6df41030537cb41d56b62378231ee68533c2be6bec1136e2c26446",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0250",
@@ -4209,7 +4251,8 @@
       "integrity_status": "Verified",
       "sha256": "99c677ad28628185cbdacb5c78cb08f4b6de351611b0569af5d1dedddddc9e77",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0251",
@@ -4225,7 +4268,8 @@
       "integrity_status": "Verified",
       "sha256": "f03479bb7993ad7a8842dc592a381937fd0ceac072cce3cb518e1f3a716d1abb",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0252",
@@ -4241,7 +4285,8 @@
       "integrity_status": "Verified",
       "sha256": "a46780a22892bd49178c223b7d884f19307b0d60718e05b950e2664608666921",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0253",
@@ -4257,7 +4302,8 @@
       "integrity_status": "Verified",
       "sha256": "764948ccaa0acff198406658d3d85a3ccd4aa33084682ac945db47ab286f2900",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0254",
@@ -4273,7 +4319,8 @@
       "integrity_status": "Verified",
       "sha256": "067d33fcdeacef34dee32690893e34721f7c2d089fd917aa143c61c354048c4a",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0255",
@@ -4289,7 +4336,8 @@
       "integrity_status": "Verified",
       "sha256": "5f4fad63f62e161c77424e0d4da3e38fddad68fbf43b54309022e577a0426a8f",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0256",
@@ -4305,7 +4353,8 @@
       "integrity_status": "Verified",
       "sha256": "7900558c994c7b96c325e64d51e9181c285fe88891f45e069c910de3f1e97914",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0257",
@@ -4321,7 +4370,8 @@
       "integrity_status": "Verified",
       "sha256": "39f11b383d59390ce95e3e172cc4f78afa777a78b821744e06530989037f7d9f",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0258",
@@ -4337,7 +4387,8 @@
       "integrity_status": "Verified",
       "sha256": "71ce78ab3b12ddd4af098227cb9d81dea56d3ca286ccc95147a878dd9bd2ca29",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0259",
@@ -4353,7 +4404,8 @@
       "integrity_status": "Verified",
       "sha256": "458373a3b94b822a4bd24528b4ab14b3074f209734ddb9cfb685d0a0efe8358b",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0260",
@@ -4369,7 +4421,8 @@
       "integrity_status": "Verified",
       "sha256": "30cbdc06668ab72b3b3f73ac6c00cb63566f5bb7881cf7819c11b73f884c1a0f",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0261",
@@ -4385,7 +4438,8 @@
       "integrity_status": "Verified",
       "sha256": "1a27c83c6b30ad0064ea62ba1ae4d0c6722bdd8713fda3275d7efe7a4045ecc4",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0262",
@@ -4401,7 +4455,8 @@
       "integrity_status": "Verified",
       "sha256": "24e37d3c65ae2115e8c1bff0e9f713222608423251d6e6e47f87788d21f8a58a",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0263",
@@ -4417,7 +4472,8 @@
       "integrity_status": "Verified",
       "sha256": "88dc1c3505b762aacc269f7c7d2777fc198998e9bdaf197c9b52c01b447b6a24",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0264",
@@ -4433,7 +4489,8 @@
       "integrity_status": "Verified",
       "sha256": "21a9269bce7590e7cbf303d4277aada3819f4e9712e3ad75e0ec3928232979a6",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0265",
@@ -4449,7 +4506,8 @@
       "integrity_status": "Verified",
       "sha256": "b0bc73d4666ee895bf38329b5ecdd02c6bd5b6bc98ae475bf4be29e90beb98aa",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0266",
@@ -4465,7 +4523,8 @@
       "integrity_status": "Verified",
       "sha256": "de3ed5f7e2864a15c884aa5c8bc960d65612ddae109607d07841a6cbf24d61d8",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0267",
@@ -4481,7 +4540,8 @@
       "integrity_status": "Verified",
       "sha256": "98fe286d081e1b82797426e4b5677cfa4d84de0182f094acfbd4233886613529",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0268",
@@ -4497,7 +4557,8 @@
       "integrity_status": "Verified",
       "sha256": "eaccd9c50c2d97607a38caed3cdbad05ba4cda284b8e00e7dfbe9772def00046",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0269",
@@ -4513,7 +4574,8 @@
       "integrity_status": "Verified",
       "sha256": "a978d93c5a54781adabd79392bee3447fac0bd4c363ca4a91310f4cde930f992",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0270",
@@ -4529,7 +4591,8 @@
       "integrity_status": "Verified",
       "sha256": "0ab676dff108aed20b5d47ba8b686b7655a7d8804abee709d6067cd4032beb2f",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0271",
@@ -4545,7 +4608,8 @@
       "integrity_status": "Verified",
       "sha256": "0272fece742e10239555829e78f1509ae4c37e60edfcfd17a74ce90f6dc7b7eb",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0272",
@@ -4561,7 +4625,8 @@
       "integrity_status": "Verified",
       "sha256": "d6373b62bec348792f1b818a9667b15c6c6a903bfbb2270550d6911e4a6808b1",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0273",
@@ -4577,7 +4642,8 @@
       "integrity_status": "Verified",
       "sha256": "f591c4270c1adb7a3c3f21cc5df66a10f031dd3a4e3d6c1ad1aa2b0b6f535f3f",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0274",
@@ -4593,7 +4659,8 @@
       "integrity_status": "Verified",
       "sha256": "f51d9291f1b87969cdf30ce8c18ae881fda7295cbe8a7b01a38eb94b35ff808b",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0275",
@@ -4609,7 +4676,8 @@
       "integrity_status": "Verified",
       "sha256": "166d21a2d800a6c4880f0cfbba996014ef063cf12975a9cc42cacdd8e54a27b7",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0276",
@@ -4625,7 +4693,8 @@
       "integrity_status": "Verified",
       "sha256": "87bc322f62928b4f39279a29db90f11b34419b7dee9e2ea9f7c2acfa01c1858e",
       "classification": "Biocontainment Network Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-17T17:00:11Z"
     },
     {
       "evidence_id": "BID-2026-3108-EV-0277",
@@ -6821,11 +6890,11 @@
     }
   ],
   "lifecycle_processing": {
-    "reviewed_count": 207,
+    "reviewed_count": 276,
     "total_evidence_count": 413,
     "last_review_batch_size": 69,
-    "last_reviewed_at": "2026-09-17T09:27:00Z",
+    "last_reviewed_at": "2026-09-17T17:00:11Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-09-17T09:27:00Z"
+  "updated_at": "2026-09-17T17:00:11Z"
 }
