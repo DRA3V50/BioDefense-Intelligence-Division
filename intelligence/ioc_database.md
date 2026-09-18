@@ -15,11 +15,11 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
 | Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| PowerShell | Encoded administrative command execution detected |
+| Infrastructure | Firewall policy deviation identified |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 

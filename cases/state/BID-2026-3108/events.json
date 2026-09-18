@@ -131,7 +131,20 @@
       "zone": "Biosecurity Segment",
       "intensity": 58,
       "idempotency_key": "correlation-validation-138-of-413"
+    },
+    {
+      "event_id": "BID-2026-3108-EVT-0011",
+      "case_id": "BID-2026-3108",
+      "sequence": 11,
+      "timestamp": "2026-09-18T22:35:17Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 276/413 validated",
+      "severity": "CRITICAL",
+      "source": "process_active_case_stage",
+      "zone": "Biosecurity Segment",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-276-of-413"
     }
   ],
-  "updated_at": "2026-09-18T16:24:19Z"
+  "updated_at": "2026-09-18T22:35:17Z"
 }

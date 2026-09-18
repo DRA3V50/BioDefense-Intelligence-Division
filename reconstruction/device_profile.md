@@ -19,7 +19,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
 Laboratory Control Network
@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Biosecurity Segment
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Evidence indicates unauthorized access to restricted research resources.

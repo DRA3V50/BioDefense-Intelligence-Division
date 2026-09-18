@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Observed indicators remain consistent with the current operational assessment.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,11 +287,11 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
 | Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| PowerShell | Encoded administrative command execution detected |
+| Infrastructure | Firewall policy deviation identified |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Biosecurity Segment
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---
