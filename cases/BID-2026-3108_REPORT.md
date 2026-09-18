@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Identity | Credential reuse detected across isolated research segments |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| System Log | Unexpected privilege escalation recorded |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Infrastructure | Firewall policy deviation identified |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
 CRITICAL
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.
 
 
 ---

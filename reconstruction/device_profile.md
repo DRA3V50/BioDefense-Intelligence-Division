@@ -19,7 +19,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
 Laboratory Control Network
@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
 Biosecurity Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
 CRITICAL
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.
