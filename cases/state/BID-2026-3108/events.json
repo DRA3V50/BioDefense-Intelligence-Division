@@ -92,7 +92,33 @@
       "zone": "Biosecurity Segment",
       "intensity": 45,
       "idempotency_key": "evidence-review-345-of-413"
+    },
+    {
+      "event_id": "BID-2026-3108-EVT-0008",
+      "case_id": "BID-2026-3108",
+      "sequence": 8,
+      "timestamp": "2026-09-18T09:01:03Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 413/413 reviewed",
+      "severity": "CRITICAL",
+      "source": "process_active_case_stage",
+      "zone": "Biosecurity Segment",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-413-of-413"
+    },
+    {
+      "event_id": "BID-2026-3108-EVT-0009",
+      "case_id": "BID-2026-3108",
+      "sequence": 9,
+      "timestamp": "2026-09-18T09:01:03Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to VALIDATION: all evidence records have completed review states.",
+      "severity": "CRITICAL",
+      "source": "case_lifecycle",
+      "zone": "Biosecurity Segment",
+      "intensity": 58,
+      "idempotency_key": "revision-9-WORKFLOW_STAGE_CHANGED"
     }
   ],
-  "updated_at": "2026-09-17T22:51:59Z"
+  "updated_at": "2026-09-18T09:01:03Z"
 }

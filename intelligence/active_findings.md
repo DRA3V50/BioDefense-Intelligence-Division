@@ -26,7 +26,7 @@ CRITICAL
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
@@ -34,7 +34,7 @@ Evidence preservation procedures successfully secured affected systems for foren
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Unauthorized access to protected biomedical research resources was confirmed dur
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 

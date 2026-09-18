@@ -138,7 +138,7 @@ CRITICAL
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
@@ -146,7 +146,7 @@ Evidence preservation procedures successfully secured affected systems for foren
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Unauthorized access to protected biomedical research resources was confirmed dur
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,11 +287,11 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Device | Protected workstation entered evidence preservation mode |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Federal Biosecurity Laboratory
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 CRITICAL
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+System isolated pending malware reverse engineering.
 
 
 ---
