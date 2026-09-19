@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 

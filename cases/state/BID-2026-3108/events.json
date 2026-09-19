@@ -170,7 +170,20 @@
       "zone": "Biosecurity Segment",
       "intensity": 70,
       "idempotency_key": "revision-13-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-3108-EVT-0014",
+      "case_id": "BID-2026-3108",
+      "sequence": 14,
+      "timestamp": "2026-09-19T15:53:47Z",
+      "event_type": "ASSESSMENT_COMPLETED",
+      "message": "Assessment completion was explicitly recorded.",
+      "severity": "CRITICAL",
+      "source": "case_lifecycle",
+      "zone": "Biosecurity Segment",
+      "intensity": 70,
+      "idempotency_key": "assessment-completed"
     }
   ],
-  "updated_at": "2026-09-19T08:49:02Z"
+  "updated_at": "2026-09-19T15:53:47Z"
 }

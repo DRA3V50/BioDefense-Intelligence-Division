@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Current findings support maintaining the existing investigation priority.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| PowerShell | Encoded administrative command execution detected |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Infrastructure | Firewall policy deviation identified |
 | Security | Multi-factor authentication bypass attempt recorded |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Federal Biosecurity Laboratory
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Biosecurity Segment
