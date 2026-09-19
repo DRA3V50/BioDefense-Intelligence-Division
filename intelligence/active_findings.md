@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 

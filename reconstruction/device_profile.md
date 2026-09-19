@@ -19,7 +19,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Advanced Genome Security Laboratory
 
 Platform:
 Laboratory Control Network
@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Biosecurity Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
 CRITICAL

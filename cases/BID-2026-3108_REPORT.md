@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
-| Security | Multi-factor authentication bypass attempt recorded |
-| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Advanced Genome Security Laboratory
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
 CRITICAL

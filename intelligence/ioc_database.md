@@ -15,12 +15,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
-| Security | Multi-factor authentication bypass attempt recorded |
-| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
