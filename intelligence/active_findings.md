@@ -26,7 +26,7 @@ CRITICAL
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
@@ -38,11 +38,11 @@ Indicators remain consistent with a coordinated cyber-enabled bioterror intellig
 
 ### Finding 4
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
