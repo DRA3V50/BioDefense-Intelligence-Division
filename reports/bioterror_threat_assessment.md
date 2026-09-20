@@ -2,41 +2,41 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-09-20 09:17 UTC
+**Generated:** 2026-09-20 16:05 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3108
+**Case ID:** BID-2026-8600
 
 **Campaign ID:** BDC-2026-001
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Classification:** Biocontainment Network Investigation
+**Classification:** Protected Research Systems Investigation
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Medical Device Communications Interference
 
-**Severity:** CRITICAL
+**Severity:** HIGH
 
-**Priority:** CRITICAL
+**Priority:** HIGH
 
-**Risk Score:** 85
+**Risk Score:** 77
 
-**Assessment Confidence:** 97%
+**Assessment Confidence:** 90%
 
 **Containment Phase:** Operational Recovery
 
 **Affected Platform:** Laboratory Control Network
 
-**Affected Assets:** 58
+**Affected Assets:** 29
 
 ---
 
 ## Executive Assessment
 
-The active Biocontainment Network Investigation concerns suspected Research Workstation Compromise. The calculated overall bioterror threat score is **98/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Protected Research Systems Investigation concerns suspected Medical Device Communications Interference. The calculated overall bioterror threat score is **98/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** CRITICAL
 
@@ -54,14 +54,14 @@ The active Biocontainment Network Investigation concerns suspected Research Work
 | Laboratory and Specimen Impact | 100/100 | CRITICAL |
 | Public-Health Risk | 100/100 | CRITICAL |
 | Cyber-to-Physical Escalation | 100/100 | CRITICAL |
-| Attribution Confidence | 98/100 | HIGH |
-| Containment Confidence | 99/100 | HIGH |
+| Attribution Confidence | 94/100 | HIGH |
+| Containment Confidence | 96/100 | HIGH |
 
 ---
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Research Workstation Compromise**.
+- The investigation currently centers on **Medical Device Communications Interference**.
 - The targeted environment has high intelligence or operational value because it supports protected laboratory, biomedical, genomic, or specimen-related activity.
 - The available evidence indicates a capable actor with access sufficient to affect multiple cyber-biosecurity systems or data sources.
 - The evidence supports elevated public-health review, but direct biological impact still requires validated non-cyber evidence.
@@ -72,28 +72,28 @@ The active Biocontainment Network Investigation concerns suspected Research Work
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 413
+**Evidence Records Reviewed:** 99
 
-**Correlation Records Reviewed:** 413
+**Correlation Records Reviewed:** 99
 
-**Integrity-Verified Records:** 413
+**Integrity-Verified Records:** 99
 
-**Pending Analyst Review:** 0
+**Pending Analyst Review:** 99
 
 ### Priority Findings
 
-- **Analyst Intelligence Assessment:** 39
-- **Command-and-Control Communication:** 39
-- **Unauthorized Facility Access:** 38
-- **Containment Verification:** 38
-- **Biosecurity Policy Violation:** 37
-- **Credential Misuse:** 36
-- **Research Workstation Compromise:** 35
-- **Known Threat Actor Indicator:** 35
-- **Suspicious Network Activity:** 34
-- **Laboratory System Modification:** 30
-- **Laboratory Information System Anomaly:** 28
-- **Research Data Integrity Anomaly:** 24
+- **Research Data Integrity Anomaly:** 12
+- **Known Threat Actor Indicator:** 10
+- **Suspicious Network Activity:** 10
+- **Unauthorized Facility Access:** 10
+- **Biosecurity Policy Violation:** 9
+- **Analyst Intelligence Assessment:** 9
+- **Laboratory Information System Anomaly:** 8
+- **Research Workstation Compromise:** 8
+- **Containment Verification:** 7
+- **Laboratory System Modification:** 6
+- **Command-and-Control Communication:** 5
+- **Credential Misuse:** 5
 
 ---
 
@@ -129,9 +129,9 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 ## Attribution and Containment Confidence
 
-**Attribution Confidence:** 98/100 (HIGH)
+**Attribution Confidence:** 94/100 (HIGH)
 
-**Containment Confidence:** 99/100 (HIGH)
+**Containment Confidence:** 96/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -156,10 +156,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-3108/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-3108/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-3108/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-3108/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-8600/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-8600/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-8600/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-8600/forensic_summary.md)
 
 ---
 

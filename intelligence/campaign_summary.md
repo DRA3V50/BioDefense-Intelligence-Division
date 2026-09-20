@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-3108
+BID-2026-8600
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Protected Research Systems Investigation
 
 Threat Family:
-Research Workstation Compromise
+Medical Device Communications Interference
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Monitoring
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Laboratory Control Network
 
 Device:
-Access Control Server
+Laboratory Information Server
 
 Vendor:
-VMware
+Palo Alto Networks
 
 Security Zone:
-Biosecurity Segment
+Containment Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-140
+141
 
 Evidence Collected:
-413
+99
 
 Indicators Identified:
-66
+80
 
 Affected Assets:
-58
+29
 
 Confidence:
-97%
+90%
 
 Risk Score:
-85
+77
 
 ---
 

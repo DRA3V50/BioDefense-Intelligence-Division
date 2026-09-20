@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-3108
+BID-2026-8600
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Protected Research Systems Investigation
 
 Threat Family:
-Research Workstation Compromise
+Medical Device Communications Interference
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Federal Biosecurity Laboratory
 
 Platform:
 Laboratory Control Network
 
 Device:
-Access Control Server
+Laboratory Information Server
 
 Vendor:
-VMware
+Palo Alto Networks
 
 Operating System:
 Windows Server 2025
 
 Security Zone:
-Biosecurity Segment
+Containment Network
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
-CRITICAL
+HIGH
 
 Confidence:
-97%
+90%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Digital evidence preserved for laboratory forensic examination.

@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-8600",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-09-20T16:05:18Z",
+  "platform": "Laboratory Control Network",
+  "vendor": "Palo Alto Networks",
+  "device": "Laboratory Information Server",
+  "baseline_version": "3.5.8",
+  "zone": "Containment Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

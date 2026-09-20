@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Workstation Compromise
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Dark Sequence
 
 ---
 
 ## Attribution
-Unknown
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-97%
+90%
 
 ---
 
 ## Observed Techniques
 - Third-Party Access
-- Long-Term Network Foothold
-- Laboratory Control System Manipulation
-- Laboratory Data Manipulation
-- Supply Chain Compromise
+- Privilege Escalation
 - Concealed Internal Movement
+- Research Data Exfiltration
+- Insider Access Abuse
+- Laboratory Data Manipulation
 
 ---
 
 ## Reviewing Analyst
 National Response Cell
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biocontainment Network Investigation
+Protected Research Systems Investigation
 
 ---
 

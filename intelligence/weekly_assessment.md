@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-3108
+Case ID: BID-2026-8600
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Biocontainment Network Investigation
+Classification: Protected Research Systems Investigation
 
-Threat Family: Research Workstation Compromise
+Threat Family: Medical Device Communications Interference
 
-Current Status: ESCALATED
+Current Status: Monitoring
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Evidence correlation remains in progress across collected artifacts.
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+HIGH
 
 Risk Score:
-85
+77
 
 Confidence:
-97%
+90%
 
 Affected Assets:
-58
+29
 
 Evidence Collected:
-413
+99
 
 Indicators Recorded:
-66
+80
 
 ---
 
@@ -60,4 +60,4 @@ National Response Cell
 
 Date:
 
-2026-09-16
+2026-09-20

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "case_id": "BID-2026-8600",
+  "state_revision": 2,
+  "telemetry_source": "SIMULATED",
+  "measurement_status": "SIMULATED",
+  "source_fingerprint": "52e040740873ce3871850fa72f41a8ac45acb3f8973daced695a1586cd0f5572",
+  "subsystems": {
+    "evidence_pipeline": {
+      "status": "NOMINAL",
+      "health": 91,
+      "led_state": "STEADY",
+      "led_intensity": 0.91
+    },
+    "correlation_engine": {
+      "status": "NOMINAL",
+      "health": 89,
+      "led_state": "STEADY",
+      "led_intensity": 0.89
+    },
+    "case_store": {
+      "status": "NOMINAL",
+      "health": 89,
+      "led_state": "STEADY",
+      "led_intensity": 0.89
+    },
+    "threat_assessment": {
+      "status": "NOMINAL",
+      "health": 88,
+      "led_state": "STEADY",
+      "led_intensity": 0.88
+    }
+  },
+  "telemetry": {
+    "cpu_percent": {
+      "unit": "percent",
+      "samples": [
+        57,
+        57,
+        57,
+        57,
+        60,
+        58,
+        57,
+        57,
+        60,
+        58,
+        57,
+        57
+      ]
+    },
+    "memory_percent": {
+      "unit": "percent",
+      "samples": [
+        54,
+        54,
+        54,
+        57,
+        55,
+        54,
+        54,
+        57,
+        55,
+        54,
+        54,
+        57
+      ]
+    },
+    "network_percent": {
+      "unit": "percent",
+      "samples": [
+        46,
+        46,
+        49,
+        47,
+        46,
+        46,
+        49,
+        47,
+        46,
+        46,
+        49,
+        51
+      ]
+    },
+    "disk_percent": {
+      "unit": "percent",
+      "samples": [
+        49,
+        52,
+        50,
+        49,
+        49,
+        52,
+        50,
+        49,
+        49,
+        52,
+        54,
+        51
+      ]
+    },
+    "queue_depth": {
+      "unit": "count",
+      "samples": [
+        8,
+        6,
+        5,
+        5,
+        8,
+        6,
+        5,
+        5,
+        8,
+        10,
+        7,
+        9
+      ]
+    }
+  },
+  "updated_at": "2026-09-20T16:05:29Z"
+}

@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-09-20 09:17 UTC
+**Generated:** 2026-09-20 16:05 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** CRITICAL
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-3108
+**Case ID:** BID-2026-8600
 
-**Classification:** Biocontainment Network Investigation
+**Classification:** Protected Research Systems Investigation
 
-**Severity:** CRITICAL
+**Severity:** HIGH
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Medical Device Communications Interference
 
-**Confidence:** 97%
+**Confidence:** 90%
 
 ---
 
 ## Investigation Summary
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **413**
+Evidence Collected: **99**
 
-Indicators: **66**
+Indicators: **80**
 
-Priority: **CRITICAL**
+Priority: **HIGH**
 
 ---
 
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**139**
+**140**
 
 Confirmed Intrusions:
 **19**
 
 Total Evidence:
-**99473**
+**99572**
 
 Total Indicators:
-**64267**
+**64347**
 
 ---
 
 ## Operational Highlights
 
-- 413 evidence items are associated with the active investigation.
-- 66 indicators are currently linked to the case.
-- Containment remains at **CRITICAL**.
-- Analyst confidence is **97%**.
-- Current investigation priority is **CRITICAL**.
+- 99 evidence items are associated with the active investigation.
+- 80 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **90%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-3108 |
+| Case ID | BID-2026-8600 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biocontainment Network Investigation |
-| Threat Family | Research Workstation Compromise |
-| Severity | CRITICAL |
-| Status | ESCALATED |
+| Classification | Protected Research Systems Investigation |
+| Threat Family | Medical Device Communications Interference |
+| Severity | HIGH |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Laboratory Control Network |
-| Device | Access Control Server |
-| Vendor | VMware |
-| Network Zone | Biosecurity Segment |
+| Device | Laboratory Information Server |
+| Vendor | Palo Alto Networks |
+| Network Zone | Containment Network |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 85 |
-| Confidence | 97% |
-| Evidence | 413 |
-| Indicators | 66 |
-| Affected Assets | 58 |
+| Risk Score | 77 |
+| Confidence | 90% |
+| Evidence | 99 |
+| Indicators | 80 |
+| Affected Assets | 29 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.

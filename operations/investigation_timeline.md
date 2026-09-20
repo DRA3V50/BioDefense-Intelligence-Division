@@ -2,35 +2,35 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-3108
+**Case ID:** BID-2026-8600
 
-**Generated:** 2026-09-20 09:17 UTC
+**Generated:** 2026-09-20 16:05 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-09-20 03:17 UTC | Initial Detection | Potential activity associated with Research Workstation Compromise was detected. |
-| 2026-09-20 04:17 UTC | Case Opened | Investigation BID-2026-3108 was opened and assigned to National Response Cell. |
-| 2026-09-20 05:17 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
-| 2026-09-20 06:17 UTC | Evidence Collection | 413 evidence items and 66 indicators were associated with the active investigation. |
-| 2026-09-20 07:17 UTC | Containment Assessment | Containment was assessed at CRITICAL. |
-| 2026-09-20 08:17 UTC | Operational Review | Observed activity presents a credible risk to data integrity, case evidence, or protected research operations. |
-| 2026-09-20 09:17 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-09-20 10:05 UTC | Initial Detection | Potential activity associated with Medical Device Communications Interference was detected. |
+| 2026-09-20 11:05 UTC | Case Opened | Investigation BID-2026-8600 was opened and assigned to National Response Cell. |
+| 2026-09-20 12:05 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
+| 2026-09-20 13:05 UTC | Evidence Collection | 99 evidence items and 80 indicators were associated with the active investigation. |
+| 2026-09-20 14:05 UTC | Containment Assessment | Containment was assessed at SEVERE. |
+| 2026-09-20 15:05 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-09-20 16:05 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
 ## Current Status
 
-**Severity:** CRITICAL
+**Severity:** HIGH
 
-**Priority:** CRITICAL
+**Priority:** HIGH
 
-**Confidence:** 97%
+**Confidence:** 90%
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** CRITICAL
+**Containment Level:** SEVERE
 
 ---
 

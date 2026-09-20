@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-3108
+BID-2026-8600
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Protected Research Systems Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Device | Protected workstation entered evidence preservation mode |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Identity | Credential reuse detected across isolated research segments |
+| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -28,16 +28,16 @@ Biocontainment Network Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-413
+99
 
 Indicators Reviewed:
-66
+80
 
 Risk Score:
-85
+77
 
 Confidence:
-97%
+90%
 
 ---
 
@@ -47,4 +47,4 @@ National Response Cell
 
 Current Status:
 
-ESCALATED
+Monitoring

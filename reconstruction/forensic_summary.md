@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-3108 |
+| Case ID | BID-2026-8600 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biocontainment Network Investigation |
-| Threat Family | Research Workstation Compromise |
-| Severity | CRITICAL |
-| Status | ESCALATED |
+| Classification | Protected Research Systems Investigation |
+| Threat Family | Medical Device Communications Interference |
+| Severity | HIGH |
+| Status | Monitoring |
 
 ---
 
@@ -18,9 +18,9 @@
 | Property | Value |
 |----------|-------|
 | Platform | Laboratory Control Network |
-| Device | Access Control Server |
-| Vendor | VMware |
-| Security Zone | Biosecurity Segment |
+| Device | Laboratory Information Server |
+| Vendor | Palo Alto Networks |
+| Security Zone | Containment Network |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 85 |
-| Confidence | 97% |
-| Evidence Collected | 413 |
-| Indicators Identified | 66 |
-| Affected Assets | 58 |
+| Risk Score | 77 |
+| Confidence | 90% |
+| Evidence Collected | 99 |
+| Indicators Identified | 80 |
+| Affected Assets | 29 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Monitoring**
 
 Priority:
 
-**CRITICAL**
+**HIGH**
 
 Recommended Action:
 
