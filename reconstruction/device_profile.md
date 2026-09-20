@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Containment Network
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+No destructive activity observed following initial containment.
