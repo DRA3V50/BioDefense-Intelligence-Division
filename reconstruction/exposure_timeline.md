@@ -13,7 +13,7 @@ Biocontainment Network Investigation
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-Open
+ESCALATED
 
 ### Severity
 CRITICAL

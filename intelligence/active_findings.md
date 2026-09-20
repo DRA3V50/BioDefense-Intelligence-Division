@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
@@ -74,7 +74,7 @@ Observed activity presents a credible risk to data integrity, case evidence, or 
 # Operational Status
 
 Current Status:
-Open
+ESCALATED
 
 Recommended Action:
 

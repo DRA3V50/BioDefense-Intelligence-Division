@@ -4,19 +4,19 @@
 
 **Case ID:** BID-2026-3108
 
-**Generated:** 2026-09-19 22:21 UTC
+**Generated:** 2026-09-20 09:17 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-09-19 16:21 UTC | Initial Detection | Potential activity associated with Research Workstation Compromise was detected. |
-| 2026-09-19 17:21 UTC | Case Opened | Investigation BID-2026-3108 was opened and assigned to National Response Cell. |
-| 2026-09-19 18:21 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
-| 2026-09-19 19:21 UTC | Evidence Collection | 413 evidence items and 66 indicators were associated with the active investigation. |
-| 2026-09-19 20:21 UTC | Containment Assessment | Containment was assessed at CRITICAL. |
-| 2026-09-19 21:21 UTC | Operational Review | Observed activity presents a credible risk to data integrity, case evidence, or protected research operations. |
-| 2026-09-19 22:21 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-09-20 03:17 UTC | Initial Detection | Potential activity associated with Research Workstation Compromise was detected. |
+| 2026-09-20 04:17 UTC | Case Opened | Investigation BID-2026-3108 was opened and assigned to National Response Cell. |
+| 2026-09-20 05:17 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
+| 2026-09-20 06:17 UTC | Evidence Collection | 413 evidence items and 66 indicators were associated with the active investigation. |
+| 2026-09-20 07:17 UTC | Containment Assessment | Containment was assessed at CRITICAL. |
+| 2026-09-20 08:17 UTC | Operational Review | Observed activity presents a credible risk to data integrity, case evidence, or protected research operations. |
+| 2026-09-20 09:17 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 

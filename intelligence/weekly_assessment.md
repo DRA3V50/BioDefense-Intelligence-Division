@@ -10,7 +10,7 @@ Classification: Biocontainment Network Investigation
 
 Threat Family: Research Workstation Compromise
 
-Current Status: Open
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 

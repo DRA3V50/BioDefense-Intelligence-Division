@@ -1,6 +1,6 @@
 # Chain of Custody
 
-**Generated:** 2026-09-19 22:21 UTC
+**Generated:** 2026-09-20 09:17 UTC
 
 ---
 
@@ -44,7 +44,7 @@ No unauthorized custody transfers were identified.
 
 Primary Analyst: National Response Cell
 
-Investigation Status: Open
+Investigation Status: ESCALATED
 
 Containment Phase: Operational Recovery
 

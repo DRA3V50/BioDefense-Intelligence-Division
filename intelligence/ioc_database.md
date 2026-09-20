@@ -15,12 +15,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Device | Protected workstation entered evidence preservation mode |
-| Identity | Credential reuse detected across isolated research segments |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -47,4 +47,4 @@ National Response Cell
 
 Current Status:
 
-Open
+ESCALATED

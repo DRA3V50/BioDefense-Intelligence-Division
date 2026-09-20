@@ -9,7 +9,7 @@
 | Classification | Biocontainment Network Investigation |
 | Threat Family | Research Workstation Compromise |
 | Severity | CRITICAL |
-| Status | Open |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**ESCALATED**
 
 Priority:
 

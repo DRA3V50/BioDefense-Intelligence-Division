@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Open
+ESCALATED
 
 ---
 
@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
@@ -186,7 +186,7 @@ Observed activity presents a credible risk to data integrity, case evidence, or 
 # Operational Status
 
 Current Status:
-Open
+ESCALATED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Biocontainment Network Investigation
 
 Threat Family: Research Workstation Compromise
 
-Current Status: Open
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -287,12 +287,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Device | Protected workstation entered evidence preservation mode |
-| Identity | Credential reuse detected across isolated research segments |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -319,7 +319,7 @@ National Response Cell
 
 Current Status:
 
-Open
+ESCALATED
 
 
 ---
@@ -337,7 +337,7 @@ Open
 | Classification | Biocontainment Network Investigation |
 | Threat Family | Research Workstation Compromise |
 | Severity | CRITICAL |
-| Status | Open |
+| Status | ESCALATED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**ESCALATED**
 
 Priority:
 
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
 CRITICAL
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.
 
 
 ---
@@ -518,7 +518,7 @@ Biocontainment Network Investigation
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-Open
+ESCALATED
 
 ### Severity
 CRITICAL

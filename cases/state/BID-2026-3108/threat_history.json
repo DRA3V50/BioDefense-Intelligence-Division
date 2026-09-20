@@ -145,7 +145,31 @@
       "source": "C# BioterrorThreatScoringEngine",
       "report_path": "reports/bioterror_threat_score_csharp.json",
       "source_key": "BID-2026-3108|15|81|HIGH"
+    },
+    {
+      "case_id": "BID-2026-3108",
+      "campaign_id": "BDC-2026-001",
+      "case_revision": 17,
+      "timestamp": "2026-09-20T09:17:00Z",
+      "score": 81,
+      "canonical_classification": "HIGH",
+      "display_level_for_subsystem_06": "CRITICAL",
+      "source": "C# BioterrorThreatScoringEngine",
+      "report_path": "reports/bioterror_threat_score_csharp.json",
+      "source_key": "BID-2026-3108|17|81|HIGH"
+    },
+    {
+      "case_id": "BID-2026-3108",
+      "campaign_id": "BDC-2026-001",
+      "case_revision": 18,
+      "timestamp": "2026-09-20T09:17:00Z",
+      "score": 81,
+      "canonical_classification": "HIGH",
+      "display_level_for_subsystem_06": "CRITICAL",
+      "source": "C# BioterrorThreatScoringEngine",
+      "report_path": "reports/bioterror_threat_score_csharp.json",
+      "source_key": "BID-2026-3108|18|81|HIGH"
     }
   ],
-  "updated_at": "2026-09-19T22:21:17Z"
+  "updated_at": "2026-09-20T09:17:53Z"
 }
