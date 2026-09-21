@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-09-21 09:56 UTC
+**Generated:** 2026-09-21 18:13 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Protected Research Systems Investigation concerns suspected Medical D
 
 **Integrity-Verified Records:** 99
 
-**Pending Analyst Review:** 65
+**Pending Analyst Review:** 48
 
 ### Priority Findings
 
