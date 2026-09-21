@@ -4,19 +4,19 @@
 
 **Case ID:** BID-2026-8600
 
-**Generated:** 2026-09-20 22:27 UTC
+**Generated:** 2026-09-21 09:56 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-09-20 16:27 UTC | Initial Detection | Potential activity associated with Medical Device Communications Interference was detected. |
-| 2026-09-20 17:27 UTC | Case Opened | Investigation BID-2026-8600 was opened and assigned to National Response Cell. |
-| 2026-09-20 18:27 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
-| 2026-09-20 19:27 UTC | Evidence Collection | 99 evidence items and 80 indicators were associated with the active investigation. |
-| 2026-09-20 20:27 UTC | Containment Assessment | Containment was assessed at SEVERE. |
-| 2026-09-20 21:27 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
-| 2026-09-20 22:27 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-09-21 03:56 UTC | Initial Detection | Potential activity associated with Medical Device Communications Interference was detected. |
+| 2026-09-21 04:56 UTC | Case Opened | Investigation BID-2026-8600 was opened and assigned to National Response Cell. |
+| 2026-09-21 05:56 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Third-Party Access. |
+| 2026-09-21 06:56 UTC | Evidence Collection | 99 evidence items and 80 indicators were associated with the active investigation. |
+| 2026-09-21 07:56 UTC | Containment Assessment | Containment was assessed at SEVERE. |
+| 2026-09-21 08:56 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-09-21 09:56 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
