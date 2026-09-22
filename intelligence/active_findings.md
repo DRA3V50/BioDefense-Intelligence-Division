@@ -26,7 +26,7 @@ HIGH
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
@@ -34,15 +34,15 @@ Digital evidence suggests attempted collection of sensitive genomic research dat
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 

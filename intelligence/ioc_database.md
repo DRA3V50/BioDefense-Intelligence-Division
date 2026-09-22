@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Infrastructure | Firewall policy deviation identified |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| PowerShell | Encoded administrative command execution detected |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Identity | Credential reuse detected across isolated research segments |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
