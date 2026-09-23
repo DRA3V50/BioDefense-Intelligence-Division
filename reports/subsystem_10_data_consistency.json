@@ -137,7 +137,7 @@
     ],
     "format": "PNG"
   },
-  "event_count": 10,
+  "event_count": 11,
   "event_ids": [
     "BID-2026-8600-EVT-0001",
     "BID-2026-8600-EVT-0002",
@@ -148,7 +148,8 @@
     "BID-2026-8600-EVT-0007",
     "BID-2026-8600-EVT-0008",
     "BID-2026-8600-EVT-0009",
-    "BID-2026-8600-EVT-0010"
+    "BID-2026-8600-EVT-0010",
+    "BID-2026-8600-EVT-0011"
   ],
   "evidence_count": 99,
   "evidence_ids": [
@@ -270,7 +271,7 @@
   "lifecycle_status": "ACTIVE",
   "priority": "HIGH",
   "renderer_consistency": {
-    "anomaly_history_samples": 10,
+    "anomaly_history_samples": 11,
     "authoritative_source_map": {
       "campaign_id": "dashboard.shared.campaign_id / operation_context.campaign_id",
       "case_id": "dashboard.shared.case_id",
@@ -293,7 +294,7 @@
     "case_id": "BID-2026-8600",
     "correlation_count_derived_from_relationships": 99,
     "current_stage": "VALIDATION",
-    "event_intensity_samples": 10,
+    "event_intensity_samples": 11,
     "evidence_count": 99,
     "feed_event_case_ids_match": true,
     "integration_count_derived_from_persisted_sources": 3,
@@ -341,31 +342,31 @@
       "state_revision": true,
       "updated_at": true
     },
-    "state_revision": 10,
+    "state_revision": 11,
     "subsystem_06_display_level": "HIGH",
     "system_status_source": "SIMULATED",
     "threat_score": 66,
-    "updated_at": "2026-09-22T22:57:58Z"
+    "updated_at": "2026-09-23T09:19:51Z"
   },
   "schema_version": 1,
   "severity": "HIGH",
   "source_hashes": {
-    "active_case": "83772be5848d64efc87e76a50477b847ae90c7c21671ec8b2026b91b3329f2d3",
-    "active_operation": "7e64af777dc4ac9d840b12cfaab127532517320b717119bc8f5041943ac4bc83",
-    "anomaly_history": "8309080c730e45455f99cce63a62a5fdf6aa61ada85cb59c5765afdb7ae36c5d",
-    "candidate_gif": "9c6be877c2e900888958a840f451c536c313b60a5e099983f93950b1e4306fdb",
-    "candidate_png": "c6ef77e6cd96cfebdf24509410587a978728e8b4a970157a69f1160315115ecf",
-    "candidate_qc": "b000c3d8d0b09a874ae45186bd006b46c2c85c723f8347b596f002e89d68d996",
-    "csharp_report": "cf153fbcfcc36632f14f43d7d143b16f69ddba772446aff689535a9d9a263648",
-    "events": "f48d708d00f14e78a171f7401a53a55260eb1d2e1e4266c37ab9f9c2c5a08730",
-    "evidence_correlations": "3832a314b97039d95d4d1181f9ef893f75bc1b75312e23fb356535ce8a774f4b",
+    "active_case": "048be12e83bb533ffda6f1ddd453e46399e1b7db0b031c9a26341247ede4cdd4",
+    "active_operation": "66ab641280a9bc935b210a571b1437f51ccd72654d680775fdf44c6948c39925",
+    "anomaly_history": "664ffcb8eb8e7a509d4bdbef0d50c607007b92622fe679fe2d82adbca8ce096d",
+    "candidate_gif": "b337f9d0b91d17383f837190dbd4dd7146408298f863b790ac972e716b8c860e",
+    "candidate_png": "db4da224fd4a02c9de8975a3f55a8374a52137c962d224a268c5bac9dabda7d1",
+    "candidate_qc": "44d786f54392474a52a2f3bfc387229dadf75739c480e1719c7e0e8a8c4221e9",
+    "csharp_report": "50834cb54310105820cb3ca05e21a58d2b32650dc42d844f6e7005170055ee66",
+    "events": "55660ef280b9ba599992ac850f697aa3170e5c2c8557efcc590873d5a2c09c70",
+    "evidence_correlations": "f41ccadcb7660baead5a218397983a1b1cc34e83793a522735179826e6f15e71",
     "evidence_manifest": "41d756a223e00d58bb0addd9bd7f0d42ec5be91c52f9cd3180da911cb537ba29",
-    "production_gif": "9c6be877c2e900888958a840f451c536c313b60a5e099983f93950b1e4306fdb",
-    "production_png": "c6ef77e6cd96cfebdf24509410587a978728e8b4a970157a69f1160315115ecf",
-    "relationships": "fa741c7f0f2511a127d3a33afbb5c511f6364239a1cd9ce147b4e327eb2951c4",
-    "system_status": "606569f2a40aacad580cd8ac22cd818fc1cbc9ca576e7bdaef2855ee6a96db68",
-    "threat_history": "9478f09868866d6cd95778c217b178d56fdd84d0807db94e6d223dd869f97f00"
+    "production_gif": "b337f9d0b91d17383f837190dbd4dd7146408298f863b790ac972e716b8c860e",
+    "production_png": "db4da224fd4a02c9de8975a3f55a8374a52137c962d224a268c5bac9dabda7d1",
+    "relationships": "b30dd942462e07fb9f4b9c417900134b1825635b505ba3ec00aa5b711db16d03",
+    "system_status": "d5751480a45d76757f9664dd07c1cd9963f572b1ee3453afffa907e4b8f4a227",
+    "threat_history": "c6645597ce87c722bde9271025b553bc432d4b0541da6c2e1f0c26cabfe3c88b"
   },
-  "state_revision": 10,
+  "state_revision": 11,
   "threat_score": 66
 }
