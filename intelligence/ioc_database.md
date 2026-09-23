@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Device | Protected workstation entered evidence preservation mode |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| PowerShell | Encoded administrative command execution detected |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
