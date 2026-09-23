@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Device | Protected workstation entered evidence preservation mode |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
