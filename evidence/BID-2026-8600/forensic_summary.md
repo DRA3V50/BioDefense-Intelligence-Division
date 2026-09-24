@@ -2,7 +2,7 @@
 
 ## Forensic Summary
 
-**Generated:** 2026-09-24 09:19 UTC
+**Generated:** 2026-09-24 17:10 UTC
 
 ---
 
@@ -24,7 +24,7 @@
 
 **Lead Analyst:** National Response Cell
 
-**Investigation Status:** Monitoring
+**Investigation Status:** ESCALATED
 
 **Containment Phase:** Operational Recovery
 

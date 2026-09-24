@@ -9,7 +9,7 @@
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Medical Device Communications Interference |
 | Severity | HIGH |
-| Status | Monitoring |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**ESCALATED**
 
 Priority:
 

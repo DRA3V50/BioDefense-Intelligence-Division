@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+ESCALATED
 
 ---
 
@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
@@ -186,7 +186,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Monitoring
+ESCALATED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Protected Research Systems Investigation
 
 Threat Family: Medical Device Communications Interference
 
-Current Status: Monitoring
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | System Log | Unexpected privilege escalation recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -319,7 +319,7 @@ National Response Cell
 
 Current Status:
 
-Monitoring
+ESCALATED
 
 
 ---
@@ -337,7 +337,7 @@ Monitoring
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Medical Device Communications Interference |
 | Severity | HIGH |
-| Status | Monitoring |
+| Status | ESCALATED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**ESCALATED**
 
 Priority:
 
@@ -449,7 +449,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Ashcroft Biomedical Center
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.
 
 
 ---
@@ -518,7 +518,7 @@ Protected Research Systems Investigation
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Monitoring
+ESCALATED
 
 ### Severity
 HIGH
