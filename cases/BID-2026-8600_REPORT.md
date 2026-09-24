@@ -138,11 +138,11 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
@@ -150,7 +150,7 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Device | Protected workstation entered evidence preservation mode |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| PowerShell | Encoded administrative command execution detected |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -449,7 +449,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---

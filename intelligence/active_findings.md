@@ -26,11 +26,11 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
@@ -38,7 +38,7 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
