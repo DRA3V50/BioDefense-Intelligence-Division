@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-5449",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-09-24T23:13:09Z",
+  "platform": "Clinical Research Environment",
+  "vendor": "VMware",
+  "device": "Access Control Server",
+  "baseline_version": "1.2.0",
+  "zone": "Containment Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

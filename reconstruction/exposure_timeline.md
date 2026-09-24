@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-09-20
+## 2026-09-24
 
 ### Case Opened
-Case ID: BID-2026-8600
+Case ID: BID-2026-5449
 
 ### Classification
 Protected Research Systems Investigation
 
 ### Initial Assessment
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-ESCALATED
+Field Coordination
 
 ### Severity
-HIGH
+CRITICAL
 
 ---

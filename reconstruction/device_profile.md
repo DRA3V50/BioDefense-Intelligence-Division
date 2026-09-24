@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8600
+BID-2026-5449
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,26 +12,26 @@ Classification:
 Protected Research Systems Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Credential Misuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
-Laboratory Control Network
+Clinical Research Environment
 
 Device:
-Laboratory Information Server
+Access Control Server
 
 Vendor:
-Palo Alto Networks
+VMware
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Awaiting Laboratory Review
 
 Priority:
-HIGH
+CRITICAL
 
 Confidence:
-90%
+99%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

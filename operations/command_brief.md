@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-09-24 17:10 UTC
+**Generated:** 2026-09-24 23:13 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** CRITICAL
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8600
+**Case ID:** BID-2026-5449
 
 **Classification:** Protected Research Systems Investigation
 
-**Severity:** HIGH
+**Severity:** CRITICAL
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Credential Misuse
 
-**Confidence:** 90%
+**Confidence:** 99%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **99**
+Evidence Collected: **331**
 
-Indicators: **80**
+Indicators: **153**
 
-Priority: **HIGH**
+Priority: **CRITICAL**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Analyst Team Delta**
 
 Initial Access:
-**Third-Party Access**
+**Unauthorized Physical Access**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**140**
+**141**
 
 Confirmed Intrusions:
-**19**
+**20**
 
 Total Evidence:
-**99572**
+**99903**
 
 Total Indicators:
-**64347**
+**64500**
 
 ---
 
 ## Operational Highlights
 
-- 99 evidence items are associated with the active investigation.
-- 80 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **90%**.
-- Current investigation priority is **HIGH**.
+- 331 evidence items are associated with the active investigation.
+- 153 indicators are currently linked to the case.
+- Containment remains at **CRITICAL**.
+- Analyst confidence is **99%**.
+- Current investigation priority is **CRITICAL**.
 
 ---
 

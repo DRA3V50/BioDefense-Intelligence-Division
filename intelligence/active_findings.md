@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8600
+BID-2026-5449
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,13 +12,13 @@ Classification:
 Protected Research Systems Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Credential Misuse
 
 Severity:
-HIGH
+CRITICAL
 
 Priority:
-HIGH
+CRITICAL
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-29
+47
 
 Evidence Collected:
-99
+331
 
 Indicators Identified:
-80
+153
 
 Analyst Confidence:
-90%
+99%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 # Operational Status
 
 Current Status:
-ESCALATED
+Field Coordination
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Delta

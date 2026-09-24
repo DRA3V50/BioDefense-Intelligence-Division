@@ -1,12 +1,12 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Medical Device Communications Interference
+Credential Misuse
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Ghost Genome
 
 ---
 
@@ -16,34 +16,34 @@ Multiple Regions
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Espionage Against Research Programs
 
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-90%
+99%
 
 ---
 
 ## Observed Techniques
-- Third-Party Access
-- Privilege Escalation
+- Unauthorized Physical Access
+- Laboratory Control System Manipulation
+- Covert Remote Access Tooling
 - Concealed Internal Movement
-- Research Data Exfiltration
-- Insider Access Abuse
-- Laboratory Data Manipulation
+- Biosecurity System Tampering
+- Laboratory Network Reconnaissance
 
 ---
 
 ## Reviewing Analyst
-National Response Cell
+Analyst Team Delta
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 

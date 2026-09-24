@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "case_id": "BID-2026-5449",
+  "samples": [
+    {
+      "case_id": "BID-2026-5449",
+      "campaign_id": "BDC-2026-001",
+      "case_revision": 2,
+      "timestamp": "2026-09-24T23:13:00Z",
+      "score": 80,
+      "canonical_classification": "HIGH",
+      "display_level_for_subsystem_06": "CRITICAL",
+      "source": "C# BioterrorThreatScoringEngine",
+      "report_path": "reports/bioterror_threat_score_csharp.json",
+      "source_key": "BID-2026-5449|2|80|HIGH"
+    }
+  ],
+  "updated_at": "2026-09-24T23:13:30Z"
+}

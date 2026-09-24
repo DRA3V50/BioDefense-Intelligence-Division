@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8600 |
+| Case ID | BID-2026-5449 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Protected Research Systems Investigation |
-| Threat Family | Medical Device Communications Interference |
-| Severity | HIGH |
-| Status | ESCALATED |
+| Threat Family | Credential Misuse |
+| Severity | CRITICAL |
+| Status | Field Coordination |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Laboratory Control Network |
-| Device | Laboratory Information Server |
-| Vendor | Palo Alto Networks |
+| Platform | Clinical Research Environment |
+| Device | Access Control Server |
+| Vendor | VMware |
 | Security Zone | Containment Network |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 77 |
-| Confidence | 90% |
-| Evidence Collected | 99 |
-| Indicators Identified | 80 |
-| Affected Assets | 29 |
+| Risk Score | 85 |
+| Confidence | 99% |
+| Evidence Collected | 331 |
+| Indicators Identified | 153 |
+| Affected Assets | 47 |
 
 ---
 
 # Lead Investigator
 
-**National Response Cell**
+**Analyst Team Delta**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Field Coordination**
 
 Priority:
 
-**HIGH**
+**CRITICAL**
 
 Recommended Action:
 

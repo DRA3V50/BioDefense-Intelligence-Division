@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8600
+BID-2026-5449
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -16,11 +16,11 @@ Protected Research Systems Investigation
 | Category | Observation |
 |----------|-------------|
 | System Log | Unexpected privilege escalation recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Infrastructure | Firewall policy deviation identified |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -28,23 +28,23 @@ Protected Research Systems Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-99
+331
 
 Indicators Reviewed:
-80
+153
 
 Risk Score:
-77
+85
 
 Confidence:
-90%
+99%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Delta
 
 Current Status:
 
-ESCALATED
+Field Coordination

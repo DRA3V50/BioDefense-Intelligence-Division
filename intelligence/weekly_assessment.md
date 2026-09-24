@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8600
+Case ID: BID-2026-5449
 
 Operation: Coordinated Biomedical Systems Intrusion
 
 Classification: Protected Research Systems Investigation
 
-Threat Family: Medical Device Communications Interference
+Threat Family: Credential Misuse
 
-Current Status: ESCALATED
+Current Status: Field Coordination
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Current findings support maintaining the existing investigation priority.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+CRITICAL
 
 Risk Score:
-77
+85
 
 Confidence:
-90%
+99%
 
 Affected Assets:
-29
+47
 
 Evidence Collected:
-99
+331
 
 Indicators Recorded:
-80
+153
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Delta
 
 Date:
 
-2026-09-20
+2026-09-24
