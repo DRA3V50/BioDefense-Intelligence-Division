@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 

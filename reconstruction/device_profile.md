@@ -19,7 +19,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Advanced Genome Security Laboratory
 
 Platform:
 Clinical Research Environment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Awaiting Laboratory Review
 
 Priority:
 CRITICAL
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.
