@@ -138,19 +138,19 @@ CRITICAL
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+No confirmed attribution has been established during the current investigation.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Device | Protected workstation entered evidence preservation mode |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
 | Identity | Credential reuse detected across isolated research segments |
-| System Log | Unexpected privilege escalation recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 CRITICAL
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---

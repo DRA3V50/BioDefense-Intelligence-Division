@@ -25,7 +25,19 @@
       "source": "C# BioterrorThreatScoringEngine",
       "report_path": "reports/bioterror_threat_score_csharp.json",
       "source_key": "BID-2026-5449|3|80|HIGH"
+    },
+    {
+      "case_id": "BID-2026-5449",
+      "campaign_id": "BDC-2026-001",
+      "case_revision": 4,
+      "timestamp": "2026-09-25T17:11:00Z",
+      "score": 80,
+      "canonical_classification": "HIGH",
+      "display_level_for_subsystem_06": "CRITICAL",
+      "source": "C# BioterrorThreatScoringEngine",
+      "report_path": "reports/bioterror_threat_score_csharp.json",
+      "source_key": "BID-2026-5449|4|80|HIGH"
     }
   ],
-  "updated_at": "2026-09-25T09:37:30Z"
+  "updated_at": "2026-09-25T17:11:00Z"
 }

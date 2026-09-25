@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 CRITICAL
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Evidence indicates unauthorized access to restricted research resources.

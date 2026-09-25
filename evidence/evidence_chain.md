@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-09-25 09:37 UTC
+**Generated:** 2026-09-25 17:11 UTC
 
 **Case ID:** BID-2026-5449
 
@@ -45,11 +45,11 @@ evidence correlations, and the active case assessment.
 - **BID-2026-5449-EV-0024** — Access Control Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0076** — Access Control Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0078** — Access Control Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0080** — Access Control Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0113** — Access Control Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0119** — Access Control Log  
@@ -126,13 +126,13 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0045** — Authentication Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0062** — Authentication Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0071** — Authentication Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0073** — Authentication Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0102** — Authentication Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0120** — Authentication Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0125** — Authentication Log  
@@ -219,19 +219,19 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0054** — Research Workstation Event Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0066** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0079** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0089** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0094** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0096** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0105** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0106** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0142** — Research Workstation Event Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0177** — Research Workstation Event Log  
@@ -292,17 +292,17 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0055** — Laboratory System Configuration  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0060** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0077** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0082** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0083** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0086** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0104** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0122** — Laboratory System Configuration  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0129** — Laboratory System Configuration  
@@ -371,19 +371,19 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0048** — Threat Intelligence Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0064** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0085** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0091** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0097** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0099** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0101** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0111** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0116** — Threat Intelligence Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0134** — Threat Intelligence Record  
@@ -444,9 +444,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0031** — Network Connection Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0061** — Network Connection Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0074** — Network Connection Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0118** — Network Connection Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0131** — Network Connection Record  
@@ -515,9 +515,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0040** — Analyst Observation  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0059** — Analyst Observation  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0107** — Analyst Observation  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0126** — Analyst Observation  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0130** — Analyst Observation  
@@ -576,25 +576,25 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0050** — Biosecurity Audit Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0065** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0067** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0069** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0075** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0084** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0088** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0093** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0103** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0108** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0112** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0114** — Biosecurity Audit Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0152** — Biosecurity Audit Record  
@@ -653,15 +653,15 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0016** — Firewall Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0057** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0063** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0070** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0087** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0110** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0128** — Firewall Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0137** — Firewall Log  
@@ -805,13 +805,13 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0056** — Research Data Integrity Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0058** — Research Data Integrity Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0068** — Research Data Integrity Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0072** — Research Data Integrity Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0081** — Research Data Integrity Record  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0117** — Research Data Integrity Record  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0123** — Research Data Integrity Record  
@@ -866,17 +866,17 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-5449-EV-0053** — Laboratory Information System Audit Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0090** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0092** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0095** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0098** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0100** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0109** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-5449-EV-0115** — Laboratory Information System Audit Log  
   Source: **Access Control Server** | Vendor: **VMware** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-5449-EV-0135** — Laboratory Information System Audit Log  
