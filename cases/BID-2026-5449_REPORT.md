@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Research Storage | Unauthorized access to protected genomic repository |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Identity | Credential reuse detected across isolated research segments |
+| System Log | Unexpected privilege escalation recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Security | Multi-factor authentication bypass attempt recorded |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -449,7 +449,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Federal Biosecurity Laboratory
 
 Platform:
 Clinical Research Environment
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-VMware ESXi 9
+Windows Server 2025
 
 Security Zone:
 Containment Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---

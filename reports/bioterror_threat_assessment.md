@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-09-24 23:13 UTC
+**Generated:** 2026-09-25 09:37 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Protected Research Systems Investigation concerns suspected Credentia
 
 **Integrity-Verified Records:** 331
 
-**Pending Analyst Review:** 331
+**Pending Analyst Review:** 275
 
 ### Priority Findings
 

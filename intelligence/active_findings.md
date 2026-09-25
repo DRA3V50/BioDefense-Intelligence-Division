@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
