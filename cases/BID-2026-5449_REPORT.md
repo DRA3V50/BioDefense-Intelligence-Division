@@ -138,15 +138,15 @@ CRITICAL
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| Identity | Credential reuse detected across isolated research segments |
+| PowerShell | Encoded administrative command execution detected |
+| Infrastructure | Firewall policy deviation identified |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -449,7 +449,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
 Clinical Research Environment
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.
 
 
 ---

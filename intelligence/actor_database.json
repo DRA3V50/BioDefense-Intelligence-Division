@@ -100,7 +100,7 @@
             "name": "Credential Misuse",
             "first_seen": "2026-08-02",
             "last_seen": "2026-09-26",
-            "cases": 12,
+            "cases": 13,
             "severity": "CRITICAL",
             "confidence": 99
         },
