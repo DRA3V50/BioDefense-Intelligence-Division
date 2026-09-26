@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---

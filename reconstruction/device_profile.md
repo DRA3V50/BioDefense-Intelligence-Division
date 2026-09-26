@@ -19,7 +19,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
 Clinical Research Environment
@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Containment Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Isolated From Production
 
 Priority:
 CRITICAL
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.
