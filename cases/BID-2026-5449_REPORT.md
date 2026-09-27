@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
+| System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Identity | Credential reuse detected across isolated research segments |
-| PowerShell | Encoded administrative command execution detected |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -449,7 +449,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Federal Biosecurity Laboratory
 
 Platform:
 Clinical Research Environment
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 CRITICAL
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.
 
 
 ---

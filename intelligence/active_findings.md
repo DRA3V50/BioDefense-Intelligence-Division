@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 

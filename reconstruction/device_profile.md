@@ -19,7 +19,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Federal Biosecurity Laboratory
 
 Platform:
 Clinical Research Environment
@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Containment Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 CRITICAL
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.
