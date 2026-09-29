@@ -1429,7 +1429,7 @@ def feed_panel_entries(renderer_state: dict[str, Any]) -> list[TextEntry]:
                     color_by_level[event["visual_severity"]],
                     9,
                     True,
-                    34,
+                    39,
                     **clean_options,
                 ),
             )
