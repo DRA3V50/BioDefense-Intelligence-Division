@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-5449 |
+| Case ID | BID-2026-7479 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Protected Research Systems Investigation |
-| Threat Family | Credential Misuse |
-| Severity | CRITICAL |
-| Status | ESCALATED |
+| Threat Family | Biocontainment System Tampering |
+| Severity | LOW |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Access Control Server |
-| Vendor | VMware |
-| Security Zone | Containment Network |
+| Platform | Medical Research Laboratory |
+| Device | Research Database Server |
+| Vendor | Lenovo |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 85 |
-| Confidence | 99% |
-| Evidence Collected | 331 |
-| Indicators Identified | 153 |
-| Affected Assets | 47 |
+| Risk Score | 38 |
+| Confidence | 81% |
+| Evidence Collected | 19 |
+| Indicators Identified | 7 |
+| Affected Assets | 9 |
 
 ---
 
@@ -44,7 +44,7 @@
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Intelligence Analysis**
 
 Priority:
 
-**CRITICAL**
+**ROUTINE**
 
 Recommended Action:
 

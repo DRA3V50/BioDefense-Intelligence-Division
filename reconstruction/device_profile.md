@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5449
+BID-2026-7479
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,29 +12,29 @@ Classification:
 Protected Research Systems Investigation
 
 Threat Family:
-Credential Misuse
+Biocontainment System Tampering
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
-Clinical Research Environment
+Medical Research Laboratory
 
 Device:
-Access Control Server
+Research Database Server
 
 Vendor:
-VMware
+Lenovo
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Windows Server 2025
 
 Security Zone:
-Containment Network
+Secure Laboratory
 
 ---
 
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
-CRITICAL
+ROUTINE
 
 Confidence:
-99%
+81%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

@@ -1,0 +1,25 @@
+{
+  "case_id": "BID-2026-7479",
+  "artifact_type": "Firewall Log",
+  "generated_at": "2026-09-29T18:06:01Z",
+  "source_device": "Research Database Server",
+  "security_zone": "Secure Laboratory",
+  "events": [
+    {
+      "event_id": "FW-001",
+      "action": "Blocked",
+      "protocol": "HTTPS",
+      "source": "Simulated External Host",
+      "destination": "Research Database Server",
+      "description": "Simulated unauthorized outbound connection attempt."
+    },
+    {
+      "event_id": "FW-002",
+      "action": "Allowed",
+      "protocol": "DNS",
+      "source": "Research Database Server",
+      "destination": "Authorized DNS Service",
+      "description": "Routine name-resolution activity retained for analysis."
+    }
+  ]
+}

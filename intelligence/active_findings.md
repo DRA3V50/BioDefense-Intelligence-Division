@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5449
+BID-2026-7479
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,13 +12,13 @@ Classification:
 Protected Research Systems Investigation
 
 Threat Family:
-Credential Misuse
+Biocontainment System Tampering
 
 Severity:
-CRITICAL
+LOW
 
 Priority:
-CRITICAL
+ROUTINE
 
 ---
 
@@ -26,39 +26,39 @@ CRITICAL
 
 ### Finding 1
 
-Additional forensic examination is required to determine the full operational scope.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-47
+9
 
 Evidence Collected:
-331
+19
 
 Indicators Identified:
-153
+7
 
 Analyst Confidence:
-99%
+81%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 # Operational Status
 
 Current Status:
-ESCALATED
+Intelligence Analysis
 
 Recommended Action:
 

@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-5449
+BID-2026-7479
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Research Storage | Unauthorized access to protected genomic repository |
 | System Log | Unexpected privilege escalation recorded |
-| Identity | Credential reuse detected across isolated research segments |
+| Infrastructure | Firewall policy deviation identified |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -28,16 +28,16 @@ Protected Research Systems Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-331
+19
 
 Indicators Reviewed:
-153
+7
 
 Risk Score:
-85
+38
 
 Confidence:
-99%
+81%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-ESCALATED
+Intelligence Analysis

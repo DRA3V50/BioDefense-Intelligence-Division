@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-5449
+Case ID: BID-2026-7479
 
 Operation: Coordinated Biomedical Systems Intrusion
 
 Classification: Protected Research Systems Investigation
 
-Threat Family: Credential Misuse
+Threat Family: Biocontainment System Tampering
 
-Current Status: ESCALATED
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Evidence correlation remains in progress across collected artifacts.
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+ROUTINE
 
 Risk Score:
-85
+38
 
 Confidence:
-99%
+81%
 
 Affected Assets:
-47
+9
 
 Evidence Collected:
-331
+19
 
 Indicators Recorded:
-153
+7
 
 ---
 
@@ -60,4 +60,4 @@ Analyst Team Delta
 
 Date:
 
-2026-09-24
+2026-09-29

@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Biocontainment System Tampering
 
 ---
 
@@ -11,39 +11,39 @@ Ghost Genome
 ---
 
 ## Attribution
-Multiple Regions
+Unattributed
 
 ---
 
 ## Observed Motivation
-Espionage Against Research Programs
+Strategic Intelligence Collection
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-99%
+81%
 
 ---
 
 ## Observed Techniques
 - Unauthorized Physical Access
+- Command and Control
+- Privilege Escalation
 - Laboratory Control System Manipulation
-- Covert Remote Access Tooling
-- Concealed Internal Movement
-- Biosecurity System Tampering
-- Laboratory Network Reconnaissance
+- Laboratory Data Manipulation
+- Insider Access Abuse
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 

@@ -3,7 +3,7 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-5449
+BID-2026-7479
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,51 +12,51 @@ Classification:
 Protected Research Systems Investigation
 
 Threat Family:
-Credential Misuse
+Biocontainment System Tampering
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Medical Research Laboratory
 
 Device:
-Access Control Server
+Research Database Server
 
 Vendor:
-VMware
+Lenovo
 
 Security Zone:
-Containment Network
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-142
+143
 
 Evidence Collected:
-331
+19
 
 Indicators Identified:
-153
+7
 
 Affected Assets:
-47
+9
 
 Confidence:
-99%
+81%
 
 Risk Score:
-85
+38
 
 ---
 

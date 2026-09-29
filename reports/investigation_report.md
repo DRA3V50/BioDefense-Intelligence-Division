@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-09-29 00:26 UTC
+**Generated:** 2026-09-29 18:09 UTC
 
 ---
 
@@ -12,17 +12,17 @@
 
 **Campaign ID:** BDC-2026-001
 
-**Case ID:** BID-2026-5449
+**Case ID:** BID-2026-7479
 
-**Case Status:** ESCALATED
+**Case Status:** Intelligence Analysis
 
-**Priority:** CRITICAL
+**Priority:** ROUTINE
 
-**Risk Score:** 85
+**Risk Score:** 38
 
-**Affected Platform:** Clinical Research Environment
+**Affected Platform:** Medical Research Laboratory
 
-**Affected Assets:** 47
+**Affected Assets:** 9
 
 **Initial Access:** Unauthorized Physical Access
 
@@ -34,17 +34,17 @@
 
 ## Executive Summary
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Cyber-Biothreat Assessment
 
-**Threat Severity:** CRITICAL
+**Threat Severity:** LOW
 
-**Threat Family:** Credential Misuse
+**Threat Family:** Biocontainment System Tampering
 
-**Assessment Confidence:** 99%
+**Assessment Confidence:** 81%
 
 **Containment Status:** Operational Recovery
 
@@ -54,9 +54,9 @@ The investigation evaluates whether cyber activity affected biological research,
 
 ## Evidence Summary
 
-**Evidence Records:** 331
+**Evidence Records:** 19
 
-**Correlation Records:** 331
+**Correlation Records:** 19
 
 **Evidence Integrity:** Verified
 
@@ -89,7 +89,7 @@ No conclusion regarding biological material release should be made unless it is 
 
 ## Analyst Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 The current assessment remains subject to revision as evidence is validated, correlated, and reviewed for attribution.
 
@@ -117,10 +117,10 @@ The current assessment remains subject to revision as evidence is validated, cor
 - [Command Brief](../operations/command_brief.md) — Available
 - [Investigation Timeline](../operations/investigation_timeline.md) — Available
 - [Evidence Chain Analysis](../evidence/evidence_chain.md) — Available
-- [Evidence Manifest](../evidence/BID-2026-5449/evidence_manifest.json) — Available
-- [Evidence Correlations](../evidence/BID-2026-5449/evidence_correlations.json) — Available
-- [Chain of Custody](../evidence/BID-2026-5449/chain_of_custody.md) — Available
-- [Forensic Summary](../evidence/BID-2026-5449/forensic_summary.md) — Available
+- [Evidence Manifest](../evidence/BID-2026-7479/evidence_manifest.json) — Available
+- [Evidence Correlations](../evidence/BID-2026-7479/evidence_correlations.json) — Available
+- [Chain of Custody](../evidence/BID-2026-7479/chain_of_custody.md) — Available
+- [Forensic Summary](../evidence/BID-2026-7479/forensic_summary.md) — Available
 
 ---
 
