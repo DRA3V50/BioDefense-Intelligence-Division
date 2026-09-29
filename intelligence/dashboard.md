@@ -9,7 +9,7 @@
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Credential Misuse |
 | Severity | CRITICAL |
-| Status | Field Coordination |
+| Status | ESCALATED |
 | Phase | Operational Recovery |
 
 ---

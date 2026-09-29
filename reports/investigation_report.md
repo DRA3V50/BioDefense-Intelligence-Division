@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-09-28 19:44 UTC
+**Generated:** 2026-09-29 00:26 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 
 **Case ID:** BID-2026-5449
 
-**Case Status:** Field Coordination
+**Case Status:** ESCALATED
 
 **Priority:** CRITICAL
 

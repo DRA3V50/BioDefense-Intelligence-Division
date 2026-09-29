@@ -9,7 +9,7 @@
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Credential Misuse |
 | Severity | CRITICAL |
-| Status | Field Coordination |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Field Coordination**
+**ESCALATED**
 
 Priority:
 

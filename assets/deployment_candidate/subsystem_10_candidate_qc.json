@@ -9,34 +9,34 @@
   "display_threat_family": "CREDENTIAL MISUSE",
   "frozen_v2_renderer_sha256": "f28fbc7b1ffb852afbdca37fdcb720d85d0210621c4230e919fff547ee8d8445",
   "state_hashes_after": {
-    "cases/state/BID-2026-5449/anomaly_history.json": "2690a6cfee8b1389425e25d54805fb353dcb272bbc49ce8b94b709fa1f6776d8",
-    "cases/state/BID-2026-5449/events.json": "45464c070d734f8ebeb2777b6c94a768d1a47e5e5476a6d7de7e97ecd75ebcba",
-    "cases/state/BID-2026-5449/relationships.json": "e4b79241547afe742791e6a03e49e2efd624cd8eaa022f1be8f9aaa1279ed207",
-    "cases/state/BID-2026-5449/system_status.json": "1e78464a65e41b540e41744e1965546df364ffb24a83a6b64b8d68d0a75cf5ff",
-    "cases/state/BID-2026-5449/threat_history.json": "bafc2c3a7a3ad68fc22f539d765643a12884e1fb213d355137c63f2c8f0c2151",
-    "data/current_case.json": "151e66ca5e9e9b756428a0d69aa5624a750950b5ce88271cd83be4e1db0e5156",
+    "cases/state/BID-2026-5449/anomaly_history.json": "7f037f0240f149e71f0d7abf20b03807a82b4002aa99a656dd68ec3f5e53a939",
+    "cases/state/BID-2026-5449/events.json": "2abf4de0e26e9f0bc1605b6f54c25bbbad67165b142223992dfa9dff35f7297f",
+    "cases/state/BID-2026-5449/relationships.json": "7a7ea02728bb6704644a98280bac693e84e7ca698f9db1f08364c70c2a94ef91",
+    "cases/state/BID-2026-5449/system_status.json": "e6ad8484618ee4ff5ed14dd816ee16e762530dc60945d294b01aaa00ef5f44d9",
+    "cases/state/BID-2026-5449/threat_history.json": "64711c460d526e736e20643160f35fa3d3ad250966f83f34b7a93617caa37c47",
+    "data/current_case.json": "78d618ff1dfb8806025330be6f1ca8f2eca1af7d138f31cf6179297fe1299ede",
     "evidence/BID-2026-5449/evidence_correlations.json": "c9a545317dc97116819cb9a0046fb23884a5b09df42085791c5e57bc0dd48510",
     "evidence/BID-2026-5449/evidence_manifest.json": "c3b0ed74a3282e049e9c9ad6c50b600ee3cc317f9a6ccd9bef946a4b0c1adfb1",
-    "operations/active_operation.json": "14f5df3cbf4bc9c647b2fac60db72bfe010924bb0a34f2801941aa789f8cf12e",
-    "reports/bioterror_threat_score_csharp.json": "9c284f118cbc068ff8ee9d76671e8fa46ea973d150b3c46442f1dc939961d21c"
+    "operations/active_operation.json": "f3f594386c0766a4d115ba5fd4321fe2e11d8aa2c18a3d7fb90daf82d89a0405",
+    "reports/bioterror_threat_score_csharp.json": "86799f5a7cfb645ae05318ed1d6675097eddf60279a41ac464d83484f008295f"
   },
   "state_hashes_before": {
-    "cases/state/BID-2026-5449/anomaly_history.json": "2690a6cfee8b1389425e25d54805fb353dcb272bbc49ce8b94b709fa1f6776d8",
-    "cases/state/BID-2026-5449/events.json": "45464c070d734f8ebeb2777b6c94a768d1a47e5e5476a6d7de7e97ecd75ebcba",
-    "cases/state/BID-2026-5449/relationships.json": "e4b79241547afe742791e6a03e49e2efd624cd8eaa022f1be8f9aaa1279ed207",
-    "cases/state/BID-2026-5449/system_status.json": "1e78464a65e41b540e41744e1965546df364ffb24a83a6b64b8d68d0a75cf5ff",
-    "cases/state/BID-2026-5449/threat_history.json": "bafc2c3a7a3ad68fc22f539d765643a12884e1fb213d355137c63f2c8f0c2151",
-    "data/current_case.json": "151e66ca5e9e9b756428a0d69aa5624a750950b5ce88271cd83be4e1db0e5156",
+    "cases/state/BID-2026-5449/anomaly_history.json": "7f037f0240f149e71f0d7abf20b03807a82b4002aa99a656dd68ec3f5e53a939",
+    "cases/state/BID-2026-5449/events.json": "2abf4de0e26e9f0bc1605b6f54c25bbbad67165b142223992dfa9dff35f7297f",
+    "cases/state/BID-2026-5449/relationships.json": "7a7ea02728bb6704644a98280bac693e84e7ca698f9db1f08364c70c2a94ef91",
+    "cases/state/BID-2026-5449/system_status.json": "e6ad8484618ee4ff5ed14dd816ee16e762530dc60945d294b01aaa00ef5f44d9",
+    "cases/state/BID-2026-5449/threat_history.json": "64711c460d526e736e20643160f35fa3d3ad250966f83f34b7a93617caa37c47",
+    "data/current_case.json": "78d618ff1dfb8806025330be6f1ca8f2eca1af7d138f31cf6179297fe1299ede",
     "evidence/BID-2026-5449/evidence_correlations.json": "c9a545317dc97116819cb9a0046fb23884a5b09df42085791c5e57bc0dd48510",
     "evidence/BID-2026-5449/evidence_manifest.json": "c3b0ed74a3282e049e9c9ad6c50b600ee3cc317f9a6ccd9bef946a4b0c1adfb1",
-    "operations/active_operation.json": "14f5df3cbf4bc9c647b2fac60db72bfe010924bb0a34f2801941aa789f8cf12e",
-    "reports/bioterror_threat_score_csharp.json": "9c284f118cbc068ff8ee9d76671e8fa46ea973d150b3c46442f1dc939961d21c"
+    "operations/active_operation.json": "f3f594386c0766a4d115ba5fd4321fe2e11d8aa2c18a3d7fb90daf82d89a0405",
+    "reports/bioterror_threat_score_csharp.json": "86799f5a7cfb645ae05318ed1d6675097eddf60279a41ac464d83484f008295f"
   },
   "state_read_only": true,
   "threat_family_projection_applied": true,
   "threat_history_projection": {
-    "authoritative_sample_count": 12,
-    "current_state_revision": 15,
+    "authoritative_sample_count": 14,
+    "current_state_revision": 18,
     "mode": "current_revision_display_projection",
     "projected_current_revision_sample_count": 1
   },
@@ -55,8 +55,8 @@
       ],
       "unique_decoded_frames": 120
     },
-    "gif_sha256": "d0161599d61d2d9e9f3ea9a147c8bf6d3ee5e13790bacb22fb92602e1c13ce39",
-    "png_sha256": "837d7a18dcdc1713ed2871b6ec5151382bbf585f55ab58848ec1af0f539481e1",
+    "gif_sha256": "c54550fe7b75e03c7ef5cfa7d780aca17cfbd6d3a2d720e05207245c1e43652a",
+    "png_sha256": "03d46273059cd488c497f11b32ab03ab4d9fc5313c1b3146ba830fa4c7eafe25",
     "qc_zero_metrics": {
       "active_feed_fake_events_created": 0,
       "all_static_panel_border_differences": 0,

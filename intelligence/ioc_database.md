@@ -16,11 +16,11 @@ Protected Research Systems Investigation
 | Category | Observation |
 |----------|-------------|
 | Device | Protected workstation entered evidence preservation mode |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| System Log | Unexpected privilege escalation recorded |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-Field Coordination
+ESCALATED
