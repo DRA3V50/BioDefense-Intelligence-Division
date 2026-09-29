@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Research Storage | Unauthorized access to protected genomic repository |
-| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Infrastructure | Firewall policy deviation identified |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---

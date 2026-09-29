@@ -18,7 +18,8 @@
       "integrity_status": "Verified",
       "sha256": "8aa06db596d7013980bbee464f3bd24bdbc22e92c450fdfbc3dcbf7679edac03",
       "classification": "Protected Research Systems Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-29T23:49:53Z"
     },
     {
       "evidence_id": "BID-2026-7479-EV-0002",
@@ -34,7 +35,8 @@
       "integrity_status": "Verified",
       "sha256": "6260759672c63dd664dd364e7221e39c20bf0856128e9625b6b5ef69f394b821",
       "classification": "Protected Research Systems Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-29T23:49:53Z"
     },
     {
       "evidence_id": "BID-2026-7479-EV-0003",
@@ -50,7 +52,8 @@
       "integrity_status": "Verified",
       "sha256": "c5b9b2f415bdf8a0a38628892205adb16c92463b0035927b7bc45a1e3dda76c6",
       "classification": "Protected Research Systems Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-29T23:49:53Z"
     },
     {
       "evidence_id": "BID-2026-7479-EV-0004",
@@ -66,7 +69,8 @@
       "integrity_status": "Verified",
       "sha256": "915caa81e24355c518d7c2a97b1873845fe2900faa8eb668b87f71a8fea2f1f4",
       "classification": "Protected Research Systems Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-09-29T23:49:53Z"
     },
     {
       "evidence_id": "BID-2026-7479-EV-0005",
@@ -308,5 +312,13 @@
       "classification": "Protected Research Systems Investigation",
       "review_status": "Pending Analyst Review"
     }
-  ]
+  ],
+  "lifecycle_processing": {
+    "reviewed_count": 4,
+    "total_evidence_count": 19,
+    "last_review_batch_size": 4,
+    "last_reviewed_at": "2026-09-29T23:49:53Z",
+    "last_updated_by": "process_active_case_stage"
+  },
+  "updated_at": "2026-09-29T23:49:53Z"
 }

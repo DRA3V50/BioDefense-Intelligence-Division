@@ -17,7 +17,15 @@
       "source_event_id": "BID-2026-7479-EVT-0002",
       "event_type": "WORKFLOW_STAGE_CHANGED",
       "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-7479",
+      "timestamp": "2026-09-29T23:49:53Z",
+      "value": 45,
+      "source_event_id": "BID-2026-7479-EVT-0003",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "source": "derived_case_event"
     }
   ],
-  "updated_at": "2026-09-29T18:06:06Z"
+  "updated_at": "2026-09-29T23:49:53Z"
 }

@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-09-29 18:06 UTC
+**Generated:** 2026-09-29 23:49 UTC
 
 **Case ID:** BID-2026-7479
 
@@ -39,11 +39,11 @@ evidence correlations, and the active case assessment.
 ### Supporting Evidence
 
 - **BID-2026-7479-EV-0001** — Containment Validation Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-7479-EV-0002** — Containment Validation Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-7479-EV-0004** — Containment Validation Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-7479-EV-0005** — Containment Validation Record  
   Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -66,7 +66,7 @@ chain-of-custody records should be verified before final attribution.
 ### Supporting Evidence
 
 - **BID-2026-7479-EV-0003** — Threat Intelligence Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
