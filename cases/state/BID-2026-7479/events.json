@@ -40,7 +40,20 @@
       "zone": "Secure Laboratory",
       "intensity": 45,
       "idempotency_key": "evidence-review-4-of-19"
+    },
+    {
+      "event_id": "BID-2026-7479-EVT-0004",
+      "case_id": "BID-2026-7479",
+      "sequence": 4,
+      "timestamp": "2026-09-30T10:30:22Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 8/19 reviewed",
+      "severity": "LOW",
+      "source": "process_active_case_stage",
+      "zone": "Secure Laboratory",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-8-of-19"
     }
   ],
-  "updated_at": "2026-09-29T23:49:53Z"
+  "updated_at": "2026-09-30T10:30:22Z"
 }

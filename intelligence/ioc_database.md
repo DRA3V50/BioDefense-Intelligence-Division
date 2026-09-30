@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Identity | Credential reuse detected across isolated research segments |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| PowerShell | Encoded administrative command execution detected |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Infrastructure | Firewall policy deviation identified |
 
 
 ---
