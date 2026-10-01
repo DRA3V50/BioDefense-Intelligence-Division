@@ -26,7 +26,7 @@ ROUTINE
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
@@ -34,15 +34,15 @@ Additional forensic examination is required to determine the full operational sc
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 

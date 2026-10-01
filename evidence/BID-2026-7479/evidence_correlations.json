@@ -89,7 +89,8 @@
       "related_indicator": "IOC-2026-5946",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 89,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T23:54:14Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -99,7 +100,8 @@
       "related_indicator": "IOC-2026-8143",
       "finding": "Biosecurity Policy Violation",
       "confidence": 84,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T23:54:14Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -109,7 +111,8 @@
       "related_indicator": "IOC-2026-1098",
       "finding": "Biosecurity Policy Violation",
       "confidence": 85,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T23:54:14Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -119,7 +122,8 @@
       "related_indicator": "IOC-2026-4045",
       "finding": "Unauthorized Facility Access",
       "confidence": 98,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T23:54:14Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -129,7 +133,8 @@
       "related_indicator": "IOC-2026-1991",
       "finding": "Command-and-Control Communication",
       "confidence": 92,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T23:54:14Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -139,7 +144,8 @@
       "related_indicator": "IOC-2026-6507",
       "finding": "Laboratory System Modification",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T23:54:14Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -149,7 +155,8 @@
       "related_indicator": "IOC-2026-6602",
       "finding": "Biosecurity Policy Violation",
       "confidence": 97,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T23:54:14Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -203,11 +210,11 @@
     }
   ],
   "lifecycle_processing": {
-    "validated_count": 7,
+    "validated_count": 14,
     "total_correlation_count": 19,
     "last_validation_batch_size": 7,
-    "last_validated_at": "2026-10-01T18:26:37Z",
+    "last_validated_at": "2026-10-01T23:54:14Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-10-01T18:26:37Z"
+  "updated_at": "2026-10-01T23:54:14Z"
 }
