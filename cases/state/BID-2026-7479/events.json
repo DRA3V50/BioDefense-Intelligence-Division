@@ -105,7 +105,20 @@
       "zone": "Secure Laboratory",
       "intensity": 58,
       "idempotency_key": "revision-8-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-7479-EVT-0009",
+      "case_id": "BID-2026-7479",
+      "sequence": 9,
+      "timestamp": "2026-10-01T18:26:37Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 7/19 validated",
+      "severity": "LOW",
+      "source": "process_active_case_stage",
+      "zone": "Secure Laboratory",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-7-of-19"
     }
   ],
-  "updated_at": "2026-10-01T10:57:55Z"
+  "updated_at": "2026-10-01T18:26:37Z"
 }

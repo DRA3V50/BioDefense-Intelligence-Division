@@ -12,7 +12,8 @@
       "related_indicator": "IOC-2026-7694",
       "finding": "Containment Verification",
       "confidence": 93,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T18:26:37Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -22,7 +23,8 @@
       "related_indicator": "IOC-2026-1618",
       "finding": "Containment Verification",
       "confidence": 93,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T18:26:37Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -32,7 +34,8 @@
       "related_indicator": "IOC-2026-5772",
       "finding": "Known Threat Actor Indicator",
       "confidence": 85,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T18:26:37Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -42,7 +45,8 @@
       "related_indicator": "IOC-2026-8645",
       "finding": "Containment Verification",
       "confidence": 81,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T18:26:37Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -52,7 +56,8 @@
       "related_indicator": "IOC-2026-8494",
       "finding": "Containment Verification",
       "confidence": 87,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T18:26:37Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -62,7 +67,8 @@
       "related_indicator": "IOC-2026-2834",
       "finding": "Biosecurity Policy Violation",
       "confidence": 85,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T18:26:37Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -72,7 +78,8 @@
       "related_indicator": "IOC-2026-8218",
       "finding": "Biosecurity Policy Violation",
       "confidence": 84,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-01T18:26:37Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -194,5 +201,13 @@
       "confidence": 84,
       "analysis_status": "Correlated"
     }
-  ]
+  ],
+  "lifecycle_processing": {
+    "validated_count": 7,
+    "total_correlation_count": 19,
+    "last_validation_batch_size": 7,
+    "last_validated_at": "2026-10-01T18:26:37Z",
+    "last_updated_by": "process_active_case_stage"
+  },
+  "updated_at": "2026-10-01T18:26:37Z"
 }
