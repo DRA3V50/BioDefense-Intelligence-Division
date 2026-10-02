@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Current findings support maintaining the existing investigation priority.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| System Log | Unexpected privilege escalation recorded |
-| Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 Lenovo
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Secure Laboratory
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---

@@ -31,7 +31,7 @@ Vendor:
 Lenovo
 
 Operating System:
-Windows Server 2025
+VMware ESXi 9
 
 Security Zone:
 Secure Laboratory
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.

@@ -166,7 +166,8 @@
       "related_indicator": "IOC-2026-5427",
       "finding": "Credential Misuse",
       "confidence": 85,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-02T10:31:27Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -176,7 +177,8 @@
       "related_indicator": "IOC-2026-2116",
       "finding": "Research Data Integrity Anomaly",
       "confidence": 93,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-02T10:31:27Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -186,7 +188,8 @@
       "related_indicator": "IOC-2026-1882",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 87,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-02T10:31:27Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -196,7 +199,8 @@
       "related_indicator": "IOC-2026-5176",
       "finding": "Research Workstation Compromise",
       "confidence": 92,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-02T10:31:27Z"
     },
     {
       "case_id": "BID-2026-7479",
@@ -206,15 +210,16 @@
       "related_indicator": "IOC-2026-7056",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 84,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-02T10:31:27Z"
     }
   ],
   "lifecycle_processing": {
-    "validated_count": 14,
+    "validated_count": 19,
     "total_correlation_count": 19,
-    "last_validation_batch_size": 7,
-    "last_validated_at": "2026-10-01T23:54:14Z",
+    "last_validation_batch_size": 5,
+    "last_validated_at": "2026-10-02T10:31:27Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-10-01T23:54:14Z"
+  "updated_at": "2026-10-02T10:31:27Z"
 }

@@ -26,23 +26,23 @@ ROUTINE
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
