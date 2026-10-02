@@ -26,15 +26,15 @@ ROUTINE
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Analysts identified abnormal authentication activity originating from restricted
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 

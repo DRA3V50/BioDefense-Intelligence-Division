@@ -19,7 +19,7 @@ Biocontainment System Tampering
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
 Medical Research Laboratory
@@ -31,7 +31,7 @@ Vendor:
 Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Secure Laboratory
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Isolated From Production
 
 Priority:
 ROUTINE
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.

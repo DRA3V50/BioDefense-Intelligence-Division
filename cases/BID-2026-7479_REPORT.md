@@ -138,15 +138,15 @@ ROUTINE
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Analysts identified abnormal authentication activity originating from restricted
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Current findings support maintaining the existing investigation priority.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,11 +287,11 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Device | Protected workstation entered evidence preservation mode |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Evidence | Acquired forensic image verified using SHA-256 |
 
 
@@ -449,7 +449,7 @@ Biocontainment System Tampering
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
 Medical Research Laboratory
@@ -461,7 +461,7 @@ Vendor:
 Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Secure Laboratory
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Isolated From Production
 
 Priority:
 ROUTINE
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.
 
 
 ---

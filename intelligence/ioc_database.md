@@ -15,11 +15,11 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Research Storage | Unauthorized access to protected genomic repository |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Device | Protected workstation entered evidence preservation mode |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Evidence | Acquired forensic image verified using SHA-256 |
 
 

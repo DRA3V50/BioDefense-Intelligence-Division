@@ -170,7 +170,20 @@
       "zone": "Secure Laboratory",
       "intensity": 70,
       "idempotency_key": "assessment-completed"
+    },
+    {
+      "event_id": "BID-2026-7479-EVT-0014",
+      "case_id": "BID-2026-7479",
+      "sequence": 14,
+      "timestamp": "2026-10-02T23:47:37Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to PROBLEM_REVIEW: matching C# threat assessment was explicitly completed.",
+      "severity": "LOW",
+      "source": "case_lifecycle",
+      "zone": "Secure Laboratory",
+      "intensity": 82,
+      "idempotency_key": "revision-14-WORKFLOW_STAGE_CHANGED"
     }
   ],
-  "updated_at": "2026-10-02T17:53:16Z"
+  "updated_at": "2026-10-02T23:47:37Z"
 }
