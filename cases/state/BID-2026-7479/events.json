@@ -157,7 +157,20 @@
       "zone": "Secure Laboratory",
       "intensity": 70,
       "idempotency_key": "revision-12-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-7479-EVT-0013",
+      "case_id": "BID-2026-7479",
+      "sequence": 13,
+      "timestamp": "2026-10-02T17:53:16Z",
+      "event_type": "ASSESSMENT_COMPLETED",
+      "message": "Assessment completion was explicitly recorded.",
+      "severity": "LOW",
+      "source": "case_lifecycle",
+      "zone": "Secure Laboratory",
+      "intensity": 70,
+      "idempotency_key": "assessment-completed"
     }
   ],
-  "updated_at": "2026-10-02T10:31:27Z"
+  "updated_at": "2026-10-02T17:53:16Z"
 }

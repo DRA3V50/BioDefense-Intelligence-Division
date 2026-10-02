@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Research Storage | Unauthorized access to protected genomic repository |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
