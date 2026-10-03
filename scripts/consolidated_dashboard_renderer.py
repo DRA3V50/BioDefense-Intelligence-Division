@@ -6357,7 +6357,18 @@ def write_review_outputs(
         or not qc["active_feed_graph_geometry_unchanged"]
         or not qc["active_feed_row_dividers_removed"]
     ):
-        raise RendererContractError("Active Case Feed live presentation did not survive GIF decoding.")
+        raise RendererContractError(
+            "Active Case Feed GIF QC failed: "
+            f"unique_states={qc['active_feed_live_unique_states']}, "
+            f"temporal_change={qc['active_feed_live_temporal_change']}, "
+            f"three_second_cycle={qc['active_feed_live_indicator_three_second_cycle']}, "
+            f"real_bar_glow={qc['active_feed_real_bar_glow_temporal_change']}, "
+            f"heights_unchanged={qc['active_feed_authoritative_heights_unchanged']}, "
+            f"fake_events={qc['active_feed_fake_events_created']}, "
+            f"newest_emphasis={qc['active_feed_newest_bar_emphasis']}, "
+            f"graph_geometry={qc['active_feed_graph_geometry_unchanged']}, "
+            f"row_dividers_removed={qc['active_feed_row_dividers_removed']}"
+)
     if not qc["active_feed_underlying_history_updates_between_repository_runs"] or qc["active_feed_renderer_appends_events"]:
         raise RendererContractError("Active Case Feed persistence contract was violated.")
     if (
