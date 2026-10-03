@@ -5571,10 +5571,13 @@ def workflow_motion_metrics(
         ) if len(values) > 1 else np.zeros(values[0].shape[0], dtype=bool)
         return len({sha256_array(value) for value in values}), int(np.count_nonzero(changed))
 
-    label_unique, label_change = temporal_mask_metrics_local(label_mask)
+        label_unique, label_change = temporal_mask_metrics_local(label_mask)
     body_unique, body_change = temporal_mask_metrics_local(current_body_mask)
-    arrow_unique, arrow_change = temporal_mask_metrics_local(masks["incoming_arrow"])
-        return {
+    arrow_unique, arrow_change = temporal_mask_metrics_local(
+        masks["incoming_arrow"]
+    )
+
+    return {
         "current_stage_unique_visual_states": arrow_unique,
         "current_stage_temporal_change": arrow_change,
         "integrated_vs_frozen_pixel_differences": outside_micro_polish,
