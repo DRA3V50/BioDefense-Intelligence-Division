@@ -1,19 +1,19 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-09-29
+## 2026-10-03
 
 ### Case Opened
-Case ID: BID-2026-7479
+Case ID: BID-2026-1222
 
 ### Classification
-Protected Research Systems Investigation
+Specimen Management Security Review
 
 ### Initial Assessment
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-RESOLVED
+Evidence Collection
 
 ### Severity
 LOW

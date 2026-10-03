@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biocontainment System Tampering
+Protected Research Data Exfiltration
 
 ---
 
 ## Primary Alias
-Ghost Genome
+Cerberus Group
 
 ---
 
 ## Attribution
-Unattributed
+Unknown
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-81%
+89%
 
 ---
 
 ## Observed Techniques
 - Unauthorized Physical Access
-- Command and Control
-- Privilege Escalation
 - Laboratory Control System Manipulation
-- Laboratory Data Manipulation
+- Concealed Internal Movement
+- Covert Remote Access Tooling
 - Insider Access Abuse
+- Supply Chain Compromise
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Protected Research Systems Investigation
+Specimen Management Security Review
 
 ---
 

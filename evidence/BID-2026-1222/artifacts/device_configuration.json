@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-1222",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-10-03T23:04:06Z",
+  "platform": "Evidence Processing Network",
+  "vendor": "Red Hat",
+  "device": "Medical Device Gateway",
+  "baseline_version": "3.7.0",
+  "zone": "Evidence Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

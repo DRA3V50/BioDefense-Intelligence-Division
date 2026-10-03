@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03 17:39 UTC",
+  "generatedAt": "2026-10-03 23:04 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -7,38 +7,38 @@
     "scoringModel": "Risk-Anchored Saturating Evidence Model"
   },
   "investigation": {
-    "caseId": "BID-2026-7479",
-    "caseRevision": 17,
+    "caseId": "BID-2026-1222",
+    "caseRevision": 2,
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
-    "classification": "Protected Research Systems Investigation",
-    "threatFamily": "Biocontainment System Tampering",
+    "classification": "Specimen Management Security Review",
+    "threatFamily": "Protected Research Data Exfiltration",
     "severity": "LOW",
     "priority": "ROUTINE",
-    "riskScore": 38,
-    "confidence": 81,
+    "riskScore": 29,
+    "confidence": 89,
     "containmentPhase": "Operational Recovery",
-    "affectedPlatform": "Medical Research Laboratory",
+    "affectedPlatform": "Evidence Processing Network",
     "affectedAssets": 9
   },
   "assessment": {
-    "overallScore": 31,
+    "overallScore": 29,
     "overallLevel": "GUARDED",
     "dimensions": {
       "threatActorIntent": {
-        "score": 22,
+        "score": 27,
         "level": "GUARDED"
       },
       "threatActorCapability": {
-        "score": 20,
+        "score": 25,
         "level": "GUARDED"
       },
       "biologicalTargetValue": {
-        "score": 22,
+        "score": 23,
         "level": "GUARDED"
       },
       "laboratoryAndSpecimenImpact": {
-        "score": 23,
+        "score": 24,
         "level": "GUARDED"
       },
       "publicHealthRisk": {
@@ -46,68 +46,72 @@
         "level": "GUARDED"
       },
       "cyberToPhysicalEscalation": {
-        "score": 22,
+        "score": 25,
         "level": "GUARDED"
       },
       "attributionConfidence": {
-        "score": 64,
+        "score": 75,
         "level": "MODERATE"
       },
       "containmentConfidence": {
-        "score": 80,
+        "score": 84,
         "level": "MODERATE"
       }
     }
   },
   "evidenceBasis": {
-    "evidenceRecords": 19,
-    "correlationRecords": 19,
-    "integrityVerifiedRecords": 19,
-    "pendingAnalystReview": 0,
+    "evidenceRecords": 47,
+    "correlationRecords": 47,
+    "integrityVerifiedRecords": 47,
+    "pendingAnalystReview": 47,
     "priorityFindings": [
       {
-        "finding": "Biosecurity Policy Violation",
-        "correlations": 5
-      },
-      {
-        "finding": "Containment Verification",
-        "correlations": 4
-      },
-      {
-        "finding": "Laboratory Information System Anomaly",
-        "correlations": 2
-      },
-      {
-        "finding": "Analyst Intelligence Assessment",
-        "correlations": 1
-      },
-      {
         "finding": "Command-and-Control Communication",
-        "correlations": 1
+        "correlations": 7
       },
       {
-        "finding": "Credential Misuse",
-        "correlations": 1
+        "finding": "Biosecurity Policy Violation",
+        "correlations": 6
       },
       {
         "finding": "Known Threat Actor Indicator",
-        "correlations": 1
+        "correlations": 6
+      },
+      {
+        "finding": "Laboratory Information System Anomaly",
+        "correlations": 5
       },
       {
         "finding": "Laboratory System Modification",
-        "correlations": 1
+        "correlations": 4
+      },
+      {
+        "finding": "Analyst Intelligence Assessment",
+        "correlations": 3
+      },
+      {
+        "finding": "Credential Misuse",
+        "correlations": 3
       },
       {
         "finding": "Research Data Integrity Anomaly",
-        "correlations": 1
+        "correlations": 3
       },
       {
-        "finding": "Research Workstation Compromise",
-        "correlations": 1
+        "finding": "Suspicious Network Activity",
+        "correlations": 3
       },
       {
         "finding": "Unauthorized Facility Access",
-        "correlations": 1
+        "correlations": 3
+      },
+      {
+        "finding": "Containment Verification",
+        "correlations": 2
+      },
+      {
+        "finding": "Research Workstation Compromise",
+        "correlations": 2
       }
     ]
   },

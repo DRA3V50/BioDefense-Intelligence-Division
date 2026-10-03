@@ -1,0 +1,25 @@
+{
+  "case_id": "BID-2026-1222",
+  "artifact_type": "Firewall Log",
+  "generated_at": "2026-10-03T23:04:06Z",
+  "source_device": "Medical Device Gateway",
+  "security_zone": "Evidence Network",
+  "events": [
+    {
+      "event_id": "FW-001",
+      "action": "Blocked",
+      "protocol": "HTTPS",
+      "source": "Simulated External Host",
+      "destination": "Medical Device Gateway",
+      "description": "Simulated unauthorized outbound connection attempt."
+    },
+    {
+      "event_id": "FW-002",
+      "action": "Allowed",
+      "protocol": "DNS",
+      "source": "Medical Device Gateway",
+      "destination": "Authorized DNS Service",
+      "description": "Routine name-resolution activity retained for analysis."
+    }
+  ]
+}

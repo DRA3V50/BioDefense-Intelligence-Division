@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-7479
+BID-2026-1222
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Specimen Management Security Review
 
 Threat Family:
-Biocontainment System Tampering
+Protected Research Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-RESOLVED
+Evidence Collection
 
 ---
 
 ## Protected Environment
 
 Platform:
-Medical Research Laboratory
+Evidence Processing Network
 
 Device:
-Research Database Server
+Medical Device Gateway
 
 Vendor:
-Lenovo
+Red Hat
 
 Security Zone:
-Secure Laboratory
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-143
+144
 
 Evidence Collected:
-19
+47
 
 Indicators Identified:
-7
+12
 
 Affected Assets:
 9
 
 Confidence:
-81%
+89%
 
 Risk Score:
-38
+29
 
 ---
 

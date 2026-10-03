@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-7479
+BID-2026-1222
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Specimen Management Security Review
 
 ---
 
 | Category | Observation |
 |----------|-------------|
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| System Log | Unexpected privilege escalation recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | PowerShell | Encoded administrative command execution detected |
+| Infrastructure | Firewall policy deviation identified |
 | Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -28,16 +28,16 @@ Protected Research Systems Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-19
+47
 
 Indicators Reviewed:
-7
+12
 
 Risk Score:
-38
+29
 
 Confidence:
-81%
+89%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-RESOLVED
+Evidence Collection

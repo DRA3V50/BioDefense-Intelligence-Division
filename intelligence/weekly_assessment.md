@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-7479
+Case ID: BID-2026-1222
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Protected Research Systems Investigation
+Classification: Specimen Management Security Review
 
-Threat Family: Biocontainment System Tampering
+Threat Family: Protected Research Data Exfiltration
 
-Current Status: RESOLVED
+Current Status: Evidence Collection
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -30,19 +30,19 @@ Priority:
 ROUTINE
 
 Risk Score:
-38
+29
 
 Confidence:
-81%
+89%
 
 Affected Assets:
 9
 
 Evidence Collected:
-19
+47
 
 Indicators Recorded:
-7
+12
 
 ---
 
@@ -60,4 +60,4 @@ Analyst Team Delta
 
 Date:
 
-2026-09-29
+2026-10-03

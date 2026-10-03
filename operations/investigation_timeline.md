@@ -2,21 +2,21 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-7479
+**Case ID:** BID-2026-1222
 
-**Generated:** 2026-10-03 17:39 UTC
+**Generated:** 2026-10-03 23:04 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-10-03 11:39 UTC | Initial Detection | Potential activity associated with Biocontainment System Tampering was detected. |
-| 2026-10-03 12:39 UTC | Case Opened | Investigation BID-2026-7479 was opened and assigned to Analyst Team Delta. |
-| 2026-10-03 13:39 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
-| 2026-10-03 14:39 UTC | Evidence Collection | 19 evidence items and 7 indicators were associated with the active investigation. |
-| 2026-10-03 15:39 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-10-03 16:39 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
-| 2026-10-03 17:39 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-10-03 17:04 UTC | Initial Detection | Potential activity associated with Protected Research Data Exfiltration was detected. |
+| 2026-10-03 18:04 UTC | Case Opened | Investigation BID-2026-1222 was opened and assigned to Analyst Team Delta. |
+| 2026-10-03 19:04 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
+| 2026-10-03 20:04 UTC | Evidence Collection | 47 evidence items and 12 indicators were associated with the active investigation. |
+| 2026-10-03 21:04 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-10-03 22:04 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-10-03 23:04 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
@@ -26,7 +26,7 @@
 
 **Priority:** ROUTINE
 
-**Confidence:** 81%
+**Confidence:** 89%
 
 **Campaign Phase:** Operational Recovery
 

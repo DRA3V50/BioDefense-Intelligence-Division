@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-7479 |
+| Case ID | BID-2026-1222 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Protected Research Systems Investigation |
-| Threat Family | Biocontainment System Tampering |
+| Classification | Specimen Management Security Review |
+| Threat Family | Protected Research Data Exfiltration |
 | Severity | LOW |
-| Status | RESOLVED |
+| Status | Evidence Collection |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Medical Research Laboratory |
-| Device | Research Database Server |
-| Vendor | Lenovo |
-| Security Zone | Secure Laboratory |
+| Platform | Evidence Processing Network |
+| Device | Medical Device Gateway |
+| Vendor | Red Hat |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,10 +28,10 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 38 |
-| Confidence | 81% |
-| Evidence Collected | 19 |
-| Indicators Identified | 7 |
+| Risk Score | 29 |
+| Confidence | 89% |
+| Evidence Collected | 47 |
+| Indicators Identified | 12 |
 | Affected Assets | 9 |
 
 ---
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**RESOLVED**
+**Evidence Collection**
 
 Priority:
 

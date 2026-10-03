@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-10-03 17:39 UTC
+**Generated:** 2026-10-03 23:04 UTC
 
 ---
 
@@ -18,15 +18,15 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-7479
+**Case ID:** BID-2026-1222
 
-**Classification:** Protected Research Systems Investigation
+**Classification:** Specimen Management Security Review
 
 **Severity:** LOW
 
-**Threat Family:** Biocontainment System Tampering
+**Threat Family:** Protected Research Data Exfiltration
 
-**Confidence:** 81%
+**Confidence:** 89%
 
 ---
 
@@ -38,9 +38,9 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 
 ## Evidence Summary
 
-Evidence Collected: **19**
+Evidence Collected: **47**
 
-Indicators: **7**
+Indicators: **12**
 
 Priority: **ROUTINE**
 
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**141**
+**142**
 
 Confirmed Intrusions:
 **20**
 
 Total Evidence:
-**99922**
+**99969**
 
 Total Indicators:
-**64507**
+**64519**
 
 ---
 
 ## Operational Highlights
 
-- 19 evidence items are associated with the active investigation.
-- 7 indicators are currently linked to the case.
+- 47 evidence items are associated with the active investigation.
+- 12 indicators are currently linked to the case.
 - Containment remains at **HIGH**.
-- Analyst confidence is **81%**.
+- Analyst confidence is **89%**.
 - Current investigation priority is **ROUTINE**.
 
 ---

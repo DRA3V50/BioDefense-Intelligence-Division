@@ -1,18 +1,18 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-10-03 17:39 UTC
+**Generated:** 2026-10-03 23:04 UTC
 
-**Case ID:** BID-2026-7479
+**Case ID:** BID-2026-1222
 
-**Classification:** Protected Research Systems Investigation
+**Classification:** Specimen Management Security Review
 
-**Threat Family:** Biocontainment System Tampering
+**Threat Family:** Protected Research Data Exfiltration
 
 **Severity:** LOW
 
 **Priority:** ROUTINE
 
-**Case Confidence:** 81%
+**Case Confidence:** 89%
 
 ---
 
@@ -26,99 +26,28 @@ evidence correlations, and the active case assessment.
 
 ## Evidence Chain Summary
 
-- **Evidence records reviewed:** 19
-- **Correlation records reviewed:** 19
-- **Investigative findings:** 11
+- **Evidence records reviewed:** 47
+- **Correlation records reviewed:** 47
+- **Investigative findings:** 12
 
 ---
 
-## Finding 1: Containment Verification
+## Finding 1: Laboratory Information System Anomaly
 
-**Confidence:** 93
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0001** — Containment Validation Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0002** — Containment Validation Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0004** — Containment Validation Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0005** — Containment Validation Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Containment Verification** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 2: Known Threat Actor Indicator
-
-**Confidence:** 85
+**Confidence:** 94
 
 ### Supporting Evidence
 
-- **BID-2026-7479-EV-0003** — Threat Intelligence Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Known Threat Actor Indicator** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 3: Biosecurity Policy Violation
-
-**Confidence:** 85
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0006** — Biosecurity Audit Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0007** — Biosecurity Audit Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0009** — Biosecurity Audit Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0010** — Biosecurity Audit Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0014** — Biosecurity Audit Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Biosecurity Policy Violation** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 4: Laboratory Information System Anomaly
-
-**Confidence:** 89
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0008** — Laboratory Information System Audit Log  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-- **BID-2026-7479-EV-0017** — Laboratory Information System Audit Log  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
+- **BID-2026-1222-EV-0001** — Laboratory Information System Audit Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0007** — Laboratory Information System Audit Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0008** — Laboratory Information System Audit Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0009** — Laboratory Information System Audit Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0023** — Laboratory Information System Audit Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -127,124 +56,52 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Laboratory Information System Anomaly** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 5: Unauthorized Facility Access
+## Finding 2: Biosecurity Policy Violation
+
+**Confidence:** 87
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0002** — Biosecurity Audit Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0005** — Biosecurity Audit Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0010** — Biosecurity Audit Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0012** — Biosecurity Audit Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0044** — Biosecurity Audit Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0046** — Biosecurity Audit Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Biosecurity Policy Violation** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 3: Research Workstation Compromise
 
 **Confidence:** 98
 
 ### Supporting Evidence
 
-- **BID-2026-7479-EV-0011** — Access Control Log  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Unauthorized Facility Access** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 6: Command-and-Control Communication
-
-**Confidence:** 92
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0012** — Network Connection Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Command-and-Control Communication** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 7: Laboratory System Modification
-
-**Confidence:** 91
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0013** — Laboratory System Configuration  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Laboratory System Modification** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 8: Credential Misuse
-
-**Confidence:** 85
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0015** — Authentication Log  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Credential Misuse** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 9: Research Data Integrity Anomaly
-
-**Confidence:** 93
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0016** — Research Data Integrity Record  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
-
-### Investigative Reasoning
-
-The finding was generated from available evidence correlation records. Additional analyst review is required.
-
-### Analyst Assessment
-
-The listed evidence supports further review of **Research Data Integrity Anomaly** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
-chain-of-custody records should be verified before final attribution.
-
----
-
-## Finding 10: Research Workstation Compromise
-
-**Confidence:** 92
-
-### Supporting Evidence
-
-- **BID-2026-7479-EV-0018** — Research Workstation Event Log  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
+- **BID-2026-1222-EV-0003** — Research Workstation Event Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0017** — Research Workstation Event Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -253,19 +110,237 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Research Workstation Compromise** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
 
-## Finding 11: Analyst Intelligence Assessment
+## Finding 4: Suspicious Network Activity
 
-**Confidence:** 84
+**Confidence:** 81
 
 ### Supporting Evidence
 
-- **BID-2026-7479-EV-0019** — Analyst Observation  
-  Source: **Research Database Server** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
+- **BID-2026-1222-EV-0004** — Firewall Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0006** — Firewall Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0024** — Firewall Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Suspicious Network Activity** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 5: Known Threat Actor Indicator
+
+**Confidence:** 92
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0011** — Threat Intelligence Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0018** — Threat Intelligence Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0025** — Threat Intelligence Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0029** — Threat Intelligence Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0036** — Threat Intelligence Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0041** — Threat Intelligence Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Known Threat Actor Indicator** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 6: Research Data Integrity Anomaly
+
+**Confidence:** 80
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0013** — Research Data Integrity Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0039** — Research Data Integrity Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0045** — Research Data Integrity Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Research Data Integrity Anomaly** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 7: Laboratory System Modification
+
+**Confidence:** 96
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0014** — Laboratory System Configuration  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0028** — Laboratory System Configuration  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0032** — Laboratory System Configuration  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0038** — Laboratory System Configuration  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Laboratory System Modification** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 8: Command-and-Control Communication
+
+**Confidence:** 99
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0015** — Network Connection Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0020** — Network Connection Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0022** — Network Connection Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0026** — Network Connection Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0027** — Network Connection Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0033** — Network Connection Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0042** — Network Connection Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Command-and-Control Communication** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 9: Unauthorized Facility Access
+
+**Confidence:** 99
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0016** — Access Control Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0034** — Access Control Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0043** — Access Control Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Unauthorized Facility Access** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 10: Containment Verification
+
+**Confidence:** 83
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0019** — Containment Validation Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0040** — Containment Validation Record  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Containment Verification** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 11: Credential Misuse
+
+**Confidence:** 95
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0021** — Authentication Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0031** — Authentication Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0037** — Authentication Log  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+
+### Investigative Reasoning
+
+The finding was generated from available evidence correlation records. Additional analyst review is required.
+
+### Analyst Assessment
+
+The listed evidence supports further review of **Credential Misuse** within
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
+chain-of-custody records should be verified before final attribution.
+
+---
+
+## Finding 12: Analyst Intelligence Assessment
+
+**Confidence:** 98
+
+### Supporting Evidence
+
+- **BID-2026-1222-EV-0030** — Analyst Observation  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0035** — Analyst Observation  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+- **BID-2026-1222-EV-0047** — Analyst Observation  
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
 ### Investigative Reasoning
 
@@ -274,7 +349,7 @@ The finding was generated from available evidence correlation records. Additiona
 ### Analyst Assessment
 
 The listed evidence supports further review of **Analyst Intelligence Assessment** within
-investigation **BID-2026-7479**. Evidence integrity, source reliability, and
+investigation **BID-2026-1222**. Evidence integrity, source reliability, and
 chain-of-custody records should be verified before final attribution.
 
 ---
