@@ -31,7 +31,7 @@ from consolidated_dashboard_renderer import (
 )
 
 
-FROZEN_V2_SHA256 = "91c9ba4d1df2dd3dc0a744d44e752515050b776057ca604cbda17e6a082ec4df"
+FROZEN_V2_SHA256 = "9e5afd22d22d5cda9f46295ba317e308d01d5e05632b00008e7db5db471c358e"
 # Explicit semantic summaries for the approved 205px center-metadata lanes.
 # They are display-only aliases: the complete persisted values remain
 # authoritative and are never rewritten by this wrapper.
