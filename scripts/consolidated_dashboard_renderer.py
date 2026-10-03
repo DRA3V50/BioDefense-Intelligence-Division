@@ -5179,6 +5179,7 @@ def active_feed_live_metrics(context: RenderContext, decoded: Sequence[np.ndarra
         ),
         len(context.s04_bars),
     )
+    real_bar_mask = np.zeros((CANVAS_SIZE[1], CANVAS_SIZE[0]), dtype=bool)
     per_real_metrics: list[dict[str, int]] = []
     per_real_energy: list[float] = []
 
@@ -5571,7 +5572,7 @@ def workflow_motion_metrics(
         ) if len(values) > 1 else np.zeros(values[0].shape[0], dtype=bool)
         return len({sha256_array(value) for value in values}), int(np.count_nonzero(changed))
 
-        label_unique, label_change = temporal_mask_metrics_local(label_mask)
+    label_unique, label_change = temporal_mask_metrics_local(label_mask)
     body_unique, body_change = temporal_mask_metrics_local(current_body_mask)
     arrow_unique, arrow_change = temporal_mask_metrics_local(
         masks["incoming_arrow"]
@@ -6389,7 +6390,7 @@ def write_review_outputs(
             f"newest_emphasis={qc['active_feed_newest_bar_emphasis']}, "
             f"graph_geometry={qc['active_feed_graph_geometry_unchanged']}, "
             f"row_dividers_removed={qc['active_feed_row_dividers_removed']}"
-)
+        )
     if not qc["active_feed_underlying_history_updates_between_repository_runs"] or qc["active_feed_renderer_appends_events"]:
         raise RendererContractError("Active Case Feed persistence contract was violated.")
     if (
