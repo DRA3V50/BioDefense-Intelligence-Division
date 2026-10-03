@@ -5574,8 +5574,7 @@ def workflow_motion_metrics(
     label_unique, label_change = temporal_mask_metrics_local(label_mask)
     body_unique, body_change = temporal_mask_metrics_local(current_body_mask)
     arrow_unique, arrow_change = temporal_mask_metrics_local(masks["incoming_arrow"])
-    return {
-        # Retained report fields now describe the arrow-only V6 emphasis.
+        return {
         "current_stage_unique_visual_states": arrow_unique,
         "current_stage_temporal_change": arrow_change,
         "integrated_vs_frozen_pixel_differences": outside_micro_polish,
