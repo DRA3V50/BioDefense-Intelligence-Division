@@ -183,7 +183,46 @@
       "zone": "Secure Laboratory",
       "intensity": 82,
       "idempotency_key": "revision-14-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-7479-EVT-0015",
+      "case_id": "BID-2026-7479",
+      "sequence": 15,
+      "timestamp": "2026-10-03T17:39:27Z",
+      "event_type": "PROBLEM_REVIEW_OUTCOME_RECORDED",
+      "message": "Problem review disposition: RESOLVED; canonical_score=31; severity=LOW; policy=terminal-disposition-v1",
+      "severity": "LOW",
+      "source": "case_lifecycle",
+      "zone": "Secure Laboratory",
+      "intensity": 18,
+      "idempotency_key": "terminal-disposition-v1-RESOLVED-31-LOW"
+    },
+    {
+      "event_id": "BID-2026-7479-EVT-0016",
+      "case_id": "BID-2026-7479",
+      "sequence": 16,
+      "timestamp": "2026-10-03T17:39:27Z",
+      "event_type": "CASE_TERMINAL",
+      "message": "Problem review recorded terminal outcome RESOLVED: explicit problem-review outcome is terminal.",
+      "severity": "LOW",
+      "source": "case_lifecycle",
+      "zone": "Secure Laboratory",
+      "intensity": 18,
+      "idempotency_key": "revision-16-CASE_TERMINAL"
+    },
+    {
+      "event_id": "BID-2026-7479-EVT-0017",
+      "case_id": "BID-2026-7479",
+      "sequence": 17,
+      "timestamp": "2026-10-03T17:39:28Z",
+      "event_type": "CASE_ARCHIVED",
+      "message": "Terminal case archive completed and active slot is eligible.",
+      "severity": "LOW",
+      "source": "case_lifecycle",
+      "zone": "Secure Laboratory",
+      "intensity": 18,
+      "idempotency_key": "case-archived"
     }
   ],
-  "updated_at": "2026-10-02T23:47:37Z"
+  "updated_at": "2026-10-03T17:39:28Z"
 }

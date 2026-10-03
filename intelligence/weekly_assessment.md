@@ -10,7 +10,7 @@ Classification: Protected Research Systems Investigation
 
 Threat Family: Biocontainment System Tampering
 
-Current Status: Intelligence Analysis
+Current Status: RESOLVED
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Current evidence supports continued investigative activity.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 

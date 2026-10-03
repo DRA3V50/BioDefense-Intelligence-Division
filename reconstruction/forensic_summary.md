@@ -9,7 +9,7 @@
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Biocontainment System Tampering |
 | Severity | LOW |
-| Status | Intelligence Analysis |
+| Status | RESOLVED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**RESOLVED**
 
 Priority:
 

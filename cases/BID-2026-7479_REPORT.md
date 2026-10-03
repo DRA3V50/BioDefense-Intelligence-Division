@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+RESOLVED
 
 ---
 
@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
@@ -186,7 +186,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+RESOLVED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Protected Research Systems Investigation
 
 Threat Family: Biocontainment System Tampering
 
-Current Status: Intelligence Analysis
+Current Status: RESOLVED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Current evidence supports continued investigative activity.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -288,11 +288,11 @@ Protected Research Systems Investigation
 | Category | Observation |
 |----------|-------------|
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -319,7 +319,7 @@ Analyst Team Delta
 
 Current Status:
 
-Intelligence Analysis
+RESOLVED
 
 
 ---
@@ -337,7 +337,7 @@ Intelligence Analysis
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Biocontainment System Tampering |
 | Severity | LOW |
-| Status | Intelligence Analysis |
+| Status | RESOLVED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**RESOLVED**
 
 Priority:
 
@@ -461,7 +461,7 @@ Vendor:
 Lenovo
 
 Operating System:
-VMware ESXi 9
+Hardened Research Appliance OS
 
 Security Zone:
 Secure Laboratory
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
 ROUTINE
@@ -518,7 +518,7 @@ Protected Research Systems Investigation
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Intelligence Analysis
+RESOLVED
 
 ### Severity
 LOW
