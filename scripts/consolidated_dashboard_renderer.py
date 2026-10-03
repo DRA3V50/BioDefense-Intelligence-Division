@@ -5179,23 +5179,42 @@ def active_feed_live_metrics(context: RenderContext, decoded: Sequence[np.ndarra
         ),
         len(context.s04_bars),
     )
-    real_bar_mask = np.zeros((CANVAS_SIZE[1], CANVAS_SIZE[0]), dtype=bool)
     per_real_metrics: list[dict[str, int]] = []
-    for slot in range(len(context.s04_bars) - persisted_count, len(context.s04_bars)):
-        x1, x2 = context.s04_bars[slot]
-        local = np.zeros_like(real_bar_mask)
-        local[graph_y1:graph_y2, max(graph_x1, x1 - 2):min(graph_x2, x2 + 3)] = True
-        real_bar_mask |= local
-        per_real_metrics.append(temporal_mask_metrics(decoded, local))
-    real_bars = temporal_mask_metrics(decoded, real_bar_mask)
-    newest_emphasis = bool(
-        per_real_metrics
-        and per_real_metrics[-1]["temporal_change"] > 0
-        and (
-            len(per_real_metrics) == 1
-            or per_real_metrics[-1]["temporal_change"] >= per_real_metrics[0]["temporal_change"]
-        )
+per_real_energy: list[float] = []
+
+for slot in range(len(context.s04_bars) - persisted_count, len(context.s04_bars)):
+    x1, x2 = context.s04_bars[slot]
+    local = np.zeros_like(real_bar_mask)
+    local[graph_y1:graph_y2, max(graph_x1, x1 - 2):min(graph_x2, x2 + 3)] = True
+    real_bar_mask |= local
+
+    metrics = temporal_mask_metrics(decoded, local)
+    per_real_metrics.append(metrics)
+
+    samples = [frame[local].astype(np.int16) for frame in decoded]
+    baseline = samples[0]
+    deltas = np.abs(
+        np.stack(samples[1:], axis=0) - baseline
     )
+    changed_pixels = np.any(deltas != 0, axis=(0, 2))
+
+    if np.any(changed_pixels):
+        per_real_energy.append(
+            float(np.mean(deltas[:, changed_pixels]))
+        )
+    else:
+        per_real_energy.append(0.0)
+
+real_bars = temporal_mask_metrics(decoded, real_bar_mask)
+
+newest_emphasis = bool(
+    per_real_energy
+    and per_real_energy[-1] > 0.0
+    and (
+        len(per_real_energy) == 1
+        or per_real_energy[-1] >= per_real_energy[0]
+    )
+)
     return {
         "live_indicator_unique_states": live["unique_states"],
         "live_indicator_temporal_change": live["temporal_change"],
