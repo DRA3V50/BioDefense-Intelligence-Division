@@ -15,12 +15,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Infrastructure | Firewall policy deviation identified |
-| Device | Protected workstation entered evidence preservation mode |
+| PowerShell | Encoded administrative command execution detected |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
