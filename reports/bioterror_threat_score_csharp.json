@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04 16:52 UTC",
+  "generatedAt": "2026-10-04 23:10 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -8,7 +8,7 @@
   },
   "investigation": {
     "caseId": "BID-2026-1222",
-    "caseRevision": 4,
+    "caseRevision": 5,
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
     "classification": "Specimen Management Security Review",
@@ -63,7 +63,7 @@
     "evidenceRecords": 47,
     "correlationRecords": 47,
     "integrityVerifiedRecords": 47,
-    "pendingAnalystReview": 31,
+    "pendingAnalystReview": 23,
     "priorityFindings": [
       {
         "finding": "Command-and-Control Communication",
