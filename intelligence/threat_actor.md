@@ -58,4 +58,4 @@ Specimen Management Security Review
 ---
 
 ## Last Updated
-2026-10-03
+2026-10-04
