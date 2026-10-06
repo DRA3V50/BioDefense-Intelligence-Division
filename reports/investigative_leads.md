@@ -2,7 +2,7 @@
 
 ## Investigative Leads and Intelligence Gaps
 
-**Generated:** 2026-10-06 11:18 UTC
+**Generated:** 2026-10-06 18:22 UTC
 
 ---
 
@@ -244,7 +244,6 @@ A trusted employee, contractor, partner, or compromised authorized account may h
 - The investigation has not confirmed whether physical specimens or laboratory processes were affected.
 - The threat actor's final objective—espionage, sabotage, disruption, or attack preparation—remains under assessment.
 - Public-health consequences cannot be determined without validated biological-impact evidence.
-- 7 evidence records remain pending analyst review.
 
 ---
 

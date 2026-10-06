@@ -698,7 +698,8 @@
       "integrity_status": "Verified",
       "sha256": "dfc4646b87b9cf81915a0f09b701b5bf8204dc57bbb9f6714e70aad1ed2a6111",
       "classification": "Specimen Management Security Review",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-06T18:22:20Z"
     },
     {
       "evidence_id": "BID-2026-1222-EV-0042",
@@ -714,7 +715,8 @@
       "integrity_status": "Verified",
       "sha256": "dde50a83186b3a1e32acdbe156261a5471bddb0c8823ba58e170c30a2a38a17f",
       "classification": "Specimen Management Security Review",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-06T18:22:20Z"
     },
     {
       "evidence_id": "BID-2026-1222-EV-0043",
@@ -730,7 +732,8 @@
       "integrity_status": "Verified",
       "sha256": "ffb2d22ed7368f05782a3dcc52c5d218e0fa144ea2d3e93c21b2b522f615915d",
       "classification": "Specimen Management Security Review",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-06T18:22:20Z"
     },
     {
       "evidence_id": "BID-2026-1222-EV-0044",
@@ -746,7 +749,8 @@
       "integrity_status": "Verified",
       "sha256": "da2c303cbe4ac3201a710c025cd268c338a62caf09ccce0aa844a4a1cfb2e732",
       "classification": "Specimen Management Security Review",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-06T18:22:20Z"
     },
     {
       "evidence_id": "BID-2026-1222-EV-0045",
@@ -762,7 +766,8 @@
       "integrity_status": "Verified",
       "sha256": "aa65d96eca206959d8b071ca6fe212bdfd1f563703a2927c36ce175e16046b8c",
       "classification": "Specimen Management Security Review",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-06T18:22:20Z"
     },
     {
       "evidence_id": "BID-2026-1222-EV-0046",
@@ -778,7 +783,8 @@
       "integrity_status": "Verified",
       "sha256": "187cb99ad1c2cf1849973f86a73936fdd66e7d0717d087cf5be20478e789c829",
       "classification": "Specimen Management Security Review",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-06T18:22:20Z"
     },
     {
       "evidence_id": "BID-2026-1222-EV-0047",
@@ -794,15 +800,16 @@
       "integrity_status": "Verified",
       "sha256": "392f27baf63dd9c281d5e8252c05ef7a5691ba3ebb117db63b27e51a232a7090",
       "classification": "Specimen Management Security Review",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-06T18:22:20Z"
     }
   ],
   "lifecycle_processing": {
-    "reviewed_count": 40,
+    "reviewed_count": 47,
     "total_evidence_count": 47,
-    "last_review_batch_size": 8,
-    "last_reviewed_at": "2026-10-06T11:18:12Z",
+    "last_review_batch_size": 7,
+    "last_reviewed_at": "2026-10-06T18:22:20Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-10-06T11:18:12Z"
+  "updated_at": "2026-10-06T18:22:20Z"
 }
