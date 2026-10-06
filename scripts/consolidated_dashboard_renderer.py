@@ -5213,7 +5213,7 @@ def active_feed_live_metrics(context: RenderContext, decoded: Sequence[np.ndarra
         and per_real_energy[-1] > 0.0
         and (
             len(per_real_energy) == 1
-            or per_real_energy[-1] >= per_real_energy[0]
+            or per_real_energy[-1] >= 0.95 * float(np.median(per_real_energy[:-1]))
         )
     )
     return {
