@@ -15,12 +15,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
 | System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Security | Multi-factor authentication bypass attempt recorded |
+| PowerShell | Encoded administrative command execution detected |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---

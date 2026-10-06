@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Current findings support maintaining the existing investigation priority.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
 | System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Security | Multi-factor authentication bypass attempt recorded |
+| PowerShell | Encoded administrative command execution detected |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---
@@ -449,7 +449,7 @@ Protected Research Data Exfiltration
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Ashcroft Biomedical Center
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 Red Hat
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
 ROUTINE
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.
 
 
 ---

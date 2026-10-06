@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-10-04 23:10 UTC
+**Generated:** 2026-10-06 01:19 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Specimen Management Security Review concerns suspected Protected Rese
 
 **Integrity-Verified Records:** 47
 
-**Pending Analyst Review:** 23
+**Pending Analyst Review:** 15
 
 ### Priority Findings
 
