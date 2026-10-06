@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-10-06 01:19 UTC
+**Generated:** 2026-10-06 11:18 UTC
 
 **Case ID:** BID-2026-1222
 
@@ -155,7 +155,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0029** — Threat Intelligence Record  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0036** — Threat Intelligence Record  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0041** — Threat Intelligence Record  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -180,7 +180,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0013** — Research Data Integrity Record  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0039** — Research Data Integrity Record  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0045** — Research Data Integrity Record  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -209,7 +209,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0032** — Laboratory System Configuration  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0038** — Laboratory System Configuration  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -240,7 +240,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0027** — Network Connection Record  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0033** — Network Connection Record  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0042** — Network Connection Record  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -265,7 +265,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0016** — Access Control Log  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0034** — Access Control Log  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0043** — Access Control Log  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -290,7 +290,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0019** — Containment Validation Record  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0040** — Containment Validation Record  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -315,7 +315,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0031** — Authentication Log  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0037** — Authentication Log  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -338,7 +338,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-1222-EV-0030** — Analyst Observation  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0035** — Analyst Observation  
-  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-1222-EV-0047** — Analyst Observation  
   Source: **Medical Device Gateway** | Vendor: **Red Hat** | Integrity: **Verified** | Review: **Pending Analyst Review**
 

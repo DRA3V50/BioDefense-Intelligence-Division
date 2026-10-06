@@ -79,7 +79,20 @@
       "zone": "Evidence Network",
       "intensity": 45,
       "idempotency_key": "evidence-review-32-of-47"
+    },
+    {
+      "event_id": "BID-2026-1222-EVT-0007",
+      "case_id": "BID-2026-1222",
+      "sequence": 7,
+      "timestamp": "2026-10-06T11:18:12Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 40/47 reviewed",
+      "severity": "LOW",
+      "source": "process_active_case_stage",
+      "zone": "Evidence Network",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-40-of-47"
     }
   ],
-  "updated_at": "2026-10-06T01:19:50Z"
+  "updated_at": "2026-10-06T11:18:12Z"
 }
