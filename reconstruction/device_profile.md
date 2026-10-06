@@ -19,7 +19,7 @@ Protected Research Data Exfiltration
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
 Evidence Processing Network
@@ -31,7 +31,7 @@ Vendor:
 Red Hat
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
 ROUTINE

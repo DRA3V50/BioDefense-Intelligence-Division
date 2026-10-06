@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Additional forensic examination is required to determine the full operational scope.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
@@ -287,12 +287,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
 | System Log | Unexpected privilege escalation recorded |
-| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -449,7 +449,7 @@ Protected Research Data Exfiltration
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 Red Hat
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
 ROUTINE

@@ -15,12 +15,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
 | System Log | Unexpected privilege escalation recorded |
-| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---

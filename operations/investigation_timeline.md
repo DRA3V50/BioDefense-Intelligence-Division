@@ -4,19 +4,19 @@
 
 **Case ID:** BID-2026-1222
 
-**Generated:** 2026-10-06 18:22 UTC
+**Generated:** 2026-10-06 23:55 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-10-06 12:22 UTC | Initial Detection | Potential activity associated with Protected Research Data Exfiltration was detected. |
-| 2026-10-06 13:22 UTC | Case Opened | Investigation BID-2026-1222 was opened and assigned to Analyst Team Delta. |
-| 2026-10-06 14:22 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
-| 2026-10-06 15:22 UTC | Evidence Collection | 47 evidence items and 12 indicators were associated with the active investigation. |
-| 2026-10-06 16:22 UTC | Containment Assessment | Containment was assessed at HIGH. |
-| 2026-10-06 17:22 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
-| 2026-10-06 18:22 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-10-06 17:55 UTC | Initial Detection | Potential activity associated with Protected Research Data Exfiltration was detected. |
+| 2026-10-06 18:55 UTC | Case Opened | Investigation BID-2026-1222 was opened and assigned to Analyst Team Delta. |
+| 2026-10-06 19:55 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
+| 2026-10-06 20:55 UTC | Evidence Collection | 47 evidence items and 12 indicators were associated with the active investigation. |
+| 2026-10-06 21:55 UTC | Containment Assessment | Containment was assessed at HIGH. |
+| 2026-10-06 22:55 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-10-06 23:55 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
