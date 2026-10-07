@@ -15,12 +15,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Research Storage | Unauthorized access to protected genomic repository |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---

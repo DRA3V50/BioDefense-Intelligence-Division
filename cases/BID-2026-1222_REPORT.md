@@ -138,23 +138,23 @@ ROUTINE
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+No confirmed attribution has been established during the current investigation.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| System Log | Unexpected privilege escalation recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Research Storage | Unauthorized access to protected genomic repository |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
@@ -449,7 +449,7 @@ Protected Research Data Exfiltration
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 Red Hat
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 ROUTINE
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---
