@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-10-08 11:27 UTC
+**Generated:** 2026-10-08 18:56 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 
 **Case ID:** BID-2026-1222
 
-**Case Status:** Evidence Collection
+**Case Status:** RESOLVED
 
 **Priority:** ROUTINE
 

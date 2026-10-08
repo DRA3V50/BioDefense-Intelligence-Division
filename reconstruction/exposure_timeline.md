@@ -13,7 +13,7 @@ Specimen Management Security Review
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Evidence Collection
+RESOLVED
 
 ### Severity
 LOW

@@ -9,7 +9,7 @@
 | Classification | Specimen Management Security Review |
 | Threat Family | Protected Research Data Exfiltration |
 | Severity | LOW |
-| Status | Evidence Collection |
+| Status | RESOLVED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**RESOLVED**
 
 Priority:
 
