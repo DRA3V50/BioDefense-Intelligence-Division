@@ -15,12 +15,12 @@ Specimen Management Security Review
 
 | Category | Observation |
 |----------|-------------|
-| Device | Protected workstation entered evidence preservation mode |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
+| PowerShell | Encoded administrative command execution detected |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| System Log | Unexpected privilege escalation recorded |
+| Device | Protected workstation entered evidence preservation mode |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
