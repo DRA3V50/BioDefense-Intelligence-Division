@@ -26,7 +26,7 @@ ROUTINE
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
@@ -38,11 +38,11 @@ Evidence indicates possible insider-assisted access to protected laboratory reso
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
