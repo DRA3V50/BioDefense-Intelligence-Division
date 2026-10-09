@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 5
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Evidence correlation remains in progress across collected artifacts.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -449,7 +449,7 @@ Evidence Repository Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Federal Biosecurity Laboratory
 
 Platform:
 Clinical Research Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-VMware ESXi 9
+Hardened Research Appliance OS
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Active Investigation
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+System isolated pending malware reverse engineering.
 
 
 ---

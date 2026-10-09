@@ -15,12 +15,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---

@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 5
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
