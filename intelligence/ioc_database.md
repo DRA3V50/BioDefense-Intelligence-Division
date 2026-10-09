@@ -15,12 +15,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Identity | Credential reuse detected across isolated research segments |
+| Infrastructure | Firewall policy deviation identified |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
-| Identity | Credential reuse detected across isolated research segments |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
