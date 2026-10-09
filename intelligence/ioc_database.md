@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1222
+BID-2026-2862
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Supply Chain Security Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Device | Protected workstation entered evidence preservation mode |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
 | Database | Protected biomedical dataset queried outside normal operating hours |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -28,16 +28,16 @@ Specimen Management Security Review
 ## Investigation Statistics
 
 Evidence Collected:
-47
+180
 
 Indicators Reviewed:
-12
+52
 
 Risk Score:
-29
+71
 
 Confidence:
-89%
+91%
 
 ---
 
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-RESOLVED
+Monitoring

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-1222 |
+| Case ID | BID-2026-2862 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Specimen Management Security Review |
-| Threat Family | Protected Research Data Exfiltration |
-| Severity | LOW |
-| Status | RESOLVED |
+| Classification | Supply Chain Security Investigation |
+| Threat Family | Evidence Repository Manipulation |
+| Severity | HIGH |
+| Status | Monitoring |
 | Phase | Operational Recovery |
 
 ---
@@ -18,9 +18,9 @@
 
 | Field | Value |
 |------|------|
-| Platform | Evidence Processing Network |
-| Device | Medical Device Gateway |
-| Vendor | Red Hat |
+| Platform | Clinical Research Environment |
+| Device | Access Control Server |
+| Vendor | Palo Alto Networks |
 | Network Zone | Evidence Network |
 
 ---
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 29 |
-| Confidence | 89% |
-| Evidence | 47 |
-| Indicators | 12 |
-| Affected Assets | 9 |
+| Risk Score | 71 |
+| Confidence | 91% |
+| Evidence | 180 |
+| Indicators | 52 |
+| Affected Assets | 40 |
 
 ---
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.

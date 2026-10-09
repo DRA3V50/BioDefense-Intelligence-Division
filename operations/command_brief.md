@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-10-08 18:52 UTC
+**Generated:** 2026-10-09 00:23 UTC
 
 ---
 
@@ -12,37 +12,37 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-1222
+**Case ID:** BID-2026-2862
 
-**Classification:** Specimen Management Security Review
+**Classification:** Supply Chain Security Investigation
 
-**Severity:** LOW
+**Severity:** HIGH
 
-**Threat Family:** Protected Research Data Exfiltration
+**Threat Family:** Evidence Repository Manipulation
 
-**Confidence:** 89%
+**Confidence:** 91%
 
 ---
 
 ## Investigation Summary
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **47**
+Evidence Collected: **180**
 
-Indicators: **12**
+Indicators: **52**
 
-Priority: **ROUTINE**
+Priority: **HIGH**
 
 ---
 
@@ -52,7 +52,7 @@ Lead Analyst:
 **Analyst Team Delta**
 
 Initial Access:
-**Unauthorized Physical Access**
+**Exposed Remote Service**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**141**
+**142**
 
 Confirmed Intrusions:
 **20**
 
 Total Evidence:
-**99969**
+**100149**
 
 Total Indicators:
-**64519**
+**64571**
 
 ---
 
 ## Operational Highlights
 
-- 47 evidence items are associated with the active investigation.
-- 12 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **89%**.
-- Current investigation priority is **ROUTINE**.
+- 180 evidence items are associated with the active investigation.
+- 52 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **91%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

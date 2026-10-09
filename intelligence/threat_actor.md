@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Protected Research Data Exfiltration
+Evidence Repository Manipulation
 
 ---
 
 ## Primary Alias
-Cerberus Group
+Umbra Bio
 
 ---
 
 ## Attribution
-Unknown
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-High
+Advanced
 
 ---
 
 ## Confidence
-89%
+91%
 
 ---
 
 ## Observed Techniques
-- Unauthorized Physical Access
-- Laboratory Control System Manipulation
+- Exposed Remote Service
+- Biosecurity System Tampering
+- Command and Control
 - Concealed Internal Movement
-- Covert Remote Access Tooling
-- Insider Access Abuse
-- Supply Chain Compromise
+- Credential Abuse
+- Encrypted Data Staging
 
 ---
 
 ## Reviewing Analyst
 Analyst Team Delta
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Specimen Management Security Review
+Supply Chain Security Investigation
 
 ---
 
 ## Last Updated
-2026-10-08
+2026-10-09

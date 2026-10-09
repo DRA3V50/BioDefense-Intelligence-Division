@@ -3,35 +3,35 @@
 ## Investigation
 
 Case ID:
-BID-2026-1222
+BID-2026-2862
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Supply Chain Security Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Evidence Repository Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
-Evidence Processing Network
+Clinical Research Environment
 
 Device:
-Medical Device Gateway
+Access Control Server
 
 Vendor:
-Red Hat
+Palo Alto Networks
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -44,13 +44,13 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
-ROUTINE
+HIGH
 
 Confidence:
-89%
+91%
 
 ---
 
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.

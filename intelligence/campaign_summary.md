@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1222
+BID-2026-2862
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Specimen Management Security Review
+Supply Chain Security Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Evidence Repository Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-RESOLVED
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Clinical Research Environment
 
 Device:
-Medical Device Gateway
+Access Control Server
 
 Vendor:
-Red Hat
+Palo Alto Networks
 
 Security Zone:
 Evidence Network
@@ -41,22 +41,22 @@ Evidence Network
 ## Investigation Metrics
 
 Investigations Recorded:
-144
+145
 
 Evidence Collected:
-47
+180
 
 Indicators Identified:
-12
+52
 
 Affected Assets:
-9
+40
 
 Confidence:
-89%
+91%
 
 Risk Score:
-29
+71
 
 ---
 

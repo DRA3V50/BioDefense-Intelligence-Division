@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-1222
+Case ID: BID-2026-2862
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Specimen Management Security Review
+Classification: Supply Chain Security Investigation
 
-Threat Family: Protected Research Data Exfiltration
+Threat Family: Evidence Repository Manipulation
 
-Current Status: RESOLVED
+Current Status: Monitoring
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Analysts continue evaluating recovered indicators for operational significance.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-ROUTINE
+HIGH
 
 Risk Score:
-29
+71
 
 Confidence:
-89%
+91%
 
 Affected Assets:
-9
+40
 
 Evidence Collected:
-47
+180
 
 Indicators Recorded:
-12
+52
 
 ---
 
@@ -60,4 +60,4 @@ Analyst Team Delta
 
 Date:
 
-2026-10-03
+2026-10-09

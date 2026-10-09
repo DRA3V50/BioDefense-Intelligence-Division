@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-2862",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-10-09T00:23:44Z",
+  "platform": "Clinical Research Environment",
+  "vendor": "Palo Alto Networks",
+  "device": "Access Control Server",
+  "baseline_version": "5.4.5",
+  "zone": "Evidence Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}
