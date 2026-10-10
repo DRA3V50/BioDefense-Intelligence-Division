@@ -15,12 +15,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---

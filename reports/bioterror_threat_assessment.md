@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-10-10 10:37 UTC
+**Generated:** 2026-10-10 17:22 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Supply Chain Security Investigation concerns suspected Evidence Repos
 
 **Integrity-Verified Records:** 180
 
-**Pending Analyst Review:** 60
+**Pending Analyst Review:** 30
 
 ### Priority Findings
 

@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+No confirmed attribution has been established during the current investigation.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 
 
 ---
@@ -449,7 +449,7 @@ Evidence Repository Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
 Clinical Research Environment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Protected research assets remain under continuous monitoring.
 
 
 ---
