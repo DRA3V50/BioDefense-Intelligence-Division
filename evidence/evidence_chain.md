@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-10-10 17:21 UTC
+**Generated:** 2026-10-10 23:34 UTC
 
 **Case ID:** BID-2026-2862
 
@@ -61,13 +61,13 @@ evidence correlations, and the active case assessment.
 - **BID-2026-2862-EV-0130** — Network Connection Record  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0155** — Network Connection Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0161** — Network Connection Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0166** — Network Connection Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0168** — Network Connection Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -110,9 +110,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0147** — Containment Validation Record  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0158** — Containment Validation Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0170** — Containment Validation Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -153,15 +153,15 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0127** — Analyst Observation  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0151** — Analyst Observation  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0153** — Analyst Observation  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0164** — Analyst Observation  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0169** — Analyst Observation  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0172** — Analyst Observation  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -216,7 +216,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0144** — Research Workstation Event Log  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0162** — Research Workstation Event Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -263,7 +263,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0146** — Authentication Log  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0167** — Authentication Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -314,13 +314,13 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0132** — Access Control Log  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0156** — Access Control Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0159** — Access Control Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0173** — Access Control Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0175** — Access Control Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -373,9 +373,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0143** — Laboratory Information System Audit Log  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0152** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0154** — Laboratory Information System Audit Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -410,9 +410,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0149** — Research Data Integrity Record  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0176** — Research Data Integrity Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0179** — Research Data Integrity Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -467,13 +467,13 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0148** — Firewall Log  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0171** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0174** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0178** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0180** — Firewall Log  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -522,7 +522,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0150** — Biosecurity Audit Record  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0163** — Biosecurity Audit Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -567,11 +567,11 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0129** — Laboratory System Configuration  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0157** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0160** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0165** — Laboratory System Configuration  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -606,7 +606,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2862-EV-0126** — Threat Intelligence Record  
   Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2862-EV-0177** — Threat Intelligence Record  
-  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Access Control Server** | Vendor: **Palo Alto Networks** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 

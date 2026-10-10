@@ -2568,7 +2568,8 @@
       "integrity_status": "Verified",
       "sha256": "acd2810b87dec8eb6626415355fef1d863a31287e679561316d6ad34e343d99d",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0152",
@@ -2584,7 +2585,8 @@
       "integrity_status": "Verified",
       "sha256": "9fc29a821195c5059351c59cdc13d6d48d97f83d470f1fdb42be60e52525f912",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0153",
@@ -2600,7 +2602,8 @@
       "integrity_status": "Verified",
       "sha256": "cf33ea13063be07926f941dc5be2d4e527054e5811368cd5a304c49d5a13c0e5",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0154",
@@ -2616,7 +2619,8 @@
       "integrity_status": "Verified",
       "sha256": "4a3940b8c00df4c806cbb9607209273e3cfde9996a5a0d4381a704f4820132c5",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0155",
@@ -2632,7 +2636,8 @@
       "integrity_status": "Verified",
       "sha256": "ae1bd1bbdfde86dec036f62c62bbc82e2d8e0ae3b1753295da15b2a7c37260bb",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0156",
@@ -2648,7 +2653,8 @@
       "integrity_status": "Verified",
       "sha256": "d108ad16116584b972a8f9fc1fb189b3232ff77822f7cf70a69d34b46a666c33",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0157",
@@ -2664,7 +2670,8 @@
       "integrity_status": "Verified",
       "sha256": "f48eee6f3dda2a17f58f7aeb0b8e2827b17d5bd56b9cbe4234326c2cc1bede09",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0158",
@@ -2680,7 +2687,8 @@
       "integrity_status": "Verified",
       "sha256": "6afa192fee0d996e876a48c15425082072b1737994460bb79029bd13d78b105c",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0159",
@@ -2696,7 +2704,8 @@
       "integrity_status": "Verified",
       "sha256": "ee43242a33fff8d496b548b79143b4c402cb1b1b86d3e0cbdef44975da23557f",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0160",
@@ -2712,7 +2721,8 @@
       "integrity_status": "Verified",
       "sha256": "8c1c9713660cb6b4ff1e1331925446cd89d82b98b484910a8a8b28265089dd28",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0161",
@@ -2728,7 +2738,8 @@
       "integrity_status": "Verified",
       "sha256": "0994ddf05955f280321180b63c69af1f9a69840157760b92549c5f33039f422f",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0162",
@@ -2744,7 +2755,8 @@
       "integrity_status": "Verified",
       "sha256": "6345d3c4c5a4314f14095b5d7fc00d5e01e6a7bd90e06ab5387045092d910330",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0163",
@@ -2760,7 +2772,8 @@
       "integrity_status": "Verified",
       "sha256": "883256951b54132a8c2f61582e57d620527d2432df079c9af332847cb6a9537f",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0164",
@@ -2776,7 +2789,8 @@
       "integrity_status": "Verified",
       "sha256": "bfcc76495cd5ad35c36361fdb2264099acfd7210f8591c8fb6f1b2c3ed5f4976",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0165",
@@ -2792,7 +2806,8 @@
       "integrity_status": "Verified",
       "sha256": "bba686a7c0fda2104b72d293999aa8aae73a1602ee5ce437dab067f8ff59c792",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0166",
@@ -2808,7 +2823,8 @@
       "integrity_status": "Verified",
       "sha256": "2bde1dc44b81662c87530e9a4694d0c217b6dbd2184bf3fc3f9a559112eff0c3",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0167",
@@ -2824,7 +2840,8 @@
       "integrity_status": "Verified",
       "sha256": "5333265731d986a6e2a34cbb96896992197fe05cae335615c7184e038bc0153a",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0168",
@@ -2840,7 +2857,8 @@
       "integrity_status": "Verified",
       "sha256": "82a37f79cf1416256f73382c04c8aaf5671c81d200b225775d61c21a18a89a64",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0169",
@@ -2856,7 +2874,8 @@
       "integrity_status": "Verified",
       "sha256": "93948625ac1459d63ccf11d611f1bbd0b80d26b822b06bcd1d02682dd8b4a18a",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0170",
@@ -2872,7 +2891,8 @@
       "integrity_status": "Verified",
       "sha256": "8e50999612ca81bba0127a29695f710b1bbaa4f08e42fedaffdb6ca61d14aace",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0171",
@@ -2888,7 +2908,8 @@
       "integrity_status": "Verified",
       "sha256": "463d42184abb23f7c8313a93b5e6021ab66965ac50a46cdd735f77c1f7fd05f6",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0172",
@@ -2904,7 +2925,8 @@
       "integrity_status": "Verified",
       "sha256": "0588159c6055c5a2174677631845604edfc425f52199ef3e18ef6246acc4f187",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0173",
@@ -2920,7 +2942,8 @@
       "integrity_status": "Verified",
       "sha256": "e5f04b23afed4c3de05eb5f19ee29ea60de3e0239b1f1dbc8074726be283a12e",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0174",
@@ -2936,7 +2959,8 @@
       "integrity_status": "Verified",
       "sha256": "7679bae4d2a142c881f3b44301e57ec1e2e7257c270c02317583ef5504acfe9a",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0175",
@@ -2952,7 +2976,8 @@
       "integrity_status": "Verified",
       "sha256": "d2e6a3c2058d34697ece57f767230de6d71a4255940cf91a148b7a56ad7d008c",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0176",
@@ -2968,7 +2993,8 @@
       "integrity_status": "Verified",
       "sha256": "6cf9f46524a89a8952a7a983358699df87f3c4cd10b0fdd6beec20cb858f5c93",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0177",
@@ -2984,7 +3010,8 @@
       "integrity_status": "Verified",
       "sha256": "c0a136b74aef78bf01ba275dfc6f372f5a51bc3100cd2f2b8e7c0464f5222cd9",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0178",
@@ -3000,7 +3027,8 @@
       "integrity_status": "Verified",
       "sha256": "1d39bc72c82007e2694d9946b6c8d213f165b32977623a70ca5fe8696250099f",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0179",
@@ -3016,7 +3044,8 @@
       "integrity_status": "Verified",
       "sha256": "211890f7a6aba644f5b189bac52210bca261ca7b5233cf8342c018e317467c50",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     },
     {
       "evidence_id": "BID-2026-2862-EV-0180",
@@ -3032,15 +3061,16 @@
       "integrity_status": "Verified",
       "sha256": "436b69efbb20323be8bae628bffaf590bf20009f17c68c66e14332fd9f5d2995",
       "classification": "Supply Chain Security Investigation",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-10-10T23:34:08Z"
     }
   ],
   "lifecycle_processing": {
-    "reviewed_count": 150,
+    "reviewed_count": 180,
     "total_evidence_count": 180,
     "last_review_batch_size": 30,
-    "last_reviewed_at": "2026-10-10T17:21:54Z",
+    "last_reviewed_at": "2026-10-10T23:34:08Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-10-10T17:21:54Z"
+  "updated_at": "2026-10-10T23:34:08Z"
 }
