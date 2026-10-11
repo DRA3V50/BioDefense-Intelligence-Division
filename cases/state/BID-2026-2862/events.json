@@ -118,7 +118,20 @@
       "zone": "Evidence Network",
       "intensity": 58,
       "idempotency_key": "revision-9-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-2862-EVT-0010",
+      "case_id": "BID-2026-2862",
+      "sequence": 10,
+      "timestamp": "2026-10-11T10:50:23Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 60/180 validated",
+      "severity": "HIGH",
+      "source": "process_active_case_stage",
+      "zone": "Evidence Network",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-60-of-180"
     }
   ],
-  "updated_at": "2026-10-10T23:34:08Z"
+  "updated_at": "2026-10-11T10:50:23Z"
 }
