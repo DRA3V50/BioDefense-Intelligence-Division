@@ -19,7 +19,7 @@ Evidence Repository Manipulation
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Central Evidence Processing Center
 
 Platform:
 Clinical Research Environment
@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
 Evidence Network
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
