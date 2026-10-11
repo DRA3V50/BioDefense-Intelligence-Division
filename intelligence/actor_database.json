@@ -148,7 +148,7 @@
             "name": "Evidence Repository Manipulation",
             "first_seen": "2026-08-03",
             "last_seen": "2026-10-11",
-            "cases": 13,
+            "cases": 14,
             "severity": "HIGH",
             "confidence": 91
         },

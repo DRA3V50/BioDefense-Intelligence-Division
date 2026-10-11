@@ -81,7 +81,15 @@
       "source_event_id": "BID-2026-2862-EVT-0010",
       "event_type": "CORRELATION_VALIDATION_PROGRESS",
       "source": "derived_case_event"
+    },
+    {
+      "case_id": "BID-2026-2862",
+      "timestamp": "2026-10-11T17:43:03Z",
+      "value": 58,
+      "source_event_id": "BID-2026-2862-EVT-0011",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "source": "derived_case_event"
     }
   ],
-  "updated_at": "2026-10-11T10:50:23Z"
+  "updated_at": "2026-10-11T17:43:04Z"
 }

@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-10-11 10:50 UTC
+**Generated:** 2026-10-11 17:43 UTC
 
 ---
 
