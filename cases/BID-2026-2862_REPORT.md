@@ -138,15 +138,15 @@ HIGH
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Unauthorized access to protected biomedical research resources was confirmed dur
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Identity | Credential reuse detected across isolated research segments |
-| PowerShell | Encoded administrative command execution detected |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -449,7 +449,7 @@ Evidence Repository Manipulation
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Federal Biosecurity Laboratory
 
 Platform:
 Clinical Research Environment
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.
 
 
 ---

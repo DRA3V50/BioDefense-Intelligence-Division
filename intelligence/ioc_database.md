@@ -15,12 +15,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Identity | Credential reuse detected across isolated research segments |
-| PowerShell | Encoded administrative command execution detected |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
