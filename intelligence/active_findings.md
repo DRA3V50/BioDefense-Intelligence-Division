@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Additional forensic examination is required to determine the full operational scope.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 

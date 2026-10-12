@@ -15,12 +15,12 @@ Supply Chain Security Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| System Log | Unexpected privilege escalation recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---

@@ -19,7 +19,7 @@ Evidence Repository Manipulation
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Advanced Genome Security Laboratory
 
 Platform:
 Clinical Research Environment
@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.
