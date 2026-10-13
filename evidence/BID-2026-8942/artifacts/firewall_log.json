@@ -1,0 +1,25 @@
+{
+  "case_id": "BID-2026-8942",
+  "artifact_type": "Firewall Log",
+  "generated_at": "2026-10-13T19:18:06Z",
+  "source_device": "Biomedical Workstation",
+  "security_zone": "Biosecurity Segment",
+  "events": [
+    {
+      "event_id": "FW-001",
+      "action": "Blocked",
+      "protocol": "HTTPS",
+      "source": "Simulated External Host",
+      "destination": "Biomedical Workstation",
+      "description": "Simulated unauthorized outbound connection attempt."
+    },
+    {
+      "event_id": "FW-002",
+      "action": "Allowed",
+      "protocol": "DNS",
+      "source": "Biomedical Workstation",
+      "destination": "Authorized DNS Service",
+      "description": "Routine name-resolution activity retained for analysis."
+    }
+  ]
+}

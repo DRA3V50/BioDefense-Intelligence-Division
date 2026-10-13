@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-8942",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-10-13T19:18:06Z",
+  "platform": "Protected Research Network",
+  "vendor": "VMware",
+  "device": "Biomedical Workstation",
+  "baseline_version": "5.4.8",
+  "zone": "Biosecurity Segment",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

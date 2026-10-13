@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-2862
+Case ID: BID-2026-8942
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Supply Chain Security Investigation
+Classification: Research Facility Intrusion Investigation
 
-Threat Family: Evidence Repository Manipulation
+Threat Family: Research Workstation Compromise
 
-Current Status: ESCALATED
+Current Status: Containment
 
 Containment Phase: Operational Recovery
 
@@ -18,9 +18,9 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Analysts continue evaluating recovered indicators for operational significance.
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -30,19 +30,19 @@ Priority:
 HIGH
 
 Risk Score:
-71
+83
 
 Confidence:
-91%
+87%
 
 Affected Assets:
-40
+27
 
 Evidence Collected:
-180
+227
 
 Indicators Recorded:
-52
+95
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+BioDefense Task Force
 
 Date:
 
-2026-10-09
+2026-10-13

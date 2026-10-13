@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2862
+BID-2026-8942
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Supply Chain Security Investigation
+Research Facility Intrusion Investigation
 
 Threat Family:
-Evidence Repository Manipulation
+Research Workstation Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Containment
 
 ---
 
 ## Protected Environment
 
 Platform:
-Clinical Research Environment
+Protected Research Network
 
 Device:
-Access Control Server
+Biomedical Workstation
 
 Vendor:
-Palo Alto Networks
+VMware
 
 Security Zone:
-Evidence Network
+Biosecurity Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-145
+146
 
 Evidence Collected:
-180
+227
 
 Indicators Identified:
-52
+95
 
 Affected Assets:
-40
+27
 
 Confidence:
-91%
+87%
 
 Risk Score:
-71
+83
 
 ---
 

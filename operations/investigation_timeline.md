@@ -2,21 +2,21 @@
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
-**Case ID:** BID-2026-2862
+**Case ID:** BID-2026-8942
 
-**Generated:** 2026-10-13 11:48 UTC
+**Generated:** 2026-10-13 19:18 UTC
 
 ---
 
 | Timestamp | Event | Description |
 |---|---|---|
-| 2026-10-13 05:48 UTC | Initial Detection | Potential activity associated with Evidence Repository Manipulation was detected. |
-| 2026-10-13 06:48 UTC | Case Opened | Investigation BID-2026-2862 was opened and assigned to Analyst Team Delta. |
-| 2026-10-13 07:48 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Exposed Remote Service. |
-| 2026-10-13 08:48 UTC | Evidence Collection | 180 evidence items and 52 indicators were associated with the active investigation. |
-| 2026-10-13 09:48 UTC | Containment Assessment | Containment was assessed at SEVERE. |
-| 2026-10-13 10:48 UTC | Operational Review | Observed activity presents a credible risk to data integrity, case evidence, or protected research operations. |
-| 2026-10-13 11:48 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
+| 2026-10-13 13:18 UTC | Initial Detection | Potential activity associated with Research Workstation Compromise was detected. |
+| 2026-10-13 14:18 UTC | Case Opened | Investigation BID-2026-8942 was opened and assigned to BioDefense Task Force. |
+| 2026-10-13 15:18 UTC | Initial Access Reviewed | Analysts identified the suspected initial access vector as Unauthorized Physical Access. |
+| 2026-10-13 16:18 UTC | Evidence Collection | 227 evidence items and 95 indicators were associated with the active investigation. |
+| 2026-10-13 17:18 UTC | Containment Assessment | Containment was assessed at SEVERE. |
+| 2026-10-13 18:18 UTC | Operational Review | Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure. |
+| 2026-10-13 19:18 UTC | Current Priority | Verify recovery controls and prepare the final operational assessment. |
 
 ---
 
@@ -26,7 +26,7 @@
 
 **Priority:** HIGH
 
-**Confidence:** 91%
+**Confidence:** 87%
 
 **Campaign Phase:** Operational Recovery
 

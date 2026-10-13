@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2862 |
+| Case ID | BID-2026-8942 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Supply Chain Security Investigation |
-| Threat Family | Evidence Repository Manipulation |
+| Classification | Research Facility Intrusion Investigation |
+| Threat Family | Research Workstation Compromise |
 | Severity | HIGH |
-| Status | ESCALATED |
+| Status | Containment |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Clinical Research Environment |
-| Device | Access Control Server |
-| Vendor | Palo Alto Networks |
-| Security Zone | Evidence Network |
+| Platform | Protected Research Network |
+| Device | Biomedical Workstation |
+| Vendor | VMware |
+| Security Zone | Biosecurity Segment |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 71 |
-| Confidence | 91% |
-| Evidence Collected | 180 |
-| Indicators Identified | 52 |
-| Affected Assets | 40 |
+| Risk Score | 83 |
+| Confidence | 87% |
+| Evidence Collected | 227 |
+| Indicators Identified | 95 |
+| Affected Assets | 27 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**BioDefense Task Force**
 
 ---
 
 # Executive Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Containment**
 
 Priority:
 
