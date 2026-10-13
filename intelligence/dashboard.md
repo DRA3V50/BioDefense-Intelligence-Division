@@ -9,7 +9,7 @@
 | Classification | Supply Chain Security Investigation |
 | Threat Family | Evidence Repository Manipulation |
 | Severity | HIGH |
-| Status | Monitoring |
+| Status | ESCALATED |
 | Phase | Operational Recovery |
 
 ---

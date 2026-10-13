@@ -13,7 +13,7 @@ Supply Chain Security Investigation
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-Monitoring
+ESCALATED
 
 ### Severity
 HIGH
