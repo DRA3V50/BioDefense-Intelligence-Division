@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "case_id": "BID-2026-8942",
-  "state_revision": 2,
+  "state_revision": 3,
   "telemetry_source": "SIMULATED",
   "measurement_status": "SIMULATED",
-  "source_fingerprint": "375f206c106642276e39542853caa9113046ae28072ee0a5dc8cd208cb209b71",
+  "source_fingerprint": "82b7599fa1d77076b8d537ebdd4200fe7edaf3932608d2568ff466b856d0d946",
   "subsystems": {
     "evidence_pipeline": {
       "status": "NOMINAL",
@@ -35,88 +35,88 @@
     "cpu_percent": {
       "unit": "percent",
       "samples": [
-        58,
-        59,
-        56,
-        55,
+        50,
+        52,
+        53,
         54,
         54,
-        57,
-        59,
-        56,
-        58,
-        56,
-        55
+        51,
+        53,
+        54,
+        54,
+        54,
+        54,
+        51
       ]
     },
     "memory_percent": {
       "unit": "percent",
       "samples": [
-        43,
-        40,
-        39,
-        38,
-        38,
-        41,
-        43,
-        40,
-        42,
-        40,
-        39,
-        42
+        54,
+        55,
+        56,
+        56,
+        53,
+        55,
+        56,
+        56,
+        56,
+        56,
+        53,
+        55
       ]
     },
     "network_percent": {
       "unit": "percent",
       "samples": [
-        52,
-        51,
-        50,
-        50,
-        53,
-        55,
-        52,
-        54,
-        52,
-        51,
-        54,
-        52
+        63,
+        64,
+        64,
+        61,
+        63,
+        64,
+        64,
+        64,
+        64,
+        61,
+        63,
+        64
       ]
     },
     "disk_percent": {
       "unit": "percent",
       "samples": [
-        54,
-        53,
-        53,
-        56,
-        58,
-        55,
-        57,
-        55,
-        54,
-        57,
-        55,
-        54
+        49,
+        49,
+        46,
+        48,
+        49,
+        49,
+        49,
+        49,
+        46,
+        48,
+        49,
+        49
       ]
     },
     "queue_depth": {
       "unit": "count",
       "samples": [
-        0,
-        0,
+        5,
         2,
         4,
-        1,
-        3,
-        1,
-        0,
-        3,
-        1,
-        0,
-        0
+        5,
+        5,
+        5,
+        5,
+        2,
+        4,
+        5,
+        5,
+        5
       ]
     }
   },
-  "updated_at": "2026-10-13T19:18:20Z"
+  "updated_at": "2026-10-13T23:45:43Z"
 }

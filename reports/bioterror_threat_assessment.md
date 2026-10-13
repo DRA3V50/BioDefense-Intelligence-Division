@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-10-13 19:18 UTC
+**Generated:** 2026-10-13 23:45 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Research Facility Intrusion Investigation concerns suspected Research
 
 **Integrity-Verified Records:** 227
 
-**Pending Analyst Review:** 227
+**Pending Analyst Review:** 189
 
 ### Priority Findings
 
