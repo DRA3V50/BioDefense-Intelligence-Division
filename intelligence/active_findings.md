@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Additional forensic examination is required to determine the full operational scope.
 
 ---
 

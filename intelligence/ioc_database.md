@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| PowerShell | Encoded administrative command execution detected |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Identity | Credential reuse detected across isolated research segments |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
