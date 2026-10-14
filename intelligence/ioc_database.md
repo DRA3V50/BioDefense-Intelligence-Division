@@ -15,11 +15,11 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Infrastructure | Firewall policy deviation identified |
+| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| PowerShell | Encoded administrative command execution detected |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 

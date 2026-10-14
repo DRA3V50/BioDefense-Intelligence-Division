@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ---
 

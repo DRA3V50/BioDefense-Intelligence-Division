@@ -19,7 +19,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
 Protected Research Network
@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Biosecurity Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.

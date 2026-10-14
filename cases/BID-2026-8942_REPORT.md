@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Current findings support maintaining the existing investigation priority.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,11 +287,11 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Infrastructure | Firewall policy deviation identified |
+| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| PowerShell | Encoded administrative command execution detected |
-| Security | Multi-factor authentication bypass attempt recorded |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Raccoon Research Annex
 
 Platform:
 Protected Research Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.
 
 
 ---
