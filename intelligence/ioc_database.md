@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Identity | Credential reuse detected across isolated research segments |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Identity | Credential reuse detected across isolated research segments |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
