@@ -2,7 +2,7 @@
 
 ## Investigative Leads and Intelligence Gaps
 
-**Generated:** 2026-10-14 23:16 UTC
+**Generated:** 2026-10-15 09:10 UTC
 
 ---
 
@@ -261,7 +261,7 @@ The activity may represent reconnaissance, access development, control bypass, o
 - The investigation has not confirmed whether physical specimens or laboratory processes were affected.
 - The threat actor's final objective—espionage, sabotage, disruption, or attack preparation—remains under assessment.
 - Public-health consequences cannot be determined without validated biological-impact evidence.
-- 75 evidence records remain pending analyst review.
+- 37 evidence records remain pending analyst review.
 
 ---
 

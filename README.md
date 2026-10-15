@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=ac9460b44a78" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=ecd0631edeb1" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -210,7 +210,7 @@ The active investigation persists across scheduled workflow executions and advan
       <td valign="top" align="right">227</td>
       <td valign="top" align="right">227</td>
       <td valign="top" align="right">227</td>
-      <td valign="top" align="right">75</td>
+      <td valign="top" align="right">37</td>
     </tr>
   </tbody>
 </table>
