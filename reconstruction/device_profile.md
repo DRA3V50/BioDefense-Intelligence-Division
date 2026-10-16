@@ -19,7 +19,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
 Protected Research Network
@@ -31,7 +31,7 @@ Vendor:
 VMware
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Biosecurity Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Digital evidence preserved for laboratory forensic examination.
