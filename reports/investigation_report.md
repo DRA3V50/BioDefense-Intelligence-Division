@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-10-17 08:41 UTC
+**Generated:** 2026-10-17 15:40 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 
 **Case ID:** BID-2026-8942
 
-**Case Status:** Containment
+**Case Status:** ESCALATED
 
 **Priority:** HIGH
 

@@ -10,7 +10,7 @@ Classification: Research Facility Intrusion Investigation
 
 Threat Family: Research Workstation Compromise
 
-Current Status: Containment
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 

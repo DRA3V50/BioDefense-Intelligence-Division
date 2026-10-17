@@ -26,19 +26,19 @@ HIGH
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
@@ -74,7 +74,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Containment
+ESCALATED
 
 Recommended Action:
 

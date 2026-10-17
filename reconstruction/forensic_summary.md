@@ -9,7 +9,7 @@
 | Classification | Research Facility Intrusion Investigation |
 | Threat Family | Research Workstation Compromise |
 | Severity | HIGH |
-| Status | Containment |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**ESCALATED**
 
 Priority:
 

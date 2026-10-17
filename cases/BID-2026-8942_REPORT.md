@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Containment
+ESCALATED
 
 ---
 
@@ -138,19 +138,19 @@ HIGH
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
@@ -186,7 +186,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Containment
+ESCALATED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Research Facility Intrusion Investigation
 
 Threat Family: Research Workstation Compromise
 
-Current Status: Containment
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -288,11 +288,11 @@ Research Facility Intrusion Investigation
 | Category | Observation |
 |----------|-------------|
 | Evidence | Acquired forensic image verified using SHA-256 |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
 | Identity | Credential reuse detected across isolated research segments |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -319,7 +319,7 @@ BioDefense Task Force
 
 Current Status:
 
-Containment
+ESCALATED
 
 
 ---
@@ -337,7 +337,7 @@ Containment
 | Classification | Research Facility Intrusion Investigation |
 | Threat Family | Research Workstation Compromise |
 | Severity | HIGH |
-| Status | Containment |
+| Status | ESCALATED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Containment**
+**ESCALATED**
 
 Priority:
 
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.
 
 
 ---
@@ -518,7 +518,7 @@ Research Facility Intrusion Investigation
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Containment
+ESCALATED
 
 ### Severity
 HIGH
