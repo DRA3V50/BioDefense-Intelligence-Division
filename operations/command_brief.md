@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-10-17 15:34 UTC
+**Generated:** 2026-10-17 22:19 UTC
 
 ---
 
@@ -18,15 +18,15 @@
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8942
+**Case ID:** BID-2026-8272
 
 **Classification:** Research Facility Intrusion Investigation
 
 **Severity:** HIGH
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Access Control Record Manipulation
 
-**Confidence:** 87%
+**Confidence:** 88%
 
 ---
 
@@ -38,9 +38,9 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 
 ## Evidence Summary
 
-Evidence Collected: **227**
+Evidence Collected: **105**
 
-Indicators: **95**
+Indicators: **82**
 
 Priority: **HIGH**
 
@@ -49,10 +49,10 @@ Priority: **HIGH**
 ## Current Response
 
 Lead Analyst:
-**BioDefense Task Force**
+**Analyst Team Bravo**
 
 Initial Access:
-**Unauthorized Physical Access**
+**Compromised Credentials**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,25 +62,25 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**143**
+**144**
 
 Confirmed Intrusions:
 **20**
 
 Total Evidence:
-**100376**
+**100481**
 
 Total Indicators:
-**64666**
+**64748**
 
 ---
 
 ## Operational Highlights
 
-- 227 evidence items are associated with the active investigation.
-- 95 indicators are currently linked to the case.
+- 105 evidence items are associated with the active investigation.
+- 82 indicators are currently linked to the case.
 - Containment remains at **SEVERE**.
-- Analyst confidence is **87%**.
+- Analyst confidence is **88%**.
 - Current investigation priority is **HIGH**.
 
 ---

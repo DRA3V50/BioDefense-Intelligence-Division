@@ -2,13 +2,13 @@
 
 ## Investigative Leads and Intelligence Gaps
 
-**Generated:** 2026-10-17 15:34 UTC
+**Generated:** 2026-10-17 22:19 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8942
+**Case ID:** BID-2026-8272
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
@@ -16,17 +16,17 @@
 
 **Classification:** Research Facility Intrusion Investigation
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Access Control Record Manipulation
 
 **Severity:** HIGH
 
-**Risk Score:** 83
+**Risk Score:** 81
 
-**Lead Analyst:** BioDefense Task Force
+**Lead Analyst:** Analyst Team Bravo
 
-**Evidence Records Reviewed:** 227
+**Evidence Records Reviewed:** 105
 
-**Correlation Records Reviewed:** 227
+**Correlation Records Reviewed:** 105
 
 ---
 
@@ -42,7 +42,7 @@ This report distinguishes investigative leads and analytical hypotheses from con
 
 ### Lead 1: Credential and Identity Compromise
 
-**Supporting Correlations:** 17
+**Supporting Correlations:** 3
 
 Investigators should determine whether compromised credentials were obtained externally, reused from an earlier breach, or provided by an insider.
 
@@ -52,20 +52,15 @@ Investigators should determine whether compromised credentials were obtained ext
 
 **Supporting Evidence:**
 
-- `BID-2026-8942-EV-0008` — Authentication Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0010` — Authentication Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0013` — Authentication Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0051` — Authentication Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0052` — Authentication Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0074` — Authentication Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0082` — Authentication Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0092` — Authentication Log; source: Biomedical Workstation; integrity: Verified
+- `BID-2026-8272-EV-0035` — Authentication Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0050` — Authentication Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0055` — Authentication Log; source: Clinical Data Server; integrity: Verified
 
 **Key Question:** Which account was first compromised, and how was access obtained?
 
 ### Lead 2: Possible Insider or Facility-Assisted Access
 
-**Supporting Correlations:** 18
+**Supporting Correlations:** 12
 
 Access-control and facility evidence may indicate insider assistance, unauthorized physical entry, or misuse of legitimate laboratory privileges.
 
@@ -75,44 +70,44 @@ Access-control and facility evidence may indicate insider assistance, unauthoriz
 
 **Supporting Evidence:**
 
-- `BID-2026-8942-EV-0001` — Access Control Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0006` — Access Control Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0011` — Access Control Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0021` — Access Control Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0040` — Access Control Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0055` — Access Control Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0063` — Access Control Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0075` — Access Control Log; source: Biomedical Workstation; integrity: Verified
+- `BID-2026-8272-EV-0007` — Access Control Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0009` — Access Control Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0016` — Access Control Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0019` — Access Control Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0023` — Access Control Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0038` — Access Control Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0039` — Access Control Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0059` — Access Control Log; source: Clinical Data Server; integrity: Verified
 
 **Key Question:** Did an employee, contractor, or trusted partner facilitate the intrusion?
 
 ### Lead 3: Laboratory-System Modification
 
-**Supporting Correlations:** 35
+**Supporting Correlations:** 17
 
 Laboratory-system changes require validation to determine whether configuration, workflow, specimen, or research records were altered.
 
 **Associated Findings:**
 
-- Laboratory Information System Anomaly
 - Laboratory System Modification
+- Laboratory Information System Anomaly
 
 **Supporting Evidence:**
 
-- `BID-2026-8942-EV-0007` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0017` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0023` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0041` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0044` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0050` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0070` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0072` — Laboratory Information System Audit Log; source: Biomedical Workstation; integrity: Verified
+- `BID-2026-8272-EV-0006` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0015` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0033` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0034` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0041` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0071` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0074` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0085` — Laboratory System Configuration; source: Clinical Data Server; integrity: Verified
 
 **Key Question:** Were the laboratory changes operational, administrative, or intended to affect protected biological research?
 
 ### Lead 4: Research or Genomic Data Integrity
 
-**Supporting Correlations:** 24
+**Supporting Correlations:** 12
 
 Research-data anomalies should be examined for unauthorized modification, deletion, manipulation, or intelligence collection.
 
@@ -122,20 +117,20 @@ Research-data anomalies should be examined for unauthorized modification, deleti
 
 **Supporting Evidence:**
 
-- `BID-2026-8942-EV-0020` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0035` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0039` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0060` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0061` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0064` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0085` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0090` — Research Data Integrity Record; source: Biomedical Workstation; integrity: Verified
+- `BID-2026-8272-EV-0011` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0012` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0042` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0045` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0046` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0065` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0073` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0084` — Research Data Integrity Record; source: Clinical Data Server; integrity: Verified
 
 **Key Question:** Were protected research records changed, copied, or prepared for exfiltration?
 
 ### Lead 5: Command-and-Control and External Infrastructure
 
-**Supporting Correlations:** 35
+**Supporting Correlations:** 21
 
 Network correlations may identify external infrastructure, persistent access, data staging, or communication with a coordinated threat actor.
 
@@ -146,20 +141,20 @@ Network correlations may identify external infrastructure, persistent access, da
 
 **Supporting Evidence:**
 
-- `BID-2026-8942-EV-0002` — Firewall Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0005` — Firewall Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0045` — Firewall Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0100` — Firewall Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0110` — Firewall Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0118` — Firewall Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0131` — Firewall Log; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0149` — Firewall Log; source: Biomedical Workstation; integrity: Verified
+- `BID-2026-8272-EV-0004` — Firewall Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0018` — Firewall Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0031` — Firewall Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0047` — Firewall Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0063` — Firewall Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0069` — Firewall Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0072` — Firewall Log; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0088` — Firewall Log; source: Clinical Data Server; integrity: Verified
 
 **Key Question:** Does the external infrastructure connect this case to prior Operation Black Eclipse investigations?
 
 ### Lead 6: Known Threat Actor Association
 
-**Supporting Correlations:** 19
+**Supporting Correlations:** 12
 
 Threat-intelligence indicators should be validated before being used for attribution or campaign linkage.
 
@@ -169,20 +164,20 @@ Threat-intelligence indicators should be validated before being used for attribu
 
 **Supporting Evidence:**
 
-- `BID-2026-8942-EV-0016` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0022` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0026` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0032` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0033` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0067` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0077` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0079` — Threat Intelligence Record; source: Biomedical Workstation; integrity: Verified
+- `BID-2026-8272-EV-0001` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0036` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0037` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0051` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0054` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0057` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0064` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0066` — Threat Intelligence Record; source: Clinical Data Server; integrity: Verified
 
 **Key Question:** Are the actor indicators independently corroborated by forensic evidence?
 
 ### Lead 7: Biosecurity-Control Bypass
 
-**Supporting Correlations:** 43
+**Supporting Correlations:** 12
 
 Biosecurity-control findings require review to determine whether cyber access could affect protected laboratory operations or support cyber-to-physical escalation.
 
@@ -193,14 +188,14 @@ Biosecurity-control findings require review to determine whether cyber access co
 
 **Supporting Evidence:**
 
-- `BID-2026-8942-EV-0003` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0004` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0012` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0014` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0027` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0042` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0048` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
-- `BID-2026-8942-EV-0056` — Biosecurity Audit Record; source: Biomedical Workstation; integrity: Verified
+- `BID-2026-8272-EV-0021` — Biosecurity Audit Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0028` — Biosecurity Audit Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0044` — Biosecurity Audit Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0048` — Biosecurity Audit Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0049` — Biosecurity Audit Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0053` — Biosecurity Audit Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0076` — Biosecurity Audit Record; source: Clinical Data Server; integrity: Verified
+- `BID-2026-8272-EV-0022` — Containment Validation Record; source: Clinical Data Server; integrity: Verified
 
 **Key Question:** Were biosecurity controls bypassed intentionally, and did the bypass affect physical laboratory processes?
 
@@ -247,11 +242,11 @@ The activity may represent reconnaissance, access development, control bypass, o
 
 | Related Case | Classification | Severity | Link Basis |
 |--------------|----------------|----------|------------|
-| BID-2026-3108 | Biocontainment Network Investigation | CRITICAL | matching threat family |
+| BID-2026-8942 | Research Facility Intrusion Investigation | HIGH | matching classification |
 | BID-2026-2254 | Research Facility Intrusion Investigation | CRITICAL | matching classification |
-| BID-2026-8887 | Digital Evidence Reconstruction Investigation | HIGH | matching threat family |
 | BID-2026-6717 | Research Facility Intrusion Investigation | HIGH | matching classification |
-| BID-2026-6172 | Research Data Integrity Investigation | LOW | matching threat family |
+| BID-2026-7336 | Cyber-Biothreat Intelligence Review | HIGH | matching threat family |
+| BID-2026-1692 | Unauthorized Research System Access | MODERATE | matching threat family |
 
 ---
 
@@ -261,6 +256,7 @@ The activity may represent reconnaissance, access development, control bypass, o
 - The investigation has not confirmed whether physical specimens or laboratory processes were affected.
 - The threat actor's final objective—espionage, sabotage, disruption, or attack preparation—remains under assessment.
 - Public-health consequences cannot be determined without validated biological-impact evidence.
+- 105 evidence records remain pending analyst review.
 
 ---
 
@@ -297,10 +293,10 @@ The activity may represent reconnaissance, access development, control bypass, o
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-8942/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-8942/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-8942/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-8942/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-8272/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-8272/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-8272/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-8272/forensic_summary.md)
 
 ---
 

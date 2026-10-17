@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8942 |
+| Case ID | BID-2026-8272 |
 | Operation | Coordinated Biomedical Systems Intrusion |
 | Classification | Research Facility Intrusion Investigation |
-| Threat Family | Research Workstation Compromise |
+| Threat Family | Access Control Record Manipulation |
 | Severity | HIGH |
-| Status | ESCALATED |
+| Status | Evidence Collection |
 | Phase | Operational Recovery |
 
 ---
@@ -18,9 +18,9 @@
 
 | Field | Value |
 |------|------|
-| Platform | Protected Research Network |
-| Device | Biomedical Workstation |
-| Vendor | VMware |
+| Platform | Biosecurity Operations Center |
+| Device | Clinical Data Server |
+| Vendor | Palo Alto Networks |
 | Network Zone | Biosecurity Segment |
 
 ---
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 83 |
-| Confidence | 87% |
-| Evidence | 227 |
-| Indicators | 95 |
-| Affected Assets | 27 |
+| Risk Score | 81 |
+| Confidence | 88% |
+| Evidence | 105 |
+| Indicators | 82 |
+| Affected Assets | 18 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **BioDefense Task Force**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 

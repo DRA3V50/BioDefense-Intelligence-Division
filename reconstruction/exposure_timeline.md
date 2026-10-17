@@ -1,10 +1,10 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-10-13
+## 2026-10-17
 
 ### Case Opened
-Case ID: BID-2026-8942
+Case ID: BID-2026-8272
 
 ### Classification
 Research Facility Intrusion Investigation
@@ -13,7 +13,7 @@ Research Facility Intrusion Investigation
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-ESCALATED
+Evidence Collection
 
 ### Severity
 HIGH

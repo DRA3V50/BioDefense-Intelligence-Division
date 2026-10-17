@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8942
+BID-2026-8272
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -12,7 +12,7 @@ Classification:
 Research Facility Intrusion Investigation
 
 Threat Family:
-Research Workstation Compromise
+Access Control Record Manipulation
 
 Severity:
 HIGH
@@ -30,35 +30,35 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 5
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-27
+18
 
 Evidence Collected:
-227
+105
 
 Indicators Identified:
-95
+82
 
 Analyst Confidence:
-87%
+88%
 
 Containment Phase:
 Operational Recovery
@@ -74,7 +74,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-ESCALATED
+Evidence Collection
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo

@@ -3,7 +3,7 @@
 ## Investigation
 
 Case ID:
-BID-2026-8942
+BID-2026-8272
 
 Operation:
 Coordinated Biomedical Systems Intrusion
@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Identity | Credential reuse detected across isolated research segments |
-| Device | Protected workstation entered evidence preservation mode |
 | PowerShell | Encoded administrative command execution detected |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---
@@ -28,23 +28,23 @@ Research Facility Intrusion Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-227
+105
 
 Indicators Reviewed:
-95
+82
 
 Risk Score:
-83
+81
 
 Confidence:
-87%
+88%
 
 ---
 
 Lead Analyst:
 
-BioDefense Task Force
+Analyst Team Bravo
 
 Current Status:
 
-ESCALATED
+Evidence Collection

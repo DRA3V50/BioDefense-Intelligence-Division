@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-8272",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-10-17T22:18:58Z",
+  "platform": "Biosecurity Operations Center",
+  "vendor": "Palo Alto Networks",
+  "device": "Clinical Data Server",
+  "baseline_version": "5.5.4",
+  "zone": "Biosecurity Segment",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

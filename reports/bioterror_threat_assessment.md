@@ -2,13 +2,13 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-10-17 15:34 UTC
+**Generated:** 2026-10-17 22:19 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8942
+**Case ID:** BID-2026-8272
 
 **Campaign ID:** BDC-2026-001
 
@@ -16,27 +16,27 @@
 
 **Classification:** Research Facility Intrusion Investigation
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Access Control Record Manipulation
 
 **Severity:** HIGH
 
 **Priority:** HIGH
 
-**Risk Score:** 83
+**Risk Score:** 81
 
-**Assessment Confidence:** 87%
+**Assessment Confidence:** 88%
 
 **Containment Phase:** Operational Recovery
 
-**Affected Platform:** Protected Research Network
+**Affected Platform:** Biosecurity Operations Center
 
-**Affected Assets:** 27
+**Affected Assets:** 18
 
 ---
 
 ## Executive Assessment
 
-The active Research Facility Intrusion Investigation concerns suspected Research Workstation Compromise. The calculated overall bioterror threat score is **98/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
+The active Research Facility Intrusion Investigation concerns suspected Access Control Record Manipulation. The calculated overall bioterror threat score is **98/100 (CRITICAL)**. The strongest risk drivers are threat actor intent, threat actor capability, biological target value. This assessment supports defensive prioritization and investigative planning; it does not establish that a biological agent was released or that a physical bioterror event occurred.
 
 **Overall Bioterror Threat Level:** CRITICAL
 
@@ -55,13 +55,13 @@ The active Research Facility Intrusion Investigation concerns suspected Research
 | Public-Health Risk | 100/100 | CRITICAL |
 | Cyber-to-Physical Escalation | 100/100 | CRITICAL |
 | Attribution Confidence | 93/100 | HIGH |
-| Containment Confidence | 94/100 | HIGH |
+| Containment Confidence | 95/100 | HIGH |
 
 ---
 
 ## Key Intelligence Judgments
 
-- The investigation currently centers on **Research Workstation Compromise**.
+- The investigation currently centers on **Access Control Record Manipulation**.
 - The targeted environment has high intelligence or operational value because it supports protected laboratory, biomedical, genomic, or specimen-related activity.
 - The available evidence indicates a capable actor with access sufficient to affect multiple cyber-biosecurity systems or data sources.
 - The evidence supports elevated public-health review, but direct biological impact still requires validated non-cyber evidence.
@@ -72,28 +72,28 @@ The active Research Facility Intrusion Investigation concerns suspected Research
 
 ## Evidence Basis
 
-**Evidence Records Reviewed:** 227
+**Evidence Records Reviewed:** 105
 
-**Correlation Records Reviewed:** 227
+**Correlation Records Reviewed:** 105
 
-**Integrity-Verified Records:** 227
+**Integrity-Verified Records:** 105
 
-**Pending Analyst Review:** 0
+**Pending Analyst Review:** 105
 
 ### Priority Findings
 
-- **Research Data Integrity Anomaly:** 24
-- **Containment Verification:** 24
-- **Command-and-Control Communication:** 20
-- **Biosecurity Policy Violation:** 19
-- **Known Threat Actor Indicator:** 19
-- **Unauthorized Facility Access:** 18
-- **Research Workstation Compromise:** 18
-- **Laboratory System Modification:** 18
-- **Analyst Intelligence Assessment:** 18
-- **Laboratory Information System Anomaly:** 17
-- **Credential Misuse:** 17
-- **Suspicious Network Activity:** 15
+- **Known Threat Actor Indicator:** 12
+- **Command-and-Control Communication:** 12
+- **Unauthorized Facility Access:** 12
+- **Research Data Integrity Anomaly:** 12
+- **Research Workstation Compromise:** 9
+- **Suspicious Network Activity:** 9
+- **Laboratory Information System Anomaly:** 9
+- **Laboratory System Modification:** 8
+- **Biosecurity Policy Violation:** 7
+- **Analyst Intelligence Assessment:** 7
+- **Containment Verification:** 5
+- **Credential Misuse:** 3
 
 ---
 
@@ -131,7 +131,7 @@ No conclusion regarding biological-agent release, specimen compromise, or public
 
 **Attribution Confidence:** 93/100 (HIGH)
 
-**Containment Confidence:** 94/100 (HIGH)
+**Containment Confidence:** 95/100 (HIGH)
 
 Attribution and containment confidence should be reassessed as additional evidence is reviewed and recovery controls are validated.
 
@@ -156,10 +156,10 @@ Attribution and containment confidence should be reassessed as additional eviden
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-8942/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-8942/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-8942/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-8942/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-8272/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-8272/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-8272/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-8272/forensic_summary.md)
 
 ---
 
