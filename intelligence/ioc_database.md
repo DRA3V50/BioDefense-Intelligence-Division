@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Identity | Credential reuse detected across isolated research segments |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| System Log | Unexpected privilege escalation recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---

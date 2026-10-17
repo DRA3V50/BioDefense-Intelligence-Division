@@ -26,11 +26,11 @@ HIGH
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
@@ -38,7 +38,7 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 

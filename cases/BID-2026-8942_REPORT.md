@@ -138,11 +138,11 @@ HIGH
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
@@ -150,7 +150,7 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Observed indicators remain consistent with the current operational assessment.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Identity | Credential reuse detected across isolated research segments |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| System Log | Unexpected privilege escalation recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Central Evidence Processing Center
 
 Platform:
 Protected Research Network
@@ -461,7 +461,7 @@ Vendor:
 VMware
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---

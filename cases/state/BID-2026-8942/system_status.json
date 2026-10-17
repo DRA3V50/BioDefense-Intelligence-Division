@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
   "case_id": "BID-2026-8942",
-  "state_revision": 14,
+  "state_revision": 15,
   "telemetry_source": "SIMULATED",
   "measurement_status": "SIMULATED",
-  "source_fingerprint": "07eff3153dfb8114bf05f58372f23d32972b0ff5988de25a3ec9e46353484553",
+  "source_fingerprint": "cef0ae10f829161cce4943c95fe40203da062b7126623fdbbd66a7d73dd094ac",
   "subsystems": {
     "evidence_pipeline": {
       "status": "NOMINAL",
-      "health": 89,
+      "health": 92,
       "led_state": "STEADY",
-      "led_intensity": 0.89
+      "led_intensity": 0.92
     },
     "correlation_engine": {
-      "status": "NOMINAL",
-      "health": 89,
-      "led_state": "STEADY",
-      "led_intensity": 0.89
-    },
-    "case_store": {
       "status": "NOMINAL",
       "health": 88,
       "led_state": "STEADY",
       "led_intensity": 0.88
+    },
+    "case_store": {
+      "status": "NOMINAL",
+      "health": 87,
+      "led_state": "STEADY",
+      "led_intensity": 0.87
     },
     "threat_assessment": {
       "status": "NOMINAL",
@@ -35,88 +35,88 @@
     "cpu_percent": {
       "unit": "percent",
       "samples": [
-        56,
+        60,
+        60,
+        60,
+        57,
+        55,
+        54,
+        57,
+        55,
         58,
         59,
-        59,
-        59,
-        59,
-        56,
-        54,
-        53,
-        53,
-        53,
-        56
+        60,
+        57
       ]
     },
     "memory_percent": {
       "unit": "percent",
       "samples": [
+        43,
+        43,
+        40,
+        38,
         37,
+        40,
         38,
-        38,
-        38,
-        38,
-        35,
-        33,
-        32,
-        32,
-        32,
-        35,
-        33
+        41,
+        42,
+        43,
+        40,
+        38
       ]
     },
     "network_percent": {
       "unit": "percent",
       "samples": [
-        55,
-        55,
-        55,
-        55,
-        52,
-        50,
-        49,
-        49,
-        49,
-        52,
-        50,
-        53
+        31,
+        28,
+        26,
+        25,
+        28,
+        26,
+        29,
+        30,
+        31,
+        28,
+        26,
+        29
       ]
     },
     "disk_percent": {
       "unit": "percent",
       "samples": [
-        59,
-        59,
-        59,
-        56,
-        54,
-        53,
-        53,
-        53,
-        56,
-        54,
-        57,
-        55
+        45,
+        43,
+        42,
+        45,
+        43,
+        46,
+        47,
+        48,
+        45,
+        43,
+        46,
+        44
       ]
     },
     "queue_depth": {
       "unit": "count",
       "samples": [
-        7,
-        7,
-        4,
-        2,
-        1,
-        1,
-        1,
-        4,
+        3,
         2,
         5,
         3,
-        5
+        6,
+        7,
+        8,
+        5,
+        3,
+        6,
+        4,
+        3
       ]
     }
   },
-  "updated_at": "2026-10-16T22:52:49Z"
+  "updated_at": "2026-10-17T08:34:44Z"
 }

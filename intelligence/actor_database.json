@@ -123,8 +123,8 @@
         {
             "name": "Research Workstation Compromise",
             "first_seen": "2026-08-03",
-            "last_seen": "2026-10-16",
-            "cases": 28,
+            "last_seen": "2026-10-17",
+            "cases": 29,
             "severity": "HIGH",
             "confidence": 87
         },
