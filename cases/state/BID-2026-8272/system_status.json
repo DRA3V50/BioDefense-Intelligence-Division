@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "case_id": "BID-2026-8272",
-  "state_revision": 3,
+  "state_revision": 4,
   "telemetry_source": "SIMULATED",
   "measurement_status": "SIMULATED",
-  "source_fingerprint": "e7f8748f27b6f8f15e1f285e2c8f7f5e3df12d0d46aafe3fa76e9e7c9724aa30",
+  "source_fingerprint": "b438ea7f6ca8363ca90ad7176812f9f809d47cd9bf01ed69cd2133388973e4ad",
   "subsystems": {
     "evidence_pipeline": {
       "status": "NOMINAL",
@@ -35,88 +35,88 @@
     "cpu_percent": {
       "unit": "percent",
       "samples": [
-        39,
         37,
-        36,
-        36,
-        36,
-        36,
+        35,
+        34,
+        34,
+        34,
+        34,
+        37,
         39,
-        41,
-        42,
+        36,
+        38,
         39,
-        41,
-        42
+        36
       ]
     },
     "memory_percent": {
       "unit": "percent",
       "samples": [
-        64,
-        63,
-        63,
-        63,
-        63,
-        66,
-        68,
-        69,
-        66,
-        68,
-        69,
-        69
+        35,
+        34,
+        34,
+        34,
+        34,
+        37,
+        39,
+        36,
+        38,
+        39,
+        36,
+        38
       ]
     },
     "network_percent": {
       "unit": "percent",
       "samples": [
-        21,
-        21,
-        21,
-        21,
-        24,
-        26,
+        22,
+        22,
+        22,
+        22,
+        25,
         27,
         24,
         26,
         27,
-        27,
+        24,
+        26,
         27
       ]
     },
     "disk_percent": {
       "unit": "percent",
       "samples": [
-        44,
-        44,
-        44,
-        47,
-        49,
+        45,
+        45,
+        45,
+        48,
         50,
         47,
         49,
         50,
+        47,
+        49,
         50,
-        50,
-        50
+        51
       ]
     },
     "queue_depth": {
       "unit": "count",
       "samples": [
+        1,
+        1,
+        4,
+        6,
+        3,
         5,
+        6,
+        3,
         5,
-        8,
-        10,
-        11,
-        8,
-        10,
-        11,
-        11,
-        11,
-        11,
-        11
+        6,
+        7,
+        4
       ]
     }
   },
-  "updated_at": "2026-10-18T08:52:47Z"
+  "updated_at": "2026-10-18T15:53:07Z"
 }

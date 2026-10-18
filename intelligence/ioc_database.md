@@ -16,11 +16,11 @@ Research Facility Intrusion Investigation
 | Category | Observation |
 |----------|-------------|
 | Security | Multi-factor authentication bypass attempt recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Identity | Credential reuse detected across isolated research segments |
-| Infrastructure | Firewall policy deviation identified |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| PowerShell | Encoded administrative command execution detected |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---

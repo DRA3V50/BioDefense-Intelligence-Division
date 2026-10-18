@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -288,11 +288,11 @@ Research Facility Intrusion Investigation
 | Category | Observation |
 |----------|-------------|
 | Security | Multi-factor authentication bypass attempt recorded |
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Identity | Credential reuse detected across isolated research segments |
-| Infrastructure | Firewall policy deviation identified |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| PowerShell | Encoded administrative command execution detected |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -449,7 +449,7 @@ Access Control Record Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
 Biosecurity Operations Center
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.
 
 
 ---

@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
