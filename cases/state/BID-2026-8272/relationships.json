@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "case_id": "BID-2026-8272",
-  "state_revision": 4,
+  "state_revision": 5,
   "nodes": [
     {
       "node_id": "case:BID-2026-8272",
@@ -96,6 +96,6 @@
       }
     }
   ],
-  "source_fingerprint": "428d2e51d68f2a8a8d7af2b41000f316866f0f316cb3dd40874ea4ff6da8e350",
-  "updated_at": "2026-10-18T15:53:07Z"
+  "source_fingerprint": "4c71a8e59f62b43fc5c7a65ae094a41f82332be93d89918ce9c3fede873ea0ca",
+  "updated_at": "2026-10-18T22:27:19Z"
 }

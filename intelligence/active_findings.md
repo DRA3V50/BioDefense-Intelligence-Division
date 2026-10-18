@@ -26,7 +26,7 @@ HIGH
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
@@ -34,11 +34,11 @@ Indicators remain consistent with a coordinated cyber-enabled bioterror intellig
 
 ### Finding 3
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 

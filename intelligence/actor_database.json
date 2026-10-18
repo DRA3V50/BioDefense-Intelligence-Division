@@ -164,7 +164,7 @@
             "name": "Access Control Record Manipulation",
             "first_seen": "2026-08-03",
             "last_seen": "2026-10-18",
-            "cases": 6,
+            "cases": 7,
             "severity": "HIGH",
             "confidence": 88
         },
