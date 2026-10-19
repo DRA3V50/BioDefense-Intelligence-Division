@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Database | Protected biomedical dataset queried outside normal operating hours |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Infrastructure | Firewall policy deviation identified |
+| Identity | Credential reuse detected across isolated research segments |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
-| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -449,7 +449,7 @@ Access Control Record Manipulation
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
 Biosecurity Operations Center
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
 HIGH

@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 

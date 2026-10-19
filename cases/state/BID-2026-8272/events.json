@@ -79,7 +79,20 @@
       "zone": "Biosecurity Segment",
       "intensity": 45,
       "idempotency_key": "evidence-review-72-of-105"
+    },
+    {
+      "event_id": "BID-2026-8272-EVT-0007",
+      "case_id": "BID-2026-8272",
+      "sequence": 7,
+      "timestamp": "2026-10-19T18:46:08Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 90/105 reviewed",
+      "severity": "HIGH",
+      "source": "process_active_case_stage",
+      "zone": "Biosecurity Segment",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-90-of-105"
     }
   ],
-  "updated_at": "2026-10-19T09:54:36Z"
+  "updated_at": "2026-10-19T18:46:08Z"
 }

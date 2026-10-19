@@ -19,7 +19,7 @@ Access Control Record Manipulation
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Advanced Genome Security Laboratory
 
 Platform:
 Biosecurity Operations Center
@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Windows Server 2025
+Hardened Research Appliance OS
 
 Security Zone:
 Biosecurity Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Evidence Acquisition
 
 Priority:
 HIGH
