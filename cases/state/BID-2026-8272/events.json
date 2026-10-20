@@ -144,7 +144,33 @@
       "zone": "Biosecurity Segment",
       "intensity": 58,
       "idempotency_key": "correlation-validation-70-of-105"
+    },
+    {
+      "event_id": "BID-2026-8272-EVT-0012",
+      "case_id": "BID-2026-8272",
+      "sequence": 12,
+      "timestamp": "2026-10-20T23:12:22Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 105/105 validated",
+      "severity": "HIGH",
+      "source": "process_active_case_stage",
+      "zone": "Biosecurity Segment",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-105-of-105"
+    },
+    {
+      "event_id": "BID-2026-8272-EVT-0013",
+      "case_id": "BID-2026-8272",
+      "sequence": 13,
+      "timestamp": "2026-10-20T23:12:22Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to ASSESSMENT: all correlations are validated against evidence.",
+      "severity": "HIGH",
+      "source": "case_lifecycle",
+      "zone": "Biosecurity Segment",
+      "intensity": 70,
+      "idempotency_key": "revision-13-WORKFLOW_STAGE_CHANGED"
     }
   ],
-  "updated_at": "2026-10-20T17:04:35Z"
+  "updated_at": "2026-10-20T23:12:22Z"
 }
