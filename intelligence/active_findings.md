@@ -26,15 +26,15 @@ HIGH
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
