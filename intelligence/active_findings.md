@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 

@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
 | PowerShell | Encoded administrative command execution detected |
-| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Infrastructure | Firewall policy deviation identified |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---

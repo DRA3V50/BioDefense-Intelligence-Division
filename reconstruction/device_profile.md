@@ -19,7 +19,7 @@ Access Control Record Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
 Biosecurity Operations Center
@@ -31,7 +31,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
 Biosecurity Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Observed indicators remain consistent with the current operational assessment.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
 | PowerShell | Encoded administrative command execution detected |
-| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Infrastructure | Firewall policy deviation identified |
+| Security | Multi-factor authentication bypass attempt recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Access Control Record Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
 Biosecurity Operations Center
@@ -461,7 +461,7 @@ Vendor:
 Palo Alto Networks
 
 Operating System:
-Ubuntu Server 24.04 LTS
+VMware ESXi 9
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---
