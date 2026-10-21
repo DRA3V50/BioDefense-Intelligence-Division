@@ -9,7 +9,7 @@
 | Classification | Research Facility Intrusion Investigation |
 | Threat Family | Access Control Record Manipulation |
 | Severity | HIGH |
-| Status | Evidence Collection |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**ESCALATED**
 
 Priority:
 

@@ -10,7 +10,7 @@ Classification: Research Facility Intrusion Investigation
 
 Threat Family: Access Control Record Manipulation
 
-Current Status: Evidence Collection
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 

@@ -19,7 +19,7 @@ Access Control Record Manipulation
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
 Biosecurity Operations Center
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Digital evidence preserved for laboratory forensic examination.

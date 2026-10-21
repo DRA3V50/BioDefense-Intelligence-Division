@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Collection
+ESCALATED
 
 ---
 
@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
@@ -186,7 +186,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Evidence Collection
+ESCALATED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Research Facility Intrusion Investigation
 
 Threat Family: Access Control Record Manipulation
 
-Current Status: Evidence Collection
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -288,11 +288,11 @@ Research Facility Intrusion Investigation
 | Category | Observation |
 |----------|-------------|
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| System Log | Unexpected privilege escalation recorded |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Evidence | Acquired forensic image verified using SHA-256 |
 | Device | Protected workstation entered evidence preservation mode |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Identity | Credential reuse detected across isolated research segments |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -319,7 +319,7 @@ Analyst Team Bravo
 
 Current Status:
 
-Evidence Collection
+ESCALATED
 
 
 ---
@@ -337,7 +337,7 @@ Evidence Collection
 | Classification | Research Facility Intrusion Investigation |
 | Threat Family | Access Control Record Manipulation |
 | Severity | HIGH |
-| Status | Evidence Collection |
+| Status | ESCALATED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Evidence Collection**
+**ESCALATED**
 
 Priority:
 
@@ -449,7 +449,7 @@ Access Control Record Manipulation
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
 Biosecurity Operations Center
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---
@@ -518,7 +518,7 @@ Research Facility Intrusion Investigation
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Evidence Collection
+ESCALATED
 
 ### Severity
 HIGH

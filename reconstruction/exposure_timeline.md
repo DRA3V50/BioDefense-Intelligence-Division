@@ -13,7 +13,7 @@ Research Facility Intrusion Investigation
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Evidence Collection
+ESCALATED
 
 ### Severity
 HIGH
