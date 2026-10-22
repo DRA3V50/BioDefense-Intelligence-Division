@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-8272 |
+| Case ID | BID-2026-6011 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Facility Intrusion Investigation |
-| Threat Family | Access Control Record Manipulation |
-| Severity | HIGH |
-| Status | ESCALATED |
+| Classification | Biocontainment Network Investigation |
+| Threat Family | Biomedical Supply Chain Compromise |
+| Severity | MODERATE |
+| Status | Intelligence Analysis |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Clinical Data Server |
-| Vendor | Palo Alto Networks |
-| Security Zone | Biosecurity Segment |
+| Platform | Laboratory Control Network |
+| Device | Specimen Tracking Terminal |
+| Vendor | Lenovo |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 81 |
-| Confidence | 88% |
-| Evidence Collected | 105 |
-| Indicators Identified | 82 |
-| Affected Assets | 18 |
+| Risk Score | 51 |
+| Confidence | 92% |
+| Evidence Collected | 42 |
+| Indicators Identified | 28 |
+| Affected Assets | 6 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Intelligence Analysis**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

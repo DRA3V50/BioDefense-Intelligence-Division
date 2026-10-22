@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8272
+BID-2026-6011
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 Threat Family:
-Access Control Record Manipulation
+Biomedical Supply Chain Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Intelligence Analysis
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Laboratory Control Network
 
 Device:
-Clinical Data Server
+Specimen Tracking Terminal
 
 Vendor:
-Palo Alto Networks
+Lenovo
 
 Security Zone:
-Biosecurity Segment
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-147
+148
 
 Evidence Collected:
-105
+42
 
 Indicators Identified:
-82
+28
 
 Affected Assets:
-18
+6
 
 Confidence:
-88%
+92%
 
 Risk Score:
-81
+51
 
 ---
 

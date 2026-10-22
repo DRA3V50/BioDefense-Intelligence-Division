@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-6011",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-10-22T09:25:11Z",
+  "platform": "Laboratory Control Network",
+  "vendor": "Lenovo",
+  "device": "Specimen Tracking Terminal",
+  "baseline_version": "5.2.7",
+  "zone": "Secure Laboratory",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

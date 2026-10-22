@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8272
+BID-2026-6011
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Device | Protected workstation entered evidence preservation mode |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | Identity | Credential reuse detected across isolated research segments |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| PowerShell | Encoded administrative command execution detected |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -28,23 +28,23 @@ Research Facility Intrusion Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-105
+42
 
 Indicators Reviewed:
-82
+28
 
 Risk Score:
-81
+51
 
 Confidence:
-88%
+92%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Alpha
 
 Current Status:
 
-ESCALATED
+Intelligence Analysis

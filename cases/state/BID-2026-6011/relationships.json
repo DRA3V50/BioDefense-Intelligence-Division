@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "case_id": "BID-2026-6011",
+  "state_revision": 2,
+  "nodes": [
+    {
+      "node_id": "case:BID-2026-6011",
+      "node_type": "case",
+      "label": "BID-2026-6011"
+    },
+    {
+      "node_id": "campaign:BDC-2026-001",
+      "node_type": "campaign",
+      "label": "BDC-2026-001"
+    },
+    {
+      "node_id": "platform:Laboratory Control Network",
+      "node_type": "platform",
+      "label": "Laboratory Control Network"
+    },
+    {
+      "node_id": "zone:Secure Laboratory",
+      "node_type": "network_zone",
+      "label": "Secure Laboratory"
+    },
+    {
+      "node_id": "evidence:BID-2026-6011",
+      "node_type": "evidence_collection",
+      "label": "Evidence Collection"
+    },
+    {
+      "node_id": "correlations:BID-2026-6011",
+      "node_type": "correlation_set",
+      "label": "Evidence Correlations"
+    },
+    {
+      "node_id": "threat:BID-2026-6011",
+      "node_type": "threat_assessment",
+      "label": "C# Threat Assessment"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "BID-2026-6011-REL-04da9d758ce7f647",
+      "case_id": "BID-2026-6011",
+      "source": "case:BID-2026-6011",
+      "target": "campaign:BDC-2026-001",
+      "relationship_type": "BELONGS_TO",
+      "attributes": {}
+    },
+    {
+      "relationship_id": "BID-2026-6011-REL-fc654906d36aea62",
+      "case_id": "BID-2026-6011",
+      "source": "case:BID-2026-6011",
+      "target": "platform:Laboratory Control Network",
+      "relationship_type": "AFFECTS_PLATFORM",
+      "attributes": {}
+    },
+    {
+      "relationship_id": "BID-2026-6011-REL-7132d01929cdf5b4",
+      "case_id": "BID-2026-6011",
+      "source": "case:BID-2026-6011",
+      "target": "zone:Secure Laboratory",
+      "relationship_type": "OBSERVED_IN_ZONE",
+      "attributes": {}
+    },
+    {
+      "relationship_id": "BID-2026-6011-REL-154e29ccda784fe8",
+      "case_id": "BID-2026-6011",
+      "source": "case:BID-2026-6011",
+      "target": "evidence:BID-2026-6011",
+      "relationship_type": "HAS_EVIDENCE",
+      "attributes": {
+        "count": 42
+      }
+    },
+    {
+      "relationship_id": "BID-2026-6011-REL-1df5865e3269f148",
+      "case_id": "BID-2026-6011",
+      "source": "case:BID-2026-6011",
+      "target": "correlations:BID-2026-6011",
+      "relationship_type": "HAS_CORRELATIONS",
+      "attributes": {
+        "count": 42
+      }
+    },
+    {
+      "relationship_id": "BID-2026-6011-REL-cb665d85e134638d",
+      "case_id": "BID-2026-6011",
+      "source": "case:BID-2026-6011",
+      "target": "threat:BID-2026-6011",
+      "relationship_type": "HAS_THREAT_ASSESSMENT",
+      "attributes": {
+        "score": 43,
+        "classification": "GUARDED"
+      }
+    }
+  ],
+  "source_fingerprint": "32d1c54aa72d4c66bc5f7cc7c33d5651d98feff0a0f3c6dfd5cf42a282f4f761",
+  "updated_at": "2026-10-22T09:25:22Z"
+}

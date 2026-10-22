@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8272
+Case ID: BID-2026-6011
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Research Facility Intrusion Investigation
+Classification: Biocontainment Network Investigation
 
-Threat Family: Access Control Record Manipulation
+Threat Family: Biomedical Supply Chain Compromise
 
-Current Status: ESCALATED
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Current findings support maintaining the existing investigation priority.
 
-Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ELEVATED
 
 Risk Score:
-81
+51
 
 Confidence:
-88%
+92%
 
 Affected Assets:
-18
+6
 
 Evidence Collected:
-105
+42
 
 Indicators Recorded:
-82
+28
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+Analyst Team Alpha
 
 Date:
 
-2026-10-17
+2026-10-22

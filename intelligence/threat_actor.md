@@ -1,17 +1,17 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Access Control Record Manipulation
+Biomedical Supply Chain Compromise
 
 ---
 
 ## Primary Alias
-Vector-9
+Dark Sequence
 
 ---
 
 ## Attribution
-Foreign Intelligence Interest
+Unknown
 
 ---
 
@@ -21,29 +21,29 @@ Strategic Intelligence Collection
 ---
 
 ## Operational Sophistication
-Moderate
+Advanced
 
 ---
 
 ## Confidence
-88%
+92%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Research Data Exfiltration
+- Exposed Remote Service
+- Laboratory Network Reconnaissance
+- Concealed Internal Movement
 - Biosecurity System Tampering
-- Command and Control
-- Lateral Movement
-- Privilege Escalation
+- Supply Chain Compromise
+- Long-Term Network Foothold
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Alpha
 
-**Analyst Note:** Cross-referencing this actor against prior containment cases for overlap.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,9 +53,9 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Facility Intrusion Investigation
+Biocontainment Network Investigation
 
 ---
 
 ## Last Updated
-2026-10-21
+2026-10-22
