@@ -138,7 +138,7 @@ ELEVATED
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
@@ -146,15 +146,15 @@ Multiple investigative artifacts require additional correlation before attributi
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| PowerShell | Encoded administrative command execution detected |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -449,7 +449,7 @@ Biomedical Supply Chain Compromise
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
 Laboratory Control Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Awaiting Laboratory Review
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+No destructive activity observed following initial containment.
 
 
 ---

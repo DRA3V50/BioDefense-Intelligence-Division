@@ -26,7 +26,7 @@ ELEVATED
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
@@ -34,15 +34,15 @@ Multiple investigative artifacts require additional correlation before attributi
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 

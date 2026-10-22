@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22 09:25 UTC",
+  "generatedAt": "2026-10-22 17:11 UTC",
   "engine": {
     "name": "BioDefense C# Bioterror Threat Scoring Engine",
     "version": "1.1.0",
@@ -8,7 +8,7 @@
   },
   "investigation": {
     "caseId": "BID-2026-6011",
-    "caseRevision": 2,
+    "caseRevision": 3,
     "campaignId": "BDC-2026-001",
     "operation": "Coordinated Biomedical Systems Intrusion",
     "classification": "Biocontainment Network Investigation",
@@ -63,7 +63,7 @@
     "evidenceRecords": 42,
     "correlationRecords": 42,
     "integrityVerifiedRecords": 42,
-    "pendingAnalystReview": 42,
+    "pendingAnalystReview": 35,
     "priorityFindings": [
       {
         "finding": "Analyst Intelligence Assessment",

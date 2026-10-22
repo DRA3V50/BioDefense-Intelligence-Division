@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-10-22 09:25 UTC
+**Generated:** 2026-10-22 17:11 UTC
 
 **Case ID:** BID-2026-6011
 
@@ -39,9 +39,9 @@ evidence correlations, and the active case assessment.
 ### Supporting Evidence
 
 - **BID-2026-6011-EV-0001** — Firewall Log  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0002** — Firewall Log  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0013** — Firewall Log  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-6011-EV-0026** — Firewall Log  
@@ -68,7 +68,7 @@ chain-of-custody records should be verified before final attribution.
 ### Supporting Evidence
 
 - **BID-2026-6011-EV-0003** — Containment Validation Record  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0021** — Containment Validation Record  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-6011-EV-0038** — Containment Validation Record  
@@ -95,7 +95,7 @@ chain-of-custody records should be verified before final attribution.
 ### Supporting Evidence
 
 - **BID-2026-6011-EV-0004** — Analyst Observation  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0012** — Analyst Observation  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-6011-EV-0018** — Analyst Observation  
@@ -128,7 +128,7 @@ chain-of-custody records should be verified before final attribution.
 ### Supporting Evidence
 
 - **BID-2026-6011-EV-0005** — Research Workstation Event Log  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0010** — Research Workstation Event Log  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-6011-EV-0037** — Research Workstation Event Log  
@@ -153,7 +153,7 @@ chain-of-custody records should be verified before final attribution.
 ### Supporting Evidence
 
 - **BID-2026-6011-EV-0006** — Threat Intelligence Record  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0017** — Threat Intelligence Record  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-6011-EV-0023** — Threat Intelligence Record  
@@ -182,7 +182,7 @@ chain-of-custody records should be verified before final attribution.
 ### Supporting Evidence
 
 - **BID-2026-6011-EV-0007** — Laboratory Information System Audit Log  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0008** — Laboratory Information System Audit Log  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-6011-EV-0009** — Laboratory Information System Audit Log  

@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-10-22 09:25 UTC
+**Generated:** 2026-10-22 17:11 UTC
 
 ---
 
@@ -77,7 +77,7 @@ The active Biocontainment Network Investigation concerns suspected Biomedical Su
 
 **Integrity-Verified Records:** 42
 
-**Pending Analyst Review:** 42
+**Pending Analyst Review:** 35
 
 ### Priority Findings
 
