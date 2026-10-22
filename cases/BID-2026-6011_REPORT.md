@@ -138,15 +138,15 @@ ELEVATED
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Evidence indicates possible insider-assisted access to protected laboratory reso
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -287,11 +287,11 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Identity | Credential reuse detected across isolated research segments |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Infrastructure | Firewall policy deviation identified |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Research Storage | Unauthorized access to protected genomic repository |
 
 
@@ -449,7 +449,7 @@ Biomedical Supply Chain Compromise
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
 Laboratory Control Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Isolated From Production
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---

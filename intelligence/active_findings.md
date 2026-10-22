@@ -26,15 +26,15 @@ ELEVATED
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Evidence indicates possible insider-assisted access to protected laboratory reso
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
