@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-10-23 09:22 UTC
+**Generated:** 2026-10-23 23:10 UTC
 
 **Case ID:** BID-2026-6011
 
@@ -45,9 +45,9 @@ evidence correlations, and the active case assessment.
 - **BID-2026-6011-EV-0013** — Firewall Log  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0026** — Firewall Log  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0028** — Firewall Log  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -103,7 +103,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6011-EV-0020** — Analyst Observation  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0022** — Analyst Observation  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0030** — Analyst Observation  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-6011-EV-0041** — Analyst Observation  
@@ -157,11 +157,11 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6011-EV-0017** — Threat Intelligence Record  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0023** — Threat Intelligence Record  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0024** — Threat Intelligence Record  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0027** — Threat Intelligence Record  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -238,7 +238,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6011-EV-0016** — Network Connection Record  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0025** — Network Connection Record  
-  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6011-EV-0039** — Network Connection Record  
   Source: **Specimen Tracking Terminal** | Vendor: **Lenovo** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
