@@ -12,7 +12,8 @@
       "related_indicator": "IOC-2026-1940",
       "finding": "Suspicious Network Activity",
       "confidence": 83,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -22,7 +23,8 @@
       "related_indicator": "IOC-2026-7478",
       "finding": "Suspicious Network Activity",
       "confidence": 89,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -32,7 +34,8 @@
       "related_indicator": "IOC-2026-7805",
       "finding": "Containment Verification",
       "confidence": 99,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -42,7 +45,8 @@
       "related_indicator": "IOC-2026-1815",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 81,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -52,7 +56,8 @@
       "related_indicator": "IOC-2026-5147",
       "finding": "Research Workstation Compromise",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -62,7 +67,8 @@
       "related_indicator": "IOC-2026-6552",
       "finding": "Known Threat Actor Indicator",
       "confidence": 82,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -72,7 +78,8 @@
       "related_indicator": "IOC-2026-2190",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 99,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -82,7 +89,8 @@
       "related_indicator": "IOC-2026-1464",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 96,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -92,7 +100,8 @@
       "related_indicator": "IOC-2026-2059",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -102,7 +111,8 @@
       "related_indicator": "IOC-2026-4611",
       "finding": "Research Workstation Compromise",
       "confidence": 82,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -112,7 +122,8 @@
       "related_indicator": "IOC-2026-7050",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 90,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -122,7 +133,8 @@
       "related_indicator": "IOC-2026-7356",
       "finding": "Analyst Intelligence Assessment",
       "confidence": 91,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -132,7 +144,8 @@
       "related_indicator": "IOC-2026-7664",
       "finding": "Suspicious Network Activity",
       "confidence": 82,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -142,7 +155,8 @@
       "related_indicator": "IOC-2026-4087",
       "finding": "Laboratory Information System Anomaly",
       "confidence": 80,
-      "analysis_status": "Correlated"
+      "analysis_status": "Validated",
+      "validated_at": "2026-10-24T22:30:05Z"
     },
     {
       "case_id": "BID-2026-6011",
@@ -424,5 +438,13 @@
       "confidence": 87,
       "analysis_status": "Correlated"
     }
-  ]
+  ],
+  "lifecycle_processing": {
+    "validated_count": 14,
+    "total_correlation_count": 42,
+    "last_validation_batch_size": 14,
+    "last_validated_at": "2026-10-24T22:30:05Z",
+    "last_updated_by": "process_active_case_stage"
+  },
+  "updated_at": "2026-10-24T22:30:05Z"
 }
