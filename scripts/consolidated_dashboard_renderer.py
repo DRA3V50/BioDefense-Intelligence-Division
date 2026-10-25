@@ -4932,7 +4932,24 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
     for name, relative, mutate in mutations:
         with tempfile.TemporaryDirectory(prefix="bd9-stale-") as temporary:
             candidate = Path(temporary) / "fixture"
-            shutil.copytree(state_root, candidate, ignore=fixture_ignore)
+                        shutil.copytree(
+                state_root,
+                candidate,
+                ignore=shutil.ignore_patterns(
+                    ".git",
+                    "__pycache__",
+                    ".pytest_cache",
+                    "*.pyc",
+                    "*.pyo",
+                    "bin",
+                    "obj",
+                    "deployment_candidate",
+                    "subsystem_10_production_proof",
+                    "biodefense-case-scan.gif",
+                    "biodefense-dashboard-current.png",
+                    "biodefense-dashboard-base.png",
+                ),
+            )
             path = candidate / relative
             payload = _read_json(path)
             mutate(payload)
@@ -4946,7 +4963,24 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
 
     with tempfile.TemporaryDirectory(prefix="bd9-missing-") as temporary:
         candidate = Path(temporary) / "fixture"
-        shutil.copytree(state_root, candidate, ignore=fixture_ignore)
+                    shutil.copytree(
+                state_root,
+                candidate,
+                ignore=shutil.ignore_patterns(
+                    ".git",
+                    "__pycache__",
+                    ".pytest_cache",
+                    "*.pyc",
+                    "*.pyo",
+                    "bin",
+                    "obj",
+                    "deployment_candidate",
+                    "subsystem_10_production_proof",
+                    "biodefense-case-scan.gif",
+                    "biodefense-dashboard-current.png",
+                    "biodefense-dashboard-base.png",
+                ),
+            )
         missing = candidate / "cases" / "state" / case_id / "system_status.json"
         missing.unlink()
         try:
