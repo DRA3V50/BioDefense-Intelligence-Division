@@ -26,19 +26,19 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 

@@ -138,19 +138,19 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 5
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Analysts continue evaluating recovered indicators for operational significance.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Identity | Credential reuse detected across isolated research segments |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Device | Protected workstation entered evidence preservation mode |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -449,7 +449,7 @@ Biomedical Supply Chain Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 Lenovo
 
 Operating System:
-VMware ESXi 9
+Windows Server 2025
 
 Security Zone:
 Secure Laboratory
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.
 
 
 ---

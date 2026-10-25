@@ -15,12 +15,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Identity | Credential reuse detected across isolated research segments |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
 | Authentication | Privileged account authenticated outside approved maintenance window |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Device | Protected workstation entered evidence preservation mode |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---

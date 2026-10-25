@@ -19,7 +19,7 @@ Biomedical Supply Chain Compromise
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
 Laboratory Control Network
@@ -31,7 +31,7 @@ Vendor:
 Lenovo
 
 Operating System:
-VMware ESXi 9
+Windows Server 2025
 
 Security Zone:
 Secure Laboratory
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Under Forensic Preservation
 
 Priority:
 ELEVATED
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.
