@@ -4945,7 +4945,7 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
     for name, relative, mutate in mutations:
         with tempfile.TemporaryDirectory(prefix="bd9-stale-") as temporary:
             candidate = Path(temporary) / "fixture"
-            shutil.copytree(state_root, candidate)
+            shutil.copytree(state_root, candidate, ignore=fixture_ignore)
             path = candidate / relative
             payload = _read_json(path)
             mutate(payload)
@@ -4959,7 +4959,7 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
 
     with tempfile.TemporaryDirectory(prefix="bd9-missing-") as temporary:
         candidate = Path(temporary) / "fixture"
-        shutil.copytree(state_root, candidate)
+        shutil.copytree(state_root, candidate, ignore=fixture_ignore)
         missing = candidate / "cases" / "state" / case_id / "system_status.json"
         missing.unlink()
         try:
