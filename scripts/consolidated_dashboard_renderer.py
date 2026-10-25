@@ -4307,6 +4307,20 @@ def save_labeled_panels(
         raise RendererContractError("Cannot create an empty proof sheet.")
     columns = columns or len(records)
     max_width = max(panel.shape[1] for _, panel in records) * scale
+        fixture_ignore = shutil.ignore_patterns(
+        ".git",
+        "__pycache__",
+        ".pytest_cache",
+        "*.pyc",
+        "*.pyo",
+        "bin",
+        "obj",
+        "deployment_candidate",
+        "subsystem_10_production_proof",
+        "biodefense-case-scan.gif",
+        "biodefense-dashboard-current.png",
+        "biodefense-dashboard-base.png",
+    )
     max_height = max(panel.shape[0] for _, panel in records) * scale
     margin, header, label_h = 12, 28 if title else 0, 20
     rows = math.ceil(len(records) / columns)
