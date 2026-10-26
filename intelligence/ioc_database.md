@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6011
+BID-2026-8012
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Biological Research Intelligence Collection
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Authentication | Privileged account authenticated outside approved maintenance window |
 | Infrastructure | Firewall policy deviation identified |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -28,23 +28,23 @@ Biocontainment Network Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-42
+128
 
 Indicators Reviewed:
-28
+85
 
 Risk Score:
-51
+72
 
 Confidence:
-92%
+86%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo
 
 Current Status:
 
-RESOLVED
+Open

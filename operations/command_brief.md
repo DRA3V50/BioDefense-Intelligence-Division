@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-10-26 18:42 UTC
+**Generated:** 2026-10-26 23:55 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** HIGH
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-6011
+**Case ID:** BID-2026-8012
 
-**Classification:** Biocontainment Network Investigation
+**Classification:** Biological Research Intelligence Collection
 
-**Severity:** MODERATE
+**Severity:** HIGH
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Medical Device Communications Interference
 
-**Confidence:** 92%
+**Confidence:** 86%
 
 ---
 
 ## Investigation Summary
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **42**
+Evidence Collected: **128**
 
-Indicators: **28**
+Indicators: **85**
 
-Priority: **ELEVATED**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 Initial Access:
-**Exposed Remote Service**
+**Phishing**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**144**
+**145**
 
 Confirmed Intrusions:
 **20**
 
 Total Evidence:
-**100523**
+**100651**
 
 Total Indicators:
-**64776**
+**64861**
 
 ---
 
 ## Operational Highlights
 
-- 42 evidence items are associated with the active investigation.
-- 28 indicators are currently linked to the case.
-- Containment remains at **HIGH**.
-- Analyst confidence is **92%**.
-- Current investigation priority is **ELEVATED**.
+- 128 evidence items are associated with the active investigation.
+- 85 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **86%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

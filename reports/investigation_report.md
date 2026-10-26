@@ -2,7 +2,7 @@
 
 ## Cyber-Biothreat Investigation Report
 
-**Generated:** 2026-10-26 18:44 UTC
+**Generated:** 2026-10-26 23:56 UTC
 
 ---
 
@@ -12,39 +12,39 @@
 
 **Campaign ID:** BDC-2026-001
 
-**Case ID:** BID-2026-6011
+**Case ID:** BID-2026-8012
 
-**Case Status:** RESOLVED
+**Case Status:** Open
 
-**Priority:** ELEVATED
+**Priority:** HIGH
 
-**Risk Score:** 51
+**Risk Score:** 72
 
-**Affected Platform:** Laboratory Control Network
+**Affected Platform:** Research Data Repository
 
-**Affected Assets:** 6
+**Affected Assets:** 26
 
-**Initial Access:** Exposed Remote Service
+**Initial Access:** Phishing
 
-**Lead Analyst:** Analyst Team Alpha
+**Lead Analyst:** Analyst Team Bravo
 
-**Classification:** Biocontainment Network Investigation
+**Classification:** Biological Research Intelligence Collection
 
 ---
 
 ## Executive Summary
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Cyber-Biothreat Assessment
 
-**Threat Severity:** MODERATE
+**Threat Severity:** HIGH
 
-**Threat Family:** Biomedical Supply Chain Compromise
+**Threat Family:** Medical Device Communications Interference
 
-**Assessment Confidence:** 92%
+**Assessment Confidence:** 86%
 
 **Containment Status:** Operational Recovery
 
@@ -54,9 +54,9 @@ The investigation evaluates whether cyber activity affected biological research,
 
 ## Evidence Summary
 
-**Evidence Records:** 42
+**Evidence Records:** 128
 
-**Correlation Records:** 42
+**Correlation Records:** 128
 
 **Evidence Integrity:** Verified
 
@@ -89,7 +89,7 @@ No conclusion regarding biological material release should be made unless it is 
 
 ## Analyst Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 The current assessment remains subject to revision as evidence is validated, correlated, and reviewed for attribution.
 
@@ -117,10 +117,10 @@ The current assessment remains subject to revision as evidence is validated, cor
 - [Command Brief](../operations/command_brief.md) — Available
 - [Investigation Timeline](../operations/investigation_timeline.md) — Available
 - [Evidence Chain Analysis](../evidence/evidence_chain.md) — Available
-- [Evidence Manifest](../evidence/BID-2026-6011/evidence_manifest.json) — Available
-- [Evidence Correlations](../evidence/BID-2026-6011/evidence_correlations.json) — Available
-- [Chain of Custody](../evidence/BID-2026-6011/chain_of_custody.md) — Available
-- [Forensic Summary](../evidence/BID-2026-6011/forensic_summary.md) — Available
+- [Evidence Manifest](../evidence/BID-2026-8012/evidence_manifest.json) — Available
+- [Evidence Correlations](../evidence/BID-2026-8012/evidence_correlations.json) — Available
+- [Chain of Custody](../evidence/BID-2026-8012/chain_of_custody.md) — Available
+- [Forensic Summary](../evidence/BID-2026-8012/forensic_summary.md) — Available
 
 ---
 

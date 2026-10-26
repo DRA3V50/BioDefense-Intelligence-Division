@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-6011
+BID-2026-8012
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biocontainment Network Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Biomedical Supply Chain Compromise
+Medical Device Communications Interference
 
 Severity:
-MODERATE
+HIGH
 
 Priority:
-ELEVATED
+HIGH
 
 ---
 
@@ -26,39 +26,39 @@ ELEVATED
 
 ### Finding 1
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-6
+26
 
 Evidence Collected:
-42
+128
 
 Indicators Identified:
-28
+85
 
 Analyst Confidence:
-92%
+86%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 # Operational Status
 
 Current Status:
-RESOLVED
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Alpha
+Analyst Team Bravo

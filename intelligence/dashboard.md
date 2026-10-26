@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6011 |
+| Case ID | BID-2026-8012 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biocontainment Network Investigation |
-| Threat Family | Biomedical Supply Chain Compromise |
-| Severity | MODERATE |
-| Status | RESOLVED |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Medical Device Communications Interference |
+| Severity | HIGH |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Laboratory Control Network |
-| Device | Specimen Tracking Terminal |
+| Platform | Research Data Repository |
+| Device | Biomedical Workstation |
 | Vendor | Lenovo |
-| Network Zone | Secure Laboratory |
+| Network Zone | Biosecurity Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 51 |
-| Confidence | 92% |
-| Evidence | 42 |
-| Indicators | 28 |
-| Affected Assets | 6 |
+| Risk Score | 72 |
+| Confidence | 86% |
+| Evidence | 128 |
+| Indicators | 85 |
+| Affected Assets | 26 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Alpha**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.

@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Biomedical Supply Chain Compromise
+Medical Device Communications Interference
 
 ---
 
 ## Primary Alias
-Dark Sequence
+Crimson Cell
 
 ---
 
 ## Attribution
-Unknown
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Strategic Intelligence Collection
+Disruption of Biosecurity Operations
 
 ---
 
 ## Operational Sophistication
-Advanced
+Moderate
 
 ---
 
 ## Confidence
-92%
+86%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
+- Phishing
 - Laboratory Network Reconnaissance
-- Concealed Internal Movement
-- Biosecurity System Tampering
+- Covert Remote Access Tooling
+- Lateral Movement
 - Supply Chain Compromise
-- Long-Term Network Foothold
+- Privilege Escalation
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Bravo
 
-**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
+**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biocontainment Network Investigation
+Biological Research Intelligence Collection
 
 ---
 
