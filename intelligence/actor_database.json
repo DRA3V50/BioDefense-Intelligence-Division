@@ -115,8 +115,8 @@
         {
             "name": "Biomedical Supply Chain Compromise",
             "first_seen": "2026-08-02",
-            "last_seen": "2026-10-25",
-            "cases": 18,
+            "last_seen": "2026-10-26",
+            "cases": 19,
             "severity": "MODERATE",
             "confidence": 92
         },
