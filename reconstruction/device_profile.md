@@ -19,7 +19,7 @@ Biomedical Supply Chain Compromise
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+National Pathogen Research Facility
 
 Platform:
 Laboratory Control Network
@@ -31,7 +31,7 @@ Vendor:
 Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Secure Laboratory
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 ELEVATED
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.

@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=1c1678e8f679" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=8ae9b79b4106" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -51,9 +51,9 @@
     <tr>
       <td valign="top" align="left"><strong>Case:</strong> <code>BID-2026-6011</code><br>
 <strong>Campaign:</strong> <code>BDC-2026-001</code></td>
-      <td valign="top" align="left"><strong>Record:</strong> <code>INTELLIGENCE ANALYSIS</code><br>
+      <td valign="top" align="left"><strong>Record:</strong> <code>RESOLVED</code><br>
 <strong>Stage:</strong> ■ <code>PROBLEM REVIEW</code><br>
-<strong>Lifecycle:</strong> ■ <code>ACTIVE</code></td>
+<strong>Lifecycle:</strong> ■ <code>RESOLVED</code></td>
       <td valign="top" align="left"><code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
 <code>CSV</code> · <code>XLSX</code></td>
     </tr>
@@ -84,7 +84,7 @@ Investigations retain case identity and evidentiary state across scheduled GitHu
       <td valign="top" align="left"><strong>Phase:</strong> ■ Operational Recovery<br>
 <strong>Containment:</strong> ■ HIGH<br>
 <strong>Intrusions:</strong> 20</td>
-      <td valign="top" align="left"><strong>Active Cases:</strong> 145<br>
+      <td valign="top" align="left"><strong>Active Cases:</strong> 144<br>
 <strong>Evidence:</strong> 100,523<br>
 <strong>Indicators:</strong> 64,776<br>
 <strong>Facilities / States:</strong> 11 / 3</td>
@@ -375,7 +375,7 @@ The active investigation persists across scheduled workflow executions and advan
       <td valign="top" align="left">MODERATE</td>
       <td valign="top" align="right">51</td>
       <td valign="top" align="right">92</td>
-      <td valign="top" align="left">Intelligence Analysis</td>
+      <td valign="top" align="left">RESOLVED</td>
     </tr>
     <tr>
       <td valign="top" align="left">2026-10-17</td>
@@ -449,7 +449,7 @@ The active investigation persists across scheduled workflow executions and advan
     </tr>
     <tr>
       <td valign="top" align="left">Closed Cases</td>
-      <td valign="top" align="right">3</td>
+      <td valign="top" align="right">4</td>
     </tr>
     <tr>
       <td valign="top" align="left">Average Confidence</td>

@@ -10,7 +10,7 @@ Classification: Biocontainment Network Investigation
 
 Threat Family: Biomedical Supply Chain Compromise
 
-Current Status: Intelligence Analysis
+Current Status: RESOLVED
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+Observed indicators remain consistent with the current operational assessment.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 

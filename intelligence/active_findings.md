@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Privilege escalation activity was observed within a protected research environment.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 
@@ -74,7 +74,7 @@ Observed activity presents a credible risk to data integrity, case evidence, or 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+RESOLVED
 
 Recommended Action:
 

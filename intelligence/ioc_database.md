@@ -15,12 +15,12 @@ Biocontainment Network Investigation
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
-| System Log | Unexpected privilege escalation recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Identity | Credential reuse detected across isolated research segments |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -47,4 +47,4 @@ Analyst Team Alpha
 
 Current Status:
 
-Intelligence Analysis
+RESOLVED

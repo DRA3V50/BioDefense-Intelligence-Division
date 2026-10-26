@@ -9,7 +9,7 @@
 | Classification | Biocontainment Network Investigation |
 | Threat Family | Biomedical Supply Chain Compromise |
 | Severity | MODERATE |
-| Status | Intelligence Analysis |
+| Status | RESOLVED |
 | Phase | Operational Recovery |
 
 ---

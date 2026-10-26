@@ -18,7 +18,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Intelligence Analysis
+RESOLVED
 
 ---
 
