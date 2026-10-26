@@ -4911,7 +4911,10 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
         (
             "wrong_threat_state_revision",
             Path("reports/bioterror_threat_score_csharp.json"),
-            lambda payload: payload["investigation"].__setitem__("caseRevision", int(payload["investigation"]["caseRevision"]) + 1),
+            lambda payload: payload["investigation"].__setitem__(
+                "caseRevision",
+                int(payload["investigation"]["caseRevision"]) + 1,
+            ),
         ),
         (
             "wrong_evidence_case_id",
@@ -4921,7 +4924,9 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
         (
             "wrong_correlation_case_id",
             Path("evidence") / case_id / "evidence_correlations.json",
-            lambda payload: payload["correlations"][0].__setitem__("case_id", "BID-2099-9999"),
+            lambda payload: payload["correlations"][0].__setitem__(
+                "case_id", "BID-2099-9999"
+            ),
         ),
         (
             "wrong_relationship_case_id",
@@ -4929,10 +4934,11 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
             lambda payload: payload.__setitem__("case_id", "BID-2099-9999"),
         ),
     )
+
     for name, relative, mutate in mutations:
         with tempfile.TemporaryDirectory(prefix="bd9-stale-") as temporary:
             candidate = Path(temporary) / "fixture"
-                        shutil.copytree(
+            shutil.copytree(
                 state_root,
                 candidate,
                 ignore=shutil.ignore_patterns(
@@ -4954,14 +4960,23 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
             payload = _read_json(path)
             mutate(payload)
             _write_json(path, payload)
+
             try:
                 build_dashboard_state(candidate)
-            except (CaseStateError, StateValidationError, StaleDataError, KeyError, ValueError):
+            except (
+                CaseStateError,
+                StateValidationError,
+                StaleDataError,
+                KeyError,
+                ValueError,
+            ):
                 results[name] = "rejected"
             else:
-                raise RendererContractError(f"Stale data was silently accepted: {name}")
+                raise RendererContractError(
+                    f"Stale data was silently accepted: {name}"
+                )
 
-        with tempfile.TemporaryDirectory(prefix="bd9-missing-") as temporary:
+    with tempfile.TemporaryDirectory(prefix="bd9-missing-") as temporary:
         candidate = Path(temporary) / "fixture"
         shutil.copytree(
             state_root,
@@ -4983,14 +4998,23 @@ def run_stale_and_missing_safety_checks(state_root: Path) -> dict[str, str]:
         )
         missing = candidate / "cases" / "state" / case_id / "system_status.json"
         missing.unlink()
+
         try:
             build_dashboard_state(candidate)
-        except (CaseStateError, StateValidationError, StaleDataError, FileNotFoundError, KeyError):
+        except (
+            CaseStateError,
+            StateValidationError,
+            StaleDataError,
+            FileNotFoundError,
+            KeyError,
+        ):
             results["missing_required_system_status"] = "clear_failure"
         else:
-            raise RendererContractError("Missing system status was silently accepted.")
-    return results
+            raise RendererContractError(
+                "Missing system status was silently accepted."
+            )
 
+    return results
 
 def text_entry_metrics(entries: Sequence[TextEntry]) -> dict[str, int | bool]:
     """Measure displayed text, not a hypothetical truncation string."""
