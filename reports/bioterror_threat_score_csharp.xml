@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BioterrorThreatAssessment>
-  <GeneratedAt>2026-10-27 09:51 UTC</GeneratedAt>
+  <GeneratedAt>2026-10-27 18:01 UTC</GeneratedAt>
   <Engine>
     <Name>BioDefense C# Bioterror Threat Scoring Engine</Name>
     <Version>1.1.0</Version>
@@ -9,7 +9,7 @@
   </Engine>
   <Investigation>
     <CaseId>BID-2026-8012</CaseId>
-    <CaseRevision>3</CaseRevision>
+    <CaseRevision>4</CaseRevision>
     <CampaignId>BDC-2026-001</CampaignId>
     <Operation>Coordinated Biomedical Systems Intrusion</Operation>
     <Classification>Biological Research Intelligence Collection</Classification>
@@ -64,7 +64,7 @@
     <EvidenceRecords>128</EvidenceRecords>
     <CorrelationRecords>128</CorrelationRecords>
     <IntegrityVerifiedRecords>128</IntegrityVerifiedRecords>
-    <PendingAnalystReview>106</PendingAnalystReview>
+    <PendingAnalystReview>84</PendingAnalystReview>
     <PriorityFindings>
       <Finding>
         <Name>Laboratory System Modification</Name>
