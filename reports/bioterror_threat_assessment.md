@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-10-27 18:01 UTC
+**Generated:** 2026-10-27 23:48 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Biological Research Intelligence Collection concerns suspected Medica
 
 **Integrity-Verified Records:** 128
 
-**Pending Analyst Review:** 84
+**Pending Analyst Review:** 62
 
 ### Priority Findings
 

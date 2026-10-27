@@ -19,7 +19,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
 Research Data Repository
@@ -31,7 +31,7 @@ Vendor:
 Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Biosecurity Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.

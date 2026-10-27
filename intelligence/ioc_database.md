@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Identity | Credential reuse detected across isolated research segments |
-| PowerShell | Encoded administrative command execution detected |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---

@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 

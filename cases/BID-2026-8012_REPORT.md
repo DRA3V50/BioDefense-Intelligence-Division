@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Suspicious outbound communication was detected prior to containment operations.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Device | Protected workstation entered evidence preservation mode |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Identity | Credential reuse detected across isolated research segments |
-| PowerShell | Encoded administrative command execution detected |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| System Log | Unexpected privilege escalation recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
 
 
 ---
@@ -449,7 +449,7 @@ Medical Device Communications Interference
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
 Research Data Repository
@@ -461,7 +461,7 @@ Vendor:
 Lenovo
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Biosecurity Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+No destructive activity observed following initial containment.
 
 
 ---
