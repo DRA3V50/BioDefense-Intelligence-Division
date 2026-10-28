@@ -25,7 +25,7 @@
   "assessment": "Available evidence supports expanded review of access records, system changes, and related investigative indicators.",
   "schema_version": 1,
   "created_at": "2026-10-26T23:54:48Z",
-  "updated_at": "2026-10-27T23:48:19Z",
+  "updated_at": "2026-10-28T10:35:48Z",
   "current_stage": "EVIDENCE_REVIEW",
   "stage_updated_at": "2026-10-26T23:54:56Z",
   "lifecycle_status": "ACTIVE",
@@ -36,15 +36,15 @@
   "assessment_completed_at": null,
   "problem_review_outcome": null,
   "problem_reviewed_at": null,
-  "state_revision": 5,
+  "state_revision": 6,
   "state_migrated_at": "2026-10-26T23:54:48Z",
   "stage_work": {
     "stage": "EVIDENCE_REVIEW",
-    "recorded_at": "2026-10-27T23:48:19Z",
+    "recorded_at": "2026-10-28T10:35:48Z",
     "action": "EVIDENCE_REVIEW_BATCH",
-    "completed_count": 66,
+    "completed_count": 88,
     "total_count": 128,
     "processed_count": 22,
-    "processed_through_id": "BID-2026-8012-EV-0066"
+    "processed_through_id": "BID-2026-8012-EV-0088"
   }
 }
