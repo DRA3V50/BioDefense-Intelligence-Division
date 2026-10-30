@@ -183,7 +183,20 @@
       "zone": "Biosecurity Segment",
       "intensity": 70,
       "idempotency_key": "assessment-completed"
+    },
+    {
+      "event_id": "BID-2026-8012-EVT-0015",
+      "case_id": "BID-2026-8012",
+      "sequence": 15,
+      "timestamp": "2026-10-30T23:50:02Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to PROBLEM_REVIEW: matching C# threat assessment was explicitly completed.",
+      "severity": "HIGH",
+      "source": "case_lifecycle",
+      "zone": "Biosecurity Segment",
+      "intensity": 82,
+      "idempotency_key": "revision-15-WORKFLOW_STAGE_CHANGED"
     }
   ],
-  "updated_at": "2026-10-30T18:02:03Z"
+  "updated_at": "2026-10-30T23:50:02Z"
 }
