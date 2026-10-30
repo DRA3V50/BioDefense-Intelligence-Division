@@ -58,4 +58,4 @@ Biological Research Intelligence Collection
 ---
 
 ## Last Updated
-2026-10-29
+2026-10-30

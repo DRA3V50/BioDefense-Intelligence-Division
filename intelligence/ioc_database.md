@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| PowerShell | Encoded administrative command execution detected |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Infrastructure | Firewall policy deviation identified |
-| Database | Protected biomedical dataset queried outside normal operating hours |
 | Device | Protected workstation entered evidence preservation mode |
+| System Log | Unexpected privilege escalation recorded |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
