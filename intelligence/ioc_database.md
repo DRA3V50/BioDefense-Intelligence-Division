@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| System Log | Unexpected privilege escalation recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Infrastructure | Firewall policy deviation identified |
 | Evidence | Acquired forensic image verified using SHA-256 |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | PowerShell | Encoded administrative command execution detected |
+| Infrastructure | Firewall policy deviation identified |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---
