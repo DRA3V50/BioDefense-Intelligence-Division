@@ -13,7 +13,7 @@ Biological Research Intelligence Collection
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
-Open
+ESCALATED
 
 ### Severity
 HIGH

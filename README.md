@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=72f72e619e48" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=66c59321ae51" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -51,9 +51,9 @@
     <tr>
       <td valign="top" align="left"><strong>Case:</strong> <code>BID-2026-8012</code><br>
 <strong>Campaign:</strong> <code>BDC-2026-001</code></td>
-      <td valign="top" align="left"><strong>Record:</strong> <code>OPEN</code><br>
+      <td valign="top" align="left"><strong>Record:</strong> <code>ESCALATED</code><br>
 <strong>Stage:</strong> ■ <code>PROBLEM REVIEW</code><br>
-<strong>Lifecycle:</strong> ■ <code>ACTIVE</code></td>
+<strong>Lifecycle:</strong> ■ <code>ESCALATED</code></td>
       <td valign="top" align="left"><code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
 <code>CSV</code> · <code>XLSX</code></td>
     </tr>
@@ -375,7 +375,7 @@ The active investigation persists across scheduled workflow executions and advan
       <td valign="top" align="left">HIGH</td>
       <td valign="top" align="right">72</td>
       <td valign="top" align="right">86</td>
-      <td valign="top" align="left">Open</td>
+      <td valign="top" align="left">ESCALATED</td>
     </tr>
     <tr>
       <td valign="top" align="left">2026-10-22</td>

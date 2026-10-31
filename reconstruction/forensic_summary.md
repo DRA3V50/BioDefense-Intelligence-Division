@@ -9,7 +9,7 @@
 | Classification | Biological Research Intelligence Collection |
 | Threat Family | Medical Device Communications Interference |
 | Severity | HIGH |
-| Status | Open |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**ESCALATED**
 
 Priority:
 
