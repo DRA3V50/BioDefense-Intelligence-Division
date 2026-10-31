@@ -1,0 +1,25 @@
+{
+  "case_id": "BID-2026-4555",
+  "artifact_type": "Firewall Log",
+  "generated_at": "2026-10-31T17:16:24Z",
+  "source_device": "Evidence Repository",
+  "security_zone": "Protected Research Segment",
+  "events": [
+    {
+      "event_id": "FW-001",
+      "action": "Blocked",
+      "protocol": "HTTPS",
+      "source": "Simulated External Host",
+      "destination": "Evidence Repository",
+      "description": "Simulated unauthorized outbound connection attempt."
+    },
+    {
+      "event_id": "FW-002",
+      "action": "Allowed",
+      "protocol": "DNS",
+      "source": "Evidence Repository",
+      "destination": "Authorized DNS Service",
+      "description": "Routine name-resolution activity retained for analysis."
+    }
+  ]
+}

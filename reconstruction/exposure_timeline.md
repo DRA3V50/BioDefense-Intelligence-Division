@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-10-26
+## 2026-10-31
 
 ### Case Opened
-Case ID: BID-2026-8012
+Case ID: BID-2026-4555
 
 ### Classification
-Biological Research Intelligence Collection
+Protected Research Systems Investigation
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ### Current Status
-ESCALATED
+Intelligence Analysis
 
 ### Severity
-HIGH
+CRITICAL
 
 ---

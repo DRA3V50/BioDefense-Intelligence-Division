@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-8012 |
+| Case ID | BID-2026-4555 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Medical Device Communications Interference |
-| Severity | HIGH |
-| Status | ESCALATED |
+| Classification | Protected Research Systems Investigation |
+| Threat Family | Protected Research Data Exfiltration |
+| Severity | CRITICAL |
+| Status | Intelligence Analysis |
 | Phase | Operational Recovery |
 
 ---
@@ -19,9 +19,9 @@
 | Field | Value |
 |------|------|
 | Platform | Research Data Repository |
-| Device | Biomedical Workstation |
-| Vendor | Lenovo |
-| Network Zone | Biosecurity Segment |
+| Device | Evidence Repository |
+| Vendor | HPE |
+| Network Zone | Protected Research Segment |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 72 |
-| Confidence | 86% |
-| Evidence | 128 |
-| Indicators | 85 |
-| Affected Assets | 26 |
+| Risk Score | 90 |
+| Confidence | 97% |
+| Evidence | 326 |
+| Indicators | 180 |
+| Affected Assets | 38 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Bravo**
+Lead Analyst: **National Response Cell**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.

@@ -3,22 +3,22 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-8012
+BID-2026-4555
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Protected Research Systems Investigation
 
 Threat Family:
-Medical Device Communications Interference
+Protected Research Data Exfiltration
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Intelligence Analysis
 
 ---
 
@@ -28,35 +28,35 @@ Platform:
 Research Data Repository
 
 Device:
-Biomedical Workstation
+Evidence Repository
 
 Vendor:
-Lenovo
+HPE
 
 Security Zone:
-Biosecurity Segment
+Protected Research Segment
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-149
+150
 
 Evidence Collected:
-128
+326
 
 Indicators Identified:
-85
+180
 
 Affected Assets:
-26
+38
 
 Confidence:
-86%
+97%
 
 Risk Score:
-72
+90
 
 ---
 

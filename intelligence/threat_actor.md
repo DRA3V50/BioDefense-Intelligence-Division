@@ -1,7 +1,7 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Medical Device Communications Interference
+Protected Research Data Exfiltration
 
 ---
 
@@ -16,34 +16,34 @@ International Infrastructure
 ---
 
 ## Observed Motivation
-Disruption of Biosecurity Operations
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-Moderate
+Advanced
 
 ---
 
 ## Confidence
-86%
+97%
 
 ---
 
 ## Observed Techniques
-- Phishing
+- Web Application Exploitation
 - Laboratory Network Reconnaissance
-- Covert Remote Access Tooling
-- Lateral Movement
-- Supply Chain Compromise
 - Privilege Escalation
+- Encrypted Data Staging
+- Concealed Internal Movement
+- Covert Remote Access Tooling
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+National Response Cell
 
-**Analyst Note:** Technique overlap with prior campaigns is circumstantial at this stage.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Protected Research Systems Investigation
 
 ---
 

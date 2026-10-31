@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-8012
+Case ID: BID-2026-4555
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Biological Research Intelligence Collection
+Classification: Protected Research Systems Investigation
 
-Threat Family: Medical Device Communications Interference
+Threat Family: Protected Research Data Exfiltration
 
-Current Status: ESCALATED
+Current Status: Intelligence Analysis
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Analysts continue evaluating recovered indicators for operational significance.
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+CRITICAL
 
 Risk Score:
-72
+90
 
 Confidence:
-86%
+97%
 
 Affected Assets:
-26
+38
 
 Evidence Collected:
-128
+326
 
 Indicators Recorded:
-85
+180
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Bravo
+National Response Cell
 
 Date:
 
-2026-10-26
+2026-10-31

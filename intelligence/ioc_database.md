@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-8012
+BID-2026-4555
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Protected Research Systems Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Security | Multi-factor authentication bypass attempt recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Device | Protected workstation entered evidence preservation mode |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Identity | Credential reuse detected across isolated research segments |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Infrastructure | Firewall policy deviation identified |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-128
+326
 
 Indicators Reviewed:
-85
+180
 
 Risk Score:
-72
+90
 
 Confidence:
-86%
+97%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+National Response Cell
 
 Current Status:
 
-ESCALATED
+Intelligence Analysis

@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-10-31 10:24 UTC
+**Generated:** 2026-10-31 17:16 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** CRITICAL
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-8012
+**Case ID:** BID-2026-4555
 
-**Classification:** Biological Research Intelligence Collection
+**Classification:** Protected Research Systems Investigation
 
-**Severity:** HIGH
+**Severity:** CRITICAL
 
-**Threat Family:** Medical Device Communications Interference
+**Threat Family:** Protected Research Data Exfiltration
 
-**Confidence:** 86%
+**Confidence:** 97%
 
 ---
 
 ## Investigation Summary
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **128**
+Evidence Collected: **326**
 
-Indicators: **85**
+Indicators: **180**
 
-Priority: **HIGH**
+Priority: **CRITICAL**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Bravo**
+**National Response Cell**
 
 Initial Access:
-**Phishing**
+**Web Application Exploitation**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**145**
+**146**
 
 Confirmed Intrusions:
-**20**
+**21**
 
 Total Evidence:
-**100651**
+**100977**
 
 Total Indicators:
-**64861**
+**65041**
 
 ---
 
 ## Operational Highlights
 
-- 128 evidence items are associated with the active investigation.
-- 85 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **86%**.
-- Current investigation priority is **HIGH**.
+- 326 evidence items are associated with the active investigation.
+- 180 indicators are currently linked to the case.
+- Containment remains at **CRITICAL**.
+- Analyst confidence is **97%**.
+- Current investigation priority is **CRITICAL**.
 
 ---
 

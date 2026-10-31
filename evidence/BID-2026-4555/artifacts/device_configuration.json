@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-4555",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-10-31T17:16:24Z",
+  "platform": "Research Data Repository",
+  "vendor": "HPE",
+  "device": "Evidence Repository",
+  "baseline_version": "4.0.7",
+  "zone": "Protected Research Segment",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}
