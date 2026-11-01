@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Protected Research Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
 CRITICAL

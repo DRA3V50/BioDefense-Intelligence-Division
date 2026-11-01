@@ -34,7 +34,7 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Analysts identified abnormal authentication activity originating from restricted
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 

@@ -146,7 +146,7 @@ Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Analysts identified abnormal authentication activity originating from restricted
 
 ### Finding 5
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
@@ -288,11 +288,11 @@ Protected Research Systems Investigation
 | Category | Observation |
 |----------|-------------|
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
 | System Log | Unexpected privilege escalation recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Protected Research Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
 CRITICAL

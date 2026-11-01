@@ -16,11 +16,11 @@ Protected Research Systems Investigation
 | Category | Observation |
 |----------|-------------|
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
 | System Log | Unexpected privilege escalation recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
