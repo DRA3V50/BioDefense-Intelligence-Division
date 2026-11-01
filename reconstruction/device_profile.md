@@ -19,7 +19,7 @@ Protected Research Data Exfiltration
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+Advanced Genome Security Laboratory
 
 Platform:
 Research Data Repository
@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Protected Research Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Awaiting Laboratory Review
 
 Priority:
 CRITICAL
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.

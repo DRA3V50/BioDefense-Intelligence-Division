@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | System Log | Unexpected privilege escalation recorded |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| PowerShell | Encoded administrative command execution detected |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
