@@ -79,7 +79,20 @@
       "zone": "Protected Research Segment",
       "intensity": 45,
       "idempotency_key": "evidence-review-220-of-326"
+    },
+    {
+      "event_id": "BID-2026-4555-EVT-0007",
+      "case_id": "BID-2026-4555",
+      "sequence": 7,
+      "timestamp": "2026-11-02T13:31:39Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 275/326 reviewed",
+      "severity": "CRITICAL",
+      "source": "process_active_case_stage",
+      "zone": "Protected Research Segment",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-275-of-326"
     }
   ],
-  "updated_at": "2026-11-02T00:45:33Z"
+  "updated_at": "2026-11-02T13:31:39Z"
 }

@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 

@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| System Log | Unexpected privilege escalation recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | PowerShell | Encoded administrative command execution detected |
+| Research Storage | Unauthorized access to protected genomic repository |
+| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -449,7 +449,7 @@ Protected Research Data Exfiltration
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
 Research Data Repository
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Protected Research Segment
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
 CRITICAL
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---
