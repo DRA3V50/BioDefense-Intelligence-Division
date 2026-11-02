@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 CRITICAL

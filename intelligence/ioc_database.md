@@ -15,12 +15,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Identity | Credential reuse detected across isolated research segments |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | System Log | Unexpected privilege escalation recorded |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
 | PowerShell | Encoded administrative command execution detected |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Infrastructure | Firewall policy deviation identified |
 
 
 ---

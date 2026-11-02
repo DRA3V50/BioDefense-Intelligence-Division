@@ -138,23 +138,23 @@ CRITICAL
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Analysts continue evaluating recovered indicators for operational significance.
+No confirmed attribution has been established during the current investigation.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 
@@ -287,12 +287,12 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Identity | Credential reuse detected across isolated research segments |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | System Log | Unexpected privilege escalation recorded |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
 | PowerShell | Encoded administrative command execution detected |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 CRITICAL
