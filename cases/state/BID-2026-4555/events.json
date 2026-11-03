@@ -118,7 +118,20 @@
       "zone": "Protected Research Segment",
       "intensity": 58,
       "idempotency_key": "revision-9-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-4555-EVT-0010",
+      "case_id": "BID-2026-4555",
+      "sequence": 10,
+      "timestamp": "2026-11-03T12:47:59Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 109/326 validated",
+      "severity": "CRITICAL",
+      "source": "process_active_case_stage",
+      "zone": "Protected Research Segment",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-109-of-326"
     }
   ],
-  "updated_at": "2026-11-03T02:56:13Z"
+  "updated_at": "2026-11-03T12:47:59Z"
 }
