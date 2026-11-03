@@ -25,9 +25,9 @@
   "assessment": "Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.",
   "schema_version": 1,
   "created_at": "2026-10-31T17:16:24Z",
-  "updated_at": "2026-11-02T13:31:39Z",
-  "current_stage": "EVIDENCE_REVIEW",
-  "stage_updated_at": "2026-10-31T17:16:37Z",
+  "updated_at": "2026-11-03T02:56:13Z",
+  "current_stage": "VALIDATION",
+  "stage_updated_at": "2026-11-03T02:56:13Z",
   "lifecycle_status": "ACTIVE",
   "terminal_state": null,
   "terminal_at": null,
@@ -36,15 +36,15 @@
   "assessment_completed_at": null,
   "problem_review_outcome": null,
   "problem_reviewed_at": null,
-  "state_revision": 7,
+  "state_revision": 9,
   "state_migrated_at": "2026-10-31T17:16:24Z",
   "stage_work": {
     "stage": "EVIDENCE_REVIEW",
-    "recorded_at": "2026-11-02T13:31:39Z",
+    "recorded_at": "2026-11-03T02:56:13Z",
     "action": "EVIDENCE_REVIEW_BATCH",
-    "completed_count": 275,
+    "completed_count": 326,
     "total_count": 326,
-    "processed_count": 55,
-    "processed_through_id": "BID-2026-4555-EV-0275"
+    "processed_count": 51,
+    "processed_through_id": "BID-2026-4555-EV-0326"
   }
 }
