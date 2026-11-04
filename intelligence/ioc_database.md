@@ -15,11 +15,11 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| System Log | Unexpected privilege escalation recorded |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Identity | Credential reuse detected across isolated research segments |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Device | Protected workstation entered evidence preservation mode |
 | Research Storage | Unauthorized access to protected genomic repository |
 
 
