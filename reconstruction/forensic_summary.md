@@ -9,7 +9,7 @@
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Protected Research Data Exfiltration |
 | Severity | CRITICAL |
-| Status | Intelligence Analysis |
+| Status | ESCALATED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Intelligence Analysis**
+**ESCALATED**
 
 Priority:
 

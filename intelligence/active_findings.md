@@ -26,23 +26,23 @@ CRITICAL
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-Additional forensic examination is required to determine the full operational scope.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-Suspicious outbound communication was detected prior to containment operations.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ---
 
@@ -74,7 +74,7 @@ Observed activity presents a credible risk to data integrity, case evidence, or 
 # Operational Status
 
 Current Status:
-Intelligence Analysis
+ESCALATED
 
 Recommended Action:
 

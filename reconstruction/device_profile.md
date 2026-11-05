@@ -19,7 +19,7 @@ Protected Research Data Exfiltration
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+Raccoon Research Annex
 
 Platform:
 Research Data Repository
@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
 Protected Research Segment
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Evidence Acquisition
 
 Priority:
 CRITICAL

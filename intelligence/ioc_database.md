@@ -15,11 +15,11 @@ Protected Research Systems Investigation
 
 | Category | Observation |
 |----------|-------------|
+| Research Storage | Unauthorized access to protected genomic repository |
 | Identity | Credential reuse detected across isolated research segments |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Security | Multi-factor authentication bypass attempt recorded |
 | Evidence | Acquired forensic image verified using SHA-256 |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
 | Infrastructure | Firewall policy deviation identified |
 
 
@@ -47,4 +47,4 @@ National Response Cell
 
 Current Status:
 
-Intelligence Analysis
+ESCALATED

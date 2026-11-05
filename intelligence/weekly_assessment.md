@@ -10,7 +10,7 @@ Classification: Protected Research Systems Investigation
 
 Threat Family: Protected Research Data Exfiltration
 
-Current Status: Intelligence Analysis
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+Current evidence supports continued investigative activity.
 
 Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
 

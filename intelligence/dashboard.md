@@ -9,7 +9,7 @@
 | Classification | Protected Research Systems Investigation |
 | Threat Family | Protected Research Data Exfiltration |
 | Severity | CRITICAL |
-| Status | Intelligence Analysis |
+| Status | ESCALATED |
 | Phase | Operational Recovery |
 
 ---
