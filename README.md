@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=fe04c5d9e3ff" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=2f419a33e54c" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -52,7 +52,7 @@
       <td valign="top" align="left"><strong>Case:</strong> <code>BID-2026-4555</code><br>
 <strong>Campaign:</strong> <code>BDC-2026-001</code></td>
       <td valign="top" align="left"><strong>Record:</strong> <code>INTELLIGENCE ANALYSIS</code><br>
-<strong>Stage:</strong> ■ <code>ASSESSMENT</code><br>
+<strong>Stage:</strong> ■ <code>PROBLEM REVIEW</code><br>
 <strong>Lifecycle:</strong> ■ <code>ACTIVE</code></td>
       <td valign="top" align="left"><code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
 <code>CSV</code> · <code>XLSX</code></td>
