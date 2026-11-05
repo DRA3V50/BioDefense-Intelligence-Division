@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-4555
+Case ID: BID-2026-6794
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Protected Research Systems Investigation
+Classification: Laboratory Security Breach Investigation
 
-Threat Family: Protected Research Data Exfiltration
+Threat Family: Credential Misuse
 
-Current Status: ESCALATED
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Analysts continue evaluating recovered indicators for operational significance.
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-CRITICAL
+HIGH
 
 Risk Score:
-90
+77
 
 Confidence:
-97%
+96%
 
 Affected Assets:
-38
+18
 
 Evidence Collected:
-326
+111
 
 Indicators Recorded:
-180
+74
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-National Response Cell
+Analyst Team Delta
 
 Date:
 
-2026-10-31
+2026-11-05

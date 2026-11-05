@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-10-31
+## 2026-11-05
 
 ### Case Opened
-Case ID: BID-2026-4555
+Case ID: BID-2026-6794
 
 ### Classification
-Protected Research Systems Investigation
+Laboratory Security Breach Investigation
 
 ### Initial Assessment
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
-ESCALATED
+Open
 
 ### Severity
-CRITICAL
+HIGH
 
 ---

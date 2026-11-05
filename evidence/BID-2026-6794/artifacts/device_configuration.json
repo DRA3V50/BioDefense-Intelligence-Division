@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-6794",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-11-05T20:41:21Z",
+  "platform": "Biosecurity Operations Center",
+  "vendor": "Dell",
+  "device": "Evidence Repository",
+  "baseline_version": "3.6.2",
+  "zone": "Containment Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

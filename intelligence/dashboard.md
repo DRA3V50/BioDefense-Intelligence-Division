@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-4555 |
+| Case ID | BID-2026-6794 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Protected Research Systems Investigation |
-| Threat Family | Protected Research Data Exfiltration |
-| Severity | CRITICAL |
-| Status | ESCALATED |
+| Classification | Laboratory Security Breach Investigation |
+| Threat Family | Credential Misuse |
+| Severity | HIGH |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Research Data Repository |
+| Platform | Biosecurity Operations Center |
 | Device | Evidence Repository |
-| Vendor | HPE |
-| Network Zone | Protected Research Segment |
+| Vendor | Dell |
+| Network Zone | Containment Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 90 |
-| Confidence | 97% |
-| Evidence | 326 |
-| Indicators | 180 |
-| Affected Assets | 38 |
+| Risk Score | 77 |
+| Confidence | 96% |
+| Evidence | 111 |
+| Indicators | 74 |
+| Affected Assets | 18 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **National Response Cell**
+Lead Analyst: **Analyst Team Delta**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.

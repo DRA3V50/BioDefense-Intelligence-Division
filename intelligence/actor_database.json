@@ -99,10 +99,10 @@
         {
             "name": "Credential Misuse",
             "first_seen": "2026-08-02",
-            "last_seen": "2026-09-29",
-            "cases": 20,
-            "severity": "CRITICAL",
-            "confidence": 99
+            "last_seen": "2026-11-05",
+            "cases": 21,
+            "severity": "HIGH",
+            "confidence": 96
         },
         {
             "name": "Unauthorized Laboratory Network Access",

@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-4555
+BID-2026-6794
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Laboratory Security Breach Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Research Storage | Unauthorized access to protected genomic repository |
-| Identity | Credential reuse detected across isolated research segments |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| PowerShell | Encoded administrative command execution detected |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Infrastructure | Firewall policy deviation identified |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Protected Research Systems Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-326
+111
 
 Indicators Reviewed:
-180
+74
 
 Risk Score:
-90
+77
 
 Confidence:
-97%
+96%
 
 ---
 
 Lead Analyst:
 
-National Response Cell
+Analyst Team Delta
 
 Current Status:
 
-ESCALATED
+Open

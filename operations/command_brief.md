@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-11-05 13:19 UTC
+**Generated:** 2026-11-05 20:41 UTC
 
 ---
 
@@ -12,44 +12,44 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** CRITICAL
+**Containment Level:** SEVERE
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-4555
+**Case ID:** BID-2026-6794
 
-**Classification:** Protected Research Systems Investigation
+**Classification:** Laboratory Security Breach Investigation
 
-**Severity:** CRITICAL
+**Severity:** HIGH
 
-**Threat Family:** Protected Research Data Exfiltration
+**Threat Family:** Credential Misuse
 
-**Confidence:** 97%
+**Confidence:** 96%
 
 ---
 
 ## Investigation Summary
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **326**
+Evidence Collected: **111**
 
-Indicators: **180**
+Indicators: **74**
 
-Priority: **CRITICAL**
+Priority: **HIGH**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**National Response Cell**
+**Analyst Team Delta**
 
 Initial Access:
 **Web Application Exploitation**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**146**
+**147**
 
 Confirmed Intrusions:
 **21**
 
 Total Evidence:
-**100977**
+**101088**
 
 Total Indicators:
-**65041**
+**65115**
 
 ---
 
 ## Operational Highlights
 
-- 326 evidence items are associated with the active investigation.
-- 180 indicators are currently linked to the case.
-- Containment remains at **CRITICAL**.
-- Analyst confidence is **97%**.
-- Current investigation priority is **CRITICAL**.
+- 111 evidence items are associated with the active investigation.
+- 74 indicators are currently linked to the case.
+- Containment remains at **SEVERE**.
+- Analyst confidence is **96%**.
+- Current investigation priority is **HIGH**.
 
 ---
 

@@ -2,37 +2,37 @@
 
 ## Investigative Leads and Intelligence Gaps
 
-**Generated:** 2026-11-05 13:19 UTC
+**Generated:** 2026-11-05 20:41 UTC
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-4555
+**Case ID:** BID-2026-6794
 
 **Operation:** Coordinated Biomedical Systems Intrusion
 
 **Campaign ID:** BDC-2026-001
 
-**Classification:** Protected Research Systems Investigation
+**Classification:** Laboratory Security Breach Investigation
 
-**Threat Family:** Protected Research Data Exfiltration
+**Threat Family:** Credential Misuse
 
-**Severity:** CRITICAL
+**Severity:** HIGH
 
-**Risk Score:** 90
+**Risk Score:** 77
 
-**Lead Analyst:** National Response Cell
+**Lead Analyst:** Analyst Team Delta
 
-**Evidence Records Reviewed:** 326
+**Evidence Records Reviewed:** 111
 
-**Correlation Records Reviewed:** 326
+**Correlation Records Reviewed:** 111
 
 ---
 
 ## Current Analyst Assessment
 
-Observed activity presents a credible risk to data integrity, case evidence, or protected research operations.
+Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 This report distinguishes investigative leads and analytical hypotheses from confirmed findings. No hypothesis should be treated as final attribution without supporting evidence.
 
@@ -42,7 +42,7 @@ This report distinguishes investigative leads and analytical hypotheses from con
 
 ### Lead 1: Credential and Identity Compromise
 
-**Supporting Correlations:** 25
+**Supporting Correlations:** 7
 
 Investigators should determine whether compromised credentials were obtained externally, reused from an earlier breach, or provided by an insider.
 
@@ -52,20 +52,19 @@ Investigators should determine whether compromised credentials were obtained ext
 
 **Supporting Evidence:**
 
-- `BID-2026-4555-EV-0003` — Authentication Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0007` — Authentication Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0014` — Authentication Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0030` — Authentication Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0044` — Authentication Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0057` — Authentication Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0062` — Authentication Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0077` — Authentication Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0001` — Authentication Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0018` — Authentication Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0075` — Authentication Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0082` — Authentication Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0097` — Authentication Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0100` — Authentication Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0110` — Authentication Log; source: Evidence Repository; integrity: Verified
 
 **Key Question:** Which account was first compromised, and how was access obtained?
 
 ### Lead 2: Possible Insider or Facility-Assisted Access
 
-**Supporting Correlations:** 24
+**Supporting Correlations:** 8
 
 Access-control and facility evidence may indicate insider assistance, unauthorized physical entry, or misuse of legitimate laboratory privileges.
 
@@ -75,20 +74,20 @@ Access-control and facility evidence may indicate insider assistance, unauthoriz
 
 **Supporting Evidence:**
 
-- `BID-2026-4555-EV-0029` — Access Control Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0047` — Access Control Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0048` — Access Control Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0068` — Access Control Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0074` — Access Control Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0081` — Access Control Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0098` — Access Control Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0108` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0020` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0035` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0060` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0064` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0065` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0070` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0090` — Access Control Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0103` — Access Control Log; source: Evidence Repository; integrity: Verified
 
 **Key Question:** Did an employee, contractor, or trusted partner facilitate the intrusion?
 
 ### Lead 3: Laboratory-System Modification
 
-**Supporting Correlations:** 70
+**Supporting Correlations:** 25
 
 Laboratory-system changes require validation to determine whether configuration, workflow, specimen, or research records were altered.
 
@@ -99,20 +98,20 @@ Laboratory-system changes require validation to determine whether configuration,
 
 **Supporting Evidence:**
 
-- `BID-2026-4555-EV-0001` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0017` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0027` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0076` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0078` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0088` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0089` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0091` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0002` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0009` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0015` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0022` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0034` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0040` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0043` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0044` — Laboratory Information System Audit Log; source: Evidence Repository; integrity: Verified
 
 **Key Question:** Were the laboratory changes operational, administrative, or intended to affect protected biological research?
 
 ### Lead 4: Research or Genomic Data Integrity
 
-**Supporting Correlations:** 27
+**Supporting Correlations:** 10
 
 Research-data anomalies should be examined for unauthorized modification, deletion, manipulation, or intelligence collection.
 
@@ -122,44 +121,44 @@ Research-data anomalies should be examined for unauthorized modification, deleti
 
 **Supporting Evidence:**
 
-- `BID-2026-4555-EV-0005` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0013` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0015` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0042` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0110` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0117` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0134` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0136` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0003` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0014` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0021` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0042` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0045` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0053` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0087` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0095` — Research Data Integrity Record; source: Evidence Repository; integrity: Verified
 
 **Key Question:** Were protected research records changed, copied, or prepared for exfiltration?
 
 ### Lead 5: Command-and-Control and External Infrastructure
 
-**Supporting Correlations:** 48
+**Supporting Correlations:** 13
 
 Network correlations may identify external infrastructure, persistent access, data staging, or communication with a coordinated threat actor.
 
 **Associated Findings:**
 
-- Suspicious Network Activity
 - Command-and-Control Communication
+- Suspicious Network Activity
 
 **Supporting Evidence:**
 
-- `BID-2026-4555-EV-0019` — Firewall Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0020` — Firewall Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0021` — Firewall Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0031` — Firewall Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0033` — Firewall Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0034` — Firewall Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0037` — Firewall Log; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0043` — Firewall Log; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0008` — Network Connection Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0016` — Network Connection Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0033` — Network Connection Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0039` — Network Connection Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0055` — Network Connection Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0058` — Network Connection Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0073` — Network Connection Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0046` — Firewall Log; source: Evidence Repository; integrity: Verified
 
 **Key Question:** Does the external infrastructure connect this case to prior Operation Black Eclipse investigations?
 
 ### Lead 6: Known Threat Actor Association
 
-**Supporting Correlations:** 22
+**Supporting Correlations:** 9
 
 Threat-intelligence indicators should be validated before being used for attribution or campaign linkage.
 
@@ -169,20 +168,20 @@ Threat-intelligence indicators should be validated before being used for attribu
 
 **Supporting Evidence:**
 
-- `BID-2026-4555-EV-0008` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0040` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0041` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0061` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0094` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0112` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0120` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0141` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0041` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0063` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0066` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0067` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0072` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0089` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0104` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0106` — Threat Intelligence Record; source: Evidence Repository; integrity: Verified
 
 **Key Question:** Are the actor indicators independently corroborated by forensic evidence?
 
 ### Lead 7: Biosecurity-Control Bypass
 
-**Supporting Correlations:** 63
+**Supporting Correlations:** 19
 
 Biosecurity-control findings require review to determine whether cyber access could affect protected laboratory operations or support cyber-to-physical escalation.
 
@@ -193,14 +192,14 @@ Biosecurity-control findings require review to determine whether cyber access co
 
 **Supporting Evidence:**
 
-- `BID-2026-4555-EV-0004` — Containment Validation Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0006` — Containment Validation Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0052` — Containment Validation Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0060` — Containment Validation Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0067` — Containment Validation Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0071` — Containment Validation Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0075` — Containment Validation Record; source: Evidence Repository; integrity: Verified
-- `BID-2026-4555-EV-0101` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0004` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0012` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0019` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0023` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0030` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0038` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0050` — Containment Validation Record; source: Evidence Repository; integrity: Verified
+- `BID-2026-6794-EV-0059` — Containment Validation Record; source: Evidence Repository; integrity: Verified
 
 **Key Question:** Were biosecurity controls bypassed intentionally, and did the bypass affect physical laboratory processes?
 
@@ -247,11 +246,11 @@ The activity may represent reconnaissance, access development, control bypass, o
 
 | Related Case | Classification | Severity | Link Basis |
 |--------------|----------------|----------|------------|
-| BID-2026-1222 | Specimen Management Security Review | LOW | matching threat family |
-| BID-2026-7479 | Protected Research Systems Investigation | LOW | matching classification |
-| BID-2026-5449 | Protected Research Systems Investigation | CRITICAL | matching classification |
-| BID-2026-8600 | Protected Research Systems Investigation | HIGH | matching classification |
-| BID-2026-1797 | Biocontainment Network Investigation | MODERATE | matching threat family |
+| BID-2026-5449 | Protected Research Systems Investigation | CRITICAL | matching threat family |
+| BID-2026-9736 | Laboratory Security Breach Investigation | LOW | matching classification |
+| BID-2026-5945 | Laboratory Security Breach Investigation | MODERATE | matching classification |
+| BID-2026-7168 | Medical Device Security Assessment | CRITICAL | matching threat family |
+| BID-2026-9730 | Biomedical Infrastructure Investigation | MODERATE | matching threat family |
 
 ---
 
@@ -261,6 +260,7 @@ The activity may represent reconnaissance, access development, control bypass, o
 - The investigation has not confirmed whether physical specimens or laboratory processes were affected.
 - The threat actor's final objective—espionage, sabotage, disruption, or attack preparation—remains under assessment.
 - Public-health consequences cannot be determined without validated biological-impact evidence.
+- 111 evidence records remain pending analyst review.
 
 ---
 
@@ -297,10 +297,10 @@ The activity may represent reconnaissance, access development, control bypass, o
 - [Command Brief](../operations/command_brief.md)
 - [Investigation Timeline](../operations/investigation_timeline.md)
 - [Evidence Chain Analysis](../evidence/evidence_chain.md)
-- [Evidence Manifest](../evidence/BID-2026-4555/evidence_manifest.json)
-- [Evidence Correlations](../evidence/BID-2026-4555/evidence_correlations.json)
-- [Chain of Custody](../evidence/BID-2026-4555/chain_of_custody.md)
-- [Forensic Summary](../evidence/BID-2026-4555/forensic_summary.md)
+- [Evidence Manifest](../evidence/BID-2026-6794/evidence_manifest.json)
+- [Evidence Correlations](../evidence/BID-2026-6794/evidence_correlations.json)
+- [Chain of Custody](../evidence/BID-2026-6794/chain_of_custody.md)
+- [Forensic Summary](../evidence/BID-2026-6794/forensic_summary.md)
 
 ---
 

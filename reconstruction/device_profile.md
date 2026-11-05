@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-4555
+BID-2026-6794
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Protected Research Systems Investigation
+Laboratory Security Breach Investigation
 
 Threat Family:
-Protected Research Data Exfiltration
+Credential Misuse
 
 ---
 
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Federal Biosecurity Laboratory
 
 Platform:
-Research Data Repository
+Biosecurity Operations Center
 
 Device:
 Evidence Repository
 
 Vendor:
-HPE
+Dell
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Protected Research Segment
+Containment Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
-CRITICAL
+HIGH
 
 Confidence:
-97%
+96%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-National Response Cell
+Analyst Team Delta
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+System isolated pending malware reverse engineering.
