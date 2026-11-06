@@ -30,19 +30,19 @@ Collected indicators continue to support an active counter-bioterrorism investig
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 

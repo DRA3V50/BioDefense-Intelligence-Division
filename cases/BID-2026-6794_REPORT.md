@@ -142,19 +142,19 @@ Collected indicators continue to support an active counter-bioterrorism investig
 
 ### Finding 2
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+No confirmed attribution has been established during the current investigation.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
@@ -287,12 +287,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| PowerShell | Encoded administrative command execution detected |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Infrastructure | Firewall policy deviation identified |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Identity | Credential reuse detected across isolated research segments |
 
 
 ---
@@ -449,7 +449,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
 Biosecurity Operations Center
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.
 
 
 ---

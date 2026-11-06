@@ -19,7 +19,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Advanced Genome Security Laboratory
 
 Platform:
 Biosecurity Operations Center
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.
