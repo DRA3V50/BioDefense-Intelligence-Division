@@ -92,7 +92,33 @@
       "zone": "Containment Network",
       "intensity": 45,
       "idempotency_key": "evidence-review-95-of-111"
+    },
+    {
+      "event_id": "BID-2026-6794-EVT-0008",
+      "case_id": "BID-2026-6794",
+      "sequence": 8,
+      "timestamp": "2026-11-07T18:05:42Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 111/111 reviewed",
+      "severity": "HIGH",
+      "source": "process_active_case_stage",
+      "zone": "Containment Network",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-111-of-111"
+    },
+    {
+      "event_id": "BID-2026-6794-EVT-0009",
+      "case_id": "BID-2026-6794",
+      "sequence": 9,
+      "timestamp": "2026-11-07T18:05:42Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to VALIDATION: all evidence records have completed review states.",
+      "severity": "HIGH",
+      "source": "case_lifecycle",
+      "zone": "Containment Network",
+      "intensity": 58,
+      "idempotency_key": "revision-9-WORKFLOW_STAGE_CHANGED"
     }
   ],
-  "updated_at": "2026-11-07T11:46:38Z"
+  "updated_at": "2026-11-07T18:05:42Z"
 }
