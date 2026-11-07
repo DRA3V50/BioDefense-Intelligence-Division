@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-11-06 19:59 UTC
+**Generated:** 2026-11-07 00:57 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Laboratory Security Breach Investigation concerns suspected Credentia
 
 **Integrity-Verified Records:** 111
 
-**Pending Analyst Review:** 54
+**Pending Analyst Review:** 35
 
 ### Priority Findings
 
