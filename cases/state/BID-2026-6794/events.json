@@ -144,7 +144,33 @@
       "zone": "Containment Network",
       "intensity": 58,
       "idempotency_key": "correlation-validation-74-of-111"
+    },
+    {
+      "event_id": "BID-2026-6794-EVT-0012",
+      "case_id": "BID-2026-6794",
+      "sequence": 12,
+      "timestamp": "2026-11-08T18:23:18Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 111/111 validated",
+      "severity": "HIGH",
+      "source": "process_active_case_stage",
+      "zone": "Containment Network",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-111-of-111"
+    },
+    {
+      "event_id": "BID-2026-6794-EVT-0013",
+      "case_id": "BID-2026-6794",
+      "sequence": 13,
+      "timestamp": "2026-11-08T18:23:18Z",
+      "event_type": "WORKFLOW_STAGE_CHANGED",
+      "message": "Workflow advanced to ASSESSMENT: all correlations are validated against evidence.",
+      "severity": "HIGH",
+      "source": "case_lifecycle",
+      "zone": "Containment Network",
+      "intensity": 70,
+      "idempotency_key": "revision-13-WORKFLOW_STAGE_CHANGED"
     }
   ],
-  "updated_at": "2026-11-08T11:58:07Z"
+  "updated_at": "2026-11-08T18:23:18Z"
 }
