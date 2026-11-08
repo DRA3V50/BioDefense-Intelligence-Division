@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Current findings support maintaining the existing investigation priority.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 

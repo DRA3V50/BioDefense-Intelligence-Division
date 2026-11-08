@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
