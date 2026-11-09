@@ -15,12 +15,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Infrastructure | Firewall policy deviation identified |
-| Device | Protected workstation entered evidence preservation mode |
 | Database | Protected biomedical dataset queried outside normal operating hours |
 | System Log | Unexpected privilege escalation recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| PowerShell | Encoded administrative command execution detected |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
