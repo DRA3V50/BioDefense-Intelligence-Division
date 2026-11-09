@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Current evidence supports continued investigative activity.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
