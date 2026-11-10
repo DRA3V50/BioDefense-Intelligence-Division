@@ -10,7 +10,7 @@ Classification: Laboratory Security Breach Investigation
 
 Threat Family: Credential Misuse
 
-Current Status: Open
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+No confirmed attribution has been established during the current investigation.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 

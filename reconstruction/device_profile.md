@@ -19,7 +19,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Federal Biosecurity Laboratory
 
 Platform:
 Biosecurity Operations Center
@@ -31,7 +31,7 @@ Vendor:
 Dell
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Containment Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
 HIGH

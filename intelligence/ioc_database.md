@@ -15,12 +15,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Research Storage | Unauthorized access to protected genomic repository |
-| System Log | Unexpected privilege escalation recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -47,4 +47,4 @@ Analyst Team Delta
 
 Current Status:
 
-Open
+ESCALATED

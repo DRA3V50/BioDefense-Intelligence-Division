@@ -9,7 +9,7 @@
 | Classification | Laboratory Security Breach Investigation |
 | Threat Family | Credential Misuse |
 | Severity | HIGH |
-| Status | Open |
+| Status | ESCALATED |
 | Phase | Operational Recovery |
 
 ---

@@ -30,15 +30,15 @@ Evidence indicates possible insider-assisted access to protected laboratory reso
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
@@ -74,7 +74,7 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 # Operational Status
 
 Current Status:
-Open
+ESCALATED
 
 Recommended Action:
 

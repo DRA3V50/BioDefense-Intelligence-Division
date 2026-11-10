@@ -99,8 +99,8 @@
         {
             "name": "Credential Misuse",
             "first_seen": "2026-08-02",
-            "last_seen": "2026-11-09",
-            "cases": 32,
+            "last_seen": "2026-11-10",
+            "cases": 33,
             "severity": "HIGH",
             "confidence": 96
         },

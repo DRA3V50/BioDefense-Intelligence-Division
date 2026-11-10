@@ -13,7 +13,7 @@ Laboratory Security Breach Investigation
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
-Open
+ESCALATED
 
 ### Severity
 HIGH

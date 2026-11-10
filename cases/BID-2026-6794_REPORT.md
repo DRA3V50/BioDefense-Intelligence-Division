@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Open
+ESCALATED
 
 ---
 
@@ -142,15 +142,15 @@ Evidence indicates possible insider-assisted access to protected laboratory reso
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
@@ -186,7 +186,7 @@ Collected artifacts support continued investigation into cyber-enabled activity 
 # Operational Status
 
 Current Status:
-Open
+ESCALATED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Laboratory Security Breach Investigation
 
 Threat Family: Credential Misuse
 
-Current Status: Open
+Current Status: ESCALATED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+No confirmed attribution has been established during the current investigation.
 
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
@@ -287,12 +287,12 @@ Laboratory Security Breach Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Device | Protected workstation entered evidence preservation mode |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Network | Unexpected east-west traffic between laboratory VLANs |
-| Research Storage | Unauthorized access to protected genomic repository |
-| System Log | Unexpected privilege escalation recorded |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -319,7 +319,7 @@ Analyst Team Delta
 
 Current Status:
 
-Open
+ESCALATED
 
 
 ---
@@ -337,7 +337,7 @@ Open
 | Classification | Laboratory Security Breach Investigation |
 | Threat Family | Credential Misuse |
 | Severity | HIGH |
-| Status | Open |
+| Status | ESCALATED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**ESCALATED**
 
 Priority:
 
@@ -449,7 +449,7 @@ Credential Misuse
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Federal Biosecurity Laboratory
 
 Platform:
 Biosecurity Operations Center
@@ -461,7 +461,7 @@ Vendor:
 Dell
 
 Operating System:
-Red Hat Enterprise Linux 10
+Hardened Research Appliance OS
 
 Security Zone:
 Containment Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -518,7 +518,7 @@ Laboratory Security Breach Investigation
 Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
 
 ### Current Status
-Open
+ESCALATED
 
 ### Severity
 HIGH
