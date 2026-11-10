@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-11-10 03:37 UTC
+**Generated:** 2026-11-10 13:29 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-6794
+**Case ID:** BID-2026-1439
 
-**Classification:** Laboratory Security Breach Investigation
+**Classification:** Biological Research Intelligence Collection
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
-**Threat Family:** Credential Misuse
+**Threat Family:** Research Data Integrity Manipulation
 
-**Confidence:** 96%
+**Confidence:** 84%
 
 ---
 
 ## Investigation Summary
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **111**
+Evidence Collected: **61**
 
-Indicators: **74**
+Indicators: **30**
 
-Priority: **HIGH**
+Priority: **ELEVATED**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Delta**
+**Analyst Team Bravo**
 
 Initial Access:
-**Web Application Exploitation**
+**Compromised Credentials**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**147**
+**148**
 
 Confirmed Intrusions:
 **21**
 
 Total Evidence:
-**101088**
+**101149**
 
 Total Indicators:
-**65115**
+**65145**
 
 ---
 
 ## Operational Highlights
 
-- 111 evidence items are associated with the active investigation.
-- 74 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **96%**.
-- Current investigation priority is **HIGH**.
+- 61 evidence items are associated with the active investigation.
+- 30 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **84%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-6794 |
+| Case ID | BID-2026-1439 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Security Breach Investigation |
-| Threat Family | Credential Misuse |
-| Severity | HIGH |
-| Status | ESCALATED |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | MODERATE |
+| Status | Open |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
-| Device | Evidence Repository |
-| Vendor | Dell |
-| Security Zone | Containment Network |
+| Platform | Evidence Processing Network |
+| Device | Genome Analysis Workstation |
+| Vendor | HPE |
+| Security Zone | Evidence Network |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 77 |
-| Confidence | 96% |
-| Evidence Collected | 111 |
-| Indicators Identified | 74 |
-| Affected Assets | 18 |
+| Risk Score | 59 |
+| Confidence | 84% |
+| Evidence Collected | 61 |
+| Indicators Identified | 30 |
+| Affected Assets | 17 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Delta**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Open**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

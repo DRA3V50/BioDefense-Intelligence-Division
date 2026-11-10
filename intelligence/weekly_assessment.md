@@ -2,15 +2,15 @@
 
 ## Investigation Overview
 
-Case ID: BID-2026-6794
+Case ID: BID-2026-1439
 
 Operation: Coordinated Biomedical Systems Intrusion
 
-Classification: Laboratory Security Breach Investigation
+Classification: Biological Research Intelligence Collection
 
-Threat Family: Credential Misuse
+Threat Family: Research Data Integrity Manipulation
 
-Current Status: ESCALATED
+Current Status: Open
 
 Containment Phase: Operational Recovery
 
@@ -18,31 +18,31 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Observed indicators remain consistent with the current operational assessment.
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 ## Operational Metrics
 
 Priority:
-HIGH
+ELEVATED
 
 Risk Score:
-77
+59
 
 Confidence:
-96%
+84%
 
 Affected Assets:
-18
+17
 
 Evidence Collected:
-111
+61
 
 Indicators Recorded:
-74
+30
 
 ---
 
@@ -56,8 +56,8 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Investigator:
 
-Analyst Team Delta
+Analyst Team Bravo
 
 Date:
 
-2026-11-05
+2026-11-10

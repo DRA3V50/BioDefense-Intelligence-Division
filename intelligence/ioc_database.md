@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-6794
+BID-2026-1439
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Biological Research Intelligence Collection
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Identity | Credential reuse detected across isolated research segments |
+| PowerShell | Encoded administrative command execution detected |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Infrastructure | Firewall policy deviation identified |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -28,23 +28,23 @@ Laboratory Security Breach Investigation
 ## Investigation Statistics
 
 Evidence Collected:
-111
+61
 
 Indicators Reviewed:
-74
+30
 
 Risk Score:
-77
+59
 
 Confidence:
-96%
+84%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo
 
 Current Status:
 
-ESCALATED
+Open

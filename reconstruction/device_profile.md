@@ -3,38 +3,38 @@
 ## Investigation
 
 Case ID:
-BID-2026-6794
+BID-2026-1439
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Credential Misuse
+Research Data Integrity Manipulation
 
 ---
 
 ## Protected Asset
 
 Facility:
-Federal Biosecurity Laboratory
+National Pathogen Research Facility
 
 Platform:
-Biosecurity Operations Center
+Evidence Processing Network
 
 Device:
-Evidence Repository
+Genome Analysis Workstation
 
 Vendor:
-Dell
+HPE
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
-Containment Network
+Evidence Network
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Evidence Acquisition
+Awaiting Laboratory Review
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-96%
+84%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Delta
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

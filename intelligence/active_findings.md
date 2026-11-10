@@ -3,22 +3,22 @@
 ## Investigation
 
 Case ID:
-BID-2026-6794
+BID-2026-1439
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Credential Misuse
+Research Data Integrity Manipulation
 
 Severity:
-HIGH
+MODERATE
 
 Priority:
-HIGH
+ELEVATED
 
 ---
 
@@ -26,39 +26,39 @@ HIGH
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ---
 
 # Investigation Metrics
 
 Affected Assets:
-18
+17
 
 Evidence Collected:
-111
+61
 
 Indicators Identified:
-74
+30
 
 Analyst Confidence:
-96%
+84%
 
 Containment Phase:
 Operational Recovery
@@ -67,14 +67,14 @@ Operational Recovery
 
 # Analyst Assessment
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ---
 
 # Operational Status
 
 Current Status:
-ESCALATED
+Open
 
 Recommended Action:
 
@@ -82,4 +82,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Lead Analyst:
 
-Analyst Team Delta
+Analyst Team Bravo

@@ -4,12 +4,12 @@
 
 | Field | Value |
 |------|------|
-| Case ID | BID-2026-6794 |
+| Case ID | BID-2026-1439 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Laboratory Security Breach Investigation |
-| Threat Family | Credential Misuse |
-| Severity | HIGH |
-| Status | ESCALATED |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Research Data Integrity Manipulation |
+| Severity | MODERATE |
+| Status | Open |
 | Phase | Operational Recovery |
 
 ---
@@ -18,10 +18,10 @@
 
 | Field | Value |
 |------|------|
-| Platform | Biosecurity Operations Center |
-| Device | Evidence Repository |
-| Vendor | Dell |
-| Network Zone | Containment Network |
+| Platform | Evidence Processing Network |
+| Device | Genome Analysis Workstation |
+| Vendor | HPE |
+| Network Zone | Evidence Network |
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Metric | Value |
 |------|------:|
-| Risk Score | 77 |
-| Confidence | 96% |
-| Evidence | 111 |
-| Indicators | 74 |
-| Affected Assets | 18 |
+| Risk Score | 59 |
+| Confidence | 84% |
+| Evidence | 61 |
+| Indicators | 30 |
+| Affected Assets | 17 |
 
 ---
 
 ## Analyst
 
-Lead Analyst: **Analyst Team Delta**
+Lead Analyst: **Analyst Team Bravo**
 
 Recommended Action:
 
@@ -47,4 +47,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 Assessment:
 
-Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+Available evidence supports expanded review of access records, system changes, and related investigative indicators.

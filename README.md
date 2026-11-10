@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=54c8c5e76c8f" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=48a258b55266" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -26,11 +26,11 @@
 ◆ <a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score (XML)</a><br>
 ◆ <a href="reports/investigative_leads.md">Investigative Leads</a></td>
       <td valign="top" align="left">◆ <a href="evidence/evidence_chain.md">Evidence Chain</a><br>
-◆ <a href="evidence/BID-2026-6794/evidence_manifest.json">Evidence Manifest</a><br>
-◆ <a href="evidence/BID-2026-6794/evidence_correlations.json">Evidence Correlations</a><br>
-◆ <a href="evidence/BID-2026-6794/chain_of_custody.md">Chain of Custody</a><br>
-◆ <a href="evidence/BID-2026-6794/forensic_summary.md">Forensic Summary</a><br>
-◆ <a href="evidence/BID-2026-6794/acquisition_summary.md">Acquisition Summary</a></td>
+◆ <a href="evidence/BID-2026-1439/evidence_manifest.json">Evidence Manifest</a><br>
+◆ <a href="evidence/BID-2026-1439/evidence_correlations.json">Evidence Correlations</a><br>
+◆ <a href="evidence/BID-2026-1439/chain_of_custody.md">Chain of Custody</a><br>
+◆ <a href="evidence/BID-2026-1439/forensic_summary.md">Forensic Summary</a><br>
+◆ <a href="evidence/BID-2026-1439/acquisition_summary.md">Acquisition Summary</a></td>
       <td valign="top" align="left">◆ <a href="operations/command_brief.md">Command Brief</a><br>
 ◆ <a href="operations/investigation_timeline.md">Investigation Timeline</a><br>
 ◆ <a href="workbooks/Exposure-Tracking-Matrix.csv">Exposure Matrix (CSV Preview)</a><br>
@@ -49,11 +49,11 @@
   </thead>
   <tbody>
     <tr>
-      <td valign="top" align="left"><strong>Case:</strong> <code>BID-2026-6794</code><br>
+      <td valign="top" align="left"><strong>Case:</strong> <code>BID-2026-1439</code><br>
 <strong>Campaign:</strong> <code>BDC-2026-001</code></td>
-      <td valign="top" align="left"><strong>Record:</strong> <code>ESCALATED</code><br>
-<strong>Stage:</strong> ■ <code>PROBLEM REVIEW</code><br>
-<strong>Lifecycle:</strong> ■ <code>ESCALATED</code></td>
+      <td valign="top" align="left"><strong>Record:</strong> <code>OPEN</code><br>
+<strong>Stage:</strong> ■ <code>EVIDENCE REVIEW</code><br>
+<strong>Lifecycle:</strong> ■ <code>ACTIVE</code></td>
       <td valign="top" align="left"><code>JSON</code> · <code>XML</code> · <code>Markdown</code><br>
 <code>CSV</code> · <code>XLSX</code></td>
     </tr>
@@ -82,11 +82,11 @@ Investigations retain case identity and evidentiary state across scheduled GitHu
 <strong>Campaign:</strong> Coordinated Biomedical Systems Intrusion<br>
 <strong>Designation:</strong> BMSI-01</td>
       <td valign="top" align="left"><strong>Phase:</strong> ■ Operational Recovery<br>
-<strong>Containment:</strong> ■ SEVERE<br>
+<strong>Containment:</strong> ■ HIGH<br>
 <strong>Intrusions:</strong> 21</td>
-      <td valign="top" align="left"><strong>Active Cases:</strong> 147<br>
-<strong>Evidence:</strong> 101,088<br>
-<strong>Indicators:</strong> 65,115<br>
+      <td valign="top" align="left"><strong>Active Cases:</strong> 148<br>
+<strong>Evidence:</strong> 101,149<br>
+<strong>Indicators:</strong> 65,145<br>
 <strong>Facilities / States:</strong> 11 / 3</td>
     </tr>
   </tbody>
@@ -117,18 +117,18 @@ Investigations retain case identity and evidentiary state across scheduled GitHu
   </thead>
   <tbody>
     <tr>
-      <td valign="top" align="left"><strong>Case:</strong> BID-2026-6794<br>
-<strong>Classification:</strong> Laboratory Security Breach Investigation<br>
-<strong>Threat Family:</strong> Credential Misuse<br>
-<strong>Severity / Priority:</strong> ■ HIGH / HIGH</td>
-      <td valign="top" align="left"><strong>Platform:</strong> Biosecurity Operations Center<br>
-<strong>Vendor / Device:</strong> Dell / Evidence Repository<br>
-<strong>Zone:</strong> Containment Network<br>
-<strong>Assets:</strong> 18</td>
-      <td valign="top" align="left"><strong>Confidence:</strong> 96%<br>
-<strong>Evidence / IOCs:</strong> 111 / 74<br>
-<strong>Lead:</strong> Analyst Team Delta<br>
-<strong>Initial Access:</strong> Web Application Exploitation</td>
+      <td valign="top" align="left"><strong>Case:</strong> BID-2026-1439<br>
+<strong>Classification:</strong> Biological Research Intelligence Collection<br>
+<strong>Threat Family:</strong> Research Data Integrity Manipulation<br>
+<strong>Severity / Priority:</strong> ■ MODERATE / ELEVATED</td>
+      <td valign="top" align="left"><strong>Platform:</strong> Evidence Processing Network<br>
+<strong>Vendor / Device:</strong> HPE / Genome Analysis Workstation<br>
+<strong>Zone:</strong> Evidence Network<br>
+<strong>Assets:</strong> 17</td>
+      <td valign="top" align="left"><strong>Confidence:</strong> 84%<br>
+<strong>Evidence / IOCs:</strong> 61 / 30<br>
+<strong>Lead:</strong> Analyst Team Bravo<br>
+<strong>Initial Access:</strong> Compromised Credentials</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ Investigations retain case identity and evidentiary state across scheduled GitHu
 
 <br>
 
-**Assessment:** Collected artifacts support continued investigation into cyber-enabled activity affecting protected biomedical systems.
+**Assessment:** Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 **Recommended action:** Verify recovery controls and prepare the final operational assessment.
 
@@ -194,7 +194,7 @@ The active investigation persists across scheduled workflow executions and advan
 
 # Digital Evidence Record
 
-**Active Case:** BID-2026-6794
+**Active Case:** BID-2026-1439
 
 <table>
   <thead>
@@ -207,10 +207,10 @@ The active investigation persists across scheduled workflow executions and advan
   </thead>
   <tbody>
     <tr>
-      <td valign="top" align="right">111</td>
-      <td valign="top" align="right">111</td>
-      <td valign="top" align="right">111</td>
-      <td valign="top" align="right">0</td>
+      <td valign="top" align="right">61</td>
+      <td valign="top" align="right">61</td>
+      <td valign="top" align="right">61</td>
+      <td valign="top" align="right">61</td>
     </tr>
   </tbody>
 </table>
@@ -229,52 +229,52 @@ The active investigation persists across scheduled workflow executions and advan
   </thead>
   <tbody>
     <tr>
-      <td valign="top" align="left">Laboratory Information System Audit Log</td>
-      <td valign="top" align="right">14</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Research Workstation Event Log</td>
-      <td valign="top" align="right">13</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Laboratory System Configuration</td>
-      <td valign="top" align="right">11</td>
-    </tr>
-    <tr>
       <td valign="top" align="left">Biosecurity Audit Record</td>
-      <td valign="top" align="right">11</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Research Data Integrity Record</td>
       <td valign="top" align="right">10</td>
     </tr>
     <tr>
-      <td valign="top" align="left">Threat Intelligence Record</td>
-      <td valign="top" align="right">9</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Containment Validation Record</td>
-      <td valign="top" align="right">8</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Access Control Log</td>
-      <td valign="top" align="right">8</td>
-    </tr>
-    <tr>
       <td valign="top" align="left">Authentication Log</td>
-      <td valign="top" align="right">7</td>
+      <td valign="top" align="right">9</td>
     </tr>
     <tr>
       <td valign="top" align="left">Analyst Observation</td>
       <td valign="top" align="right">7</td>
     </tr>
     <tr>
-      <td valign="top" align="left">Network Connection Record</td>
+      <td valign="top" align="left">Firewall Log</td>
       <td valign="top" align="right">7</td>
     </tr>
     <tr>
-      <td valign="top" align="left">Firewall Log</td>
+      <td valign="top" align="left">Research Workstation Event Log</td>
       <td valign="top" align="right">6</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Containment Validation Record</td>
+      <td valign="top" align="right">5</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Access Control Log</td>
+      <td valign="top" align="right">5</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Threat Intelligence Record</td>
+      <td valign="top" align="right">4</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Network Connection Record</td>
+      <td valign="top" align="right">3</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Laboratory Information System Audit Log</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Research Data Integrity Record</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Laboratory System Configuration</td>
+      <td valign="top" align="right">1</td>
     </tr>
   </tbody>
 </table>
@@ -295,52 +295,52 @@ The active investigation persists across scheduled workflow executions and advan
   </thead>
   <tbody>
     <tr>
-      <td valign="top" align="left">Laboratory Information System Anomaly</td>
-      <td valign="top" align="right">14</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Research Workstation Compromise</td>
-      <td valign="top" align="right">13</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Laboratory System Modification</td>
-      <td valign="top" align="right">11</td>
-    </tr>
-    <tr>
       <td valign="top" align="left">Biosecurity Policy Violation</td>
-      <td valign="top" align="right">11</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Research Data Integrity Anomaly</td>
       <td valign="top" align="right">10</td>
     </tr>
     <tr>
-      <td valign="top" align="left">Known Threat Actor Indicator</td>
-      <td valign="top" align="right">9</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Containment Verification</td>
-      <td valign="top" align="right">8</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">Unauthorized Facility Access</td>
-      <td valign="top" align="right">8</td>
-    </tr>
-    <tr>
       <td valign="top" align="left">Credential Misuse</td>
-      <td valign="top" align="right">7</td>
+      <td valign="top" align="right">9</td>
     </tr>
     <tr>
       <td valign="top" align="left">Analyst Intelligence Assessment</td>
       <td valign="top" align="right">7</td>
     </tr>
     <tr>
-      <td valign="top" align="left">Command-and-Control Communication</td>
+      <td valign="top" align="left">Suspicious Network Activity</td>
       <td valign="top" align="right">7</td>
     </tr>
     <tr>
-      <td valign="top" align="left">Suspicious Network Activity</td>
+      <td valign="top" align="left">Research Workstation Compromise</td>
       <td valign="top" align="right">6</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Containment Verification</td>
+      <td valign="top" align="right">5</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Unauthorized Facility Access</td>
+      <td valign="top" align="right">5</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Known Threat Actor Indicator</td>
+      <td valign="top" align="right">4</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Command-and-Control Communication</td>
+      <td valign="top" align="right">3</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Laboratory Information System Anomaly</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Research Data Integrity Anomaly</td>
+      <td valign="top" align="right">2</td>
+    </tr>
+    <tr>
+      <td valign="top" align="left">Laboratory System Modification</td>
+      <td valign="top" align="right">1</td>
     </tr>
   </tbody>
 </table>
@@ -369,6 +369,14 @@ The active investigation persists across scheduled workflow executions and advan
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td valign="top" align="left">2026-11-10</td>
+      <td valign="top" align="left">BID-2026-1439</td>
+      <td valign="top" align="left">MODERATE</td>
+      <td valign="top" align="right">59</td>
+      <td valign="top" align="right">84</td>
+      <td valign="top" align="left">Open</td>
+    </tr>
     <tr>
       <td valign="top" align="left">2026-11-05</td>
       <td valign="top" align="left">BID-2026-6794</td>
@@ -401,20 +409,12 @@ The active investigation persists across scheduled workflow executions and advan
       <td valign="top" align="right">92</td>
       <td valign="top" align="left">RESOLVED</td>
     </tr>
-    <tr>
-      <td valign="top" align="left">2026-10-17</td>
-      <td valign="top" align="left">BID-2026-8272</td>
-      <td valign="top" align="left">HIGH</td>
-      <td valign="top" align="right">81</td>
-      <td valign="top" align="right">88</td>
-      <td valign="top" align="left">ESCALATED</td>
-    </tr>
   </tbody>
 </table>
 
 </details>
 
-**Threat Family:** Credential Misuse · **Repository Updated:** 2026-11-05T20:41:21Z
+**Threat Family:** Research Data Integrity Manipulation · **Repository Updated:** 2026-11-10T13:29:20Z
 
 <!-- EVIDENCE_DASHBOARD_END -->
 
@@ -437,11 +437,11 @@ The active investigation persists across scheduled workflow executions and advan
   <tbody>
     <tr>
       <td valign="top" align="left">Total Investigations</td>
-      <td valign="top" align="right">151</td>
+      <td valign="top" align="right">152</td>
     </tr>
     <tr>
       <td valign="top" align="left">Low / Moderate</td>
-      <td valign="top" align="right">33 / 50</td>
+      <td valign="top" align="right">33 / 51</td>
     </tr>
     <tr>
       <td valign="top" align="left">High / Critical</td>
@@ -457,11 +457,11 @@ The active investigation persists across scheduled workflow executions and advan
     </tr>
     <tr>
       <td valign="top" align="left">Total Evidence</td>
-      <td valign="top" align="right">101,088</td>
+      <td valign="top" align="right">101,149</td>
     </tr>
     <tr>
       <td valign="top" align="left">Total Indicators</td>
-      <td valign="top" align="right">65,115</td>
+      <td valign="top" align="right">65,145</td>
     </tr>
   </tbody>
 </table>
@@ -477,6 +477,11 @@ The active investigation persists across scheduled workflow executions and advan
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td valign="top" align="left">BID-2026-1439</td>
+      <td valign="top" align="left">Biological Research Intelligence Collection</td>
+      <td valign="top" align="left">MODERATE</td>
+    </tr>
     <tr>
       <td valign="top" align="left">BID-2026-6794</td>
       <td valign="top" align="left">Laboratory Security Breach Investigation</td>
@@ -496,11 +501,6 @@ The active investigation persists across scheduled workflow executions and advan
       <td valign="top" align="left">BID-2026-6011</td>
       <td valign="top" align="left">Biocontainment Network Investigation</td>
       <td valign="top" align="left">MODERATE</td>
-    </tr>
-    <tr>
-      <td valign="top" align="left">BID-2026-8272</td>
-      <td valign="top" align="left">Research Facility Intrusion Investigation</td>
-      <td valign="top" align="left">HIGH</td>
     </tr>
   </tbody>
 </table>
@@ -563,7 +563,7 @@ The repository includes a functioning C#/.NET threat-assessment component that e
   </tbody>
 </table>
 
-**Current canonical assessment:** `67 / 100` · `LABORATORY SECURITY BREACH INVESTIGATION`
+**Current canonical assessment:** `49 / 100` · `BIOLOGICAL RESEARCH INTELLIGENCE COLLECTION`
 
 **Generated records**
 

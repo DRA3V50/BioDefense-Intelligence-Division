@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-6794
+BID-2026-1439
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Laboratory Security Breach Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Credential Misuse
+Research Data Integrity Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Open
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Evidence Processing Network
 
 Device:
-Evidence Repository
+Genome Analysis Workstation
 
 Vendor:
-Dell
+HPE
 
 Security Zone:
-Containment Network
+Evidence Network
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-151
+152
 
 Evidence Collected:
-111
+61
 
 Indicators Identified:
-74
+30
 
 Affected Assets:
-18
+17
 
 Confidence:
-96%
+84%
 
 Risk Score:
-77
+59
 
 ---
 

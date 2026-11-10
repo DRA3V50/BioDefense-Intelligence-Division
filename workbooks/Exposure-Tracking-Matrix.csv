@@ -175,3 +175,4 @@ Date,Case ID,Campaign,Classification,Severity,Priority,Risk Score,Confidence,Evi
 2026-10-26,BID-2026-8012,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,HIGH,HIGH,72,86,128,85,26,Research Data Repository,Lenovo,Biosecurity Segment,Analyst Team Bravo,ESCALATED
 2026-10-31,BID-2026-4555,Coordinated Biomedical Systems Intrusion,Protected Research Systems Investigation,CRITICAL,CRITICAL,90,97,326,180,38,Research Data Repository,HPE,Protected Research Segment,National Response Cell,ESCALATED
 2026-11-05,BID-2026-6794,Coordinated Biomedical Systems Intrusion,Laboratory Security Breach Investigation,HIGH,HIGH,77,96,111,74,18,Biosecurity Operations Center,Dell,Containment Network,Analyst Team Delta,ESCALATED
+2026-11-10,BID-2026-1439,Coordinated Biomedical Systems Intrusion,Biological Research Intelligence Collection,MODERATE,ELEVATED,59,84,61,30,17,Evidence Processing Network,HPE,Evidence Network,Analyst Team Bravo,Open

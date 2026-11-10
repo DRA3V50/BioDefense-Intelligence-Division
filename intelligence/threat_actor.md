@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Credential Misuse
+Research Data Integrity Manipulation
 
 ---
 
 ## Primary Alias
-Black Helix
+Vector-9
 
 ---
 
 ## Attribution
-Unknown
+Unattributed
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Moderate
+High
 
 ---
 
 ## Confidence
-96%
+84%
 
 ---
 
 ## Observed Techniques
-- Web Application Exploitation
+- Compromised Credentials
+- Command and Control
 - Laboratory Control System Manipulation
+- Insider Access Abuse
 - Concealed Internal Movement
-- Credential Abuse
-- Research Data Exfiltration
-- Privilege Escalation
+- Supply Chain Compromise
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Delta
+Analyst Team Bravo
 
-**Analyst Note:** Recommend elevating monitoring on adjacent facility networks.
+**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Laboratory Security Breach Investigation
+Biological Research Intelligence Collection
 
 ---
 

@@ -83,10 +83,10 @@
         {
             "name": "Research Data Integrity Manipulation",
             "first_seen": "2026-07-24",
-            "last_seen": "2026-08-19",
-            "cases": 11,
+            "last_seen": "2026-11-10",
+            "cases": 12,
             "severity": "MODERATE",
-            "confidence": 89
+            "confidence": 84
         },
         {
             "name": "Synthetic Genome Data Theft",

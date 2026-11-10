@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-1439",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-11-10T13:29:20Z",
+  "platform": "Evidence Processing Network",
+  "vendor": "HPE",
+  "device": "Genome Analysis Workstation",
+  "baseline_version": "4.4.0",
+  "zone": "Evidence Network",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}
