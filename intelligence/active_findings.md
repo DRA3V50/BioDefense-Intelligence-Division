@@ -30,15 +30,15 @@ Collected indicators continue to support an active counter-bioterrorism investig
 
 ### Finding 2
 
-No destructive malware activity has been identified at this stage of the investigation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 5
 
