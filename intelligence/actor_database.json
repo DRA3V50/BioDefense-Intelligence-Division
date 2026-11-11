@@ -84,7 +84,7 @@
             "name": "Research Data Integrity Manipulation",
             "first_seen": "2026-07-24",
             "last_seen": "2026-11-11",
-            "cases": 14,
+            "cases": 15,
             "severity": "MODERATE",
             "confidence": 84
         },
