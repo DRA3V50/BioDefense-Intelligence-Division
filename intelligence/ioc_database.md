@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Identity | Credential reuse detected across isolated research segments |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---

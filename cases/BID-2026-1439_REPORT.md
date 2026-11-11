@@ -138,23 +138,23 @@ ELEVATED
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Current findings support maintaining the existing investigation priority.
 
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Identity | Credential reuse detected across isolated research segments |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| System Log | Unexpected privilege escalation recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 
 
 ---
@@ -449,7 +449,7 @@ Research Data Integrity Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Ashcroft Biomedical Center
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Under Forensic Preservation
 
 Priority:
 ELEVATED
