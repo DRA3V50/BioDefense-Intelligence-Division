@@ -138,23 +138,23 @@ ELEVATED
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 3
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 5
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
@@ -288,11 +288,11 @@ Biological Research Intelligence Collection
 | Category | Observation |
 |----------|-------------|
 | Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
+| Identity | Credential reuse detected across isolated research segments |
 | Evidence | Acquired forensic image verified using SHA-256 |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Research Data Integrity Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
 Evidence Processing Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Protected research assets remain under continuous monitoring.
 
 
 ---

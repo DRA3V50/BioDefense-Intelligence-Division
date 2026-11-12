@@ -16,11 +16,11 @@ Biological Research Intelligence Collection
 | Category | Observation |
 |----------|-------------|
 | Device | Protected workstation entered evidence preservation mode |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
+| Identity | Credential reuse detected across isolated research segments |
 | Evidence | Acquired forensic image verified using SHA-256 |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---

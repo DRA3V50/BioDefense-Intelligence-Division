@@ -19,7 +19,7 @@ Research Data Integrity Manipulation
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
 Evidence Processing Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Isolated From Production
 
 Priority:
 ELEVATED
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+Protected research assets remain under continuous monitoring.

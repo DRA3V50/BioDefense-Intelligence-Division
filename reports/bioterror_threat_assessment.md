@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-11-12 02:20 UTC
+**Generated:** 2026-11-12 13:47 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Biological Research Intelligence Collection concerns suspected Resear
 
 **Integrity-Verified Records:** 61
 
-**Pending Analyst Review:** 17
+**Pending Analyst Review:** 6
 
 ### Priority Findings
 

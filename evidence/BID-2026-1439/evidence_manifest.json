@@ -766,7 +766,8 @@
       "integrity_status": "Verified",
       "sha256": "90fe87efea622eedfd9c49e92d940b100a82e7be37e0b718e5f0d569aa8601ed",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0046",
@@ -782,7 +783,8 @@
       "integrity_status": "Verified",
       "sha256": "a77699b9fbaa828130a671d8e9e2571a8d80098170eab795bb90ed46a17c07a2",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0047",
@@ -798,7 +800,8 @@
       "integrity_status": "Verified",
       "sha256": "b6a2c510d73230ff3c2d161ff0c29dc626616cc1f392b835cdce3efee95e3690",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0048",
@@ -814,7 +817,8 @@
       "integrity_status": "Verified",
       "sha256": "19a8a7dd89a68bbd7cc751f45586d9c8cb8d33aa55c2cbc5b4a31787107ecc3d",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0049",
@@ -830,7 +834,8 @@
       "integrity_status": "Verified",
       "sha256": "26f94a63e11d57b0edcd937516914fba75bbe26e3d1181e59bb50ed575ed621e",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0050",
@@ -846,7 +851,8 @@
       "integrity_status": "Verified",
       "sha256": "7d64f75414dd212bcb6820c89149ab5cfa75f2daa6458e18300efe5583781940",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0051",
@@ -862,7 +868,8 @@
       "integrity_status": "Verified",
       "sha256": "7e5702e366a68ac0d6ed43a50ab0fb3bda1875f8285e5d81b02592e17c09705a",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0052",
@@ -878,7 +885,8 @@
       "integrity_status": "Verified",
       "sha256": "3f10f98cff4836d60a36d5380e3bf179c33bbcf9128f8f96242fbe51e6daf524",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0053",
@@ -894,7 +902,8 @@
       "integrity_status": "Verified",
       "sha256": "39c08c2be9932ef7c36ec7e8346668a987379c488c90e912ad31429583432b0a",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0054",
@@ -910,7 +919,8 @@
       "integrity_status": "Verified",
       "sha256": "6d330fd19d699a8eb193981e2c9307e8e3cd06124dbd2d3c60a6ac56c9bf9668",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0055",
@@ -926,7 +936,8 @@
       "integrity_status": "Verified",
       "sha256": "a1356d1c4eb74411b12af49b26db62054bcc0e6b57e6c2a0d95ab48938d30525",
       "classification": "Biological Research Intelligence Collection",
-      "review_status": "Pending Analyst Review"
+      "review_status": "Reviewed",
+      "reviewed_at": "2026-11-12T13:47:52Z"
     },
     {
       "evidence_id": "BID-2026-1439-EV-0056",
@@ -1026,11 +1037,11 @@
     }
   ],
   "lifecycle_processing": {
-    "reviewed_count": 44,
+    "reviewed_count": 55,
     "total_evidence_count": 61,
     "last_review_batch_size": 11,
-    "last_reviewed_at": "2026-11-12T02:20:08Z",
+    "last_reviewed_at": "2026-11-12T13:47:52Z",
     "last_updated_by": "process_active_case_stage"
   },
-  "updated_at": "2026-11-12T02:20:08Z"
+  "updated_at": "2026-11-12T13:47:52Z"
 }
