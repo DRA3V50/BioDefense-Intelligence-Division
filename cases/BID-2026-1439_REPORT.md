@@ -138,15 +138,15 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Observed indicators remain consistent with the current operational assessment.
 
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| System Log | Unexpected privilege escalation recorded |
-| Infrastructure | Firewall policy deviation identified |
+| Device | Protected workstation entered evidence preservation mode |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Infrastructure | Firewall policy deviation identified |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
 ELEVATED

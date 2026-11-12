@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+Windows Server 2025
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Active Investigation
 
 Priority:
 ELEVATED

@@ -26,15 +26,15 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 2
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
