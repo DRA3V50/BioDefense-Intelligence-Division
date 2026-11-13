@@ -138,23 +138,23 @@ ELEVATED
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 2
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Operational monitoring continues while analysts validate recovered evidence.
+No confirmed attribution has been established during the current investigation.
 
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
 | System Log | Unexpected privilege escalation recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Identity | Credential reuse detected across isolated research segments |
+| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---

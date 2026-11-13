@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Active Investigation
 
 Priority:
 ELEVATED
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Digital evidence preserved for laboratory forensic examination.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

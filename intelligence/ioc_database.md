@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
 | System Log | Unexpected privilege escalation recorded |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Identity | Credential reuse detected across isolated research segments |
+| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---

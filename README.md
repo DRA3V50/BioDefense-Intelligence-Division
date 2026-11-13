@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=c9af98f3c498" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=38798faf9d0f" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
