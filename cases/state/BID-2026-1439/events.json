@@ -131,7 +131,20 @@
       "zone": "Evidence Network",
       "intensity": 58,
       "idempotency_key": "correlation-validation-21-of-61"
+    },
+    {
+      "event_id": "BID-2026-1439-EVT-0011",
+      "case_id": "BID-2026-1439",
+      "sequence": 11,
+      "timestamp": "2026-11-13T20:31:18Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 42/61 validated",
+      "severity": "MODERATE",
+      "source": "process_active_case_stage",
+      "zone": "Evidence Network",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-42-of-61"
     }
   ],
-  "updated_at": "2026-11-13T13:08:11Z"
+  "updated_at": "2026-11-13T20:31:18Z"
 }
