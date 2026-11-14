@@ -138,23 +138,23 @@ ELEVATED
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| PowerShell | Encoded administrative command execution detected |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Device | Protected workstation entered evidence preservation mode |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Security | Multi-factor authentication bypass attempt recorded |
+| System Log | Unexpected privilege escalation recorded |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 
 
 ---
@@ -449,7 +449,7 @@ Research Data Integrity Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
 Evidence Processing Network

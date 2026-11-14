@@ -19,7 +19,7 @@ Research Data Integrity Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
 Evidence Processing Network
