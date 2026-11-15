@@ -9,7 +9,7 @@
 | Classification | Biological Research Intelligence Collection |
 | Threat Family | Research Data Integrity Manipulation |
 | Severity | MODERATE |
-| Status | Open |
+| Status | RESOLVED |
 | Phase | Operational Recovery |
 
 ---

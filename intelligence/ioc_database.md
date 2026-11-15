@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | System Log | Unexpected privilege escalation recorded |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -47,4 +47,4 @@ Analyst Team Bravo
 
 Current Status:
 
-Open
+RESOLVED

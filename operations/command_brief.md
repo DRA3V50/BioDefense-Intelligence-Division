@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-11-14 18:45 UTC
+**Generated:** 2026-11-15 01:04 UTC
 
 ---
 
@@ -62,7 +62,7 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**148**
+**147**
 
 Confirmed Intrusions:
 **21**

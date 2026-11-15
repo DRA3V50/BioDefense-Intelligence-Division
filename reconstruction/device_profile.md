@@ -19,7 +19,7 @@ Research Data Integrity Manipulation
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+National Pathogen Research Facility
 
 Platform:
 Evidence Processing Network
@@ -31,7 +31,7 @@ Vendor:
 HPE
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 ELEVATED
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Analysts continue reconstructing attacker activity across protected biomedical systems.

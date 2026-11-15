@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
@@ -74,7 +74,7 @@ Available evidence supports expanded review of access records, system changes, a
 # Operational Status
 
 Current Status:
-Open
+RESOLVED
 
 Recommended Action:
 

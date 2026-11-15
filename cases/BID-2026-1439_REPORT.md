@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Open
+RESOLVED
 
 ---
 
@@ -138,23 +138,23 @@ ELEVATED
 
 ### Finding 1
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 2
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ---
 
@@ -186,7 +186,7 @@ Available evidence supports expanded review of access records, system changes, a
 # Operational Status
 
 Current Status:
-Open
+RESOLVED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Biological Research Intelligence Collection
 
 Threat Family: Research Data Integrity Manipulation
 
-Current Status: Open
+Current Status: RESOLVED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Current findings support maintaining the existing investigation priority.
 
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Security | Multi-factor authentication bypass attempt recorded |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | System Log | Unexpected privilege escalation recorded |
 | Cloud | Restricted research archive synchronized to unauthorized destination |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -319,7 +319,7 @@ Analyst Team Bravo
 
 Current Status:
 
-Open
+RESOLVED
 
 
 ---
@@ -337,7 +337,7 @@ Open
 | Classification | Biological Research Intelligence Collection |
 | Threat Family | Research Data Integrity Manipulation |
 | Severity | MODERATE |
-| Status | Open |
+| Status | RESOLVED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Open**
+**RESOLVED**
 
 Priority:
 
@@ -449,7 +449,7 @@ Research Data Integrity Manipulation
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+National Pathogen Research Facility
 
 Platform:
 Evidence Processing Network
@@ -461,7 +461,7 @@ Vendor:
 HPE
 
 Operating System:
-Hardened Research Appliance OS
+Windows Server 2025
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Under Forensic Preservation
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---
@@ -518,7 +518,7 @@ Biological Research Intelligence Collection
 Available evidence supports expanded review of access records, system changes, and related investigative indicators.
 
 ### Current Status
-Open
+RESOLVED
 
 ### Severity
 MODERATE
