@@ -124,7 +124,7 @@
             "name": "Research Workstation Compromise",
             "first_seen": "2026-08-03",
             "last_seen": "2026-11-15",
-            "cases": 31,
+            "cases": 32,
             "severity": "HIGH",
             "confidence": 94
         },

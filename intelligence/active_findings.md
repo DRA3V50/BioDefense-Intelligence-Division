@@ -26,11 +26,11 @@ HIGH
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
@@ -38,11 +38,11 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 

@@ -19,7 +19,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
 Biosecurity Operations Center
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.

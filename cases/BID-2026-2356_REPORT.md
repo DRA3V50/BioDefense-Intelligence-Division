@@ -138,11 +138,11 @@ HIGH
 
 ### Finding 1
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 3
 
@@ -150,11 +150,11 @@ Laboratory network telemetry remains under continuous monitoring pending case cl
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Database | Protected biomedical dataset queried outside normal operating hours |
-| Device | Protected workstation entered evidence preservation mode |
-| Identity | Credential reuse detected across isolated research segments |
+| System Log | Unexpected privilege escalation recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Email | Targeted spear-phishing message delivered to laboratory personnel |
+| PowerShell | Encoded administrative command execution detected |
+| Authentication | Privileged account authenticated outside approved maintenance window |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+National Pathogen Research Facility
 
 Platform:
 Biosecurity Operations Center
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---
