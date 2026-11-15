@@ -3,35 +3,35 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-1439
+BID-2026-2356
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 Threat Family:
-Research Data Integrity Manipulation
+Research Workstation Compromise
 
 Current Phase:
 Operational Recovery
 
 Status:
-RESOLVED
+Field Coordination
 
 ---
 
 ## Protected Environment
 
 Platform:
-Evidence Processing Network
+Biosecurity Operations Center
 
 Device:
-Genome Analysis Workstation
+Network Security Appliance
 
 Vendor:
-HPE
+Microsoft
 
 Security Zone:
 Evidence Network
@@ -41,22 +41,22 @@ Evidence Network
 ## Investigation Metrics
 
 Investigations Recorded:
-152
+153
 
 Evidence Collected:
-61
+200
 
 Indicators Identified:
-30
+42
 
 Affected Assets:
-17
+35
 
 Confidence:
-84%
+94%
 
 Risk Score:
-59
+83
 
 ---
 

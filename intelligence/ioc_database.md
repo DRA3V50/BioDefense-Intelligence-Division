@@ -3,24 +3,24 @@
 ## Investigation
 
 Case ID:
-BID-2026-1439
+BID-2026-2356
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 ---
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| System Log | Unexpected privilege escalation recorded |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Research Storage | Unauthorized access to protected genomic repository |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Database | Protected biomedical dataset queried outside normal operating hours |
+| Device | Protected workstation entered evidence preservation mode |
+| Identity | Credential reuse detected across isolated research segments |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -28,23 +28,23 @@ Biological Research Intelligence Collection
 ## Investigation Statistics
 
 Evidence Collected:
-61
+200
 
 Indicators Reviewed:
-30
+42
 
 Risk Score:
-59
+83
 
 Confidence:
-84%
+94%
 
 ---
 
 Lead Analyst:
 
-Analyst Team Bravo
+Analyst Team Alpha
 
 Current Status:
 
-RESOLVED
+Field Coordination

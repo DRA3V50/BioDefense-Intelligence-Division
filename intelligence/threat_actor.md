@@ -1,49 +1,49 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Data Integrity Manipulation
+Research Workstation Compromise
 
 ---
 
 ## Primary Alias
-Vector-9
+Genome Phantom
 
 ---
 
 ## Attribution
-Unattributed
+International Infrastructure
 
 ---
 
 ## Observed Motivation
-Medical Infrastructure Disruption
+Laboratory System Sabotage
 
 ---
 
 ## Operational Sophistication
-High
+Moderate
 
 ---
 
 ## Confidence
-84%
+94%
 
 ---
 
 ## Observed Techniques
-- Compromised Credentials
-- Command and Control
-- Laboratory Control System Manipulation
+- Exposed Remote Service
 - Insider Access Abuse
+- Laboratory Data Manipulation
 - Concealed Internal Movement
-- Supply Chain Compromise
+- Lateral Movement
+- Research Data Exfiltration
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Bravo
+Analyst Team Alpha
 
-**Analyst Note:** Flagging for follow-up once additional artifacts are processed.
+**Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
 ---
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 ---
 

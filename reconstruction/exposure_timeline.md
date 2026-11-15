@@ -1,21 +1,21 @@
 
 # Exposure Timeline Reconstruction
 
-## 2026-11-10
+## 2026-11-15
 
 ### Case Opened
-Case ID: BID-2026-1439
+Case ID: BID-2026-2356
 
 ### Classification
-Biological Research Intelligence Collection
+Research Facility Intrusion Investigation
 
 ### Initial Assessment
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ### Current Status
-RESOLVED
+Field Coordination
 
 ### Severity
-MODERATE
+HIGH
 
 ---

@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-1439 |
+| Case ID | BID-2026-2356 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Biological Research Intelligence Collection |
-| Threat Family | Research Data Integrity Manipulation |
-| Severity | MODERATE |
-| Status | RESOLVED |
+| Classification | Research Facility Intrusion Investigation |
+| Threat Family | Research Workstation Compromise |
+| Severity | HIGH |
+| Status | Field Coordination |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Evidence Processing Network |
-| Device | Genome Analysis Workstation |
-| Vendor | HPE |
+| Platform | Biosecurity Operations Center |
+| Device | Network Security Appliance |
+| Vendor | Microsoft |
 | Security Zone | Evidence Network |
 
 ---
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 59 |
-| Confidence | 84% |
-| Evidence Collected | 61 |
-| Indicators Identified | 30 |
-| Affected Assets | 17 |
+| Risk Score | 83 |
+| Confidence | 94% |
+| Evidence Collected | 200 |
+| Indicators Identified | 42 |
+| Affected Assets | 35 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Bravo**
+**Analyst Team Alpha**
 
 ---
 
 # Executive Assessment
 
-Available evidence supports expanded review of access records, system changes, and related investigative indicators.
+Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**RESOLVED**
+**Field Coordination**
 
 Priority:
 
-**ELEVATED**
+**HIGH**
 
 Recommended Action:
 

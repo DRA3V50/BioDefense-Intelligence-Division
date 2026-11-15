@@ -1,0 +1,25 @@
+{
+  "case_id": "BID-2026-2356",
+  "artifact_type": "Firewall Log",
+  "generated_at": "2026-11-15T12:45:14Z",
+  "source_device": "Network Security Appliance",
+  "security_zone": "Evidence Network",
+  "events": [
+    {
+      "event_id": "FW-001",
+      "action": "Blocked",
+      "protocol": "HTTPS",
+      "source": "Simulated External Host",
+      "destination": "Network Security Appliance",
+      "description": "Simulated unauthorized outbound connection attempt."
+    },
+    {
+      "event_id": "FW-002",
+      "action": "Allowed",
+      "protocol": "DNS",
+      "source": "Network Security Appliance",
+      "destination": "Authorized DNS Service",
+      "description": "Routine name-resolution activity retained for analysis."
+    }
+  ]
+}
