@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "case_id": "BID-2026-2356",
-  "state_revision": 3,
+  "state_revision": 4,
   "nodes": [
     {
       "node_id": "case:BID-2026-2356",
@@ -96,6 +96,6 @@
       }
     }
   ],
-  "source_fingerprint": "1eb30044dab5f90d310b21c84afe7b93bd17bde632002fc222d75053aed9400c",
-  "updated_at": "2026-11-15T19:24:38Z"
+  "source_fingerprint": "1eda441f2195adb41c1af2bf7f308aad97217a163bd984c0876bb9cb1f8985c4",
+  "updated_at": "2026-11-16T01:07:50Z"
 }
