@@ -18,7 +18,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Current evidence supports continued investigative activity.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 

@@ -138,19 +138,19 @@ HIGH
 
 ### Finding 1
 
-No destructive malware activity has been identified at this stage of the investigation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 4
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Current evidence supports continued investigative activity.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Research Storage | Unauthorized access to protected genomic repository |
+| System Log | Unexpected privilege escalation recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Raccoon Research Annex
+Advanced Genome Security Laboratory
 
 Platform:
 Biosecurity Operations Center
@@ -461,7 +461,7 @@ Vendor:
 Microsoft
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Active Investigation
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+System isolated pending malware reverse engineering.
 
 
 ---

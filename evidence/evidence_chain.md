@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-11-16 01:07 UTC
+**Generated:** 2026-11-16 13:40 UTC
 
 **Case ID:** BID-2026-2356
 
@@ -45,13 +45,13 @@ evidence correlations, and the active case assessment.
 - **BID-2026-2356-EV-0055** — Threat Intelligence Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0071** — Threat Intelligence Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0078** — Threat Intelligence Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0097** — Threat Intelligence Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0098** — Threat Intelligence Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0110** — Threat Intelligence Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0115** — Threat Intelligence Record  
@@ -108,9 +108,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0068** — Analyst Observation  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0082** — Analyst Observation  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0094** — Analyst Observation  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0108** — Analyst Observation  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0116** — Analyst Observation  
@@ -153,11 +153,11 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0040** — Laboratory Information System Audit Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0069** — Laboratory Information System Audit Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0077** — Laboratory Information System Audit Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0085** — Laboratory Information System Audit Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0126** — Laboratory Information System Audit Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0127** — Laboratory Information System Audit Log  
@@ -214,13 +214,13 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0060** — Biosecurity Audit Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0079** — Biosecurity Audit Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0086** — Biosecurity Audit Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0090** — Biosecurity Audit Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0095** — Biosecurity Audit Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0109** — Biosecurity Audit Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0119** — Biosecurity Audit Record  
@@ -265,15 +265,15 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0058** — Laboratory System Configuration  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0075** — Laboratory System Configuration  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0088** — Laboratory System Configuration  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0096** — Laboratory System Configuration  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0100** — Laboratory System Configuration  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0102** — Laboratory System Configuration  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0121** — Laboratory System Configuration  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0123** — Laboratory System Configuration  
@@ -330,11 +330,11 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0025** — Firewall Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0081** — Firewall Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0087** — Firewall Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0099** — Firewall Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0104** — Firewall Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0111** — Firewall Log  
@@ -397,7 +397,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0062** — Network Connection Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0073** — Network Connection Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0118** — Network Connection Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0143** — Network Connection Record  
@@ -436,11 +436,11 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0065** — Containment Validation Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0070** — Containment Validation Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0074** — Containment Validation Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0092** — Containment Validation Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0105** — Containment Validation Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0161** — Containment Validation Record  
@@ -485,9 +485,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0063** — Research Workstation Event Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0076** — Research Workstation Event Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0093** — Research Workstation Event Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0106** — Research Workstation Event Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0113** — Research Workstation Event Log  
@@ -534,9 +534,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0061** — Research Data Integrity Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0080** — Research Data Integrity Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0084** — Research Data Integrity Record  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0117** — Research Data Integrity Record  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0129** — Research Data Integrity Record  
@@ -581,11 +581,11 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0067** — Access Control Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0072** — Access Control Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0091** — Access Control Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0101** — Access Control Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0103** — Access Control Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0146** — Access Control Log  
@@ -624,9 +624,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-2356-EV-0051** — Authentication Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0083** — Authentication Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0089** — Authentication Log  
-  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-2356-EV-0107** — Authentication Log  
   Source: **Network Security Appliance** | Vendor: **Microsoft** | Integrity: **Verified** | Review: **Pending Analyst Review**
 - **BID-2026-2356-EV-0120** — Authentication Log  

@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Identity | Credential reuse detected across isolated research segments |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Security | Multi-factor authentication bypass attempt recorded |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Research Storage | Unauthorized access to protected genomic repository |
+| System Log | Unexpected privilege escalation recorded |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 
 
 ---
