@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 

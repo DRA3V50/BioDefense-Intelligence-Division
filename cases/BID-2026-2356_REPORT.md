@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 4
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current evidence supports continued investigative activity.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Security | Multi-factor authentication bypass attempt recorded |
-| System Log | Unexpected privilege escalation recorded |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
+| Infrastructure | Firewall policy deviation identified |
+| PowerShell | Encoded administrative command execution detected |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Central Evidence Processing Center
 
 Platform:
 Biosecurity Operations Center
@@ -461,7 +461,7 @@ Vendor:
 Microsoft
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
