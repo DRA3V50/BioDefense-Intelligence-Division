@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 

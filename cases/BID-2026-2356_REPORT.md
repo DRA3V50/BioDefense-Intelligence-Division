@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 2
 
-Suspicious outbound communication was detected prior to containment operations.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 3
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 4
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Privilege escalation activity was observed within a protected research environment.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Additional forensic validation is required before investigative conclusions can be established.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
 | PowerShell | Encoded administrative command execution detected |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Device | Protected workstation entered evidence preservation mode |
+| Authentication | Privileged account authenticated outside approved maintenance window |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Evidence | Acquired forensic image verified using SHA-256 |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Advanced Genome Security Laboratory
+Ashcroft Biomedical Center
 
 Platform:
 Biosecurity Operations Center
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+System isolated pending malware reverse engineering.
 
 
 ---
