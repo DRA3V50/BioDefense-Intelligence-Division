@@ -138,11 +138,11 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
@@ -150,11 +150,11 @@ Additional forensic examination is required to determine the full operational sc
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 5
 
-Privilege escalation activity was observed within a protected research environment.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Additional forensic validation is required before investigative conclusions can be established.
+Evidence correlation remains in progress across collected artifacts.
 
 Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
 Biosecurity Operations Center
@@ -461,7 +461,7 @@ Vendor:
 Microsoft
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Isolated From Production
 
 Priority:
 HIGH

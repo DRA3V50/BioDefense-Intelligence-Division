@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Infrastructure | Firewall policy deviation identified |
-| PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---

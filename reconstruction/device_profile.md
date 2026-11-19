@@ -19,7 +19,7 @@ Research Workstation Compromise
 ## Protected Asset
 
 Facility:
-Ashcroft Biomedical Center
+Raccoon Research Annex
 
 Platform:
 Biosecurity Operations Center
@@ -31,7 +31,7 @@ Vendor:
 Microsoft
 
 Operating System:
-Hardened Research Appliance OS
+VMware ESXi 9
 
 Security Zone:
 Evidence Network
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Isolated From Production
 
 Priority:
 HIGH
