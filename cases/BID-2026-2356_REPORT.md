@@ -138,23 +138,23 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
@@ -287,12 +287,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
 | Device | Protected workstation entered evidence preservation mode |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | PowerShell | Encoded administrative command execution detected |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Identity | Credential reuse detected across isolated research segments |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 Microsoft
 
 Operating System:
-VMware ESXi 9
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Evidence Network
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 HIGH
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Evidence indicates unauthorized access to restricted research resources.
 
 
 ---

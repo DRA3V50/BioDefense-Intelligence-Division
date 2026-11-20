@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
 | Device | Protected workstation entered evidence preservation mode |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
 | Network | Unexpected east-west traffic between laboratory VLANs |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | PowerShell | Encoded administrative command execution detected |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Identity | Credential reuse detected across isolated research segments |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---

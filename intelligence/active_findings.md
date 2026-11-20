@@ -26,23 +26,23 @@ HIGH
 
 ### Finding 1
 
-Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ---
 
