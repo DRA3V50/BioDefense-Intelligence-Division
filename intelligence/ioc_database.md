@@ -15,12 +15,12 @@ Research Facility Intrusion Investigation
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
+| System Log | Unexpected privilege escalation recorded |
 | Evidence | Acquired forensic image verified using SHA-256 |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| PowerShell | Encoded administrative command execution detected |
-| Identity | Credential reuse detected across isolated research segments |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Infrastructure | Firewall policy deviation identified |
 
 
 ---
@@ -47,4 +47,4 @@ Analyst Team Alpha
 
 Current Status:
 
-Field Coordination
+ESCALATED

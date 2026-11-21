@@ -30,19 +30,19 @@ Unauthorized access to protected biomedical research resources was confirmed dur
 
 ### Finding 2
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 3
 
-Privilege escalation activity was observed within a protected research environment.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 4
 
-Evidence indicates possible insider-assisted access to protected laboratory resources.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ---
 
@@ -74,7 +74,7 @@ Evidence indicates unauthorized access requiring additional forensic review and 
 # Operational Status
 
 Current Status:
-Field Coordination
+ESCALATED
 
 Recommended Action:
 

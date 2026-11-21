@@ -9,7 +9,7 @@
 | Classification | Research Facility Intrusion Investigation |
 | Threat Family | Research Workstation Compromise |
 | Severity | HIGH |
-| Status | Field Coordination |
+| Status | ESCALATED |
 | Phase | Operational Recovery |
 
 ---
