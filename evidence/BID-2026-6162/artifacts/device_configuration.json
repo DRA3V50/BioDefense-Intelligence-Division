@@ -1,0 +1,12 @@
+{
+  "case_id": "BID-2026-6162",
+  "artifact_type": "Laboratory System Configuration",
+  "generated_at": "2026-11-21T13:30:16Z",
+  "platform": "Laboratory Control Network",
+  "vendor": "Cisco",
+  "device": "Network Security Appliance",
+  "baseline_version": "5.9.9",
+  "zone": "Secure Laboratory",
+  "security_state": "Under Investigation",
+  "configuration_integrity": "Pending Analyst Validation"
+}

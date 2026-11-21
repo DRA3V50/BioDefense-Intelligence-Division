@@ -3,60 +3,60 @@
 ## Current Investigation
 
 Case ID:
-BID-2026-2356
+BID-2026-6162
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Research Workstation Compromise
+Clinical Research Data Manipulation
 
 Current Phase:
 Operational Recovery
 
 Status:
-ESCALATED
+Monitoring
 
 ---
 
 ## Protected Environment
 
 Platform:
-Biosecurity Operations Center
+Laboratory Control Network
 
 Device:
 Network Security Appliance
 
 Vendor:
-Microsoft
+Cisco
 
 Security Zone:
-Evidence Network
+Secure Laboratory
 
 ---
 
 ## Investigation Metrics
 
 Investigations Recorded:
-153
+154
 
 Evidence Collected:
-200
+43
 
 Indicators Identified:
-42
+14
 
 Affected Assets:
-35
+7
 
 Confidence:
-94%
+85%
 
 Risk Score:
-83
+61
 
 ---
 

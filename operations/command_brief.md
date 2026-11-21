@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-11-21 02:15 UTC
+**Generated:** 2026-11-21 13:30 UTC
 
 ---
 
@@ -12,47 +12,47 @@
 
 **Campaign Phase:** Operational Recovery
 
-**Containment Level:** SEVERE
+**Containment Level:** HIGH
 
 ---
 
 ## Active Investigation
 
-**Case ID:** BID-2026-2356
+**Case ID:** BID-2026-6162
 
-**Classification:** Research Facility Intrusion Investigation
+**Classification:** Biological Research Intelligence Collection
 
-**Severity:** HIGH
+**Severity:** MODERATE
 
-**Threat Family:** Research Workstation Compromise
+**Threat Family:** Clinical Research Data Manipulation
 
-**Confidence:** 94%
+**Confidence:** 85%
 
 ---
 
 ## Investigation Summary
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
 ## Evidence Summary
 
-Evidence Collected: **200**
+Evidence Collected: **43**
 
-Indicators: **42**
+Indicators: **14**
 
-Priority: **HIGH**
+Priority: **ELEVATED**
 
 ---
 
 ## Current Response
 
 Lead Analyst:
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 Initial Access:
-**Exposed Remote Service**
+**Compromised Credentials**
 
 Recommended Action:
 **Verify recovery controls and prepare the final operational assessment.**
@@ -62,26 +62,26 @@ Recommended Action:
 ## Campaign Status
 
 Active Cases:
-**148**
+**149**
 
 Confirmed Intrusions:
 **21**
 
 Total Evidence:
-**101349**
+**101392**
 
 Total Indicators:
-**65187**
+**65201**
 
 ---
 
 ## Operational Highlights
 
-- 200 evidence items are associated with the active investigation.
-- 42 indicators are currently linked to the case.
-- Containment remains at **SEVERE**.
-- Analyst confidence is **94%**.
-- Current investigation priority is **HIGH**.
+- 43 evidence items are associated with the active investigation.
+- 14 indicators are currently linked to the case.
+- Containment remains at **HIGH**.
+- Analyst confidence is **85%**.
+- Current investigation priority is **ELEVATED**.
 
 ---
 

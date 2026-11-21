@@ -4,12 +4,12 @@
 
 | Item | Value |
 |------|-------|
-| Case ID | BID-2026-2356 |
+| Case ID | BID-2026-6162 |
 | Operation | Coordinated Biomedical Systems Intrusion |
-| Classification | Research Facility Intrusion Investigation |
-| Threat Family | Research Workstation Compromise |
-| Severity | HIGH |
-| Status | ESCALATED |
+| Classification | Biological Research Intelligence Collection |
+| Threat Family | Clinical Research Data Manipulation |
+| Severity | MODERATE |
+| Status | Monitoring |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Platform | Biosecurity Operations Center |
+| Platform | Laboratory Control Network |
 | Device | Network Security Appliance |
-| Vendor | Microsoft |
-| Security Zone | Evidence Network |
+| Vendor | Cisco |
+| Security Zone | Secure Laboratory |
 
 ---
 
@@ -28,23 +28,23 @@
 
 | Metric | Value |
 |--------|------:|
-| Risk Score | 83 |
-| Confidence | 94% |
-| Evidence Collected | 200 |
-| Indicators Identified | 42 |
-| Affected Assets | 35 |
+| Risk Score | 61 |
+| Confidence | 85% |
+| Evidence Collected | 43 |
+| Indicators Identified | 14 |
+| Affected Assets | 7 |
 
 ---
 
 # Lead Investigator
 
-**Analyst Team Alpha**
+**Analyst Team Bravo**
 
 ---
 
 # Executive Assessment
 
-Evidence indicates unauthorized access requiring additional forensic review and coordinated containment validation.
+Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ---
 
@@ -85,11 +85,11 @@ Current Phase:
 
 Current Status:
 
-**ESCALATED**
+**Monitoring**
 
 Priority:
 
-**HIGH**
+**ELEVATED**
 
 Recommended Action:
 

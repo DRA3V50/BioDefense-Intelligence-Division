@@ -3,16 +3,16 @@
 ## Investigation
 
 Case ID:
-BID-2026-2356
+BID-2026-6162
 
 Operation:
 Coordinated Biomedical Systems Intrusion
 
 Classification:
-Research Facility Intrusion Investigation
+Biological Research Intelligence Collection
 
 Threat Family:
-Research Workstation Compromise
+Clinical Research Data Manipulation
 
 ---
 
@@ -22,19 +22,19 @@ Facility:
 Central Evidence Processing Center
 
 Platform:
-Biosecurity Operations Center
+Laboratory Control Network
 
 Device:
 Network Security Appliance
 
 Vendor:
-Microsoft
+Cisco
 
 Operating System:
-Windows Server 2025
+Red Hat Enterprise Linux 10
 
 Security Zone:
-Evidence Network
+Secure Laboratory
 
 ---
 
@@ -44,20 +44,20 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Awaiting Laboratory Review
 
 Priority:
-HIGH
+ELEVATED
 
 Confidence:
-94%
+85%
 
 ---
 
 ## Analyst Assessment
 
 Lead Analyst:
-Analyst Team Alpha
+Analyst Team Bravo
 
 Recommended Action:
 Verify recovery controls and prepare the final operational assessment.
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-System isolated pending malware reverse engineering.
+No destructive activity observed following initial containment.

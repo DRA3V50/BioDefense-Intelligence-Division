@@ -1,47 +1,47 @@
 # Threat Actor Intelligence Profile
 
 ## Threat Designation
-Research Workstation Compromise
+Clinical Research Data Manipulation
 
 ---
 
 ## Primary Alias
-Genome Phantom
+Ghost Genome
 
 ---
 
 ## Attribution
-International Infrastructure
+Multiple Regions
 
 ---
 
 ## Observed Motivation
-Laboratory System Sabotage
+Medical Infrastructure Disruption
 
 ---
 
 ## Operational Sophistication
-Moderate
+Nation-State Level
 
 ---
 
 ## Confidence
-94%
+85%
 
 ---
 
 ## Observed Techniques
-- Exposed Remote Service
-- Insider Access Abuse
-- Laboratory Data Manipulation
+- Compromised Credentials
+- Command and Control
+- Covert Remote Access Tooling
+- Privilege Escalation
+- Credential Abuse
 - Concealed Internal Movement
-- Lateral Movement
-- Research Data Exfiltration
 
 ---
 
 ## Reviewing Analyst
-Analyst Team Alpha
+Analyst Team Bravo
 
 **Analyst Note:** Pattern of access suggests familiarity with internal lab procedures.
 
@@ -53,7 +53,7 @@ Coordinated Biomedical Systems Intrusion
 ---
 
 ## Primary Target
-Research Facility Intrusion Investigation
+Biological Research Intelligence Collection
 
 ---
 
