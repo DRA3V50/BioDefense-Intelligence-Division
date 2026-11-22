@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Cloud | Restricted research archive synchronized to unauthorized destination |
 | PowerShell | Encoded administrative command execution detected |
-| Infrastructure | Firewall policy deviation identified |
+| Evidence | Acquired forensic image verified using SHA-256 |
 | Identity | Credential reuse detected across isolated research segments |
+| Research Storage | Unauthorized access to protected genomic repository |
+| Infrastructure | Firewall policy deviation identified |
 | System Log | Unexpected privilege escalation recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
