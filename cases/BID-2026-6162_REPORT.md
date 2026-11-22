@@ -138,15 +138,15 @@ ELEVATED
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ Multiple investigative artifacts require additional correlation before attributi
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-No confirmed attribution has been established during the current investigation.
+Current findings support maintaining the existing investigation priority.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Email | Targeted spear-phishing message delivered to laboratory personnel |
-| Database | Protected biomedical dataset queried outside normal operating hours |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | PowerShell | Encoded administrative command execution detected |
-| Device | Protected workstation entered evidence preservation mode |
-| Evidence | Acquired forensic image verified using SHA-256 |
+| Infrastructure | Firewall policy deviation identified |
 | Identity | Credential reuse detected across isolated research segments |
+| System Log | Unexpected privilege escalation recorded |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 Cisco
 
 Operating System:
-Red Hat Enterprise Linux 10
+VMware ESXi 9
 
 Security Zone:
 Secure Laboratory
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Evidence Acquisition
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-No destructive activity observed following initial containment.
+Protected research assets remain under continuous monitoring.
 
 
 ---

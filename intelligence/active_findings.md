@@ -26,15 +26,15 @@ ELEVATED
 
 ### Finding 1
 
-Privilege escalation activity was observed within a protected research environment.
+Chain-of-custody documentation has been completed for all acquired digital evidence.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 3
 
-Additional forensic examination is required to determine the full operational scope.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
@@ -42,7 +42,7 @@ Multiple investigative artifacts require additional correlation before attributi
 
 ### Finding 5
 
-Chain-of-custody documentation has been completed for all acquired digital evidence.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 

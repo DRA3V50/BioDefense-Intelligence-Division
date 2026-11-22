@@ -27,7 +27,20 @@
       "zone": "Secure Laboratory",
       "intensity": 45,
       "idempotency_key": "revision-2-WORKFLOW_STAGE_CHANGED"
+    },
+    {
+      "event_id": "BID-2026-6162-EVT-0003",
+      "case_id": "BID-2026-6162",
+      "sequence": 3,
+      "timestamp": "2026-11-22T01:19:52Z",
+      "event_type": "EVIDENCE_REVIEW_PROGRESS",
+      "message": "Evidence review progress: 8/43 reviewed",
+      "severity": "MODERATE",
+      "source": "process_active_case_stage",
+      "zone": "Secure Laboratory",
+      "intensity": 45,
+      "idempotency_key": "evidence-review-8-of-43"
     }
   ],
-  "updated_at": "2026-11-21T13:30:27Z"
+  "updated_at": "2026-11-22T01:19:52Z"
 }

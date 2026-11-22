@@ -2,7 +2,7 @@
 
 ## Bioterror Threat Assessment
 
-**Generated:** 2026-11-21 13:30 UTC
+**Generated:** 2026-11-22 01:19 UTC
 
 ---
 
@@ -78,7 +78,7 @@ The active Biological Research Intelligence Collection concerns suspected Clinic
 
 **Integrity-Verified Records:** 43
 
-**Pending Analyst Review:** 43
+**Pending Analyst Review:** 35
 
 ### Priority Findings
 
