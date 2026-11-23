@@ -1,6 +1,6 @@
 # BioDefense Command Brief
 
-**Generated:** 2026-11-22 13:21 UTC
+**Generated:** 2026-11-23 01:43 UTC
 
 ---
 
