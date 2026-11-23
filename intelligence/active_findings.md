@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ### Finding 2
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Privilege escalation activity was observed within a protected research environment.
 
 ### Finding 3
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ---
 

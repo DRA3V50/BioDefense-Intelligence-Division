@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-11-23 01:43 UTC
+**Generated:** 2026-11-23 16:00 UTC
 
 **Case ID:** BID-2026-6162
 
@@ -41,9 +41,9 @@ evidence correlations, and the active case assessment.
 - **BID-2026-6162-EV-0001** — Containment Validation Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0025** — Containment Validation Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0029** — Containment Validation Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0042** — Containment Validation Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -99,7 +99,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6162-EV-0010** — Threat Intelligence Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0030** — Threat Intelligence Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0041** — Threat Intelligence Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -180,9 +180,9 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6162-EV-0021** — Authentication Log  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0026** — Authentication Log  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0031** — Authentication Log  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0040** — Authentication Log  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
@@ -263,11 +263,11 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6162-EV-0023** — Research Data Integrity Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0027** — Research Data Integrity Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0028** — Research Data Integrity Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0032** — Research Data Integrity Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0035** — Research Data Integrity Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
 
