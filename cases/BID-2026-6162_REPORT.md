@@ -138,23 +138,23 @@ ELEVATED
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Evidence correlation remains in progress across collected artifacts.
+Operational monitoring continues while analysts validate recovered evidence.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | PowerShell | Encoded administrative command execution detected |
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| System Log | Unexpected privilege escalation recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-Central Evidence Processing Center
+National Pathogen Research Facility
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 Cisco
 
 Operating System:
-Red Hat Enterprise Linux 10
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Secure Laboratory
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Isolated From Production
+Active Investigation
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Analysts continue reconstructing attacker activity across protected biomedical systems.
 
 
 ---

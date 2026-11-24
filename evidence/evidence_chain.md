@@ -1,6 +1,6 @@
 # Evidence Chain Analysis
 
-**Generated:** 2026-11-24 05:23 UTC
+**Generated:** 2026-11-24 23:03 UTC
 
 **Case ID:** BID-2026-6162
 
@@ -45,7 +45,7 @@ evidence correlations, and the active case assessment.
 - **BID-2026-6162-EV-0029** — Containment Validation Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0042** — Containment Validation Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -101,7 +101,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6162-EV-0030** — Threat Intelligence Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0041** — Threat Intelligence Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 
@@ -292,7 +292,7 @@ chain-of-custody records should be verified before final attribution.
 - **BID-2026-6162-EV-0033** — Network Connection Record  
   Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 - **BID-2026-6162-EV-0043** — Network Connection Record  
-  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Pending Analyst Review**
+  Source: **Network Security Appliance** | Vendor: **Cisco** | Integrity: **Verified** | Review: **Reviewed**
 
 ### Investigative Reasoning
 

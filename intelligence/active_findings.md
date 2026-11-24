@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 3
 
-Digital evidence suggests attempted collection of sensitive genomic research datasets.
+Laboratory network telemetry remains under continuous monitoring pending case closure.
 
 ### Finding 4
 
-No destructive malware activity has been identified at this stage of the investigation.
+Additional forensic examination is required to determine the full operational scope.
 
 ### Finding 5
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ---
 

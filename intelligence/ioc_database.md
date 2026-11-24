@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Research Storage | Unauthorized access to protected genomic repository |
+| Email | Targeted spear-phishing message delivered to laboratory personnel |
 | PowerShell | Encoded administrative command execution detected |
 | Database | Protected biomedical dataset queried outside normal operating hours |
-| System Log | Unexpected privilege escalation recorded |
+| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
+| Infrastructure | Firewall policy deviation identified |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
