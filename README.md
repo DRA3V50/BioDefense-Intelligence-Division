@@ -62,7 +62,7 @@
 
 BioDefense Intelligence Division is a cyber-biosecurity intelligence and investigative forensics platform built around federal-style case management and the examination of cyber-enabled threats affecting biomedical research, pharmaceutical laboratories, protected research environments, operational technology, connected medical systems, and critical infrastructure. The repository combines digital evidence acquisition and reconstruction, evidentiary correlation, chain-of-custody control, investigative leads, forensic reporting, threat assessment, and persistent case operations.
 
-Investigations retain case identity and evidentiary state across scheduled GitHub Actions executions. Case records, evidence repositories, correlations, forensic products, threat assessments, timelines, and operational intelligence remain synchronized throughout the investigative lifecycle, while the dashboard functions as a read-only visualization of authoritative case state.
+Investigations retain case identity and evidentiary state across scheduled GitHub Actions executions. Case records, evidence repositories, correlations, forensic products, threat assessments, timelines, and operational intelligence remain synchronized throughout the investigative lifecycle, while the dashboard functions as a read-only visualization of authoritative case state. It complements real-world biodefense facilities like the National Biodefense Analysis and Countermeasures Center (NBACC), which conducts bio-forensic analyses, threat characterization, and operational support for bioterrorism investigations
 
 ---
 
