@@ -1,7 +1,7 @@
 <!-- FSE-REPORT-START -->
 
 <p align="center">
-  <img src="assets/biodefense-case-scan.gif?v=8e522604f51f" alt="Current BioDefense intelligence case interface" width="100%">
+  <img src="assets/biodefense-case-scan.gif?v=1932e7231cb9" alt="Current BioDefense intelligence case interface" width="100%">
 </p>
 
 # BioDefense-Intelligence-Division
@@ -62,7 +62,7 @@
 
 BioDefense Intelligence Division is a cyber-biosecurity intelligence and investigative forensics platform built around federal-style case management and the examination of cyber-enabled threats affecting biomedical research, pharmaceutical laboratories, protected research environments, operational technology, connected medical systems, and critical infrastructure. The repository combines digital evidence acquisition and reconstruction, evidentiary correlation, chain-of-custody control, investigative leads, forensic reporting, threat assessment, and persistent case operations.
 
-Investigations retain case identity and evidentiary state across scheduled GitHub Actions executions. Case records, evidence repositories, correlations, forensic products, threat assessments, timelines, and operational intelligence remain synchronized throughout the investigative lifecycle, while the dashboard functions as a read-only visualization of authoritative case state. It complements real-world biodefense facilities like the National Biodefense Analysis and Countermeasures Center (NBACC), which conducts bio-forensic analyses, threat characterization, and operational support for bioterrorism investigations
+Investigations retain case identity and evidentiary state across scheduled GitHub Actions executions. Case records, evidence repositories, correlations, forensic products, threat assessments, timelines, and operational intelligence remain synchronized throughout the investigative lifecycle, while the dashboard functions as a read-only visualization of authoritative case state.
 
 ---
 
@@ -210,7 +210,7 @@ The active investigation persists across scheduled workflow executions and advan
       <td valign="top" align="right">43</td>
       <td valign="top" align="right">43</td>
       <td valign="top" align="right">43</td>
-      <td valign="top" align="right">11</td>
+      <td valign="top" align="right">3</td>
     </tr>
   </tbody>
 </table>

@@ -138,15 +138,15 @@ ELEVATED
 
 ### Finding 1
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 2
 
-Privilege escalation activity was observed within a protected research environment.
+Unauthorized access to protected biomedical research resources was confirmed during evidence review.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Digital evidence suggests attempted collection of sensitive genomic research datasets.
 
 ### Finding 4
 
@@ -154,7 +154,7 @@ No destructive malware activity has been identified at this stage of the investi
 
 ### Finding 5
 
-Unauthorized access to protected biomedical research resources was confirmed during evidence review.
+Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
 
 ---
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| PowerShell | Encoded administrative command execution detected |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Central Evidence Processing Center
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 Cisco
 
 Operating System:
-Hardened Research Appliance OS
+Red Hat Enterprise Linux 10
 
 Security Zone:
 Secure Laboratory
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Awaiting Laboratory Review
+Isolated From Production
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Analysts continue reconstructing attacker activity across protected biomedical systems.
+Protected research assets remain under continuous monitoring.
 
 
 ---

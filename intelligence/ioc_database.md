@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Identity | Credential reuse detected across isolated research segments |
+| Network | Unexpected east-west traffic between laboratory VLANs |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
 | Research Storage | Unauthorized access to protected genomic repository |
-| Authentication | Privileged account authenticated outside approved maintenance window |
-| Security | Multi-factor authentication bypass attempt recorded |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| PowerShell | Encoded administrative command execution detected |
+| Database | Protected biomedical dataset queried outside normal operating hours |
+| System Log | Unexpected privilege escalation recorded |
 
 
 ---
