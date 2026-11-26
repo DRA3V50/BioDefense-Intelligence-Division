@@ -131,7 +131,20 @@
       "zone": "Secure Laboratory",
       "intensity": 58,
       "idempotency_key": "correlation-validation-15-of-43"
+    },
+    {
+      "event_id": "BID-2026-6162-EVT-0011",
+      "case_id": "BID-2026-6162",
+      "sequence": 11,
+      "timestamp": "2026-11-26T03:34:58Z",
+      "event_type": "CORRELATION_VALIDATION_PROGRESS",
+      "message": "Correlation validation progress: 30/43 validated",
+      "severity": "MODERATE",
+      "source": "process_active_case_stage",
+      "zone": "Secure Laboratory",
+      "intensity": 58,
+      "idempotency_key": "correlation-validation-30-of-43"
     }
   ],
-  "updated_at": "2026-11-25T15:37:59Z"
+  "updated_at": "2026-11-26T03:34:58Z"
 }
