@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Infrastructure | Firewall policy deviation identified |
-| Identity | Credential reuse detected across isolated research segments |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Network Artifact | Suspicious outbound TLS session to untrusted infrastructure |
-| Network | Unexpected east-west traffic between laboratory VLANs |
+| Infrastructure | Firewall policy deviation identified |
+| Device | Protected workstation entered evidence preservation mode |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Identity | Credential reuse detected across isolated research segments |
+| Endpoint Activity | Unsigned executable observed within laboratory environment |
 
 
 ---
