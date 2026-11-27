@@ -138,11 +138,11 @@ ELEVATED
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
@@ -150,11 +150,11 @@ Evidence preservation procedures successfully secured affected systems for foren
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Observed indicators remain consistent with the current operational assessment.
+Current findings support maintaining the existing investigation priority.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -288,11 +288,11 @@ Biological Research Intelligence Collection
 | Category | Observation |
 |----------|-------------|
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Infrastructure | Firewall policy deviation identified |
-| Device | Protected workstation entered evidence preservation mode |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Identity | Credential reuse detected across isolated research segments |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---
@@ -461,7 +461,7 @@ Vendor:
 Cisco
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
 Secure Laboratory
@@ -474,7 +474,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 ELEVATED
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.
 
 
 ---

@@ -31,7 +31,7 @@ Vendor:
 Cisco
 
 Operating System:
-Ubuntu Server 24.04 LTS
+Hardened Research Appliance OS
 
 Security Zone:
 Secure Laboratory
@@ -44,7 +44,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Under Forensic Preservation
+Isolated From Production
 
 Priority:
 ELEVATED
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Evidence indicates unauthorized access to restricted research resources.
+Protected research assets remain under continuous monitoring.

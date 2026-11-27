@@ -16,11 +16,11 @@ Biological Research Intelligence Collection
 | Category | Observation |
 |----------|-------------|
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Infrastructure | Firewall policy deviation identified |
-| Device | Protected workstation entered evidence preservation mode |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Identity | Credential reuse detected across isolated research segments |
+| Cloud | Restricted research archive synchronized to unauthorized destination |
 | Endpoint Activity | Unsigned executable observed within laboratory environment |
+| Evidence | Acquired forensic image verified using SHA-256 |
+| Network | Unexpected east-west traffic between laboratory VLANs |
+| Device | Protected workstation entered evidence preservation mode |
 
 
 ---

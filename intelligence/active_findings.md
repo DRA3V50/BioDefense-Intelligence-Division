@@ -26,11 +26,11 @@ ELEVATED
 
 ### Finding 1
 
-Laboratory network telemetry remains under continuous monitoring pending case closure.
+Collected indicators continue to support an active counter-bioterrorism investigation.
 
 ### Finding 2
 
-Analysts identified abnormal authentication activity originating from restricted laboratory infrastructure.
+Multiple investigative artifacts require additional correlation before attribution can be established.
 
 ### Finding 3
 
@@ -38,11 +38,11 @@ Evidence preservation procedures successfully secured affected systems for foren
 
 ### Finding 4
 
-Analysts recovered digital artifacts consistent with unauthorized research intelligence collection.
+Suspicious outbound communication was detected prior to containment operations.
 
 ### Finding 5
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ---
 
