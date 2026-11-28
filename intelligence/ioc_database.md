@@ -15,12 +15,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
+| Infrastructure | Firewall policy deviation identified |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -47,4 +47,4 @@ Analyst Team Bravo
 
 Current Status:
 
-Monitoring
+RESOLVED

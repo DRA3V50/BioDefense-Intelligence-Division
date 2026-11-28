@@ -19,7 +19,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
 Laboratory Control Network
@@ -31,7 +31,7 @@ Vendor:
 Cisco
 
 Operating System:
-Hardened Research Appliance OS
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Secure Laboratory
@@ -66,4 +66,4 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Digital evidence preserved for laboratory forensic examination.

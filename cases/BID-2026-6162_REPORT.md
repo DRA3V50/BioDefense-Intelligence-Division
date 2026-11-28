@@ -39,7 +39,7 @@ Current Phase:
 Operational Recovery
 
 Status:
-Monitoring
+RESOLVED
 
 ---
 
@@ -138,23 +138,23 @@ ELEVATED
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -186,7 +186,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Monitoring
+RESOLVED
 
 Recommended Action:
 
@@ -213,7 +213,7 @@ Classification: Biological Research Intelligence Collection
 
 Threat Family: Clinical Research Data Manipulation
 
-Current Status: Monitoring
+Current Status: RESOLVED
 
 Containment Phase: Operational Recovery
 
@@ -221,7 +221,7 @@ Containment Phase: Operational Recovery
 
 ## Executive Assessment
 
-Current findings support maintaining the existing investigation priority.
+Evidence correlation remains in progress across collected artifacts.
 
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
@@ -287,12 +287,12 @@ Biological Research Intelligence Collection
 
 | Category | Observation |
 |----------|-------------|
+| Infrastructure | Firewall policy deviation identified |
+| Database | Protected biomedical dataset queried outside normal operating hours |
 | Authentication | Privileged account authenticated outside approved maintenance window |
-| Cloud | Restricted research archive synchronized to unauthorized destination |
-| Endpoint Activity | Unsigned executable observed within laboratory environment |
-| Evidence | Acquired forensic image verified using SHA-256 |
-| Network | Unexpected east-west traffic between laboratory VLANs |
-| Device | Protected workstation entered evidence preservation mode |
+| Security | Multi-factor authentication bypass attempt recorded |
+| Research Storage | Unauthorized access to protected genomic repository |
+| PowerShell | Encoded administrative command execution detected |
 
 
 ---
@@ -319,7 +319,7 @@ Analyst Team Bravo
 
 Current Status:
 
-Monitoring
+RESOLVED
 
 
 ---
@@ -337,7 +337,7 @@ Monitoring
 | Classification | Biological Research Intelligence Collection |
 | Threat Family | Clinical Research Data Manipulation |
 | Severity | MODERATE |
-| Status | Monitoring |
+| Status | RESOLVED |
 
 ---
 
@@ -413,7 +413,7 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**RESOLVED**
 
 Priority:
 
@@ -449,7 +449,7 @@ Clinical Research Data Manipulation
 ## Protected Asset
 
 Facility:
-National Pathogen Research Facility
+Raccoon Research Annex
 
 Platform:
 Laboratory Control Network
@@ -461,7 +461,7 @@ Vendor:
 Cisco
 
 Operating System:
-Hardened Research Appliance OS
+Ubuntu Server 24.04 LTS
 
 Security Zone:
 Secure Laboratory
@@ -496,7 +496,7 @@ Verify recovery controls and prepare the final operational assessment.
 
 ## Reconstruction Notes
 
-Protected research assets remain under continuous monitoring.
+Digital evidence preserved for laboratory forensic examination.
 
 
 ---
@@ -518,7 +518,7 @@ Biological Research Intelligence Collection
 Correlated records suggest a multi-stage intrusion affecting research, evidence, or laboratory support infrastructure.
 
 ### Current Status
-Monitoring
+RESOLVED
 
 ### Severity
 MODERATE

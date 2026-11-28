@@ -9,7 +9,7 @@
 | Classification | Biological Research Intelligence Collection |
 | Threat Family | Clinical Research Data Manipulation |
 | Severity | MODERATE |
-| Status | Monitoring |
+| Status | RESOLVED |
 
 ---
 
@@ -85,7 +85,7 @@ Current Phase:
 
 Current Status:
 
-**Monitoring**
+**RESOLVED**
 
 Priority:
 

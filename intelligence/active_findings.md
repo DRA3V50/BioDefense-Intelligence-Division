@@ -26,23 +26,23 @@ ELEVATED
 
 ### Finding 1
 
-Collected indicators continue to support an active counter-bioterrorism investigation.
+No destructive malware activity has been identified at this stage of the investigation.
 
 ### Finding 2
 
-Multiple investigative artifacts require additional correlation before attribution can be established.
+Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
 
 ### Finding 3
 
-Evidence preservation procedures successfully secured affected systems for forensic reconstruction.
+Indicators remain consistent with a coordinated cyber-enabled bioterror intelligence operation.
 
 ### Finding 4
 
-Suspicious outbound communication was detected prior to containment operations.
+Evidence indicates possible insider-assisted access to protected laboratory resources.
 
 ### Finding 5
 
-No destructive malware activity has been identified at this stage of the investigation.
+Suspicious outbound communication was detected prior to containment operations.
 
 ---
 
@@ -74,7 +74,7 @@ Correlated records suggest a multi-stage intrusion affecting research, evidence,
 # Operational Status
 
 Current Status:
-Monitoring
+RESOLVED
 
 Recommended Action:
 
